@@ -3007,14 +3007,14 @@ z-index: 10;
 .estimate-wrap .estimate-inner .l-side {font-weight: 600; font-size: 17px; color: #444; line-height: 150%;}
 .estimate-wrap .estimate-inner .r-side {display: flex; column-gap: 100px;}
 .estimate-wrap .estimate-inner .r-side ul {display: flex; column-gap: 12px;}
-.estimate-wrap .estimate-inner .r-side li span {display: inline-flex; height: 48px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 11px 16px 0 52px; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 32px; box-sizing: border-box; cursor: pointer;}
+.estimate-wrap .estimate-inner .r-side li span {display: inline-flex; height: 48px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 11px 16px 0 52px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 32px; box-sizing: border-box; cursor: pointer;}
 .estimate-wrap .estimate-inner .r-side li.on span {padding: 10px 16px 0 52px;border: 2px solid #F1945E; box-sizing: border-box;}
 .estimate-wrap .estimate-inner a.btn-confirm {display: inline-block; font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; padding: 9.5px 32px; background: #A0A0A0; border-radius: 8px;}
-.estimate-wrap .estimate-inner .r-side li.up-m {background: #fff url('../images/common/icon_face01.png') no-repeat left 12px top 8px; background-size: 32px;}
-.estimate-wrap .estimate-inner .r-side li.up {background: #fff url('../images/common/icon_face02.png') no-repeat left 12px top 8px; background-size: 32px;}
-.estimate-wrap .estimate-inner .r-side li.nm {background: #fff url('../images/common/icon_face03.png') no-repeat left 12px top 8px; background-size: 32px;}
-.estimate-wrap .estimate-inner .r-side li.down {background: #fff url('../images/common/icon_face04.png') no-repeat left 12px top 8px; background-size: 32px;}
-.estimate-wrap .estimate-inner .r-side li.down-m {background: #fff url('../images/common/icon_face05.png') no-repeat left 12px top 8px; background-size: 32px;}
+.estimate-wrap .estimate-inner .r-side li.up-m {background: url('../images/common/icon_face01.png') no-repeat left 12px top 8px; background-size: 32px;}
+.estimate-wrap .estimate-inner .r-side li.up {background: url('../images/common/icon_face02.png') no-repeat left 12px top 8px; background-size: 32px;}
+.estimate-wrap .estimate-inner .r-side li.nm {background: url('../images/common/icon_face03.png') no-repeat left 12px top 8px; background-size: 32px;}
+.estimate-wrap .estimate-inner .r-side li.down {background: url('../images/common/icon_face04.png') no-repeat left 12px top 8px; background-size: 32px;}
+.estimate-wrap .estimate-inner .r-side li.down-m {background:  url('../images/common/icon_face05.png') no-repeat left 12px top 8px; background-size: 32px;}
 
 
 /* footer new */
