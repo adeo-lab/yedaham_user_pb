@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- style -->
+					<section class="g-section">
+						<h3 class="g-heading-m">버튼 <span class="em">&#40;Button&#41;</span></h3>
+						<h4 class="g-heading-s">스타일</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="g-button-area">
+										<button class="btn-a">Default</button>
+										<button class="btn-a style-a">style-a</button>
+										<button class="btn-a style-b">style-b</button>
+										<button class="btn-a style-c">style-c</button>
+										<!-- <button class="btn-a style-c type-fill">style-c</button> -->
+										<button class="btn-a disabled">Disabled</button>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;button class="btn-a"&gt;Default&lt;/button&gt;
+&lt;button class="btn-a style-a"&gt;Primary&lt;/button&gt;
+&lt;button class="btn-a style-b"&gt;secondary&lt;/button&gt;
+&lt;button class="btn-a style-c type-line"&gt;tertiary&lt;/button&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //style -->
+
+					<!-- size -->
+					<section class="g-section">
+						<h4 class="g-heading-s">사이즈</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="g-button-area">
+										<!-- <button class="btn-a x-small">x-small</button> -->
+										<button class="btn-a small">small</button>
+										<button class="btn-a medium">medium</button>
+										<button class="btn-a large">large</button>
+										<!-- <button class="btn-a x-large">x-large</button> -->
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;button class="btn-a small"&gt;small&lt;/button&gt;
+&lt;button class="btn-a medium"&gt;medium&lt;/button&gt;
+&lt;button class="btn-a large"&gt;large&lt;/button&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //size -->
+
+					<!-- icon -->
+					<section class="g-section">
+						<h4 class="g-heading-s">아이콘</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="g-button-area">
+										<button class="btn-a small ico-eye-open">small</button>
+										<button class="btn-a style-a medium ico-eye-open">medium</button>
+										<button class="btn-a style-b medium ico-eye-open">medium</button>
+										<button class="btn-a style-c large ico-eye-open-rtl">large</button>
+										<button class="btn-a large ico-eye-open-rtl disabled">large</button>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;button class="btn-a small ico-pin"&gt;small&lt;/button&gt;
+&lt;button class="btn-a medium ico-pin"&gt;medium&lt;/button&gt;
+&lt;button class="btn-a large ico-pin-rtl"&gt;large&lt;/button&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //icon -->
+
+					<!-- text -->
+					<section class="g-section">
+						<h4 class="g-heading-s">텍스트</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="g-button-area">
+										<button class="btn-a btn-em medium">텍스트 버튼</button>
+										<button class="btn-a btn-em underline">텍스트 밑줄 버튼</button>
+										<a href="#" class="btn-a btn-em link">텍스트 링크</a>
+										<a href="#" class="btn-a medium btn-em link ico-eye-open">텍스트 링크 아이콘</a>
+										<button class="btn-a medium btn-em ico-eye-open">텍스트 버튼 아이콘</button>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;button class="btn-a btn-em medium"&gt;텍스트 버튼&lt;/button&gt;
+&lt;button class="btn-a btn-em underline"&gt;텍스트 밑줄 버튼&lt;/button&gt;
+&lt;a href="#" class="btn-a btn-em link"&gt;텍스트 링크&lt;/a&gt;
+&lt;button class="btn-a medium btn-em link ico-pin"&gt;텍스트 링크 아이콘&lt;/button&gt;
+&lt;button class="btn-a medium btn-em ico-pin"&gt;텍스트 버튼 아이콘&lt;/button&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //text -->
+
+					<!-- align -->
+					<section class="g-section">
+						<h4 class="g-heading-s">정렬 <span class="em">&#40;*기본 중앙정렬&#41;</span></h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="button-display align-lt">
+									<span class="g-button-area"><button class="btn-a">align-lt</button></span>
+								</div>
+								<div class="button-display align-rt">
+									<span class="g-button-area"><button class="btn-a">align-rt</button></span>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;div class="button-display align-lt"&gt;&lt;span class="g-button-area"&gt;&lt;button class="btn-a"&gt;align-lt&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class="button-display align-rt"&gt;&lt;span class="g-button-area"&gt;&lt;button class="btn-a"&gt;align-rt&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //align -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

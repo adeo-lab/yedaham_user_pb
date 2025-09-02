@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi"></nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="gContainer">
+			<div class="g-content g-guide" id="gContent">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">스타일 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- layout -->
+					<section class="g-section" id="layout">
+						<h3 class="g-heading-m">배치 <span class="em">&#40;Layout&#41;</span></h3>
+						<p class="g-title-s">Breakpoint <span class="em">데스크탑, 태블릿, 모바일 크기에 기반한 Breakpoint 입니다.</span></h>
+						<div class="g-table-display scroll">
+							<table>
+								<colgroup>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>Device</th>
+										<th>Breakpoint</th>
+										<th>Size</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Wide(Desktop 4K)</th>
+										<td>2560 ~ 1921px</td>
+										<td>2560x1440</td>
+									</tr>
+									<tr>
+										<th>Laptop(PC/Desktop)</th>
+										<td>1920 ~ 1024px</td>
+										<td>1920x1080</td>
+									</tr>
+									<tr>
+										<th>Tablet</th>
+										<td>1023 ~ 768px</td>
+										<td>768x1024</td>
+									</tr>
+									<tr>
+										<th>Mobile</th>
+										<td>767 ~ 360px</td>
+										<td>360X800, 390X844</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<!-- //layout -->
+
+					<!-- font -->
+					<section class="g-section" id="typography">
+						<h3 class="g-heading-m">서체<span class="em">&#40;Typography&#41;</span></h3>
+						<p class="g-title-s">Typeface <span class="em">Font Style의 정의는 서로 다를 수 있습니다. 해당 사이트에서는 기본 글꼴로 국문과 영문 모두 Pretendard Variable를 사용합니다.</span></p>
+						<div class="g-table-display scroll">
+							<table>
+								<colgroup>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="2">Style</th>
+										<th>Size</th>
+										<th>Mobile size</th>
+										<th>Font-weight</th>
+										<th>Line-height</th>
+										<th>Letter-spacing</th>
+										<th>Desc</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th rowspan="3">Heading</th>
+										<td>Large</td>
+										<td>56</td>
+										<td>40</td>
+										<td>700</td>
+										<td>150%</td>
+										<td>0</td>
+										<td rowspan="3" class="align-a">페이지 단위 타이틀</td>
+									</tr>
+									<tr>
+										<td>Medium</td>
+										<td>48</td>
+										<td>36</td>
+										<td>700</td>
+										<td>150%</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>Small</td>
+										<td>32</td>
+										<td>32</td>
+										<td>700</td>
+										<td>150%</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<th rowspan="3">Tilte</th>
+										<td>Large</td>
+										<td>32</td>
+										<td>24</td>
+										<td>700</td>
+										<td>150%</td>
+										<td>0</td>
+										<td rowspan="3" class="align-a">템플릿, 모듈 단위 텍스트</td>
+									</tr>
+									<tr>
+										<td>Medium</td>
+										<td>28</td>
+										<td>20</td>
+										<td>500</td>
+										<td>150%</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>Small</td>
+										<td>24</td>
+										<td>18</td>
+										<td>500</td>
+										<td>150%</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<th rowspan="3">Body</th>
+										<td>Large</td>
+										<td>24</td>
+										<td>18</td>
+										<td>400</td>
+										<td>150%</td>
+										<td>0</td>
+										<td rowspan="3" class="align-a">본문 텍스트</td>
+									</tr>
+									<tr>
+										<td>Medium &#40;*default&#41;</td>
+										<td>16</td>
+										<td>14</td>
+										<td>400</td>
+										<td>150%</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>Small</td>
+										<td>14</td>
+										<td>12</td>
+										<td>400</td>
+										<td>150%</td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4 class="g-heading-s">사이즈</h4>
+						<div class="g-typo-area">
+							<p class="g-typo"><span class="g-typo-title">heading-l</span><span class="heading-l"><em>스타일 가이드 56px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">heading-m</span><span class="heading-m"><em>스타일 가이드 48px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">heading-s</span><span class="heading-s"><em>스타일 가이드 32px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">title-l</span><span class="title-l"><em>스타일 가이드 32px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">title-m</span><span class="title-m"><em>스타일 가이드 28px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">title-s</span><span class="title-s"><em>스타일 가이드 24px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">body-l</span><span class="body-l"><em>스타일 가이드 24px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">body-m</span><span class="body-m"><em>스타일 가이드 16px</em></span></p>
+							<p class="g-typo"><span class="g-typo-title">body-s</span><span class="body-s"><em>스타일 가이드 14px</em></span></p>
+						</div>
+					</section>
+					<!-- font -->
+
+					<!-- color -->
+					<section class="g-section" id="color">
+						<h3 class="g-heading-m">색상<span class="em">&#40;Color&#41;</span></h3>
+						<p class="g-body-m">색상은 비즈니스 브랜딩의 핵심 구성 요소이며, 사용자가 사이트와 상호작용할 때 중요한 메시지를 전달하는 데 도움이 됩니다.</p>
+						<p class="g-title-s"><span class="title">Primary color</span> <span class="em">주요 색상은 브랜드의 아이덴티티를 나타내며, UI 전체의 주요 구성 요소에 사용됩니다.</span></p>
+						<div class="g-color-palettes">
+							<ul class="data-list">
+								<li class="data-item primary-010">
+									<span class="data-name">primary-010</span> <span class="data-code">#052538<br>&#40;5, 37, 56&#41;</span>
+								</li>
+								<li class="data-item primary-020">
+									<span class="data-name">primary-020</span> <span class="data-code">#003553<br>&#40;0, 53, 83&#41;</span>
+								</li>
+								<li class="data-item primary-030">
+									<span class="data-name">primary-030</span> <span class="data-code">#014F7D<br>&#40;1, 79, 125&#41;</span>
+								</li>
+								<li class="data-item primary-040">
+									<span class="data-name">primary-040</span> <span class="data-code">#016AA6<br>&#40;1, 106, 166&#41;</span>
+								</li>
+								<li class="data-item primary-050">
+									<span class="data-name">primary-050</span> <span class="data-code">#0184D0<br>&#40;1, 132, 208&#41;</span>
+								</li>
+								<li class="data-item primary-060">
+									<span class="data-name">primary-060</span> <span class="data-code">#41A3DC<br>&#40;65, 163, 220&#41;</span>
+								</li>
+								<li class="data-item primary-070">
+									<span class="data-name">primary-070</span> <span class="data-code">#73BCE5<br>&#40;115, 188, 229&#41;</span>
+								</li>
+								<li class="data-item primary-080">
+									<span class="data-name">primary-080</span> <span class="data-code">#A6D4EF<br>&#40;166, 212, 239&#41;</span>
+								</li>
+								<li class="data-item primary-090">
+									<span class="data-name">primary-090</span> <span class="data-code">#D9EDF8<br>&#40;217, 237, 248&#41;</span>
+								</li>
+								<li class="data-item primary-095">
+									<span class="data-name">primary-095</span> <span class="data-code">#F2F9FC<br>&#40;242, 249, 252&#41;</span>
+								</li>
+							</ul>
+						</div>
+						<p class="g-title-s"><span class="title">Secondary color</span> <span class="em">보조 색상은 앱의 상호작용 요소에 사용되는 색상으로, 활성화 상태를 표시하는 데 사용됩니다.</span></p>
+						<div class="g-color-palettes">
+							<ul class="data-list">
+								<li class="data-item secondary-010">
+									<span class="data-name">secondary-010</span> <span class="data-code">#4D1200<br>&#40;77, 18, 0&#41;</span>
+								</li>
+								<li class="data-item secondary-020">
+									<span class="data-name">secondary-020</span> <span class="data-code">#801E00<br>&#40;128, 30, 0&#41;</span>
+								</li>
+								<li class="data-item secondary-030">
+									<span class="data-name">secondary-030</span> <span class="data-code">#B22A00<br>&#40;178, 42, 0&#41;</span>
+								</li>
+								<li class="data-item secondary-040">
+									<span class="data-name">secondary-040</span> <span class="data-code">#FF3C00<br>&#40;255, 60, 0&#41;</span>
+								</li>
+								<li class="data-item secondary-050">
+									<span class="data-name">secondary-050</span> <span class="data-code">#FF5926<br>&#40;255, 89, 38&#41;</span>
+								</li>
+								<li class="data-item secondary-060">
+									<span class="data-name">secondary-060</span> <span class="data-code">#FF764D<br>&#40;255, 118, 77&#41;</span>
+								</li>
+								<li class="data-item secondary-070">
+									<span class="data-name">secondary-070</span> <span class="data-code">#FFA78C<br>&#40;255, 167, 140&#41;</span>
+								</li>
+								<li class="data-item secondary-080">
+									<span class="data-name">secondary-080</span> <span class="data-code">#FFCEBF<br>&#40;255, 206, 191&#41;</span>
+								</li>
+								<li class="data-item secondary-090">
+									<span class="data-name">secondary-090</span> <span class="data-code">#FFE6DE<br>&#40;255, 230, 222&#41;</span>
+								</li>
+								<li class="data-item secondary-095">
+									<span class="data-name">secondary-095</span> <span class="data-code">#FFF3F0<br>&#40;255, 243, 240&#41;</span>
+								</li>
+							</ul>
+						</div>
+						<p class="g-title-s"><span class="title">Base color<br>&#40;Grayscale&#41;</span> <span class="em">기본 색상은 정보의 계층을 표현하는 데 사용됩니다. 배경&#40;BG&#41;, 텍스트&#40;Text&#41;, 선&#40;Line&#41; 등에 적용되며, 특히 텍스트는 가독성을 위해 배경과의 명암비를 고려해야 합니다.</span></p>
+						<div class="g-color-palettes">
+							<ul class="data-list">
+								<li class="data-item base-010">
+									<span class="data-name">base-010</span> <span class="data-code">#181818<br>&#40;24, 24, 24&#41;</span>
+								</li>
+								<li class="data-item base-020">
+									<span class="data-name">base-020</span> <span class="data-code">#303030<br>&#40;48, 48, 48&#41;</span>
+								</li>
+								<li class="data-item base-030">
+									<span class="data-name">base-030</span> <span class="data-code">#606060<br>&#40;96, 96, 96&#41;</span>
+								</li>
+								<li class="data-item base-040">
+									<span class="data-name">base-040</span> <span class="data-code">#767676<br>&#40;118, 118, 118&#41;</span>
+								</li>
+								<li class="data-item base-050">
+									<span class="data-name">base-050</span> <span class="data-code">#919191<br>&#40;145, 145, 145&#41;</span>
+								</li>
+								<li class="data-item base-060">
+									<span class="data-name">base-060</span> <span class="data-code">#a9a9a9<br>&#40;69, 169, 169&#41;</span>
+								</li>
+								<li class="data-item base-070">
+									<span class="data-name">base-070</span> <span class="data-code">#c1c1c1<br>&#40;193, 193, 193&#41;</span>
+								</li>
+								<li class="data-item base-080">
+									<span class="data-name">base-080</span> <span class="data-code">#d9d9d9<br>&#40;217, 217, 217&#41;</span>
+								</li>
+								<li class="data-item base-090">
+									<span class="data-name">base-090</span> <span class="data-code">#f2f2f2<br>&#40;242, 242, 242&#41;</span>
+								</li>
+								<li class="data-item base-095">
+									<span class="data-name">base-095</span> <span class="data-code">#fbfbfb<br>&#40;251, 251, 251&#41;</span>
+								</li>
+							</ul>
+						</div>
+						<p class="g-title-s"><span class="title">System color</span> <span class="em">사용자에게 시스템 상태를 직관적으로 알리는 데 사용됩니다. 예&#41; 오류&#40;error&#41;, 경고&#40;warning&#41;, 성공&#40;success&#41; 상태를 나타내는 색상이 있습니다.</span></p>
+						<div class="g-color-palettes">
+							<ul class="data-list">
+								<li class="data-item system-010">
+									<span class="data-name">system-010</span> <span class="data-code">#d32f2f<br>&#40;211, 47, 47&#41;</span>
+								</li>
+								<li class="data-item system-020">
+									<span class="data-name">system-020</span> <span class="data-code">#f9a825<br>&#40;249, 168, 37&#41;</span>
+								</li>
+								<li class="data-item system-030">
+									<span class="data-name">system-030</span> <span class="data-code">#4caf50<br>&#40;76, 175, 80&#41;</span>
+								</li>
+								<li class="data-item system-040">
+									<span class="data-name">system-040</span> <span class="data-code">#0091ea<br>&#40;0, 145, 234&#41;</span>
+								</li>
+							</ul>
+						</div>						
+					</section>
+					<!-- color -->
+
+					<!-- icon -->
+					<section class="g-section" id="icon">
+						<h3 class="g-heading-m">아이콘<span class="em">&#40;Icon&#41;</span></h3>
+						<div class="g-icon-area">
+							<h4 class="g-title-s">System</h4>
+							<div class="g-icon-list">
+								<ul class="data-list">
+									<li class="data-item icon"><span class="data-name">attatchment</span></li>
+									<li class="data-item icon"><span class="data-name">check</span></li>
+									<li class="data-item icon"><span class="data-name">close</span></li>
+									<li class="data-item icon"><span class="data-name">delete-circle</span></li>
+									<li class="data-item icon"><span class="data-name">eye-open</span></li>
+									<li class="data-item icon"><span class="data-name">eye-closed</span></li>
+									<li class="data-item icon"><span class="data-name">heart</span></li>
+									<li class="data-item icon"><span class="data-name">heart-fill</span></li>
+									<li class="data-item icon"><span class="data-name">kakaotalk</span></li>
+									<li class="data-item icon"><span class="data-name">link</span></li>
+									<li class="data-item icon"><span class="data-name">menu</span></li>
+									<li class="data-item icon"><span class="data-name">search</span></li>
+									<li class="data-item icon"><span class="data-name">share</span></li>
+									<li class="data-item icon"><span class="data-name">upload</span></li>
+								</ul>
+							</div>
+							<h4 class="g-title-s">Direction</h4>
+							<div class="g-icon-list">
+								<ul class="data-list">
+									<li class="data-item icon"><span class="data-name">arrow-left</span></li>
+									<li class="data-item icon"><span class="data-name">arrow-right</span></li>
+									<li class="data-item icon"><span class="data-name">chevron-up</span></li>
+									<li class="data-item icon"><span class="data-name">chevron-down</span></li>
+									<li class="data-item icon"><span class="data-name">chevron-left-last</span></li>
+									<li class="data-item icon"><span class="data-name">chevron-left</span></li>
+									<li class="data-item icon"><span class="data-name">chevron-right</span></li>
+									<li class="data-item icon"><span class="data-name">chevron-right-last</span></li>
+								</ul>
+							</div>
+							<h4 class="g-title-s">Bullet</h4>
+							<div class="g-icon-list">
+								<ul class="data-list">
+									<li class="data-item icon"><span class="data-name">bullet-dot</span></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<!-- icon -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			var svgIcons = document.querySelectorAll('.icon .data-name');
+			Array.prototype.forEach.call(svgIcons, function (icon) {
+				icon.parentElement.classList.add(icon.textContent);
+			});
+		});
+	</script>
+</body>
+</html>

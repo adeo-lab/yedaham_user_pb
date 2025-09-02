@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- style -->
+					<section class="g-section">
+						<h3 class="g-heading-m">테이블 <span class="em">&#40;Table&#41;</span></h3>
+						<h4 class="g-heading-s">스타일</h4>
+						<ul class="g-data-list">
+							<li class="data-item">
+								<strong>텍스트 데이터와 명목 데이터는 왼쪽 정렬</strong>
+								<p class="para">일반 텍스트 데이터와 범주를 나타내는 명목 데이터(예: 날짜, 우편번호, 핸드폰 번호, IP 주소 등)</p>
+							</li>
+							<li class="data-item">
+								<strong>양적 데이터는 오른쪽 정렬</strong>
+								<p class="para">숫자 데이터(예: 개수, 퍼센트, 용량 등)는 오른쪽으로 정렬</p>
+							</li>
+							<li class="data-item">
+								<strong>빈 데이터 셀에는 대시(-) 기호 사용</strong>
+								<p class="para">데이터가 없는 경우, 셀을 비워두지 않고 대시(-) 기호를 사용</p>
+							</li>
+						</ul>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="data-table">
+										<table>
+											<colgroup></colgroup>
+											<thead>
+												<tr>
+													<th>항목</th>
+													<th>텍스트</th>
+													<th>정렬(align)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>1</th>
+													<td>기본 (default), <span class="em">강조 (.em),</span> <strong>중요 (strong)</strong></td>
+													<td>-</td>
+												</tr>
+												<tr>
+													<th>2</th>
+													<td class="align-lt">텍스트 데이터와 명목 데이터</td>
+													<td class="align-lt">align-lt</td>
+												</tr>
+												<tr>
+													<th>3</th>
+													<td class="align-rt">양적 데이터</td>
+													<td class="align-rt">align-rt</td>
+												</tr>
+												<tr>
+													<th>3</th>
+													<td class="align-ct">-</td>
+													<td class="align-ct">align-ct</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="data-table">
+										<table>
+											<colgroup></colgroup>
+											<thead>
+												<tr>
+													<th rowspan="2">항목</th>
+													<th colspan="2">항목</th>
+													<th rowspan="2">항목</th>
+												</tr>
+												<tr>
+													<th>항목-1</th>
+													<th>항목-2</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>1</th>
+													<td>-</td>
+													<td>-</td>
+													<td>-</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;div class="data-table"&gt;
+	&lt;table&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: auto" /&gt;
+			&lt;col style="width: auto" /&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th>항목&lt;/th&gt;
+				&lt;th>항목&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td&gt;1&lt;/td&gt;
+				&lt;td class="align-lt"&gt;기본&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //style -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 스킵 영역 -->
+		<div id="skip" class="skip"></div>
+		<!-- //스킵 영역 -->
+
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- layout -->
+					<section class="g-section" id="structure">
+						<h3 class="g-heading-m">구조 <span class="em">&#40;Structure&#41;</span></h3>
+
+						<!-- g-folder -->
+						<h4 class="g-heading-s">폴더</h4>
+						<div class="g-folder-tree">
+							<div class="g-tree-area">
+								<p class="g-body-l">front</p>
+								<ul class="tree-list">
+									<li>
+										assets
+										<ul class="tree-depth">
+											<li>css</li>
+											<li>fonts</li>
+											<li>images</li>
+											<li>js</li>
+											<li>scss</li>
+										</ul>
+									</li>
+									<li>
+										page
+										<ul class="tree-depth">
+											<li>html</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="g-tree-area">
+								<p class="g-body-l">guide</p>
+								<ul class="tree-list">
+									<li>
+										assets
+										<ul class="tree-depth">
+											<li>css</li>
+											<li>fonts</li>
+											<li>images</li>
+											<li>js</li>
+											<li>scss</li>
+										</ul>
+									</li>
+									<li>
+										page
+										<ul class="tree-depth">
+											<li>html</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //g-folder -->
+
+						<!-- g-head -->
+						<h4 class="g-heading-s">헤드</h4>
+						<div class="g-code-area g-toggle">
+							<div class="toggle-wrap">
+								<div class="toggle-head">
+									<button class="btn-toggle" type="button">코드 보기</button>
+								</div>
+								<div class="toggle-body">
+									<div class="g-code-box">
+										<pre class="highlight-js">
+<code class="html">&lt;meta charset="UTF-8" /&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" /&gt;
+&lt;title&gt;GUIDE - Ucomp&lt;/title&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge" /&gt;
+
+&lt;meta name="keyword" content="GUIDE - Ucomp"&gt;
+&lt;meta name="description" content="GUIDE - Ucomp"&gt;
+&lt;meta name="author" content="U:"&gt;
+&lt;meta http-equiv="Subject" content="GUIDE - Ucomp"&gt;
+&lt;meta http-equiv="Title" content="GUIDE - Ucomp"&gt;
+&lt;meta http-equiv="publisher" content="U:" /&gt;
+&lt;meta http-equiv="Generator" content="Visual Studio Code" /&gt;
+
+&lt;link rel="shortcut icon" href="/images/app/favicon.ico" /&gt;
+
+&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:url" content=""&gt;
+&lt;meta property="og:title" content="GUIDE - Ucomp"&gt;
+&lt;meta property="og:image" content=""&gt;
+&lt;meta property="og:description" content="GUIDE - Ucomp"&gt;
+&lt;meta property="og:site_name" content="GUIDE - Ucomp"&gt;
+&lt;meta property="og:locale" content="ko_KR"&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //g-head -->
+
+						<!-- g-include -->
+						
+						<!-- //g-include -->
+					</section>
+					<!-- //layout -->
+
+					<!-- include -->
+					<section class="g-section" id="include">
+						<h3 class="g-heading-m">포함 <span class="em">&#40;Include&#41;</span></h3>
+						<p class="g-title-s">CORS <span class="em">웹 브라우저는 보안을 위해 동일 출처 정책(Same-Origin Policy)을 따릅니다. 이로 인해 모든 페이지에 공통으로 사용되는 부분은 ui.include.js 스크립트를 사용하여 삽입할 수 있습니다.</span></h>
+						<!-- header -->
+						<h4 class="g-heading-s">헤더</h4>
+						<div class="g-code-area g-toggle">
+							<div class="toggle-wrap">
+								<div class="toggle-head">
+									<button class="btn-toggle" type="button">코드 보기</button>
+								</div>
+								<div class="toggle-body">
+									<div class="g-code-box">
+										<pre class="highlight-js">
+<code class="html">&lt;header id="header" class="header"&gt;
+	&lt;div class="header-inner"&gt;
+		&lt;h1 class="logo"&gt;&lt;a href="#" title="메인으로 이동" class="logo-link"&gt;로고&lt;/a&gt;&lt;/h1&gt;
+		&lt;nav class="gnb" id="gnb"&gt;
+			&lt;ul class="gnb-list"&gt;
+				&lt;li class="gnb-item"&gt;
+					&lt;a href="#" class="gnb-text"&gt;메뉴1&lt;/a&gt;
+					&lt;ul class="lnb-list"&gt;
+						&lt;li class="lnb-item">&lt;a href="#" class="lnb-text"&gt;메뉴1-1&lt;/a&gt;&lt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //header -->
+
+						<!-- footer -->
+						<h4 class="g-heading-s">푸터</h4>
+						<div class="g-code-area g-toggle">
+							<div class="toggle-wrap">
+								<div class="toggle-head">
+									<button class="btn-toggle" type="button">코드 보기</button>
+								</div>
+								<div class="toggle-body">
+									<div class="g-code-box">
+										<pre class="highlight-js">
+<code class="html">&lt;footer id="footer"&gt;
+	&lt;div class="footer-inner"&gt;&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // footer -->
+
+						<!-- skip -->
+						<h4 class="g-heading-s">스킵</h4>
+						<div class="g-code-area g-toggle">
+							<div class="toggle-wrap">
+								<div class="toggle-head">
+									<button class="btn-toggle" type="button">코드 보기</button>
+								</div>
+								<div class="toggle-body">
+									<div class="g-code-box">
+										<pre class="highlight-js">
+<code class="html">&lt;div id="skip" class="skip"&gt;
+	&lt;div class="skip-wrap"&gt;
+		&lt;a href="#nav"&lt;메뉴 바로가기&lt;/a&gt;
+		&lt;a href="#container"&gt;본문 바로가기&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //skip -->
+					</section>
+					<!-- //include -->
+
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

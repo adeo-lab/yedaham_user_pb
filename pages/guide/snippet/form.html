@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- element -->
+					<section class="g-section">
+						<h3 class="g-heading-m">폼 <span class="em">&#40;Form&#41;</span></h3>
+						<h4 class="g-heading-s">요소</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<!-- <div class="form-group">
+										<span class="form-tit">타이틀</span>
+										<span class="form input">
+											<input class="form-elem" type="text" placeholder="style-a">
+										</span>
+									</div> -->
+									<h5 class="g-title-s">input</h5>
+									<div class="g-form-area">
+										<span class="form input">
+											<input class="form-elem" type="text" placeholder="default">
+											<span class="form-btn"><button type="button" class="btn-cancel" title="삭제"></button></span>
+										</span>
+										<span class="form input">
+											<input class="form-elem" type="text" placeholder="default" value="default">
+											<span class="form-btn"><button type="button" class="btn-cancel" title="삭제"></button></span>
+										</span>
+										<span class="form input readonly"><input class="form-elem" type="text" placeholder="readonly" value="readonly" readonly></span>
+										<span class="form input disabled"><input class="form-elem" type="text" placeholder="Default" value="disabled" disabled></span>
+									</div>
+									<h5 class="g-title-s"> password</h5>
+									<div class="g-form-area">
+										<span class="form input password">
+											<input class="form-elem" type="password" placeholder="비밀번호를 입력해 주세요." value="aaaaaaa" required="" aria-label="비밀번호">
+											<button type="button" class="btn-password" title="비밀번호 노출하기"></button>
+										</span>
+										<span class="form input password readonly">
+											<input class="form-elem" type="password" placeholder="비밀번호를 입력해 주세요." value="aaaaaaa" required="" aria-label="비밀번호" readonly>
+											<button type="button" class="btn-password" title="비밀번호 노출하기"></button>
+										</span>
+										<span class="form input password disabled">
+											<input class="form-elem" type="password" placeholder="비밀번호를 입력해 주세요." value="aaaaaaa" required="" aria-label="비밀번호" disabled>
+											<button type="button" class="btn-password" title="비밀번호 노출하기"></button>
+										</span>
+									</div>
+									<h5 class="g-title-s">limit</h5>
+									<div class="g-form-area">
+										<span class="form input">
+											<input class="form-elem" type="text" placeholder="제목을 입력해 주세요." required aria-label="제목">
+											<span class="form-limit"><span class="count">0</span><span class="part">/</span><span class="limit">70 byte</span></span>
+										</span>
+										<span class="form input readonly">
+											<input class="form-elem" type="text" placeholder="제목을 입력해 주세요." required aria-label="제목" readonly>
+											<span class="form-limit"><span class="count">0</span><span class="part">/</span><span class="limit">70 byte</span></span>
+										</span>
+										<span class="form input disabled">
+											<input class="form-elem" type="text" placeholder="제목을 입력해 주세요." required aria-label="제목" disabled>
+											<span class="form-limit"><span class="count">0</span><span class="part">/</span><span class="limit">70 byte</span></span>
+										</span>
+									</div>
+									<h5 class="g-title-s">select</h5>
+									<div class="g-form-area">
+										<span class="form select">
+											<select name="select" id="select" class="form-elem">
+												<option value="#">default</option>
+											</select>
+										</span>
+										<span class="form select readonly">
+											<select name="select" id="select" class="form-elem" readonly>
+												<option value="#">readonly</option>
+											</select>
+										</span>
+										<span class="form select disabled">
+											<select name="select" id="select" class="form-elem" disabled>
+												<option value="#">disabled</option>
+											</select>
+										</span>
+									</div>
+									<h5 class="g-title-s">textarea</h5>
+									<div class="g-form-area">
+										<span class="form textarea">
+											<textarea name="textarea" id="textarea" class="form-elem" placeholder="default">default</textarea>
+											<p class="form-counter">
+												<span class="text-primary">0</span><span class="text-num">/100</span>
+											</p>
+										</span>
+										<span class="form textarea readonly">
+											<textarea name="textarea" id="textarea" class="form-elem" placeholder="readonly">readonly</textarea>
+											<p class="form-counter">
+												<span class="text-primary">0</span><span class="text-num">/100</span>
+											</p>
+										</span>
+										<span class="form textarea disabled">
+											<textarea name="textarea" id="textarea" class="form-elem" placeholder="disabled">disabled</textarea>
+											<p class="form-counter">
+												<span class="text-primary">0</span><span class="text-num">/100</span>
+											</p>
+										</span>
+									</div>
+									<h5 class="g-title-s">radio</h5>
+									<div class="g-form-area">
+										<label class="form radio">
+											<input type="radio" name="radio" id="radio1" class="form-elem" />
+											<span class="form-text">radio-a</span>
+										</label>
+										<label class="form radio">
+											<input type="radio" name="radio" id="radio2" class="form-elem" checked />
+											<span class="form-text">radio-b</span>
+										</label>
+										<label class="form radio disabled">
+											<input type="radio" name="radio" id="radio3" class="form-elem" disabled />
+											<span class="form-text">radio-c</span>
+										</label>
+									</div>
+									<h5 class="g-title-s">checkbox</h5>
+									<div class="g-form-area">
+										<label class="form checkbox">
+											<input type="checkbox" name="checkbox" id="checkbox" class="form-elem" />
+											<span class="form-text">checkbox-a</span>
+										</label>
+										<label class="form checkbox">
+											<input type="checkbox" name="checkbox" id="checkbox" class="form-elem" checked />
+											<span class="form-text">checkbox-b</span>
+										</label>
+										<label class="form checkbox disabled">
+											<input type="checkbox" name="checkbox" id="checkbox" class="form-elem" disabled />
+											<span class="form-text">checkbox-c</span>
+										</label>
+									</div>
+									<h5 class="g-title-s">switch</h5>
+									<div class="g-form-area">
+										<label class="form switch">
+											<input class="form-elem" type="checkbox" checked="checked" />
+											<span class="form-text">switch-a</span>
+										</label>
+										<label class="form switch">
+											<input class="form-elem" type="checkbox" />
+											<span class="form-text">switch-b</span>
+										</label>
+										<label class="form switch">
+											<input class="form-elem" type="checkbox" disabled />
+											<span class="form-text">switch-c</span>
+										</label>
+									</div>
+									<h5 class="g-title-s">file</h5>
+									<div class="g-form-area">
+										<div class="file-upload">
+											<!-- 파일 첨부 전 -->
+											<label class="file-upload-btn" for="fileInput01">
+												<span class="form-text">첨부파일을 업로드해 주세요</span>
+												<!-- <a href="#" class="file-text"><span class="file-name">업로드_후_파일명_노출</span><span class="extension">.pdf</span></a>
+												<button class="btn-delete" type="button" title="닫기"></button> -->
+												<input type="file" class="form-elem" id="fileInput01">
+											</label>
+											<!-- //파일 첨부 전 -->
+											
+											<!-- 파일 첨부 후 -->
+											<label class="file-upload-btn" for="fileInput02">
+												<!-- <span class="form-text">첨부파일을 업로드해 주세요</span> -->
+												<a href="#" class="file-text"><span class="file-name">업로드_후_파일명_노출</span><span class="extension">.pdf</span></a>
+												<button class="btn-delete" type="button" title="닫기"></button>
+												<input type="file" class="form-elem" id="fileInput02">
+											</label>
+											<!-- //파일 첨부 후 -->
+											<p class="form-noti">10MB 이하로 등록 가능합니다.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js"><code class="html">&lt;span class="form input readonly disabled"&gt;&lt;input class="form-elem" type="text" readonly disabled /&gt;&lt;/span&gt;
+
+&lt;span class="form select readonly disabled"&gt;
+	&lt;select name="select" id="select" class="form-elem"&gt;
+		&lt;option value="#"&gt;default&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/span&gt;
+
+&lt;span class="form textarea readonly disabled"&gt;
+	&lt;textarea name="textarea" id="textarea" class="form-elem" placeholder="default" readonly disabled&gt;&lt;/textarea&gt;
+	&lt;p class="form-counter"&gt;
+		&lt;span class="text-primary">0&lt;/span>&lt;span class="text-num"&gt;/100&lt;/span&gt;
+	&lt;/p&gt;
+&lt;/span&gt;
+
+&lt;label class="form radio disabled"&gt;
+	&lt;input type="radio" name="radio" id="radio" class="form-elem" checked disabled /&gt;
+	&lt;span class="form-text"&gt;radio-a&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;label class="form checkbox disabled"&gt;
+	&lt;input type="checkbox" name="checkbox" id="checkbox" class="form-elem" checked disabled /&gt;
+	&lt;span class="form-text">checkbox-a&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;label class="form switch disabled"&gt;
+	&lt;input type="checkbox" class="form-elem" checked disabled /&gt;
+	&lt;span class="form-text">switch-a&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;label class="file-upload-btn" for="fileInput01"&gt;
+	&lt;span class="form-text">첨부파일을 업로드해 주세요&lt;/span&gt;
+	&lt;a href="#" class="file-text"&gt;&lt;span class="file-name"&gt;업로드_후_파일명_노출&lt;/span&gt;&lt;span class="extension"&gt;첨부파일.pdf&lt;/span&gt;&lt;/a&gt;
+	&lt;button class="btn-delete" type="button" title="닫기"&gt;&lt;/button&gt;
+	&lt;input type="file" class="form-elem" id="fileInput01"&gt;
+&lt;/label&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //element -->
+					<!-- size -->
+					<section class="g-section">
+						<h4 class="g-heading-s">사이즈</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="g-form-area">
+										<span class="form input small">
+											<input class="form-elem" type="text" placeholder="small" value="small" />
+										</span>
+										<span class="form input medium">
+											<input class="form-elem" type="text" placeholder="medium" value="medium" />
+										</span>
+										<span class="form input large">
+											<input class="form-elem" type="text" placeholder="large" value="large" />
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;span class="form input small"&gt;
+	&lt;input class="form-elem" type="text" /&gt;
+&lt;/span&gt;
+&lt;span class="form input medium"&gt;
+	&lt;input class="form-elem" type="text" /&gt;
+&lt;/span&gt;
+&lt;span class="form input large"&gt;
+	&lt;input class="form-elem" type="text" /&gt;
+&lt;/span&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //size -->
+
+					<!-- vaild -->
+					<section class="g-section">
+						<h4 class="g-heading-s">유효성</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div>
+										<span class="form input valid"><input class="form-elem" type="text" value="valid" /></span>
+										<p class="form-noti valid">성공 문구가 노출됩니다.</p>
+									</div>
+									<div>
+										<span class="form input invalid"><input class="form-elem" type="text" value="invalid" /></span>
+										<p class="form-noti invalid">입력 형식이 올바르지 않습니다.</p>
+									</div>
+									<div>
+										<span class="form input invalid"><input class="form-elem" type="text" value="invalid" /></span>
+										<p class="form-validator">
+											<span class="eng valid">영문</span><span class="num invalid">숫자</span><span class="characters">특수문자</span><span class="length">10자 이상 15자 이하</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;span class="form input valid"&gt;
+	&lt;input class="form-elem" type="text" /&gt;
+&lt;/span&gt;
+&lt;p class="form-noti valid"&gt;성공 문구가 노출됩니다.&lt;/p&gt;
+
+&lt;span class="form input invalid"&gt;
+	&lt;input class="form-elem" type="text" /&gt;
+&lt;/span&gt;
+&lt;p class="form-noti invalid"&gt;입력 형식이 올바르지 않습니다.&lt;/p&gt;
+
+&lt;span class="form input invalid"&gt;
+	&lt;input class="form-elem" type="text" /&gt;
+&lt;/span&gt;
+&lt;p class="form-validator"&gt;
+	&lt;span class="eng valid"&gt;영문&lt;/span&gt;
+	&lt;span class="num invalid"&gt;숫자&lt;/span&gt;
+	&lt;span class="characters"&gt;특수문자&lt;/span&gt;
+	&lt;span class="length"&gt;10자 이상 15자 이하&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //vaild -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+/********************************************************************************************************************************
+
+ * Web Font
+
+********************************************************************************************************************************/
+/*
+ * Pretendard 400, 500. 700
+ */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css");
+/********************************************************************************************************************************
+
+ * Reset
+
+********************************************************************************************************************************/
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, span, a, table, thead, tfoot, tbody, th, td, form, legend, label, input, textarea, address, strong, em, pre, q, abbr, acronym, cite, blockquote, object, iframe, figure {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  /*letter-spacing: -0.5px;*/
+  -webkit-text-size-adjust: none;
+}
+
+img, fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+ul, ol, li {
+  list-style-type: none;
+  list-style: none;
+}
+
+select, input, textarea {
+  font-family: inherit;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+legend, caption {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+}
+a:link, a:visited, a:active, a:focus {
+  text-decoration: none;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=checkbox], input[type=radio], input[type=number] {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+textarea, select {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+::-moz-selection {
+  background-color: #121212;
+  color: #fff;
+}
+
+::selection {
+  background-color: #121212;
+  color: #fff;
+}
+
+/********************************************************************************************************************************
+
+ * color
+
+********************************************************************************************************************************/
+/********************************************************************************************************************************
+
+ * typography
+
+********************************************************************************************************************************/
+.g-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+.g-container .g-content.g-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.g-container .g-content.g-intro .g-intro-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 64px;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-head .g-intro-logo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-head .g-intro-logo svg {
+  width: 100%;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-head .g-intro-subject {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-body .para {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #c1c1c1;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-body .button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-body .button-area .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #c1c1c1;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.g-container .g-content.g-intro .g-intro-inner .g-intro-body .button-area .btn:hover {
+  background-color: #a9a9a9;
+}
+/*# sourceMappingURL=../../maps/guide/css/g.page.intro.css.map */
