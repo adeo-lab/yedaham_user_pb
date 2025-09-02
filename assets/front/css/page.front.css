@@ -3119,6 +3119,30 @@ z-index: 10;
 .tab-display.tab-fixed.fixed .tab-list {width: 1200px; margin: 0 auto;}
 .tab-display.tab-fixed.fixed .tab-list .tab-item .tab-text {height: 36px; font-weight: 400; font-size: 17px; line-height: 150%; padding: 5px 12px; box-sizing: border-box;}
 
+.tab-display.style-b .tab-inner-bx {position: relative; width: 1200px; margin: 0 auto;}
+.tab-display.style-b .btn-mob-r {display: none;}
+.tab-display.style-b .btn-mob-r .btn-r-ty01 {
+  display: inline-block;
+  height: 40px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFF;
+  line-height: 150%;
+  padding: 7px 20px;
+  background: #D17B47;
+  border-radius: 32px;
+  box-sizing: border-box;
+}
+.tab-display.style-b.fixed .btn-mob-r {position: absolute; top: -2px; right: 0; display: block;}
+.tab-display.style-b.fixed .btn-mob-r .tx-fixed-on {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 17px;
+    color: #777;
+    line-height: 130%;
+    padding-right: 20px;
+}
+
 /*.page-head.title-fixed .heading-l {transition: 0.2s;}
 .page-head.title-fixed .btn-r-ty01 {transition: 0.2s;}*/
 .page-head {display: block;}
