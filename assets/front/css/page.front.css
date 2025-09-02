@@ -3121,9 +3121,9 @@ z-index: 10;
 
 /*.page-head.title-fixed .heading-l {transition: 0.2s;}
 .page-head.title-fixed .btn-r-ty01 {transition: 0.2s;}*/
-.page-head.title-fixed {display: block;}
+.page-head {display: block;}
 .page-head.title-fixed .tx-fixed-on {display: none;}
-.page-head.title-fixed .title-inner-bx {display: flex; justify-content: space-between; align-items: center;}
+.page-head .title-inner-bx {display: flex; justify-content: space-between; align-items: center;}
 .page-head.title-fixed.fixed {position: fixed; top: 100px; left: 0; width: 100%; padding: 20px 0; background: #EEEEED; z-index: 9;}
 .page-head.title-fixed.fixed .title-inner-bx {width: 1200px; margin: 0 auto;}
 .page-head.title-fixed.fixed .heading-l {font-weight: 600; font-size: 24px; line-height: 40px; /*transition: 0.2s;*/}
