@@ -1918,11 +1918,35 @@ button.swiper-pagination-bullet {
   text-align: center;
   cursor: pointer;
 }
-.tab-display.style-a.white .tab-list .tab-item {
+
+.tab-display.style-b {
+  width: 100%;
+}
+.tab-display.style-b .tab-list .tab-item {
+  display: inline-block;
+  width: auto;
+}
+.tab-display.style-b .tab-list .tab-item {
+  display: inline-block;
+  border-radius: 32px;
   background-color: #FFF;
 }
-.tab-display.style-a.white .tab-list .tab-item.current {
+.tab-display.style-b .tab-list .tab-item.current {
   background-color: #232527;
+}
+.tab-display.style-b .tab-list .tab-item.current .tab-text {
+  color: #fff;
+}
+.tab-display.style-b .tab-list .tab-item .tab-text {
+  display: inline-block;
+  position: relative;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 130%;
+  color: #777;
+  text-align: center;
+  cursor: pointer;
 }
 
 .tab-contents .tab-content {
