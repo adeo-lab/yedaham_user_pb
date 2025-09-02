@@ -212,7 +212,6 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기​​</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">탭 상단 고정 방식 논의 필요​​</span></p>
 						${createMenuLink("customer/FO_Y_CC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
