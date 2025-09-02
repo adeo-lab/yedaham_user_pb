@@ -3120,6 +3120,7 @@ z-index: 10;
 .tab-display.tab-fixed.fixed .tab-list .tab-item .tab-text {height: 36px; font-weight: 400; font-size: 17px; line-height: 150%; padding: 5px 12px; box-sizing: border-box;}
 
 .tab-display.style-b .tab-inner-bx {position: relative; width: 1200px; margin: 0 auto;}
+.tab-display.style-b .tab-inner-bx .tab-list {display: flex; column-gap: 12px;}
 .tab-display.style-b .btn-mob-r {display: none;}
 .tab-display.style-b .btn-mob-r .btn-r-ty01 {
   display: inline-block;
