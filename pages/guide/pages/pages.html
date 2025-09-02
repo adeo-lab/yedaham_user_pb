@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const urlParams = new URLSearchParams(window.location.search);
+			const page = urlParams.get('page') || 'main/PC_MA_01.html';
+			const origin = location.origin;
+			let url = '';
+
+			if (location.host === '') {
+				url = `../../front/${page}`;
+			} else if (location.hostname.includes('github.io')) {
+				const projectName = 'publishing-guide';
+				url = `${origin}/${projectName}/pages/front/${page}`;
+			} else {
+				url = `${origin}/pages/front/${page}`;
+			}
+
+			// console.log('Generated URL:', url);
+			document.querySelector('#gFrame').src = url;
+			const heading = document.querySelector('.g-heading-s');
+			const pageNameLink = document.createElement('a');
+			pageNameLink.className = 'g-ico-link';
+			pageNameLink.textContent = page;
+			pageNameLink.href = url;
+			pageNameLink.target = '_blank';
+			heading.appendChild(pageNameLink);
+		});
+	</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-pages">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">미리보기 화면</h2>
+				</div>
+				<div class="g-content-body">
+					<div class="g-iframe-area">
+						<iframe src="" frameborder="0" id="gFrame" name="gFrame"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

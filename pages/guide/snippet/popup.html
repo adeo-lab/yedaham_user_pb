@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- popup -->
+					<section class="g-section">
+						<h3 class="g-heading-m">팝업 <span class="em">&#40;Popup&#41;</span></h3>
+						<h4 class="g-heading-s">dialogPopup</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<!-- <h5 class="g-title-s"><a href="#" class="btn-a btn-popup-open" data-popup-target="dialogPopup"><span class="btn-text">dialogPopup</span></a></h5> -->
+									<h5 class="g-title-s"><button type="button" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('dialogPopup')">dialogPopup</button></h5>
+									<!-- dialogPopup -->
+									<div class="dialog-popup" data-popup="dialogPopup">
+										<div class="popup-wrap">
+											<div class="popup-header">
+												<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+											</div>
+											<div class="popup-body">
+												<div class="popup-contents"> 내용 </div>
+											</div>
+											<div class="popup-footer">
+												<div class="button-area">
+													<a href="#" class="btn-popup disabled">취소</a>
+													<a href="#" class="btn-popup">확인</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //dialogPopup -->
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;a href="#" class="btn-popup-open" data-popup-target="특정ID"&gt;팝업열림버튼&lt;/a&gt;
+&lt;button type="button" class="btn-popup-open" onclick="uiCommon.popup.popupOpen('dialogPopup')"&gt;팝업열림버튼&lt;/button&gt;
+	
+&lt;div class="dialog-popup" data-popup="특정ID"&gt;
+	&lt;div class="popup-wrap"&gt;
+		&lt;div class="popup-header"&gt;
+			&lt;button type="button" class="btn-popup-close" title="팝업창 닫기"&gt;팝업창 닫기&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="popup-body"&gt;
+			&lt;div class="popup-contents"&gt; 내용 &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="popup-footer"&gt;
+			&lt;div class="button-area"&gt;
+				&lt;a href="#" class="btn-popup"&gt;취소&lt;/a&gt;
+				&lt;a href="#" class="btn-popup"&gt;확인&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //popup -->
+
+					<!-- popup -->
+					<section class="g-section">
+						<h4 class="g-heading-s">contentPopup</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<h5 class="g-title-s"><a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentPopup')"><span class="btn-text">contentPopup</span></a></h5>
+									<!-- <h5 class="g-title-s"><a href="#" class="btn-a btn-popup-open" data-popup-target="contentPopup"><span class="btn-text">contentPopup</span></a></h5> -->
+									<!-- contentPopup -->
+									<div class="content-popup" data-popup="contentPopup">
+										<div class="popup-wrap">
+											<div class="popup-header">
+												<p class="popup-subject">타이틀</p>
+												<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+											</div>
+											<div class="popup-body">
+												<div class="popup-contents"> 내용</div>
+											</div>
+											<div class="popup-footer">
+												<div class="button-area">
+													<a href="#" class="btn-popup">취소</a>
+													<a href="#" class="btn-popup">확인</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //contentPopup -->
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+											<pre class="highlight-js">
+<code class="html">&lt;a href="#" class="btn-popup-open" data-popup-target="특정ID"&gt;팝업열림버튼&lt;/a&gt;
+&lt;button type="button" class="btn-popup-open" onclick="uiCommon.popup.popupOpen('dialogPopup')"&gt;팝업열림버튼&lt;/button&gt;
+
+&lt;div class="content-popup" data-popup="특정ID"&gt;
+	&lt;div class="popup-wrap"&gt;
+		&lt;div class="popup-header"&gt;
+			&lt;p class="popup-subject"&gt;타이틀&lt;/p&gt;
+			&lt;button type="button" class="btn-popup-close" title="팝업창 닫기"&gt;팝업창 닫기&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="popup-body"&gt;
+			&lt;div class="popup-contents"&gt; 내용 &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="popup-footer"&gt;
+			&lt;div class="button-area"&gt;
+				&lt;a href="#" class="btn-popup"&gt;취소&lt;/a&gt;
+				&lt;a href="#" class="btn-popup"&gt;확인&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //popup -->
+
+					<!-- popup -->
+					<section class="g-section">
+						<h4 class="g-heading-s">toastPopup</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<h5 class="g-title-s"><a href="#" class="btn-a btn-popup-open" data-popup-target="toastPopup"><span class="btn-text">toastPopup</span></a></h5>
+									<!-- toastPopup -->
+									<div class="toast-popup" data-popup="toastPopup">
+										<div class="popup-wrap">
+											<div class="popup-body">
+												<div class="popup-contents">
+													<p class="para">첨부파일 업로드가 완료됐습니다.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //toastPopup -->
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+											<pre class="highlight-js">
+<code class="html">&lt;a href="#" class="btn-popup-open" data-popup-target="특정ID"&gt;팝업열림버튼&lt;/a&gt;
+&lt;button type="button" class="btn-popup-open" onclick="uiCommon.popup.popupOpen('dialogPopup')"&gt;팝업열림버튼&lt;/button&gt;
+
+&lt;div class="content-popup" data-popup="특정ID"&gt;
+	&lt;div class="popup-wrap"&gt;
+		&lt;div class="popup-header"&gt;
+			&lt;p class="popup-subject"&gt;타이틀&lt;/p&gt;
+			&lt;button type="button" class="btn-popup-close" title="팝업창 닫기"&gt;팝업창 닫기&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="popup-body"&gt;
+			&lt;div class="popup-contents"&gt; 내용 &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="popup-footer"&gt;
+			&lt;div class="button-area"&gt;
+				&lt;a href="#" class="btn-popup"&gt;취소&lt;/a&gt;
+				&lt;a href="#" class="btn-popup"&gt;확인&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //popup -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

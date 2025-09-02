@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- style -->
+					<section class="g-section">
+						<h3 class="g-heading-m">탭 <span class="em">&#40;Tab&#41;</span></h3>
+						<h4 class="g-heading-s">스타일</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<h5 class="g-title-s">style-a</h5>
+									<div class="tab-display style-a">
+										<ul class="tab-list">
+											<li class="tab-item current">
+												<a class="tab-text">1st item</a>
+											</li>
+											<li class="tab-item">
+												<a class="tab-text">2nd item</a>
+											</li>
+											<li class="tab-item">
+												<a class="tab-text">3rd item</a>
+											</li>
+										</ul>
+									</div>
+									<h5 class="g-title-s">style-b</h5>
+									<div class="tab-display style-b">
+										<ul class="tab-list">
+											<li class="tab-item current">
+												<a class="tab-text">1st item</a>
+											</li>
+											<li class="tab-item">
+												<a class="tab-text">2nd item</a>
+											</li>
+											<li class="tab-item">
+												<a class="tab-text">3rd item</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;div class="tab-display style-*"&gt;
+	&lt;ul class="tab-list"&gt;
+		&lt;li class="tab-item"&gt;
+			&lt;a class="tab-text"&gt;1rd item&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="tab-item"&gt;
+			&lt;a class="tab-text"&gt;2rd item&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="tab-item"&gt;
+			&lt;a class="tab-text"&gt;3rd item&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //style -->
+
+					<!-- panel -->
+					<section class="g-section">
+						<h4 class="g-heading-s">탭 패널 전환</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="tab-display style-b" data-tab="defaultTab">
+										<ul class="tab-list">
+											<li class="tab-item current">
+												<a class="tab-text" href="#" data-type="tab1">1st item</a>
+											</li>
+											<li class="tab-item">
+												<a class="tab-text" href="#" data-type="tab2">2nd item</a>
+											</li>
+											<li class="tab-item">
+												<a class="tab-text" href="#" data-type="tab3">3rd item</a>
+											</li>
+										</ul>
+										<!-- <div class="tab-contents">
+											<div id="tab1" class="tab-content on"></div>
+											<div id="tab2" class="tab-content"></div>
+											<div id="tab3" class="tab-content"></div>
+										</div> -->
+									</div>
+									<div class="tab-contents">
+										<div id="tab1" class="tab-content on">
+											<b>1st item</b><br>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel dolore magni beatae molestias tenetur veniam architecto asperiores perspiciatis accusamus minima cupiditate laborum quasi, perferendis voluptatum repellat harum quo aut!
+										</div>
+										<div id="tab2" class="tab-content">
+											<b>2nd item</b><br>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel dolore magni beatae molestias tenetur veniam architecto asperiores perspiciatis accusamus minima cupiditate laborum quasi, perferendis voluptatum repellat harum quo aut!
+										</div>
+										<div id="tab3" class="tab-content">
+											<b>3nd item</b><br>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel dolore magni beatae molestias tenetur veniam architecto asperiores perspiciatis accusamus minima cupiditate laborum quasi, perferendis voluptatum repellat harum quo aut!
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;div class="tab-display style-*"&gt;
+	&lt;ul class="tab-list"&gt;
+		&lt;li class="tab-item"&gt;
+			&lt;a class="tab-text"&gt;1rd item&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="tab-item"&gt;
+			&lt;a class="tab-text"&gt;2rd item&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="tab-item"&gt;
+			&lt;a class="tab-text"&gt;3rd item&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="tab-contents"&gt;
+	&lt;div id="tab1" class="tab-content on"&gt;
+		&lt;b&gt;1st item&lt;/b&gt;
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel dolore magni beatae molestias tenetur veniam architecto asperiores perspiciatis accusamus minima cupiditate laborum quasi, perferendis voluptatum repellat harum quo aut!
+	&lt;/div&gt;
+	&lt;div id="tab2" class="tab-content"&gt;
+		&lt;b&gt;2nd item&lt;/b&gt;
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel dolore magni beatae molestias tenetur veniam architecto asperiores perspiciatis accusamus minima cupiditate laborum quasi, perferendis voluptatum repellat harum quo aut!
+	&lt;/div&gt;
+	&lt;div id="tab3" class="tab-content"&gt;
+		&lt;b&gt;3nd item&lt;/b&gt;
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel dolore magni beatae molestias tenetur veniam architecto asperiores perspiciatis accusamus minima cupiditate laborum quasi, perferendis voluptatum repellat harum quo aut!
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //panel -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>

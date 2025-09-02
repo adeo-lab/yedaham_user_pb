@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>GUIDE - FRONT</title>
+	
+	<link rel="shortcut icon" href="../../../assets/guide/images/app/favicon.ico">
+	
+	<link rel="stylesheet" href="../../../assets/guide/css/g.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	
+	<script src="../../../assets/guide/js/include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="g-wrap">
+		<!-- 헤더 영역 -->
+		<!-- <header id="g-header"></header> -->
+		<!-- //헤더 영역 -->
+
+		<!-- 네비 영역 -->
+		<nav id="gNavi">
+		</nav>
+		<!-- //네비 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="g-container" id="g-container">
+			<div class="g-content g-guide">
+				<div class="g-content-head">
+					<h2 class="g-heading-s">컴포넌트 가이드</h2>
+				</div>
+				<div class="g-content-body">
+					<!-- pagination -->
+					<section class="g-section">
+						<h3 class="g-heading-m">기타 <span class="em">&#40;Etc&#41;</span></h3>
+						<h4 class="g-heading-s">페이지네이션</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="pagination">
+										<div class="page-wrap">
+											<button type="button" class="page-btn page-first" title="첫 페이지"></button>
+											<button type="button" class="page-btn page-prev" title="이전 페이지"></button>
+											<div class="page-num">
+												<a href="#" class="page-link current"><span>1</span></a>
+												<a href="#" class="page-link"><span>2</span></a>
+												<a href="#" class="page-link"><span>3</span></a>
+												<a href="#" class="page-link"><span>4</span></a>
+												<a href="#" class="page-link"><span>5</span></a>
+											</div>
+											<button type="button" class="page-btn page-next" title="다음 페이지"></a>
+											<button type="button" class="page-btn page-last" title="마지막 페이지"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;div class="pagination">
+	&lt;button type="button" class="page-btn page-first" title="첫 페이지">&lt;/button&gt;
+	&lt;button type="button" class="page-btn page-prev" title="이전 페이지">&lt;/button&gt;
+	&lt;div class="page-num"&gt;
+		&lt;a href="#" class="page-link current"&gt;<span>1&lt;/span>&lt;/a&gt;
+		&lt;a href="#" class="page-link"&gt;&lt;span&gt;2&lt;/span>&lt;/a&gt;
+		&lt;a href="#" class="page-link"&gt;&lt;span&gt;3&lt;/span>&lt;/a&gt;
+		&lt;a href="#" class="page-link"&gt;&lt;span&gt;4&lt;/span>&lt;/a&gt;
+		&lt;a href="#" class="page-link"&gt;&lt;span&gt;5&lt;/span>&lt;/a&gt;
+	&lt;/div>
+	&lt;button type="button" class="page-btn page-next" title="다음 페이지"&gt;&lt;/a&gt;
+	&lt;button type="button" class="page-btn page-last" title="마지막 페이지"&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //pagination -->
+					<!-- data-finder -->
+					<section class="g-section">
+						<h4 class="g-heading-s">검색</h4>
+						<div class="g-component">
+							<div class="g-component-area">
+								<div class="g-component-wrap">
+									<div class="data-finder">
+										<div class="data-page">
+											<span class="em">총 <strong>100</strong>건</span>
+											<span class="em">페이지 <strong><span id="currentPage">1</span> / <span id="totalPage">80</span></strong></span>
+										</div>
+										<div class="data-search">
+											<div class="search-type">
+												<label for="searchType" class="blind">검색유형선택</label>
+												<select name="searchType" id="searchType" class="form-search" title="검색유형선택">
+													<option value="title">제목</option>
+													<option value="content">내용</option>
+												</select>
+											</div>
+											<div class="search-word">
+												<label for="searchWord" class="blind">검색어 입력</label>
+												<div class="search-form">
+													<span class="form search-input">
+														<input type="text" class="form-elem" name="searchWord" placeholder="검색어를 입력해 주세요." maxlength="225">
+														<span class="form-btn">
+															<button type="button" class="btn-cancel" title="삭제"></button>
+														</span>
+													</span>
+													<button class="btn-search"><span class="btn-name">검색</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="data-func">
+											<div class="button-area">
+												<a href="#" class="btn-a style-a small">1:1 문의하기​</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="g-code-area g-toggle">
+								<div class="toggle-wrap">
+									<div class="toggle-head">
+										<button class="btn-toggle" type="button">코드 보기</button>
+									</div>
+									<div class="toggle-body">
+										<div class="g-code-box">
+<pre class="highlight-js">
+<code class="html">&lt;div class="data-finder"&gt;
+	&lt;div class="data-page"&gt;
+		&lt;span class="em"&gt;총 &lt;strong&gt;100&lt;/strong&gt;건&lt;/span&gt;
+		&lt;span class="em"&gt;페이지 &lt;strong&gt;&lt;span id="currentPage"&gt;1&lt;/span&gt; / &lt;span id="totalPage"&gt;80&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="data-search"&gt;
+	&lt;div class="search-type"&gt;
+			&lt;label for="searchType" class="blind">검색유형선택&lt;/label&gt;
+			&lt;select name="searchType" id="searchType" class="form-search" title="검색유형선택"&gt;
+				&lt;option value="title">제목&lt;/option&gt;
+				&lt;option value="content">내용&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;div class="search-word"&gt;
+			&lt;label for="searchWord" class="blind">검색어 입력&lt;/label&gt;
+			&lt;input type="text" class="form-input" name="searchWord" placeholder="검색어 입력" maxlength="225"&gt;
+			&lt;button class="btn-search"&gt;&lt;span class="btn-name"&gt;검색&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //data-finder -->
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+	</div>
+</body>
+</html>
