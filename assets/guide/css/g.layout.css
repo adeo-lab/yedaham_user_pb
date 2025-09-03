@@ -1707,7 +1707,7 @@ body:has(.g-navi-func.checked-within) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
+  gap: 20px;
   width: 100%;
 }
 .g-component .g-component-area .g-component-wrap .g-button-area {
