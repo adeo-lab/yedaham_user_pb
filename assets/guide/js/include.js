@@ -126,9 +126,9 @@ const headerNavigation = function (useFullLink) {
 							${createMenuLink("common/FO_Y_ZN_001_L.html", useFullLink)}
 						</div>
 					-->
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">로그인 연장 (레이어 팝업)</span></p>
-						${createMenuLink("common/FO_Y_ZL_001_L.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZN_001_L.html", useFullLink)}
 					</div>
 					<!--
 						<div class="g-sub-wrap" data-status="">
@@ -136,7 +136,7 @@ const headerNavigation = function (useFullLink) {
 							${createMenuLink("common/FO_Y_ZM_001_L.html", useFullLink)}
 						</div>
 					-->
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">개인정보 마케팅 활용 동의 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZP_001_L.html", useFullLink)}
 					</div>
@@ -158,8 +158,9 @@ const headerNavigation = function (useFullLink) {
 							${createMenuLink("common/PC_ZN_002.html", useFullLink)}
 						</div>
 					-->
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">SNS 공유하기</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">바닥화면 호출 시 ??</span></p>
 						${createMenuLink("common/FO_Y_ZK_002_L.html", useFullLink)}
 					</div>
 				</div>

@@ -19,6 +19,9 @@
 	<script src="../../../assets/front/js/awesomplete.min.js"></script>
 	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
 	<script src="../../../assets/front/js/page.js"></script>
+
+	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -29,16 +32,18 @@
 		<!-- 컨테이너 영역 -->
 		<div class="container" id="container">
 			<div id="page" class="page-login">
-				<div class="page-head">
-					<div class="title-inner-bx">
-						<h2 class="heading-l">개인정보 처리 동의 및 안내</h2>
+				<div class="title-inner-bx">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">접속 연장 안내</h2>
+						</div>
 					</div>
-				</div>
-				<div class="page-body">
-					<div class="button-display">
-						<span class="button-area">
-							<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentTermsUse')"><span class="btn-text">개인정보 처리 동의 및 안내</span></a>
-						</span>
+					<div class="page-body">
+						<div class="button-display">
+							<span class="button-area">
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('renewConnection')"><span class="btn-text">접속 연장 안내</span></a>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -55,52 +60,29 @@
 	</div>
 
 	<!-- contentPopup -->
-	<div class="content-popup" data-popup="contentTermsUse">
-		<div class="popup-wrap">
+	<div class="content-popup" data-popup="renewConnection">
+		<div class="popup-wrap small">
 			<div class="popup-header">
-				<p class="popup-subject">개인정보 처리 동의 및 안내</p>
+				<p class="popup-subject">접속 연장 안내</p>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
 			<div class="popup-body">
 				<div class="popup-contents">
-					<div class="terms-display">
-						<p class="terms-title">개인정보 수집 및 이용 동의</p>
-						<div class="terms-content">
-							<div class="order-list-n">
-								<p class="s-tit"><span>가.</span>개인정보 수집, 이용 목적</p>
-								<ul>
-									<li>상조 서비스 가입의사 확인 및 가입상담 목적</li>
-								</ul>
+					<div class="pop-time-wrap">
+						<div class="tx-time">05분 00초</div>
+						<div class="tx-cont">
+							현재 활동이 감지되지 않아 고객님의 소중한 정보 보호를 위해
+							자동으로 접속이 종료될 예정입니다.<br/><br/>
 
-								<p class="s-tit"><span>나.</span>수집하는 개인정보 항목</p>
-								<ul>
-									<li>이름, 연락처, 상담 희망시간</li>
-								</ul>
-
-								<p class="s-tit"><span>다.</span>개인정보 보유 및 이용기간</p>
-								<ul>
-									<li>상담신청일로 부터 1개월</li>
-								</ul>
-
-								<p class="tx-imp01">
-									개인정보 수집 및 이용에 대한 동의를 거부할 수 있으나, 동의 거부 시 상담이 불가할 수 있습니다.
-								</p>
-							</div>
-							<div class="order-list-n boxed">
-								<p class="terms-title">개인정보 위탁 안내</p>
-								<p class="s-tit"><span>가.</span>개인정보 처리의 위탁</p>
-								<ul>
-									<li>위탁받은 업체 : ㈜유베이스</li>
-									<li>위탁하는 업무 : 가입상담 업무</li>
-								</ul>
-							</div>
+							접속 종료를 원치 않으시면 <span>연장하기</span> 버튼을 클릭해 주세요.
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="popup-footer">
 				<div class="button-area">
-					<a href="#" class="btn-popup">확인</a>
+					<a href="#" class="btn-popup cancel">접속종료</a>
+					<a href="#" class="btn-popup">연장하기</a>
 				</div>
 			</div>
 		</div>
@@ -110,7 +92,7 @@
 	<script stype="text/javascript">
 		// 온로드 시 활성화
 		document.addEventListener('DOMContentLoaded', function() {
-			uiCommon.popup.popupOpen('contentTermsUse');
+			uiCommon.popup.popupOpen('renewConnection');
 		});
 	</script>
 </body>
