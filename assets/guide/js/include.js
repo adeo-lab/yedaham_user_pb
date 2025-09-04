@@ -58,7 +58,7 @@ const headerNavigation = function (useFullLink) {
 				</div>
 				<div class="g-sub-body">
 					<!-- 
-						<div class="g-sub-wrap" data-status="">
+						<div class="g-sub-wrap" data-status="진행">
 							<p class="g-sub-title"><span class="em">시스템 점검​</span></p>
 							${createMenuLink("common/FO_Y_ZA_001.html", useFullLink)}
 						</div>
