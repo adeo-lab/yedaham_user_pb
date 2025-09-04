@@ -35,13 +35,13 @@
 				<div class="title-inner-bx">
 					<div class="page-head">
 						<div class="title-inner-bx">
-							<h2 class="heading-l">고객 칭찬 후기</h2>
+							<h2 class="heading-l">가입상담 신청</h2>
 						</div>
 					</div>
 					<div class="page-body">
 						<div class="button-display">
 							<span class="button-area">
-								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentReviewAsk')"><span class="btn-text">고객 칭찬 후기</span></a>
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentJoinAsk')"><span class="btn-text">가입상담 신청</span></a>
 							</span>
 						</div>
 					</div>
@@ -60,14 +60,23 @@
 	</div>
 
 	<!-- contentPopup -->
-	<div class="content-popup" data-popup="contentReviewAsk">
+	<div class="content-popup" data-popup="contentJoinAsk">
 		<div class="popup-wrap board-review-write">
 			<div class="popup-header">
-				<p class="popup-subject">고객 칭찬 후기</p>
+				<p class="popup-subject">가입상담 신청</p>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
 			<div class="popup-body">
 				<div class="popup-contents">
+					<div class="joinask-pop-top-area">
+						<div class="tx01">아래 고객정보를 남겨주시면 예다함 전문상담원이 가입을 도와드립니다.</div>
+						<div class="tx02">
+							<p>
+								<span class="tx-phone">고객센터/전화상담 1566-6644</span>
+								<span>평일 9시 ~ 18시</span>
+							</p>
+						</div>
+					</div>
 					<div class="board-write-ty01">
 						<div class="top-area">
 							<div class="line-item">
@@ -90,49 +99,103 @@
 									</dd>
 								</dl>
 							</div>
-							<div class="line-item">
+							<div class="line-item one-line">
 								<dl>
-									<dt>장례발생일 <span class="imp">*</span></dt>
+									<dt>상담희망시간 <span class="imp">*</span></dt>
 									<dd>
-										<span class="form input datepicker">
-											<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker">
-										</span>
-										<script>
-											$( "#datepicker" ).datepicker(); 
-										</script>
-									</dd>
-								</dl>
-							</div>
-							<div class="line-item">
-								<dl>
-									<dt>장례식장 <span class="imp">*</span></dt>
-									<dd>
-										<span class="form input">
-											<input class="form-elem" type="text" placeholder="장례식장을 입력해 주세요." value="">
-										</span>
+										<div class="wish-time-list">
+											<ul>
+												<li>
+													<div class="in-bx">
+														상시<br/>
+														(아무때나)
+													</div>
+												</li>
+												<li class="on">
+													<div class="in-bx">
+														오전<br/>
+														9시~10시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오전<br/>
+														10시~11시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오전<br/>
+														11시~12시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오후<br/>
+														12시~13시
+													</div>
+												</li>
+												<li class="disabled">
+													<div class="in-bx">
+														점심시간<br/>
+														13시~14시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오후<br/>
+														14시~15시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오후<br/>
+														15시~16시
+													</div>
+												<li>
+													<div class="in-bx">
+														오후<br/>
+														16시~17시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오후<br/>
+														17시~18시
+													</div>
+												</li>
+												</li>
+											</ul>
+										</div>
 									</dd>
 								</dl>
 							</div>
 							<div class="line-item one-line">
 								<dl>
-									<dt>제목 <span class="imp">*</span></dt>
+									<dt>관심상품 (중복 선택 가능)</dt>
 									<dd>
-										<span class="form input">
-											<input class="form-elem" type="text" placeholder="제목을 입력해 주세요." value="">
-										</span>
-									</dd>
-								</dl>
-							</div>
-							<div class="line-item one-line">
-								<dl>
-									<dt>내용 <span class="imp">*</span></dt>
-									<dd>
-										<span class="form textarea">
-											<textarea class="form-elem">
-내용을 입력해 주세요. (1,500자 이내)
-											</textarea>
-											<p class="btm-tx01">0/1,500</p>
-										</span>
+										<div class="wish-time-list three">
+											<ul>
+												<li>
+													<div class="in-bx">
+														상시<br/>
+														(아무때나)
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오전<br/>
+														9시~10시
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														오전<br/>
+														10시~11시
+													</div>
+												</li>
+											</ul>
+										</div>
 									</dd>
 								</dl>
 							</div>
@@ -142,6 +205,7 @@
 								<input type="checkbox" name="checkbox" id="checkbox" class="form-elem">
 								<span class="form-text">(필수) 개인정보 수집 및 이용에 동의합니다.</span>
 							</label>
+							<a href="#" class="btn-view-detail">자세히 보기</a>
 						</div>
 						<div style="width: 312px; height: 86px; background: #ddd; margin: 0 auto;">
 							<p style="line-height: 86px; text-align: center;">reCAPCHA</p>
@@ -172,7 +236,7 @@
 	<script stype="text/javascript">
 		// 온로드 시 활성화
 		document.addEventListener('DOMContentLoaded', function() {
-			uiCommon.popup.popupOpen('contentReviewAsk');
+			uiCommon.popup.popupOpen('contentJoinAsk');
 		});
 	</script>
 </body>

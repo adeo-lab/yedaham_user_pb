@@ -3311,10 +3311,11 @@ span.dot {
   border-radius: 20px;
 }
 
-.board-write-ty01 .top-area {padding-bottom: 32px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.board-write-ty01 .top-area {padding-bottom: 8px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.board-write-ty01 .top-area::after {content: ''; display: block; clear: both;}
 .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;}
-.board-write-ty01 .top-area .line-item dl:first-child {padding-right: 12px;}
-.board-write-ty01 .top-area .line-item dl:nth-child(2) {padding-left: 12px;}
+.board-write-ty01 .top-area .line-item:nth-child(odd) dl {padding-right: 12px;}
+.board-write-ty01 .top-area .line-item:nth-child(even) dl {padding-left: 12px;}
 .board-write-ty01 .top-area .line-item dt {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
 .board-write-ty01 .top-area .line-item dt span.imp {display: inline-block; font-weight: 400; color: #E94543; padding-top: 3px; vertical-align: top;}
 .board-write-ty01 .top-area .line-item dd {padding-top: 8px;}
@@ -3330,7 +3331,26 @@ span.dot {
 .board-write-ty01 .top-area .line-item dd .form.textarea textarea {width: 100%; height: 144px; padding: 16px; box-sizing: border-box;}
 .board-write-ty01 .top-area .line-item dd .form.textarea p.btm-tx01 {font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding-top: 8px; text-align: right;}
 .board-write-ty01 .top-area .line-item.one-line dl {float: none; width: 100%;}
-.board-write-ty01 .btm-area {padding-bottom: 32px;}
+.board-write-ty01 .top-area .line-item.one-line:nth-child(odd) dl {padding-right: 0;}
+.board-write-ty01 .top-area .line-item.one-line:nth-child(even) dl {padding-left: 0;}
+.board-write-ty01 .btm-area {position: relative; padding-bottom: 32px;}
+.board-write-ty01 .btm-area a.btn-view-detail {position: absolute; top: 0; right: 0; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 150%; text-decoration: underline;}
+
+.joinask-pop-top-area {padding-bottom: 32px;}
+.joinask-pop-top-area .tx01 {font-weight: 600; font-size: 17px; color: #777; line-height: 150%; padding-bottom: 8px;}
+.joinask-pop-top-area .tx02 {background: #EFEFEF; border-radius: 12px;}
+.joinask-pop-top-area .tx02 p {font-weight: 400; font-size: 17px; color: #AF5B27; line-height: 150%; padding: 20px 0; display: flex; column-gap: 12px; align-items: center; justify-content: center;}
+.joinask-pop-top-area .tx02 p span.tx-phone {font-weight: 600; font-size: 22px; line-height: 130%;}
+
+.wish-time-list {padding-bottom: 8px;}
+.wish-time-list ul {margin: 0 -8px;}
+.wish-time-list ul::after {content: ''; display: block; clear: both;}
+.wish-time-list li {float: left; width: 20%; padding: 0 8px 16px 8px; box-sizing: border-box;}
+.wish-time-list li .in-bx {font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 8px 16px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; text-align: center;}
+.wish-time-list li.on .in-bx {color: #AF5B27; padding: 7px 13px; border: 2px solid #F1945E;}
+.wish-time-list li.disabled .in-bx {color: #BFBFBF; background: #F7F6F5; border: 1px solid rgba(19, 21, 23, 0.07);}
+.wish-time-list.three {padding-bottom: 0;}
+.wish-time-list.three li {width: 238px; padding-bottom: 0;}
 
 
 /* 고객지원 */
