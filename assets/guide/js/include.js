@@ -58,7 +58,7 @@ const headerNavigation = function (useFullLink) {
 				</div>
 				<div class="g-sub-body">
 					<!-- 
-						<div class="g-sub-wrap" data-status="진행">
+						<div class="g-sub-wrap" data-status="">
 							<p class="g-sub-title"><span class="em">시스템 점검​</span></p>
 							${createMenuLink("common/FO_Y_ZA_001.html", useFullLink)}
 						</div>
@@ -75,7 +75,7 @@ const headerNavigation = function (useFullLink) {
 								${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
 						</div>
 					-->
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">가입상담 신청 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZC_001_L.html", useFullLink)}
 					</div>
