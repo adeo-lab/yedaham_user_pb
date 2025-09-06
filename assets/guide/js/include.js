@@ -211,6 +211,40 @@ const headerNavigation = function (useFullLink) {
 					</dl> -->
 				</div>
 			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">상품안내</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">상조 상품 안내</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">아이콘 영역? / 이름? / 방식?</span></p>
+						${createMenuLink("product/FO_Y_PA_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상조 상품 안내 (레이어 팝업)</span></p>
+						${createMenuLink("product/FO_Y_PA_002_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">예다함 윤슬 4호</span></p>
+						${createMenuLink("product/FO_Y_PB_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">예다함 윤슬 6호</span></p>
+						${createMenuLink("product/FO_Y_PC_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">예다함 노블</span></p>
+						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
+						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
+					</dl>
+				</div>
+			</li>
 		</ul>
 	`;
 }
