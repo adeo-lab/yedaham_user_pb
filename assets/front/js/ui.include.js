@@ -394,11 +394,16 @@ const pageTemplate = function () {
 		<button type="button" class="page-btn page-first" title="첫 페이지"></button>
 			<button type="button" class="page-btn page-prev" title="이전 페이지"></button>
 			<div class="page-num">
-				<a href="#" class="page-link current"><span>1</span></a>
-				<a href="#" class="page-link"><span>2</span></a>
+				<a href="#" class="page-link"><span>1</span></a>
+				<a href="#" class="page-link current"><span>2</span></a>
 				<a href="#" class="page-link"><span>3</span></a>
 				<a href="#" class="page-link"><span>4</span></a>
 				<a href="#" class="page-link"><span>5</span></a>
+				<a href="#" class="page-link"><span>6</span></a>
+				<a href="#" class="page-link"><span>7</span></a>
+				<a href="#" class="page-link"><span>8</span></a>
+				<a href="#" class="page-link"><span>9</span></a>
+				<a href="#" class="page-link"><span>10</span></a>
 			</div>
 			<button type="button" class="page-btn page-next" title="다음 페이지"></a>
 			<button type="button" class="page-btn page-last" title="마지막 페이지"></a>
