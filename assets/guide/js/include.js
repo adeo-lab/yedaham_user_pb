@@ -241,6 +241,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">작업 중</span></p>
 						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
 					</dl>
 				</div>
