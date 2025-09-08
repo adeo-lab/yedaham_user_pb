@@ -3487,6 +3487,12 @@ span.dot {
 .notice-list li .inner-bx .bx-r {position: absolute; right: 32px; text-align: center;}
 .notice-list li .inner-bx .bx-r p.date {font-weight: 400; font-size: 17px; color: #777; line-height: 150%; padding-bottom: 8px;}
 .notice-list li .inner-bx .bx-r a.btn-down-all {display: inline-block; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 7px 44px 7px 24px; background: #fff; border: 1px solid #B8B9B9; border-radius: 8px;}
+.notice-list li .inner-bx .bx-r a.btn-down-all {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.5 12C13.7761 12 13.9999 12.224 14 12.5C14 12.7761 13.7761 13 13.5 13H2.5C2.22408 12.9997 2 12.776 2 12.5C2.00013 12.2241 2.22416 12.0003 2.5 12H13.5ZM8 2.66602C8.26481 2.66625 8.4793 2.87713 8.47949 3.13672V8.85059L10.6543 6.63477C10.8381 6.44743 11.1419 6.44097 11.333 6.62109C11.5241 6.80123 11.5295 7.09977 11.3457 7.28711L8.3457 10.3457C8.2553 10.4379 8.13041 10.4901 8 10.4902C7.86941 10.4902 7.74383 10.438 7.65332 10.3457L4.65332 7.28711C4.46956 7.09978 4.47493 6.80123 4.66602 6.62109C4.85713 6.44097 5.16095 6.44745 5.34473 6.63477L7.51953 8.85059V3.13672C7.51973 2.87698 7.73498 2.66602 8 2.66602Z' fill='%2333363D'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 24px top 12px;
+  background-size: 16px;
+}
 .notice-list li.notice .inner-bx {background: #ECF5FF;}
 .notice-list li.notice .inner-bx dt {padding-left: 62px;}
 .notice-list li.notice .inner-bx dt.notice {position: relative; }
@@ -3498,8 +3504,10 @@ span.dot {
   .notice-list li .inner-bx dt {font-size: 19px; padding-bottom: 8px;}
   .notice-list li .inner-bx dd {display: none;}
   .notice-list li .inner-bx .bx-r {position: relative; right: auto; text-align: left;}
-  .notice-list li .inner-bx .bx-r p.date {font-size: 15px; line-height: 34px;}
+  .notice-list li .inner-bx .bx-r p.date {font-size: 15px; line-height: 34px; padding-bottom: 0;}
   .notice-list li .inner-bx .bx-r a.btn-down-all {position: absolute; top: 0; right: 0; font-size: 14px; padding: 5.5px 28px 5.5px 10px}
+  .notice-list li .inner-bx .bx-r a.btn-down-all {background-position: right 10px top 8px;}
+  .notice-list li .inner-bx .bx-r a.btn-down-all span {display: none;}
   .notice-list li.notice .inner-bx dt.notice {padding-left: 0;}
   .notice-list li.notice .inner-bx dt.notice span.flag {position: relative; top: auto; left: auto;}
 }
