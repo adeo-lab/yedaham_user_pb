@@ -246,6 +246,43 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 				</div>
 			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">간편가입</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상품 선택</span></p>
+						${createMenuLink("easy/FO_Y_DA_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상품 선택(상품 미선택)</span></p>
+						${createMenuLink("easy/FO_Y_DA_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">본인 인증 / 정보 입력</span></p>
+						${createMenuLink("easy/FO_Y_DB_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상품 변경</span></p>
+						${createMenuLink("easy/FO_Y_DP_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">정보입력/계약내용 확인​</span></p>
+						${createMenuLink("easy/FO_Y_DC_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">결제 진행​</span></p>
+						${createMenuLink("easy/FO_Y_DD_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">계약 완료​</span></p>
+						${createMenuLink("easy/FO_Y_DE_001.html", useFullLink)}
+					</dl>
+				</div>
+			</li>
 		</ul>
 	`;
 }
