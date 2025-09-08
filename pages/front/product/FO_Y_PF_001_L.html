@@ -367,18 +367,10 @@
 		<!-- //퀵메뉴 -->
 	</div>
 
-<style>
-.pop-service-component-tab {padding: 0 30px 40px 30px; box-sizing: border-box;}
-.pop-service-component-tab li {float: left; width: 100px;}
-.pop-service-component-tab .sc-in-bx {height: 103px; padding: 12px 0 0 0; background: #ddd; text-align: center; box-sizing: border-box;}
-.pop-service-component-tab .sc-in-bx p.icon {width: 60px; height: 60px; margin: 0 auto; background: #ddd;}
-.pop-service-component-tab .sc-in-bx p.tx01 {font-weight: 600; font-size: 15px; color: #232527; line-height: 150%;}
-</style>
-
 	<!-- contentPopup -->
-	<div class="content-popup" data-popup="contentServieComponent" style="padding: 0;">
-		<div class="popup-wrap service-component" style="max-width: 100%; height: 100%;">
-			<div class="popup-header" style="margin-bottom: 32.5px;">
+	<div class="content-popup full-s" data-popup="contentServieComponent">
+		<div class="popup-wrap service-component">
+			<div class="popup-header">
 				<p class="popup-subject">상조 서비스 품목</p>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
@@ -398,7 +390,7 @@
 									<p class="tx01">장례도우미</p>
 								</div>
 							</li>
-							<li class="swiper-slide">
+							<li class="swiper-slide on">
 								<div class="sc-in-bx">
 									<p class="icon buslimo"></p>
 									<p class="tx01">버스/리무진</p>
@@ -493,9 +485,9 @@
 					</script>
 
 					<!-- tab -->
-					<div class="tab-display style-a" style="padding-bottom: 48px;">
+					<div class="tab-display style-a">
 						<div class="tab-inner-bx swiper">
-							<ul class="tab-list swiper-wrapper" style="justify-content: center;">
+							<ul class="tab-list swiper-wrapper">
 								<li class="tab-item swiper-slide current"><a class="tab-text">메뉴</a></li>
 								<li class="tab-item swiper-slide"><a class="tab-text">메뉴</a></li>
 								<li class="tab-item swiper-slide"><a class="tab-text">가입관련</a></li>
@@ -516,43 +508,19 @@
 						});
 					</script>
 
-<style>
-.swiper-button-next {width: 56px; height: 56px; right: 32px; background: #848587; border-radius: 56px;}
-.swiper-button-next::after {
-  content: '';
-  display: block;
-  width: 56px;
-  height: 56px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.40459 19.7352C8.10902 19.4068 8.13565 18.9009 8.46405 18.6054L14.8033 12L8.46406 5.39463C8.13565 5.09906 8.10903 4.59323 8.40459 4.26482C8.70016 3.93641 9.20599 3.90979 9.5344 4.20536L16.5344 11.4054C16.703 11.5571 16.7992 11.7732 16.7992 12C16.7992 12.2268 16.703 12.4429 16.5344 12.5946L9.5344 19.7946C9.20599 20.0902 8.70016 20.0636 8.40459 19.7352Z' fill='white'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px;
-}
-.swiper-button-prev {width: 56px; height: 56px; left: 32px; background: #848587; border-radius: 56px;}
-.swiper-button-prev::after {
-  content: '';
-  display: block;
-  width: 56px;
-  height: 56px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5954 19.7352C15.891 19.4068 15.8644 18.9009 15.5359 18.6054L9.19665 12L15.5359 5.39463C15.8644 5.09906 15.891 4.59323 15.5954 4.26482C15.2998 3.93641 14.794 3.90979 14.4656 4.20536L7.4656 11.4054C7.29703 11.5571 7.20077 11.7732 7.20077 12C7.20077 12.2268 7.29703 12.4429 7.4656 12.5946L14.4656 19.7946C14.794 20.0902 15.2998 20.0636 15.5954 19.7352Z' fill='white'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px;
-}
-</style>
-
-					<div style="margin: 0 -40px; border-top: 1px solid rgba(19, 21, 23, 0.15);">
-						<div style="position: relative; float: left; width: 50%; padding: 40px 0 56px 0; background: #F7F6F5;">
-							<div class="product-detail-htum swiper" style="width: 640px; height: 640px; margin: 0 auto;">
+					<div class="product-pop-detail-wrap">
+						<!-- left area -->
+						<div class="bx-left-side">
+							<div class="product-detail-thum swiper">
 								<ul class="swiper-wrapper">
-									<li class="swiper-slide" style="width: 640px; height: 640px; background: #F6E4E3;">
-										<div style="width: 640px; height: 640px; background: #F6E4E3;"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" style="width: 100%;" /></div>
+									<li class="swiper-slide">
+										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" /></div>
 									</li>
-									<li class="swiper-slide" style="width: 640px; height: 640px; background: #F6E4E3;">
-										<div style="width: 640px; height: 640px; background: #F6E4E3;"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" style="width: 100%;" /></div>
+									<li class="swiper-slide">
+										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" /></div>
 									</li>
-									<li class="swiper-slide" style="width: 640px; height: 640px; background: #F6E4E3;">
-										<div style="width: 640px; height: 640px; background: #F6E4E3;"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" style="width: 100%;" /></div>
+									<li class="swiper-slide">
+										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" /></div>
 									</li>
 								</ul>
 							</div>
@@ -571,16 +539,17 @@
 							});
 						</script>
 						</div>
-						<div style="float: left; width: 50%;">
-							<div style="padding: 40px;">
-								<div style="padding-bottom: 16px; display: flex; column-gap: 12px;">
-									<!-- font-weight: 400; font-size: 15px; color: #131517; line-height: 150%; -->
-									<span style="display: inline-block; height: 27px; line-height: 27px; padding: 0 12px; background: #DDE1FF; border-radius: 16px;">윤슬4호</span>
-									<span style="display: inline-block; height: 27px; line-height: 27px; padding: 0 12px; background: #FFDAD6; border-radius: 16px;">윤슬6호</span>
-									<span style="display: inline-block; height: 27px; line-height: 27px; padding: 0 12px; background: #F7DFB5; border-radius: 16px;">노블</span>
+						<!-- //left area -->
+						<!-- right area -->
+						<div class="bx-right-side">
+							<div class="product-detail-cont">
+								<div class="top-flags">
+									<span class="flag ys4">윤슬4호</span>
+									<span class="flag ys6">윤슬6호</span>
+									<span class="flag nv">노블</span>
 								</div>
-								<div style="font-weight: 600; font-size: 40px; color: #131517; line-height: 130%; padding: 0 0 32px 0;">비단 단아수의</div>
-								<div style="font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; display: flex; flex-direction:column; row-gap: 24px;">
+								<div class="pr-title">비단 단아수의</div>
+								<div class="pr-cont">
 									<div style="font-weight: 600;">
 										정성스러움과 세심함이 돋보이는 고급 봉안함<br/>
 										(1단계 초벌구이, 2단계 재벌구이, 3단계 금전사를 입혀 3번 소성 제작)
@@ -602,6 +571,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- //right area -->
 					</div>
 				</div>
 			</div>
