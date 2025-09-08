@@ -223,7 +223,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text" style="color: red;"><span class="em">아이콘 영역? / 이름? / 방식?</span></p>
 						${createMenuLink("product/FO_Y_PA_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 상품 안내 (레이어 팝업)</span></p>
 						${createMenuLink("product/FO_Y_PA_002_L.html", useFullLink)}
 					</dl>
@@ -241,6 +241,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 영역 입력 방법?</span></p>
 						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
 					</dl>
 				</div>
