@@ -3037,13 +3037,25 @@ z-index: 10;
 .estimate-wrap .estimate-inner .r-side {display: flex; column-gap: 100px;}
 .estimate-wrap .estimate-inner .r-side ul {display: flex; column-gap: 12px;}
 .estimate-wrap .estimate-inner .r-side li span {display: inline-flex; height: 48px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 11px 16px 0 52px; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 32px; box-sizing: border-box; cursor: pointer; overflow: hidden;}
-.estimate-wrap .estimate-inner .r-side li.on span {padding: 10px 16px 0 52px;border: 2px solid #F1945E; box-sizing: border-box;}
+.estimate-wrap .estimate-inner .r-side li.on span {padding: 10px 16px 0 52px; border: 2px solid #F1945E; box-sizing: border-box;}
 .estimate-wrap .estimate-inner a.btn-confirm {display: inline-block; font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; padding: 9.5px 32px; background: #A0A0A0; border-radius: 8px;}
 .estimate-wrap .estimate-inner .r-side li.up-m span {background: #fff url('../images/common/icon_face01.png') no-repeat left 12px top 8px; background-size: 32px;}
 .estimate-wrap .estimate-inner .r-side li.up span {background: #fff url('../images/common/icon_face02.png') no-repeat left 12px top 8px; background-size: 32px;}
 .estimate-wrap .estimate-inner .r-side li.nm span {background: #fff url('../images/common/icon_face03.png') no-repeat left 12px top 8px; background-size: 32px;}
 .estimate-wrap .estimate-inner .r-side li.down span {background: #fff url('../images/common/icon_face04.png') no-repeat left 12px top 8px; background-size: 32px;}
 .estimate-wrap .estimate-inner .r-side li.down-m span {background: #fff url('../images/common/icon_face05.png') no-repeat left 12px top 8px; background-size: 32px;}
+
+@media (max-width: 1023px) {
+  .estimate-wrap {height: auto; padding: 16px;}
+  .estimate-wrap .estimate-inner {display: block; padding: 0;}
+  .estimate-wrap .estimate-inner .l-side {padding-bottom: 8px;}
+  .estimate-wrap .estimate-inner .r-side {display: block;}
+  .estimate-wrap .estimate-inner .r-side ul {padding-bottom: 16px; column-gap: 4px;}
+  .estimate-wrap .estimate-inner .r-side li {float: left; width: 20%;}
+  .estimate-wrap .estimate-inner .r-side li span {display: block; height: auto; font-size: 10px; padding: 38px 0 8px 0; border-radius: 12px; text-align: center; background-position: center top 8px !important; background-size: 28px !important;}
+  .estimate-wrap .estimate-inner .r-side li.on span {padding: 38px 0 8px 0; border: 2px solid #F1945E; box-sizing: border-box;}
+  .estimate-wrap .estimate-inner a.btn-confirm {display: block; width: 90px; height: 40px; font-weight: 400; font-size: 15px; line-height: 40px; padding: 0; margin: 0 auto; box-sizing: border-box; text-align: center;}
+}
 
 
 /* footer new */
