@@ -332,7 +332,7 @@ const footerTemplate = function () {
 				</ul>
 			</div>
 			<div class="ft-cnt03">
-				<div>서울특별시 마포구 마포대로 86, 16층(도화동, 창강빌딩) The-K 예다함㈜</div>
+				<div>서울특별시 마포구 마포대로 86, 16층(도화동, 창강빌딩) <span>The-K 예다함㈜</span></div>
 				<div>대표이사 : 김도한</div>
 				<div>사업자등록 번호 : 101-86-9300</div>
 			</div>
