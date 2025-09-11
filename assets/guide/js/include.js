@@ -160,8 +160,12 @@ const headerNavigation = function (useFullLink) {
 					-->
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">SNS 공유하기</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">바닥화면 호출 시 ??</span></p>
 						${createMenuLink("common/FO_Y_ZK_002_L.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">SNS 공유하기</span></p>
+						<p class="g-sub-text"><span class="em">레이어 팝업에서 열린 경우</span></p>
+						${createMenuLink("common/.html", useFullLink)}
 					</div>
 				</div>
 			</li>
@@ -220,7 +224,6 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 상품 안내</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">아이콘 영역? / 이름? / 방식?</span></p>
 						${createMenuLink("product/FO_Y_PA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
@@ -241,7 +244,6 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 영역 입력 방법?</span></p>
 						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
 					</dl>
 				</div>
@@ -253,13 +255,17 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">상품 선택</span></p>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">상품 선택 (상품 미선택)</span></p>
 						${createMenuLink("easy/FO_Y_DA_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">상품 선택(상품 미선택)</span></p>
-						${createMenuLink("easy/FO_Y_DA_001.html", useFullLink)}
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">상품 선택 (선택)</span></p>
+						${createMenuLink("easy/FO_Y_DA_001_02.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">상품 선택 (일시납)</span></p>
+						${createMenuLink("easy/FO_Y_DA_001_03.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">본인 인증 / 정보 입력</span></p>
