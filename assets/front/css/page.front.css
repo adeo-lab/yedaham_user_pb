@@ -2089,6 +2089,7 @@
   left: auto;
   z-index: 10;
   min-width: 100px;
+  display: none !important;
 }
 .quick-menu.active {
   display: block;
