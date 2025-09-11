@@ -2089,7 +2089,6 @@
   left: auto;
   z-index: 10;
   min-width: 100px;
-  display: none !important;
 }
 .quick-menu.active {
   display: block;
@@ -3040,7 +3039,7 @@ z-index: 10;
 
 
 /* 페이지 평가 */
-.estimate-wrap {height: 112px; background: #FBFAFA; box-sizing: border-box;}
+.estimate-wrap {height: 112px; background: #FBFAFA; box-sizing: border-box; display: none !important;}
 .estimate-wrap .estimate-inner {display: flex; width: 100%; max-width: 1200px; padding: 32px 0; margin: 0 auto; justify-content: space-between; align-items: center;}
 .estimate-wrap .estimate-inner .l-side {font-weight: 600; font-size: 17px; color: #444; line-height: 150%;}
 .estimate-wrap .estimate-inner .r-side {display: flex; column-gap: 100px;}
