@@ -4236,6 +4236,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .easy-join-wrap .easy-join-right-side {width: 100%;}
 }
 
+.easy-agree {padding: 15px 0 0 0;}
+.easy-agree .in-bx {padding-bottom: 32px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.easy-agree .in-bx:last-child {padding-bottom: 0; margin-bottom: 0; border-bottom: 0;}
+.easy-agree .form.checkbox {position: relative; width: 100%;}
+.easy-agree .form.checkbox span.form-text {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.easy-agree .form.checkbox .form-text::before, .form.checkbox .form-text::after {top: 2px;}
+.easy-agree .tx01 {font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 10px 0 0 32px;}
+.easy-agree .tx02 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding: 16px 0 0 32px; display: flex; flex-direction: column; row-gap: 16px;}
+.easy-agree .tx02 p {position: relative;}
+.easy-agree a.btn-detail {position: absolute; top: 1px; right: 0; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 150%; text-decoration: underline;}
+
 
 
 
