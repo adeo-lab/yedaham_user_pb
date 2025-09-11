@@ -267,7 +267,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">상품 선택 (일시납)</span></p>
 						${createMenuLink("easy/FO_Y_DA_001_03.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">본인 인증 / 정보 입력</span></p>
 						${createMenuLink("easy/FO_Y_DB_001.html", useFullLink)}
 					</dl>
