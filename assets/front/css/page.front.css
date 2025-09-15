@@ -3090,7 +3090,7 @@ z-index: 10;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 14px;
-  ransform: rotate(0deg);
+  transform: rotate(0deg);
   transition: 0.2s ease-in-out;
 }
 .ft-r-side .ft-family-wrap .bx-family.f-open::after {transform: rotate(45deg); transition: 0.2s ease-in-out;}
