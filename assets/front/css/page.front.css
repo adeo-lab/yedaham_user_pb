@@ -4563,6 +4563,40 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ej-end-wrap .btm-btns a.btn-ty01 {display: blcok; width: 194px; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 56px; background: #A0A0A0; border-radius: 8px; text-align: center;}
 .ej-end-wrap .btm-btns a.btn-ty02 {display: blcok; width: 232px; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 56px; background: #D17B47; border-radius: 8px; text-align: center;}
 
+.membership-list ul {display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 30px;}
+.membership-list li {width: 276px;}
+.membership-list li .in-bx {position: relative; width: 100%; box-sizing: border-box;}
+.membership-list li .in-bx a {display: block;}
+.membership-list li .in-bx .thum {position: relative; height: 240px; border-top-left-radius: 24px; border-top-right-radius: 24px; overflow: hidden;}
+.membership-list li .in-bx .thum::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(19, 21, 23, 0.20); border-top-left-radius: 24px; border-top-right-radius: 24px; box-sizing: border-box;}
+.membership-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover;}
+.membership-list li .in-bx .thum.no-img {position: relative; display: flex; width: 100%; height: 240px; font-weight: 600; font-size: 19px; color: #fff; line-height: 130%; background: #E2E2E2; border-top-left-radius: 24px; border-top-right-radius: 24px; overflow: hidden; align-items: center; justify-content: center;}
+.membership-list li .in-bx .thum.no-img::after {display: none;}
+.membership-list li .in-bx .cont {height: 156px; padding: 16px 32px 0 32px; border: 1px solid rgba(19, 21, 23, 0.20); border-top: none; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; overflow: hidden; box-sizing: border-box;}
+.membership-list li .in-bx .cont span.flag {display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #232527; line-height: 27px; padding: 0 12px; border-radius: 16px;}
+.membership-list li .in-bx .cont span.flag.finance {background: #FBEEED;}
+.membership-list li .in-bx .cont span.flag.hotel {background: #EAF9FF;}
+.membership-list li .in-bx .cont span.flag.health {background: #E9F5EC;}
+.membership-list li .in-bx .cont dl {padding: 12px 0 0 0;}
+.membership-list li .in-bx .cont dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; margin-bottom: 16px;}
+.membership-list li .in-bx .cont dd {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.membership-list li .in-bx p.info-layer {position: absolute; top: -19px; right: -10px; display: inline-block; font-weight: 600; font-size: 15px; color: #fff; line-height: 150%; padding: 8px 16px; background: #FF766E; border-radius: 24px; z-index: 10;}
+.membership-list li .in-bx p.info-layer::after {
+	content: '';
+	position: absolute;
+	right: 34.75px;
+	bottom: -9px;
+	display: block;
+	width: 16px;
+	height: 9px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath d='M3 0H15.25L0 9L3 0Z' fill='%23FF766E'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px;
+}
+.membership-list li.first {width: 584px;}
+.membership-list li.first .in-bx .thum {height: 396px; border: none; border-radius: 24px; overflow: hidden;}
+
 
 
 
