@@ -1900,6 +1900,11 @@ button.swiper-pagination-bullet {
 .tab-display.style-a {
   width: 100%;
 }
+@media (max-width: 1023px) {
+  .tab-display.style-a {
+    padding: 0 20px;
+  }
+}
 .tab-display.style-a .tab-list .tab-item {
   display: inline-block;
   width: auto;
@@ -1976,6 +1981,12 @@ button.swiper-pagination-bullet {
   display: none;
   visibility: hidden;
   opacity: 0;
+}
+
+@media (max-width: 1023px) {
+  .tab-display.style-a .tab-list .tab-item .tab-text {
+    font-weight: 400; font-size: 15px; line-height: 150%; padding: 6.5px 12px;
+  }
 }
 
 /********************************************************************************************************************************
