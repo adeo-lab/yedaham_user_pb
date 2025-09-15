@@ -265,14 +265,35 @@ html.active-scroll-start #header.header-invert {
   line-height: 130%;
   text-align: center;
 }
-#header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after {
+#header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text:hover::after {
   content: '';
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
   width: 100%;
   height: 3px;
   background: #000;
+  transform: translateX(-50%);
+  animation: expandLine 0.2s ease-out forwards;
+}
+@keyframes expandLine {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%; /* Expand to full width */
+  }
+}
+#header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  transform: translateX(-50%);
+  animation: expandLine 0.2s ease-out forwards;
 }
 #header .header-inner .gnb .gnb-list .in-nav .lnb-list {
   opacity: 0;
