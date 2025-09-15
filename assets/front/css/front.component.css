@@ -1379,7 +1379,7 @@ button.swiper-pagination-bullet {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid var(--color-base-060);
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: var(--color-base-100);
   -webkit-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
