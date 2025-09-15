@@ -31,6 +31,10 @@ body {
   line-height: 1;
   /*letter-spacing: -0.5px;*/
   -webkit-text-size-adjust: none;
+  /* Webkit/Blink (Chrome, Safari, Edge) */
+  -webkit-font-smoothing: antialiased;
+  /* Firefox (macOS용) */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img, fieldset {
