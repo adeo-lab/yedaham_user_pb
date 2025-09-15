@@ -697,8 +697,10 @@ var uiCommon = (function() {
 
 					// display 속성을 토글합니다.
 					if (currentDisplay === 'none') {
+						familyButton.classList.add('f-open');
 						familyLayer.style.display = 'block';
 					} else {
+						familyButton.classList.remove('f-open');
 						familyLayer.style.display = 'none';
 					}
 				});
