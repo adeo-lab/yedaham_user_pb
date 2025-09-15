@@ -171,7 +171,7 @@ var uiCommon = (function() {
 			pc: function () {
 				const header     = document.getElementById('header');
 				const gnbArea    = document.querySelector('.gnb');
-				const navLayer   = document.querySelector('.nav-layer');
+				const navLayer   = document.querySelector('.nav-inner-wrap');
 
 				const gnbMenus   = document.querySelectorAll('.gnb-list'); // 1depth 컨테이너(사용하신 구조 유지)
 				const gnbLinks   = document.querySelectorAll('.gnb-list .gnb-item > .gnb-text'); // 1depth 링크

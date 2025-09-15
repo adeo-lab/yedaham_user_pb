@@ -109,129 +109,132 @@ const headerTemplate = function () {
         <div class="header-inner">${headerContent}</div>
 		<!-- 전체 메뉴 layer -->
 		<div class="nav-layer">
-			<div class="inner-bx-l">
-				<ul class="gnb-list-l">
-					<li class="gnb-item-l" id="mob_m1_l">
-						<a href="#" class="gnb-text-l">MY</a>
-						<ul class="lnb-list-l">
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">계약 현황</a></li>
-							<li class="lnb-item-l dep3">
-								<a href="#" class="lnb-text-l">납입 현황</a>
-								<ul class="lnb-list-l">
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test2</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
-								</ul>
-							</li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">증명서 발급</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">멤버십카드 발급</a></li>
-							<li class="lnb-item-l dep3">
-								<a href="#" class="lnb-text-l">정보 변경</a>
-								<ul class="lnb-list-l">
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test2</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
-								</ul>
-							</li>
-							<li class="lnb-item-l dep3">
-								<a href="#" class="lnb-text-l">내 게시글 관리</a>
-								<ul class="lnb-list-l">
-									<li class="lnb-item"><a href="#" class="lnb-text">test1</a></li>
-									<li class="lnb-item"><a href="#" class="lnb-text">test2</a></li>
-									<li class="lnb-item"><a href="#" class="lnb-text">test3</a></li>
-									<li class="lnb-item"><a href="#" class="lnb-text">test4</a></li>
-									<li class="lnb-item"><a href="#" class="lnb-text">test5</a></li>
-									<li class="lnb-item"><a href="#" class="lnb-text">test6</a></li>
-								</ul>
-							</li>
-							<li class="lnb-item"><a href="#" class="lnb-text">내 알림내역</a></li>
-						</ul>
-					</li>
-					<li class="gnb-item-l" id="mob_m2_l">
-						<a href="#" class="gnb-text-l">상품 안내</a>
-						<ul class="lnb-list-l">
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 상품 안내</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 4호</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 6호</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 노블</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 특장점</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 서비스 품목</a></li>
-						</ul>
-					</li>
-					<li class="gnb-item-l" id="mob_m3_l">
-						<a href="#" class="gnb-text">간편가입</a>
-					</li>
-					<li class="gnb-item-l" id="mob_m4_l">
-						<a href="#" class="gnb-text-l">​혜택/서비스</a>
-						<ul class="lnb-list-l">
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">멤버십</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">제휴카드</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">이벤트</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">부가서비스 신청</a></li>
-						</ul>
-					</li>
-					<li class="gnb-item-l" id="mob_m5_l">
-						<a href="#" class="gnb-text-l">고객지원​</a>
-						<ul class="lnb-list-l">
-							<li class="lnb-item-l now"><a href="#" class="lnb-text-l">공지사항</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">자주 하는 질문</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">고객 칭찬 후기</a></li>
-							<li class="lnb-item-l"><a href="#" class="lnb-text-l">1:1 문의</a></li>
-						</ul>
-					</li>
-					<li class="gnb-item-l" id="mob_m6_l">
-						<a href="#" class="gnb-text-l">장례정보</a>
-						<ul class="lnb-list-l">
-							<li class="lnb-item-l">
-								<a href="#" class="lnb-text-l">
-									상조 서비스란?
-									<span class="flag-new">NEW</span>
-								</a>
-							</li>
-							<li class="lnb-item-l dep3">
-								<a href="#" class="lnb-text-l">장례 진행</a>
-								<ul class="lnb-list-l">
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 상품 안내</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 4호</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 6호</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 노블</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 특장점</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 서비스 품목</a></li>
-								</ul>
-							</li>
-							<li class="lnb-item-l dep3">
-								<a href="#" class="lnb-text-l">장례 절차 및 양식</a>
-								<ul class="lnb-list-l">
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
-									<li class="lnb-item-l now"><a href="#" class="lnb-text-l">test2</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
-								</ul>
-							</li>
-							<li class="lnb-item-l dep3">
-								<a href="#" class="lnb-text-l">제례 정보</a>
-								<ul class="lnb-list-l">
-									<li class="lnb-item-l"><a href="#" class="lnb-text">상조 상품 안내</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 윤슬 4호</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 윤슬 6호</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 노블</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 특장점</a></li>
-									<li class="lnb-item-l"><a href="#" class="lnb-text">상조 서비스 품목</a></li>
-								</ul>
-							</li>
-							<li class="lnb-item"><a href="#" class="lnb-text">장례 관련 시설</a></li>
-						</ul>
-					</li>
-				</ul>
+			<div class="nav-inner-wrap">
+				<div class="inner-bx-l">
+					<ul class="gnb-list-l">
+						<li class="gnb-item-l" id="mob_m1_l">
+							<a href="#" class="gnb-text-l">MY</a>
+							<ul class="lnb-list-l">
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">계약 현황</a></li>
+								<li class="lnb-item-l dep3">
+									<a href="#" class="lnb-text-l">납입 현황</a>
+									<ul class="lnb-list-l">
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test2</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
+									</ul>
+								</li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">증명서 발급</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">멤버십카드 발급</a></li>
+								<li class="lnb-item-l dep3">
+									<a href="#" class="lnb-text-l">정보 변경</a>
+									<ul class="lnb-list-l">
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test2</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
+									</ul>
+								</li>
+								<li class="lnb-item-l dep3">
+									<a href="#" class="lnb-text-l">내 게시글 관리</a>
+									<ul class="lnb-list-l">
+										<li class="lnb-item"><a href="#" class="lnb-text">test1</a></li>
+										<li class="lnb-item"><a href="#" class="lnb-text">test2</a></li>
+										<li class="lnb-item"><a href="#" class="lnb-text">test3</a></li>
+										<li class="lnb-item"><a href="#" class="lnb-text">test4</a></li>
+										<li class="lnb-item"><a href="#" class="lnb-text">test5</a></li>
+										<li class="lnb-item"><a href="#" class="lnb-text">test6</a></li>
+									</ul>
+								</li>
+								<li class="lnb-item"><a href="#" class="lnb-text">내 알림내역</a></li>
+							</ul>
+						</li>
+						<li class="gnb-item-l" id="mob_m2_l">
+							<a href="#" class="gnb-text-l">상품 안내</a>
+							<ul class="lnb-list-l">
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 상품 안내</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 4호</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 6호</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 노블</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 특장점</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 서비스 품목</a></li>
+							</ul>
+						</li>
+						<li class="gnb-item-l" id="mob_m3_l">
+							<a href="#" class="gnb-text">간편가입</a>
+						</li>
+						<li class="gnb-item-l" id="mob_m4_l">
+							<a href="#" class="gnb-text-l">​혜택/서비스</a>
+							<ul class="lnb-list-l">
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">멤버십</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">제휴카드</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">이벤트</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">부가서비스 신청</a></li>
+							</ul>
+						</li>
+						<li class="gnb-item-l" id="mob_m5_l">
+							<a href="#" class="gnb-text-l">고객지원​</a>
+							<ul class="lnb-list-l">
+								<li class="lnb-item-l now"><a href="#" class="lnb-text-l">공지사항</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">자주 하는 질문</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">고객 칭찬 후기</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">1:1 문의</a></li>
+							</ul>
+						</li>
+						<li class="gnb-item-l" id="mob_m6_l">
+							<a href="#" class="gnb-text-l">장례정보</a>
+							<ul class="lnb-list-l">
+								<li class="lnb-item-l">
+									<a href="#" class="lnb-text-l">
+										상조 서비스란?
+										<span class="flag-new">NEW</span>
+									</a>
+								</li>
+								<li class="lnb-item-l dep3">
+									<a href="#" class="lnb-text-l">장례 진행</a>
+									<ul class="lnb-list-l">
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 상품 안내</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 4호</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 6호</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 노블</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 특장점</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 서비스 품목</a></li>
+									</ul>
+								</li>
+								<li class="lnb-item-l dep3">
+									<a href="#" class="lnb-text-l">장례 절차 및 양식</a>
+									<ul class="lnb-list-l">
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
+										<li class="lnb-item-l now"><a href="#" class="lnb-text-l">test2</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
+									</ul>
+								</li>
+								<li class="lnb-item-l dep3">
+									<a href="#" class="lnb-text-l">제례 정보</a>
+									<ul class="lnb-list-l">
+										<li class="lnb-item-l"><a href="#" class="lnb-text">상조 상품 안내</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 윤슬 4호</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 윤슬 6호</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 노블</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 특장점</a></li>
+										<li class="lnb-item-l"><a href="#" class="lnb-text">상조 서비스 품목</a></li>
+									</ul>
+								</li>
+								<li class="lnb-item"><a href="#" class="lnb-text">장례 관련 시설</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
+			<div class="bg-opa"></div>
 		</div>
 		<!-- //전체 메뉴 layer -->
 
