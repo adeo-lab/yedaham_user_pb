@@ -1922,6 +1922,15 @@ button.swiper-pagination-bullet {
   text-align: center;
   cursor: pointer;
 }
+.tab-display.style-a.white .tab-list .tab-item {
+  background: #fff;
+}
+.tab-display.style-a.white .tab-list .tab-item.current {
+  background-color: #232527;
+}
+.tab-display.style-a.white .tab-list .tab-item.current .tab-text {
+  color: #fff;
+}
 
 .tab-display.style-b {
   width: 100%;
