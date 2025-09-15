@@ -33,6 +33,11 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 1023px) {
+  #page {
+    row-gap: 20px;
+  }
+}
 #page .page-head .heading-l {
   text-align: left;
 }

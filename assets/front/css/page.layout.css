@@ -185,6 +185,9 @@ html.active-scroll-start #header.header-invert {
     margin: 0;
     padding: 0 16px;
   }
+  #header::before {
+    border-bottom: none;
+  }
 }
 #header .header-inner .logo {
   display: block;
@@ -724,7 +727,7 @@ html.active-scroll-start #header.header-invert {
 }
 @media (max-width: 1023px) {
   .container {
-    padding: 72px 20px 80px;
+    padding: 72px 0 80px;
   }
 }
 .container .in-between {
