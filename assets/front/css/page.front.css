@@ -3563,6 +3563,9 @@ span.dot {
 .faq-list .faq-item + .faq-item {
   border-top: 1px solid #F0F1F1;
 }
+.faq-list .faq-item a:hover .faq-head {
+  background: #F8F8F8;
+}
 .faq-list .faq-item + .faq-item.on {
   background: #F8F8F8;
 }
