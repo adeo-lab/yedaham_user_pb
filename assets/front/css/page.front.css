@@ -3959,6 +3959,7 @@ ease-in-out, border-color 0.3s ease-in-out;}
 .product-list01 {width: 100%; max-width: 1200px; padding: 64px 0 96px 0; margin: 0 auto;}
 .product-list01 > ul {display: flex; flex-wrap: wrap; width: 100%; gap: 48px;}
 .product-list01 .in-bx {position: relative; width: 368px; height: 560px; padding:40px 32px 32px 32px; background-color: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 24px; box-sizing: border-box;}
+.product-list01 .in-bx:hover {padding: 39px 31px 31px 31px; border: 2px solid #F1945E; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;}
 .product-list01 .in-bx.ty02 {height: 362px;}
 .product-list01 .in-bx p.flag {position: absolute; top: -3px; right: 30px;}
 .product-list01 .in-bx p.flag img {width: 40px;}
@@ -4106,6 +4107,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .review-display-wrap .review-display.masonry.in-product .review-list .review-item .gallery-wrap .gallery-inform .subtext {height: 104px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4;}
 .review-display-wrap .review-display.masonry.in-product .review-list .review-item:nth-of-type(n+4) {padding-top: 0;}
 .review-display-wrap .review-display.masonry.in-product .review-list .review-item .gallery-wrap .gallery-inform {border: 1px solid rgba(19, 21, 23, 0.15); box-shadow: none; box-sizing: border-box;}
+.review-display-wrap .review-display.masonry.in-product .review-list .review-item .gallery-wrap:hover .gallery-inform {border: 1px solid rgba(19, 21, 23, 0.4); transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
 
 .pr-btm-tx-wrap {width: 100%; padding: 96px 0; background: #F7F6F5}
 .pr-btm-tx-wrap .pr-btm-tx-in-bx {width: 100%; max-width: 1200px; margin: 0 auto;}
@@ -4131,7 +4133,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .pop-service-component-tab .sc-in-bx p.icon {width: 60px; height: 60px; margin: 0 auto; background-color: #ddd; background-size: auto 42px; background-repeat: no-repeat; background-position: center;}
 .pop-service-component-tab .sc-in-bx p.tx01 {font-weight: 600; font-size: 15px; color: #232527; line-height: 150%;}
 .pop-service-component-tab li.on .sc-in-bx {padding: 10.5px 0 0 0; border: 1.5px solid #F1945E;}
-.pop-service-component-tab li:hover .sc-in-bx {background: #F7F6F5;}
+.pop-service-component-tab li a:hover .sc-in-bx {background: #F7F6F5;}
 
 .popup-wrap.service-component .tab-display.style-a {padding-bottom: 48px;}
 .popup-wrap.service-component .tab-display.style-a .tab-list {justify-content: center;}
