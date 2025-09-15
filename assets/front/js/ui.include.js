@@ -340,7 +340,7 @@ const footerTemplate = function () {
 				<div>통신판매업 신고번호 : 제 2014-서울마포-0712호</div>
 				<div>전화권유판매업 신고번호 : 제 2014-서울마포-0012호</div>
 			</div>
-			<div class="ft-btm-logo"><a href="#"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div>
+			<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div>
 		</div>
 
 		<div class="ft-r-side">
@@ -348,20 +348,20 @@ const footerTemplate = function () {
 				<div class="bx-family"><a href="javascript: void();">패밀리 사이트</a></div>
 				<div class="family-layer">
 					<ul>
-						<li><a href="#">더케이한국교직원공제회</a></li>
-						<li><a href="#">더케이저축은행</a></li>
-						<li><a href="#">더케이교직원나라</a></li>
-						<li><a href="#">더케이호텔&리조트</a></li>
-						<li><a href="#">더케이제주호텔</a></li>
-						<li><a href="#">더케이소피아그린</a></li>
+						<li><a href="#" target="_blank">더케이한국교직원공제회</a></li>
+						<li><a href="#" target="_blank">더케이저축은행</a></li>
+						<li><a href="#" target="_blank">더케이교직원나라</a></li>
+						<li><a href="#" target="_blank">더케이호텔&리조트</a></li>
+						<li><a href="#" target="_blank">더케이제주호텔</a></li>
+						<li><a href="#" target="_blank">더케이소피아그린</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="ft-sns">
 				<ul>
-					<li><a href="#" class="btn-facebook"></a></li>
-					<li><a href="#" class="btn-instagram"></a></li>
-					<li><a href="#" class="btn-youtube"></a></li>
+					<li><a href="#" class="btn-facebook" target="_blank"></a></li>
+					<li><a href="#" class="btn-instagram" target="_blank"></a></li>
+					<li><a href="#" class="btn-youtube" target="_blank"></a></li>
 				</ul>
 			</div>
 			<div class="ft-mark">
