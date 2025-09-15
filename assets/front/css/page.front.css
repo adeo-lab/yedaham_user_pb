@@ -3501,6 +3501,7 @@ span.dot {
 /* 고객지원 */
 .notice-list ul {display: flex; row-gap: 16px; flex-direction: column;}
 .notice-list li .inner-bx {position: relative; padding: 36.5px 32px; background: #F7F6F5; border-radius: 16px; display: flex; align-items: center;}
+.notice-list li .inner-bx:hover {background: #F0EFEE;}
 .notice-list li .inner-bx a {display: block;}
 .notice-list li .inner-bx dt {font-weight: 700; font-size: 24px; line-height: 130%;}
 .notice-list li .inner-bx dd {font-weight: 400; font-size: 17px; color: #777; line-height: 150%;}
