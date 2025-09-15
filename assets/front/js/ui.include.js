@@ -326,9 +326,9 @@ const footerTemplate = function () {
 			</div>
 			<div class="ft-cnt02">
 				<ul>
-					<li>홈페이지 이용약관</li>
-					<li class="tx-color01">개인정보처리방침</li>
-					<li>중요정보고시사항</li>
+					<li><a href="#">홈페이지 이용약관</a></li>
+					<li class="tx-color01"><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">중요정보고시사항</a></li>
 				</ul>
 			</div>
 			<div class="ft-cnt03">
@@ -345,7 +345,7 @@ const footerTemplate = function () {
 
 		<div class="ft-r-side">
 			<div class="ft-family-wrap">
-				<div class="bx-family">패밀리 사이트</div>
+				<div class="bx-family"><a href="javascript: void();">패밀리 사이트</a></div>
 				<div class="family-layer">
 					<ul>
 						<li><a href="#">더케이한국교직원공제회</a></li>
