@@ -2354,7 +2354,7 @@ button.swiper-pagination-bullet {
   width: 1px;
   height: 100%;
   color: #232527;
-  background-color: #fff;
+ /* background-color: #fff;*/
 }
 .content-popup .popup-wrap .popup-footer .button-area [class*=btn-]:last-child {
   background-color: var(--color-base-010);
