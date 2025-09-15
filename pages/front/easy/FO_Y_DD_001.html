@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>약관동의/본인인증 - 간편가입 - 예다함</title>
+	<title>결제진행 - 간편가입 - 예다함</title>
 	
 	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
 	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
@@ -48,7 +48,7 @@
 									<li class="dots">
 										<span></span><span></span><span></span><span></span>
 									</li>
-									<li class="on">
+									<li>
 										<span class="num">2</span>
 										<div>약관동의/<br/>본인인증</div>
 									</li>
@@ -62,7 +62,7 @@
 									<li class="dots">
 										<span></span><span></span><span></span><span></span>
 									</li>
-									<li>
+									<li class="on">
 										<span class="num">4</span>
 										<div>결제진행</div>
 									</li>
@@ -84,77 +84,105 @@
 							<!-- left area -->
 							<div class="easy-join-left-side">
 								<div class="in-tit-bx">
-									<div class="s-tit">개인정보 활용 약관 동의</div>
+									<div class="s-tit">결제진행</div>
 								</div>
-								<div class="easy-agree">
-									<div class="in-bx">
-										<label class="form checkbox">
-											<input type="checkbox" name="checkbox1" id="checkbox1" class="form-elem">
-											<span class="form-text">전체 동의하기</span>
-										</label>
-										<div class="tx01">
-											전체 동의에는 필수·선택 항목이 모두 포함되며, 선택 항목은 개별 동의가 가능합니다.
-											선택 거부 시에도 서비스 이용에 제한은 없습니다.
+								<div class="ej-pay-wrap">
+									<div class="s-tit">결제방식을 선택해 주세요.</div>
+									<div class="bx-type">
+										<ul>
+											<li class="on">
+												<div class="in-bx">
+													<p class="icon card"></p>
+													<p class="txt">신용카드</p>
+												</div>
+											</li>
+											<li>
+												<div class="in-bx">
+													<p class="icon bank"></p>
+													<p class="txt">계좌이체</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="board-write-ty01">
+										<div class="top-area">
+											<div class="line-item one-line">
+												<dl>
+													<dt>카드사 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form select">
+															<select name="select" id="select" class="form-elem">
+																<option value="#">카드사를 선택해 주세요.</option>
+															</select>
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item one-line">
+												<dl>
+													<dt>카드번호 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form input typed">
+															<input class="form-elem" type="text" placeholder="카드번호 16자리를 입력해 주세요." value="">
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item">
+												<dl>
+													<dt>유효기간 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form input typed">
+															<input class="form-elem" type="text" placeholder="MM/YY" value="">
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item">
+												<dl>
+													<dt>비밀번호 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form input typed">
+															<input class="form-elem" type="text" placeholder="비밀 앞자리 2자리만 입력해주세요." value="">
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item one-line">
+												<dl>
+													<dt>이체일</dt>
+													<dd>
+														<div class="bx-transfer">
+															<ul>
+																<li>
+																	<div class="in-bx">
+																		<p>5일</p>
+																	</div>
+																</li>
+																<li class="on">
+																	<div class="in-bx">
+																		<p>10일</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</div>
 										</div>
 									</div>
-									<div class="in-bx">
-										<label class="form checkbox">
-											<input type="checkbox" name="checkbox2" id="checkbox2" class="form-elem" checked="checked">
-											<span class="form-text">[필수] 개인정보 수집 이용 제공에 관한 필수적 동의</span>
-										</label>
-										<div class="tx02">
-											<p>
-												<label class="form checkbox">
-													<input type="checkbox" name="checkbox2-1" id="checkbox2-1" class="form-elem" checked="checked">
-													<span class="form-text">[필수] 개인정보 수집 이용에 대한 동의</span>
-												</label>
-												<a href="#" class="btn-detail">자세히 보기</a>
-											</p>
-											<p>
-												<label class="form checkbox">
-													<input type="checkbox" name="checkbox2-2" id="checkbox2-2" class="form-elem" checked="checked">
-													<span class="form-text">[필수] 개인정보의 제3자 제공에 대한 동의</span>
-												</label>
-												<a href="#" class="btn-detail">자세히 보기</a>
-											</p>
-											<p>
-												개인정보 제공에 대한 게재
-												<a href="#" class="btn-detail">자세히 보기</a>
-											</p>
+									<div class="btm-ck-tx">
+										<div>
+											<label class="form checkbox">
+												<input type="checkbox" name="checkbox1" id="checkbox1" class="form-elem">
+												<span class="form-text">월 납입금 결제 정보를 확인하였으며, 이에 동의합니다.</span>
+											</label>
 										</div>
-									</div>
-									<div class="in-bx">
-										<label class="form checkbox">
-											<input type="checkbox" name="checkbox3" id="checkbox3" class="form-elem" checked="checked">
-											<span class="form-text">[선택] 개인정보 수집 이용 제공에 관한 선택적 동의</span>
-											<a href="#" class="btn-detail">자세히 보기</a>
-										</label>
-									</div>
-									<div class="in-bx">
-										<label class="form checkbox">
-											<input type="checkbox" name="checkbox4" id="checkbox4" class="form-elem">
-											<span class="form-text">[선택] 광고성 정보 수신 동의</span>
-											<a href="#" class="btn-detail">자세히 보기</a>
-										</label>
-										<div class="tx02">
-											<p>
-												<label class="form checkbox">
-													<input type="checkbox" name="checkbox4-1" id="checkbox4-1" class="form-elem">
-													<span class="form-text">[선택] 전화</span>
-												</label>
-											</p>
-											<p>
-												<label class="form checkbox">
-													<input type="checkbox" name="checkbox4-2" id="checkbox4-2" class="form-elem">
-													<span class="form-text">[선택] 이메일</span>
-												</label>
-											</p>
-											<p>
-												<label class="form checkbox">
-													<input type="checkbox" name="checkbox4-3" id="checkbox4-3" class="form-elem">
-													<span class="form-text">[선택] 문자(SMS 또는 카카오 알림톡)</span>
-												</label>
-											</p>
+										<div>
+											<label class="form checkbox">
+												<input type="checkbox" name="checkbox2" id="checkbox2" class="form-elem">
+												<span class="form-text">이후 월 납입금도 동일한 카드 정보로 결제하는 것에 동의합니다.</span>
+											</label>
 										</div>
 									</div>
 								</div>
@@ -168,7 +196,7 @@
 										선택상품
 										<a href="#" class="btn-change-product">상품변경</a>
 									</div>
-									<div class="s-txt01">윤슬 4호</div>
+									<div class="s-txt01">윤슬 4호<a href="#" class="btn-check-pr">구성품목 확인</a></div>
 									<div class="bx-price ty01">
 										<ul>
 											<li>
@@ -193,7 +221,15 @@
 											</li>
 											<li class="discount">
 												<p class="tx-l">할인금액</p>
-												<p class="tx-r"><span class="tx-p-wrap">- 602,000원</span></p>
+												<p class="tx-r">
+													<span class="tx-p-wrap">
+														- 602,000원
+														<span class="p-layer">
+															공제회원 특별 할인(+3회) 적용 완료!<br/>
+															업데이트된 할인 금액을 확인해보세요.
+														</span>
+													</span>
+												</p>
 											</li>
 										</ul>
 									</div>
@@ -209,17 +245,15 @@
 											</li>
 										</ul>
 									</div>
-									<div class="btm-txt02">
-										<p class="tx01">본인인증</p>
-										<p class="tx02">간편 가입 서비스를 이용하시려면 본인 확인을 위한 인증이 반드시 필요합니다.</p>
+									<div class="btm-txt">
 										<ul>
-											<li>입력하신 정보는 본인 인증 용도로만 사용되어 일체 저장되지 않으며, 동의 없이 공개 또는 제 3자에게 제공하지 않습니다.</li>
-											<li>본인인증 시, 페이지 이동이 될 수 있습니다. 만 14세 미만의 아동일 경우 서비스 이용이 불가합니다.</li>
+											<li>홍길동님의 본인 명의 카드만 이용 가능합니다. (가족카드, 선불카드 이용 불가)</li>
+											<li>일부 금융기관 사정으로 해당 시간대(21:00~08:59)에는 예금주 확인이 어려울 수 있어, 카드 결제만 가능할 수 있습니다.</li>
 										</ul>
 									</div>
 									<div class="btm-btns">
 										<a href="#" class="btn-ty01">이전</a>
-										<a href="#" class="btn-ty02">본인인증</a>
+										<a href="#" class="btn-ty02 on">결제하기</a>
 									</div>
 								</div>
 							</div>
