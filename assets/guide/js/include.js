@@ -300,7 +300,7 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">멤버십​</span></p>
 						${createMenuLink("benefit/FO_Y_BA_001.html", useFullLink)}
 					</dl>
@@ -349,7 +349,7 @@ const headerNavigation = function (useFullLink) {
 
 			<li class="g-sub-item">
 				<div class="g-sub-head">
-					<p class="g-sub-subject">MY​</p>
+					<p class="g-sub-subject">MY</p>
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
