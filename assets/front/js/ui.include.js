@@ -116,41 +116,21 @@ const headerTemplate = function () {
 							<a href="#" class="gnb-text-l">MY</a>
 							<ul class="lnb-list-l">
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">계약 현황</a></li>
-								<li class="lnb-item-l dep3">
+								<li class="lnb-item-l"><!-- dep3 -->
 									<a href="#" class="lnb-text-l">납입 현황</a>
-									<ul class="lnb-list-l">
+									<!-- <ul class="lnb-list-l">
 										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
 										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test2</a></li>
 										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
 										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
 										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
 										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
-									</ul>
+									</ul> -->
 								</li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">증명서 발급</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">멤버십카드 발급</a></li>
-								<li class="lnb-item-l dep3">
-									<a href="#" class="lnb-text-l">정보 변경</a>
-									<ul class="lnb-list-l">
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test2</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
-									</ul>
-								</li>
-								<li class="lnb-item-l dep3">
-									<a href="#" class="lnb-text-l">내 게시글 관리</a>
-									<ul class="lnb-list-l">
-										<li class="lnb-item"><a href="#" class="lnb-text">test1</a></li>
-										<li class="lnb-item"><a href="#" class="lnb-text">test2</a></li>
-										<li class="lnb-item"><a href="#" class="lnb-text">test3</a></li>
-										<li class="lnb-item"><a href="#" class="lnb-text">test4</a></li>
-										<li class="lnb-item"><a href="#" class="lnb-text">test5</a></li>
-										<li class="lnb-item"><a href="#" class="lnb-text">test6</a></li>
-									</ul>
-								</li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">정보 변경</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">내 게시글 관리</a>
 								<li class="lnb-item"><a href="#" class="lnb-text">내 알림내역</a></li>
 							</ul>
 						</li>
@@ -195,39 +175,9 @@ const headerTemplate = function () {
 										<span class="flag-new">NEW</span>
 									</a>
 								</li>
-								<li class="lnb-item-l dep3">
-									<a href="#" class="lnb-text-l">장례 진행</a>
-									<ul class="lnb-list-l">
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 상품 안내</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 4호</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 윤슬 6호</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 노블</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">예다함 특장점</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">상조 서비스 품목</a></li>
-									</ul>
-								</li>
-								<li class="lnb-item-l dep3">
-									<a href="#" class="lnb-text-l">장례 절차 및 양식</a>
-									<ul class="lnb-list-l">
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test1</a></li>
-										<li class="lnb-item-l now"><a href="#" class="lnb-text-l">test2</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test3</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test4</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test5</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text-l">test6</a></li>
-									</ul>
-								</li>
-								<li class="lnb-item-l dep3">
-									<a href="#" class="lnb-text-l">제례 정보</a>
-									<ul class="lnb-list-l">
-										<li class="lnb-item-l"><a href="#" class="lnb-text">상조 상품 안내</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 윤슬 4호</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 윤슬 6호</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 노블</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text">예다함 특장점</a></li>
-										<li class="lnb-item-l"><a href="#" class="lnb-text">상조 서비스 품목</a></li>
-									</ul>
-								</li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">장례 진행</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">장례 절차 및 양식</a></li>
+								<li class="lnb-item-l"><a href="#" class="lnb-text-l">제례 정보</a></li>
 								<li class="lnb-item"><a href="#" class="lnb-text">장례 관련 시설</a></li>
 							</ul>
 						</li>
