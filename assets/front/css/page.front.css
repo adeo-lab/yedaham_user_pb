@@ -4624,7 +4624,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .membership-list li .in-bx a {display: block;}
 .membership-list li .in-bx .thum {position: relative; height: 240px; border-top-left-radius: 24px; border-top-right-radius: 24px; overflow: hidden;}
 .membership-list li .in-bx .thum::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(19, 21, 23, 0.20); border-top-left-radius: 24px; border-top-right-radius: 24px; box-sizing: border-box;}
-.membership-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover;}
+.membership-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: 0.7s;}
 .membership-list li .in-bx .thum.no-img {position: relative; display: flex; width: 100%; height: 240px; font-weight: 600; font-size: 19px; color: #fff; line-height: 130%; background: #E2E2E2; border-top-left-radius: 24px; border-top-right-radius: 24px; overflow: hidden; align-items: center; justify-content: center;}
 .membership-list li .in-bx .thum.no-img::after {display: none;}
 .membership-list li .in-bx .cont {height: 156px; padding: 16px 32px 0 32px; border: 1px solid rgba(19, 21, 23, 0.20); border-top: none; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; overflow: hidden; box-sizing: border-box;}
@@ -4653,6 +4653,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .membership-list li.first .in-bx .thum {height: 396px; border: none; border-radius: 24px; overflow: hidden;}
 .membership-list li.first .in-bx .thum.no-img {height: 396px;}
 .membership-list li a:hover .in-bx .cont {border: 1px solid rgba(19, 21, 23, 0.4); border-top: none; transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
+.membership-list li a:hover .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); transition: 0.7s;}
 
 .card-list-wrap {margin-top: -16px;}
 .card-list-wrap .card-list ul {/*display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 30px;*/ margin: 0 -16px;}
@@ -4675,9 +4676,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .event-list ul {display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 48px;}
 .event-list li {width: 576px;}
+.event-list li a {display: block;}
 .event-list li .in-bx {position: relative; width: 100%; box-sizing: border-box;}
-.event-list li .in-bx a {display: block;}
 .event-list li .in-bx .thum {position: relative; height: 260px; border-radius: 24px; overflow: hidden;}
+.event-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: 0.7s;}
+.event-list li a:hover .in-bx  .thum img {transform: scale(1.1); transition: 0.7s;}
 .event-list li .in-bx .cont dl {padding: 24px 0 0 0;}
 .event-list li .in-bx .cont dt {position: relative; font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; padding-right: 90px; margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .event-list li .in-bx .cont dt span.tx-date {position: absolute; top: 2px; right: 0; font-weight: 400; font-size: 15px; color: #AF5B27; line-height: 150%; padding-left: 28px;}
