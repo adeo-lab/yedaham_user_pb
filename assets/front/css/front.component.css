@@ -1475,7 +1475,7 @@ button.swiper-pagination-bullet {
   color: var(--color-system-030);
 }
 .form-noti.invalid {
-  color: var(--color-system-010);
+  color: #E94543;
 }
 
 .form-validator {
