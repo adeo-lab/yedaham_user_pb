@@ -3948,7 +3948,9 @@ span.dot {
   color: #444;
 }
 .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .date span.dot {
-	margin-top: 3px;
+  width: 12px;
+  height: 12px;
+	margin-top: 5px;
 }
 .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .view {
   font-weight: 400;
@@ -3957,7 +3959,9 @@ span.dot {
   color: #444;
 }
 .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .view span.dot {
-	margin-top: 3px;
+  width: 12px;
+  height: 12px;
+	margin-top: 5px;
 }
 
 .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {position: relative; display: flex; align-items: center; width: 100%; padding-top: 16px;}
