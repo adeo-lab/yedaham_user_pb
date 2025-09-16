@@ -3527,12 +3527,14 @@ ease-in-out, border-color 0.3s ease-in-out;}
   background-position: right 24px top 12px;
   background-size: 16px;
 }
-.notice-list li.notice .inner-bx {background: #ECF5FF;}
+.notice-list li.notice .inner-bx {position: relative; background: #ECF5FF; overflow: hidden;}
+.notice-list li.notice .inner-bx dl {position: relative; z-index: 10;}
 .notice-list li.notice .inner-bx dt {padding-left: 62px;}
 .notice-list li.notice .inner-bx dt.notice {position: relative; }
 .notice-list li.notice .inner-bx dt.notice span.flag {position: absolute; top: 3.5px; left: 0; display: inline-block; font-weight: 600; font-size: 15px; line-height :150%; padding: 0 8px; border-radius: 4px;}
 .notice-list li.notice .inner-bx dt.notice span.flag.notice {color: #fff; background: #D17B47;}
 .notice-list li.notice .inner-bx dd {padding-left: 62px;}
+.notice-list li.notice .inner-bx:hover::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(19, 21, 23, 0.03), rgba(19, 21, 23, 0.03));}
 @media (max-width: 1023px) {
   .notice-list li .inner-bx {display: block; padding: 20px;}
   .notice-list li .inner-bx dt {font-size: 19px; padding-bottom: 8px;}
@@ -4742,11 +4744,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 @media (max-width: 1023px) {
+  .container.ty-wide #page .page-body-wrap .inner-bx {padding-top: 32px; row-gap: 24px;}
+
   .page-head-bottom {padding-left: 16px; padding-right: 16px;}
-  .page-head-bottom .btn-r-ty01 {position: relative; width: 100%; height: 48px; line-height: 48px; padding: 0; text-align: center; box-sizing: border-box;}
+  .page-head-bottom ul {padding-top: 10px; padding-bottom: 16px;}
+  .page-head-bottom li {font-size: 15px; padding-bottom: 4px;}
+  .page-head-bottom li:last-child {padding-bottom: 0;}
+  .page-head-bottom .btn-r-ty01 {position: relative; width: 100%; height: 48px; font-size: 17px; line-height: 48px; padding: 0; margin-bottom: 12px; text-align: center; box-sizing: border-box;}
 
   .tab-display.style-a.pt-ty01 {width: auto; padding-top: 0; margin: 0 -16px;}
-  .tab-display.style-a.pt-ty01 .tab-inner-bx {padding: 0 16px;} 
+  .tab-display.style-a.pt-ty01 .tab-inner-bx {padding: 0 16px;}
 
   .board-view .board-view-inform {row-gap: 10px; padding-bottom: 24px;}
   .board-view .board-view-inform .board-subject {font-size: 22px;}
@@ -4774,7 +4781,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .faq-list .faq-item .faq-head .faq-caption .faq-text {font-size: 15px;}
   .faq-list .faq-item .faq-head .faq-subject {font-size: 20px; line-height: 130%; word-break: keep-all;}
 
-  .review-display.masonry .review-list .review-item {padding-bottom: 32px;}
+  .review-display.masonry .review-list .review-item {padding-bottom: 16px;}
+  .review-display.masonry .review-list .review-item:nth-of-type(n+4) {padding-top: 0;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform {padding: 20px; row-gap: 8px;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .subject .name {font-size: 20px;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .subtext {font-size: 15px;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {padding-top: 8px;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info .tx-r {top: 10px;}
 }
 
 
