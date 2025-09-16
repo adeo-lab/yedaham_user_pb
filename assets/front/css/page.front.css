@@ -3992,7 +3992,7 @@ span.dot {
 
 
 /* 상품 안내 */
-.page-head .btn-r-compare {position: relative; display: inline-block; height: 48px; font-weight: 600; font-size: 19px; color: #131517; line-height: 48px; padding: 0 16px 0 46px; background: #F7DFB5; border-radius: 32px;}
+.page-head .btn-r-compare {position: relative; display: inline-block; height: 48px; font-weight: 600; font-size: 19px; color: #131517; line-height: 48px; padding: 0 16px 0 46px; background: #FBCD6C; border-radius: 32px;}
 .page-head .btn-r-compare::before {
   content: '';
   position: absolute;
@@ -4040,6 +4040,21 @@ span.dot {
 	background-repeat: no-repeat;
 	background-position: right top 5px;
 	background-size: 16px;
+}
+.product-list01 .mob-btm-btn {display: none;}
+.product-list01 .mob-btm-btn .btn-mob-btm-compare {position: relative; display: inline-block; height: 48px; font-weight: 600; font-size: 19px; color: #131517; line-height: 48px; padding: 0 16px 0 46px; background: #FBCD6C; border-radius: 32px;}
+.product-list01 .mob-btm-btn .btn-mob-btm-compare::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M2 12.5C2 16.6421 5.35786 20 9.5 20C13.6421 20 17 16.6421 17 12.5C17 8.35786 13.6421 5 9.5 5C5.35786 5 2 8.35786 2 12.5Z' fill='%23FBFAFA'/%3E%3Cpath d='M22 15C22 11.134 18.866 8 15 8C11.134 8 8 11.134 8 15C8 18.866 11.134 22 15 22C16.89 22 18.6038 21.2497 19.8633 20.0322C19.8877 20.0012 19.9148 19.9719 19.9434 19.9434C19.9719 19.9148 20.0012 19.8877 20.0322 19.8633C21.2497 18.6038 22 16.89 22 15ZM14 18V16H12C11.4477 16 11 15.5523 11 15C11 14.4477 11.4477 14 12 14H14V12C14 11.4477 14.4477 11 15 11C15.5523 11 16 11.4477 16 12V14H18C18.5523 14 19 14.4477 19 15C19 15.5523 18.5523 16 18 16H16V18C16 18.5523 15.5523 19 15 19C14.4477 19 14 18.5523 14 18ZM24 15C24 17.125 23.2619 19.0766 22.0303 20.6162L25.707 24.293C26.0976 24.6835 26.0976 25.3165 25.707 25.707C25.3165 26.0976 24.6835 26.0976 24.293 25.707L20.6162 22.0303C19.0766 23.2619 17.125 24 15 24C10.0294 24 6 19.9706 6 15C6 10.0294 10.0294 6 15 6C19.9706 6 24 10.0294 24 15Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
 }
 
 .container.ty-wide.product-detail .cont-wrap {width: 100%; max-width: 1200px; padding: 120px 0 96px 0; margin: 0 auto;}
@@ -4297,7 +4312,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .easy-join-wrap .easy-join-left-side {position: relative; width: 792px; /*height: 1700px;*/ padding: 40px; background: #fff; border-radius: 16px; box-sizing: border-box;}
 .easy-join-wrap .easy-join-left-side .in-tit-bx {padding-bottom: 16px; display: flex; justify-content: space-between;align-items: center;}
 .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit {font-weight: 600; font-size: 24px; color: #131517; line-height: 40px;}
-.easy-join-wrap .easy-join-left-side .in-tit-bx .btn-r-compare {position: relative; display: inline-block; height: 40px; font-weight: 600; font-size: 17px; color: #131517; line-height: 40px; padding: 0 12px 0 38px; background: #FBCD6C; border-radius: 32px;}
+.easy-join-wrap .easy-join-left-side .in-tit-bx .btn-r-compare {position: relative; display: inline-block; height: 40px; font-weight: 600; font-size: 17px; color: #131517; line-height: 40px; padding: 0 12px 0 38px; background: #F7DFB5; border-radius: 32px;}
 .easy-join-wrap .easy-join-left-side .in-tit-bx .btn-r-compare::before {
   content: '';
   position: absolute;
@@ -4831,6 +4846,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .product-list01 .in-bx.ty02 .btm-btns02 {position: absolute; top: 32px; right: 24px;}
   .product-list01 .in-bx.ty02 .btm-btns02 p {padding: 0;}
   .product-list01 .in-bx.ty02 .btm-btns02 span.btn-view-detail {display: none;}
+  .product-list01 .mob-btm-btn {display: block; text-align: center;}
+  .product-list01 .mob-btm-btn p {font-weight: 600; font-size: 15px; color: #777; line-height: 150%; padding-bottom: 12px;}
+  .product-list01 .mob-btm-btn .btn-mob-btm-compare {height: 40px; font-size: 15px; line-height: 40px;}
+  .product-list01 .mob-btm-btn .btn-mob-btm-compare::before {top: 4px;}
 
   .content-popup.active {position: fixed; top: 0; left: 0; bottom:0; padding-top: 24px; z-index: 100000;}
   /*.content-popup.active::before {content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #000; opacity: 0.5;}*/
