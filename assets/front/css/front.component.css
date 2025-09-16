@@ -1900,11 +1900,6 @@ button.swiper-pagination-bullet {
 .tab-display.style-a {
   width: 100%;
 }
-@media (max-width: 1023px) {
-  .tab-display.style-a {
-    padding: 0 20px;
-  }
-}
 .tab-display.style-a .tab-list .tab-item {
   display: inline-block;
   width: auto;
@@ -1940,6 +1935,7 @@ button.swiper-pagination-bullet {
 .tab-display.style-a.white .tab-list .tab-item.current .tab-text {
   color: #fff;
 }
+.tab-display.style-a.pt-ty01 {padding-top: 45px;}
 
 .tab-display.style-b {
   width: 100%;
@@ -1985,6 +1981,9 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1023px) {
   .tab-display.style-a .tab-list .tab-item .tab-text {
+    font-weight: 400; font-size: 15px; line-height: 150%; padding: 6.5px 12px;
+  }
+  .tab-display.style-b .tab-list .tab-item .tab-text {
     font-weight: 400; font-size: 15px; line-height: 150%; padding: 6.5px 12px;
   }
 }
