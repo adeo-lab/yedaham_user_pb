@@ -222,7 +222,7 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상조 상품 안내</span></p>
 						${createMenuLink("product/FO_Y_PA_001.html", useFullLink)}
 					</dl>
