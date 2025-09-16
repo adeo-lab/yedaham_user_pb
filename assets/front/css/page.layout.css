@@ -727,7 +727,7 @@ html.active-scroll-start #header.header-invert {
 }
 @media (max-width: 1023px) {
   .container {
-    padding: 72px 0 80px;
+    padding: 72px 16px 80px;
   }
 }
 .container .in-between {
