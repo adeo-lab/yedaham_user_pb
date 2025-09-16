@@ -3956,6 +3956,9 @@ span.dot {
   line-height: 150%;
   color: #444;
 }
+.review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .view span.dot {
+	margin-top: 3px;
+}
 
 .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {position: relative; display: flex; align-items: center; width: 100%; padding-top: 16px;}
 .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag {display: inline-block; font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding:2px 12px; border-radius: 16px;}
@@ -4787,6 +4790,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .subtext {font-size: 15px;}
   .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {padding-top: 8px;}
   .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info .tx-r {top: 10px;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag {font-size: 14px;}
+  .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .date {font-size: 14px;}
+
+  .data-board .board-list .board-item .board-wrap {display: block; padding: 20px;}
+  .data-board .board-list .board-item .board-wrap .mark {font-size: 14px; padding: 2px 19.5px;}
+  .data-board .board-list .board-item .board-wrap .contents .subject {height: 52px; font-size: 20px; padding-top: 12px; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: inherit; display: -webkit-box;}
+  .data-board .board-list .board-item .board-wrap .date {position: relative; top: auto; right: auto; font-size: 15px; padding-left: 0;}
 }
 
 
