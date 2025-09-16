@@ -189,23 +189,23 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">공지사항</span><span class="em">목록</span></p>
 						${createMenuLink("customer/FO_Y_CE_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">공지사항</span><span class="em">상세</span></p>
 						${createMenuLink("customer/FO_Y_CE_002.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주하는 질문​</span></p>
 						${createMenuLink("customer/FO_Y_CB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기​​</span></p>
 						${createMenuLink("customer/FO_Y_CC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">1:1문의</span><span class="em">목록</span></p>
 						${createMenuLink("customer/FO_Y_CD_001.html", useFullLink)}
 					</dl>
