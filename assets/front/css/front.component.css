@@ -2218,7 +2218,7 @@ button.swiper-pagination-bullet {
   max-width: 480px;
 }
 .content-popup.active {
-  z-index: 100;
+  z-index: 10000;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
   opacity: 1;
@@ -2432,7 +2432,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 1023px) {
   .content-popup .popup-contents .terms-display .terms-title {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 28px;
   }
 }

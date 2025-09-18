@@ -57,108 +57,48 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<!-- 
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">시스템 점검​</span></p>
-							${createMenuLink("common/FO_Y_ZA_001.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">ERROR 404 (페이지 없음​)</span></p>
-							${createMenuLink("common/FO_Y_ZA_002.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">ERROR 500 (통합오류 에러)</span></p>
-							${createMenuLink("common/FO_Y_ZA_002.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-								<p class="g-sub-title"><span class="em">홈페이지 이용약관</span></p>
-								${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
-						</div>
-					-->
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">가입상담 신청 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZC_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">개인정보 처리 동의 및 안내 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZO_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">통합 검색 (레이어)</span></p>
 						<p class="g-sub-text"><span class="em">버튼에 적용</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 레이어에서 페이지로??</span></p>
 						${createMenuLink("common/FO_Y_ZD_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">검색 결과</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 게시글 검색</span></p>
 						${createMenuLink("common/FO_Y_ZE_001.html", useFullLink)}
 					</div>
-					<!--
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">검색 결과 (검색 결과 존재 안함)</span></p>
-							${createMenuLink("common/FO_Y_ZE_001.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">전체메뉴 (레이어 팝업)</span></p>
-							${createMenuLink("common/BO_ZC_001_L.html", useFullLink)}
-						</div>
-					-->
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주 하는 질문 상세 (레이어 팝업)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 하단 버튼</span></p>
 						${createMenuLink("common/FO_Y_ZL_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기 등록 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZM_001_L.html", useFullLink)}
 					</div>
-					<!--
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">개인정보 처리 동의 및 안내</span></p>
-							${createMenuLink("common/FO_Y_ZO_001_L.html", useFullLink)}
-						</div>
-					-->
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기 상세 (레이어 팝업)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 하단 버튼</span></p>
 						${createMenuLink("common/FO_Y_ZM_002_L.html", useFullLink)}
 					</div>
-					<!--
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">1:1문의 등록</span></p>
-							${createMenuLink("common/FO_Y_ZN_001_L.html", useFullLink)}
-						</div>
-					-->
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">로그인 연장 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZN_001_L.html", useFullLink)}
 					</div>
-					<!--
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">로그인 연장 (레이어 팝업)</span></p>
-							${createMenuLink("common/FO_Y_ZM_001_L.html", useFullLink)}
-						</div>
-					-->
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">개인정보 마케팅 활용 동의 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZP_001_L.html", useFullLink)}
 					</div>
-					<!--
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">마케팅 수신 동의 (레이어 팝업)</span></p>
-							${createMenuLink("common/FO_Y_ZQ_001_L.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">이미지 미리보기 (레이어 팝업)</span></p>
-							${createMenuLink("common/FO_Y_ZR_001_L.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">동영상 미리보기 (레이어 팝업)</span></p>
-							${createMenuLink("common/FO_Y_ZS_001_L.html", useFullLink)}
-						</div>
-						<div class="g-sub-wrap" data-status="">
-							<p class="g-sub-title"><span class="em">1:1문의 답변 메일</span></p>
-							${createMenuLink("common/PC_ZN_002.html", useFullLink)}
-						</div>
-					-->
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">SNS 공유하기</span></p>
 						${createMenuLink("common/FO_Y_ZK_002_L.html", useFullLink)}
 					</div>
@@ -228,22 +168,24 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 상품 안내 (레이어 팝업)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인?</span></p>
 						${createMenuLink("product/FO_Y_PA_002_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">예다함 윤슬 4호</span></p>
 						${createMenuLink("product/FO_Y_PB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">예다함 윤슬 6호</span></p>
 						${createMenuLink("product/FO_Y_PC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">예다함 노블</span></p>
 						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인?</span></p>
 						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
 					</dl>
 				</div>
@@ -255,40 +197,47 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 선택 (상품 미선택)</span></p>
+						<p class="g-sub-text"><span class="em">모바일 레이어 : 윤슬 4호에 적용</span></p>
 						${createMenuLink("easy/FO_Y_DA_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 선택 (선택)</span></p>
+						<p class="g-sub-text"><span class="em">모바일 레이어 : 윤슬 4호에 적용</span></p>
 						${createMenuLink("easy/FO_Y_DA_001_02.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 선택 (일시납)</span></p>
+						<p class="g-sub-text"><span class="em">모바일 레이어 : 윤슬 4호에 적용</span></p>
 						${createMenuLink("easy/FO_Y_DA_001_03.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">본인 인증 / 정보 입력</span></p>
 						${createMenuLink("easy/FO_Y_DB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 변경</span></p>
 						${createMenuLink("easy/FO_Y_DP_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">정보입력/계약내용 확인​</span></p>
+						<p class="g-sub-text"><span class="em">테이블 임의 작업</span></p>
 						${createMenuLink("easy/FO_Y_DC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">정보입력/계약내용 확인2</span></p>
+						<p class="g-sub-text"><span class="em">테이블 임의 작업</span></p>
 						${createMenuLink("easy/FO_Y_DC_001_02.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제 진행​</span></p>
+						<p class="g-sub-text"><span class="em">임의 작업</span></p>
 						${createMenuLink("easy/FO_Y_DD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">계약 완료​</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인?</span></p>
 						${createMenuLink("easy/FO_Y_DE_001.html", useFullLink)}
 					</dl>
 				</div>
