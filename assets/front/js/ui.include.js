@@ -220,8 +220,8 @@ const headerTemplate = function () {
 					</div>
 					<div class="btm-info-wrap">
 						<div class="bx-left-side">
-							<p class="tx01">24시 장례접수 <span>1566-0119</span></p>
-							<p class="tx02">고객센터 <span>1566-6644</span></p>
+							<p class="tx01"><span class="tx-stit">24시 장례접수</span> <span class="tx-num">1566-0119</span></p>
+							<p class="tx02"><span class="tx-stit">고객센터</span> <span class="tx-num">1566-6644</span></p>
 						</div>
 						<div class="bx-right-side">
 							<p>무엇을 도와드릴까요?</p>
