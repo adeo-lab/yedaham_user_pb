@@ -77,7 +77,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주 하는 질문 상세 (레이어 팝업)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 하단 버튼</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 스와이프 여부 (현재 스와이프 가능)</span></p>
 						${createMenuLink("common/FO_Y_ZL_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -86,7 +86,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기 상세 (레이어 팝업)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 하단 버튼</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 스와이프 여부 (현재 스와이프 가능)</span></p>
 						${createMenuLink("common/FO_Y_ZM_002_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
