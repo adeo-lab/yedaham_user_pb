@@ -168,7 +168,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 상품 안내 (레이어 팝업)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인?</span></p>
+						<p class="g-sub-text"><span class="em">임의 작업 예정</span></p>
 						${createMenuLink("product/FO_Y_PA_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -185,7 +185,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인?</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인 (하단 좌우 영역 가이드 필요)</span></p>
 						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
 					</dl>
 				</div>
