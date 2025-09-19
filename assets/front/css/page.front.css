@@ -5185,7 +5185,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .board-view-ty02 .content-area .file-upload-result .fil-upload-top a.btn-down-all {height: 32px; font-size: 14px; line-height: 32px; padding: 0 28px 0 10px; background-position: right 10px top 8px;}
   .board-view-ty02 .content-area .file-upload-result .file-upload-wrap .file-name {position: relative; width: 100%; font-size: 15px; padding-right: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; box-sizing: border-box;}
   .board-view-ty02 .content-area .file-upload-result .file-upload-wrap .file-name span.tx-r {position: absolute; top: 15.5px; right: 0; width: 16px; height: 16px; background-position: center center; text-indent: -9999px; overflow: hidden;}
-  .board-view-ty02 .content-area p.btm-tx01 {font-size: 14px; margin-top: 24px;}
+  .board-view-ty02 .content-area p.btm-tx01 {font-size: 14px; padding-bottom: 60px; margin-top: 24px;}
 
   .page-easy .table-wrap {width: 100%; overflow-y: scroll}
   
@@ -5240,10 +5240,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   
   .content-popup .popup-wrap.board-faq .popup-header {margin-bottom: 0;}
   .content-popup .popup-wrap.board-faq .popup-body .popup-contents li {padding: 0 16px;}
-  .content-popup .popup-wrap.board-faq .swiper-button-next {top: auto; right: 0; bottom: 0;}
+  .content-popup .popup-wrap.board-faq .swiper-button-next {top: auto; right: 0; bottom: 0; width: 50%; height: 58px; background-color: #fff; border-radius: 0;}
+  .content-popup .popup-wrap.board-faq .swiper-button-next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.40458 19.7354C8.70014 20.0638 9.20597 20.0904 9.53439 19.7948L17.5344 12.5951C17.703 12.4434 17.7992 12.2273 17.7992 12.0005C17.7992 11.7737 17.703 11.5576 17.5344 11.4059L9.53442 4.20539C9.20602 3.90981 8.70019 3.93642 8.40461 4.26482C8.10903 4.59321 8.13564 5.09905 8.46403 5.39462L15.8034 12.0005L8.46407 18.6056C8.13565 18.9011 8.10902 19.4069 8.40458 19.7354Z' fill='%23232527'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px top 17px;
+    background-size: 24;
+  }
   .content-popup .popup-wrap.board-faq .swiper-button-next::after {content: '다음글'; display: block; width: auto; height: auto; font-weight: 600; font-size: 17px; line-height: 150%; background: none;}
-  .content-popup .popup-wrap.board-faq .swiper-button-prev {top: auto; left: 0; bottom: 0;}
-  .content-popup .popup-wrap.board-faq .swiper-button-prev::after {content: '이전글'; display: block; width: auto; height: auto; font-weight: 600; font-size: 17px; line-height: 150%; background: none;}
+  .content-popup .popup-wrap.board-faq .swiper-button-prev {top: auto; left: 0; bottom: 0; width: 50%; height: 58px; background-color: #fff; border-radius: 0;}
+  .content-popup .popup-wrap.board-faq .swiper-button-prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5954 19.7354C15.2998 20.0638 14.794 20.0904 14.4656 19.7948L6.46559 12.5946C6.29703 12.4429 6.20077 12.2268 6.20077 12C6.20078 11.7732 6.29703 11.5571 6.4656 11.4054L14.4656 4.20537C14.794 3.9098 15.2998 3.93643 15.5954 4.26484C15.891 4.59324 15.8644 5.09908 15.5359 5.39464L8.19664 12L15.536 18.6056C15.8644 18.9011 15.891 19.407 15.5954 19.7354Z' fill='%23232527'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left 16px top 17px;
+    background-size: 24;
+  }
+  .content-popup .popup-wrap.board-faq .swiper-button-prev::after {content: '이전글'; display: block; width: 100%; height: 58px; font-weight: 600; font-size: 17px; line-height: 58px; background: none; padding-left: 40px; box-sizing: border-box;}
+  .content-popup .popup-wrap.board-faq .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {opacity: 1;}
+  .content-popup .popup-wrap.board-faq .swiper-button-prev.swiper-button-disabled::after, .swiper-button-next.swiper-button-disabled::after {opacity: 0.5;}
 
   .content-popup .popup-wrap.board-review .popup-header {margin-bottom: 0;}
   .content-popup .popup-wrap.board-review .popup-body .popup-contents li {padding: 0 16px;}
