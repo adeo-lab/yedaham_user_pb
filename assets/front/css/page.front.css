@@ -3144,6 +3144,7 @@ z-index: 10;
   .ft-r-side .ft-sns li a.btn-facebook {width: 32px; height: 32px;}
   .ft-r-side .ft-sns li a.btn-instagram {width: 32px; height: 32px;}
   .ft-r-side .ft-sns li a.btn-youtube {width: 32px; height: 32px;}
+  .ft-r-side .ft-mark {display: none;}
 }
 
 
