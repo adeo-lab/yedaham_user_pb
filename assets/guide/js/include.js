@@ -65,10 +65,10 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">개인정보 처리 동의 및 안내 (레이어 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZO_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="완료">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">통합 검색 (레이어)</span></p>
 						<p class="g-sub-text"><span class="em">버튼에 적용</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 레이어에서 페이지로??</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">상단 작업 필요</span></p>
 						${createMenuLink("common/FO_Y_ZD_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
