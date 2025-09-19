@@ -73,7 +73,6 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">검색 결과</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 게시글 검색</span></p>
 						${createMenuLink("common/FO_Y_ZE_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
