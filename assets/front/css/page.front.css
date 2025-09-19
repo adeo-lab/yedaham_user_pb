@@ -4835,6 +4835,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   #footer.mob-none {display: none;}
   .quick-menu.mob-none {display: none;}
 
+  .quick-menu .quick-wrap .menu01 .btn-text {width: 48px; height: 48px;}
+  .quick-menu .quick-wrap .menu02 .btn-text {width: 48px; height: 48px;}
+
   .search-layer .search-inner-wrap {padding-top: 60px;}
   .search-layer .search-inner-wrap .search-inner-bx {width: 100%; padding: 0 16px; box-sizing: border-box;}
   .search-layer .search-inner-wrap .search-inner-bx .s-title {font-size: 24px; padding: 32px 60px;}
@@ -4874,7 +4877,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .result-list-wrap .result-list-inner-bx .result-list .btn-view-more {height: 40px; font-weight: 400; font-size: 15px; line-height: 40px; padding: 0 12px 0 16px; box-sizing: border-box; column-gap: 12px}
   .result-list-wrap .result-list-inner-bx .result-list .btn-view-more::after {width: 16px; height: 16px; background-size: 16px;}
   .result-list-wrap .result-list-inner-bx .result-list li a {align-items: flex-start;}
-  .result-list-wrap .result-list-inner-bx .result-list li a p:last-child {flex-basis: 70.1%;  flex-shrink: 0; overflow-wrap: break-word; word-wrap: break-word; word-break: break-all;}
+  .result-list-wrap .result-list-inner-bx .result-list li a p:first-child {flex-shrink: 0;}
+  .result-list-wrap .result-list-inner-bx .result-list li a p:last-child {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; /*flex-basis: 70.1%; flex-shrink: 0; overflow-wrap: break-word; word-wrap: break-word; word-break: break-all;*/}
   .result-list-wrap .result-list-inner-bx .result-list li a span.arrow {width: 16px; margin-top: 3px;}
 
   .container.ty-wide #page .page-body-wrap.ty02 {background: none;}
