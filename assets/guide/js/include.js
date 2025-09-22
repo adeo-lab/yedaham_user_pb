@@ -148,10 +148,6 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">1:1문의</span><span class="em">목록</span></p>
 						${createMenuLink("customer/FO_Y_CD_001.html", useFullLink)}
 					</dl>
-					<!-- <dl class="g-sub-wrap" data-status="완료">
-						<p class="g-sub-title"><span class="em">1:1문의</span><span class="em">안내</span></p>
-						${createMenuLink("customer/PC_ND_01.html", useFullLink)}
-					</dl> -->
 				</div>
 			</li>
 
@@ -234,9 +230,9 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">임의 작업</span></p>
 						${createMenuLink("easy/FO_Y_DD_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">계약 완료​</span></p>
-						<p class="g-sub-text"><span class="em">임의 작업 예정</span></p>
+						<p class="g-sub-text"><span class="em">임의 작업</span></p>
 						${createMenuLink("easy/FO_Y_DE_001.html", useFullLink)}
 					</dl>
 				</div>
@@ -252,7 +248,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">멤버십​</span></p>
 						${createMenuLink("benefit/FO_Y_BA_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">멤버십 (멤버십 상세 레이어)</span></p>
 						${createMenuLink("benefit/FO_Y_BA_002_L.html", useFullLink)}
 					</dl>
@@ -260,8 +256,8 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">제휴카드</span></p>
 						${createMenuLink("benefit/FO_Y_BB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">제휴카드 (상세 레이어)</span></p>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">제휴카드 (상세 레이어) / css</span></p>
 						${createMenuLink("benefit/FO_Y_BB_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
@@ -270,23 +266,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">이벤트 상세</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인?</span></p>
 						${createMenuLink("benefit/FO_Y_BC_002.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">부가서비스​</span></p>
-						${createMenuLink("benefit/FO_Y_BD_001.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">온라인 법률상담 목록</span></p>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">온라인 법률상담</span></p>
 						${createMenuLink("benefit/FO_Y_BD_002.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">온라인 법률 상담 등록 or 상세</span></p>
-						${createMenuLink("benefit/FO_Y_BD_003_L.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">온라인 법률 상담 예시 보기​</span></p>
-						${createMenuLink("benefit/FO_Y_BD_004_L.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -297,20 +282,23 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-text"><span class="em">작업중</span></p>
 						${createMenuLink("my/FO_Y_CA_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">계약 정보 목록</span></p>
+						<p class="g-sub-text"><span class="em">작업중</span></p>
 						${createMenuLink("my/FO_Y_YB_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">계약 형황</span></p>
+						<p class="g-sub-text"><span class="em">테이블 / css 작업 필요</span></p>
 						${createMenuLink("my/FO_Y_YB_002.html", useFullLink)}
 					</dl>
 				</div>
@@ -334,20 +322,8 @@ const headerNavigation = function (useFullLink) {
 				</div>
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">멤버십 카드</span></p>
-						${createMenuLink("my/FO_Y_YE_001_L.html", useFullLink)}
-					</dl>
-				</div>
-				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">결제 정보 변경</span></p>
 						${createMenuLink("my/FO_Y_YF_001.html", useFullLink)}
-					</dl>
-				</div>
-				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">개인 정보 변경</span></p>
-						${createMenuLink("my/FO_Y_YF_002.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
