@@ -284,52 +284,62 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">메인</span></p>
-						<p class="g-sub-text"><span class="em">작업중</span></p>
 						${createMenuLink("my/FO_Y_CA_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">계약 현황 목록</span></p>
-						<p class="g-sub-text"><span class="em">작업중</span></p>
 						${createMenuLink("my/FO_Y_YB_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">계약 현황 상세</span></p>
-						<p class="g-sub-text"><span class="em">테이블 / css 작업 필요</span></p>
 						${createMenuLink("my/FO_Y_YB_002.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">계약 정보</span></p>
-						${createMenuLink("my/FO_Y_YB_002.html", useFullLink)}
-					</dl>
-				</div>
-				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">납입현황</span></p>
 						${createMenuLink("my/FO_Y_YC_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">증명서 발급 목록</span></p>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">증명서 발급 목록 (레이어)</span></p>
 						${createMenuLink("my/FO_Y_YD_001_L.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">결제 정보 변경</span></p>
 						${createMenuLink("my/FO_Y_YF_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">개인 정보 변경</span></p>
 						${createMenuLink("my/FO_Y_YF_002.html", useFullLink)}
+					</dl>
+				</div>
+			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">장례정보</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">장례진행</span></p>
+						${createMenuLink("info/FO_Y_FB_001.html", useFullLink)}
+					</dl>
+				</div>
+				<div class="g-sub-body">
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">장례 관련 시설</span></p>
+						${createMenuLink("info/FO_Y_FE_001.html", useFullLink)}
 					</dl>
 				</div>
 			</li>

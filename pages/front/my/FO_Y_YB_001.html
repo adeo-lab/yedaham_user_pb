@@ -76,116 +76,225 @@
 
 					<!-- right content -->
 					<div class="my-cont-wrap">
-						<div>
-							<div style="font-weight: 600; font-size: 40px; color: #131517; line-height: 130%; padding-bottom: 48px;">계약현황</div>
-							<div style="padding: 40px; margin-bottom: 32px; background: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);">
-								<div style="padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);">
-									<div style="position: relative; display: flex; align-items: center; column-gap: 12px;">
-										<p style="font-weight: 600; font-size: 32px; color: #232527; line-height: 130%;">123456789</p>
-										<a href="#" style="display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #337848; line-height: 25px; padding: 0 12px; border: 1px solid #337848; border-radius: 16px; box-sizing: border-box;">정상</a>
-									</div>
-									<div style="font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding: 10px 0 0 0;">
-										<span>예다함 윤슬4호</span>
-										<span>계약일자 2025.07.23</span>
-									</div>
-								</div>
-								<div style="padding-bottom: 24px;">
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">월 납입일자</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">매월 5일</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">월 납입금액</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">43,000원 (납부중)</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">납입방법</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">신한은행 5757010123456</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">최종납입일자(회차)</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">2025.04 (24회)</dd>
-									</dl>
-									<div style="clear: both;"></div>
-								</div>
-								<div style="display: flex; justify-content: center; column-gap: 16px;">
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;">결제 정보 변경</a>
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;">증명서 발급</a>
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #fff; line-height: 40px; padding: 0 24px; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px;">납입현황 확인</a>
-								</div>
+						<div class="my-cont-wrap-inner">
+							<div class="my-main-tit01">계약현황</div>
+							
+							<div class="my-contract-list">
+								<ul>
+									<li>
+										<div class="in-bx">
+											<div class="top-area">
+												<div class="tx01">
+													<p>123456789</p>
+													<a href="#" class="flag normal">정상</a>
+												</div>
+												<div class="tx02">
+													<span class="tx-name">예다함 윤슬4호</span>
+													<span class="tx-date">계약일자<span class="dot"></span>2025.07.23</span>
+													<a href="#" class="btn-detail">자세히보기</a>
+												</div>
+											</div>
+											<div class="mid-area">
+												<dl>
+													<dt>월 납입일자</dt>
+													<dd>매월 5일</dd>
+												</dl>
+												<dl>
+													<dt>월 납입금액</dt>
+													<dd>43,000원 (납부중)</dd>
+												</dl>
+												<dl>
+													<dt>납입방법</dt>
+													<dd>자동이체(신*은행)</dd>
+												</dl>
+												<dl>
+													<dt>최종납입일자(회차)</dt>
+													<dd>2025.04 (24회)</dd>
+												</dl>
+											</div>
+											<div class="btm-btns">
+												<a href="#" class="btn-ty01">결제 정보 변경</a>
+												<a href="#" class="btn-ty02">증명서 발급</a>
+												<a href="#" class="btn-ty03">납입현황 확인</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="in-bx">
+											<div class="top-area">
+												<div class="tx01">
+													<p>123456789</p>
+													<a href="#" class="flag subscrip">청약</a>
+												</div>
+												<div class="tx02">
+													<span class="tx-name">예다함 윤슬4호</span>
+													<span class="tx-date">계약일자<span class="dot"></span>2025.07.23</span>
+													<a href="#" class="btn-detail">자세히보기</a>
+												</div>
+											</div>
+											<div class="mid-area">
+												<dl>
+													<dt>월 납입일자</dt>
+													<dd>매월 5일</dd>
+												</dl>
+												<dl>
+													<dt>월 납입금액</dt>
+													<dd>43,000원 (납부중)</dd>
+												</dl>
+												<dl>
+													<dt>납입방법</dt>
+													<dd>자동이체(신*은행)</dd>
+												</dl>
+												<dl>
+													<dt>최종납입일자(회차)</dt>
+													<dd>-</dd>
+												</dl>
+												<dl>
+													<dt>납입 합계</dt>
+													<dd>4,300,000원</dd>
+												</dl>
+												<dl>
+													<dt>만기회차</dt>
+													<dd>100회</dd>
+												</dl>
+											</div>
+											<div class="btm-btns">
+												<a href="#" class="btn-ty01">결제 정보 변경</a>
+												<a href="#" class="btn-ty02">증명서 발급</a>
+												<a href="#" class="btn-ty03">납입현황 확인</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="in-bx">
+											<div class="top-area">
+												<div class="tx01">
+													<p>123456789</p>
+													<a href="#" class="flag normal">정상</a>
+												</div>
+												<div class="tx02">
+													<span class="tx-name">예다함 윤슬4호</span>
+													<span class="tx-date">계약일자<span class="dot"></span>2025.07.23</span>
+													<a href="#" class="btn-detail">자세히보기</a>
+												</div>
+											</div>
+											<div class="mid-area">
+												<dl>
+													<dt>월 납입일자</dt>
+													<dd>매월 5일</dd>
+												</dl>
+												<dl>
+													<dt>월 납입금액</dt>
+													<dd>43,000원 (납부중)</dd>
+												</dl>
+												<dl>
+													<dt>납입방법</dt>
+													<dd>자동이체(신*은행)</dd>
+												</dl>
+												<dl>
+													<dt>최종납입일자(회차)</dt>
+													<dd>2025.04 (24회)</dd>
+												</dl>
+											</div>
+											<div class="btm-btns">
+												<a href="#" class="btn-ty01">결제 정보 변경</a>
+												<a href="#" class="btn-ty02">증명서 발급</a>
+												<a href="#" class="btn-ty03">납입현황 확인</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="in-bx">
+											<div class="top-area">
+												<div class="tx01">
+													<p>123456789</p>
+													<a href="#" class="flag subscrip">청약</a>
+												</div>
+												<div class="tx02">
+													<span class="tx-name">예다함 윤슬4호</span>
+													<span class="tx-date">계약일자<span class="dot"></span>2025.07.23</span>
+													<a href="#" class="btn-detail">자세히보기</a>
+												</div>
+											</div>
+											<div class="mid-area">
+												<dl>
+													<dt>월 납입일자</dt>
+													<dd>매월 5일</dd>
+												</dl>
+												<dl>
+													<dt>월 납입금액</dt>
+													<dd>43,000원 (납부중)</dd>
+												</dl>
+												<dl>
+													<dt>납입방법</dt>
+													<dd>자동이체(신*은행)</dd>
+												</dl>
+												<dl>
+													<dt>최종납입일자(회차)</dt>
+													<dd>-</dd>
+												</dl>
+												<dl>
+													<dt>납입 합계</dt>
+													<dd>4,300,000원</dd>
+												</dl>
+												<dl>
+													<dt>만기회차</dt>
+													<dd>100회</dd>
+												</dl>
+											</div>
+											<div class="btm-btns">
+												<a href="#" class="btn-ty01">결제 정보 변경</a>
+												<a href="#" class="btn-ty02">증명서 발급</a>
+												<a href="#" class="btn-ty03">납입현황 확인</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="in-bx">
+											<div class="top-area">
+												<div class="tx01">
+													<p>123456789</p>
+													<a href="#" class="flag proto">의전</a>
+												</div>
+												<div class="tx02">
+													<span class="tx-name">예다함 윤슬4호</span>
+													<span class="tx-date">계약일자<span class="dot"></span>2025.07.23</span>
+													<a href="#" class="btn-detail">자세히보기</a>
+												</div>
+											</div>
+											<div class="mid-area">
+												<dl>
+													<dt>월 납입일자</dt>
+													<dd>매월 5일</dd>
+												</dl>
+												<dl>
+													<dt>월 납입금액</dt>
+													<dd>43,000원 (납부중)</dd>
+												</dl>
+												<dl>
+													<dt>납입방법</dt>
+													<dd>자동이체(신*은행)</dd>
+												</dl>
+												<dl>
+													<dt>최종납입일자(회차)</dt>
+													<dd>2025.04 (24회)</dd>
+												</dl>
+											</div>
+											<div class="btm-btns">
+												<a href="#" class="btn-ty01">칭찬하기</a>
+												<a href="#" class="btn-ty02">증명서 발급</a>
+												<a href="#" class="btn-ty03">납입현황 확인</a>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
-							<div style="padding: 40px; margin-bottom: 32px; background: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);">
-								<div style="padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);">
-									<div style="position: relative; display: flex; align-items: center; column-gap: 12px;">
-										<p style="font-weight: 600; font-size: 32px; color: #232527; line-height: 130%;">123456789</p>
-										<a href="#" style="display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #E94543; line-height: 25px; padding: 0 12px; border: 1px solid #E94543; border-radius: 16px; box-sizing: border-box;">청약</a>
-									</div>
-									<div style="font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding: 10px 0 0 0;">
-										<span>예다함 윤슬4호</span>
-										<span>계약일자 2025.07.23</span>
-									</div>
-								</div>
-								<div style="padding-bottom: 24px;">
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">월 납입일자</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">매월 5일</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">월 납입금액</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">43,000원 (납부중)</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">납입방법</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">신한은행 5757010123456</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">최종납입일자(회차)</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">2025.04 (24회)</dd>
-									</dl>
-									<div style="clear: both;"></div>
-								</div>
-								<div style="display: flex; justify-content: center; column-gap: 16px;">
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;">결제 정보 변경</a>
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;">증명서 발급</a>
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #fff; line-height: 40px; padding: 0 24px; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px;">납입현황 확인</a>
-								</div>
+
+							<!-- bnt more -->
+							<div class="btn-btm-more-ty01">
+								<a href="#" class="btn-more-c">더보기</a>
 							</div>
-							<div style="padding: 40px; margin-bottom: 0; background: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);">
-								<div style="padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);">
-									<div style="position: relative; display: flex; align-items: center; column-gap: 12px;">
-										<p style="font-weight: 600; font-size: 32px; color: #232527; line-height: 130%;">123456789</p>
-										<a href="#" style="display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 25px; padding: 0 12px; border: 1px solid #374BA3; border-radius: 16px; box-sizing: border-box;">의전</a>
-									</div>
-									<div style="font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding: 10px 0 0 0;">
-										<span>예다함 윤슬4호</span>
-										<span>계약일자 2025.07.23</span>
-									</div>
-								</div>
-								<div style="padding-bottom: 24px;">
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">월 납입일자</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">매월 5일</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">월 납입금액</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">43,000원 (납부중)</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">납입방법</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">신한은행 5757010123456</dd>
-									</dl>
-									<dl style="float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;">
-										<dt style="width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;">최종납입일자(회차)</dt>
-										<dd style="font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;">2025.04 (24회)</dd>
-									</dl>
-									<div style="clear: both;"></div>
-								</div>
-								<div style="display: flex; justify-content: center; column-gap: 16px;">
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;">결제 정보 변경</a>
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;">증명서 발급</a>
-									<a href="#" style="display: blocke; height: 40px; font-weight: 400; font-size: 17px; color: #fff; line-height: 40px; padding: 0 24px; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px;">납입현황 확인</a>
-								</div>
-							</div>
+							<!-- //bnt more -->
 						</div>
 					</div>
 					<!-- //right content -->
