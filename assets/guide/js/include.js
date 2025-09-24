@@ -106,13 +106,18 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">레이어 팝업에서 열린 경우</span></p>
 						${createMenuLink("common/.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">1:1문의 등록</span></p>
-						${createMenuLink("common/FO_Y_ZN_001_L.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZZ_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">1:1문의 상세 (미답변/답변완료)</span></p>
-						${createMenuLink("common/FO_Y_ZN_001_L_detail.html", useFullLink)}
+					<div class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">1:1문의 상세 (미답변)</span></p>
+						${createMenuLink("common/FO_Y_ZZ_001_L_02.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">1:1문의 상세 (답변완료)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">디자인 필요? - 자주하는 질문 형식으로</span></p>
+						${createMenuLink("common/FO_Y_ZZ_001_L_03.html", useFullLink)}
 					</div>
 				</div>
 			</li>
@@ -125,6 +130,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">작업중</span></p>
 						${createMenuLink("main/FO_Y_MA_001.html", useFullLink)}
 					</div>
 				</div>
@@ -265,7 +271,6 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("benefit/FO_Y_BB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
-						<p class="g-sub-title"><span class="em">제휴카드 (상세 레이어) / css</span></p>
 						${createMenuLink("benefit/FO_Y_BB_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
@@ -339,14 +344,16 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">장례진행</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">배경 이미지 필요</span></p>
 						${createMenuLink("info/FO_Y_FB_001.html", useFullLink)}
 					</dl>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">장례 관련 시설</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">닫혀 있을 경우?</span></p>
 						${createMenuLink("info/FO_Y_FE_001.html", useFullLink)}
 					</dl>
 				</div>
