@@ -5127,6 +5127,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .my-main-tit02 p {font-weight: 600; font-size: 24px; color: #131517; line-height: 31px;}
 .my-main-tit02 p span {color: #AF5B27;}
 .my-main-tit02 a.btn-all {position: absolute; top: 2.5px; right: 0; font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding-right: 20px;}
+.my-main-tit02 a.btn-all {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M5.35449 3.12012C5.67468 2.76441 6.22237 2.73554 6.57812 3.05566L11.9121 7.85547C12.0945 8.01976 12.1982 8.2545 12.1982 8.5C12.1981 8.74538 12.0945 8.98033 11.9121 9.14453L6.57812 13.9434C6.22247 14.2631 5.67464 14.2352 5.35449 13.8799C5.03445 13.5243 5.06363 12.9765 5.41895 12.6562L10.0361 8.5L5.41895 4.34375C5.06336 4.02365 5.03466 3.47587 5.35449 3.12012Z' fill='%23232527'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right top 4px;
+  background-size: 16px;
+}
 
 .my-sub-title01 {font-weight: 600; font-size: 40px; color: #131517; line-height: 130%; padding-bottom: 48px;}
 
