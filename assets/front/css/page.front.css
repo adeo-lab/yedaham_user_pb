@@ -5216,6 +5216,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .my-contract-list li .in-bx .top-area .tx01 .flag.subscrip {color: #E94543; border: 1px solid #E94543;}
 .my-contract-list li .in-bx .top-area .tx01 .flag.proto {color: #374BA3; border: 1px solid #374BA3;}
 .my-contract-list li .in-bx .top-area .tx02 {position: relative; font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding: 10px 0 0 0;}
+.my-contract-list li .in-bx .top-area .tx02 span.tx-nm {font-weight: 400;}
 .my-contract-list li .in-bx .top-area .tx02 span.dot {margin-top: 3px;}
 .my-contract-list li .in-bx .top-area .tx02 a.btn-detail {position: absolute; top: 10px; right: 0; display: inline-block; font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding: 0 20px 0 0;}
 .my-contract-list li .in-bx .top-area .tx02 a.btn-detail {
