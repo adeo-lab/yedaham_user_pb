@@ -106,6 +106,14 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">레이어 팝업에서 열린 경우</span></p>
 						${createMenuLink("common/.html", useFullLink)}
 					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">1:1문의 등록</span></p>
+						${createMenuLink("common/FO_Y_ZN_001_L.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">1:1문의 상세 (미답변/답변완료)</span></p>
+						${createMenuLink("common/FO_Y_ZN_001_L_detail.html", useFullLink)}
+					</div>
 				</div>
 			</li>
 
