@@ -4073,8 +4073,8 @@ span.dot {
 .product-list01 .in-bx .btm-area .in-s-bx p.icon.decoration {background-size: 46px;}*/
 .product-list01 .in-bx .btm-area .in-s-bx p.tx01 {font-weight: 400; font-size: 15px; color: #777; line-height: 130%; padding-top: 4px;}
 .product-list01 .in-bx .btm-btns {display: flex; column-gap: 10px;}
-.product-list01 .in-bx .btm-btns a.btn-s-ask {display: inline-block; width: calc(50% - 8px); font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; padding: 9.5px 0; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; text-align: center;}
-.product-list01 .in-bx .btm-btns a.btn-s-join {display: inline-block; width: calc(50% - 8px); font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; padding: 9.5px 0; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px; text-align: center;}
+.product-list01 .in-bx .btm-btns button.btn-s-ask {display: inline-block; width: calc(50% - 5px); font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; padding: 9.5px 0; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; text-align: center;}
+.product-list01 .in-bx .btm-btns button.btn-s-join {display: inline-block; width: calc(50% - 5px); font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; padding: 9.5px 0; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px; text-align: center;}
 .product-list01 .in-bx.ty02 .btm-btns02 {text-align: center;}
 .product-list01 .in-bx.ty02 .btm-btns02 p {padding: 16px 0;}
 .product-list01 .in-bx.ty02 .btm-btns02 p img {width: 100px;}
