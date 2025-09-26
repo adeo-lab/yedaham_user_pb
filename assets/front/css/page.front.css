@@ -3103,7 +3103,7 @@ z-index: 10;
   transition: 0.2s ease-in-out;
 }
 .ft-r-side .ft-family-wrap .bx-family.f-open::after {transform: rotate(45deg); transition: 0.2s ease-in-out;}
-.ft-r-side .ft-family-wrap .family-layer {position: absolute; bottom: 50px; left: 0; width: 100%; padding: 16px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 8px; box-sizing: border-box; display: none;}
+.ft-r-side .ft-family-wrap .family-layer {position: absolute; bottom: 50px; left: 0; width: 100%; padding: 16px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 8px; box-sizing: border-box; display: none; z-index: 10;}
 .ft-r-side .ft-family-wrap .family-layer li a {font-weight: 400; font-size: 14px; color: #232527; line-height: 220%;}
 .ft-r-side .ft-sns {padding-bottom: 16px;}
 .ft-r-side .ft-sns ul {display: flex; column-gap: 24px; justify-content: flex-end;}
@@ -3132,19 +3132,21 @@ z-index: 10;
 .ft-r-side .ft-mark img {width: 50px;}
 
 @media (max-width: 1023px) {
-  .ft-l-side .ft-cnt01 {font-size: 15px; line-height: 150%; flex-direction: column; margin-bottom :24px; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
-  .ft-r-side .ft-family-wrap {display: none;}
+  #footer .footer-inner {padding-bottom: 48px;}
+  .ft-r-side {position: relative; top: auto; right: auto; padding-top: 24px; /*top: 41px; right: 16px;*/}
+  .ft-l-side .ft-cnt01 {font-size: 15px; line-height: 150%; /*flex-direction: column;*/ padding-bottom: 0; margin-bottom: 24px; /*border-bottom: 1px solid rgba(19, 21, 23, 0.15);*/ display: flex; column-gap: 16px;}
+  .ft-r-side .ft-family-wrap {width: 100%; margin-bottom: 24px; /*display: none;*/}
   .ft-l-side .ft-cnt02 ul {font-size: 13px; line-height: 150%;}
   .ft-l-side .ft-cnt03 {font-size: 13px; line-height: 150%; flex-direction: column; padding-bottom: 0;}
   .ft-l-side .ft-cnt03 > div > span {display: block;}
   .ft-l-side .ft-cnt04 {font-size: 13px; line-height: 150%; flex-direction: column;}
   .ft-l-side .ft-btm-logo {padding: 16px 0; text-align: center;}
-  .ft-r-side {top: 41px; right: 16px;}
-  .ft-r-side .ft-sns ul {column-gap: 16px;}
+  .ft-r-side .ft-sns {padding: 12px 0;}
+  .ft-r-side .ft-sns ul {justify-content: flex-start; column-gap: 16px;}
   .ft-r-side .ft-sns li a.btn-facebook {width: 32px; height: 32px;}
   .ft-r-side .ft-sns li a.btn-instagram {width: 32px; height: 32px;}
   .ft-r-side .ft-sns li a.btn-youtube {width: 32px; height: 32px;}
-  .ft-r-side .ft-mark {display: none;}
+  .ft-r-side .ft-mark {position: absolute; right: 0 ; bottom: 3px; /*display: none;*/}
 }
 
 
@@ -5588,13 +5590,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .proceeding-wrap .proceedings-list li .in-bx dd p::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 .proceeding-wrap .proceedings-list li .in-bx dd p:last-child {padding-bottom: 0;}
 
-.pr-bg-wrap.day01 {background: #ddd;}
+.pr-bg-wrap.day01 {background: url('../../../assets/front/images/sub/bg_info01.png') no-repeat center; background-size: cover;}
 .pr-bg-wrap.day01 .proceeding-wrap {padding-top: 64px;}
 .pr-bg-wrap.day01 .proceeding-wrap .proceedings-list {padding-top: 48px;}
 .pr-bg-wrap.day01 .proceeding-wrap .proceedings-list::before {top: 50px; height: calc(100% - 50px);}
-.pr-bg-wrap.day02 {background: #c1c1c1;}
+.pr-bg-wrap.day02 {background: url('../../../assets/front/images/sub/bg_info02.png') no-repeat center; background-size: cover;}
 .pr-bg-wrap.day03 {background: #fff; padding-bottom: 96px;}
-.pr-bg-wrap.day03 .proceeding-wrap .proceedings-list::before {top: 0; height: calc(100% - 150px);}
+.pr-bg-wrap.day03 .proceeding-wrap  {padding-bottom: 0; margin-bottom: -96px; background: url('../../../assets/front/images/sub/bg_info03.png') no-repeat left 60px bottom; background-size: 360px;}
+.pr-bg-wrap.day03 .proceeding-wrap .proceedings-list {padding-bottom: 192px;}
+.pr-bg-wrap.day03 .proceeding-wrap .proceedings-list::before {top: 0; height: calc(100% - 245px);}
 
 
 .f-map-wrap {display: flex; column-gap: 48px;}
