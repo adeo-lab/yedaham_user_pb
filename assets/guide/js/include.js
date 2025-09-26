@@ -128,7 +128,7 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">메인</span></p>
 						<p class="g-sub-text" style="color: red;"><span class="em">줄 바꿈?</span></p>
 						${createMenuLink("main/FO_Y_MA_001.html", useFullLink)}
