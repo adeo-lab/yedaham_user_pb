@@ -69,7 +69,6 @@ const headerNavigation = function (useFullLink) {
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">통합 검색 (레이어)</span></p>
 						<p class="g-sub-text"><span class="em">버튼에 적용</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">상단 작업 필요</span></p>
 						${createMenuLink("common/FO_Y_ZD_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -78,7 +77,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주 하는 질문 상세 (레이어 팝업)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 스와이프 여부 (현재 스와이프 가능)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">스와이프 제거 필요</span></p>
 						${createMenuLink("common/FO_Y_ZL_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -87,7 +86,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기 상세 (레이어 팝업)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">논의 및 추가작업 필요 : 스와이프 여부 (현재 스와이프 가능)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">스와이프 제거 필요</span></p>
 						${createMenuLink("common/FO_Y_ZM_002_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -192,6 +191,10 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">예다함 노블</span></p>
 						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상품비교</span></p>
+						${createMenuLink("product/BO_ZC_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목</span></p>
@@ -477,8 +480,13 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">CI/BI</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 작업 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 작업 중</span></p>
 						${createMenuLink("corp/media/FO_C_PC_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">CI/BI</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 작업 중</span></p>
+						${createMenuLink("corp/media/FO_C_PC_001_02.html", useFullLink)}
 					</dl>
 				</div>
 			</li>

@@ -33,9 +33,9 @@
 		<!-- //헤더 영역 -->
 
 		<!-- 컨테이너 영역 -->
-		<div class="container ty-wide" id="container">
+		<div class="container ty-wide" id="container" style="padding-top: 0;">
 			<div id="page" class="page-info">
-				<div class="page-head-wrap">
+				<div class="page-head-wrap" style="position: absolute; left: 50%; transform: translateX(-50%); top: 196px; z-index: 1000;">
 					<div class="page-head">
 						<div class="page-navi-wrap">
 							<div class="page-navi">
@@ -53,10 +53,65 @@
 						</div>
 					</div>
 				</div>
+				
+<style>
+.full_img {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  clip-path: polygon(27.5% 40% /*34%*/,72.5% 40% /*34%*/,72.5% 80%,27.5% 80%);
+  /*clip-path: polygon(27.4999% 33.9999%, 72.5001% 33.9999%, 72.5001% 80.0001%, 27.4999% 80.0001%);*/
+  /*clip-path: inset(40% 40% 40% 40%);
+  transition: clip-path 0.3s ease;*/
+  z-index: 1;
+}
+.b_txt {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+	width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-50%);
+    color: #fff
+}
+.in-txt {
+  font-weight: 700; font-size: 52px; color: #fff; line-height: 150%; text-align: center;
+  position: relative;
+	opacity: 1;
+	/*position:absolute;*/
+	top: 1200px;
+	left:0;
+	width: 100%;
+	height: 160px;
+	text-align: center;
+	/*transform: translate(0, 176%);*/
+}
+</style>
 				<div class="page-body-wrap no-bg">
-					<div class="img-motion-bx-wrap">
+					<div id="vision1012">
+						<div class="full_img">
+							<div class="bg"><img src="../../../../assets/front/images/corp/img_media05.png" alt="" /></div>
+							<div class="b_txt">
+								<p class="in-txt">
+									CI에 대한 이해와 규정 준수를 통해<br/>
+									일관성 유지의 기준을 제시합니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="img-motion-bx-wrap">
 						<div class="sk-div">
-							<div class="img-bx"><img src="../../../../assets/front/images/corp/img_media05.png" alt="" class="img-in" /></div>
+							<div class="img-bx"><img src="../../../../assets/front/images/corp/img_media05.png" alt="" /></div>
 							<div class="in-tx">
 								<div class="bx-tx">
 									CI에 대한 이해와 규정 준수를 통해<br/>
@@ -64,7 +119,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="page-body">
 						<div class="page-body-inner-bx01">
 							<div class="cibi-cont-wrap">
@@ -197,45 +252,39 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	
 
 	<script>
 	gsap.registerPlugin(ScrollTrigger);
 
-	gsap.to(".sk-div", {
-		width: "100%",              // 목표 width
-		ease: "none",               // scrub 애니메이션에는 ease를 없애야 자연스럽게 연동됨
+	gsap.to("#vision1012 .full_img", {
 		scrollTrigger: {
-		trigger: ".sk-div",       // 기준 요소
-		start: "top-=300 top",      // 요소가 화면 중앙에 올 때 시작
-		end: "bottom-=800 top",        // 요소가 화면 위로 사라질 때까지
-		scrub: true,              // 스크롤과 애니메이션을 동기화
-		//markers: true
+			trigger: "#vision1012",
+			pin: true,
+			scrub: 0.5,
+			start: "top top",
+			//end: "+=1000"
+			end: "bottom+=400 top",
+		}
+	});
+		
+	gsap.to("#vision1012 .bg", {
+		clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", // 최종 목표 값을 수정했습니다.
+		scrollTrigger: {
+			trigger: "#vision1012 .full_img",
+			start: "top top",
+			end: "bottom+=400 top",
+			scrub: 0.5
 		}
 	});
 
-	gsap.to(".img-in", {
-		opacity: 1,
-		width: "100%",
-		height: "100%",
-		transform: "scale(1)",
-		ease: "none",
+	gsap.to("#vision1012 .in-txt", {
+		top: "0",
 		scrollTrigger: {
-		trigger: ".sk-div",
-		start: "top-=300 top",
-		end: "bottom-=800 top",
-		scrub: true,
-		}
-	});
-
-	gsap.to(".in-tx", {
-		opacity: 1,
-		bottom: 700,
-		ease: "none",
-		scrollTrigger: {
-		trigger: ".sk-div",
-		start: "top-=500 top",
-		end: "bottom-=400 top",
-		scrub: true,
+			trigger: "#vision1012 .full_img",
+			start: "top top",
+			end: "bottom center",
+			scrub: true
 		}
 	});
 	</script>
