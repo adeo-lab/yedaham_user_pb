@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>결제진행 - 간편가입 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container ty-wide" id="container">
+			<div id="page" class="page-easy">
+				<div class="page-head-wrap">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">간편가입​</h2>
+							<div class="title-step01">
+								<ul>
+									<li class="on end">
+										<span class="num">1</span>
+										<div>상품선택</div>
+									</li>
+									<li class="dots">
+										<span></span><span></span><span></span><span></span>
+									</li>
+									<li class="on end">
+										<span class="num">2</span>
+										<div>약관동의</div>
+									</li>
+									<li class="dots">
+										<span></span><span></span><span></span><span></span>
+									</li>
+									<li class="on end">
+										<span class="num">3</span>
+										<div>정보입력</div>
+									</li>
+									<li class="dots">
+										<span></span><span></span><span></span><span></span>
+									</li>
+									<li class="on">
+										<span class="num">4</span>
+										<div>결제진행</div>
+									</li>
+									<li class="dots">
+										<span></span><span></span><span></span><span></span>
+									</li>
+									<li>
+										<span class="num">5</span>
+										<div>계약완료</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-body-wrap ty02">
+					<div class="inner-bx">
+						<div class="easy-join-wrap">
+							<!-- left area -->
+							<div class="easy-join-left-side">
+								<div class="in-tit-bx">
+									<div class="s-tit">결제진행</div>
+								</div>
+								<div class="ej-pay-wrap">
+									<div class="s-tit">결제방식을 선택해 주세요.</div>
+									<div class="bx-type">
+										<ul>
+											<li>
+												<label for="pr01-01">
+													<input type="radio" class="in-pr-ck" name="pr01" id="pr01-01" aria-label="노블" checked="신용카드">
+													<div class="in-bx">
+														<p class="icon card"></p>
+														<p class="txt">신용카드</p>
+													</div>
+												</label>
+											</li>
+											<li>
+												<label for="pr01-02">
+													<input type="radio" class="in-pr-ck" name="pr01" id="pr01-02" aria-label="계좌이체">
+													<div class="in-bx">
+														<p class="icon bank"></p>
+														<p class="txt">계좌이체</p>
+													</div>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="board-write-ty01">
+										<div class="top-area">
+											<div class="line-item one-line">
+												<dl>
+													<dt>카드사 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form select">
+															<select name="select" id="select" class="form-elem">
+																<option value="#">카드사를 선택해 주세요.</option>
+															</select>
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item one-line">
+												<dl>
+													<dt>카드번호 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form input typed">
+															<input class="form-elem" type="text" placeholder="카드번호 16자리를 입력해 주세요." value="">
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item">
+												<dl>
+													<dt>유효기간 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form input typed">
+															<input class="form-elem" type="text" placeholder="MM/YY" value="">
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item">
+												<dl>
+													<dt>비밀번호 <span class="imp">*</span></dt>
+													<dd>
+														<span class="form input typed">
+															<input class="form-elem" type="text" placeholder="비밀 앞자리 2자리만 입력해주세요." value="">
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="line-item one-line">
+												<dl>
+													<dt>이체일</dt>
+													<dd>
+														<div class="bx-transfer">
+															<ul>
+																<li>
+																	<label for="pr02-01">
+																		<input type="radio" class="in-pr-ck" name="pr02" id="pr02-01" aria-label="5일">
+																		<div class="in-bx">
+																			<p>5일</p>
+																		</div>
+																	</label>
+																</li>
+																<li class="on">
+																	<label for="pr02-02">
+																		<input type="radio" class="in-pr-ck" name="pr02" id="pr02-02" aria-label="10일" checked="checked">
+																		<div class="in-bx">
+																			<p>10일</p>
+																		</div>
+																	</label>
+																</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+									<div class="btm-ck-tx">
+										<div>
+											<label class="form checkbox">
+												<input type="checkbox" name="checkbox1" id="checkbox1" class="form-elem">
+												<span class="form-text">월 납입금 결제 정보를 확인하였으며, 이에 동의합니다.</span>
+											</label>
+										</div>
+										<div>
+											<label class="form checkbox">
+												<input type="checkbox" name="checkbox2" id="checkbox2" class="form-elem">
+												<span class="form-text">이후 월 납입금도 동일한 카드 정보로 결제하는 것에 동의합니다.</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //left area -->
+							
+							<!-- right area -->
+							<div class="easy-join-right-side data-on"><!-- 데이타 있을 경우 클래스 data-on 추가 -->
+								<div class="ej-inner-bx">
+									<div class="top-data slide-up-s">
+										<div class="top-data-inner-bx">
+											<a href="#" class="close-mob-layer">모바일 레이어 닫기</a>
+											<div class="mob-tx01">윤슬 4호 / 100회 / 2구좌</div>
+											<div class="price-data">
+												<div class="s-tit01">
+													선택상품
+													<a href="#" class="btn-change-product">상품변경</a>
+												</div>
+												<div class="s-txt01">윤슬 4호<a href="#" class="btn-check-pr">구성품목 확인</a></div>
+												<div class="bx-price ty01">
+													<ul>
+														<li>
+															<p class="tx-l">상품금액</p>
+															<p class="tx-r">4,300,000원</p>
+														</li>
+														<li>
+															<p class="tx-l">납입기한</p>
+															<p class="tx-r">100회</p>
+														</li>
+														<li>
+															<p class="tx-l">가입구좌수</p>
+															<p class="tx-r">2구좌</p>
+														</li>
+													</ul>
+												</div>
+												<div class="bx-price ty02">
+													<ul>
+														<li>
+															<p class="tx-l">총 상품금액</p>
+															<p class="tx-r">8,600,000원</p>
+														</li>
+														<li class="discount">
+															<p class="tx-l">할인금액</p>
+															<p class="tx-r">
+																<span class="tx-p-wrap">
+																	- 602,000원
+																	<span class="p-layer">
+																		공제회원 특별 할인(+3회) 적용 완료!<br/>
+																		업데이트된 할인 금액을 확인해보세요.
+																	</span>
+																</span>
+															</p>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="bx-price total">
+												<ul>
+													<li>
+														<p class="tx-l">월 납입금액</p>
+														<p class="tx-r month">79,980원</p>
+													</li>
+													<li>
+														<p class="tx-l">실 납입금액</p>
+														<p class="tx-r real">7,998,000원</p>
+													</li>
+												</ul>
+											</div>
+											<div class="btm-txt">
+												<ul>
+													<li>홍길동님의 본인 명의 카드만 이용 가능합니다. (가족카드, 선불카드 이용 불가)</li>
+													<li>일부 금융기관 사정으로 해당 시간대(21:00~08:59)에는 예금주 확인이 어려울 수 있어, 카드 결제만 가능할 수 있습니다.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="btm-btns">
+										<a href="#" class="btn-ty01">이전</a>
+										<a href="#" class="btn-ty02 on">결제하기</a>
+									</div>
+								</div>
+							</div>
+							<!-- //right area -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 페이지 평가 -->
+		<div id="estimate" class="estimate-wrap"></div>
+		<!-- //페이지 평가 -->
+		 
+		<!-- 푸터 영역 -->
+		<footer id="footer" class="mob-none"></footer>
+		<!-- //푸터 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu mob-none"></div>
+		<!-- //퀵메뉴 -->
+	</div>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// 제어할 버튼과 대상 요소를 모두 선택합니다.
+		//const openOnlyButton = document.querySelector('.in-pr-ck');
+		const toggleButton = document.querySelector('.close-mob-layer');
+		const targetElement = document.querySelector('.easy-join-right-side .top-data');
+
+		// 모든 요소가 페이지에 존재하는지 확인하여 오류를 방지합니다.
+		if (toggleButton && targetElement) {
+			
+			// 기능 1: .in-pr-ck 버튼은 '열기' 기능만 수행합니다.
+			/*openOnlyButton.addEventListener('click', function() {
+			// slide-up 클래스가 없으면 추가합니다. (이미 열려있으면 아무 동작 안 함)
+			targetElement.classList.add('slide-up-s');
+			});*/
+
+			// 기능 2: .close-mob-layer 버튼은 '토글' 기능을 수행합니다.
+			toggleButton.addEventListener('click', function() {
+			// slide-up 클래스가 있으면 제거하고, 없으면 추가합니다.
+			targetElement.classList.toggle('slide-up-l');
+			});
+		}
+	});
+	</script>
+
+</body>
+</html>
