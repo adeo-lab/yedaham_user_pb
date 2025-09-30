@@ -387,7 +387,6 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">YAC 신고 등록</span></p>
-						<p class="g-sub-title" style="color: red;"><span class="em">작업중</span></p>
 						${createMenuLink("corp/common/FFO_C_ZD_001.html", useFullLink)}
 					</div>
 				</div>
