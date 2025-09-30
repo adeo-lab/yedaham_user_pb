@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>메인 - 예다함</title>
+
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+
+	<script src="../../../assets/front/js/ui.include_ltd.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/ui.main.js" defer></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header main"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="main-container" id="container">
+			<div id="page" class="page-main">
+				<div class="main-inner-wrap">
+					<div class="m-cont-wrap01">
+<style>
+#header.main::before {background: #EFEFEF;}
+.m-cont-wrap01::before {content: ''; position: absolute; top: 100px; left: 0; width: 100%; height: 455px; background: #EFEFEF;}
+</style>
+						<!-- main top area -->
+						<div class="main-vis-wrap">
+							<!-- main visual -->
+							<div class="main-vis swiper" style="background: #3A456D;">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="in-bx" style="background: #3A456D;">
+											<p class="tx01" style="color: #fff;">
+												대한민국 상조문화의<br/>
+												새로운 기준
+											</p>
+											<p class="tx02" style="color: #fff;">
+												한국교직원공제회 100% 출자,<br/>
+												국내 최다은행 지급보증
+											</p>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="in-bx">
+											<p class="tx01" style="color: #fff;">
+												대한민국 상조문화의 22<br/>
+												새로운 기준 22
+											</p>
+											<p class="tx02" style="color: #fff;">
+												한국교직원공제회 100% 출자,<br/>
+												국내 최다은행 지급보증
+											</p>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="in-bx">
+											<p class="tx01">
+												대한민국 상조문화의 33<br/>
+												새로운 기준 33
+											</p>
+											<p class="tx02">
+												한국교직원공제회 100% 출자,<br/>
+												국내 최다은행 지급보증
+											</p>
+										</div>
+									</li>
+								</ul>
+								<!-- navigation -->
+								<div class="bx-navi">
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+
+									<div class="swiper-controls">
+										<button id="swiper-button-play">재생</button>
+										<button id="swiper-button-stop">정지</button>
+									</div>
+									<div class="swiper-button-next"></div>
+								</div>
+								<!-- //navigation -->
+							</div>
+							<!-- //main visual -->
+							<script>
+							// Swiper 인스턴스 생성
+							const swiper = new Swiper('.main-vis', {
+								// 자동 재생 설정
+								autoplay: {
+									delay: 3500, // 2.5초마다 슬라이드 바뀜
+									disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
+								},
+
+								// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+								pagination: {
+									el: '.swiper-pagination',
+									type: "fraction",
+									clickable: true,
+								},
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								},
+								loop: true, // 무한 루프
+							});
+
+							// HTML에서 버튼 요소 가져오기
+							const playButton = document.getElementById('swiper-button-play');
+							const stopButton = document.getElementById('swiper-button-stop');
+
+							// 정지 버튼 클릭 이벤트
+							stopButton.addEventListener('click', () => {
+								swiper.autoplay.stop(); // 자동 재생 정지
+								stopButton.style.display = 'none'; // 정지 버튼 숨기기
+								playButton.style.display = 'inline-block'; // 재생 버튼 보이기
+							});
+
+							// 재생 버튼 클릭 이벤트
+							playButton.addEventListener('click', () => {
+								swiper.autoplay.start(); // 자동 재생 시작
+								playButton.style.display = 'none'; // 재생 버튼 숨기기
+								stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
+							});
+
+							/*var swiper = new Swiper(".main-vis", {
+								pagination: {
+								el: ".swiper-pagination",
+								type: "fraction",
+								},
+								navigation: {
+								nextEl: ".swiper-button-next",
+								prevEl: ".swiper-button-prev",
+								},
+							});*/
+							</script>
+
+							<!-- main banner -->
+							<div class="main-vis-banner" style="position: relative; z-index: 20;">
+								<div class="bx-left-side">
+									<div class="tx01">
+										<div class="qq">
+											<p class="tx-stit">24시 장례접수</p>
+											<p class="tx-num">1566-0119</p>
+										</div>
+									</div>
+									<div class="tx02">
+										<div class="qq">
+											<p class="tx-stit">고객센터</p>
+											<p class="tx-num">1566-6644</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //main banner -->
+						</div>
+						<!-- //main top area -->
+
+						<!-- main top area02 -->
+						<div class="main-cont01 pc" style="position: relative; z-index: 20;">
+							<div class="in-bx">
+								<div class="s-tit">이미 가입하셨다면?</div>
+								<div class="in-list">
+									<ul>
+										<li>
+											<div class="icon ico01-01"></div>
+											<div class="s-txt">계약현황 조회​</div>
+										</li>
+										<li>
+											<div class="icon ico01-02"></div>
+											<div class="s-txt">예다함 멤버십​</div>
+										</li>
+										<li>
+											<div class="icon ico01-03"></div>
+											<div class="s-txt">프리미엄​ 서비스​​</div>
+										</li>
+										<li>
+											<div class="icon ico01-04"></div>
+											<div class="s-txt">납부방법 변경​</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="in-bx">
+								<div class="s-tit">가입 고민 중이시라면?</div>
+								<div class="in-list">
+									<ul>
+										<li>
+											<div class="icon ico02-01"></div>
+											<div class="s-txt">왜 예다함인가?</div>
+										</li>
+										<li>
+											<div class="icon ico02-02"></div>
+											<div class="s-txt">상조의 필요성​</div>
+										</li>
+										<li>
+											<div class="icon ico02-03"></div>
+											<div class="s-txt">간편가입​</div>
+										</li>
+										<li>
+											<div class="icon ico02-04"></div>
+											<div class="s-txt">자주 하는 질문​</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //main top area02 -->
+						 <!-- main top area02 모바일 -->
+						<div class="main-cont01 mob">
+							<div class="in-bx">
+								<div class="in-list swiper">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="icon ico01-01"></div>
+											<div class="s-txt">계약현황 조회​</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico01-02"></div>
+											<div class="s-txt">예다함 멤버십​</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico01-03"></div>
+											<div class="s-txt">프리미엄​ 서비스​​</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico01-04"></div>
+											<div class="s-txt">납부방법 변경​</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico02-01"></div>
+											<div class="s-txt">왜 예다함인가?</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico02-02"></div>
+											<div class="s-txt">상조의 필요성​</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico02-03"></div>
+											<div class="s-txt">간편가입​</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="icon ico02-04"></div>
+											<div class="s-txt">자주 하는 질문​</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<script>
+								var swiper2 = new Swiper(".main-cont01 .in-list", {
+									slidesPerView: 'auto',
+									spaceBetween: 0,
+									navigation: {
+										nextEl: ".swiper-button-next",
+										prevEl: ".swiper-button-prev",
+									},
+								});
+							</script>
+						</div>
+						<!-- //main top area02 모바일 -->
+						
+						<!-- 추천 다이렉트 상품 -->
+						<div class="main-cont02">
+							<div class="s-tit-wrap">
+								<div class="s-tit">추천 다이렉트 상품</div>
+								<div>
+									<a href="#" class="btn-r-compare">상품 한눈에 비교하기</a>
+								</div>
+							</div>
+							<div class="main-product-list-wrap">
+								<div class="product-list01 swiper">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<a href="#">
+												<div class="in-bx">
+													<p class="flag"><img src="../../../assets/front/images/common/flag_product01.png" alt="윤슬 4호" /></p>
+													<div class="top-area">
+														<p class="tx-title01">예다함</p>
+														<p class="tx-title02">윤슬 4호</p>
+														<p class="tx-tx01">
+															필수 품목만 엄선한<br/>
+															실속형 상품
+														</p>
+													</div>
+													<div class="mid-area">
+														<p class="tx-price">21,500원/월</p>
+														<p class="tx-tx01">200회 기준</p>
+													</div>
+													<div class="btm-area">
+														<ul>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon helper"></p>
+																	<p class="tx01">장례도우미​<br/>3명</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon box"></p>
+																	<p class="tx01">백자 운학<br/>봉안함</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon buslimo"></p>
+																	<p class="tx01">차량 왕복​<br/>200km 무료​</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon mourning"></p>
+																	<p class="tx01">현대식 상복<br/>남/여 3벌</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="btm-btns">
+														<button type="button" class="btn-s-ask">상담 신청</button>
+														<button type="button" class="btn-s-join">간편 가입</button>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="#">
+												<div class="in-bx">
+													<p class="flag"><img src="../../../assets/front/images/common/flag_product02.png" alt="윤슬 6호" /></p>
+													<div class="top-area">
+														<p class="tx-title01">예다함</p>
+														<p class="tx-title02">윤슬 6호</p>
+														<p class="tx-tx01">
+															주요 품목을 업그레이드한<br/>
+															준프리미엄 상품
+														</p>
+													</div>
+													<div class="mid-area">
+														<p class="tx-price">29,000원/월</p>
+														<p class="tx-tx01">200회 기준</p>
+													</div>
+													<div class="btm-area">
+														<ul>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon helper"></p>
+																	<p class="tx01">장례도우미​<br/>5명</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon box"></p>
+																	<p class="tx01">금전사 송학<br/>봉안함</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon decoration"></p>
+																	<p class="tx01">재단장식<br/>3호</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon mourning"></p>
+																	<p class="tx01">현대식 상복<br/>남/여 5벌</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="btm-btns">
+														<button type="button" class="btn-s-ask">상담 신청</button>
+														<button type="button" class="btn-s-join">간편 가입</button>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="#">
+												<div class="in-bx">
+													<p class="flag"><img src="../../../assets/front/images/common/flag_product03.png" alt="노블" /></p>
+													<div class="top-area">
+														<p class="tx-title01">예다함</p>
+														<p class="tx-title02">노블</p>
+														<p class="tx-tx01">
+															차별화된 서비스를 제공하는<br/>
+															프리미엄 상품
+														</p>
+													</div>
+													<div class="mid-area">
+														<p class="tx-price">60,000원/월</p>
+														<p class="tx-tx01">200회 기준</p>
+													</div>
+													<div class="btm-area">
+														<ul>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon helper"></p>
+																	<p class="tx01">장례도우미​<br/>10명</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon decoration"></p>
+																	<p class="tx01">제단장식<br/>7호</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon buslimo"></p>
+																	<p class="tx01">차량<br/>전국 무료</p>
+																</div>
+															</li>
+															<li>
+																<div class="in-s-bx">
+																	<p class="icon mourning"></p>
+																	<p class="tx01">현대식 상복<br/>남/여 10벌</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="btm-btns">
+														<button type="button" class="btn-s-ask">상담 신청</button>
+														<button type="button" class="btn-s-join">간편 가입</button>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<script>
+									document.addEventListener("DOMContentLoaded", function () {
+									if (window.innerWidth <= 1023) {
+											var swiper3 = new Swiper(".product-list01", {
+												slidesPerView: 'auto',
+												spaceBetween: 0,
+												centeredSlides: true,
+												loop: true,
+												watchOverflow: true,
+												navigation: {
+													nextEl: ".swiper-button-next",
+													prevEl: ".swiper-button-prev",
+												},
+											});
+										}
+									});
+								</script>
+							</div>
+						</div>
+						<!-- //추천 다이렉트 상품 -->
+					</div>
+
+					<div class="m-cont-wrap02" style="background: #DFE5EC;">
+						<!-- 고객 칭찬 후기 -->
+						<div class="inner-bx">
+							<div class="main-cont03 pc">
+								<div class="s-tit-wrap">
+									<div class="s-tit">고객 칭찬 후기</div>
+									<div class="s-txt">
+										실제 고객님<br/>
+										전해주신 감사와<br/>
+										칭찬의 이야기
+									</div>
+									<a href="#" class="btn-more">더보기</a>
+								</div>
+								<div class="main-review-list">
+									<div class="bx-wrap-l">
+										<div class="in-bx-wrap move">
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- 루프 위에 한벌 복사 필요 -->
+										<div class="in-bx-wrap move">
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- //루프 위에 한벌 복사 필요 -->
+									</div>
+									<div class="bx-wrap-r">
+										<div class="in-bx-wrap move">
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- 루프 위에 한벌 복사 필요 -->
+										<div class="in-bx-wrap move">
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- //루프 위에 한벌 복사 필요 -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //고객 칭찬 후기 -->
+						<!-- //고객 칭찬 후기 모바일 -->
+						<div class="inner-bx">
+							<div class="main-cont03 mob">
+								<div class="s-tit-wrap">
+									<div class="s-tit">고객 칭찬 후기</div>
+									<div class="s-txt">
+										실제 고객님<br/>
+										전해주신 감사와<br/>
+										칭찬의 이야기
+									</div>
+									<a href="#" class="btn-more">더보기</a>
+								</div>
+								<div class="main-review-list">
+									<div class="bx-wrap-l swiper">
+										<div class="in-bx-wrap swiper-wrapper">
+											<div class="in-bx swiper-slide">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx swiper-slide">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info swiper-slide">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx swiper-slide">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info swiper-slide">
+													<p class="flag ys4">윤슬4호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx swiper-slide">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx swiper-slide">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+											<div class="in-bx swiper-slide">
+												<dl>
+													<dt>김동익 팀장님께 감사드립니다.</dt>
+													<dd>
+														정신없는 상황에서도 절차가 깔끔했고 
+														페이백 정산 덕분에 불필요한 비용 부담없이 마무리할 수 있었어요. 장지·벌초 
+														같은 사후 서비스까지... 관리사 3분도 손.발이 잘 맞아 음식 손실도 없고, 진행도 빠르게 잘 진행해 주셨습니다.
+													</dd>
+												</dl>
+												<div class="btm-info">
+													<p class="flag ys6">윤슬6호</p>
+													<p class="date">
+														이*연<span class="dot"></span>2025.07.25
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<script>		
+										var swiper4 = new Swiper(".mob .bx-wrap-l", {
+											slidesPerView: 'auto',
+											spaceBetween: 0,
+											navigation: {
+												nextEl: ".swiper-button-next",
+												prevEl: ".swiper-button-prev",
+											},
+										});
+									</script>
+								</div>
+							</div>
+						</div>
+						<!-- //고객 칭찬 후기 모바일 -->
+					</div>
+
+					<div class="m-cont-wrap01" style="padding-top: 96px;">
+						<!-- 자주하는 질문 -->
+						<div class="main-cont05">
+							<div class="s-tit-wrap">
+								<div class="s-tit">자주하는 질문</div>
+								<a href="#" class="btn-more">더보기</a>
+							</div>
+							<div class="my-main-faq">
+								<ul>
+									<li>
+										<div class="in-bx">
+											<p class="tx-q">
+												만기가 도래한 후에도 
+												상조 서비스 이용이 가능한가요?
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="in-bx">
+											<p class="tx-q">
+												상조 서비스와 장례식장 서비스의 
+												차이점은 무엇인가요?
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="in-bx">
+											<p class="tx-q">
+												상조상품의 서비스 절차는 
+												어떻게 진행되나요?
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //자주하는 질문 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+		
+		<!-- 예다함 소식 -->
+		<div class="y-news-wrap" style="background: #EFEFEF;">
+			<div class="inner-bx">
+				<div class="s-tit">예다함 소식</div>
+				<div class="y-news swiper">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<div class="in-bx">
+								<div class="tx01">예다함 소식</div>
+								<div class="tx02">더케이예다함(주) 장지 컨설팅 협력업체 선정(수도권)</div>
+								<div class="tx03">2025.07.25</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="in-bx">
+								<div class="tx01">예다함 소식 22</div>
+								<div class="tx02">더케이예다함(주) 장지 컨설팅 협력업체 선정(수도권)</div>
+								<div class="tx03">2025.07.25</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="in-bx">
+								<div class="tx01">예다함 소식 33</div>
+								<div class="tx02">더케이예다함(주) 장지 컨설팅 협력업체 선정(수도권)</div>
+								<div class="tx03">2025.07.25</div>
+							</div>
+						</li>
+					</ul>
+					<!-- navigation -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<!-- //navigation -->
+				</div>
+				<script>		
+					var swiper5 = new Swiper(".y-news", {
+						direction: 'vertical',
+						loop:true,
+						//slidesPerView: 1,
+						spaceBetween: 0,
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+					});
+					
+				</script>
+			</div>
+		</div>
+		<!-- //예다함 소식 -->
+		
+		<!-- 푸터 영역 -->
+		<footer id="footer"></footer>
+		<!-- //푸터 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+	</div>
+</body>
+</html>
