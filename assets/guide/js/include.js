@@ -445,8 +445,9 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">윤리경영</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 2번 적용</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
@@ -588,8 +589,98 @@ const headerNavigation = function (useFullLink) {
 				</div>
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">menu01-01</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						<p class="g-sub-title"><span class="em">법인 가입 상담신청</span></p>
+						${createMenuLink("ltd/FO_Y_ZA_001_l.html", useFullLink)}
+					</div>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">자주 하는 질문 상세</span></p>
+						${createMenuLink("ltd/FO_Y_ZB_001_l.html", useFullLink)}
+					</div>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">개인정보 처리 동의 및 안내</span></p>
+						${createMenuLink("ltd/FO_Y_ZC_001_l.html", useFullLink)}
+					</div>
+				</div>
+			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">메인</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">작업중</span></p>
+						${createMenuLink("ltd/FO_L_MA_001.html", useFullLink)}
+					</div>
+				</div>
+			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">법인 상조서비스</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">법인 상조서비스</span></p>
+						${createMenuLink("ltd/FO_L_IA_001.html", useFullLink)}
+					</div>
+				</div>
+			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">법인 상품</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">법인 상품</span><span class="em">목록</span></p>
+						${createMenuLink("ltd/FO_L_PA_001.html", useFullLink)}
+					</div>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">맞춤형 상품</span><span class="em">상세</span></p>
+						${createMenuLink("ltd/FO_L_PA_002.html", useFullLink)}
+					</div>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">맞임원용춤형 상품</span><span class="em">상세</span></p>
+						${createMenuLink("ltd/FO_L_PA_003.html", useFullLink)}
+					</div>
+				</div>
+			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">법인 가입방법</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">법인 가입방법</span></p>
+						${createMenuLink("ltd/FO_L_EA_001.html", useFullLink)}
+					</div>
+				</div>
+			</li>
+
+			<li class="g-sub-item">
+				<div class="g-sub-head">
+					<p class="g-sub-subject">자주 하는 질문</p>
+					<a href="#" class="btn-g-open">모두 열기</a>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">자주 하는 질문</span><span class="em">목록</span></p>
+						${createMenuLink("ltd/FO_L_FA_001.html", useFullLink)}
 					</div>
 				</div>
 			</li>
