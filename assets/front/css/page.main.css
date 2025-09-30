@@ -10,8 +10,8 @@
 .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 .inner-bx {max-width: 1200px; margin: 0 auto;}
 
 .main-vis-wrap {position: relative; padding-bottom: 64px; display: flex; column-gap: 64px;}
-.main-vis-wrap .main-vis {width: 792px; height: 270px; background: #F0E4D5; border-radius: 16px;}
-.main-vis-wrap .main-vis li .in-bx {padding: 42.5px 48px;}
+.main-vis-wrap .main-vis {width: 792px; height: 270px; border-radius: 16px;}
+.main-vis-wrap .main-vis li .in-bx {height: 270px; padding: 42.5px 48px; box-sizing: border-box;}
 .main-vis-wrap .main-vis li .in-bx .tx01 {font-weight: 600; font-size: 36px; color: #232527; line-height: 130%; padding-bottom: 12px;}
 .main-vis-wrap .main-vis li .in-bx .tx02 {font-weight: 600; font-size: 17px; color: #444; line-height: 130%;}
 /*.swiper-button-next, .swiper-rtl .swiper-button-prev {top: 3.5px; right: 0; width: 16px; height: 16px; background: #ddd; z-index: 100;}
