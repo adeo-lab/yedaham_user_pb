@@ -3629,6 +3629,13 @@ span.dot {
   background-position: right top 4px;
   background-size: 16px;
 }
+
+.board-view.event .board-view-content .board-content {padding-bottom: 0; border-bottom: none;}
+.board-view.event .board-view-content .board-content .bx-event-img {position: relative;}
+.board-view.event .board-view-content .board-content .bx-event-img::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(19, 21, 23, 0.50); z-index: 10;}
+.board-view.event .board-view-content .board-content .bx-event-img::after {content: '종료된 이벤트입니다.'; position: absolute; top: calc(50% - 20px); left: 0; width: 100%; height: 20px; display: block; font-weight: 600; font-size: 28px; color: #fff; line-height: 20px; text-align: center; z-index: 11;}
+
+
 .board-view .board-bottom {border-top: 1px solid rgba(19, 21, 23, 0.10);}
 .board-view .board-bottom .navi-list .navi-item:first-child::before {
   mask-image: none;
@@ -4904,8 +4911,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-size: 16px;
 }
 .event-list li .in-bx .cont dd {font-weight: 400; font-size: 17px; color: #666; line-height: 150%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.event-list li .in-bx.end .thum::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(19, 21, 23, 0.50);}
-.event-list li .in-bx.end .thum::after {content: '이벤트 종료'; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; font-weight: 600; font-size: 28px; color: #fff; line-height: 260px; text-align: center;}
+.event-list li .in-bx.end .thum::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(19, 21, 23, 0.50); z-index: 10;}
+.event-list li .in-bx.end .thum::after {content: '이벤트 종료'; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; font-weight: 600; font-size: 28px; color: #fff; line-height: 260px; text-align: center; z-index: 11;}
 
 
 .benefit-detail-wrap {height: 100%; padding: 0;}

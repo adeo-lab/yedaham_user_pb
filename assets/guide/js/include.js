@@ -283,9 +283,8 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">이벤트​</span></p>
 						${createMenuLink("benefit/FO_Y_BC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">이벤트 상세</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인 엑셀 수정 참고</span></p>
 						${createMenuLink("benefit/FO_Y_BC_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
