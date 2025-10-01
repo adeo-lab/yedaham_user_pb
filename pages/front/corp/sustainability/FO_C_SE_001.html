@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>비윤리신고센터 - 지속가능경영 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/common.css">
+
+	<script src="../../../../assets/front/js/ui.include_corp.js"></script>
+	<script src="../../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../../assets/front/js/page.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap" class="corp-wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header corp"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container ty-wide cont-motion" id="container">
+			<div id="page" class="page-sustain">
+				<div class="page-head-wrap">
+					<div class="page-head">
+						<div class="page-navi-wrap">
+							<div class="page-navi">
+								<ul>
+									<li><a href="#" class="home">home</a></li>
+									<li class="arr"></li>
+									<li><a href="#">지속가능경영</a></li>
+									<li class="arr"></li>
+									<li><a href="#">비윤리신고센터</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="title-inner-bx">
+							<h2 class="heading-l">비윤리신고센터</h2>
+						</div>
+					</div>
+				</div>
+				<div class="page-body-wrap no-bg">
+					<div id="vision1012">
+						<div class="full_img">
+							<div class="bg"><img src="../../../../assets/front/images/corp/img_sustain04.png" alt="" /></div>
+							<div class="b_txt">
+								<p class="in-txt">
+									자체 익명 신고센터 ‘YAC 센터’를 운영하여<br/>
+									투명하고 건전한 경영을 실천해 나가고 있습니다.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="page-body">
+						<div class="page-body-inner-bx01">
+							<div class="cibi-cont-wrap">
+								<div class="in-bx">
+									<dl>
+										<dt>
+											더케이 예다함㈜ YAC센터<br/>
+											(비윤리신고센터)
+										</dt>
+										<dd>
+											<div>
+												더케이 예다함㈜는 임직원의 직무관련 금품 및 향응 수수행위, 특혜 제공, 기타 부당행위에 대하여<br/>
+												당사 자체 불공정행위 익명 신고센터인 'YAC(Yedaham Anti Corruption)센터'를 통해 
+												임직원의 부패행위 신고를 받고 있습니다.
+											</div>
+											<div class="cont-sustain01">
+												<div class="in-bx-n">
+													<dl>
+														<dt>YAC(Yedaham Anti Corruption) 센터란?</dt>
+														<dd>
+															당사가 자체 구축한 부패행위신고센터로써, 신고 후 신고내용은 정보DB에서 자동 삭제되는 익명비밀신고제도 입니다.
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+		 
+		<!-- 푸터 영역 -->
+		<footer id="footer" class="mob-none"></footer>
+		<!-- //푸터 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	
+
+	<script>
+	gsap.registerPlugin(ScrollTrigger);
+
+	gsap.to("#vision1012 .full_img", {
+		scrollTrigger: {
+			trigger: "#vision1012",
+			pin: true,
+			scrub: 0.5,
+			start: "top top",
+			//end: "+=1000"
+			end: "bottom+=400 top",
+		}
+	});
+		
+	gsap.to("#vision1012 .bg", {
+		clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", // 최종 목표 값을 수정했습니다.
+		scrollTrigger: {
+			trigger: "#vision1012 .full_img",
+			start: "top top",
+			end: "bottom+=400 top",
+			scrub: 0.5
+		}
+	});
+
+	gsap.to("#vision1012 .in-txt", {
+		top: "0",
+		scrollTrigger: {
+			trigger: "#vision1012 .full_img",
+			start: "top top",
+			end: "bottom center",
+			scrub: true
+		}
+	});
+	</script>
+</body>
+</html>
