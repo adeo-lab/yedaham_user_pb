@@ -450,14 +450,17 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">소비자중심 경영(CCM)</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">안전보건 경영</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">비윤리신고센터</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SE_001.html", useFullLink)}
 					</dl>
 				</div>
@@ -480,12 +483,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">CI/BI</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 작업 중</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 1</span></p>
 						${createMenuLink("corp/media/FO_C_PC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">CI/BI</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 작업 중</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 2</span></p>
 						${createMenuLink("corp/media/FO_C_PC_001_02.html", useFullLink)}
 					</dl>
 				</div>
@@ -499,6 +502,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">주요 재무현황</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/financials/FO_C_DA_001.html", useFullLink)}
 					</dl>
 				</div>
