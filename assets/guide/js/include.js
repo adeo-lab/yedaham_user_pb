@@ -412,27 +412,37 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em"> CEO 인사말</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/about/FO_C_IA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">예다함 WAY 2.0</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/about/FO_C_IB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">주요 연혁​</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/about/FO_C_IC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">The-K 가족소개​​</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/about/FO_C_ID_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">조직도</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/about/FO_C_IE_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">오시는 길(본사)</span></p>
+						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/about/FO_C_IF_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">오시는 길(지부)</span></p>
+						${createMenuLink("corp/about/FO_C_IF_001_02.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -445,22 +455,18 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">윤리경영</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">비주얼 모션 2번 적용</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SA_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">소비자중심 경영(CCM)</span></p>
-						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">안전보건 경영</span></p>
-						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SD_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">비윤리신고센터</span></p>
-						<p class="g-sub-text"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SE_001.html", useFullLink)}
 					</dl>
 				</div>
