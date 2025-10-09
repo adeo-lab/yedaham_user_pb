@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>2차 서류 제출 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/common.css">
+
+	<script src="../../../../assets/front/js/ui.include_corp.js"></script>
+	<script src="../../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../../assets/front/js/page.js"></script>
+
+	<script src="../../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../../assets/front/js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="page-login">
+				<div class="title-inner-bx">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">2차 서류 제출</h2>
+						</div>
+					</div>
+					<div class="page-body">
+						<div class="button-display">
+							<span class="button-area">
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentSecondPaper')"><span class="btn-text">2차 서류 제출</span></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 푸터 영역 -->
+		<footer id="footer"></footer>
+		<!-- //푸터 영역 -->
+	</div>
+
+	<!-- contentPopup -->
+	<div class="content-popup" data-popup="contentSecondPaper">
+		<div class="popup-wrap second-paper">
+			<div class="popup-header">
+				<p class="popup-subject">2차 서류 제출</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+					<div class="board-write-ty01">
+						<div class="tp-gr-bx">
+							<ul>
+								<li>파일은 다중 선택이 가능하며, 파일당 최대 10MB 이하 용량으로 PDF, JPG, JPEG, PNG, GIF 파일만 업로드 가능합니다.</li>
+								<li>파일명 규칙 : 성명_서류 명 (ex: 홍길동_학력증명서.pdf)
+							</ul>
+						</div>
+						<div class="top-area">
+							<div class="line-item one-line">
+								<dl>
+									<dt>첨부파일</dt>
+									<dd>
+										<div class="file-upload ty-n">
+											<div class="file-upload-btn">
+												<span class="form-text">첨부할 파일을 선택해 주세요.</span>
+												<input type="file" class="form-elem" id="fileInput01">
+												<label class="btn-file-n" for="fileInput01">파일선택</label>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="file-upload-result">
+								<div class="file-upload-wrap">
+									<a class="file-name" href="#">홍길동_학력증명서.pptx</a>
+									<a class="file-name" href="#">홍길동_취업보호대상자 증명서.pptx</a>
+									<a class="file-name" href="#">홍길동_컴퓨터 활용능력 자격증 사본.pdf.pptx</a>
+									<a class="file-name" href="#">홍길동_경력증명서.pdf.pptx</a>
+									<a class="file-name" href="#">홍길동_경력증명서2.pdf.pptx</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="button-area">
+					<a href="#" class="btn-popup cancel">취소</a>
+					<a href="#" class="btn-popup">문의하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contentPopup -->
+
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('contentSecondPaper');
+		});
+	</script>
+</body>
+</html>

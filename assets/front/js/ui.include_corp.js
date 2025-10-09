@@ -3,7 +3,7 @@ const headerBlankTemplate = function () {
 	`
 		<h1 class="logo">
 			<a href="#" title="L메인으로 이동" class="logo-link">
-				<img src="../../../../assets/front/images/corp/logo_corp.png" alt="The K 예다함" />
+				<img src="../../../../assets/front/images/corp/logo_corp_wh.png" alt="The K 예다함" />
 			</a>
 		</h1>
 	`;
@@ -19,25 +19,27 @@ const headerTemplate = function () {
 			<!-- 로고 -->
 			<h1 class="logo">
 				<a href="#" title="메인으로 이동" class="logo-link">
-					<img src="../../../../assets/front/images/corp/logo_corp.png" alt="The K 예다함" />
+					The K 예다함
+					<!-- <img src="../../../../assets/front/images/corp/logo_corp.png" alt="The K 예다함" /> -->
 				</a>
 			</h1>
 			<!-- //로고 -->
-			<!-- 모바일 이전 버튼 / 타이틀 -->
+			<!-- 모바일 이전 버튼 / 타이틀\
 			<div class="header-sub-area">
 				<div class="btn-header-prev">
 					<a href="#">이전</a>
 				</div>
 				<h2>공지사항</h2>
 			</div>
-			<!-- //모바일 이전 버튼 / 타이틀 -->
+			//모바일 이전 버튼 / 타이틀 -->
 			<!-- gnb -->
 			<nav class="gnb" id="gnb">
 				<div class="gnb-list">
 					<div class="mobile-menu-top-area">
 						<h1 class="logo">
 							<a href="#" title="LG AI 청소년캠프 메인으로 이동" class="logo-link">
-								<img src="../../../../assets/front/images/corp/logo_corp.png" alt="The K 예다함" />
+								The K 예다함
+								<!-- <img src="../../../../assets/front/images/corp/logo_corp.png" alt="The K 예다함" /> -->
 							</a>
 						</h1>
 						<!-- <div class="navi-util">

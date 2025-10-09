@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>지원서 작성 - 인재채용 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/common.css">
+
+	<script src="../../../../assets/front/js/ui.include_corp.js"></script>
+	<script src="../../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../../assets/front/js/page.js"></script>
+
+	<script src="../../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../../assets/front/js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap" class="corp-wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header corp"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container ty-wide" id="container">
+			<div id="page" class="page-careers">
+				<div class="page-head-wrap">
+					<div class="page-head">
+						<div class="page-navi-wrap">
+							<div class="page-navi">
+								<ul>
+									<li><a href="#" class="home">home</a></li>
+									<li class="arr"></li>
+									<li><a href="#">인재채용</a></li>
+									<li class="arr"></li>
+									<li><a href="#">지원서 작성</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="title-inner-bx">
+							<h2 class="heading-l">지원서 작성</h2>
+						</div>
+					</div>
+				</div>
+				<div class="page-body-wrap no-bg">
+					<div class="page-body">
+						<div class="app-write-wrap01">
+							<div class="tp-step-wrap">
+								<div class="tx-bx">
+									<p class="tx01">인사총무팀 직원 모집</p>
+									<p class="tx02">
+										<span class="in-tx-l">접수 마감 일시</span>
+										<span>2025.01.01</span><span class="dot"></span><span>23:59</span>
+									</p>
+								</div>
+								<div class="title-step01">
+									<ul>
+										<li>
+											<span class="num">1</span>
+											<div>본인인증 및<br/>약관동의</div>
+										</li>
+										<li class="dots">
+											<span></span><span></span><span></span><span></span>
+										</li>
+										<li class="on">
+											<span class="num">2</span>
+											<div>인적사항</div>
+										</li>
+										<li class="dots">
+											<span></span><span></span><span></span><span></span>
+										</li>
+										<li>
+											<span class="num">3</span>
+											<div>경력사항</div>
+										</li>
+										<li class="dots">
+											<span></span><span></span><span></span><span></span>
+										</li>
+										<li>
+											<span class="num">4</span>
+											<div>자기소개서</div>
+										</li>
+										<li class="dots">
+											<span></span><span></span><span></span><span></span>
+										</li>
+										<li>
+											<span class="num">5</span>
+											<div>제출완료</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="apw-top-round-bx">
+								<div class="bx-l">30분간 활동이 없으면 세션이 자동 종료되오니, 작성중인 내용이 유실되지 않도록 주기적인 임시저장을 권장합니다.</div>
+								<div class="bx-r">
+									<p class="tx01">29분 59초</p>
+									<a href="#" class="btn-save">임시저장</a>
+								</div>
+							</div>
+
+							<div class="apw-board-write">
+								<!-- 지원 희망 분야 -->
+								<dl>
+									<dt>지원 희망 분야</dt>
+									<dd>
+										<div class="line-wrap">
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														유입 경로 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form select">
+															<select name="select" id="select" class="form-elem">
+																<option value="#">카드사를 선택해 주세요.</option>
+															</select>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														경력여부 
+														<div class="icon-q">
+															<div class="in-layer">한 기관에서 유사/동일 직무 1년 이상 근무 시 경력, 그 외 신입 선택</div>
+														</div> 
+														<span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<label class="form radio">
+															<input type="radio" name="radio" id="radio1-1" class="form-elem" checked="checked">
+															<span class="form-text">신입</span>
+														</label>
+														<label class="form radio">
+															<input type="radio" name="radio" id="radio1-2" class="form-elem">
+															<span class="form-text">경력</span>
+														</label>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														희망연봉 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input ty-s01">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+														<span class="inp-tx01">만원</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<!-- //지원 희망 분야 -->
+								<!-- 인적사항 -->
+								<dl>
+									<dt>인적사항</dt>
+									<dd>
+										<div class="line-wrap">
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														이름 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input readonly">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="홍길동" readonly>
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														영문이름 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														생년월일 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input readonly">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="19900101" readonly>
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														휴대폰번호 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input readonly">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="01012345678" readonly>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														이메일 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="이메일 주소를 입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														현주소 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<div class="bx-address">
+															<div class="bx01">
+																<span class="form input disabled">
+																	<input class="form-elem" type="text" placeholder="우편번호를 검색해 주세요." value="" disabled="">
+																</span>
+															</div>
+															<a href="#" class="btn-search-address">주소검색</a>
+														</div>
+														<div class="bx-address">
+															<div class="bx02">
+																<span class="form input">
+																	<input class="form-elem" type="text" placeholder="기본 주소를 입력해 주세요." value="" disabled="">
+																</span>
+															</div>
+															<div class="bx03">
+																<span class="form input">
+																	<input class="form-elem" type="text" placeholder="상세 주소를 입력해 주세요." value="">
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														취미
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														특기
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														보훈여부 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<label class="form radio">
+															<input type="radio" name="radio" id="radio2-1" class="form-elem">
+															<span class="form-text">비대상</span>
+														</label>
+														<label class="form radio">
+															<input type="radio" name="radio" id="radio2-2" class="form-elem" checked="checked">
+															<span class="form-text">대상</span>
+														</label>
+														<span class="inp-tx02">[국가유공자법]등에서 정한 취업지원대상자(보훈청 추천)</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														장애여부 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<div class="bx-rad-inp">
+															<div class="in-bx-r">
+																<label class="form radio">
+																	<input type="radio" name="radio" id="radio3-1" class="form-elem">
+																	<span class="form-text">비대상</span>
+																</label>
+																<label class="form radio">
+																	<input type="radio" name="radio" id="radio3-2" class="form-elem" checked="checked">
+																	<span class="form-text">대상</span>
+																</label>
+															</div>
+															<div class="in-bx-i">
+																<span class="form input disabled">
+																	<input class="form-elem" type="text" placeholder="장애 종류를 입력해 주세요." value="" disabled="disabled">
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														군필여부 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<div class="bx-two-inp">
+															<div class="bx01">
+																<span class="form select">
+																	<select name="select" id="select" class="form-elem">
+																		<option value="#">필</option>
+																	</select>
+																</span>
+															</div>
+															<div class="bx02">
+																<span class="form input disabled">
+																	<input class="form-elem" type="text" placeholder="면제 사유를 입력해 주세요." value="" disabled="disabled">
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														병역구분 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form select">
+															<select name="select" id="select" class="form-elem">
+																<option value="#">선택해 주세요.</option>
+															</select>
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														군별 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														계급 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														병과 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														복무기간 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<div class="bx-datepicker">
+															<span class="form input datepicker">
+																<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker1">
+															</span>
+															<div class="line">~</div>
+															<span class="form input datepicker">
+																<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker2">
+															</span>
+															<script>
+																$( "#datepicker1" ).datepicker();
+																$( "#datepicker2" ).datepicker();
+															</script>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<!-- //인적사항 -->
+								<!-- 학력사항 -->
+								<dl>
+									<dt>학력사항</dt>
+									<dd>
+										<div class="line-wrap">
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														학력구분 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form select">
+															<select name="select" id="select" class="form-elem">
+																<option value="#">선택해 주세요.</option>
+															</select>
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														학교명 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">
+														소재지 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form input">
+															<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+														</span>
+													</div>
+												</div>
+												<div class="in-bx">
+													<div class="bx-th">
+														졸업여부 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<span class="form select">
+															<select name="select" id="select" class="form-elem">
+																<option value="#">선택해 주세요.</option>
+															</select>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="line-item">
+												<div class="in-bx">
+													<div class="bx-th">
+														복무기간 <span class="imp">*</span>
+													</div>
+													<div class="bx-td">
+														<div class="bx-datepicker">
+															<span class="form input datepicker">
+																<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker3">
+															</span>
+															<div class="line">~</div>
+															<span class="form input datepicker">
+																<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker4">
+															</span>
+															<script>
+																$( "#datepicker3" ).datepicker();
+																$( "#datepicker4" ).datepicker();
+															</script>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="bx-tx-more">
+											<div class="tx01">대학정보를 입력하시려면 [추가] 버튼을 클릭하여 입력해 주시기 바랍니다.</div>
+											<a href="#" class="btn-add">추가</a>
+										</div>
+									</dd>
+								</dl>
+								<!-- //학력사항 -->
+								<!-- 외국어 능력 -->
+								<dl>
+									<dt>외국어 능력</dt>
+									<dd>
+										<div class="bx-tx-more first">
+											<div class="tx01">외국어 능력을 입력하시려면 [추가] 버튼을 클릭하여 입력해 주시기 바랍니다.</div>
+											<a href="#" class="btn-add">추가</a>
+										</div>
+									</dd>
+								</dl>
+								<!-- //외국어 능력 -->
+								<!-- 컴퓨터 활용능력 -->
+								<dl>
+									<dt>컴퓨터 활용능력</dt>
+									<dd>
+										<div class="bx-gray-com">
+											<ul>
+												<li>
+													<div class="in-bx">
+														<div class="s-tit-l">한글(hwp)</div>
+														<div>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-1" class="form-elem">
+																<span class="form-text">상</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-2" class="form-elem">
+																<span class="form-text">중</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-2" class="form-elem">
+																<span class="form-text">하</span>
+															</label>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														<div class="s-tit-l">엑셀(excel)</div>
+														<div>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-4" class="form-elem">
+																<span class="form-text">상</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-5" class="form-elem">
+																<span class="form-text">중</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-6" class="form-elem">
+																<span class="form-text">하</span>
+															</label>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													<div class="in-bx">
+														<div class="s-tit-l">파워포인트(ppt)</div>
+														<div>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-7" class="form-elem">
+																<span class="form-text">상</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-8" class="form-elem">
+																<span class="form-text">중</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-9" class="form-elem">
+																<span class="form-text">하</span>
+															</label>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="in-bx">
+														<div class="s-tit-l">
+															<span class="form input">
+																<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
+															</span>
+														</div>
+														<div>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-10" class="form-elem">
+																<span class="form-text">상</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-11" class="form-elem">
+																<span class="form-text">중</span>
+															</label>
+															<label class="form radio">
+																<input type="radio" name="radio" id="radio3-12" class="form-elem">
+																<span class="form-text">하</span>
+															</label>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<!-- //컴퓨터 활용능력 -->
+								<!-- 자격사항 -->
+								<dl>
+									<dt>자격사항</dt>
+									<dd>
+										<div class="bx-tx-more first">
+											<div class="tx01">대학정보를 입력하시려면 [추가] 버튼을 클릭하여 입력해 주시기 바랍니다.</div>
+											<a href="#" class="btn-add">추가</a>
+										</div>
+									</dd>
+								</dl>
+								<!-- //자격사항 -->
+							</div>
+							<div class="apw-btm-btns">
+								<a href="#" class="btn-ty02">지원서 삭제</a>
+								<a href="#" class="btn-ty03">임시저장</a>
+								<a href="#" class="btn-ty01">다음</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+		 
+		<!-- 푸터 영역 -->
+		<footer id="footer"></footer>
+		<!-- //푸터 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+	</div>
+</body>
+</html>
