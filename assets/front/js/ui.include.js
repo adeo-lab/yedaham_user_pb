@@ -192,6 +192,7 @@ const headerTemplate = function () {
 		<div class="search-layer"><!-- search-open -->
 			<a href="#" class="btn_search_close"></a>
 			<div class="search-inner-wrap">
+				<div class="search-p-tit">통합검색</div>
 				<div class="search-inner-bx">
 					<div class="s-title">쉽고 빠르게 원하는 정보를 찾아 보세요.</div>
 					<div class="search-word">

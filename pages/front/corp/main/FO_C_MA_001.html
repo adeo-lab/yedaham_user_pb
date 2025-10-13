@@ -31,11 +31,11 @@
 		<!-- 컨테이너 영역 -->
 		<div class="main-container" id="container">
 			<div id="page" class="page-main">
-				<div>
-					<div style="height: 100vh; min-height: 1080px; background: url('../../../../assets/front/images/corp/bg_main01.png') no-repeat center; background-size: cover;">
+				<div class="main-inner-wrap">
+					<div style="height: 1080px; background: url('../../../../assets/front/images/corp/bg_main01.png') no-repeat center; background-size: cover;">
 						<div style="max-width: 1196px; height: 483px; /*100%*/; padding: 268px 0 0 0; margin: 0 auto; /*display: flex;*/">
 							<div style="display: flex; justify-content: space-between;">
-								<div style="width: 430px; padding-top: 26px;">
+								<div style="padding-top: 26px;">
 									<div style="font-weight: 600; font-size: 24px; color: #FFF; line-height: 130%; padding: 0 0 40px 0;">예다함의 기준이 상조의 기준</div>
 									<div style="font-weight: 700; font-size: 52px; color: #FDB; line-height: 120%;">
 										오직 고객이<br/>
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 
-					<div style="position: relative; height: 100vh; min-height: 1080px; background: url('../../../../assets/front/images/corp/bg_main02.png') no-repeat center; background-size: cover;">
+					<div style="position: relative; height: 1080px; background: url('../../../../assets/front/images/corp/bg_main02.png') no-repeat center; background-size: cover;">
 						<div style="max-width: 1196px; height: 100%; margin: 0 auto; /*display: flex; align-items: center;*/">
 							<div style="width: 100%; display: flex; justify-content: space-between;">
 								<div style="width: 430px; padding-top: 334px;">
@@ -82,7 +82,10 @@
 										고객 납입금을<br/>
 										안전하게 보전합니다.
 									</div>
-									<a href="#" style="display: inline-block; font-weight: 600; font-size: 19px; color: #FFF; line-height: 150%; margin: 64px 0 0 0;">더보기</a>
+									<a href="#" style="display: inline-block; font-weight: 600; font-size: 19px; color: #FFF; line-height: 150%; margin: 64px 0 0 0; display: flex; column-gap: 8px; align-items: centeras;">
+										더보기
+										<span style="display: block; width: 24px; height: 24px; background: #fff; border-radius: 24px;"></span>
+									</a>
 								</div>
 								<div style="position: absolute; top: 344px; right: 0; width: 948px; border-top: 1px solid rgba(255, 255, 255, 0.40);">
 									<ul>
@@ -110,16 +113,413 @@
 						</div>
 					</div>
 
-					<div style="height: 100vh; background: url('../../../../assets/front/images/corp/bg_main03.png') no-repeat center; background-size: cover;">
+<style>
+.main-vis04-img-list ul {display: flex; column-gap: 32px;}
+.main-vis04-img-list li {width: calc(20% - 26px);}
+.main-vis04-img-list li:nth-child(2) {padding-top: 96px;}
+.main-vis04-img-list li:nth-child(4) {padding-top: 96px;}
+.main-vis04-img-list li .in-bx {position: relative; height: 420px; border-radius: 8px; overflow: hidden;}
+.main-vis04-img-list li .in-bx .bx-img img {width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: 0.7s;}
+.main-vis04-img-list li .in-bx .bx-img:after {content: ''; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: #000; opacity: 0.4;}
+.main-vis04-img-list li .in-bx .bx-txt {position: absolute; left: 0; bottom: 24px; padding: 0 30px; z-index: 10;}
+.main-vis04-img-list li .in-bx .bx-txt .tx01 {font-weight: 600; font-size: 24px; color: #fff; line-height: 130%; padding-bottom: 8px;}
+.main-vis04-img-list li .in-bx .bx-txt .tx02 {font-weight: 400; font-size: 17px; color: #fff; line-height: 150%;}
+.main-vis04-img-list li .in-bx:hover .bx-img img {width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); transition: 0.7s;}
+.main-vis04-img-list li .in-bx:hover .bx-img:after {opacity: 0;}
+</style>
 
+					<div style="height: 1080px; background: url('../../../../assets/front/images/corp/bg_main03.png') no-repeat center; background-size: cover;">
+						<div style="padding: 144px 0 0 0;">
+							<div style="max-width: 1440px; margin: 0 auto;">
+								<div style="padding-left: 122px;">
+									<div style="font-weight: 600; font-size: 24px; color: #fff; line-height: 130%; padding-bottom: 40px;">
+										지속가능경영
+									</div>
+									<div style="font-weight: 700; font-size: 52px; color: #FDB; line-height: 120%; padding-bottom: 80px;">
+										신뢰와 정직을 최고의 가치로<br/>
+										새로운 상조문화를 선도합니다.
+									</div>
+								</div>
+								<div class="main-vis04-img-list swiper">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="in-bx">
+												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_01.png" alt ="" /></div>
+												<div class="bx-txt">
+													<div class="tx01">윤리경영</div>
+													<div class="tx02">투명하고 건전한 경영을 통한<br/>고객만족 구현</div>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="in-bx">
+												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_02.png" alt ="" /></div>
+												<div class="bx-txt">
+													<div class="tx01">소비자중심 경영</div>
+													<div class="tx02">소비자중심경영(CCM)<br/>인증기업, 예다함</div>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="in-bx">
+												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_03.png" alt ="" /></div>
+												<div class="bx-txt">
+													<div class="tx01">사랑다함</div>
+													<div class="tx02">고객과 함께<br/>행복한 사회 만들기</div>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="in-bx">
+												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_04.png" alt ="" /></div>
+												<div class="bx-txt">
+													<div class="tx01">안전보건 경영</div>
+													<div class="tx02">고객과 근로자의 안전을<br/>최우선으로!</div>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="in-bx">
+												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_05.png" alt ="" /></div>
+												<div class="bx-txt">
+													<div class="tx01">비윤리 신고센터</div>
+													<div class="tx02">YAC(불공정행위익명제보)<br/>센터 운영</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div style="height: 100vh; background: url('../../../../assets/front/images/corp/bg_main04.png') no-repeat center; background-size: cover;">
+<style>
+.main-vis05-list li {height: auto;}
+.main-vis05-list li .in-bx .thum {position: relative; height: 258px; border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden;}
+.main-vis05-list li .in-bx .thum .data-info {position: absolute; right: 32px; bottom: 32px; display: flex; column-gap: 16px; z-index: 10;}
+.main-vis05-list li .in-bx .thum .data-info p.icon {display: block; width: 56px; height: 56px; background: rgba(19, 21, 23, 0.30); border: 1px solid rgba(255, 255, 255, 0.80); border-radius: 56px; text-indent: -9999px; overflow: hidden; box-sizing: border-box;}
+.main-vis05-list li .in-bx .thum .data-info p.icon.youtube {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cg clip-path='url(%23clip0_6033_1967)'%3E%3Cpath d='M16 6C16 6 24.3388 5.99997 26.418 6.59668C27.5649 6.92571 28.4693 7.89401 28.7754 9.12305C29.3329 11.3522 29.333 16 29.333 16C29.333 16.0014 29.3328 20.6497 28.7754 22.877C28.4693 24.106 27.5649 25.0743 26.418 25.4033C24.3388 26 16 26 16 26C15.9977 26 7.66242 25.9999 5.58203 25.4033C4.43506 25.0743 3.53067 24.106 3.22461 22.877C2.6672 20.6481 2.66699 16.0014 2.66699 16C2.66699 16 2.66712 11.3522 3.22461 9.12305C3.53067 7.89401 4.43506 6.92571 5.58203 6.59668C7.6609 6.00005 15.9977 6 16 6ZM13.333 19.333L20 16L13.333 12.667V19.333Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6033_1967'%3E%3Crect width='32' height='32' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 32px;
+}
+.main-vis05-list li .in-bx .thum .data-info p.icon.youtube:hover {background-color: #E94543; border: none;}
+.main-vis05-list li .in-bx .thum .data-info p.icon.pdf {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18 2.66602C18.2829 2.66602 18.5539 2.77856 18.7539 2.97852L26.3529 10.5788C26.5528 10.7787 26.6653 11.0499 26.6654 11.3327V15.9993H24.5326V12.3991H19.3334C18.0079 12.3991 16.9336 11.3248 16.9336 9.99935V4.79883H7.73311C7.58604 4.79897 7.46633 4.91868 7.46619 5.06576V15.9993H5.33337V5.06576C5.33351 3.74048 6.40784 2.66616 7.73311 2.66602H18ZM19.0664 9.99935C19.0664 10.1466 19.1861 10.2663 19.3334 10.2663H23.0248L19.0664 6.30794V9.99935Z' fill='white'/%3E%3Cpath d='M7.46619 15.9993C7.46619 16.5885 6.98914 17.066 6.40004 17.066C5.81094 17.066 5.33337 16.5885 5.33337 15.9993C5.33337 15.4102 5.81094 14.9327 6.40004 14.9327C6.98914 14.9327 7.46619 15.4102 7.46619 15.9993Z' fill='white'/%3E%3Cpath d='M26.6654 15.9993C26.6654 16.5885 26.1891 17.066 25.6 17.066C25.0109 17.066 24.5326 16.5885 24.5326 15.9993C24.5326 15.4102 25.0109 14.9327 25.6 14.9327C26.1891 14.9327 26.6654 15.4102 26.6654 15.9993Z' fill='white'/%3E%3Cpath d='M4.26698 28V21.6003C4.26698 21.2533 4.26498 20.8849 4.30605 20.5795C4.3513 20.2435 4.46572 19.8287 4.81386 19.4805C5.162 19.1324 5.57681 19.018 5.91282 18.9727C6.21826 18.9316 6.58668 18.9336 6.93365 18.9336H8.00006C9.69373 18.9336 11.0665 20.3064 11.0665 22C11.0665 23.6937 9.69373 25.0665 8.00006 25.0665H6.3998V28C6.3998 28.5891 5.92249 29.0665 5.33339 29.0665C4.74429 29.0665 4.26698 28.5891 4.26698 28ZM12.9337 20.9623C12.9383 20.8003 12.9522 20.6122 12.9883 20.4349C13.0745 20.0118 13.3071 19.507 13.8672 19.1836L14.0769 19.0808C14.2859 18.9971 14.4873 18.9657 14.6537 18.9506C14.8607 18.9319 15.104 18.9336 15.3334 18.9336C18.1316 18.9336 20.3998 21.2018 20.3998 24C20.3998 26.7983 18.1316 29.0665 15.3334 29.0665C15.104 29.0665 14.8607 29.0682 14.6537 29.0495C14.432 29.0294 14.1494 28.9792 13.8672 28.8165C13.3071 28.4931 13.0745 27.9882 12.9883 27.5652C12.9522 27.3879 12.9383 27.1998 12.9337 27.0378V20.9623ZM22.267 28V22.6667C22.267 22.0683 22.265 21.5119 22.3256 21.0612C22.3903 20.58 22.5437 20.0631 22.9701 19.6368L23.1342 19.4883C23.5252 19.1728 23.9737 19.0489 24.3946 18.9922C24.8453 18.9316 25.4017 18.9336 26.0001 18.9336H28.0001C28.5892 18.9336 29.0665 19.4109 29.0665 20C29.0665 20.5891 28.5892 21.0665 28.0001 21.0665H26.0001C25.3419 21.0665 24.9552 21.0686 24.6797 21.1055C24.5695 21.1203 24.5101 21.138 24.4818 21.1485C24.4713 21.1768 24.4537 21.2362 24.4389 21.3464C24.4019 21.6218 24.3998 22.0085 24.3998 22.6667V22.9336H26.6667C27.2558 22.9336 27.7331 23.4109 27.7331 24C27.7331 24.5891 27.2558 25.0665 26.6667 25.0665H24.3998V28C24.3998 28.5891 23.9225 29.0665 23.3334 29.0665C22.7443 29.0665 22.267 28.5891 22.267 28ZM6.3998 22.9336H8.00006C8.51552 22.9336 8.93365 22.5155 8.93365 22C8.93365 21.4846 8.51552 21.0665 8.00006 21.0665H6.93365C6.74143 21.0665 6.59102 21.0671 6.4623 21.0704C6.44275 21.0709 6.42372 21.0723 6.40631 21.073C6.40569 21.0904 6.4042 21.1094 6.4037 21.129C6.40047 21.2577 6.3998 21.4081 6.3998 21.6003V22.9336ZM15.0665 26.6667C15.0665 26.7267 15.0655 26.7967 15.0652 26.8451C15.065 26.8768 15.065 26.9056 15.0652 26.9323C15.1405 26.9332 15.227 26.9336 15.3334 26.9336C16.9534 26.9336 18.267 25.6201 18.267 24C18.267 22.38 16.9534 21.0665 15.3334 21.0665C15.227 21.0665 15.1404 21.0656 15.0652 21.0665C15.065 21.0936 15.065 21.1227 15.0652 21.155C15.0655 21.2034 15.0665 21.2734 15.0665 21.3334V26.6667Z' fill='white'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 32px;
+}
+.main-vis05-list li .in-bx .thum .data-info p.icon.pdf:hover {background-color: #788BE6; border: none;}
+.main-vis05-list li .in-bx .thum::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(19, 21, 23, 0.20); border-top-left-radius: 16px; border-top-right-radius: 16px; box-sizing: border-box; background: #000; opacity: 0.6;}
+.main-vis05-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; /*transform: scale(1); transition: 0.7s;*/}
+.main-vis05-list li.swiper-slide-active .in-bx .thum::after {opacity: 0;}
+/*.main-vis05-list li a:hover .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); transition: 0.7s;}*/
 
+.main-vis05-list-wrap .swiper-button-next, .swiper-rtl .swiper-button-prev {position: relative; top: auto; left: auto; right: auto; width: 56px; height: 56px; border-radius: 56px; background: #ddd;}
+.main-vis05-list-wrap .swiper-button-prev, .swiper-rtl .swiper-button-next {position: relative; top: auto; left: auto; right: auto; width: 56px; height: 56px; border-radius: 56px; background: #ddd;}
+</style>
+					<div style="height: 1080px; background: url('../../../../assets/front/images/corp/bg_main04.png') no-repeat center; background-size: cover;">
+						<div style="padding: 0 0 0 0;">
+							<div style="max-width: 1196px; margin: 0 auto; display: flex; column-gap: 272px;">
+								<div style="width: 384px; padding-top: 267px; box-sizing: border-box;">
+									<div style="font-weight: 600; font-size: 24px; color: #fff; line-height: 130%; padding-bottom: 40px;">
+										홍보센터
+									</div>
+									<div style="font-weight: 700; font-size: 52px; color: #FDB; line-height: 120%; padding-bottom: 0;">
+										기업 PR과<br/>
+										다양한 홍보자료를<br/>
+										보실 수 있습니다.
+									</div>
+									<a href="#" style="display: inline-block; font-weight: 600; font-size: 19px; color: #FFF; line-height: 150%; margin: 64px 0 0 0; display: flex; column-gap: 8px; align-items: centeras;">
+										더보기
+										<span style="display: block; width: 24px; height: 24px; background: #fff; border-radius: 24px;"></span>
+									</a>
+								</div>
+								<div class="main-vis05-list-wrap" style="position: relative; width: 540px; height: 200px;">
+									<div class="main-vis05-list swiper" style="width: 420px; height: 1080px; margin-left: 0;">
+										<ul class="swiper-wrapper" style="flex-direction: column; row-gap: 0;">
+											<li class="swiper-slide">
+												<div class="in-bx">
+													<div class="thum" style="height: 237px; border-radius: 16px; overflow: hidden; background: #ddd;">
+														<img src="https://www.yedaham.co.kr/common/download.do?requestedFile=upload%3A%2F%2Freport.data%2F350/%EC%98%88%EB%8B%A4%ED%95%A8%2025%EB%85%84%20%EA%B4%91%EA%B3%A0%EC%98%81%EC%83%81%20%EC%8D%B8%EB%84%A4%EC%9D%BC.png" alt="">
+														<div class="data-info">
+															<p class="icon youtube">youtube</p>
+															<!-- <p class="icon pdf">pdf</p> -->
+														</div>
+													</div>
+													<div>
+														<div style="font-weight: 600; font-size: 24px; color: #EFEFEF; line-height: 130%; padding: 20px 0 8px 0;">
+															광고 모델 배우 오나라 <br/>
+															상조 가치·진심 담은 TV광고 공개
+														</div>
+														<div style="font-weight: 400; font-size: 17px; color: #EFEFEF; line-height: 150%;">
+															2025.04.08
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="in-bx">
+													<div class="thum" style="height: 237px; border-radius: 16px; overflow: hidden; background: #ddd;">
+														<img src="https://www.yedaham.co.kr/common/download.do?requestedFile=upload%3A%2F%2Freport.data%2F265/%EC%9E%A5%EB%A1%80%EC%A7%80%EB%8F%84%EC%82%AC%ED%8E%B8%20(1)[1].png" alt="">
+														<div class="data-info">
+															<p class="icon youtube">youtube</p>
+															<!-- <p class="icon pdf">pdf</p> -->
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="in-bx">
+													<div class="thum" style="height: 237px; border-radius: 16px; overflow: hidden; background: #ddd;">
+														<img src="https://www.yedaham.co.kr/common/download.do?requestedFile=upload%3A%2F%2Freport.data%2F215/12.%202019%EB%85%84%20TVCF(100)[1].png" alt="">
+														<div class="data-info">
+															<p class="icon youtube">youtube</p>
+															<!-- <p class="icon pdf">pdf</p> -->
+														</div>
+													</div>
+													<div>
+														<div style="font-weight: 600; font-size: 24px; color: #EFEFEF; line-height: 130%; padding: 20px 0 8px 0;">
+															광고 모델 배우 오나라 <br/>
+															상조 가치·진심 담은 TV광고 공개
+														</div>
+														<div style="font-weight: 400; font-size: 17px; color: #EFEFEF; line-height: 150%;">
+															2025.04.08
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="in-bx">
+													<div class="thum" style="height: 237px; border-radius: 16px; overflow: hidden; background: #ddd;">
+														<img src="https://img.hankyung.com/photo/201904/AA.19433016.1.jpg" alt="">
+														<div class="data-info">
+															<p class="icon youtube">youtube</p>
+															<!-- <p class="icon pdf">pdf</p> -->
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="in-bx">
+													<div class="thum" style="height: 237px; border-radius: 16px; overflow: hidden; background: #ddd;">
+														<img src="https://www.yedaham.co.kr/common/download.do?requestedFile=upload%3A%2F%2Freport.data%2F350/%EC%98%88%EB%8B%A4%ED%95%A8%2025%EB%85%84%20%EA%B4%91%EA%B3%A0%EC%98%81%EC%83%81%20%EC%8D%B8%EB%84%A4%EC%9D%BC.png" alt="">
+														<div class="data-info">
+															<p class="icon youtube">youtube</p>
+															<!-- <p class="icon pdf">pdf</p> -->
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="in-bx">
+													<div class="thum" style="height: 237px; border-radius: 16px; overflow: hidden; background: #ddd;">
+														<img src="https://www.yedaham.co.kr/common/download.do?requestedFile=upload%3A%2F%2Freport.data%2F350/%EC%98%88%EB%8B%A4%ED%95%A8%2025%EB%85%84%20%EA%B4%91%EA%B3%A0%EC%98%81%EC%83%81%20%EC%8D%B8%EB%84%A4%EC%9D%BC.png" alt="">
+														<div class="data-info">
+															<p class="icon youtube">youtube</p>
+															<!-- <p class="icon pdf">pdf</p> -->
+														</div>
+													</div>
+													<div>
+														<div style="font-weight: 600; font-size: 24px; color: #EFEFEF; line-height: 130%; padding: 20px 0 8px 0;">
+															광고 모델 배우 오나라 <br/>
+															상조 가치·진심 담은 TV광고 공개
+														</div>
+														<div style="font-weight: 400; font-size: 17px; color: #EFEFEF; line-height: 150%;">
+															2025.04.08
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- navigation -->
+									<div style="position: absolute; top: 468px; right: 0; width: 56px; display: flex; flex-direction: column; row-gap: 32px;">
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+									<!-- //navigation -->
+								</div>
+								<script>		
+									var swiper1 = new Swiper(".main-vis05-list", {
+										direction: 'vertical',
+										slidesPerView: "auto",
+										loop: true,
+										centeredSlides: true,
+										//slidesPerView: 1,
+										spaceBetween: 96,
+										navigation: {
+											nextEl: ".swiper-button-next",
+											prevEl: ".swiper-button-prev",
+										},
+									});
+									
+								</script>
+							</div>
+						</div>
 					</div>
 
-					<div style="height: 100vh; background: url('../../../../assets/front/images/corp/bg_main05.png') no-repeat center; background-size: cover;">
+					<div style="height: 1080px; background: url('../../../../assets/front/images/corp/bg_main05.png') no-repeat center; background-size: cover;">
+						<div style="padding: 241px 0 0 0;">
+							<div style="position: relative; max-width: 1196px; margin: 0 auto;">
+								<div style="padding-bottom: 48px; display: flex; justify-content: space-between;">
+									<div>
+										<div style="font-weight: 600; font-size: 24px; color: #fff; line-height: 130%; padding-bottom: 40px;">
+											인재채용
+										</div>
+										<div style="font-weight: 700; font-size: 52px; color: #FDB; line-height: 120%; padding-bottom: 0;">
+											예다함의 인재상과<br/>
+											진행중인 채용정보를<br/>
+											확인하실 수 있습니다.
+										</div>
+									</div>
+									<div style="position: relative; width: 574px;">
+										<div style="height: 52px; font-weight: 600; font-size: 28px; color: #fff; line-height: 130%;">
+											진행중인 채용공고
+											<!-- navigation -->
+											<div class="bx-navi">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
 
+												<div class="swiper-controls">
+													<button id="swiper-button-play">재생</button>
+													<button id="swiper-button-stop">정지</button>
+												</div>
+												<div class="swiper-button-next"></div>
+											</div>
+											<!-- //navigation -->
+										</div>
+										<div class="main-careers-posting swiper">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
+													<div style="height: 340px; padding: 40px 40px 0 40px; background: rgba(247, 246, 245, 0.90); border-radius: 16px; overflow: hidden; box-sizing: border-box;">
+														<div style="padding-bottom: 12px; display: flex; column-gap: 8px;">
+															<span style="display: inline-block; height: 34px; font-weight: 400; font-size: 17px; color: #444; line-height: 34px; line-height: 34px; padding: 0 16px; background: #fff; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.15);">신입</span>
+															<span style="display: inline-block; height: 34px; font-weight: 400; font-size: 17px; color: #444; line-height: 34px; line-height: 34px; padding: 0 16px; background: #fff; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.15);">인사총무</span>
+														</div>
+														<div style="font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 20px;">
+															인사총무팀 직원 모집
+														</div>
+														<div style="font-weight: 400; font-size: 19px; color: #444; line-height: 150%; padding-bottom: 37px;">
+															대한민국 선진 장례문화의 선두주자인 더케이 예다함㈜에서 인사총무팀 직원을 모집합니다.
+														</div>
+														<div style="display: flex; align-items: center; justify-content: space-between;">
+															<div>
+																<p style="font-weight: 600; font-size: 19px; color: #444; line-height: 150%; padding-bottom: 8px;">모집기간</p>
+																<p style="font-weight: 400; font-size: 17px; color: #444; line-height: 150%;">2025.03.24 ~ 2025.03.31</p>
+															</div>
+															<div>
+																<a href="#" style="display: block; width: 163px; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 56px; background: #4458B0; border-radius: 56px; text-align: center;">입사지원하기</a>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<div style="height: 340px; padding: 40px 40px 0 40px; background: rgba(247, 246, 245, 0.90); border-radius: 16px; overflow: hidden; box-sizing: border-box;">
+														<div style="padding-bottom: 12px; display: flex; column-gap: 8px;">
+															<span style="display: inline-block; height: 34px; font-weight: 400; font-size: 17px; color: #444; line-height: 34px; line-height: 34px; padding: 0 16px; background: #fff; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.15);">신입</span>
+															<span style="display: inline-block; height: 34px; font-weight: 400; font-size: 17px; color: #444; line-height: 34px; line-height: 34px; padding: 0 16px; background: #fff; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.15);">인사총무</span>
+														</div>
+														<div style="font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 20px;">
+															인사총무팀 직원 모집
+														</div>
+														<div style="font-weight: 400; font-size: 19px; color: #444; line-height: 150%; padding-bottom: 37px;">
+															대한민국 선진 장례문화의 선두주자인 더케이 예다함㈜에서 인사총무팀 직원을 모집합니다.
+														</div>
+														<div style="display: flex; align-items: center; justify-content: space-between;">
+															<div>
+																<p style="font-weight: 600; font-size: 19px; color: #444; line-height: 150%; padding-bottom: 8px;">모집기간</p>
+																<p style="font-weight: 400; font-size: 17px; color: #444; line-height: 150%;">2025.03.24 ~ 2025.03.31</p>
+															</div>
+															<div>
+																<a href="#" style="display: block; width: 163px; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 56px; background: #4458B0; border-radius: 56px; text-align: center;">입사지원하기</a>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<script>
+										// Swiper 인스턴스 생성
+										const swiper = new Swiper('.main-careers-posting', {
+											// 자동 재생 설정
+											autoplay: {
+												delay: 3500, // 2.5초마다 슬라이드 바뀜
+												disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
+											},
+
+											// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+											pagination: {
+												el: '.swiper-pagination',
+												type: "fraction",
+												clickable: true,
+											},
+											navigation: {
+												nextEl: '.swiper-button-next',
+												prevEl: '.swiper-button-prev',
+											},
+											loop: true, // 무한 루프
+										});
+
+										// HTML에서 버튼 요소 가져오기
+										const playButton = document.getElementById('swiper-button-play');
+										const stopButton = document.getElementById('swiper-button-stop');
+
+										// 정지 버튼 클릭 이벤트
+										stopButton.addEventListener('click', () => {
+											swiper.autoplay.stop(); // 자동 재생 정지
+											stopButton.style.display = 'none'; // 정지 버튼 숨기기
+											playButton.style.display = 'inline-block'; // 재생 버튼 보이기
+										});
+
+										// 재생 버튼 클릭 이벤트
+										playButton.addEventListener('click', () => {
+											swiper.autoplay.start(); // 자동 재생 시작
+											playButton.style.display = 'none'; // 재생 버튼 숨기기
+											stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
+										});
+
+										/*var swiper = new Swiper(".main-vis", {
+											pagination: {
+											el: ".swiper-pagination",
+											type: "fraction",
+											},
+											navigation: {
+											nextEl: ".swiper-button-next",
+											prevEl: ".swiper-button-prev",
+											},
+										});*/
+										</script>
+									</div>
+								</div>
+								<div>
+									<ul style="display: flex; column-gap: 48px;">
+										<li style="width: calc(50% - 24px);">
+											<div style="position: relative; height: 190px; border-radius: 16px; overflow: hidden; background: #ddd; display: flex; align-items: center;">
+												<div class="bx-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"><img src="../../../../assets/front/images/corp/img_main06_01.png" alt ="" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+												<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.4;"></div>
+												<div style="position: relative; padding-left: 48px;">
+													<div style="font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 12px;">예다함 인재상</div>
+													<div style="font-weight: 400; font-size: 17px; color: #777; line-height: 150%;">더케이 예다함㈜를<br/>이끌어 갈 인재의 모습</div>
+												</div>
+											</div>
+										</li>
+										<li style="width: calc(50% - 24px);">
+											<div style="position: relative; height: 190px; border-radius: 16px; overflow: hidden; background: #ddd; display: flex; align-items: center;">
+												<div class="bx-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"><img src="../../../../assets/front/images/corp/img_main06_02.png" alt ="" style="width: 100%; height: 100%; object-fit: cover;" /></div>
+												<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.4;"></div>
+												<div style="position: relative; padding-left: 48px;">
+													<div style="font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 12px;">예다함 직무소개 </div>
+													<div style="font-weight: 400; font-size: 17px; color: #777; line-height: 150%;">인사제도 및 복리후생 정보를<br/>확인하세요.</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -162,7 +562,7 @@
 				<script>		
 					var swiper5 = new Swiper(".y-news", {
 						direction: 'vertical',
-						loop:true,
+						loop: true,
 						//slidesPerView: 1,
 						spaceBetween: 0,
 						navigation: {
