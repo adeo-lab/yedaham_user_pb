@@ -486,8 +486,14 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">메인</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">작업중</span></p>
 						${createMenuLink("corp/main/FO_C_MA_001.html", useFullLink)}
+					</div>
+				</div>
+				<div class="g-sub-body">
+					<div class="g-sub-wrap" data-status="진행">
+						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-text"><span class="em">채용공고 없을 경우</span></p>
+						${createMenuLink("corp/main/FO_C_MA_001_2.html", useFullLink)}
 					</div>
 				</div>
 			</li>
