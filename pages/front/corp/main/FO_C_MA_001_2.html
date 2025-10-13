@@ -352,7 +352,7 @@
 												var swiper = new Swiper(".main-vis04-list", {
 													slidesPerView: "auto",
 													centeredSlides: true,
-													spaceBetween: 10,
+													spaceBetween: 0,
 													loop: true,
 													watchOverflow: true,
 													navigation: {
@@ -382,9 +382,9 @@
 											</div>
 										</div>
 										<div class="bx-ing-r">
-											<div class="tx-btn">
+											<div class="tx-btn no-data"><!-- data 없는 경우 클래스 추가 필요 -->
 												진행중인 채용공고
-												<!-- navigation -->
+												<!-- navigation
 												<div class="bx-navi">
 													<div class="swiper-button-prev"></div>
 													<div class="swiper-pagination"></div>
@@ -395,119 +395,67 @@
 													</div>
 													<div class="swiper-button-next"></div>
 												</div>
-												<!-- //navigation -->
+												//navigation -->
 											</div>
 											<div class="main-careers-posting swiper">
-												<ul class="swiper-wrapper">
-													<li class="swiper-slide">
-														<span class="flag-new">모집중 D-7</span>
-														<div class="in-bx">
-															<div class="bx-flag">
-																<span class="flag">신입</span>
-																<span class="flag">인사총무</span>
-															</div>
-															<div class="tx01">
-																인사총무팀 직원 모집
-															</div>
-															<div class="tx02">
-																대한민국 선진 장례문화의 선두주자인 더케이 예다함㈜에서 인사총무팀 직원을 모집합니다.
-															</div>
-															<div class="tx03">
-																<div class="t-bx-l">
-																	<p class="tx03-01">모집기간</p>
-																	<p class="tx03-02">2025.03.24 ~ 2025.03.31</p>
-																</div>
-																<div class="t-bx-r">
-																	<a href="#" class="btn-ty01">입사지원하기</a>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="swiper-slide">
-														<div class="in-bx">
-															<div class="bx-flag">
-																<span class="flag">신입</span>
-																<span class="flag">인사총무</span>
-															</div>
-															<div class="tx01">
-																인사총무팀 직원 모집
-															</div>
-															<div class="tx02">
-																대한민국 선진 장례문화의 선두주자인 더케이 예다함㈜에서 인사총무팀 직원을 모집합니다.
-															</div>
-															<div class="tx03">
-																<div class="t-bx-l">
-																	<p class="tx03-01">모집기간</p>
-																	<p class="tx03-02">2025.03.24 ~ 2025.03.31</p>
-																</div>
-																<div class="t-bx-r">
-																	<a href="#" class="btn-ty01">입사지원하기</a>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
+												<div class="bx-no-data">
+													<div class="bx-img"></div>
+													<div class="tx01">
+														진행중인<br/>
+														채용공고가 없습니다.
+													</div>
+												</div>
 											</div>
 											<script>
-											document.addEventListener("DOMContentLoaded", function () {
-												if (window.innerWidth >= 1024) {
-													// Swiper 인스턴스 생성
-													const swiper = new Swiper('.main-careers-posting', {
-														// 자동 재생 설정
-														autoplay: {
-															delay: 3500, // 2.5초마다 슬라이드 바뀜
-															disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
-														},
+											// Swiper 인스턴스 생성
+											const swiper = new Swiper('.main-careers-posting', {
+												// 자동 재생 설정
+												autoplay: {
+													delay: 3500, // 2.5초마다 슬라이드 바뀜
+													disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
+												},
 
-														// 페이지네이션, 네비게이션 버튼 등 기타 옵션
-														pagination: {
-															el: '.swiper-pagination',
-															type: "fraction",
-															clickable: true,
-														},
-														navigation: {
-															nextEl: '.bx-navi .swiper-button-next',
-															prevEl: '.bx-navi .swiper-button-prev',
-														},
-														loop: true, // 무한 루프
-													});
-
-													// HTML에서 버튼 요소 가져오기
-													const playButton = document.getElementById('swiper-button-play');
-													const stopButton = document.getElementById('swiper-button-stop');
-
-													// 정지 버튼 클릭 이벤트
-													stopButton.addEventListener('click', () => {
-														swiper.autoplay.stop(); // 자동 재생 정지
-														stopButton.style.display = 'none'; // 정지 버튼 숨기기
-														playButton.style.display = 'inline-block'; // 재생 버튼 보이기
-													});
-
-													// 재생 버튼 클릭 이벤트
-													playButton.addEventListener('click', () => {
-														swiper.autoplay.start(); // 자동 재생 시작
-														playButton.style.display = 'none'; // 재생 버튼 숨기기
-														stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
-													});
-
-													/*var swiper = new Swiper(".main-vis", {
-														pagination: {
-														el: ".swiper-pagination",
-														type: "fraction",
-														},
-														navigation: {
-														nextEl: ".swiper-button-next",
-														prevEl: ".swiper-button-prev",
-														},
-													});*/
-												} else if (window.innerWidth <= 1023) {
-													var swiper = new Swiper(".main-careers-posting", {
-														slidesPerView: "auto",
-														spaceBetween: 16,
-														watchOverflow: true,
-													});
-												}
+												// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+												pagination: {
+													el: '.swiper-pagination',
+													type: "fraction",
+													clickable: true,
+												},
+												navigation: {
+													nextEl: '.bx-navi .swiper-button-next',
+													prevEl: '.bx-navi .swiper-button-prev',
+												},
+												loop: true, // 무한 루프
 											});
+
+											// HTML에서 버튼 요소 가져오기
+											const playButton = document.getElementById('swiper-button-play');
+											const stopButton = document.getElementById('swiper-button-stop');
+
+											// 정지 버튼 클릭 이벤트
+											stopButton.addEventListener('click', () => {
+												swiper.autoplay.stop(); // 자동 재생 정지
+												stopButton.style.display = 'none'; // 정지 버튼 숨기기
+												playButton.style.display = 'inline-block'; // 재생 버튼 보이기
+											});
+
+											// 재생 버튼 클릭 이벤트
+											playButton.addEventListener('click', () => {
+												swiper.autoplay.start(); // 자동 재생 시작
+												playButton.style.display = 'none'; // 재생 버튼 숨기기
+												stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
+											});
+
+											/*var swiper = new Swiper(".main-vis", {
+												pagination: {
+												el: ".swiper-pagination",
+												type: "fraction",
+												},
+												navigation: {
+												nextEl: ".swiper-button-next",
+												prevEl: ".swiper-button-prev",
+												},
+											});*/
 											</script>
 										</div>
 									</div>
