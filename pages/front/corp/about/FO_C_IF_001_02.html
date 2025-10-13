@@ -70,7 +70,7 @@
 						<div class="page-body-inner-bx01">
 							<div class="about-cont06">
 								<div class="tp-tx-bx">
-									<div class="tx01">본사 또는 지부에 문의사항이 있으신 경우 대표번호로 연락바랍니다.</div>
+									<div class="tx01"><span class="mob-dn">본사 또는 지부에 </span>문의사항이 있으신 경우 <span class="mob-db"></span>대표번호로 연락바랍니다.</div>
 									<div class="tx02">1566-6644</div>
 								</div>
 								<div class="map-wrap">
@@ -78,27 +78,27 @@
 										<img src="../../../../assets/front/images/corp/img_sustain11_02.png" alt="지도" />
 									</div>
 									<div class="facility-list-wrap">
-										<div class="facility-list">
-											<ul>
-												<li>
+										<div class="facility-list swiper">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">서울북부지부</p>
 														<p class="tx02">경기도 고양시 일산동구 풍동226-25</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">서울남부지부</p>
 														<p class="tx02">경기도 하남시 감북동345-6번지 2층</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">경기지부</p>
 														<p class="tx02">경기도 용인시 기흥구 신갈동 402-29</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide open">
 													<div class="in-bx">
 														<p class="tx01">인천지부</p>
 														<p class="tx02">
@@ -107,25 +107,25 @@
 														</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">서울북부지부</p>
 														<p class="tx02">경기도 고양시 일산동구 풍동226-25</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">서울남부지부</p>
 														<p class="tx02">경기도 하남시 감북동345-6번지 2층</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">서울북부지부</p>
 														<p class="tx02">경기도 고양시 일산동구 풍동226-25</p>
 													</div>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<div class="in-bx">
 														<p class="tx01">서울남부지부</p>
 														<p class="tx02">경기도 하남시 감북동345-6번지 2층</p>
@@ -133,6 +133,31 @@
 												</li>
 											</ul>
 										</div>
+										<script>
+										/*
+										var swiper = new Swiper(".bx-thum", {
+											slidesPerView: 1,
+											spaceBetween: 0,
+											navigation: {
+												nextEl: ".swiper-button-next",
+												prevEl: ".swiper-button-prev",
+											},
+										});
+										*/
+										document.addEventListener("DOMContentLoaded", function () {
+											if (window.innerWidth <= 1023) {
+												var swiper = new Swiper(".facility-list", {
+													slidesPerView: "auto",
+													spaceBetween: 12,
+													watchOverflow: true,
+													navigation: {
+														nextEl: ".swiper-button-next",
+														prevEl: ".swiper-button-prev",
+													},
+												});
+											}
+										});
+									</script>
 									</div>
 								</div>
 							</div>
@@ -151,44 +176,5 @@
 		<div class="quick-menu"></div>
 		<!-- //퀵메뉴 -->
 	</div>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-	
-
-	<script>
-	gsap.registerPlugin(ScrollTrigger);
-
-	gsap.to("#vision1012 .full_img", {
-		scrollTrigger: {
-			trigger: "#vision1012",
-			pin: true,
-			scrub: 0.5,
-			start: "top top",
-			//end: "+=1000"
-			end: "bottom+=400 top",
-		}
-	});
-		
-	gsap.to("#vision1012 .bg", {
-		clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", // 최종 목표 값을 수정했습니다.
-		scrollTrigger: {
-			trigger: "#vision1012 .full_img",
-			start: "top top",
-			end: "bottom+=400 top",
-			scrub: 0.5
-		}
-	});
-
-	gsap.to("#vision1012 .in-txt", {
-		top: "0",
-		scrollTrigger: {
-			trigger: "#vision1012 .full_img",
-			start: "top top",
-			end: "bottom center",
-			scrub: true
-		}
-	});
-	</script>
 </body>
 </html>
