@@ -128,12 +128,28 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">7차 - 1:1문의 답변 메일</span></p>
 						${createMenuLink("common/PC_ZN_002.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">ing - 본인인증 (팝업)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZH_001_P.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">ing - 알럿, 토스트</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">8차 - 공통팝업 (팝업 빌더)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">8차 - 시스템 점검</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">8차 - 404 에러</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">8차 - 505 에러</span></p>
 						${createMenuLink("common/.html", useFullLink)}
 					</div>
 				</div>
@@ -145,9 +161,9 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인</span></p>
-						<p class="g-sub-text"><span class="em">줄 바꿈?</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">멤버십 아이콘 적용 필요 / pc, mobile 배경, 이미지?</span></p>
 						${createMenuLink("main/FO_Y_MA_001.html", useFullLink)}
 					</div>
 				</div>
@@ -292,6 +308,10 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">7차 - 상담 안내​</span></p>
 						${createMenuLink("direct/FO_Y_DQ_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">7차 - 구성품목 확인​</span></p>
+						${createMenuLink("direct/FO_Y_DJ_001_L.html", useFullLink)}
 					</dl>
 				</div>
 			</li>

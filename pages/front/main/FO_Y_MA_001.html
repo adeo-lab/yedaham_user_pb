@@ -100,13 +100,13 @@
 
 								// 페이지네이션, 네비게이션 버튼 등 기타 옵션
 								pagination: {
-									el: '.swiper-pagination',
+									el: '.main-vis .swiper-pagination',
 									type: "fraction",
 									clickable: true,
 								},
 								navigation: {
-									nextEl: '.swiper-button-next',
-									prevEl: '.swiper-button-prev',
+									nextEl: '.main-vis .swiper-button-next',
+									prevEl: '.main-vis .swiper-button-prev',
 								},
 								loop: true, // 무한 루프
 							});
@@ -170,19 +170,19 @@
 									<ul>
 										<li>
 											<div class="icon ico01-01"></div>
-											<div class="s-txt">계약현황 조회​</div>
+											<div class="s-txt">계약현황 조회</div>
 										</li>
 										<li>
 											<div class="icon ico01-02"></div>
-											<div class="s-txt">예다함 멤버십​</div>
+											<div class="s-txt">예다함 멤버십</div>
 										</li>
 										<li>
 											<div class="icon ico01-03"></div>
-											<div class="s-txt">프리미엄​ 서비스​​</div>
+											<div class="s-txt">프리미엄​ 서비스</div>
 										</li>
 										<li>
 											<div class="icon ico01-04"></div>
-											<div class="s-txt">납부방법 변경​</div>
+											<div class="s-txt">납부방법 변경</div>
 										</li>
 									</ul>
 								</div>
@@ -219,27 +219,27 @@
 									<ul class="swiper-wrapper">
 										<li class="swiper-slide">
 											<div class="icon ico01-01"></div>
-											<div class="s-txt">계약현황 조회​</div>
+											<div class="s-txt">계약현황 <span class="mob-db"></span>조회</div>
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico01-02"></div>
-											<div class="s-txt">예다함 멤버십​</div>
+											<div class="s-txt">예다함 <span class="mob-db"></span>멤버십</div>
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico01-03"></div>
-											<div class="s-txt">프리미엄​ 서비스​​</div>
+											<div class="s-txt">프리미엄​ <span class="mob-db"></span>서비스​</div>
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico01-04"></div>
-											<div class="s-txt">납부방법 변경​</div>
+											<div class="s-txt">납부방법 <span class="mob-db"></span>변경</div>
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico02-01"></div>
-											<div class="s-txt">왜 예다함인가?</div>
+											<div class="s-txt">왜 <span class="mob-db"></span>예다함인가?</div>
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico02-02"></div>
-											<div class="s-txt">상조의 필요성​</div>
+											<div class="s-txt">상조의 <span class="mob-db"></span>필요성​</div>
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico02-03"></div>
@@ -247,7 +247,7 @@
 										</li>
 										<li class="swiper-slide">
 											<div class="icon ico02-04"></div>
-											<div class="s-txt">자주 하는 질문​</div>
+											<div class="s-txt">자주 하는 질문</div>
 										</li>
 									</ul>
 								</div>
@@ -257,8 +257,8 @@
 									slidesPerView: 'auto',
 									spaceBetween: 0,
 									navigation: {
-										nextEl: ".swiper-button-next",
-										prevEl: ".swiper-button-prev",
+										nextEl: ".main-cont01 .swiper-button-next",
+										prevEl: ".main-cont01 .swiper-button-prev",
 									},
 								});
 							</script>
@@ -274,7 +274,7 @@
 								</div>
 							</div>
 							<div class="main-product-list-wrap">
-								<div class="product-list01 swiper">
+								<div class="m-product-list01 swiper">
 									<ul class="swiper-wrapper">
 										<li class="swiper-slide">
 											<a href="#">
@@ -434,16 +434,16 @@
 								<script>
 									document.addEventListener("DOMContentLoaded", function () {
 									if (window.innerWidth <= 1023) {
-											var swiper3 = new Swiper(".product-list01", {
+											var swiper3 = new Swiper(".m-product-list01", {
 												slidesPerView: 'auto',
 												spaceBetween: 0,
 												centeredSlides: true,
 												loop: true,
 												watchOverflow: true,
-												navigation: {
-													nextEl: ".swiper-button-next",
-													prevEl: ".swiper-button-prev",
-												},
+												/*navigation: {
+													nextEl: ".m-product-list01 .swiper-button-next",
+													prevEl: ".m-product-list01 .swiper-button-prev",
+												},*/
 											});
 										}
 									});
@@ -764,10 +764,10 @@
 										var swiper4 = new Swiper(".mob .bx-wrap-l", {
 											slidesPerView: 'auto',
 											spaceBetween: 0,
-											navigation: {
-												nextEl: ".swiper-button-next",
-												prevEl: ".swiper-button-prev",
-											},
+											/*navigation: {
+												nextEl: ".mob .bx-wrap-l .swiper-button-next",
+												prevEl: ".mob .bx-wrap-l .swiper-button-prev",
+											},*/
 										});
 									</script>
 								</div>
@@ -781,13 +781,112 @@
 						<div class="main-cont04">
 							<div class="my-main-benefit">
 								<div class="in-bx first">
-									<div class="tx02">8월의 예다함 멤버십</div>
-									<div class="tx01">더케이몰</div>
-									<div class="tx03">
-										생활건강/종합쇼핑/여행/숙박<br>
-										혜택가득한 특별 할인
+									<div class="tx02">
+										8월의 예다함 멤버십
+										<!-- navigation -->
+										<div class="bx-navi">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+
+											<div class="swiper-controls">
+												<button id="swiper-button-play">재생</button>
+												<button id="swiper-button-stop">정지</button>
+											</div>
+											<div class="swiper-button-next"></div>
+										</div>
+										<!-- //navigation -->
 									</div>
-									<a href="#" class="btn-detail">자세히보기</a>
+									<div class="m-mem-bx-n swiper">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<div class="tx01">더케이몰</div>
+												<div class="tx03">
+													생활건강/종합쇼핑/여행/숙박<br>
+													혜택가득한 특별 할인
+												</div>
+												<a href="#" class="btn-detail">자세히보기</a>
+											</li>
+											<li class="swiper-slide">
+												<div class="tx01">더케이몰22</div>
+												<div class="tx03">
+													생활건강/종합쇼핑/여행/숙박<br>
+													혜택가득한 특별 할인
+												</div>
+												<a href="#" class="btn-detail">자세히보기</a>
+											</li>
+										</ul>
+									</div>
+									<script>
+									document.addEventListener("DOMContentLoaded", function () {
+										if (window.innerWidth >= 1024) {
+											// Swiper 인스턴스 생성
+											const swiper = new Swiper('.m-mem-bx-n', {
+												// 자동 재생 설정
+												autoplay: {
+													delay: 3500, // 2.5초마다 슬라이드 바뀜
+													disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
+												},
+
+												// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+												pagination: {
+													el: '.tx02 .swiper-pagination',
+													type: "fraction",
+													clickable: true,
+												},
+												navigation: {
+													nextEl: '.tx02 .swiper-button-next',
+													prevEl: '.tx02 .swiper-button-prev',
+												},
+												loop: true, // 무한 루프
+											});
+
+											// HTML에서 버튼 요소 가져오기
+											const playButton = document.getElementById('swiper-button-play');
+											const stopButton = document.getElementById('swiper-button-stop');
+
+											// 정지 버튼 클릭 이벤트
+											stopButton.addEventListener('click', () => {
+												swiper.autoplay.stop(); // 자동 재생 정지
+												stopButton.style.display = 'none'; // 정지 버튼 숨기기
+												playButton.style.display = 'inline-block'; // 재생 버튼 보이기
+											});
+
+											// 재생 버튼 클릭 이벤트
+											playButton.addEventListener('click', () => {
+												swiper.autoplay.start(); // 자동 재생 시작
+												playButton.style.display = 'none'; // 재생 버튼 숨기기
+												stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
+											});
+
+											/*var swiper = new Swiper(".main-vis", {
+												pagination: {
+												el: ".swiper-pagination",
+												type: "fraction",
+												},
+												navigation: {
+												nextEl: ".swiper-button-next",
+												prevEl: ".swiper-button-prev",
+												},
+											});*/
+										} else if (window.innerWidth <= 1023) {
+											var swiper = new Swiper(".m-mem-bx-n", {
+												slidesPerView: "auto",
+												spaceBetween: 16,
+												watchOverflow: true,
+												// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+												pagination: {
+													el: '.tx02 .swiper-pagination',
+													type: "fraction",
+													clickable: true,
+												},
+												navigation: {
+													nextEl: '.tx02 .swiper-button-next',
+													prevEl: '.tx02 .swiper-button-prev',
+												},
+											});
+										}
+									});
+									</script>
 								</div>
 								<div class="in-bx">
 									<div class="tx01">예다함 롯데카드<br/>상조엔로카 출시</div>
@@ -883,11 +982,10 @@
 						//slidesPerView: 1,
 						spaceBetween: 0,
 						navigation: {
-							nextEl: ".swiper-button-next",
-							prevEl: ".swiper-button-prev",
+							nextEl: ".y-news .swiper-button-next",
+							prevEl: ".y-news .swiper-button-prev",
 						},
 					});
-					
 				</script>
 			</div>
 		</div>
