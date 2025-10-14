@@ -139,11 +139,11 @@
   background-size: 16px;
 }
 .main-cont03 .main-review-list {width: 848px; display: flex; column-gap: 48px;}
-.main-cont03 .main-review-list .bx-wrap-l {width: 400px; padding: 0 /*128px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
+.main-cont03 .main-review-list .bx-wrap-l {width: 400px; padding: 64px /*128px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
 .main-cont03 .main-review-list .bx-wrap-r {width: 400px; padding: 0 /*64px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
 .main-cont03 .main-review-list .in-bx-wrap {display: flex; flex-direction: column; row-gap: 64px;}
-.main-cont03 .main-review-list .bx-wrap-l .in-bx-wrap.move {animation: 20s linear 0s infinite normal none running slidedown;}
-.main-cont03 .main-review-list .bx-wrap-r .in-bx-wrap.move {animation: 20s linear 0s infinite normal none running slideup;}
+.main-cont03 .main-review-list .bx-wrap-l .in-bx-wrap.move {animation: 20s linear 0s infinite normal none running slideup;}
+.main-cont03 .main-review-list .bx-wrap-r .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slideup /*slidedown*/;}
 .main-cont03 .main-review-list .in-bx {padding: 32px; background: #fff; border-radius: 32px; border-top-left-radius: 0;}
 .main-cont03 .main-review-list .in-bx dt {max-height: 64px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 12px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
 .main-cont03 .main-review-list .in-bx dd {height: 52px; font-weight: 400; font-size: 17px; color: #777; line-height: 150%; padding: 0 0 32px 0; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
@@ -182,8 +182,8 @@
   background-position: right top 4.5px;
   background-size: 16px;
 }
-.main-cont05 .my-main-faq li {width: calc(100% /3); height: 120px;}
-.main-cont05 .my-main-faq li .in-bx {padding: 32px 70px;}
+.main-cont05 .my-main-faq li {width: calc(100% /3); height: 120px; display: flex; align-items: center; justify-content: center;}
+.main-cont05 .my-main-faq li .in-bx {padding: 0 70px;}
 .main-cont05 .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%;}
 
 

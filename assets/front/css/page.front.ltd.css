@@ -2845,6 +2845,9 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 }
 
 /* header new */
+#header .header-inner .navi-util .navi-list .navi-item .navi-text .logout {display: none;}
+#header .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn {background: #fff;}
+
 .header .header-inner .header-sub-area {display: flex; column-gap: 16px; height: 72px; align-items: center;}
 .header .header-inner .header-sub-area .btn-header-prev {width: 24px; height: 24px; line-height: 24px;}
 .header .header-inner .header-sub-area .btn-header-prev a {
