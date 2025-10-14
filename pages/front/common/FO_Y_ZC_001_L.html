@@ -200,34 +200,52 @@
 								<dl>
 									<dt>관심상품 (중복 선택 가능)</dt>
 									<dd>
-										<div class="wish-time-list three">
-											<ul>
-												<li>
+										<div class="wish-time-list three pr-ty-n swiper">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
 													<a href="#">
 														<div class="in-bx">
-															상시<br/>
-															(아무때나)
+															<p class="tx01">윤슬 4호</p>
+															<p class="tx02">21,500원/월</p>
+															<p class="tx03">200회 기준</p>
 														</div>
 													</a>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<a href="#">
 														<div class="in-bx">
-															오전<br/>
-															9시~10시
+															<p class="tx01">윤슬 6호</p>
+															<p class="tx02">29,000원/월</p>
+															<p class="tx03">200회 기준</p>
 														</div>
 													</a>
 												</li>
-												<li>
+												<li class="swiper-slide">
 													<a href="#">
 														<div class="in-bx">
-															오전<br/>
-															10시~11시
+															<p class="tx01">노블</p>
+															<p class="tx02">60,000원/월</p>
+															<p class="tx03">200회 기준</p>
 														</div>
 													</a>
 												</li>
 											</ul>
 										</div>
+										<script>
+										document.addEventListener("DOMContentLoaded", function () {
+											if (window.innerWidth <= 1023) {
+												var swiper99 = new Swiper(".pr-ty-n", {
+													slidesPerView: "auto",
+													spaceBetween: 0,
+													watchOverflow: true,
+													navigation: {
+														nextEl: ".swiper-button-next",
+														prevEl: ".swiper-button-prev",
+													},
+												});
+											}
+										});
+									</script>
 									</dd>
 								</dl>
 							</div>
