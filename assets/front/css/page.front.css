@@ -5801,11 +5801,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-size: 32px;
   display: none;
 }
-.why-y-wrap .why-y-list ul li:nth-child(1) .in-bx {background: #EAF9FF;}
-.why-y-wrap .why-y-list ul li:nth-child(2) .in-bx {background: #ECF5FF;}
-.why-y-wrap .why-y-list ul li:nth-child(3) .in-bx {background: #FFF2E0;}
-.why-y-wrap .why-y-list ul li:nth-child(4) .in-bx {background: #FBEEED;}
-.why-y-wrap .why-y-list ul li:nth-child(5) .in-bx {background: #F3F2FF;}
+.why-y-wrap .why-y-list ul li:nth-child(1) .in-bx {background-color: #EAF9FF; background-image: url('../../../assets/front/images/sub/icon_why01.png'); background-repeat: no-repeat; background-position: right 30px bottom 30px; background-size: 61px;}
+.why-y-wrap .why-y-list ul li:nth-child(2) .in-bx {background-color: #ECF5FF; background-image: url('../../../assets/front/images/sub/icon_why02.png'); background-repeat: no-repeat; background-position: right 30px bottom 30px; background-size: 56px;}
+.why-y-wrap .why-y-list ul li:nth-child(3) .in-bx {background-color: #FFF2E0; background-image: url('../../../assets/front/images/sub/icon_why03.png'); background-repeat: no-repeat; background-position: right 30px bottom 30px; background-size: 80px;}
+.why-y-wrap .why-y-list ul li:nth-child(4) .in-bx {background-color: #FBEEED; background-image: url('../../../assets/front/images/sub/icon_why04.png'); background-repeat: no-repeat; background-position: right 30px bottom 30px; background-size: 80px;}
+.why-y-wrap .why-y-list ul li:nth-child(5) .in-bx {background-color: #F3F2FF; background-image: url('../../../assets/front/images/sub/icon_why05.png'); background-repeat: no-repeat; background-position: right 30px bottom 30px; background-size: 70px;}
 .why-y-wrap .why-y-list ul li a:hover .in-bx {background: #D17B47;}
 .why-y-wrap .why-y-list ul li a:hover .in-bx .tx01 {display: none;}
 .why-y-wrap .why-y-list ul li a:hover .in-bx .tx02 {display: block;}
@@ -6580,6 +6580,11 @@ span.mob-db {display: inline;}
   .why-y-wrap .why-y-list ul li .in-bx {height: auto; padding: 20px;}
   .why-y-wrap .why-y-list ul li .in-bx .tx01 {font-size: 19px; padding-bottom: 8px;}
   .why-y-wrap .why-y-list ul li .in-bx .tx02 {font-weight: 400; font-size: 14px; color: #444; display: block;}
+  .why-y-wrap .why-y-list ul li:nth-child(1) .in-bx {background-position: right 20px bottom 12px; background-size: 45px;}
+  .why-y-wrap .why-y-list ul li:nth-child(2) .in-bx {background-position: right 20px bottom 12px; background-size: 42px;}
+  .why-y-wrap .why-y-list ul li:nth-child(3) .in-bx {background-position: right 20px bottom 12px; background-size: 59px;}
+  .why-y-wrap .why-y-list ul li:nth-child(4) .in-bx {background-position: right 20px bottom 12px; background-size: 60px;}
+  .why-y-wrap .why-y-list ul li:nth-child(5) .in-bx {background-position: right 20px bottom 12px; background-size: 52px;}
 }
 
 
