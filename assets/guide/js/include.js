@@ -228,19 +228,16 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("product/FO_Y_PA_002_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 4호</span></p>
-						<p class="g-sub-text"><span class="em">7차 왜 예다함인가? 작업 필요</span></p>
 						${createMenuLink("product/FO_Y_PB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 6호</span></p>
-						<p class="g-sub-text"><span class="em">7차 왜 예다함인가? 작업 필요</span></p>
 						${createMenuLink("product/FO_Y_PC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 노블</span></p>
-						<p class="g-sub-text"><span class="em">7차 왜 예다함인가? 작업 필요</span></p>
 						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
