@@ -152,6 +152,30 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">8차 - 505 에러</span></p>
 						${createMenuLink("common/.html", useFullLink)}
 					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 마케팅 수신 동의(레이어 팝업) (40p)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 이미지 미리보기 (레이어 팝업)(41p)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 이미지 미리보기 (레이어 팝업)(42p)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 홈페이지 이용약관(18p)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 중요정보 고시사항(21p)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 로그인 연장_접속 종료 안내(38p)</span></p>
+						${createMenuLink("common/.html", useFullLink)}
+					</div>
 				</div>
 			</li>
 
@@ -209,6 +233,10 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">7차 - 멤버십 카드</span></p>
 						${createMenuLink("my/FO_Y_YE_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 결제정보 관리 > 계좌이체 (20p, 21p)</span></p>
+						${createMenuLink("my/.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -294,21 +322,48 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제 진행​</span></p>
-						<p class="g-sub-text"><span class="em">임의 작업</span></p>
+						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("direct/FO_Y_DD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">계약 완료​</span></p>
-						<p class="g-sub-text"><span class="em">임의 작업</span></p>
+						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("direct/FO_Y_DE_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">7차 - 상담 안내​</span></p>
-						${createMenuLink("direct/FO_Y_DQ_001_L.html", useFullLink)}
+						${createMenuLink("direct/.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">7차 - 구성품목 확인​</span></p>
+						<p class="g-sub-title"><span class="em">대체페이지 - 결제진행 > 계좌이체 (14p, 32p)</span></p>
+						${createMenuLink("direct/.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 수집 및 이용 동의(레이어 팝업) (17p)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						${createMenuLink("direct/FO_Y_DG_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 제3자 제공 동의(레이어 팝업) (18p)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						${createMenuLink("direct/FO_Y_DH_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 제공에 대한 게재(레이어 팝업) (19p)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						${createMenuLink("direct/FO_Y_DI_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 구성품목 확인(레이어 팝업) (20p)</span></p>
 						${createMenuLink("direct/FO_Y_DJ_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 회원계약내용 확인(레이어 팝업) (22p)</span></p>
+						${createMenuLink("direct/.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - [제3자 제공에 관한 선택적 동의] 개인정보 수집 이용에 대한 동의(레이어 팝업) (24p)</span></p>
+						${createMenuLink("direct/.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -355,6 +410,18 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">7차 - 온라인 법률 상담 예시 보기​​</span></p>
 						${createMenuLink("benefit/FO_Y_BD_004_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 부가서비스(15p)</span></p>
+						${createMenuLink("benefit/.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 전환서비스 상담 신청(레이어 팝업) (18p)</span></p>
+						${createMenuLink("benefit/.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 온라인 법률 상담 등록/상세 (레이어 팝업)(24p~25p)</span></p>
+						${createMenuLink("benefit/.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
