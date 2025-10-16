@@ -121,10 +121,6 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("common/FO_Y_ZZ_001_L_03.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 이용약관​</span></p>
-						${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
-					</div>
-					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 1:1문의 답변 메일</span></p>
 						${createMenuLink("common/PC_ZN_002.html", useFullLink)}
 					</div>
