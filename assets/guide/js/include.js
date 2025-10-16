@@ -478,7 +478,7 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("cs/.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] ing - 공지사항 No Data</span></p>
+						<p class="g-sub-title"><span class="em">[피그마] - ing - 공지사항 No Data</span></p>
 						${createMenuLink("cs/.html", useFullLink)}
 					</dl>
 				</div>
