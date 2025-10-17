@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>마케팅 수신 동의 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="page-login">
+				<div class="page-head">
+					<div class="title-inner-bx">
+						<h2 class="heading-l">마케팅 수신 동의</h2>
+					</div>
+				</div>
+				<div class="page-body">
+					<div class="button-display">
+						<span class="button-area">
+							<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentTermsUse')"><span class="btn-text">마케팅 수신 동의</span></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 헤더 영역 -->
+		<footer id="footer"></footer>
+		<!-- //헤더 영역 -->
+	</div>
+
+	<!-- contentPopup -->
+	<div class="content-popup" data-popup="contentTermsUse">
+		<div class="popup-wrap">
+			<div class="popup-header">
+				<p class="popup-subject">마케팅 수신 동의</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+					<div class="terms-display">
+						<div class="terms-content">
+							<div class="order-list-n">
+								<p class="s-tit"><span>1)</span>광고성 정보의 이용목적​</p>
+								<ul>
+									<li>더케이예다함㈜(이하 ‘예다함’)는 고객의 동의하 이용자 이메일, 문자(SMS 또는 카카오 알림톡), 전화 등을 통해 이용자에게 광고성 정보를 제공합니다.</li>
+								</ul>
+
+								<p class="s-tit"><span>2)</span>수집 및 이용 항목​​</p>
+								<ul>
+									<li>이름, 생년월일, 휴대폰 번호, 이메일, 연락처​</li>
+								</ul>
+
+								<p class="s-tit"><span>3)</span>철회안내​​</p>
+								<ul>
+									<li>수신 동의를 철회하고자 할 경우, 고객센터를 통해 동의철회를 요청을 할 수 있습니다.</li>
+								</ul>
+
+								<p class="s-tit"><span>4)</span>수신동의 변경 및 보유기간​</p>
+								<ul>
+									<li>예다함은 거래종료일로부터 5년, 광고성 정보 전달을 위하여 보유·이용합니다.</li>
+								</ul>
+
+								<p class="s-tit"><span>5)</span>영리목적의 광고성 정보전송​​</p>
+								<ul>
+									<li>개인정보의 수집·이용 목적 중 재화나 서비스의 홍보 또는 판매 권유 등을 위하여 해당 개인정보를 이용하여 정보주체에게 연락할 수 있습니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="button-area">
+					<a href="#" class="btn-popup">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contentPopup -->
+
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('contentTermsUse');
+		});
+	</script>
+</body>
+</html>

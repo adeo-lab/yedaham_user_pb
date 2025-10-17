@@ -130,7 +130,11 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 알럿, 토스트</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/alert.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">[피그마] - ing - 알럿, 토스트</span></p>
+						${createMenuLink("common/toast.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">8차 - 공통팝업 (팝업 빌더)</span></p>
@@ -138,43 +142,43 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">8차 - 시스템 점검</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZA_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">8차 - 404 에러</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZA_002.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">8차 - 505 에러</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZA_003.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 마케팅 수신 동의(레이어 팝업) (40p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZQ_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 이미지 미리보기 (레이어 팝업)(41p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZR_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">대체페이지 - 이미지 미리보기 (레이어 팝업)(42p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 동영상 미리보기 (레이어 팝업)(42p)</span></p>
+						${createMenuLink("common/FO_Y_ZS_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 홈페이지 이용약관(18p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 중요정보 고시사항(21p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZB_006.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 로그인 연장_접속 종료 안내(38p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZT_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 개인정보처리방침(19p)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						<p class="g-sub-title"><span class="em">[디자인필요/피그마] - 개인정보처리방침(19p)</span></p>
+						${createMenuLink("common/FO_Y_ZB_003.html", useFullLink)}
 					</div>
 				</div>
 			</li>
@@ -234,9 +238,9 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 멤버십 카드</span></p>
 						${createMenuLink("my/FO_Y_YE_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">대체페이지 - 결제정보 관리 > 계좌이체 (20p, 21p)</span></p>
-						${createMenuLink("my/.html", useFullLink)}
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 결제정보 관리 > 계좌이체 (20p, 21p) : 21p는 모바일</span></p>
+						${createMenuLink("my/FO_Y_YF_001_2.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -332,15 +336,15 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 상담 안내 (레이어)</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						${createMenuLink("direct/FO_Y_DQ_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<!-- <dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 혜택 안내​ (레이어)</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">대체페이지 - 결제진행 > 계좌이체 (14p, 32p)</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						${createMenuLink("direct/FO_Y_DF_001_L.html", useFullLink)}
+					</dl> -->
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">대체페이지 - 결제진행 > 계좌이체 (14p, 32p) : 32p는 모바일</span></p>
+						${createMenuLink("direct/FO_Y_DD_001_2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 수집 및 이용 동의(레이어 팝업) (17p)</span></p>
@@ -363,23 +367,24 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 회원계약내용 확인(레이어 팝업) (22p)</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						${createMenuLink("direct/FO_Y_DL_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - [제3자 제공에 관한 선택적 동의] 개인정보 수집 이용에 대한 동의(레이어 팝업) (24p)</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						${createMenuLink("direct/FO_Y_DN_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 혜택 안내 (레이어 팝업) (16p) (7차)</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						<p class="g-sub-title"><span class="em">[디자인필요/피그마] - 혜택 안내 (레이어 팝업) (16p) (7차)</span></p>
+						${createMenuLink("direct/FO_Y_DF_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - 청약서 확인​</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						${createMenuLink("direct/FO_Y_DK_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - 출금이체 신청서​​</span></p>
-						${createMenuLink("direct/.html", useFullLink)}
+						${createMenuLink("direct/FO_Y_DM_001_L.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -429,15 +434,15 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 전환서비스 상담 신청(레이어 팝업) (18p)</span></p>
-						${createMenuLink("benefit/.html", useFullLink)}
+						${createMenuLink("benefit/FO_Y_ZC_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 온라인 법률 상담 등록/상세 (레이어 팝업)(24p~25p)</span></p>
-						${createMenuLink("benefit/.html", useFullLink)}
+						${createMenuLink("benefit/FO_Y_BD_003_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 부가서비스(15p)</span></p>
-						${createMenuLink("benefit/.html", useFullLink)}
+						${createMenuLink("benefit/FO_Y_BD_001.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -471,11 +476,11 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 고객 칭찬 후기 > 내가 칭찬한 글 > 칭찬한 글 없는 경우(10p)</span></p>
-						${createMenuLink("cs/.html", useFullLink)}
+						${createMenuLink("cs/FO_Y_CC_001_nodata.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 공지사항 No Data</span></p>
-						${createMenuLink("cs/.html", useFullLink)}
+						${createMenuLink("cs/FO_Y_CE_001_nodata.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -496,23 +501,27 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("info/FO_Y_FE_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 상조납입금 안전책임 시스템​​​</span></p>
-						${createMenuLink("info/FO_Y_BD_004_L.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 국가자격증 보유 장례지도사</span></p>
+						<p class="g-sub-title"><span class="em">[피그마] - ing - 상조의 필요성</span></p>
 						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 전국 직영 운영 시스템</span></p>
+						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 왜 예다함인가? > 상조납입금 안전책임 시스템​​​</span></p>
 						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 100% Payback</span></p>
+						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 왜 예다함인가? > 국가자격증 보유 장례지도사</span></p>
 						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 투명경영감독</span></p>
+						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 왜 예다함인가? > 전국 직영 운영 시스템</span></p>
+						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 왜 예다함인가? > 100% Payback</span></p>
+						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 왜 예다함인가? > 투명경영감독</span></p>
 						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
@@ -520,16 +529,16 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("info/FO_Y_FA_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[피그마] - ing - 상조의 필요성</span></p>
-						${createMenuLink("info/.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 제례정보</span></p>
-						${createMenuLink("info/.html", useFullLink)}
+						${createMenuLink("info/FO_Y_FC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인)</span></p>
-						${createMenuLink("info/.html", useFullLink)}
+						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인) > 각종 축문양식​</span></p>
+						${createMenuLink("info/FO_Y_FD_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인) > 지방, 명정쓰기​</span></p>
+						${createMenuLink("info/FO_Y_FD_001_2.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -636,11 +645,11 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 주요재무현황 >  감사보고서(7p)</span></p>
-						${createMenuLink("corp/financials/.html", useFullLink)}
+						${createMenuLink("corp/financials/FO_C_DA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 주요재무현황 > 감사보고서 미리보기(8p)</span></p>
-						${createMenuLink("corp/financials/.html", useFullLink)}
+						${createMenuLink("corp/financials/FO_C_DB_001_L.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -668,16 +677,16 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("corp/sustainability/FO_C_SE_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">대체페이지 - 사회공헌활동 목록 (14p, 18p)</span></p>
-						${createMenuLink("corp/sustainability/.html", useFullLink)}
+						<p class="g-sub-title"><span class="em">[디자인필요] - 사랑다함(12p~19p) (8차 디자인)</span> > 사랑(愛)다함 이란?​</p>
+						${createMenuLink("corp/sustainability/FO_C_SC_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">대체페이지 - 사랑다함 > 사회공헌활동 목록 (14p, 18p)</span></p>
+						${createMenuLink("corp/sustainability/FO_C_SC_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 사회공헌활동 상세 (15p, 19p)</span></p>
-						${createMenuLink("corp/sustainability/.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 사랑다함(12p~19p) (8차 디자인)</span></p>
-						${createMenuLink("corp/sustainability/.html", useFullLink)}
+						${createMenuLink("corp/sustainability/FO_C_SC_003.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -709,7 +718,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">대체페이지 - 보도자료(9p~11p)</span></p>
-						${createMenuLink("corp/media/.html", useFullLink)}
+						${createMenuLink("corp/media/FO_C_PB_002.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
@@ -786,15 +795,15 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 직무소개(9p)</span></p>
-						${createMenuLink("corp/careers/.html", useFullLink)}
+						${createMenuLink("corp/careers/FO_C_EC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 직무소개 상세 (레이어 팝업) (10p)</span></p>
-						${createMenuLink("corp/careers/.html", useFullLink)}
+						${createMenuLink("corp/careers/FO_C_EC_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 복리후생 (11p)</span></p>
-						${createMenuLink("corp/careers/.html", useFullLink)}
+						${createMenuLink("corp/careers/FO_C_ED_001.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
