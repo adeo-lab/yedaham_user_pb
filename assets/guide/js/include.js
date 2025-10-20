@@ -477,11 +477,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">1:1문의</span><span class="em">목록</span></p>
 						${createMenuLink("cs/FO_Y_CD_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 고객 칭찬 후기 > 내가 칭찬한 글 > 칭찬한 글 없는 경우(10p)</span></p>
 						${createMenuLink("cs/FO_Y_CC_001_nodata.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 공지사항 No Data</span></p>
 						${createMenuLink("cs/FO_Y_CE_001_nodata.html", useFullLink)}
 					</dl>
