@@ -166,11 +166,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">대체페이지 - 동영상 미리보기 (레이어 팝업)(42p)</span></p>
 						${createMenuLink("common/FO_Y_ZS_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 홈페이지 이용약관(18p)</span></p>
 						${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 중요정보 고시사항(21p)</span></p>
 						${createMenuLink("common/FO_Y_ZB_006.html", useFullLink)}
 					</div>
@@ -273,9 +273,8 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 노블</span></p>
 						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품비교</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 방식?</span></p>
 						${createMenuLink("product/BO_ZC_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
