@@ -421,7 +421,6 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">이벤트​</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">조회수?</span></p>
 						${createMenuLink("benefit/FO_Y_BC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
