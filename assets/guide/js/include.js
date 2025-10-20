@@ -130,10 +130,12 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 알럿</span></p>
+						<p class="g-sub-text"><span class="em">아이콘 필요</span></p>
 						${createMenuLink("common/alert.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 토스트</span></p>
+						<p class="g-sub-text"><span class="em">아이콘 필요</span></p>
 						${createMenuLink("common/toast.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
