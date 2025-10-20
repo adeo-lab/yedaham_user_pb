@@ -6048,6 +6048,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .pop-alert .bx-alert .in-cont-bx .bx-btns .btn01 {display: block; width: 78px; height: 40px; font-weight: 600; font-size: 19px; color: #232527; line-height: 40px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; text-align: center; box-sizing: border-box;}
 .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02 {display: block; width: 78px; height: 40px; font-weight: 600; font-size: 19px; color: #fff; line-height: 40px; background: #D17B47; border-radius: 8px; text-align: center; box-sizing: border-box;}
 
+@media (max-width: 1023px) {
+  .pop-alert .bx-alert {max-width: 280px;}
+  .pop-alert .bx-alert .in-cont-bx {padding: 24px;}
+  .pop-alert .bx-alert .in-cont-bx .bx-tx {font-size: 15px;}
+  .pop-alert .bx-alert .in-cont-bx .bx-btns .btn01 {width: 60px; height: 32px; font-size: 14px; line-height: 32px;}
+  .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02 {width: 60px; height: 32px; font-size: 14px; line-height: 32px;}
+}
+
 .pop-toast {
   display: -webkit-box;
   display: -ms-flexbox;
