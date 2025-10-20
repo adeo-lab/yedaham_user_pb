@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>고객 칭찬 후기 - 고객지원 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container ty-wide" id="container">
+			<div id="page" class="page-customer">
+				<div class="page-head-wrap">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">고객 칭찬 후기​</h2>
+							<!-- data-finder -->
+							<div class="data-search">
+								<div class="search-word">
+									<label for="searchWord" class="blind">검색어 입력</label>
+									<div class="search-form">
+										<span class="form search-input">
+											<input type="text" class="form-elem" id="searchWord" name="searchWord" placeholder="궁금하신 점을 검색해보세요." maxlength="225">
+											<span class="form-btn">
+												<button type="button" class="btn-cancel" title="삭제"></button>
+											</span>
+										</span>
+										<button class="btn-search"><span class="btn-name blind">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<!-- //data-finder -->
+						</div>
+					</div>
+					<div class="page-head-bottom">
+						<p>
+							예다함을 칭찬해주세요!<br/>
+							고객님의 소중한 칭찬 한마디가 예다함 가족에게 큰 힘이 됩니다.
+						</p>
+						<ul>
+							<li>게시판의 성격과 맞지 않는 게시글은 운영자에 의해 사전 고지 없이 수정 또는 삭제될 수 있습니다.</li>
+						</ul>
+						<div>
+							<a href="#" class="btn-r-ty01">예다함 칭찬하기</a>
+						</div>
+					</div>
+				</div>
+				<div class="page-body-wrap">
+					<div class="inner-bx">
+						<!-- tab -->
+						<div class="tab-display style-b">
+							<div class="tab-inner-bx">
+								<ul class="tab-list">
+									<li class="tab-item current"><a href="#" class="tab-text">전체</a></li>
+									<li class="tab-item"><a href="#" class="tab-text">내가 칭찬한 글</a></li>
+								</ul>
+								<!-- <div class="btn-mob-r">
+									<span class="tx-fixed-on">궁금한 점은 1:1 문의로 편하게 알려주세요.</span>
+									<a href="#" class="btn-r-ty01">예다함 칭찬하기</a>
+								</div> -->
+							</div>
+						</div>
+						<!-- //tab -->
+						<div class="page-body">
+							<!-- no data -->
+							<div class="bx-nodata">
+								<div class="in-bx">
+									<div class="icon"></div>
+									<div class="tx01">등록된 예다함 소식이 없습니다.</div>
+								</div>
+							</div>
+							<!-- //no data -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 페이지 평가 -->
+		<div id="estimate" class="estimate-wrap"></div>
+		<!-- //페이지 평가 -->
+		 
+		<!-- 푸터 영역 -->
+		<footer id="footer"></footer>
+		<!-- //푸터 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+	</div>
+
+	<!-- MasonryGrid -->
+	<script src="https://naver.github.io/egjs-grid/release/latest/dist/grid.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const grid = new Grid.MasonryGrid(".masonry .review-list", {
+				defaultDirection: "end",
+				gap: 0,
+				align: "stretch",
+				column: 0,
+				useResizeObserver: true,
+				observeChildren: true,
+				useResizeObserver: true,
+			});
+
+			function setGridColumns() {
+				const screenWidth = window.innerWidth;
+				if (screenWidth > 1280) {
+					grid.column = 3;
+				} else if (screenWidth > 768) {
+					grid.column = 3;
+				} else {
+					grid.column = 1;
+				}
+				grid.renderItems();
+			}
+
+			setGridColumns();
+			window.addEventListener("resize", setGridColumns);
+		});
+	</script>
+	<!-- //MasonryGrid -->
+</body>
+</html>
