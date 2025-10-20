@@ -170,7 +170,9 @@
 .main-cont04 .my-main-benefit .in-bx.first .tx03 {color: #444;}
 .main-cont04 .my-main-benefit .in-bx.first a.btn-detail {left: 0;}
 .main-cont04 .my-main-benefit .in-bx:nth-child(2) {background: #FFF2E0;}
+.main-cont04 .my-main-benefit .in-bx:nth-child(2)::after {content: ''; position: absolute; right: 50px; bottom: 42px; width: 120px; height: 97px; background: url('../../../assets/front/images/sub/icon_main01_02.png') no-repeat center; background-size: 120px 97px; z-index: 10;}
 .main-cont04 .my-main-benefit .in-bx:nth-child(3) {background: #E9F5EC;}
+.main-cont04 .my-main-benefit .in-bx:nth-child(3)::after {content: ''; position: absolute; right: 50px; bottom: 38px; width: 103px; height: 105px; background: url('../../../assets/front/images/sub/icon_main01_03.png') no-repeat center; background-size: 103px 105px; z-index: 10;}
 
 .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi {position: absolute; right: 0; bottom: 0; z-index: 100; display: flex; align-items: flex-end; column-gap: 4px;}
 .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {position: relative; display: block; top: auto; right: auto; width: 16px; height: 23px; margin-top: 0; z-index: 100;}
@@ -198,6 +200,7 @@
   background-size: 16px;
 }
 .main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n {height: 263px;}
+.main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n::after {content: ''; position: absolute; right: 10px; bottom: 26px; width: 176px; height: 150px; background: url('../../../assets/front/images/sub/icon_main01_01.png') no-repeat center; background-size: 176px 150px; z-index: 10;}
 
 .main-cont05 .s-tit-wrap {position: relative; padding-bottom: 24px;}
 .main-cont05 .s-tit-wrap .s-tit {font-weight: 600; font-size: 30px; color: #232527; line-height: 130%;}
