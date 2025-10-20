@@ -5549,6 +5549,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .certificate-pop-wrap .my-account-list-txt {font-weight: 600; font-size: 19px; color: #131517; line-height: 130%; padding-bottom: 16px;}
 
+@media (max-width: 1023px) {
+  .certificate-pop-wrap .my-account-list-txt {font-size: 17px;}
+}
+
 .certificate-pop-wrap .my-account-list-wrap {position: relative; padding-bottom: 40px;}
 .certificate-pop-wrap .my-account-list li {width: auto; margin-right: 16px;}
 .certificate-pop-wrap .my-account-list li:last-child {margin-right: 0;}
@@ -5593,6 +5597,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 .certificate-pop-wrap .my-account-list-wrap .swiper-button-prev.swiper-button-disabled, .my-pr-now-wrap .swiper-button-next.swiper-button-disabled {display: none;}
 
+@media (max-width: 1023px) {
+  .certificate-pop-wrap .my-account-list li {margin-right: 8px;}
+  .certificate-pop-wrap .my-account-list li .in-bx {height: 71px; padding: 14px 18px;}
+  .certificate-pop-wrap .my-account-list li .in-bx p.tx01 {font-size: 20px;}
+  .certificate-pop-wrap .my-account-list li .in-bx p.tx02 {font-size: 14px;}
+  .certificate-pop-wrap .my-account-list-wrap .swiper-button-next::after {display: none;}
+  .certificate-pop-wrap .my-account-list-wrap .swiper-button-next::before {display: none;}
+}
+
 .certificate-pop-wrap .certi-pop-cont01 {padding-bottom: 24px;}
 .certificate-pop-wrap .certi-pop-cont01 .last {padding-bottom: 16px;}
 .certificate-pop-wrap .certi-pop-cont01  .pop-stit {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding-bottom: 8px;}
@@ -5615,6 +5628,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .certificate-pop-wrap .certi-ty-list li.disabled .in-bx {color: #BFBFBF; background: #F7F6F5; border: 1px solid rgba(19, 21, 23, 0.07);}
 .certificate-pop-wrap .certi-ty-list.three {padding-bottom: 0;}
 .certificate-pop-wrap .certi-ty-list.three li {width: 238px; padding-bottom: 0;}
+
+@media (max-width: 1023px) {
+  .certificate-pop-wrap .certi-ty-list.three li {width: 100%; margin-bottom: 8px;}
+  .certificate-pop-wrap .certi-ty-list li .in-bx {padding-left: 75px; padding-right: 75px;}
+  .certificate-pop-wrap .certi-ty-list li .in-bx p.tx01 {font-size: 17px;}
+  .certificate-pop-wrap .certi-ty-list li .in-bx p.tx02 {font-size: 14px;}
+  .content-popup .popup-wrap.certificate-issue .popup-footer .button-area [class*=btn-] {width: auto;}
+  .content-popup .popup-wrap.certificate-issue .popup-footer .button-area [class*=btn-]:last-child {width: auto;}
+}
 
 
 .container.ty-wide #page.page-info .page-body-wrap.no-bg {background: none;}
