@@ -5737,6 +5737,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #page .page-body .facility-list-wrap .pagination {margin-top: 16px;}
 
 .content-popup .popup-wrap.p-comparison {max-width: 1200px;}
+.content-popup .popup-wrap.p-comparison a.btn-view-dp {position: relative; display: inline-block; /*width: 139px;*/ height: 40px; font-weight: 400; font-size: 15px; color: #232527; line-height: 40px; padding: 0 16px 0 40px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 40px; vertical-align: top; margin: -5px 0 0 4px;}
+.content-popup .popup-wrap.p-comparison a.btn-view-dp::before {content: ''; position: absolute; top: 10px; left: 14px; width: 20px; height: 20px; background: #D7D7D7; border-radius: 20px;}
+.content-popup .popup-wrap.p-comparison a.btn-view-dp::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.75135 0.339512C9.11615 0.588787 9.20979 1.08659 8.96052 1.45138L4.86052 7.45138C4.72622 7.64791 4.51139 7.77443 4.2744 7.79656C4.0374 7.8187 3.80286 7.73415 3.63449 7.56589L1.13293 5.06589C0.820412 4.75357 0.820254 4.24704 1.13258 3.93452C1.4449 3.622 1.95143 3.62184 2.26395 3.93417L4.08349 5.75257L7.63948 0.548675C7.88876 0.183883 8.38656 0.0902371 8.75135 0.339512Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
 .content-popup .popup-wrap.p-comparison .popup-body {padding-bottom: 0;}
 .content-popup .popup-wrap.p-comparison .popup-body .popup-contents {padding-left: 0; padding-right: 0;}
 
@@ -5768,6 +5776,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .product-compare > ul:hover::after {content: ''; position: absolute; top: 0; left: 30px; bottom: 0; right: 30px; display: block; background: #fff; border: 2px solid #F1945E; border-radius: 12px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); z-index: 20;}
 /*.product-compare > ul:hover > li:first-child {padding-left: 39px;}
 .product-compare > ul:hover > li:last-child {padding-right: 39px;}*/
+
+@media (max-width: 1023px) {
+  .content-popup .popup-wrap.p-comparison a.btn-view-dp {height: 28px; font-size: 13px; line-height: 28px; padding: 0 12px 0 26px;}
+  .content-popup .popup-wrap.p-comparison a.btn-view-dp::before {top: 7px; left: 7px; width: 13px; height: 13px; background-size: 6px;}
+
+  .product-compare {width: 100%; overflow-x: auto;}
+  .product-compare > ul {width: 732px;}
+  .product-compare > ul > li .in-bx .tp-info-bx {height: 211px; padding: 20px 16px;}
+  .product-compare > ul > li .in-bx .tp-info-bx .tx01 {font-size: 24px;}
+  .product-compare > ul > li .in-bx .tp-info-bx .tx02 {font-size: 15px;}
+  .product-compare > ul > li .in-bx .tp-info-bx .tx03 {font-size: 20px;}
+  .product-compare > ul > li .in-bx li:last-child {font-size: 15px; padding: 12px 16px 12px 16px;}
+  .product-compare > ul > li .in-bx li {min-height: 46.5px; display: flex; align-items: center;}
+  .product-compare > ul > li:first-child .in-bx li {padding-left: 96px;}
+  .product-compare > ul > li .in-bx li .icon-bx p.icon {width: 36px; height: 36px;}
+  .product-compare > ul > li .in-bx .tp-info-bx .btm-btns {column-gap: 8px;}
+  .product-compare > ul > li .in-bx .tp-info-bx .btm-btns a.btn-s-ask {width: calc(50% - 4px); height: 40px; font-size: 15px; line-height: 40px;}
+  .product-compare > ul > li .in-bx .tp-info-bx .btm-btns a.btn-s-join {width: calc(50% - 4px); height: 40px; font-size: 15px; line-height: 40px;}
+}
 
 
 .pay-list01 {border-top: 1px solid rgba(19, 21, 23, 0.20)}
@@ -6016,6 +6043,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .cont-agree01 .table-wrap table.cont-tb-ty01 tbody td:last-child {border-right: none;}
 .cont-agree01 .table-wrap table.cont-tb-ty01 tbody td.br-n {border-right: none;}
 .cont-agree01 .table-wrap .tb-btm-tx {font-weight: 400; font-size: 17px; color: #c87c1e; line-height: 150%; padding-top: 8px;}
+
+@media (max-width: 1023px) {
+  .cont-agree01 .order-list-n .no-l {font-size: 15px;}
+  .cont-agree01 .order-list-n li {font-size: 15px;}
+  .cont-agree01 .table-wrap table.cont-tb-ty01 thead th {font-size: 15px;}
+  .cont-agree01 .table-wrap table.cont-tb-ty01 tbody td {font-size: 15px;}
+  .cont-agree01 .table-wrap .tb-btm-tx {font-size: 14px;}
+}
 
 
 .pop-alert {
