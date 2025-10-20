@@ -6206,6 +6206,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .bx-nodata .in-bx .icon {width: 64px; height: 64px; margin: 0 auto; background: #ddd;}
 .bx-nodata .in-bx .tx01 {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; padding: 24px 0 0 0; text-align: center;}
 
+@media (max-width: 1023px) {
+  .bx-nodata .in-bx {width: 100%;}
+  .bx-nodata .in-bx .icon {width: 54px; height: 54px;}
+  .bx-nodata .in-bx .tx01 {font-size: 18px;}
+}
+
 
 /* 모바일 줄바꿈 */
 span.pc-db {display: block;}
