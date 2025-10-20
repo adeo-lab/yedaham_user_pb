@@ -3841,9 +3841,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .media-list li .in-bx .thum.no-img::after {content: ''; background: url('../../../../assets/front/images/corp/no_img01.png') no-repeat center center; background-size: 160px;}
 .media-list li .in-bx .cont {padding: 32px; border: 1px solid rgba(19, 21, 23, 0.20); border-top: none; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; overflow: hidden; box-sizing: border-box;}
 .media-list li .in-bx .cont dl {padding: 12px 0 0 0;}
-.media-list li .in-bx .cont dt {height: 62px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 8px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
-.media-list li .in-bx .cont dd {height: 52px; font-weight: 400; font-size: 17px; color: #444; line-height: 150%;  display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
-.media-list li .in-bx .cont .tags {font-weight: 400; font-size: 15px; color: #777; line-height: 150%; padding: 20px 0; display: flex; column-gap: 8px;}
+.media-list li .in-bx .cont dt {/*height: 62px;*/ font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 8px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
+.media-list li .in-bx .cont dd {/*height: 52px;*/ font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding-bottom: 20px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
+.media-list li .in-bx .cont .tags {font-weight: 400; font-size: 15px; color: #777; line-height: 150%; padding: 0 0 20px 0; display: flex; column-gap: 8px;}
 .media-list li .in-bx .cont .btm-txt {font-weight: 400; font-size: 17px; color: #777; line-height: 150%; display: flex;}
 .media-list li .in-bx .cont .btm-txt span.dot {margin-top: 5px;}
 .media-list li a:hover .in-bx .cont {/*border: 1px solid rgba(19, 21, 23, 0.4);*/ border-top: none; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;}
