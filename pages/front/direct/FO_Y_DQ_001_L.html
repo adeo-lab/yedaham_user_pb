@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>상담 안내 - 간편가입 - 예다함</title>
+
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="page-my">
+				<div class="page-head">
+					<div class="title-inner-bx">
+						<h2 class="heading-l">상담 안내​</h2>
+					</div>
+				</div>
+				<div class="page-body">
+					<div class="button-display">
+						<span class="button-area">
+							<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('infoConsultationGuide')"><span class="btn-text">상담 안내​​</span></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 헤더 영역 -->
+		<footer id="footer"></footer>
+		<!-- //헤더 영역 -->
+	</div>
+
+	<!-- infoPopup -->
+	<div class="info-popup" data-popup="infoConsultationGuide">
+		<div class="popup-wrap small center">
+			<div class="popup-header">
+				<p class="popup-subject blind">상담 안내</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+                    <div class="my-guide">
+                        <div class="my-guide-wrap">
+                            <div class="my-guide-head">
+                                <p class="my-guide-subject">혹시 도움이 필요하신가요?<br /> <span class="wbr">전문상담원이</span>쉽게 설명해드릴게요!</p>
+                            </div>
+                            <div class="my-guide-body">
+                                <p class="my-guide-tel">1566-6644</p>
+                                <p class="my-guide-desc"><span class="wbr">전화 가입 시</span> <span class="wbr">인터넷 할인 금액과 차이가 있습니다.</span></p>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="button-area">
+                    <a href="#" class="btn-popup btn-grey"><span class="btn-name">메인으로</span></a>
+					<a href="#" class="btn-popup btn-primary"><span class="btn-name">가입 계속 진행</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //infoPopup -->
+
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('infoConsultationGuide');
+		});
+	</script>
+</body>
+</html>

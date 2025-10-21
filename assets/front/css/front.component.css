@@ -2335,7 +2335,7 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.content-popup .popup-wrap .popup-footer .button-area [class*=btn-] {
+.content-popup .popup-wrap .popup-footer .button-area > [class*=btn-] {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
@@ -2355,7 +2355,7 @@ button.swiper-pagination-bullet {
   line-height: 24px;
   color: var(--color-base-010);
 }
-.content-popup .popup-wrap .popup-footer .button-area [class*=btn-]::before {
+.content-popup .popup-wrap .popup-footer .button-area > [class*=btn-]::before {
   content: "";
   display: block;
   position: absolute;
@@ -2366,11 +2366,11 @@ button.swiper-pagination-bullet {
   color: #232527;
  /* background-color: #fff;*/
 }
-.content-popup .popup-wrap .popup-footer .button-area [class*=btn-]:last-child {
+.content-popup .popup-wrap .popup-footer .button-area > [class*=btn-]:last-child {
   background-color: var(--color-base-010);
   color: var(--color-base-100);
 }
-.content-popup .popup-wrap .popup-footer .button-area [class*=btn-].disabled {
+.content-popup .popup-wrap .popup-footer .button-area > [class*=btn-].disabled {
   background-color: var(--color-base-080);
   color: var(--color-base-060);
 }
