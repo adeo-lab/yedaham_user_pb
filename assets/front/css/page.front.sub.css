@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/* 백수진 2025.10.17 */
+
+/********************************************************************************************************************************
+
+ * Common
+
+********************************************************************************************************************************/
+.tab-list-ty01 {display: flex; gap: 48px; border-bottom: 1px solid  rgba(19, 21, 23, 0.15);}
+.tab-list-ty01 .tab-item .tab-text {display: block; padding: 12px 0 20px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #A0A0A0; letter-spacing: -0.5px;}
+.tab-list-ty01 .tab-item.active .tab-text {display: inline-block; position: relative; color: #232527;}
+.tab-list-ty01 .tab-item.active .tab-text::after {display: block; content: ''; position: absolute; top: auto; right: 0; bottom: -1px; left: 0; width: 100%; height: 1px; background-color: #232527;}
+
+.tab-list-ty02 {display: flex; gap: 12px; flex-wrap: wrap;}
+.tab-list-ty02 .tab-item {background-color: #F7F6F5; border-radius: 32px;}
+.tab-list-ty02 .tab-item.active {background-color: #232527;}
+.tab-list-ty02 .tab-item .tab-text {display: block; padding: 12px 16px; font-size: 19px; font-weight: 600; line-height: 1.3; color: #777;}
+.tab-list-ty02 .tab-item.active .tab-text {color: #fff;}
+
+.img-mo {display: none;}
+
+@media (max-width: 1023px) {
+    .tab-list-ty01 {gap: 20px;}
+    .tab-list-ty01 .tab-item .tab-text {padding: 0 0 12px; font-size: 15px;}
+
+    .tab-list-ty02 {flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;}
+    .tab-list-ty02 .tab-item {flex: 0 0 auto;}
+    .tab-list-ty02 .tab-item .tab-text {padding: 6.5px 12px; font-size: 15px;}
+
+    .img-pc {display: none;}
+    .img-mo {display: block;}
+}
+
+/********************************************************************************************************************************
+
+ * MY
+
+********************************************************************************************************************************/
+
+/* 멤버십카드 */
+.membership-card {padding: 48px 40px 40px; background-color: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
+.membership-card-view {position: relative; max-width: 500px; margin: 0 auto;}
+.membership-card-img {max-width: 100%;}
+.membership-card-user {position:absolute; top: auto; bottom: 24px; left: 0; padding: 0 40px; font-size: 22px; font-weight: 600; line-height: 1.3; color: #fff;}
+.membership-card-desc {margin-top: 16px; font-size: 15px; line-height: 1.5; color: #444; text-align: center;}
+.membership-card-desc .wbr {display: inline;}
+.membership-card-info {margin-top: 40px; padding: 32px 40px; background-color: #F7F6F5; border-radius: 12px;}
+.membership-card-info .tx01 {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.membership-card-info .tx01 .wbr {display: block;}
+.membership-card-info-list {display: flex; flex-direction: column; row-gap: 4px; margin-top: 12px;}
+.membership-card-info-list .list-item {display: flex; column-gap: 4px; align-items: baseline; position: relative; font-size: 17px; line-height: 1.5; color: #AF5B27;}
+.membership-card-info-list .list-item::before {display: inline-block; content: ''; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E"); aspect-ratio: 1/1;}
+.membership-card-btn {display: flex; justify-content: center; margin-top: 32px;}
+.membership-card-btn .btn-primary01 {display: flex; justify-content: center; align-items: center; height: 48px; padding: 0 32px; background-color: #AF5B27; border-radius: 8px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #fff; background-color: #D17B47;}
+
+@media (max-width: 1100px) {
+
+    /* 멤버십카드 */
+    .membership-card-info .tx01 .wbr {display: inline; word-break: keep-all;}
+}
+
+@media (max-width: 1023px) {
+
+    /* 멤버십카드 */
+    .membership-card {padding: 32px 24px;}
+    .membership-card-view {max-width: 280px;}
+    .membership-card-user {bottom: 12px; padding: 0 20px; font-size: 14px; line-height: 1.5;}
+    .membership-card-desc {font-size: 14px;}
+    .membership-card-desc .wbr {display: block;}
+    .membership-card-info {padding: 16px 24px;}
+    .membership-card-info .tx01 {font-size: 15px;}
+    .membership-card-info-list {row-gap: 0px; margin-top: 10px;}
+    .membership-card-info-list .list-item {column-gap: 8px; font-size: 15px;}
+    .membership-card-btn .btn-primary01 {font-size: 15px;}
+}
+
+
+/********************************************************************************************************************************
+
+ * 간편가입
+
+********************************************************************************************************************************/
+
+/* 상담안내 */
+.my-guide-wrap {display: flex; flex-direction: column; row-gap: 32px;}
+.my-guide-head {display: flex; justify-content: center; flex-direction: column; row-gap: 16px;}
+.my-guide-head .my-guide-subject {font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527; text-align: center;}
+.my-guide-head .my-guide-subject .wbr {display: inline;}
+.my-guide-head .my-guide-summary {font-size: 22px; font-weight: 600; line-height: 1.3; color: #777; text-align: center;}
+.my-guide-head .my-guide-summary .wbr {display: inline;}
+.my-guide-body {display: flex; justify-content: center; flex-direction: column; row-gap: 32px;}
+.my-guide-body .my-guide-tel {display: flex; justify-content: center; align-items: center; column-gap: 12px; font-size: 40px; font-weight: 600; line-height: 1.3; letter-spacing: -0.5px; color: #AF5B27;}
+.my-guide-body .my-guide-tel::before {display: block; content: ''; flex-shrink: 0; width: 64px; height: 64px; background: url(../../../assets/front/images/sub/icon_tell.png) no-repeat center; background-size: 40px auto; aspect-ratio: 1/1;}
+.my-guide-body .my-guide-desc {font-size: 17px; line-height: 1.5; color: #232527; text-align: center;}
+.my-guide-body .my-guide-desc.attr-percent::before {display: block; content: ''; width: 220px; height: 151px; margin: 0 auto 32px; background: url(../../../assets/front/images/sub/img_guide01.png) no-repeat center; background-size: contain;}
+.my-guide-body .my-guide-desc .wbr {display: inline;}
+
+
+/* 청약 신청서 */
+.apply-check {overflow:hidden; border: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
+.apply-check-wrap {padding-bottom: 32px;}
+.apply-check-head {padding: 20px 40px; background-color: #A49172; background-image: url(../../../assets/front/images/sub/bg_apply_check.png); background-repeat: no-repeat; background-size: contain; background-position: right center;}
+.apply-check-subject {font-size: 28px; font-weight: 600; line-height: 1.3; color: #fff; letter-spacing: -0.5px;}
+.apply-check-subject .em {font-size: 19px; font-weight: 400; line-height: 1.5; letter-spacing: 0;}
+.apply-check-body {display: flex; flex-direction: column; row-gap: 32px; padding: 32px;}
+.apply-check-box {padding: 24px; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
+.apply-check-box.fill {background-color: #F7F6F5; border: none;}
+.apply-check-box .tit-01 {display: flex; margin: 0 0 16px; font-size: 19px; font-weight: 600; line-height: 1.3; color: #131517;}
+.apply-check-box .txt-01 {margin: 16px 0 0; font-size: 17px; line-height: 1.5; color: #232527; word-break: keep-all;}
+.apply-check-box .txt-01 + .order-list,.apply-check-box .txt-01 + .txt-astr {margin: 16px 0 0;}
+.apply-check-box .order-list {display: flex; flex-direction: column; row-gap: 8px; counter-reset: item-counter;}
+.apply-check-box .order-item {display: flex; column-gap: 4px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527; counter-increment: item-counter;}
+.apply-check-box .order-item::before {content: counter(item-counter) ". "; min-width: 24px;}
+.apply-check-box .txt-astr {position:relative; padding-left: 27px; font-size: 17px; line-height: 1.5; color: #232527;}
+.apply-check-box .txt-astr::before {content: '※'; position: absolute; top: 0; left: 0;}
+.apply-check-tb {display: flex; flex-direction: column; row-gap: 24px;}
+.apply-check-tb .list-tb-wrap {display: flex; flex-direction: column; row-gap: 16px;}
+.apply-check-tb .list-tb-title {font-size: 19px; font-weight: 600; line-height: 1.3; color: #131517;}
+.apply-check-tb .list-tb {border-top: 1px solid rgba(19, 21, 23, 0.20);}
+.apply-check-tb .list-tr {display: flex; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.apply-check-tb .list-th ,.apply-check-tb .list-td {display: inline-flex; align-items: center; min-height: 48px; padding: 0 16px; font-size: 17px; line-height: 1.5;}
+.apply-check-tb .list-th {width: var(--th-width); box-sizing: border-box; background-color: #F7F6F5; font-weight: 600; color: #232527;}
+.apply-check-tb .list-td {flex: 1;color: #232527;}
+.apply-check-foot {padding: 24px 32px 0;}
+.apply-check-mark {display: flex; justify-content: space-between;}
+.apply-check-mark .img-01 {width: 160px;}
+.apply-check-mark .img-02 {width: 50px;}
+
+/* 출금이체 신청서 */
+.privacy-agreement-wrap {display: flex; flex-direction: column; row-gap: 24px;}
+.privacy-agreement-summary {font-size: 17px; line-height: 1.5; color: #AF5B27; text-align: center;}
+.privacy-agreement-body {display: flex; flex-direction: column; row-gap: 24px;}
+.apply-check-box .flex {display: flex; justify-content: space-between; align-items: center; margin: 0 0 16px;}
+.apply-check-box .flex .tit-01 {margin-bottom: 0;}
+.apply-check-box .form {align-items: center;}
+.apply-check-box .form .form-text {font-size: 17px;font-weight: 600; line-height: 1.5; color: #232527;}
+.apply-check-box .form .form-text::before {top: 3px}
+.apply-check-box .dot-list {display: flex; flex-direction: column; row-gap: 4px;}
+.apply-check-box .dot-item {display: flex; align-items: baseline; row-gap: 4px; column-gap: 8px; font-size: 17px; line-height: 1.5; color: #444; word-break: keep-all;}
+.apply-check-box .dot-item::before {display: block; content: ''; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");}
+
+.privacy-agreement-desc {display: flex; flex-direction: column; row-gap: 40px; justify-content: center; align-items: center; padding: 16px 0;}
+.privacy-agreement-desc .para {font-size: 17px; line-height: 1.5; color: #232527;}
+.privacy-agreement-desc .sign-info {display: flex; justify-content: center; position: relative; width: 100%;}
+.privacy-agreement-desc .sign-info .date {display: flex; column-gap: 24px; align-items: center; font-size: 17px; line-height: 1.5; color: #232527;}
+.privacy-agreement-desc .sign-info .sign-area {display:inline-flex; position: absolute; top: 0; right: 0; left: auto; z-index: 0; column-gap: 16px; align-items: center; font-size: 17px; line-height: 1.5; color: #232527;}
+.privacy-agreement-desc .sign-info .sign-area::after {display: block; content: ''; position: absolute; top: 50%; left: 0%; transform: translateY(-50%); z-index: -1; width: var(--imgWidth); height: var(--imgHeight); background-image: var(--imgSign); background-repeat: no-repeat; background-size: cover;}
+.privacy-agreement-desc .sign-info .sign-area .em {font-weight: 600;}
+.privacy-agreement-desc .sign-para {display: flex; column-gap: 16px; align-items: baseline;}
+
+/* 서명하기 */
+.sign-view {height: 280px; padding: 24px; box-sizing: border-box; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.20);}
+
+@media (max-width: 1023px) {
+    /* 상담안내 */
+    .my-guide-wrap {row-gap: 24px;}
+    .my-guide-head {row-gap: 12px;}
+    .my-guide-head .my-guide-subject {font-size: 24px;} 
+    .my-guide-head .my-guide-subject .wbr {display: block;}
+    .my-guide-head .my-guide-summary {font-size: 17px;}
+    .my-guide-head .my-guide-summary .wbr {display: block;}
+    .my-guide-body {row-gap: 24px;}
+    .my-guide-body .my-guide-tel {column-gap: 8px; font-size: 26px;}
+    .my-guide-body .my-guide-tel::before {width: 48px; height: 48px; background-size: 30px auto;}
+    .my-guide-body .my-guide-desc {font-size: 15px;}
+    .my-guide-body .my-guide-desc .wbr {display: block;}
+    .my-guide-body .my-guide-desc.attr-percent::before  {width: 150px; height: 110px;}
+}
+
+
+/********************************************************************************************************************************
+
+ * 혜택/서비스​
+
+********************************************************************************************************************************/
+
+/* 온라인 법률 상담 예시 보기 */
+.consult-case-wrap {display: flex; flex-direction: column; row-gap: 24px;}
+.consult-case-head .consult-case-subject {font-size: 19px; font-weight: 600; line-height: 1.3; color: #131517;}
+.consult-case-body {display: flex; flex-direction: column; row-gap: 32px; counter-reset: dl-counter;}
+.consult-case-body .consult-case-contents {display: flex; flex-direction: column; row-gap: 16px;}
+.consult-case-body .consult-case-contents .title {position: relative; padding-left: 28px; font-size: 19px; font-weight: 600; line-height: 1.5; counter-increment: dl-counter;}
+.consult-case-body .consult-case-contents .title::before {content: counter(dl-counter) ". "; position: absolute; left: 0; top: 1px; font-size: 17px; font-weight: 600; line-height: 1.5;}
+.consult-case-body .consult-case-contents .text {padding: 32px; background-color: #F7F6F5; border-radius: 0 32px 32px 32px; font-size: 17px; line-height: 1.5}
+
+
+/********************************************************************************************************************************
+
+ * 장례정보
+
+********************************************************************************************************************************/
+
+.content-popup[data-popup="contentFuneralService"] .popup-wrap {overflow: visible; position: relative;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {margin-bottom: 0;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header .popup-dataset {flex: 1 1 100%;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body {padding: 48px 0 40px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-list-ty02) {padding: 32px 0 40px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-list-ty02 {margin-bottom: 48px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow {display: flex; position: absolute; width: 56px; height: 56px; border-radius: 100%; background-color: rgba(19, 21, 23, 0.40);}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow.prev {top: 412px; left: auto; right: calc(100% + 46px); z-index: 1;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow.next {top: 412px; left: calc(100% + 46px); z-index: 1;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow::before {display: block; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 24px; height: 24px; aspect-ratio: 1/1;;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow.prev::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5954 19.7352C15.891 19.4068 15.8644 18.9009 15.5359 18.6054L9.19665 12L15.5359 5.39463C15.8644 5.09906 15.891 4.59323 15.5954 4.26482C15.2998 3.93641 14.794 3.90979 14.4656 4.20536L7.4656 11.4054C7.29703 11.5571 7.20077 11.7732 7.20077 12C7.20077 12.2268 7.29703 12.4429 7.4656 12.5946L14.4656 19.7946C14.794 20.0902 15.2998 20.0636 15.5954 19.7352Z' fill='white'/%3E%3C/svg%3E");}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow.next::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.40459 19.7352C8.10902 19.4068 8.13565 18.9009 8.46405 18.6054L14.8033 12L8.46406 5.39463C8.13565 5.09906 8.10903 4.59323 8.40459 4.26482C8.70016 3.93641 9.20599 3.90979 9.5344 4.20536L16.5344 11.4054C16.703 11.5571 16.7992 11.7732 16.7992 12C16.7992 12.2268 16.703 12.4429 16.5344 12.5946L9.5344 19.7946C9.20599 20.0902 8.70016 20.0636 8.40459 19.7352Z' fill='white'/%3E%3C/svg%3E");}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick {position: absolute; top: 103px; left: calc(100% + 6px);}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-list {display: flex; flex-direction: column; row-gap: 4px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item {width: 150px; border-radius: 12px;; box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.06);}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.receipt { background-color: #FFF2E0; color: #AF5B27;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.counsel { background-color: #EFEFEF; color: #374BA3;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item .funeral-quick-wrap {display: flex; flex-direction: column; row-gap: 12px; padding: 16px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item .funeral-quick-title {display: flex; justify-content: space-between; column-gap: 17px; font-size: 17px; font-weight: 600; line-height: 1.3; word-break: keep-all;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item .funeral-quick-title::before {display: block; content: ''; flex-shrink: 0; width: 42px; height: 42px; background-color: #fff; border-radius: 100%; background-repeat: no-repeat; background-position: center;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.receipt .funeral-quick-title::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Cpath d='M22.75 19.5V13C22.75 7.61522 18.3848 3.25 13 3.25C7.61522 3.25 3.25 7.61522 3.25 13V19.5M5.95833 22.75C4.46256 22.75 3.25 21.5374 3.25 20.0417V17.875C3.25 16.3792 4.46256 15.1667 5.95833 15.1667C7.4541 15.1667 8.66667 16.3792 8.66667 17.875V20.0417C8.66667 21.5374 7.4541 22.75 5.95833 22.75ZM20.0417 22.75C18.5459 22.75 17.3333 21.5374 17.3333 20.0417V17.875C17.3333 16.3792 18.5459 15.1667 20.0417 15.1667C21.5374 15.1667 22.75 16.3792 22.75 17.875V20.0417C22.75 21.5374 21.5374 22.75 20.0417 22.75Z' stroke='%23232527' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.counsel .funeral-quick-title::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.11084 3.35062C6.4392 1.9521 8.63644 2.21412 9.7345 3.76717L11.1006 5.69928C11.9789 6.9415 11.9047 8.66852 10.8565 9.77208L10.5912 10.0513C10.5905 10.0533 10.5897 10.0554 10.5889 10.0576C10.5749 10.097 10.5394 10.2225 10.5743 10.4605C10.6466 10.954 11.0276 11.9568 12.5742 13.5851C14.1257 15.2186 15.0668 15.6036 15.5028 15.6744C15.691 15.7049 15.7894 15.6784 15.8208 15.6673L16.2634 15.2013C17.21 14.2047 18.6859 14.0084 19.8759 14.6933L21.9456 15.8846C23.7146 16.9028 24.1264 19.3936 22.7126 20.882L21.1737 22.5022C20.6934 23.0079 20.0385 23.4395 19.2292 23.5194C17.2533 23.7144 12.6761 23.4604 7.87757 18.4085C3.39998 13.6944 2.54937 9.59412 2.44184 7.59079C2.38871 6.60099 2.82993 5.75198 3.41044 5.14082L5.11084 3.35062ZM8.40764 4.7053C7.8526 3.92026 6.85546 3.87342 6.28906 4.46974L4.58866 6.25994C4.22965 6.6379 4.04129 7.07112 4.0645 7.5037C4.1523 9.13933 4.85666 12.8685 9.05579 17.2894C13.4587 21.9248 17.5149 22.0557 19.0695 21.9023C19.3769 21.8719 19.6932 21.7014 19.9955 21.3831L21.5344 19.7629C22.1983 19.064 22.0243 17.8048 21.135 17.293L19.0653 16.1017C18.5099 15.782 17.8592 15.8808 17.4417 16.3204L16.9483 16.8398L16.3771 16.2974C16.9482 16.8399 16.9475 16.8406 16.9468 16.8414L16.9452 16.843L16.942 16.8464L16.9351 16.8534L16.9196 16.8687C16.9084 16.8795 16.8956 16.8914 16.881 16.9041C16.8519 16.9297 16.8158 16.9588 16.7726 16.9895C16.6858 17.051 16.5702 17.1187 16.424 17.1764C16.125 17.2943 15.7301 17.3576 15.2423 17.2784C14.2917 17.124 13.0457 16.4412 11.396 14.7043C9.74135 12.9623 9.10808 11.6626 8.96648 10.6961C8.8944 10.2042 8.95208 9.81029 9.05793 9.51284C9.10998 9.36657 9.17144 9.24993 9.22812 9.16136C9.25638 9.11719 9.28332 9.08021 9.30713 9.05012C9.31904 9.03507 9.33017 9.02174 9.34031 9.01009L9.35474 8.99385L9.36135 8.98667L9.36449 8.9833L9.36603 8.98168C9.36677 8.98089 9.36752 8.9801 9.94349 9.52716L9.36753 8.98009L9.67825 8.65296C10.1609 8.14481 10.231 7.28423 9.77371 6.63741L8.40764 4.7053Z' fill='%23232527'/%3E%3Cpath d='M14.3657 2.03583C14.4375 1.59287 14.8562 1.29238 15.2992 1.36409C15.3266 1.36934 15.4148 1.38583 15.461 1.39613C15.5535 1.41671 15.6824 1.44841 15.8432 1.49524C16.1647 1.58888 16.6139 1.74315 17.1529 1.9903C18.2322 2.48512 19.6685 3.35071 21.159 4.84116C22.6494 6.33161 23.515 7.76791 24.0099 8.84721C24.257 9.38629 24.4113 9.83545 24.5049 10.157C24.5517 10.3177 24.5834 10.4467 24.604 10.5391C24.6143 10.5853 24.6218 10.6225 24.6271 10.6499L24.6333 10.6837C24.705 11.1266 24.4073 11.5627 23.9643 11.6344C23.5226 11.7059 23.1065 11.4069 23.033 10.966C23.0308 10.9542 23.0246 10.9224 23.0179 10.8924C23.0045 10.8324 22.9814 10.7372 22.9447 10.6114C22.8714 10.3597 22.7441 9.98558 22.5327 9.52443C22.1104 8.60326 21.351 7.33122 20.0099 5.99021C18.6689 4.64919 17.3969 3.88978 16.4757 3.46746C16.0146 3.25604 15.6405 3.12871 15.3888 3.0554C15.2629 3.01875 15.1048 2.98245 15.0448 2.96909C14.6039 2.89561 14.2942 2.47753 14.3657 2.03583Z' fill='%23232527'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.6096 5.77309C14.7329 5.34163 15.1826 5.09179 15.614 5.21506L15.3908 5.9963C15.614 5.21506 15.6144 5.21517 15.6148 5.21528L15.6156 5.21551L15.6173 5.21599L15.6209 5.21705L15.6293 5.21955L15.6507 5.22623C15.667 5.23145 15.6874 5.23826 15.7118 5.24689C15.7604 5.26415 15.8247 5.28871 15.9036 5.32251C16.0614 5.39015 16.2771 5.4946 16.542 5.65137C17.0722 5.9652 17.7961 6.48647 18.6465 7.33686C19.4969 8.18725 20.0181 8.91112 20.332 9.44137C20.4887 9.70625 20.5932 9.92191 20.6608 10.0797C20.6946 10.1586 20.7192 10.2229 20.7364 10.2716C20.7451 10.2959 20.7519 10.3163 20.7571 10.3326L20.7638 10.3541L20.7663 10.3625L20.7673 10.3661L20.7678 10.3677L20.768 10.3685C20.7682 10.3689 20.7683 10.3693 19.987 10.5925L20.7683 10.3693C20.8915 10.8008 20.6417 11.2505 20.2102 11.3737C19.7824 11.496 19.3367 11.2514 19.209 10.8267L19.205 10.815C19.1992 10.7987 19.1873 10.7667 19.1672 10.7199C19.1271 10.6263 19.0544 10.4733 18.9335 10.269C18.692 9.86088 18.2557 9.24419 17.4974 8.48591C16.7391 7.72763 16.1225 7.29136 15.7143 7.04981C15.51 6.92889 15.357 6.8562 15.2635 6.81612C15.2167 6.79606 15.1846 6.78411 15.1683 6.77833L15.1567 6.77433C14.7319 6.64663 14.4874 6.20089 14.6096 5.77309Z' fill='%23232527'/%3E%3C/svg%3E");}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-tell {align-self: center; font-size: 22px; font-weight: 600; line-height: 1.3;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .button-area .btn-counsel {display: block; width: 100%; height: 32px; border: 1px solid rgba(19, 21, 23, 0.20); background-color: #fff; border-radius: 100px; font-size: 15px; line-height: 1.5; color: #232527;}
+
+/* 상조의 필요성 */
+
+
+/* 왜 예다함인가? */
+.safety-system {padding-bottom: 24px;}
+.safety-system-wrap {display: flex; flex-direction: column; row-gap: 48px;}
+.safety-system-head {display: flex; align-items: center; justify-content: center; flex-direction: column; row-gap: 16px; word-break: keep-all;}
+.safety-system-head .tit-01 {font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.safety-system-head .txt-01 {font-size: 17px; line-height: 1.5; color: #444; text-align: center;}
+.safety-system-body .safety-system-bank {position: relative; padding: 60px 0;}
+.safety-system-body .safety-system-bank .tit-01 {display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 210px; height: 210px; background-color: #374BA3; border-radius: 100%; font-size: 22px; font-weight: 600; line-height: 1.3; color: #fff; aspect-ratio: 1/1;}
+.safety-system-body .safety-system-bank .tit-01::after {display: block; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 320px; height: 320px; aspect-ratio: 1/1; border: 2px dashed #FBCD6C; border-radius: 100%; box-sizing: border-box;}
+.safety-system-body .safety-system-bank .bank-list {display: flex; justify-content: center; gap: 240px; position: relative;}
+.safety-system-body .safety-system-bank .bank-list .bank-item {display: flex; flex-direction: column; row-gap: 16px;}
+.safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {display: flex; justify-content: center; align-items: center; width: 200px; height: 56px; padding: 12px 32px; box-sizing: border-box; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px; background-color: #fff;}
+
+.licensed-director-content {overflow: hidden; width: 100%; margin: 0 auto; border-radius: 16px;}
+.licensed-director-content iframe {width: 100%; border: none; aspect-ratio: 16/9;}
+
+.payback-system-content {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 48px;}
+.payback-system-content .payback-refund {padding: 14px 0; background: url(../../../assets/front/images/sub/bg_payback_line_pc.png) no-repeat center; background-size: contain;}
+.payback-system-content .payback-refund-wrap {display: flex; justify-content: space-between; justify-content: center; align-items: center; gap: 24px; padding: 24px;}
+.payback-system-content .payback-refund-item {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 200px; height: 200px; padding: 10px; box-sizing: border-box; border-radius: 100%; background-color: #E9F5EC; font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+.payback-system-content .payback-refund-item:last-child {background-color: #FFF2E0;}
+.payback-system-content .payback-refund-item.percent {background-color: #fff; font-size: 62px; font-weight: 600; line-height: 1.2; color: #D17B47; text-align: center; letter-spacing: -0.5px;}
+.payback-items  .payback-items-wrap {display: flex; flex-direction: column; row-gap: 16px; justify-content: center; align-items: center;}
+.payback-items  .payback-head {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 16px; text-align: center; word-break: keep-all;}
+.payback-items  .payback-head .tit-01 {font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.payback-items  .payback-head .txt-01 {font-size: 17px; line-height: 1.5; color: #444;}
+.payback-items  .payback-items-list {display: flex; gap: 8px;}
+.payback-items  .payback-items-item {display: flex; flex-direction: column; row-gap: 8px; align-items: center; padding: 24px 8px;}
+.payback-items  .payback-items-item::before {display: block; content: ''; width: 84px; height: 84px; padding: 12px; box-sizing: border-box; border-radius: 100%; background-color: #ECF5FF; background-size: 48px auto; background-repeat: no-repeat; background-position: center;}
+.payback-items  .payback-items-item.assistant::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_01.png);}
+.payback-items  .payback-items-item.transportation::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_02.png);}
+.payback-items  .payback-items-item.arrangement::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_03.png);}
+.payback-items  .payback-items-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_04.png);}
+.payback-items  .payback-items-item.pall::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_05.png);}
+.payback-items  .payback-items-item .item-name {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+
+.transparent-management-content {display: flex; flex-direction: column; row-gap: 64px;}
+.transparent-management-structure {display: flex; gap: 20px 16px; flex-wrap: wrap; position: relative; z-index: 0; max-width: 500px; margin: 0 auto; font-size: 22px; font-weight: 600; line-height: 1.3;}
+.transparent-management-structure  > * {display: flex; justify-content: center; align-items: center; width: 100%; height: 72px; border-radius: 12px; box-sizing: border-box;}
+.transparent-management-structure .tx-01 {background-color: #E2E2E2; color: #232527;}
+.transparent-management-structure .tx-02 {flex: 1 0 calc(50% - 8px); position: relative; width: auto; border: 1px solid rgba(19, 21, 23, 0.15); background-color: #fff; color: #374BA3}
+.transparent-management-structure .tx-02::before {display: block; content: ''; position: absolute; top: 50%; left: 50%; transform: translateY(-50%); z-index: -1; width: 1px; height: calc(100% + 42px); background-color: rgba(19, 21, 23, 0.30);}
+.transparent-management-structure .tx-03 {position: relative; border: 1px solid rgba(19, 21, 23, 0.10); background-color: #ECF5FF;}
+.transparent-management-structure .tx-03:last-child::before {display: block; content: ''; position: absolute; top: -100%; left: 50%; z-index: -1; width: 1px; height: 100%; background-color: rgba(19, 21, 23, 0.30);}
+.transparent-management-structure img {height: auto;}
+
+.protection-system .protection-system-wrap {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 24px;}
+.protection-system .protection-system-head .tit-01 {font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.protection-system .protection-system-body {display: flex; flex-direction: column; row-gap: 24px; width: 100%; max-width: 500px;}
+.protection-system .unfair-acts {display: flex; justify-content: center; gap: 24px; height: 100px; box-sizing: border-box; border-radius: 100px; border: 1px dashed rgba(19, 21, 23, 0.20);}
+.protection-system .unfair-acts .item {display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; padding: 14px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72' fill='none'%3E%3Cpath d='M16.1094 59.2949C15.1721 60.2322 13.6521 60.2322 12.7148 59.2949C11.7778 58.3577 11.7777 56.8386 12.7148 55.9014L32.6123 36.0029L12.7031 16.0928C11.7659 15.1555 11.7658 13.6355 12.7031 12.6982C13.6404 11.7612 15.1605 11.7611 16.0977 12.6982L36.0068 32.6094L55.915 12.6982C56.8522 11.7614 58.3714 11.7615 59.3086 12.6982C60.2459 13.6355 60.2458 15.1555 59.3086 16.0928L39.4004 36.0029L59.2969 55.9014C60.2341 56.8386 60.2341 58.3577 59.2969 59.2949C58.3596 60.2322 56.8406 60.2322 55.9033 59.2949L36.0068 39.3975L16.1094 59.2949Z' fill='%23FFDBC9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: 72px auto; background-position: center; font-size: 19px; font-weight: 600; line-height: 1.3;}
+.protection-system .protection-system-items {display: flex; justify-content: center; gap: 36px;}
+.protection-system .protection-system-items .item {display: flex; justify-content: center; align-items: center; position: relative; width: 140px; height: 140px; padding: 20px; box-sizing: border-box; background-color: #131517; border-radius: 100%; font-size: 19px; font-weight: 600; line-height: 1.3; color: #232527; word-break: keep-all; text-align: center;}
+.protection-system .protection-system-items .item:first-child {background-color: #FFF2E0;}
+.protection-system .protection-system-items .item:nth-child(2) {background-color: #E9F5EC;}
+.protection-system .protection-system-items .item:last-child {background-color: #FBEEED;}
+.protection-system .protection-system-items .item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc(50% - (28px / 2)); left: calc((-36px / 2) + (-28px/2)); width: 28px; height: 28px; aspect-ratio: 1/1; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M13.999 3.5C14.5145 3.5 14.9326 3.91813 14.9326 4.43359V13.0674H23.5664C24.0818 13.0674 24.4999 13.4846 24.5 14C24.5 14.5155 24.0819 14.9336 23.5664 14.9336H14.9326V23.5664C14.9326 24.0819 14.5145 24.5 13.999 24.5C13.4836 24.5 13.0654 24.0819 13.0654 23.5664V14.9336H4.43359C3.91813 14.9336 3.5 14.5155 3.5 14C3.50012 13.4846 3.9182 13.0674 4.43359 13.0674H13.0654V4.43359C13.0654 3.91815 13.4836 3.50004 13.999 3.5Z' fill='%23131517' fill-opacity='0.3'/%3E%3C/svg%3E");}
+
+/* 서비스 이용절차 */
+.service-process {}
+.service-process .service-process-wrap {}
+.service-process .service-process-head .tit-01 {font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527;}
+.service-process {}
+
+
+@media (max-width: 1023px) {
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {padding: 64px 16px 0;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-list-ty02) {padding: 24px 0 48px;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body {padding-bottom: 32px;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func {display: none; overflow: hidden; visibility: hidden;}
+
+    /* 왜 예다함인가? */
+    .safety-system {padding-bottom: 0;}
+    .safety-system-head .tit-01 {font-size: 22px;}
+    .safety-system-head .txt-01 {font-size: 15px;}
+    .safety-system-body .safety-system-bank {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 11px; padding: 35px 0 0;}
+    .safety-system-body .safety-system-bank .tit-01 {position: static; transform: translate(0, 0); width: 210px; height: 210px; font-size: 20px;}
+    .safety-system-body .safety-system-bank .tit-01::after {width: 280px; height: 280px;}
+    .safety-system-body .safety-system-bank .bank-list {gap: 16px;}
+    .safety-system-body .safety-system-bank .bank-list .bank-item {row-gap: 16px;}
+    .safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {width: auto; min-width: 156px; padding: 0;}
+    
+    .payback-system-content .payback-refund {padding: 0 14px; background: url(../../../assets/front/images/sub/bg_payback_line_mo.png) no-repeat center; background-size: contain;}
+    .payback-system-content .payback-refund-wrap {flex-direction: column; gap: 0; padding: 24px;}
+    .payback-system-content .payback-refund-item {flex-direction: column; font-size: 20px;}
+    .payback-system-content .payback-refund-item.percent {height: 100px; font-size: 48px;}
+    .payback-items  .payback-head  .wbr{display: inline;}
+    .payback-items  .payback-head .tit-01 {font-size: 20px; }
+    .payback-items  .payback-head .txt-01 {font-size: 15px;}
+    .payback-items  .payback-items-list {justify-content: center; row-gap: 16px; column-gap: 24px; flex-wrap: wrap;}
+    .payback-items  .payback-items-item {padding: 0;}
+    .payback-items  .payback-items-item .item-name {font-size: 15px;}
+
+    .transparent-management-content {row-gap: 48px;}
+    .transparent-management-structure {font-size: 20px;}
+    .transparent-management-structure  > * {height: 64px;}
+
+    .protection-system .protection-system-head .tit-01 {font-size: 20px;}
+    .protection-system .unfair-acts {gap: 0;}
+    .protection-system .protection-system-items {flex-direction: column; gap: 32px;}
+    .protection-system .protection-system-items .item {width: 100%; height: auto; padding: 20px 0; border-radius: 65px;}
+    .protection-system .protection-system-items .item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc((-24px /2) - (32px / 2)); left: calc(50% - (24px / 2)); width: 24px; height: 24px; background-size: cover;}
+}
+
+@media (max-width: 480px) {
+    /* 왜 예다함인가? */
+     .safety-system-head .wbr {display: inline;}
+}
+
+
+/********************************************************************************************************************************
+
+ * content-popup
+ * 기존 수정
+
+********************************************************************************************************************************/
+.content-popup .popup-wrap.large {max-width: 996px;}
+.content-popup .popup-wrap .popup-header {margin-bottom: 32px;}
+.content-popup .popup-wrap .popup-footer .button-area > [class*=btn-] {color: #232527;}
+.content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal {padding: 0 40px;}
+.content-popup .popup-wrap .popup-footer .button-area .btn-normal .btn-name {min-width: 50px;}
+.content-popup .popup-wrap .popup-footer .button-area .btn-primary .btn-name {min-width: 80px;}
+
+
+/********************************************************************************************************************************
+
+ * info-popup
+ * 새로 추가
+
+********************************************************************************************************************************/
+.info-popup {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; overflow: hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; width: 100%; height: 100%; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.4); -webkit-transition: visibility 0.15s 0.3s, z-index 0s 0.3s, opacity 0.2s; transition: visibility 0.15s 0.3s, z-index 0s 0.3s, opacity 0.2s; opacity: 0;}
+.info-popup.active {z-index: 10000; -webkit-transition-delay: 0s; transition-delay: 0s; opacity: 1; visibility: visible;}
+.info-popup .popup-wrap {-webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; -ms-flex-item-align: center; align-self: center; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; max-width: 600px; max-height: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #fff; border-radius: 16px;}
+.info-popup .popup-wrap.small {max-width: 588px;}
+.info-popup .popup-wrap .popup-header {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: space-between; position: relative; margin-bottom: 32px; padding: 40px 40px 0 40px; justify-content: flex-start}
+.info-popup .popup-wrap .popup-header:has(.popup-subject.blind) {justify-content: flex-end;}
+.info-popup .popup-wrap .popup-header .popup-subject {flex: 1 1 100%; font-size: 24px; font-weight: 700; line-height: 130%; color: #131517;}
+.info-popup .popup-wrap .popup-header .btn-popup-close {-ms-flex-negative: 0; flex-shrink: 0; overflow: hidden; width: 32px; height: 32px; text-indent: -999px;}
+.info-popup .popup-wrap .popup-header .btn-popup-close::before {content: ""; display: block; width: 32px; height: 32px; -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E %3Cpath fill='rgba(0,0,0,1)' fill-rule='evenodd' d='m10.94 12-4.774 4.773 1.061 1.06L12 13.062l4.773 4.773 1.06-1.061L13.062 12l4.773-4.773-1.061-1.06L12 10.938 7.227 6.166l-1.06 1.061L10.938 12Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat 50%/cover; mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E %3Cpath fill='rgba(0,0,0,1)' fill-rule='evenodd' d='m10.94 12-4.774 4.773 1.061 1.06L12 13.062l4.773 4.773 1.06-1.061L13.062 12l4.773-4.773-1.061-1.06L12 10.938 7.227 6.166l-1.06 1.061L10.938 12Z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat 50%/cover; background-color: var(--color-base-010);}
+.info-popup .popup-wrap .popup-body {padding: 0 0 32px;}
+.info-popup .popup-wrap .popup-body .popup-contents {padding: 0 40px;}
+.info-popup .popup-wrap .popup-footer {padding: 0 40px 40px;}
+.info-popup .popup-wrap .popup-footer .button-area {display: flex; justify-content: center; column-gap: 16px;}
+.info-popup .popup-wrap .popup-footer .button-area .btn-popup {display: flex; justify-content: center; flex-direction: column; width: auto; padding: 0 64px; border-radius: 8px; font-size: 19px; font-weight: 600; line-height: 56px;} 
+.info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=primary] {padding: 0 64px; border: none; background-color: #D17B47; color: #fff;}
+.info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=grey] {background-color: #A0A0A0; color: #fff;}
+
+@media (max-width: 1023px) {
+    .info-popup {padding: 0;}
+    .info-popup .popup-wrap {max-width: 100%; margin-left: 16px; margin-right: 16px;}
+    .info-popup .popup-wrap .popup-header {padding: 24px 24px 0 24px;}
+    .info-popup .popup-wrap .popup-header .btn-popup-close {width: 24px; height: 24px;}
+    .info-popup .popup-wrap .popup-body .popup-contents {padding: 0 24px;}
+    .info-popup .popup-wrap .popup-footer {padding: 0 24px 24px;}
+    .info-popup .popup-wrap .popup-footer .button-area {column-gap: 12px;}
+    .info-popup .popup-wrap .popup-footer .button-area .btn-popup {min-width: 123px; padding: 0 32px; box-sizing: border-box; font-size: 17px; line-height: 48px; white-space: nowrap;} 
+    .info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=grey] {flex-shrink: 0; min-width: 123px;}
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>청약서 확인 - 간편 가입 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+
+	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="">
+				<div class="title-inner-bx">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">청약서 확인</h2>
+						</div>
+					</div>
+					<div class="page-body">
+						<div class="button-display">
+							<span class="button-area">
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentSubscriptioncheck')"><span class="btn-text">청약서 확인</span></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 헤더 영역 -->
+		<footer id="footer"></footer>
+		<!-- //헤더 영역 -->
+	</div>
+
+	<!-- contentPopup -->
+	<div class="content-popup" data-popup="contentSubscriptioncheck">
+		<div class="popup-wrap large">
+			<div class="popup-header">
+				<p class="popup-subject">청약 신청서</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+                    <div class="apply-check">
+                        <div class="apply-check-wrap">
+                            <div class="apply-check-head">
+                                <p class="apply-check-subject">청약 신청서 <span class="em">고객보관용</span></p>
+                            </div>
+                            <div class="apply-check-body">
+                                <div class="apply-check-box">
+                                    <p class="tit-01">기재 시 주의 사항​</p>
+                                    <ol class="order-list">
+                                        <li class="order-item">고객님의 자필(전자청약의 경우 공인인증으로 대체)로 기재하여 주시기 바랍니다.</li>
+                                        <li class="order-item">서식의 내용을 기재한 후 자필 서명(전자청약의 경우 공인인증으로 대체)을 반드시 해주시기 바랍니다.</li>
+                                        <li class="order-item">서식의 내용에 대하여 불리하거나 이해할 수 없는 부분이 발생할 경우 고객센터(1566-6644)로 연락하셔서 안내를 받으시기 바랍니다.</li>
+                                    </ol>
+                                </div>
+                                <div class="apply-check-box fill">
+                                    <p class="tit-01">계약 유의사항​</p>
+                                    <p class="txt-01">청약의 승낙 이후 계약자가 계약 상품에 따른 1회 이상의 납입금을 납부하여야 그때부터 회원으로서의 효력이 발생됩니다.</p>
+                                    <p class="txt-astr">
+                                        <span class="wbr">단, 상조상품의 계약은 계약자의 청약과 회사의 승낙으로 이루어집니다.</span>
+                                        <span class="wbr">본청약서를 회사가 심사하여 계약 청약에 대한 수락여부를 청약일로부터 14일 이내에 통지하고 별도의 통지가 없으면 승낙된 것으로 봅니다. 심사를 통해 수락이 거절되는 경우 상조 상품의 계약은 성립되지 않습니다.</span>
+                                    </p>
+                                </div>
+                                <div class="apply-check-tb">
+                                    <div class="list-tb-wrap">
+                                        <p class="list-tb-title">고객 기본 정보</p>
+                                        <div class="list-tb" style="--th-width: 160px">
+                                            <div class="list-tr">
+                                                <div class="list-th">계약자</div>
+                                                <div class="list-td">홍길동</div>
+                                                <div class="list-th">생년월일​</div>
+                                                <div class="list-td">2025.01.01</div>
+                                                <div class="list-th">성별</div>
+                                                <div class="list-td">남성​</div>
+                                            </div>
+                                            <div class="list-tr">
+                                                <div class="list-th">휴대폰 번호​</div>
+                                                <div class="list-td" style="flex-basis: 28.5%;">010-1234-5678</div>
+                                                <div class="list-th">공제회원 여부​</div>
+                                                <div class="list-td">비회원​</div>
+                                            </div>
+                                            <div class="list-tr">
+                                                <div class="list-th">이메일​</div>
+                                                <div class="list-td">yedaham@gmail.com</div>
+                                            </div>
+                                            <div class="list-tr">
+                                                <div class="list-th">주소​</div>
+                                                <div class="list-td">서울시 마포구 마포대로 86, 16층</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-tb-wrap">
+                                        <p class="list-tb-title">가입사항</p>
+                                        <div class="list-tb" style="--th-width: 180px">
+                                            <div class="list-tr">
+                                                <div class="list-th">상품명</div>
+                                                <div class="list-td">예다함 윤슬 4호</div>
+                                                <div class="list-th">납입기간(실납입기간)</div>
+                                                <div class="list-td">100(93)회​</div>
+                                            </div>
+                                            <div class="list-tr">
+                                                <div class="list-th">상품총액​</div>
+                                                <div class="list-td">8,600,000</div>
+                                                <div class="list-th">실가입금액</div>
+                                                <div class="list-td">7,998,000</div>
+                                            </div>
+                                            <div class="list-tr">
+                                                <div class="list-th">1회 납입금</div>
+                                                <div class="list-td">86,000</div>
+                                                <div class="list-th">가입구좌 수</div>
+                                                <div class="list-td">2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-check-foot">
+                                <div class="apply-check-mark">
+                                    <span class="img-01"><img src="../../../assets/front/images/sub/logo_mark_ydh.png" alt="더케이 한국교직원공제회가 출자한 The K 예다함"></span>
+                                    <span class="img-02"><img src="../../../assets/front/images/sub/logo_mark_ccm.png" alt="CCM 소비자 중심 공정거래위원회"></span>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contentPopup -->
+
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('contentSubscriptioncheck');
+		});
+	</script>
+</body>
+</html>
