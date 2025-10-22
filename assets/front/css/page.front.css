@@ -6287,9 +6287,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 #page.page-error {-webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
 #page.page-error .inner-bx {width: 468px /*458px*/; margin: 0 auto;}
-#page.page-error .inner-bx .icon01 {width: 79px; height: 79px; background: #ddd; margin: 0 auto;}
-#page.page-error .inner-bx .icon02 {width: 79px; height: 79px; background: #ddd; margin: 0 auto;}
-#page.page-error .inner-bx .icon03 {width: 79px; height: 79px; background: #ddd; margin: 0 auto;}
+#page.page-error .inner-bx .icon01 {width: 79px; height: 79px; margin: 0 auto;}
+#page.page-error .inner-bx .icon01 {background-image: url('../../../assets/front/images/common/icon_alert.png'); background-repeat: no-repeat; background-position: center;background-size: 79px;}
+#page.page-error .inner-bx .icon02 {width: 79px; height: 79px; margin: 0 auto;}
+#page.page-error .inner-bx .icon02 {background-image: url('../../../assets/front/images/common/icon_404.png'); background-repeat: no-repeat; background-position: center;background-size: 79px;}
+#page.page-error .inner-bx .icon03 {width: 79px; height: 79px; margin: 0 auto;}
+#page.page-error .inner-bx .icon03 {background-image: url('../../../assets/front/images/common/icon_505.png'); background-repeat: no-repeat; background-position: center;background-size: 79px;}
 #page.page-error .inner-bx .bx-cnt {padding: 32px 0 0 0;}
 #page.page-error .inner-bx .bx-cnt .tx01 {font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding: 0 0 12px 0; text-align: center;}
 #page.page-error .inner-bx .bx-cnt .tx02 {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 0 0 0 0; text-align: center;}
