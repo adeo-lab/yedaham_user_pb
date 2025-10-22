@@ -867,7 +867,7 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("ltd/.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 왜 예다함인가? (레이어 팝업) > 왜 에다함인가?</span></p>
+						<p class="g-sub-title"><span class="em">[디자인필요] - 왜 예다함인가? (레이어 팝업) > 왜 예다함인가?</span></p>
 						${createMenuLink("ltd/.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
