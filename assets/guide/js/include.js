@@ -64,6 +64,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">개인정보 처리 동의 및 안내 (레이어 팝업)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("common/FO_Y_ZO_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -98,6 +99,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">개인정보 마케팅 활용 동의 (레이어 팝업)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("common/FO_Y_ZP_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -158,6 +160,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 마케팅 수신 동의(레이어 팝업) (40p)</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("common/FO_Y_ZQ_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -368,17 +371,17 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 수집 및 이용 동의(레이어 팝업) (17p)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("direct/FO_Y_DG_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 제3자 제공 동의(레이어 팝업) (18p)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("direct/FO_Y_DH_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 개인정보 제공에 대한 게재(레이어 팝업) (19p)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("direct/FO_Y_DI_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -392,7 +395,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - [제3자 제공에 관한 선택적 동의] 개인정보 수집 이용에 대한 동의(레이어 팝업) (24p)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("direct/FO_Y_DN_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료" style="background: #ddd;">
