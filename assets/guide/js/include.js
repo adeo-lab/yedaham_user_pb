@@ -528,9 +528,8 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">장례절차</span></p>
 						${createMenuLink("info/FO_Y_FB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">장례 관련 시설</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">닫혀 있을 경우 적용 필요</span></p>
 						${createMenuLink("info/FO_Y_FE_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="" style="background: #ddd;">

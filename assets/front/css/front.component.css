@@ -3522,6 +3522,11 @@ button.swiper-pagination-bullet {
   .pagination .page-num .page-link:nth-child(n+4) {
     display: none;
   }
+  .pagination .page-num .page-link.current {
+    width: 32px;
+    height: 32px;
+    margin-top: 0;
+  }
   .pagination .page-num .page-link.current::after {
     bottom: 2px;
     width: 16px;
