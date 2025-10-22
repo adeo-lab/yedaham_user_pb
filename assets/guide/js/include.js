@@ -124,7 +124,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("common/FO_Y_ZZ_001_L_03.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행" style="background: #ddd;">
+					<div class="g-sub-wrap" data-status="완료" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 1:1문의 답변 메일</span></p>
 						${createMenuLink("common/PC_ZN_002.html", useFullLink)}
 					</div>
@@ -183,7 +183,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">대체페이지 - 로그인 연장_접속 종료 안내(38p)</span></p>
 						${createMenuLink("common/FO_Y_ZT_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">[디자인필요/피그마] - 개인정보처리방침(19p)</span></p>
 						${createMenuLink("common/FO_Y_ZB_003.html", useFullLink)}
 					</div>
@@ -427,18 +427,17 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">멤버십​</span></p>
 						${createMenuLink("benefit/FO_Y_BA_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">멤버십 (멤버십 상세 레이어)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">마크업 수정 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">아이콘 작업 필요</span></p>
 						${createMenuLink("benefit/FO_Y_BA_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">제휴카드</span></p>
 						${createMenuLink("benefit/FO_Y_BB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">제휴카드 (제휴카드 상세 레이어)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">마크업 수정 필요</span></p>
 						${createMenuLink("benefit/FO_Y_BB_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -749,11 +748,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">CI/BI</span></p>
 						${createMenuLink("corp/media/FO_C_PC_001_02.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 보도자료(9p~11p)</span></p>
 						${createMenuLink("corp/media/FO_C_PB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">대체페이지 - 보도자료(9p~11p) > 상세</span></p>
 						${createMenuLink("corp/media/FO_C_PB_002.html", useFullLink)}
 					</dl>
