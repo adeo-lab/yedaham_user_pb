@@ -872,11 +872,11 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("ltd/.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 왜 예다함인가? (레이어 팝업) > 특장점 > 내용 홈페이지와 동일</span></p>
+						<p class="g-sub-title"><span class="em">[디자인필요] - 왜 예다함인가? (레이어 팝업) > 왜 에다함인가?</span></p>
 						${createMenuLink("ltd/.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 왜 예다함인가? (레이어 팝업) > 특장점 > 서비스 이용절차</span></p>
+						<p class="g-sub-title"><span class="em">[디자인필요] - 왜 예다함인가? (레이어 팝업) > 법인 가입방법​</span></p>
 						${createMenuLink("ltd/.html", useFullLink)}
 					</div>
 				</div>
@@ -971,7 +971,8 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - The-K 교직원나라 > 소개화면(7p)</span></p>
-						${createMenuLink("ltd/.html", useFullLink)}
+						<p class="g-sub-text" style="color: green;"><span class="em">디자인 완료</span></p>
+						${createMenuLink("ltd/FO_P_MB_001.html", useFullLink)}
 					</div>
 				</div>
 			</li>
