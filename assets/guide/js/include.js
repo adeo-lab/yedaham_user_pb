@@ -128,7 +128,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">[피그마] - 7차 - 1:1문의 답변 메일</span></p>
-						${createMenuLink("common/PC_ZN_002.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZG_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 본인인증 (팝업)</span></p>
@@ -187,11 +187,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">[디자인필요/피그마] - 개인정보처리방침(19p)</span></p>
 						${createMenuLink("common/FO_Y_ZB_003.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[퍼블 리스트 없음] - 메일 > 온라인 법률 상담 답변</span></p>
 						${createMenuLink("common/FO_Y_ZG_002.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">[퍼블 리스트 없음] - 메일 > 증명서 발급</span></p>
 						${createMenuLink("common/FO_Y_ZG_003.html", useFullLink)}
 					</div>
@@ -202,7 +202,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[퍼블 리스트 없음] - 생년월일 인증 팝업</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">디자인 필요</span></p>
+						<p class="g-sub-text" style="color: green;"><span class="em">디자인 완료</span></p>
 						${createMenuLink("common/FO_Y_ZR_001_P.html", useFullLink)}
 					</div>
 				</div>
@@ -524,7 +524,7 @@ const headerNavigation = function (useFullLink) {
 					<a href="#" class="btn-g-open">모두 열기</a>
 				</div>
 				<div class="g-sub-body">
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">장례진행</span></p>
 						${createMenuLink("info/FO_Y_FB_001.html", useFullLink)}
 					</dl>
@@ -563,10 +563,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">[피그마] - ing - 제례정보</span></p>
+						<p class="g-sub-text" style="color: green;"><span class="em">디자인 완료</span></p>
 						${createMenuLink("info/FO_Y_FC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인) > 각종 축문양식​</span></p>
+						<p class="g-sub-text" style="color: green;"><span class="em">디자인 완료</span></p>
 						${createMenuLink("info/FO_Y_FD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">

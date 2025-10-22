@@ -5745,8 +5745,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .container.ty-wide #page.page-info .page-body-wrap.no-bg {background: none;}
-.container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap {max-width: 1200px; margin: 0 auto;}
+.container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap {position: relative; max-width: 1200px; margin: 0 auto;}
 .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .tab-list {display: flex;}
+.container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 {position: absolute; top: 15px; right: 0;}
+.container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 a {display: inline-block; font-weight: 600; font-size: 17px; color: #FFF; line-height: 150%; padding: 7px 20px; background: #D17B47; border-radius: 32px;}
+
+@media (max-width: 1023px) {
+  .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap {margin: 0 -16px;}
+  .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 {position: fixed; left: 0; top: auto; bottom: 0; width: 100%; /*height: 80px;*/ padding: 16px; background: #fff; box-sizing: border-box; z-index: 10000;}
+  .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 a {width: 100%; padding: 11px 0; border-radius: 8px; text-align: center; box-sizing: border-box;}
+}
 
 .proceeding-wrap {max-width: 1200px; padding: 0 0 0 0; margin: 0 auto;  display: flex; column-gap: 110px;}
 .proceeding-wrap .pr-l-txt {/*position: sticky; top: 100px;*/ width: 400px;}
@@ -5780,6 +5788,39 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .pr-bg-wrap.day03 .proceeding-wrap  {padding-bottom: 0; margin-bottom: -96px; background: url('../../../assets/front/images/sub/bg_info03.png') no-repeat left 60px bottom; background-size: 360px;}
 .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list {padding-bottom: 192px;}
 .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list::before {top: 0; height: calc(100% - 245px);}
+
+@media (max-width: 1023px) {
+  .pr-bg-wrap {margin: 0 -16px;}
+  .pr-bg-wrap.day01 {background: #fff;}
+  .pr-bg-wrap.day01 .proceeding-wrap {padding-top: 0;}
+  .pr-bg-wrap.day01 .proceeding-wrap .proceedings-list::before {height: calc(100% - 250px);}
+  .pr-bg-wrap.day02 {background: #fff;}
+  .pr-bg-wrap.day02 .proceeding-wrap .proceedings-list::before {top: 28px; height: calc(100% - 190px);}
+  .pr-bg-wrap.day03 {margin-bottom: 80px;}
+  .pr-bg-wrap.day03 .proceeding-wrap {background: url(../../../assets/front/images/sub/bg_info03.png) no-repeat right 10px bottom; background-size: 140px;}
+  .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list {padding-bottom: 200px;}
+  .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list::before {top: 28px; height: calc(100% - 260px);}
+
+  .pr-bg-wrap .proceeding-wrap .proceedings-list {padding-top: 24px; padding-bottom: 48px;}
+
+  .proceeding-wrap {flex-direction: column;}
+  .proceeding-wrap .proceedings-list {padding-left: 32px; padding-right: 16px;}
+  .proceeding-wrap .proceedings-list::before {left: 27px; width: 1px;}
+  .proceeding-wrap .proceedings-list li {padding-left: 24px;}
+  .proceeding-wrap .proceedings-list li .in-bx p.bx-num {width: 24px; height: 24px; font-size: 10.5px; line-height: 24px; background-size: 24px;}
+  .proceeding-wrap .proceedings-list li .in-bx dt {font-size: 20px; padding-bottom: 8px;}
+  .proceeding-wrap .proceedings-list li .in-bx dt span {font-size: 17px;}
+  .proceeding-wrap .proceedings-list li .in-bx dd p {font-size: 15px; padding-bottom: 3px;}
+  .proceeding-wrap .proceedings-list li .in-bx dd p::before {top: 9px;}
+  .proceeding-wrap .pr-l-txt {width: 100%;}
+  .proceeding-wrap .pr-l-txt .in-bx {padding: 100px 32px 24px 32px;}
+  .proceeding-wrap .pr-l-txt .in-bx .tx01 {font-size: 32px; padding-bottom: 8px;}
+  .proceeding-wrap .pr-l-txt .in-bx .tx02 {font-size: 17px;}
+  .pr-bg-wrap.day03 .proceeding-wrap .pr-l-txt .in-bx {padding-top: 16px;}
+
+  .pr-bg-wrap.day01 .pr-l-txt {background: url('../../../assets/front/images/sub/bg_info01.png') no-repeat center; background-size: cover;}
+  .pr-bg-wrap.day02 .pr-l-txt {background: url('../../../assets/front/images/sub/bg_info02.png') no-repeat center; background-size: cover;}
+}
 
 
 .f-map-wrap {display: flex; column-gap: 48px;}
