@@ -5214,7 +5214,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-position: center;
     background-size: 32px;
   }
-  }
 
   .card-detail-wrap .swiper-button-prev {top: 41px; left: 0; width: 24px; height: 24px;  background: #fff; border: 1px solid rgba(19, 21, 23, 0.15);}
   .card-detail-wrap .swiper-button-prev::after {
