@@ -567,13 +567,9 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("info/FO_Y_FC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인) > 각종 축문양식​</span></p>
+						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인)</span></p>
 						<p class="g-sub-text" style="color: green;"><span class="em">디자인 완료</span></p>
 						${createMenuLink("info/FO_Y_FD_001.html", useFullLink)}
-					</dl>
-					<dl class="g-sub-wrap" data-status="">
-						<p class="g-sub-title"><span class="em">[디자인필요] - 자료 다운로드 (26p~30p) (8차 디자인) > 지방, 명정쓰기​</span></p>
-						${createMenuLink("info/FO_Y_FD_001_2.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
