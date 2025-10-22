@@ -525,7 +525,7 @@ const headerNavigation = function (useFullLink) {
 				</div>
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="완료">
-						<p class="g-sub-title"><span class="em">장례진행</span></p>
+						<p class="g-sub-title"><span class="em">장례절차</span></p>
 						${createMenuLink("info/FO_Y_FB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
