@@ -5014,6 +5014,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .benefit-detail-wrap .area-right .membership-detail .btm-info li:last-child {padding-bottom: 0;}
 .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info {padding: 0 0 0 76px;}
 .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info p.icon {position: absolute; top: 0; left: 0; width: 56px; height: 56px; background: #F7F6F5; border-radius: 56px;}
+.benefit-detail-wrap .area-right .membership-detail .btm-info .b-info p.icon.health {background: #F7F6F5 url('../../../assets/front/images/sub/icon_mem01_01.png') no-repeat center; background-size: 28px}
+.benefit-detail-wrap .area-right .membership-detail .btm-info .b-info p.icon.shopping {background: #F7F6F5 url('../../../assets/front/images/sub/icon_mem01_02.png') no-repeat center; background-size: 28px}
+.benefit-detail-wrap .area-right .membership-detail .btm-info .b-info p.icon.travel {background: #F7F6F5 url('../../../assets/front/images/sub/icon_mem01_03.png') no-repeat center; background-size: 28px}
 .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info dt {font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding: 4px 0;}
 .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info dd p {position: relative; font-weight: 400; font-size: 15px; color: #444; line-height: 150%; padding: 0 0 1.5px 17.5px;}
 .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info dd p:last-child {padding-bottom: 0;}
@@ -6422,6 +6425,32 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .wish-time-list.ty-n01 li .in-bx {padding: 12px 24px;}
   .wish-time-list.ty-n01 li .in-bx::before {top: 12px; right: 24px; width: 22px; height: 22px; background-size: 22px;}
   .wish-time-list.ty-n01 li.on .in-bx p.tx01 {font-size: 18px;}
+}
+
+.pop-alert.pop-file-pw .bx-alert {max-width: 500px; border-radius: 0;}
+.pop-alert.pop-file-pw .bx-alert .p-stit {font-weight: 600; font-size: 24px; color: #131517; line-height: 130%; padding-bottom: 32px; text-align: center;}
+.pop-alert.pop-file-pw .bx-alert .p-stxt {font-weight: 400; font-size: 17px; line-height: 150%; padding-bottom: 24px; text-align: center;}
+.pop-alert.pop-file-pw .bx-alert .bx-inp {width: 280px; margin: 0 auto;}
+.pop-alert.pop-file-pw .form.input.password .btn-password::before {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.99999 2.99994C3.31241 2.68752 3.81941 2.68752 4.13183 2.99994L21.001 19.8681C21.3133 20.1805 21.3132 20.6875 21.001 20.9999C20.6885 21.3124 20.1816 21.3124 19.8691 20.9999L16.4687 17.5995L16.4678 17.6005L15.1875 16.3183L14.0596 15.1904V15.1913L12.8818 14.0126L9.98437 11.1152V11.1162L8.80663 9.93939V9.93744L7.25487 8.38568L7.2539 8.38666L6.06737 7.20013L6.06835 7.19916L2.99999 4.1308C2.68781 3.81837 2.68768 3.31229 2.99999 2.99994ZM6.52147 8.7851C6.50397 8.79567 6.48613 8.80568 6.46874 8.81635C5.02268 9.70315 4.02443 10.8672 3.63671 12.0869C4.19794 13.5856 6.61199 16.7001 12 16.7001C12.8199 16.7001 13.5699 16.6336 14.2549 16.5175L15.5996 17.8622C14.5422 18.1378 13.3453 18.2997 12 18.2997C5.62154 18.2997 2.62772 14.3893 2.03124 12.3261C1.99155 12.1888 1.98977 12.0427 2.02538 11.9042C2.46832 10.1828 3.72465 8.69859 5.36132 7.62494L6.52147 8.7851ZM12 5.70013C16.6464 5.70013 20.8267 8.32804 21.9609 11.8593C22.0058 11.999 22.0109 12.1483 21.9766 12.291C21.6552 13.6248 20.621 15.2607 18.751 16.4892L17.5918 15.329C19.2078 14.3596 20.063 13.0716 20.3613 12.1308C19.3858 9.52803 16.0411 7.29974 12 7.29974C11.2433 7.29974 10.5001 7.37873 9.7871 7.52533L8.46874 6.20697C9.584 5.88063 10.7782 5.70013 12 5.70013ZM9.80175 12.0654C9.83579 13.2283 10.7707 14.1621 11.9336 14.1962L13.3057 15.5683C12.8982 15.7175 12.4582 15.7997 11.999 15.7997C9.90044 15.7996 8.19924 14.0985 8.19921 11.9999C8.19923 11.5405 8.28029 11.1 8.42968 10.6923L9.80175 12.0654ZM11.999 8.20013C14.0976 8.20013 15.7987 9.90135 15.7988 11.9999C15.7988 12.4587 15.7173 12.8985 15.5683 13.3056L14.1953 11.9326C14.1602 10.7706 13.2267 9.83667 12.0644 9.80267L10.6924 8.42963C11.0997 8.2805 11.54 8.20016 11.999 8.20013Z' fill='%23232527'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  mask-image: none;
+}
+.pop-alert.pop-file-pw .form.input.password .btn-password.shown::before {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.9943 5.7002C16.5137 5.7002 20.5802 8.18238 21.8507 11.5576C21.9751 11.8885 21.9931 12.2598 21.881 12.6143C21.1061 15.0622 18.052 18.2998 11.9943 18.2998C5.9129 18.2996 2.91684 14.7467 2.13097 12.6416C2.00293 12.2985 2.00156 11.9315 2.10753 11.5986C2.65942 9.86509 4.03569 8.39152 5.77941 7.36133C7.5312 6.32641 9.71464 5.70028 11.9943 5.7002ZM11.9943 7.2998C9.99867 7.29989 8.09624 7.85013 6.59289 8.73828C5.0814 9.63127 4.03282 10.8282 3.63292 12.084C3.6326 12.085 3.63212 12.0862 3.63195 12.0869C4.20113 13.6042 6.62423 16.7 11.9943 16.7002C17.4286 16.7002 19.8124 13.8465 20.3556 12.1328C20.3555 12.1313 20.355 12.1273 20.3527 12.1211C19.3733 9.51951 16.0237 7.2998 11.9943 7.2998ZM11.9952 8.2002C14.0938 8.2002 15.7949 9.90141 15.795 12C15.795 14.0987 14.0939 15.7998 11.9952 15.7998C9.89664 15.7997 8.19542 14.0986 8.19542 12C8.19553 9.90147 9.8967 8.2003 11.9952 8.2002ZM11.9952 9.7998C10.7804 9.79991 9.79514 10.7851 9.79503 12C9.79503 13.215 10.7803 14.2001 11.9952 14.2002C13.2103 14.2002 14.1954 13.215 14.1954 12C14.1953 10.7851 13.2102 9.7998 11.9952 9.7998Z' fill='%23232527'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  mask-image: none;
+}
+
+@media (max-width: 1023px) {
+  .pop-alert.pop-file-pw .bx-alert .p-stit {font-size: 20px; padding-bottom: 16px;}
+  .pop-alert.pop-file-pw .bx-alert .p-stxt {font-size: 15px;}
 }
 
 
