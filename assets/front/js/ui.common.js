@@ -1,5 +1,7 @@
 var uiCommon = (function() {
 	const _ = {
+		offsetPC: 120,
+    	offsetMobile: 72,
 		mobileMenuListener: null,
 		onLoad: function() {
 			_.popup.init();
@@ -12,11 +14,13 @@ var uiCommon = (function() {
 			_.onInput();
 			_.passwordVisible();
 			_.scrollToTop();
+			setTimeout(_.scrollToTop, 100);
 			_.slider();
 			_.scrollStart();
 			_.toggleButtons();
 			_.familySite();
 			_.totalSearch();
+			_.targetScroll(); // 251022 작업
 		},
 		onResize: function() {
 			_.gnbMenu.init(); 
@@ -553,31 +557,30 @@ var uiCommon = (function() {
 			});
 		},
 		scrollToTop: function () {
-			let quickMenu = document.querySelector('.quick-menu'),
-				btnTop = document.querySelector('.quick-menu .btn-to-top');
-				// footer = document.querySelector('#footer');
+			// 251022 작업
+			const quickMenu = document.querySelector('.quick-menu');
+			const btnTop = document.querySelector('.quick-menu .btn-to-top');
+
+			if (window.scrollY > 100) {
+					quickMenu.classList.add('show');
+				} else {
+					quickMenu.classList.remove('show');
+				}
 
 			if (btnTop) {
 				btnTop.addEventListener('click', function() {
 					window.scrollTo({ top: 0, behavior:'smooth' });
 				});
+			}
 
-				window.addEventListener('scroll', function() {
-					if (window.scrollY > 100) {
-						btnTop.classList.add('show');
-					} else {
-						btnTop.classList.remove('show');
-					}
-	
-					// if (window.innerWidth < 1024) {
-					//     btnTop.style.display = 'none';
-					// } else {
-					//     btnTop.style.display = 'block';
-					// }
-					// if (window.innerWidth < 768) {
-					//     quickMenu.classList.remove('show');
-					// }
-				});
+			// 토글 버튼
+			if (quickMenu) {
+				const toggleBtn = quickMenu.querySelector('.quick-toggle');
+				if (toggleBtn) {
+					toggleBtn.addEventListener('click', () => {
+						quickMenu.classList.toggle('active');
+					});
+				}
 			}
 		},
 		slider : function () {
@@ -731,6 +734,44 @@ var uiCommon = (function() {
 					body.classList.remove('fixed');
 				});
 			}
+		}, 
+		targetScroll: function() {
+			// 251022 작업
+			document.querySelectorAll('.btn-target-scroll').forEach(link => {
+				link.addEventListener('click', e => {
+					e.preventDefault();
+
+					const parent = link.parentElement;
+					if (!link.dataset.noCurrent) {
+						const siblings = parent.parentElement.children;
+						Array.from(siblings).forEach(sib => {
+							sib.classList.remove('current');
+						});
+						parent.classList.add('current');
+					}
+
+					const selector = link.dataset.target;
+					const section = document.querySelector(selector);
+					if (!section) return;
+
+					const y = section.getBoundingClientRect().top + window.scrollY;
+					const isMobile = window.innerWidth <= 1023; 
+					const _this = this;
+					let offset = isMobile ? _this.offsetMobile : _this.offsetPC;
+					// if (link.closest('.tab-fixed')) {
+					// 	offset = isMobile ? _this.offsetMobile + 0 : _this.offsetPC + 60;
+					// }
+					if (!isMobile && link.closest('.tab-fixed')) {
+						offset = _this.offsetPC + 60;
+					}
+					console.log('offset:', offset);
+
+					window.scrollTo({
+						top: y - offset,
+						behavior: 'smooth'
+					});
+				});
+			});
 		}
 	};
 
@@ -754,5 +795,4 @@ function uiToggleClass(selector, className, callBack) {
 	if (callBack != undefined && typeof callBack == 'function') callBack();
 }
 // window.uiToggleClass = uiToggleClass;
-
 

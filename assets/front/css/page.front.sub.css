@@ -3,6 +3,14 @@
 
 /********************************************************************************************************************************
 
+ * Web Font
+
+********************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+
+/********************************************************************************************************************************
+
  * Common
 
 ********************************************************************************************************************************/
@@ -18,6 +26,7 @@
 .tab-list-ty02 .tab-item.active .tab-text {color: #fff;}
 
 .img-mo {display: none;}
+/* .flex {display: flex;} */
 
 @media (max-width: 1023px) {
     .tab-list-ty01 {gap: 20px;}
@@ -183,6 +192,170 @@
 .consult-case-body .consult-case-contents .title::before {content: counter(dl-counter) ". "; position: absolute; left: 0; top: 1px; font-size: 17px; font-weight: 600; line-height: 1.5;}
 .consult-case-body .consult-case-contents .text {padding: 32px; background-color: #F7F6F5; border-radius: 0 32px 32px 32px; font-size: 17px; line-height: 1.5}
 
+/* 부가서비스 */
+.list-style-dot {display: flex; justify-content: center; flex-direction: column; row-gap: 4px;}
+.list-style-dot .list-item {display: flex; align-items: baseline; gap: 8px; font-size: 17px; font-weight: 400; line-height: 1.5;}
+.list-style-dot .list-item::before {display: block; content: ''; flex-shrink: 0; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");}
+
+.container:has(.page-addon) {padding: 100px 0 96px;}
+.container:has(.page-addon) #page {max-width: 100%;}
+.page-addon .page-body {display: flex; flex-direction: column; row-gap: 96px;}
+.page-addon .section.section-top {position: relative; z-index: 0; padding-top: 120px;}
+.page-addon .section.section-top:before {display: block; content: ''; position: absolute; top: 0; left: 0; right: 0; z-index: -1; width: 100%; height: 560px; background-color: #F7F6F5;}
+.page-addon .section.section-top .section-wrap {row-gap: 74px;}
+.page-addon .section.section-top .section-wrap .section-head {display: flex; flex-direction: column; row-gap: 24px; justify-content: center; align-items: center; text-align: center;}
+.page-addon .section.section-top .section-wrap .section-head .heading-l {font-size: 52px; font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; color: #232527;}
+.page-addon .section.section-top .section-wrap .section-head .heading-summary {font-size: 22px; font-weight: 600; line-height: 1.3; color: #444;}
+.page-addon .section .section-wrap {display: flex; flex-direction: column; row-gap: 48px; max-width: 1200px; margin: 0 auto;}
+.page-addon .section .section-wrap .section-head {display: flex; flex-direction: column; row-gap: 24px;text-align: center;}
+.page-addon .section .section-wrap .section-head .section-subject {font-size: 40px; font-weight: 600; line-height: 1.3; letter-spacing: -0.5px; color: #131517;}
+.page-addon .section .section-wrap .section-head .section-summary {font-size: 19px; font-weight: 600; line-height: 1.5; color: #444;}
+.page-addon .section .section-wrap .section-head .list-style-dot {align-items: center;}
+.page-addon .section .section-wrap .section-head .list-style-dot .list-item {color: #AF5B27;}
+.page-addon .section .section-wrap .section-head .list-style-dot .list-item::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E");}
+.page-addon .section .section-wrap .section-head .button-area {display: flex; justify-content: center;}
+.page-addon .section .section-wrap .button-area .btn-primary {--height: 56px; --padding: 40px;}
+.page-addon .section .section-wrap .button-area .btn-primary .btn-text {font-size: 19px; font-weight: 600; color: #fff;}
+
+.page-addon .addon-list-swiper {overflow: visible;}
+.page-addon .addon-list {display: flex; justify-content: space-between; align-items: stretch; gap: 48px}
+.page-addon .addon-list .addon-item {flex: 1; position: relative; height: auto;}
+.page-addon .addon-list .addon-item .addon-item-wrap {display: flex; flex-direction: column; width: 100%; height: 100%; padding: 40px 40px 24px; box-sizing: border-box; border-radius: 16px; border: 1px solid #fff; background: rgba(255, 255, 255, 0.60); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05); text-align: left;}
+.page-addon .addon-list .addon-item .addon-item-wrap::before {display: block; content: ''; width: 100%; height: 90px; margin-bottom: 48px; background-repeat: no-repeat; background-position: 0 0; background-size: auto 100%;}
+.page-addon .addon-list .addon-item:nth-child(1) .addon-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_addon_item01.png);}
+.page-addon .addon-list .addon-item:nth-child(2) .addon-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_addon_item02.png);}
+.page-addon .addon-list .addon-item:nth-child(3) .addon-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_addon_item03.png);}
+.page-addon .addon-list .addon-item .addon-item-wrap .head {padding-bottom: 8px; font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+.page-addon .addon-list .addon-item .addon-item-wrap .body {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527}
+
+.page-addon .section.conversion-service .section-wrap {row-gap: 24px;}
+.page-addon .section.conversion-service .section-wrap {position: relative; height: 396px; padding: 32px 0 0 677px; box-sizing: border-box;}
+.page-addon .section.conversion-service .section-wrap .section-head {text-align: left;}
+.page-addon .section.conversion-service .section-wrap .section-body {display: flex; flex-direction: column; row-gap: 48px;}
+.page-addon .section.conversion-service .section-wrap .section-body .list-style-dot {justify-content: flex-start; align-items: flex-start;}
+.page-addon .section.conversion-service .section-wrap .section-body .list-style-dot .list-item {color: #AF5B27;}
+.page-addon .section.conversion-service .section-wrap .section-body .list-style-dot .list-item::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E");}
+.page-addon .section.conversion-service .section-wrap .section-body .img-area {display: flex; position: absolute; top: 0; left: 0; justify-content: center; align-items: center; width: 637px; height: 396px; background-color: #E2E2E2;border-radius: 24px; font-size: 19px; font-weight: 600; line-height: 1.3; color: #fff;}
+
+.page-addon .service-list {display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
+.page-addon .service-list .service-item {padding: 32px 40px 24px; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box;}
+.page-addon .service-list .service-item:nth-child(4) {grid-column: 1 / 2;}
+.page-addon .service-list .service-item:nth-child(5) {grid-column: 2 / 4;}
+.page-addon .service-list .service-item .service-item-wrap {display: flex; flex-direction: column; row-gap: 8px; min-height: 204px; background-repeat: no-repeat; background-position: 100% 100%; background-size: auto 64px;}
+.page-addon .service-list .service-item:nth-child(1) .service-item-wrap {background-image: url(../../../assets/front/images/sub/icon_addon_service01.png);}
+.page-addon .service-list .service-item:nth-child(2) .service-item-wrap {background-image: url(../../../assets/front/images/sub/icon_addon_service02.png);}
+.page-addon .service-list .service-item:nth-child(3) .service-item-wrap {background-image: url(../../../assets/front/images/sub/icon_addon_service03.png);}
+.page-addon .service-list .service-item:nth-child(4) .service-item-wrap {background-image: url(../../../assets/front/images/sub/icon_addon_service04.png);}
+.page-addon .service-list .service-item:nth-child(5) .service-item-wrap {background-image: url(../../../assets/front/images/sub/icon_addon_service05.png);}
+.page-addon .service-list .service-item .service-item-wrap .head {font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+.page-addon .service-list .service-item .service-item-wrap .body {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.page-addon .service-list .service-item .service-item-wrap .para + .list-style-dot {margin: 4px 0 0;}
+
+.page-addon .bnr-section {display: flex; justify-content: space-between; align-items: center; column-gap: 8px; padding: 20px 32px; border-radius:16px; background: linear-gradient(90deg, rgba(72, 135, 91, 0.90) 20.02%, rgba(69, 91, 186, 0.90) 79.97%); font-size: 19px; font-weight: 600; line-height: 1.5; color: #fff;}
+.page-addon .bnr-section .para {word-break: auto-phrase;}
+.page-addon .bnr-section .tell-info {display: flex; column-gap: 12px; align-items: center;}
+.page-addon .bnr-section .tell-info .num {display: inline-flex; gap:12px; font-size: 28px; line-height: 1.3; letter-spacing: -0.5px;}
+.page-addon .bnr-section .tell-info .num::before {display: block; content: ''; width: 38px; height: 38px; border-radius: 100%; background-color: #F7F6F5; background-image: url(../../../assets/front/images/sub/icon_tell.png); background-size: 20px auto; background-repeat: no-repeat; background-position: center;}
+
+.page-addon .section.legal-service .section-wrap {padding: 64px 48px; box-sizing: border-box; border-radius: 24px; background-color: #F8EEE8;}
+.page-addon .legal-service-list {display: flex; flex-direction: column; row-gap: 24px;}
+.page-addon .legal-service-list .legal-service-item {border-radius: 16px; background-color: #fff;}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap {display: flex; flex-direction: column; row-gap: 12px; position: relative; padding: 32px 40px 32px 120px;}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap::before {display: block; content: ''; position: absolute; top: 32px; left: 40px; width: 48px; height: 48px; background-repeat: no-repeat; background-size: cover;}
+.page-addon .legal-service-list .legal-service-item:nth-child(1) .legal-service-wrap::before {background-image: url(../../../assets/front/images/sub/icon_addon_legal01.png);}
+.page-addon .legal-service-list .legal-service-item:nth-child(2) .legal-service-wrap::before {background-image: url(../../../assets/front/images/sub/icon_addon_legal02.png);}
+.page-addon .legal-service-list .legal-service-item:nth-child(3) .legal-service-wrap::before {background-image: url(../../../assets/front/images/sub/icon_addon_legal03.png);}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head {display: flex; align-items: center; justify-content: space-between;}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .subject {font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area .btn-normal {display: inline-flex; justify-content: center; align-items: center; padding: 0 24px; border-radius: 8px; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box; line-height: 40px;}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area .btn-normal .btn-text {font-size: 17px; font-weight: 400; line-height: 40px; color: #232527;}
+.page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-body .list-style-dot {row-gap: 8px;}
+
+.page-addon .list-style-kr {display: flex; flex-direction: column; gap: 12px;}
+.page-addon .list-style-kr .list-item .list-wrap {display: flex; flex-direction: column; gap: 8px;}
+.page-addon .list-style-kr .list-item .list-wrap .head {display: flex; gap: 4px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.page-addon .list-style-kr .list-item .list-wrap .head::before {display: block; content: attr(data-label) ". "; min-width: 24px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.page-addon .list-style-kr .list-item .list-wrap .body {display: flex; padding-left: 26px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+
+@media (max-width: 1023px) {
+    /* 부가서비스 */
+    .list-style-dot {justify-content: flex-start;}
+    .list-style-dot .list-item {font-size: 15px;}
+
+    .container:has(.page-addon) {padding: 72px 0 48px;}
+    .page-addon .page-body {row-gap: 72px;}
+    .page-addon .section.section-top {padding: 80px 0 0;}
+    .page-addon .section.section-top:before {display: none;}
+    .page-addon .section.section-top .section-wrap {padding: 0; row-gap: 32px;}
+    .page-addon .section.section-top .section-wrap .section-head {position: relative; row-gap: 24px; padding: 0 20vw;}
+    .page-addon .section.section-top .section-wrap .section-head::before {display: block; content: ''; position: absolute; top: -80px; left: 0; right: 0; z-index: -1; width: 100%; height: calc(100% + 80px + 32px + 112px); background-color: #F7F6F5;}
+    .page-addon .section.section-top .section-wrap .section-head .heading-l {font-size: 32px; line-height: 1.3; word-break: keep-all;}
+    .page-addon .section.section-top .section-wrap .section-head .heading-summary {font-size: 19px; word-break: keep-all;}
+    
+    .page-addon .section {padding: 0 16px;}
+    .page-addon .section .section-wrap {row-gap: 32px; max-width: 100%;}
+    .page-addon .section .section-wrap .section-head {row-gap: 16px; padding: 0 20vw;}
+    .page-addon .section .section-wrap .section-head .section-subject {font-size: 26px; word-break: keep-all;}
+    .page-addon .section .section-wrap .section-head .section-summary {font-size: 17px; word-break: keep-all;}
+    .page-addon .section .section-wrap .section-head .wbr {display: inline;}
+    .page-addon .section .section-wrap .section-head .list-style-dot {align-items: flex-start; text-align: left;}
+    .page-addon .section .section-wrap .button-area .btn-primary {--height: 48px;}
+    .page-addon .section .section-wrap .button-area .btn-primary .btn-text {font-size: 17px;}
+
+    .page-addon .addon-list-swiper {padding: 0 16px;}
+    .page-addon .addon-list {gap: 0;}
+    .page-addon .addon-list .addon-item .addon-item-wrap {padding: 24px 24px 20px;}
+    .page-addon .addon-list .addon-item .addon-item-wrap::before {height: 72px; margin-bottom: 32px;}
+    .page-addon .addon-list .addon-item .addon-item-wrap .head {font-size: 20px; word-break: auto-phrase;}
+    .page-addon .addon-list .addon-item .addon-item-wrap .body {font-size: 15px;}
+    .page-addon .addon-list .addon-item .addon-item-wrap .body .wbr {display: inline; word-break: keep-all;}
+
+    .page-addon .section.conversion-service .section-wrap {row-gap: 16px; position: relative; height: auto; padding: 0;}
+    .page-addon .section.conversion-service .section-wrap .section-head {text-align: center;}
+    .page-addon .section.conversion-service .section-wrap .section-body {row-gap: 0;}
+    .page-addon .section.conversion-service .section-wrap .section-body .img-area {position: static; width: 100%; height: 200px; border-radius: 16px;}
+    .page-addon .section.conversion-service .section-wrap .section-body .list-style-dot {justify-content: flex-start; align-items: flex-start; margin: 16px 0 0; text-align: left;}
+    .page-addon .section.conversion-service .section-wrap .section-body .button-area {justify-content: center; margin-top: 32px;}
+
+    .page-addon .service-list {display: flex; flex-direction: column; gap: 16px;}
+    .page-addon .service-list .service-item {padding: 20px 24px;}
+    .page-addon .service-list .service-item:nth-child(5) .service-item-wrap {padding: 0 0 48px;}
+    .page-addon .service-list .service-item .service-item-wrap {display: flex; flex-direction: column; row-gap: 8px; min-height: auto; background-size: auto 48px;}
+    .page-addon .service-list .service-item .service-item-wrap .head {font-size: 20px;}
+    .page-addon .service-list .service-item .service-item-wrap .body {font-size: 15px;}
+
+    .page-addon .bnr-section {padding: 20px 24px; border-radius:12px; font-size: 14px;}
+    .page-addon .bnr-section .tell-info {flex-shrink: 0; position: relative; padding-left: 46px; flex-direction: column; row-gap: 4px; align-items: flex-start;}
+    .page-addon .bnr-section .tell-info::before {display: block; content: ''; position: absolute; top: calc(50% - (38px / 2)); left: 0; width: 38px; height: 38px; border-radius: 100%; background-color: #F7F6F5; background-image: url(../../../assets/front/images/sub/icon_tell.png); background-size: 20px auto; background-repeat: no-repeat; background-position: center;}
+    .page-addon .bnr-section .tell-info .tit {font-size: 17px;}
+    .page-addon .bnr-section .tell-info .num {display: inline-flex; gap:12px; font-size: 20px;}
+    .page-addon .bnr-section .tell-info .num::before {display: none;}
+
+    .page-addon .section.legal-service .section-wrap {row-gap: 48px; padding: 48px 16px;}
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap {flex-direction: row; flex-wrap: wrap; row-gap: 16px; column-gap: 12px; position: relative; padding: 20px 24px 84px;}
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap::before {display: block; content: ''; position: static; width: 32px; height: 32px;}
+
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head {display: flex; align-items: center; justify-content: space-between;}
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .subject {font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area {position: absolute; top: auto; left: 50%; bottom: 20px; transform: translateX(-50%);}
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area .btn-normal {padding: 0 10px;}
+    .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area .btn-normal .btn-text {font-size: 15px; line-height: 32px;}
+
+    .page-addon .list-style-kr .list-item .list-wrap .head {font-size: 15px;}
+    .page-addon .list-style-kr .list-item .list-wrap .head::before {font-size: 15px;}
+    .page-addon .list-style-kr .list-item .list-wrap .body {font-size: 15px;}
+}
+
+@media (max-width: 767px) {
+    .page-addon .section.section-top .section-wrap .section-head {padding: 0 8.333vw;}
+    .page-addon .section .section-wrap .section-head {padding: 0;}
+
+    .page-addon .addon-list .addon-item {flex: 0 0 auto; width: 213px !important;}
+}
+
+/* button */
+.button-area .btn-primary {display: flex; justify-content: center; align-items: center; height: var(--height); padding: 0 var(--padding); border-radius: var(--height); background-color: #D17B47;}
+
 
 /********************************************************************************************************************************
 
@@ -205,8 +378,8 @@
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick {position: absolute; top: 103px; left: calc(100% + 6px);}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-list {display: flex; flex-direction: column; row-gap: 4px;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item {width: 150px; border-radius: 12px;; box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.06);}
-.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.receipt { background-color: #FFF2E0; color: #AF5B27;}
-.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.counsel { background-color: #EFEFEF; color: #374BA3;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.receipt {background-color: #FFF2E0; color: #AF5B27;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item.counsel {background-color: #EFEFEF; color: #374BA3;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item .funeral-quick-wrap {display: flex; flex-direction: column; row-gap: 12px; padding: 16px;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item .funeral-quick-title {display: flex; justify-content: space-between; column-gap: 17px; font-size: 17px; font-weight: 600; line-height: 1.3; word-break: keep-all;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .funeral-quick-item .funeral-quick-title::before {display: block; content: ''; flex-shrink: 0; width: 42px; height: 42px; background-color: #fff; border-radius: 100%; background-repeat: no-repeat; background-position: center;}
@@ -216,14 +389,46 @@
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .funeral-quick .button-area .btn-counsel {display: block; width: 100%; height: 32px; border: 1px solid rgba(19, 21, 23, 0.20); background-color: #fff; border-radius: 100px; font-size: 15px; line-height: 1.5; color: #232527;}
 
 /* 상조의 필요성 */
-
+.funeral-service .funeral-service-wrap {display: flex; flex-direction: column; row-gap: 48px;}
+.funeral-service .funeral-service-head {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 16px; position: relative; text-align: center;}
+.funeral-service .funeral-service-head.attr-flower {padding-top: 155px;}
+.funeral-service .funeral-service-head.attr-flower::before {display: block; content: ''; position:absolute; top: 0; left: 0; width: 100%; height: 123px; background: url(../../../assets/front/images/sub/img_funeral_flower.png) no-repeat center; background-size: contain;}
+.funeral-service .funeral-service-head .funeral-service-subject {font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527;}
+.funeral-service .funeral-service-head .funeral-service-summary {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.funeral-service .funeral-service-head .para {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.funeral-service .funeral-service-body {display: flex; flex-direction: column; row-gap: 48px;}
+.funeral-service .service-benefit {border-radius: 16px; background: url(../../../assets/front/images/sub/img_funeral_service.png) no-repeat 50%/cover;}
+.funeral-service .service-benefit .service-benefit-wrap {display:flex; flex-direction: column; row-gap: 32px; padding: 70px 48px;}
+.funeral-service .service-benefit .service-benefit-head {font-size: 24px; font-weight: 600; line-height: 1.3; color: #fff; letter-spacing: -0.5px; text-align: center;}
+.funeral-service .service-benefit .service-benefit-head .wbr {display: inline;}
+.funeral-service .service-benefit .benefit-list-swiper {overflow: visible;}
+.funeral-service .service-benefit .benefit-list {display: flex; justify-content: space-between; column-gap: 24px;}
+.funeral-service .service-benefit .benefit-item {flex: 1; height: auto; padding: 32px; box-sizing: border-box; border-radius: 16px; background-color: rgba(255, 255, 255, 0.90); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
+.funeral-service .service-benefit .benefit-item .benefit-item-wrap {display: flex; flex-direction: column; row-gap: 8px;}
+.funeral-service .service-benefit .benefit-item .head {display: flex; flex-direction: column; gap: 8px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #D17B47; letter-spacing: -0.5px;}
+.funeral-service .service-benefit .benefit-item .head .em {font-size: 22px; color: #232527; letter-spacing: 0}
+.funeral-service .service-benefit .benefit-item .body {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.funeral-service .service-benefit-content .para {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444; text-align: center;}
+.funeral-service .service-benefit-content .para.strong {font-size: 19px; font-weight: 600;}
+.funeral-service .service-benefit-content .para.strong .wbr {display: inline;}
+.funeral-service .service-benefit-content .para + .para {margin-top: 16px;}
+.funeral-service .service-benefit-content .flow-step {display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 32px;}
+.funeral-service .service-benefit-content .flow-step .flow-item {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 8px; width: 200px; height: 200px; border-radius: 100%; background-color: #FFF2E0; font-size: 19px; font-weight: 600; line-height: 1.3; text-align: center; aspect-ratio: 1/1;}
+.funeral-service .service-benefit-content .flow-step .flow-item .head {color: #232527;}
+.funeral-service .service-benefit-content .flow-step .flow-item .body {color: #D17B47;}
+.funeral-service .service-benefit-content .flow-step .flow-arrow {display: flex; align-items: center; justify-content: center; gap: 16px; font-size: 19px; font-weight: 600; line-height: 1.3; color: #232527;}
+.funeral-service .service-benefit-content .flow-step .flow-arrow::before,
+.funeral-service .service-benefit-content .flow-step .flow-arrow::after {display: block; content: ''; width: 58px; height: 18px; background: url(../../../assets/front/images/sub/img_flow_arrow.png) no-repeat center; background-size: auto 18px;}
+.funeral-service .service-benefit-info .info-list {display: flex; flex-direction: column; row-gap: 12px; padding: 24px; border-radius: 16px; background-color: #F7F6F5;}
+.funeral-service .service-benefit-info .info-list .info-item {display: flex; gap: 8px; align-items: baseline; font-size: 15px; font-weight: 600; line-height: 1.5; color: #232527;}
+.funeral-service .service-benefit-info .info-list .info-item::before {display: flex; content: ''; flex-shrink: 0; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='12' viewBox='0 0 13 12' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.3236 1.2465C12.7579 1.5473 12.8695 2.14807 12.5728 2.58837L6.70097 11.579C6.5411 11.8162 6.28532 11.969 6.00315 11.9957C5.72098 12.0224 5.44172 11.9203 5.24129 11.7172L0.279075 6.6885C-0.0929229 6.31152 -0.0930399 5.70019 0.278814 5.32306C0.650667 4.94593 1.25368 4.94581 1.62568 5.3228L5.77587 9.52859L11 1.49908C11.2967 1.05879 11.8893 0.945701 12.3236 1.2465Z' fill='%23D17B47'/%3E%3C/svg%3E"); background-size: contain; background-repeat: no-repeat;}
 
 /* 왜 예다함인가? */
 .safety-system {padding-bottom: 24px;}
 .safety-system-wrap {display: flex; flex-direction: column; row-gap: 48px;}
 .safety-system-head {display: flex; align-items: center; justify-content: center; flex-direction: column; row-gap: 16px; word-break: keep-all;}
-.safety-system-head .tit-01 {font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
-.safety-system-head .txt-01 {font-size: 17px; line-height: 1.5; color: #444; text-align: center;}
+.safety-system-head .safety-system-subject {font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px; text-align: center;}
+.safety-system-head .safety-system-summary {font-size: 17px; line-height: 1.5; color: #444; text-align: center;}
 .safety-system-body .safety-system-bank {position: relative; padding: 60px 0;}
 .safety-system-body .safety-system-bank .tit-01 {display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 210px; height: 210px; background-color: #374BA3; border-radius: 100%; font-size: 22px; font-weight: 600; line-height: 1.3; color: #fff; aspect-ratio: 1/1;}
 .safety-system-body .safety-system-bank .tit-01::after {display: block; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 320px; height: 320px; aspect-ratio: 1/1; border: 2px dashed #FBCD6C; border-radius: 100%; box-sizing: border-box;}
@@ -231,8 +436,9 @@
 .safety-system-body .safety-system-bank .bank-list .bank-item {display: flex; flex-direction: column; row-gap: 16px;}
 .safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {display: flex; justify-content: center; align-items: center; width: 200px; height: 56px; padding: 12px 32px; box-sizing: border-box; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px; background-color: #fff;}
 
-.licensed-director-content {overflow: hidden; width: 100%; margin: 0 auto; border-radius: 16px;}
+.licensed-director-content {overflow: hidden; width: 100%; margin: 0 auto; border-radius: 16px;     text-align: center;}
 .licensed-director-content iframe {width: 100%; border: none; aspect-ratio: 16/9;}
+.licensed-director-content .img {display: inline-flex; justify-content: center; align-items: center; overflow: hidden; margin: 0 auto; border-radius: 24px; text-align: center;}
 
 .payback-system-content {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 48px;}
 .payback-system-content .payback-refund {padding: 14px 0; background: url(../../../assets/front/images/sub/bg_payback_line_pc.png) no-repeat center; background-size: contain;}
@@ -277,35 +483,147 @@
 .protection-system .protection-system-items .item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc(50% - (28px / 2)); left: calc((-36px / 2) + (-28px/2)); width: 28px; height: 28px; aspect-ratio: 1/1; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M13.999 3.5C14.5145 3.5 14.9326 3.91813 14.9326 4.43359V13.0674H23.5664C24.0818 13.0674 24.4999 13.4846 24.5 14C24.5 14.5155 24.0819 14.9336 23.5664 14.9336H14.9326V23.5664C14.9326 24.0819 14.5145 24.5 13.999 24.5C13.4836 24.5 13.0654 24.0819 13.0654 23.5664V14.9336H4.43359C3.91813 14.9336 3.5 14.5155 3.5 14C3.50012 13.4846 3.9182 13.0674 4.43359 13.0674H13.0654V4.43359C13.0654 3.91815 13.4836 3.50004 13.999 3.5Z' fill='%23131517' fill-opacity='0.3'/%3E%3C/svg%3E");}
 
 /* 서비스 이용절차 */
-.service-process {}
-.service-process .service-process-wrap {}
-.service-process .service-process-head .tit-01 {font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527;}
-.service-process {}
+.funeral-service .process-list {display: flex; flex-direction: column; row-gap: 48px;}
+.funeral-service .process-item {position: relative; padding: 24px 32px; border-radius: 16px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.30); box-sizing: border-box; background-color: #FFF;}
+.funeral-service .process-item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc(-24px - 12px); left: calc(50% - 12px); width: 24px; height: 24px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.7156 14.8749L6.09127 8.59406C5.88249 8.36092 6.05497 8 6.37515 8L17.6248 8C17.945 8 18.1175 8.36095 17.9087 8.59409L12.2834 14.8749C12.134 15.0417 11.865 15.0417 11.7156 14.8749Z' fill='%23232527'/%3E%3C/svg%3E");}
+.funeral-service .process-wrap {position: relative; padding-left: 76px;}
+.funeral-service .process-wrap::before {display: block; content: ''; position: absolute; top: 0; left: 52px; width: 1px; height: 100%; background-color: rgba(19, 21, 23, 0.10);}
+.funeral-service .process-head {display: flex; flex-direction: column; row-gap: 12px;}
+.funeral-service .process-subject {font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+.funeral-service .process-subject .num {position: absolute; top: 0; left: 0; font-size: 24px;}
+.funeral-service .process-summary {display: flex; justify-content: space-between; align-items: baseline; column-gap: 24px;}
+.funeral-service .process-summary .para {font-size: 19px; font-weight: 400; line-height: 1.5; color: #232527;}
+.funeral-service .process-summary .button-area {flex-shrink: 0; display: inline-flex;}
+.funeral-service .process-summary .button-area .btn-normal {flex-shrink: 0; display: flex; justify-content: center; align-items: center; column-gap: 12px; padding: 0 12px 0 16px; border-radius: 8px; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box;}
+.funeral-service .process-summary .button-area .btn-normal::after {display: block; content: ''; width: 16px; height: 16px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.1575 6.10369C13.3765 6.30073 13.3943 6.63795 13.1972 6.85689L8.39775 11.5236C8.29661 11.636 8.15252 11.7001 8.00132 11.7001C7.85012 11.7001 7.70603 11.636 7.60488 11.5236L2.80488 6.85692C2.60784 6.63798 2.62559 6.30076 2.84453 6.10371C3.06346 5.90667 3.40069 5.92441 3.59773 6.14335L8.00129 10.3695L12.4043 6.14338C12.6014 5.92443 12.9386 5.90666 13.1575 6.10369Z' fill='%2333363D'/%3E%3C/svg%3E"); transition: all .3s ease;}
+.funeral-service .process-summary .button-area .btn-normal .btn-text {display: inline-flex; align-items: center; font-size: 17px; font-weight: 400; line-height: 40px; color: #232527;}
+.funeral-service .process-item .process-body {padding-top: 0; max-height: 0; opacity: 0; visibility: hidden; transition: height .3s ease;}
+.funeral-service .process-item.active .process-body {padding-top: 24px; max-height: 100%; opacity: 1; visibility: visible;}
+.funeral-service .process-item.active .process-summary .button-area .btn-normal::after {transform: rotate(-180deg);}
+.process-faq-list {display: flex; flex-direction: column; row-gap: 16px;}
+.process-faq-list .process-faq-item .process-faq-text {display: inline-flex; column-gap: 8px; font-size: 17px; font-weight: 600; line-height: 1.3; color: #232527;}
+.process-faq-list .process-faq-item .process-faq-text::before {display: flex; content: ''; flex-shrink: 0; width: 20px; height: 20px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23F1945E'/%3E%3Cpath d='M13.7774 15.4167C13.5311 15.4167 13.3156 15.3251 13.1308 15.1419L12.2995 14.272C11.6683 14.5772 10.9832 14.7299 10.2443 14.7299C9.33597 14.7299 8.51235 14.5162 7.77339 14.0888C7.04983 13.6462 6.47252 13.051 6.04146 12.3031C5.6258 11.5553 5.41797 10.7311 5.41797 9.83059C5.41797 8.89957 5.6258 8.0754 6.04146 7.35806C6.47252 6.62546 7.04983 6.05311 7.77339 5.64103C8.49695 5.21368 9.32058 5 10.2443 5C11.168 5 11.9839 5.21368 12.6921 5.64103C13.4156 6.05311 13.9775 6.62546 14.3778 7.35806C14.7935 8.0754 15.0013 8.89957 15.0013 9.83059C15.0013 10.4563 14.9012 11.044 14.7011 11.5934C14.501 12.1276 14.2239 12.6084 13.8698 13.0357L14.4933 13.6081C14.7396 13.8523 14.8627 14.1041 14.8627 14.3636C14.8627 14.6535 14.7781 14.8825 14.6087 15.0504C14.3624 15.2946 14.0853 15.4167 13.7774 15.4167ZM10.2443 12.8984C10.4598 12.8984 10.6676 12.8755 10.8678 12.8297L10.4752 12.4634C10.2289 12.2497 10.1057 11.9826 10.1057 11.6621C10.1057 11.3874 10.1904 11.1661 10.3597 10.9982C10.5753 10.7845 10.837 10.6777 11.1449 10.6777C11.422 10.6777 11.6529 10.7692 11.8376 10.9524L12.4611 11.6392C12.769 11.1203 12.923 10.5174 12.923 9.83059C12.923 8.94536 12.669 8.22039 12.1609 7.65568C11.6683 7.09096 11.0294 6.80861 10.2443 6.80861C9.44374 6.80861 8.78176 7.09096 8.25833 7.65568C7.7503 8.22039 7.49628 8.94536 7.49628 9.83059C7.49628 10.7158 7.7503 11.4484 8.25833 12.0284C8.78176 12.6084 9.44374 12.8984 10.2443 12.8984Z' fill='white'/%3E%3C/svg%3E");}
+.process-faq-list .process-faq-item .process-faq-text:hover {text-decoration: underline;}
 
+/* 제례 정보 */
+.ritual-contents {max-width: 1200px; margin: 0 auto; padding: 64px 0 96px;}
+.ritual-contents .section {padding-top: 96px;}
+.ritual-contents .section .section-wrap {display: flex; flex-direction: column; row-gap: 24px;}
+.ritual-contents .section .section-wrap .section-head .section-subject {font-size: 40px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.ritual-contents .section .section-wrap .section-body {display: flex; flex-direction: column; row-gap: 48px;}
+.ritual-contents .ritual-info.section {padding-top: 0;}
+.ritual-info .section-body::before {display: block; content: ''; width: 100%; height: 320px; border-radius: 16px; background: url(../../../assets/front/images/sub/img_ritual_info.jpg) no-repeat center;}
+.ritual-info .definition-list {display: flex; flex-direction: column; row-gap: 16px;}
+.ritual-info .definition-list .dt {font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.ritual-info .definition-list .dd {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444; letter-spacing: -0.5px;}
+.ritual-info .data-list {display: flex; justify-content: space-between; gap: 24px;}
+.ritual-info .data-list .data-item {flex: 1; border-radius: 16px; background-color: #FFF; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
+.ritual-info .data-list .data-item .data-item-wrap {display: flex; flex-direction: column; row-gap: 8px; padding: 32px 40px;}
+.ritual-info .data-list .data-item .data-item-wrap .head {font-size: 24px; font-weight: 600; line-height: 1.3; letter-spacing: -0.5px; color: #D17B47;}
+.ritual-info .data-list .data-item .data-item-wrap .body {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+
+.ritual-step .order-list {display: flex; flex-direction: column; row-gap: 48px; position: relative; counter-reset: item-counter;}
+.ritual-step .order-list .order-item {display: flex; gap: 16px; position: relative; counter-increment: item-counter;}
+.ritual-step .order-list .order-item::before {content: counter(item-counter, decimal-leading-zero); flex-shrink: 0; display: flex; justify-content: center; align-items: center; width: 32px; height: 36px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M9.37258 6.32886e-08L22.6274 0L32 9.37258V22.6274L22.6274 32H9.37258L6.3287e-08 22.6274L0 9.37258L9.37258 6.32886e-08Z' fill='%23D17B47'/%3E%3C/svg%3E"); background-position: center; background-repeat: no-repeat; background-size: 32px; font-size: 14px; font-weight: 600; line-height: 1.5; color: #fff;}
+.ritual-step .order-list .order-item:not(:last-child)::after {display: block; content: ''; position: absolute; top: 32px; left: 16px; z-index: -1; width: 1px; height: calc(100% + 32px); background-color: #F1945E;}
+.ritual-step .order-list .order-item .order-item-wrap {display: flex; gap: 24px}
+.ritual-step .order-list .order-item .order-item-wrap .title {flex-shrink: 0; display: flex; flex-wrap: wrap;    align-items: baseline; gap: 8px; max-width: 96px; font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.ritual-step .order-list .order-item .order-item-wrap .title .ch {font-size: 22px; font-weight: 400; line-height: 1.5; color: #777;}
+.ritual-step .order-list .order-item .order-item-wrap .text {align-self: center; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.ritual-step .order-list .order-item .order-item-wrap .text.exapt { align-self: flex-start; line-height: 36px;}
+
+.altar-setup .section-body::before {display: block; content: ''; width: 100%; height: 490px; background: url(../../../assets/front/images/sub/img_altar_setup.png) no-repeat 50%;}
+.altar-setup .order-list {display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px; counter-reset: item-counter;}
+.altar-setup .order-list .order-item {flex: 0 0 calc((100% - (24px * 3)) / 4); display: flex; min-height: 280px; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; background-color: #FFF; counter-increment: item-counter;}
+.altar-setup .order-list .order-item-wrap {display: flex; flex-direction: column; justify-content: space-between; padding: 24px 32px;}
+.altar-setup .definition-list {display: flex; flex-direction: column; row-gap: 8px;}
+.altar-setup .definition-list .head {display: flex; column-gap: 4px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527;}
+.altar-setup .definition-list .head:before {content: counter(item-counter, decimal-leading-zero);}
+.altar-setup .definition-list .body {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.altar-setup .ch {font-family: "Noto Serif SC", serif; font-size: 32px; font-weight: 700; line-height: 1.3; color: #D17B47; text-align: right;}
+
+.condolence-guide .altar-list {display: flex; gap: 48px; justify-content: space-between;}
+.condolence-guide .altar-list .altar-item {flex: 1; padding: 32px; box-sizing: border-box; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.15); background-color: #FBFAFA;}
+.condolence-guide .altar-list .altar-item .altar-item-wrap {display: flex; flex-direction: column; row-gap: 24px; justify-content: center; align-items: center;}
+.condolence-guide .altar-list .altar-item .altar-item-wrap::before {display: block; content: ''; width: 160px; height: 160px; background-position: center; background-size: cover; background-repeat: no-repeat;}
+.condolence-guide .altar-list .altar-item:nth-child(1) .altar-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_religion_01.png);}
+.condolence-guide .altar-list .altar-item:nth-child(2) .altar-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_religion_02.png);}
+.condolence-guide .altar-list .altar-item:nth-child(3) .altar-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_religion_03.png);}
+.condolence-guide .altar-list .head {font-size: 24px; font-weight: 600; line-height: 1.3; color: #D17B47; letter-spacing: -0.5px;}
+.condolence-guide .altar-list .order-list {display: flex; flex-direction: column; row-gap: 8px;}
+.condolence-guide .altar-list .order-item {display: inline-flex; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.condolence-guide .altar-list .order-item .num {flex-shrink: 0; width: 24px;}
+.condolence-guide .guide-list {display: flex; flex-direction: column;row-gap: 48px;}
+.condolence-guide .guide-list .guide-item .guide-wrap {display: flex; column-gap: 24px;}
+.condolence-guide .guide-list .head {flex-shrink: 0; width: 180px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527;}
+.condolence-guide .guide-list .body {width: 100%;}
+.condolence-guide .guide-list .subject {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.condolence-guide .guide-list .subject + .para {margin-top: 8px}
+.condolence-guide .guide-list .para {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.condolence-guide .guide-list .guide-table table {position: relative; width: 100%; table-layout: fixed; border-spacing: 0; border-top: 1px solid #BFBFBF;}
+.condolence-guide .guide-list .guide-table .col1 {width: 180px;}
+.condolence-guide .guide-list .guide-table th,
+.condolence-guide .guide-list .guide-table td {padding: 11px 16px; border-bottom: 1px solid #BFBFBF; color: #232527; text-align: center;}
+.condolence-guide .guide-list .guide-table th {background-color: #F7F6F5; font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.condolence-guide .guide-list .guide-table td {font-size: 17px; font-weight: 400; line-height: 1.5;}
+.condolence-guide .guide-list .guide-table + .para {margin-top: 16px;}
 
 @media (max-width: 1023px) {
     .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {padding: 64px 16px 0;}
     .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-list-ty02) {padding: 24px 0 48px;}
-    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body {padding-bottom: 32px;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body {padding: 32px 0;}
     .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func {display: none; overflow: hidden; visibility: hidden;}
+
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-list-ty02 {margin: 0 -16px 48px; padding: 0 16px;}
+
+    /* 상조의 필요성 */
+    .funeral-service .funeral-service-wrap {display: flex; flex-direction: column; row-gap: 0;}
+    .funeral-service .funeral-service-head.attr-flower {padding-top: 106px;}
+    .funeral-service .funeral-service-head.attr-flower::before {height: 82px;}
+    .funeral-service .funeral-service-head .funeral-service-summary {font-size: 15px;}
+    .funeral-service .funeral-service-head .para {font-size: 15px;}
+    .funeral-service .service-benefit {margin: 48px -16px 0; border-radius: 0; background: url(../../../assets/front/images/sub/img_funeral_service.png) no-repeat 50%/cover;}
+    .funeral-service .service-benefit .service-benefit-wrap {row-gap: 32px; padding: 40px 24px; box-sizing: border-box;}
+    .funeral-service .service-benefit .service-benefit-head {font-size: 20px;}
+    .funeral-service .service-benefit .service-benefit-head .wbr {display: block;}
+    
+    .funeral-service .service-benefit .benefit-list {column-gap: 0;}
+    .funeral-service .service-benefit .benefit-item {min-width: 240px; padding: 20px;}
+    .funeral-service .service-benefit .benefit-item .head {flex-direction: row; font-size: 20px;}
+    .funeral-service .service-benefit .benefit-item .head .em {font-size: 20px;}
+    .funeral-service .service-benefit .benefit-item .body {font-size: 15px;}
+    .funeral-service .service-benefit-content .para {font-size: 15px; word-break: keep-all;}
+    .funeral-service .service-benefit-content .para.strong {font-size: 17px;}
+    .funeral-service .service-benefit-content .para.strong .wbr {display: block;}
+    .funeral-service .service-benefit-content .para + .para {margin-top: 12px;}
+    .funeral-service .service-benefit-content .flow-step {gap: 4px; margin-top: 24px;}
+    .funeral-service .service-benefit-content .flow-step .flow-item {width: 136px; height: 136px; font-size: 15px;}
+    .funeral-service .service-benefit-content .flow-step .flow-item .body {font-size: 17px; color: #D17B47;}
+    .funeral-service .service-benefit-content .flow-step .flow-arrow {gap: 0; text-indent: -9999px;}
+    .funeral-service .service-benefit-content .flow-step .flow-arrow::before {display: none;}
+    .funeral-service .service-benefit-content .flow-step .flow-arrow::after {width: 48px; height: 16px; background-size: auto 16px;}
 
     /* 왜 예다함인가? */
     .safety-system {padding-bottom: 0;}
-    .safety-system-head .tit-01 {font-size: 22px;}
-    .safety-system-head .txt-01 {font-size: 15px;}
+    .safety-system-head .safety-system-subject {font-size: 22px;}
+    .safety-system-head .safety-system-summary {font-size: 15px;}
+    .safety-system-head .safety-system-summary .wbr {display: inline;}
     .safety-system-body .safety-system-bank {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 11px; padding: 35px 0 0;}
     .safety-system-body .safety-system-bank .tit-01 {position: static; transform: translate(0, 0); width: 210px; height: 210px; font-size: 20px;}
     .safety-system-body .safety-system-bank .tit-01::after {width: 280px; height: 280px;}
     .safety-system-body .safety-system-bank .bank-list {gap: 16px;}
     .safety-system-body .safety-system-bank .bank-list .bank-item {row-gap: 16px;}
     .safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {width: auto; min-width: 156px; padding: 0;}
-    
+
+    .licensed-director-content .img {height: 200px;}
+    .licensed-director-content .img img {width: 100%; height: 100%; object-fit: cover; object-position: center;}
+
     .payback-system-content .payback-refund {padding: 0 14px; background: url(../../../assets/front/images/sub/bg_payback_line_mo.png) no-repeat center; background-size: contain;}
     .payback-system-content .payback-refund-wrap {flex-direction: column; gap: 0; padding: 24px;}
     .payback-system-content .payback-refund-item {flex-direction: column; font-size: 20px;}
     .payback-system-content .payback-refund-item.percent {height: 100px; font-size: 48px;}
     .payback-items  .payback-head  .wbr{display: inline;}
-    .payback-items  .payback-head .tit-01 {font-size: 20px; }
+    .payback-items  .payback-head .tit-01 {font-size: 20px;}
     .payback-items  .payback-head .txt-01 {font-size: 15px;}
     .payback-items  .payback-items-list {justify-content: center; row-gap: 16px; column-gap: 24px; flex-wrap: wrap;}
     .payback-items  .payback-items-item {padding: 0;}
@@ -320,11 +638,80 @@
     .protection-system .protection-system-items {flex-direction: column; gap: 32px;}
     .protection-system .protection-system-items .item {width: 100%; height: auto; padding: 20px 0; border-radius: 65px;}
     .protection-system .protection-system-items .item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc((-24px /2) - (32px / 2)); left: calc(50% - (24px / 2)); width: 24px; height: 24px; background-size: cover;}
+
+    /* 서비스 이용절차 */
+    .funeral-service .funeral-service-head .funeral-service-subject {font-size: 24px;}
+    .funeral-service .process-list {display: flex; flex-direction: column; row-gap: 40px; margin-top: 32px;}
+    .funeral-service .process-item {padding: 20px;}
+    .funeral-service .process-item:not(:first-child)::before {top: calc(-20px - 12px);}
+    .funeral-service .process-wrap {position: relative; padding-left: 0;}
+    .funeral-service .process-wrap::before {display: none;}
+    .funeral-service .process-subject {display: flex; column-gap: 12px; font-size: 20px; word-break: keep-all;}
+    .funeral-service .process-subject .num {position: static; font-size: 20px;}
+    .funeral-service .process-subject .wbr {display: inline;}
+    .funeral-service .process-summary {flex-direction: column; column-gap: 0; row-gap: 24px;}
+    .funeral-service .process-summary .para {font-size: 17px;}
+    .funeral-service .process-summary .wbr {display: inline;}
+    .funeral-service .process-summary .button-area {width: 100%; justify-content: center;}
+    .funeral-service .process-summary .button-area .btn-normal::after {width: 12px; height: 12px;}
+    .funeral-service .process-summary .button-area .btn-normal .btn-text {font-size: 13px; line-height: 32px;}
+
+    /* 제례 정보 */
+    .ritual-contents {display: flex; flex-direction: column; row-gap: 72px; padding: 32px 0 48px;}
+    .ritual-contents .section {padding-top: 0;}
+    .ritual-contents .section .section-wrap {row-gap: 16px;}
+    .ritual-contents .section .section-wrap .section-head .section-subject {font-size: 26px;}
+    .ritual-contents .section .section-wrap .section-body {row-gap: 16px;}
+    .ritual-info .section-body::before {height: auto; background-size: cover; aspect-ratio: 41 / 17;}
+    .ritual-info .definition-list {row-gap: 12px;}
+    .ritual-info .definition-list .dt {font-size: 20px;}
+    .ritual-info .definition-list .dd {font-size: 15px;}
+    .ritual-info .data-list {flex-direction: column; gap: 16px;}
+    .ritual-info .data-list .data-item .data-item-wrap {flex-direction: row; column-gap: 16px; padding: 16px 24px;}
+    .ritual-info .data-list .data-item .data-item-wrap .head {flex-shrink: 0; font-size: 20px;}
+    .ritual-info .data-list .data-item .data-item-wrap .body {font-size: 15px;}
+
+    .ritual-step .order-list {row-gap: 24px;}
+    .ritual-step .order-list .order-item::before {width: 24px; height: 30px; background-size: 24px; font-size: 10.5px;}
+    .ritual-step .order-list .order-item:not(:last-child)::after {top: 24px; left: 12px; height: calc(100% + 24px);}
+    .ritual-step .order-list .order-item .order-item-wrap {flex-direction: column; gap: 8px;}
+    .ritual-step .order-list .order-item .order-item-wrap .title {gap: 4px; max-width: 100%; font-size: 20px;}
+    .ritual-step .order-list .order-item .order-item-wrap .title .ch {font-size: 17px;}
+    .ritual-step .order-list .order-item .order-item-wrap .text {font-size: 15px;}
+    .ritual-step .order-list .order-item .order-item-wrap .text.exapt {align-self: center; line-height: 1.5;}
+
+    .altar-setup .section-body::before {height: auto; aspect-ratio: 293/245; background-size: cover;}
+    .altar-setup .order-list {gap: 16px;}
+    .altar-setup .order-list .order-item {flex: 1 1 100%; min-height: auto;}
+    .altar-setup .order-list .order-item-wrap {flex: 1 1 100%; row-gap: 4px; padding: 20px;}
+    .altar-setup .definition-list .head {font-size: 20px;}
+    .altar-setup .definition-list .body {font-size: 15px;}
+    .altar-setup .ch {font-size: 24px;}
+
+    .ritual-contents .section.condolence-guide  .section-wrap .section-body {row-gap: 32px;}
+    .condolence-guide .altar-list {flex-direction: column; gap: 16px;}
+    .condolence-guide .altar-list .altar-item {flex: 1 1 100%; padding: 20px;}
+    .condolence-guide .altar-list .altar-item .altar-item-wrap {row-gap: 16px;}
+    .condolence-guide .altar-list .altar-item .altar-item-wrap::before {width: 120px; height: 120px; }
+    .condolence-guide .altar-list .head {font-size: 20px;}
+    .condolence-guide .altar-list .order-item {font-size: 15px;}
+    .condolence-guide .guide-list {display: flex; flex-direction: column; row-gap: 32px;}
+    .condolence-guide .guide-list .guide-item .guide-wrap {row-gap: 12px; flex-direction: column;}
+    
+    .condolence-guide .guide-list .head {flex-shrink: 0; width: 180px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527;}
+    .condolence-guide .guide-list .body {width: 100%;}
+    .condolence-guide .guide-list .subject {font-size: 15px;}
+    .condolence-guide .guide-list .subject + .para {margin-top: 4px}
+    .condolence-guide .guide-list .para {font-size: 15px;}
+
+    .condolence-guide .guide-list .guide-table .col1 {width: auto;}
+    .condolence-guide .guide-list .guide-table th {font-size: 15px;}
+    .condolence-guide .guide-list .guide-table td {font-size: 15px;}
+    .condolence-guide .guide-list .guide-table + .para {margin-top: 8px;}
+    
 }
 
 @media (max-width: 480px) {
-    /* 왜 예다함인가? */
-     .safety-system-head .wbr {display: inline;}
 }
 
 
@@ -340,6 +727,42 @@
 .content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal {padding: 0 40px;}
 .content-popup .popup-wrap .popup-footer .button-area .btn-normal .btn-name {min-width: 50px;}
 .content-popup .popup-wrap .popup-footer .button-area .btn-primary .btn-name {min-width: 80px;}
+
+
+/********************************************************************************************************************************
+
+ * 퀵메뉴
+ * 기존 수정
+
+********************************************************************************************************************************/
+.quick-menu {position: fixed; top: auto; right: 40px; bottom: 100px; left: auto; z-index: 10; transition: all 0.4s ease;}
+.quick-menu.show {bottom: 136px;}
+.quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center;}
+.quick-menu .quick-toggle {display: none; pointer-events: none;}
+.quick-menu .quick-list {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; transition: all 0.4s ease;}
+.quick-menu .quick-list .quick-text {display: flex; flex-direction: column; align-items: center; justify-content: center; row-gap: 8px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #AF5B27;}
+.quick-menu .quick-list .quick-text::before {display: block; content: ''; flex-shrink: 0; width: 60px; height: 60px; border-radius: 30px; background-color: #D17B47; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); aspect-ratio: 1/1; background-size: 32px auto; background-repeat: no-repeat; background-position: center;}
+.quick-menu .quick-list .quick-item.join .quick-text::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M28 23.9997L26.6665 25.4584C25.9593 26.2318 25.0002 26.6663 24.0002 26.6663C23.0001 26.6663 22.0411 26.2318 21.3338 25.4584C20.6256 24.6865 19.6666 24.2531 18.6669 24.2531C17.6672 24.2531 16.7082 24.6865 16 25.4584M4 26.6663H6.23272C6.88497 26.6663 7.21109 26.6663 7.51799 26.5926C7.79008 26.5273 8.0502 26.4196 8.2888 26.2734C8.55791 26.1084 8.78851 25.8778 9.24971 25.4166L26 8.66632C27.1046 7.56175 27.1046 5.77089 26 4.66632C24.8955 3.56175 23.1046 3.56175 22 4.66632L5.24968 21.4166C4.78847 21.8778 4.55787 22.1084 4.39296 22.3776C4.24675 22.6161 4.13901 22.8763 4.07368 23.1484C4 23.4553 4 23.7814 4 24.4336V26.6663Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.quick-menu .quick-list .quick-item.consult .quick-text::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M28 24V16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16V24M7.33333 28C5.49238 28 4 26.5076 4 24.6667V22C4 20.1591 5.49238 18.6667 7.33333 18.6667C9.17428 18.6667 10.6667 20.1591 10.6667 22V24.6667C10.6667 26.5076 9.17428 28 7.33333 28ZM24.6667 28C22.8257 28 21.3333 26.5076 21.3333 24.6667V22C21.3333 20.1591 22.8257 18.6667 24.6667 18.6667C26.5076 18.6667 28 20.1591 28 22V24.6667C28 26.5076 26.5076 28 24.6667 28Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.quick-menu .btn-to-top {display: flex; justify-content: center; align-items: center; width: 60px; height: 60px; margin-top: 16px; border-radius: 50%; border: 1px solid rgba(19, 21, 23, 0.15); background: #FFF; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); opacity: 0; pointer-events: none; transform: translateY(16px); transition: all 0.4s ease;} 
+.quick-menu .btn-to-top .btn-text {display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 15px; font-weight: 600; line-height: 1.5; color: #232527;}
+.quick-menu .btn-to-top .btn-text::before {display: block; content: ''; width: 16px; height: 16px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.1555 10.8963C12.9365 11.0933 12.5993 11.0756 12.4023 10.8566L7.99869 6.63045L3.59512 10.8566C3.39807 11.0756 3.06085 11.0933 2.84191 10.8963C2.62297 10.6992 2.60523 10.362 2.80227 10.1431L7.60227 5.47642C7.70341 5.36404 7.8475 5.29986 7.99869 5.29986C8.14989 5.29986 8.29397 5.36404 8.39512 5.47642L13.1951 10.1431C13.3922 10.362 13.3744 10.6992 13.1555 10.8963Z' fill='%23232527' stroke='%23232527' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.quick-menu.show .btn-to-top {opacity: 1; transform: translateY(0); pointer-events: auto;}
+
+@media (max-width: 1023px) {
+    .quick-menu {right: 10px; bottom: 80px;}
+    .quick-menu.show {bottom: 100px;}
+    .quick-menu .quick-wrap {align-items: flex-end;}
+    .quick-menu .quick-list {margin-bottom: 8px; row-gap: 8px;}
+    .quick-menu .quick-list {gap: 8px; display: none; opacity: 0; transition: all 0.3s; pointer-events: none;}
+    .quick-menu .quick-list .quick-item {padding: 14px 20px; background-color: #D17B47; border-radius: 60px;}
+    .quick-menu .quick-list .quick-text {flex-direction: row; column-gap: 12px; color: #fff;}
+    .quick-menu .quick-list .quick-text::before {width: 32px; height: 32px; box-shadow: none;}
+    .quick-menu.active .quick-list {display: flex; opacity: 1; pointer-events: auto;}
+    .quick-menu .quick-toggle {display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #D17B47; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); cursor: pointer; transition: all 0.3s ease; pointer-events: auto;}
+    .quick-menu .quick-toggle .icon-plus {transition: transform 0.4s ease; transform-origin: center;}
+    .quick-menu.active .quick-toggle {transform: rotate(45deg);}
+}
 
 
 /********************************************************************************************************************************

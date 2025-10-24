@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>제례 정보 - 장례정보 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+</head>
+<body> 
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container ty-wide" id="container">
+			<div id="page" class="page-info">
+				<div class="page-head-wrap">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">제례 정보</h2>
+						</div>
+					</div>
+				</div>
+				<div class="page-body-wrap no-bg">
+					<div class="tab-wrap">
+						<!-- tab -->
+						<div class="tab-display style-c tab-fixed">
+							<div class="tab-inner-bx">
+								<ul class="tab-list">
+									<li class="tab-item current"><a href="#" class="tab-text btn-target-scroll" data-target="#ritualInfo">제례란?</a></li>
+									<li class="tab-item"><a href="#" class="tab-text btn-target-scroll" data-target="#ritualStep">제사절차</a></li>
+									<li class="tab-item"><a href="#" class="tab-text btn-target-scroll" data-target="#altarSetup">제사상 차리는 법</a></li>
+									<li class="tab-item"><a href="#" class="tab-text btn-target-scroll" data-target="#condolenceGuide" >조문 예절</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- //tab -->
+					</div>
+
+                    <div class="ritual-contents">
+                        <!-- 제례란? -->
+                        <div class="section ritual-info" id="ritualInfo">
+                            <div class="section-wrap">
+                                <div class="section-head">
+                                    <h4 class="section-subject">제례란?</h4>
+                                </div>
+                                <div class="section-body">
+                                    <dl class="definition-list">
+                                        <dt class="dt">제례의 의미</dt>
+                                        <dd class="dd">제례는 조상의 기일에 후손들이 정설을 다해 음식을 마련하고 의식을 행함으로써, 조상의 삶과 정신을 기리고 그 유산을 계승하며, 인간과 조상, 나아가 하늘과의 조하를 추구하는 유교적 예의식입니다.</dd>
+                                    </dl>
+                                    <ul class="data-list">
+                                        <li class="data-item">
+                                            <div class="data-item-wrap">
+                                                <p class="head">제 祭</p>
+                                                <p class="body">조상이나 신명에게 제물을 올리며 감사와 존경을 실천하는 의식입니다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="data-item">
+                                            <div class="data-item-wrap">
+                                                <p class="head">재 齋</p>
+                                                <p class="body">제사를 올리기 전에 몸과 마음을 깨끗이 하는 준비 의식입니다</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //제례란? -->
+
+                        <!-- 제사절차 -->
+                        <div class="section ritual-step" id="ritualStep">
+                            <div class="section-wrap">
+                                <div class="section-head">
+                                    <h4 class="section-subject">제사절차</h4>
+                                </div>
+                                <div class="section-body">
+                                    <ol class="order-list">
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">영신</span><span class="ch">迎神</span></p>
+                                                <p class="text">대문을 열어 놓고 병풍을 치고,제상에 제수를 진설하고 지방을 모시고 제사 준비를 마친다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">강신</span><span class="ch">降神</span></p>
+                                                <p class="text">영혼의 강림을 청하는 의식이다.<br /> 제주가 신위 앞으로 나아가 향을 올리고, 잔에 술을 조금 따라 두 손으로 향불위에서 세 번 돌린 다음, 모사(茅沙) 그릇에 조금씩 세 번 붓고 두 번 절한다.<br /> (향을 피우는 것은 향을 피워 천상에 계시는 조상의 혼령을 청하여 모시는 상징적인 행위이고, 또 모사에 술을 붓는 것은 향기로운 술을 땅에 부어 지하에 계실 조상의 신을 모시는 절차이다)</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">참신</span><span class="ch">參神</span></p>
+                                                <p class="text">신위(神位)에 인사하는 절차로서 모든 참사자가 다같이 두 번 절하고, 주부 이하 여자는 네 번 절한다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">진찬</span><span class="ch">進饌</span></p>
+                                                <p class="text">식어서는 안되는 진수를 지금 올리는 절차이다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">초헌</span><span class="ch">初獻</span></p>
+                                                <p class="text">제주(祭主:큰아들)가 첫 번째 잔을 올리는 의식이다.<br /> 잔을 올린 뒤에 메 그릇과 탕 그릇 반개를 열고 물러난다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">독축</span><span class="ch">讀祝</span></p>
+                                                <p class="text">초헌이 끝나고 참사자가 모두 엎드려 있으면 축관이 축문을 읽는다.<br />축을 다 읽고 나서 참사자는 잠시 묵념을 하던지, 곡을 잠시하고 나서 모두 일어나서 두 번 절한다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">아헌</span><span class="ch">亞獻</span></p>
+                                                <p class="text">두 번째 잔을 올리는 의식으로 원래는 주부(첫째 며느리)가 올린다.<br /> 주부가 아니면 다음가는 근친자가 올리고, 두 번 절하고 주부(여자)는 네 번 절한다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">종헌</span><span class="ch">終獻</span></p>
+                                                <p class="text">세 번째 마지막 잔을 올리는 의식이다.<br /> 아헌자의 다음가는 근친자가 잔을 올리는데 잔을 7부쯤 부어서 올린다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">첨작</span><span class="ch">添酌</span></p>
+                                                <p class="text"><span class="wbr">종헌이 끝나고 조금 있다가 제주가 다시 신위 앞으로 나아가 꿇어앉으면, 집사는 술 주전자를 들어</span> <span class="wbr">종헌 때 7부쯤 따라 올렸던 술잔에 세 번 첨작하여 술잔을 가득 채운다.</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">삽시정저</span><span class="ch">揷匙正箸</span></p>
+                                                <p class="text">첨작이 끝나면 숟가락을 메 그릇 중앙에 꽂는다.<br /> 숟가락 바닥(안쪽)이 동쪽으로 가게 꽂는다.삽시정저가 끝나면 다시 재배한다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">유식</span><span class="ch">侑食</span></p>
+                                                <p class="text">첨작과 삽시정저 두절차를 통 털어 유식이라 하는데, 이는 진지를 많이 드시라고 권하는 의식이다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">합문</span><span class="ch">闔門</span></p>
+                                                <p class="text">조상님이 마음 놓고 잡수시도록 자리를 비우는 절차이다.<br /> <span class="wbr">참사자 모두가 밖에 나가 읍한 자세로 잠시 있다가, 문을 열고 들어오던지 촛불을 잠시 끄고</span> <span class="wbr">그 자리에 엎드려 있다가 다시 촛불을 켠다.</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">계문</span><span class="ch">啓門</span></p>
+                                                <p class="text">닫았던 문을 여는 절차이다 헛기침을 세 번하고, 문을 열고 참사자가 모두 들어간다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">헌다</span><span class="ch">獻茶</span></p>
+                                                <p class="text">진숙수(進熟水)라고도 한다.<br /> 갱을 내리고 숭늉을 올린 뒤에 메 세술을 떠서 물에 말아 놓고, 저를 고른다.<br /> 참사자는 모두 모리를 숙이고 잠시 동안 있다가 고개를 든다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">철시복반</span><span class="ch">撤匙覆飯</span></p>
+                                                <p class="text exapt">숭늉그릇에 놓인 수저를 시접에 거두고, 메 그릇의 뚜껑을 덮는다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">사신</span><span class="ch">辭神</span></p>
+                                                <p class="text">고인의 영혼을 전송하는 절차로 참사자가 신위 앞에 두 번 절한 뒤, 지방과 축문을 불사른다.<br /> 신주(神主)일 때는 축문만 불태우고, 사당으로 다시 모신다. 이로써 제사를 올리는 의식 절차는 끝난다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">철상</span><span class="ch">撤床</span></p>
+                                                <p class="text">모든 제수를 물리는 것으로 제수(祭需)는 뒤에서부터 물린다.</p>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <p class="title"><span class="em">음복</span><span class="ch">飮福</span></p>
+                                                <p class="text">음복이란 조상님께서 물려주신 복된 음식이라 하여 제사가 끝나면, 현관 이하 참사자와 가족들이 모여서 나누어 먹는다.</p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //제사절차 -->
+
+                        <!-- 제사상 차리는 법 -->
+                        <div class="section altar-setup" id="altarSetup">
+                            <div class="section-wrap">
+                                <div class="section-head">
+                                    <h4 class="section-subject">제사상 차리는 법</h4>
+                                </div>
+                                <div class="section-body">
+                                    <ol class="order-list">
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">기준위치</dt>
+                                                    <dd class="body">제사상차림의 기준위치는 지방(신위)이 있는 쪽이 북쪽이다.<br /> 신위의 오른쪽은 동쪽, 신위의 왼쪽은 서쪽이다.</dd>
+                                                </dl>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">남좌여우</dt>
+                                                    <dd class="body">남자조상의 신위, 밥, 국, 술잔은, 왼쪽에 놓고 여자조상은 오른쪽에 놓는다.<br /> 남자조상은 서쪽(왼쪽), 여자조상은 동쪽(오른쪽)에 위치한다.</dd>
+                                                </dl>
+                                                <span class="ch">男左女右</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">합설</dt>
+                                                    <dd class="body">밥 국 술잔은 따로 놓고 나머지 제수는 공통으로 한다.<br /> 조상의 제사는 배우자가 있을 경우 함께 모신다.</dd>
+                                                </dl>
+                                                <span class="ch">合設</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">반서갱동</dt>
+                                                    <dd class="body">산 사람에게 올리는 상차림과 반대이다.<br /> 수저는 중앙에 놓는다. 밥은 서쪽(왼쪽)국은 동쪽(오른쪽)에 위치한다.</dd>
+                                                </dl>
+                                                <span class="ch">飯西羹東</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">어동육서</dt>
+                                                    <dd class="body">고기는 서쪽(왼쪽), 생선은 동쪽(오른쪽)에 위치한다.</dd>
+                                                </dl>
+                                                <span class="ch">魚東肉西</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">두동미서</dt>
+                                                    <dd class="body">꼬리는 서쪽(왼쪽), 머리는 동쪽(오른쪽)에 위치한다.</dd>
+                                                </dl>
+                                                <span class="ch">頭東尾西</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">적전중앙</dt>
+                                                    <dd class="body">적은 옛날에는 술을 올릴 때마다 즉석에서 구워 올리던 제수의 중심 음식이었으나, 지금은 다른 제수와 마찬가지로 미리 구워 제상의 한가운데 놓는다.</dd>
+                                                </dl>
+                                                <span class="ch">炙奠中央</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">탕은 3열에 위치</dt>
+                                                    <dd class="body">신위를 기준으로 1열은 밥과, 국, 2열은 적과 전, 3열은 탕, 4열은<br /> 포와 나물, 5열은 과일 및 과자류 순으로 놓는다.</dd>
+                                                </dl>
+                                                <span class="ch">男左女右</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">생동숙서</dt>
+                                                    <dd class="body">나물은 서쪽(왼쪽), 김치는 동쪽(오른쪽)에 위치한다.</dd>
+                                                </dl>
+                                                <span class="ch">生東熟西</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">좌포우혜</dt>
+                                                    <dd class="body">포는 서쪽(왼쪽), 식혜는 동쪽(오른쪽)에 위치한다.</dd>
+                                                </dl>
+                                                <span class="ch">左脯右醯</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">조율시이</dt>
+                                                    <dd class="body">보통 진열의 왼쪽에서부터 대추, 밤, 감, 배의 순서로 놓고 있다.</dd>
+                                                </dl>
+                                                <span class="ch">棗栗枾梨</span>
+                                            </div>
+                                        </li>
+                                        <li class="order-item">
+                                            <div class="order-item-wrap">
+                                                <dl class="definition-list">
+                                                    <dt class="head">홍동백서</dt>
+                                                    <dd class="body">예서에 따라 붉은 과일은 동쪽 흰 과일은 서쪽에 놓고 있다.</dd>
+                                                </dl>
+                                                <span class="ch">紅東白西</span>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //제사상 차리는 법 -->
+
+                        <!-- 조문 예절 -->
+                        <div class="section condolence-guide" id="condolenceGuide">
+                            <div class="section-wrap">
+                                <div class="section-head">
+                                    <h4 class="section-subject">조문 예절</h4>
+                                </div>
+                                <div class="section-body">
+                                    <ul class="altar-list">
+                                        <li class="altar-item">
+                                            <div class="altar-item-wrap">
+                                                <p class="head">기독교</p>
+                                                <div class="body">
+                                                    <ol class="order-list">
+                                                        <li class="order-item"><span class="num">①</span>분향소에 들어가서 상주와 가벼운 목례를 하고 준비된 국화꽃을 들고 영정 앞에 헌화한다.</li>
+                                                        <li class="order-item"><span class="num">②</span>뒤로 한걸음 물러서서 15도 각도로 고개 숙여 잠시 묵념을 드린 후 상주와 목례로 인사를 나눈 뒤 상중 위로의 말씀을 드린다.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="altar-item">
+                                            <div class="altar-item-wrap">
+                                                <p class="head">천주교</p>
+                                                <div class="body">
+                                                <ol class="order-list">
+                                                        <li class="order-item"><span class="num">①</span>기독교 조문예절과 같다. 그러나, 향이 준비되어 있다면 국화꽃이 아닌 분향으로 조문이 가능하다.</li>
+                                                        <li class="order-item"><span class="num">②</span>준비된 향을 잡고서 불을 붙인 다음 향을 좌우로 흔들어 불꽃을 끈다(입으로 불어서 끄지 않는다.)</li>
+                                                        <li class="order-item"><span class="num">➂</span>한쪽 무릎을 꿇고 향로에 향을 정중히 꽂고 일어나 한 걸음 뒤로 물러서 절을 올린다.</li>
+                                                        <li class="order-item"><span class="num">➃</span>절을 올린 후에 상주와 맞절을 하고 상중 위로의 말씀을 드린다.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="altar-item">
+                                            <div class="altar-item-wrap">
+                                                <p class="head">불교</p>
+                                                <div class="body">
+                                                    <ol class="order-list">
+                                                        <li class="order-item"><span class="num">①</span>분향소에 들어서서 상주와 가벼운 목례를 한 다음 영정 앞에 무릎을 꿇고 앉아 준비된 향을 집어서 불을 붙인다.</li>
+                                                        <li class="order-item"><span class="num">②</span>향을 좌우로 흔들어 불꽃을 끄고(입으로 불어서 끄지 않는다.) 향로에 향을 정중하게 꽂고 일어나 한걸음 뒤로 물러나 절을 올린다.</li>
+                                                        <li class="order-item"><span class="num">➂</span>절을 올린 후에 상주와 맞절을 하고 상중 위로의 말씀을 드린다.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="guide-list">
+                                        <div class="guide-item">
+                                            <div class="guide-wrap">
+                                                <p class="head">공수법(흉사공수법)</p>
+                                                <div class="body">
+                                                    <div class="guide-table">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col class="col1" />
+                                                                <col style="width: auto;" />
+                                                                <col style="width: auto;" />
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th>남자</th>
+                                                                    <th>여자</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>장례식장에서</th>
+                                                                    <td>오른손이 위로</td>
+                                                                    <td>왼손이 위로</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>평상시</th>
+                                                                    <td>왼손이 위로</td>
+                                                                    <td>오른손이 위로</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p class="para">장례나 제사에서는 음양陰陽의 원리에 따라 남자는 왼쪽(陽, 양)에, 여자는 오른쪽(陰, 음)에 자리합니다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="guide-item">
+                                            <div class="guide-wrap">
+                                                <p class="head">절하는 법</p>
+                                                <div class="body">
+                                                    <p class="subject">조문 시 두번 절을 해야 한다.</p>
+                                                    <p class="para">산 사람에게 한번, 죽은 사람에게는 두번 절을 해야 하므로, 조문 시 두번 절을 해야 한다.<br /> <span class="wbr">음양陰陽의 원리에 따르면, 남자는 양, 여자는 음의 기운을 가지고 있어 양의 수 1과 음의 수 2의 2배수</span> <span class="wbr">즉, 남자는 재배(두번), 여자는 사배(네번)을 해야 마땅하나, 현대에는 남녀공통 두번(재배)로 행하고 있다.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //조문 예절 -->
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 페이지 평가 -->
+		<div id="estimate" class="estimate-wrap"></div>
+		<!-- //페이지 평가 -->
+		 
+		<!-- 푸터 영역 -->
+		<footer id="footer" class="mob-none"></footer>
+		<!-- //푸터 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+	</div>
+</body>
+</html>
