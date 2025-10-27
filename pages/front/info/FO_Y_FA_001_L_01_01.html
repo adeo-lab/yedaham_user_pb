@@ -7,20 +7,30 @@
 	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>상조의 필요성 - 예다함 상조 서비스 - 장례정보 - 예다함</title>
-
+	
 	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
 	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
 	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
 	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
-	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.ltd.css">
 
 	<script src="../../../assets/front/js/ui.include.js"></script>
 	<script src="../../../assets/front/js/ui.common.js"></script>
 	<script src="../../../assets/front/js/awesomplete.min.js"></script>
 	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
 	<script src="../../../assets/front/js/page.js"></script>
+
+	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
 </head>
-<body>
+<body class="home">
 	<!-- skip -->
 	<ul id="skipnav">
 		<li><a href="#container">본문 바로가기</a></li>
@@ -64,13 +74,24 @@
 	<div class="content-popup" data-popup="contentFuneralService">
 		<div class="popup-wrap large">
 			<div class="popup-header">
-				<div class="popup-dataset">
-                    <ul class="tab-list-ty01">
-                        <li class="tab-item active"><a href="#" class="tab-text">상조의 필요성</a></li>
-                        <li class="tab-item"><a href="#" class="tab-text">왜 예다함인가?</a></li>
-                        <li class="tab-item"><a href="#" class="tab-text">서비스 이용절차</a></li>
-                    </ul>
-                </div>
+				<!-- tab -->
+				<div class="tab-display style-c">
+					<div class="tab-inner-bx swiper">
+						<ul class="tab-list swiper-wrapper">
+							<li class="tab-item swiper-slide current"><a href="#" class="tab-text">상조의 필요성</a></li>
+							<li class="tab-item swiper-slide"><a href="#" class="tab-text">왜 예다함 인가?</a></li>
+							<li class="tab-item swiper-slide"><a href="#" class="tab-text">서비스 이용절차</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //tab -->
+				<script>
+					var swiper = new Swiper(".tab-display .tab-inner-bx", {
+						slidesPerView: "auto",
+						spaceBetween: 0,
+						freeMode: true,
+					});
+				</script>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
 			<div class="popup-body">

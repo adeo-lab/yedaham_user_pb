@@ -28,7 +28,7 @@ const headerTemplate = function () {
 				<div class="btn-header-prev">
 					<a href="#">이전</a>
 				</div>
-				<h2>공지사항</h2>
+				<h2>예다함 뉴스</h2>
 			</div>
 			<!-- //모바일 이전 버튼 / 타이틀 -->
 			<!-- gnb -->
@@ -160,7 +160,7 @@ const headerTemplate = function () {
 						<li class="gnb-item-l" id="mob_m5_l">
 							<a href="#" class="gnb-text-l">고객지원​</a>
 							<ul class="lnb-list-l">
-								<li class="lnb-item-l now"><a href="#" class="lnb-text-l">공지사항</a></li>
+								<li class="lnb-item-l now"><a href="#" class="lnb-text-l">예다함 뉴스</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">자주 하는 질문</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">고객 칭찬 후기</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">1:1 문의</a></li>
