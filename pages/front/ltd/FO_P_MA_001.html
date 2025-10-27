@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The-K 교직원나라 가입상담신청">
+    <title>The-K 교직원나라 가입상담신청</title>
+    <link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
+    <link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.ltd.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="landing-wrap">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <h1 class="logo"><img src="../../../assets/front/images/ltd/logo_landing.svg" alt="The-K 교직원나라 상단 로고" class="banner-logo"></h1>
+                </div>
+            </header>
+
+            <!-- 상단 배너 영역 -->
+            <section class="top-banner">
+                <div class="banner-container">
+                    <img src="../../../assets/front/images/ltd/img_landing_bnr01_pc.jpg" alt="The-K 교직원나라 상단 배너" class="banner-image">
+                </div>
+            </section>
+
+            <!-- 중간 신청 영역 -->
+            <section class="consulting-section" id="consulting">
+                <div class="container">
+                    <div class="consulting-box">
+                        <!-- 왼쪽: 제목 및 운영시간 -->
+                        <div class="consulting-info">
+                            <h2 class="consulting-title">The-K 교직원나라<br>가입상담신청</h2>
+                            
+                            <div class="operation-hours">
+                                <div class="hours-content">
+                                    <h3>상담운영시간</h3>
+                                    <p class="hours-main">평일 09:00 ~ 18:00</p>
+                                    <p class="hours-sub">점심시간 13:00 ~ 14:00</p>
+                                    <p class="hours-closed">주말/공휴일 휴무</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 오른쪽: 신청 폼 -->
+                        <div class="consulting-form">
+                            <div class="consulting-form-wrap">
+                                <div class="form-item">
+                                    <!-- 이름 -->
+                                    <div class="form-group">
+                                        <label for="name">
+                                            이름 <span class="required">*</span>
+                                        </label>
+                                        <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요." required >
+                                    </div>
+
+                                    <!-- 휴대폰번호 -->
+                                    <div class="form-group">
+                                        <label for="phone">
+                                            휴대폰번호 <span class="required">*</span>
+                                        </label>
+                                        <input type="tel" id="phone" name="phone" placeholder="숫자만 입력해 주세요." required >
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <!-- 상담희망시간 -->
+                                    <div class="form-group">
+                                        <label>
+                                            상담희망시간 <span class="required">*</span>
+                                        </label>
+                                        <div class="time-slots">
+                                            <!-- 첫 번째 줄 -->
+                                            <div class="time-row">
+                                                <label class="time-slot disabled">
+                                                    <input type="radio" name="time" value="상시" disabled>
+                                                    <span>상시<br>(아무때나)</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오전 9시~10시" required>
+                                                    <span>오전<br>9시~10시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오전 10시~11시">
+                                                    <span>오전<br>10시~11시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오전 11시~12시">
+                                                    <span>오전<br>11시~12시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오후 12시~13시">
+                                                    <span>오후<br>12시~13시</span>
+                                                </label>
+                                            </div>
+                                            
+                                            <!-- 두 번째 줄 -->
+                                            <div class="time-row">
+                                                <label class="time-slot disabled">
+                                                    <input type="radio" name="time" value="점심시간" disabled>
+                                                    <span>점심시간<br>13시~14시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오후 14시~15시">
+                                                    <span>오후<br>14시~15시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오후 15시~16시">
+                                                    <span>오후<br>15시~16시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오후 16시~17시">
+                                                    <span>오후<br>16시~17시</span>
+                                                </label>
+                                                <label class="time-slot">
+                                                    <input type="radio" name="time" value="오후 17시~18시">
+                                                    <span>오후<br>17시~18시</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 개인정보 동의 -->
+                                <div class="consent-group">
+                                    <h3 class="consent-title">개인정보의 수집 이용 제공에 관한 필수적 동의</h3>
+                                    <div class="consent-list">
+                                        <div class="consent-item">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="consent1" required checked>
+                                                <span>[필수] 개인정보 수집 및 이용에 동의합니다.</span>
+                                            </label>
+                                            <a href="#" class="detail-link">자세히 보기</a>
+                                        </div>
+                                        
+                                        <div class="consent-item">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="consent2">
+                                                <span>개인정보 위탁 안내</span>
+                                            </label>
+                                            <a href="#" class="detail-link">자세히 보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- reCAPTCHA -->
+                                <div class="recaptcha-container">
+                                    <img src="../../../assets/front/images/ltd/img_recaptcha.jpg" alt="reCAPTCHA">
+                                </div>
+                            </div>
+                            <!-- 버튼 -->
+                            <div class="form-buttons">
+                                <button type="button" class="btn-cancel">취소</button>
+                                <button type="submit" class="btn-submit">상담 신청하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 하단 배너 영역 -->
+            <section class="bottom-banner">
+                <div class="banner-container">
+                    <img src="../../../assets/front/images/ltd/img_landing_bnr02_pc.jpg" alt="The-K 교직원나라 하단 배너" class="banner-image">
+                </div>
+            </section>
+            </div>
+    </div>
+</body>
+</html>

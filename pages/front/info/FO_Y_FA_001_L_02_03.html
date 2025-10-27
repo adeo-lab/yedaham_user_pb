@@ -7,20 +7,30 @@
 	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>왜 예다함인가? - 예다함 상조 서비스 - 장례정보 - 예다함</title>
-
+	
 	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
 	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
 	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
 	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
-	<link rel="stylesheet" href="../../../assets/front/css/common.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.ltd.css">
 
 	<script src="../../../assets/front/js/ui.include.js"></script>
 	<script src="../../../assets/front/js/ui.common.js"></script>
 	<script src="../../../assets/front/js/awesomplete.min.js"></script>
 	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
 	<script src="../../../assets/front/js/page.js"></script>
+
+	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
 </head>
-<body>
+<body class="home">
 	<!-- skip -->
 	<ul id="skipnav">
 		<li><a href="#container">본문 바로가기</a></li>
@@ -64,24 +74,73 @@
 	<div class="content-popup" data-popup="contentFuneralService">
 		<div class="popup-wrap large">
 			<div class="popup-header">
-				<div class="popup-dataset">
-                    <ul class="tab-list-ty01">
-                        <li class="tab-item"><a href="#" class="tab-text">상조의 필요성</a></li>
-                        <li class="tab-item active"><a href="#" class="tab-text">왜 예다함인가?</a></li>
-                        <li class="tab-item"><a href="#" class="tab-text">서비스 이용절차</a></li>
-                    </ul>
-                </div>
+				<!-- tab -->
+				<div class="tab-display style-c">
+					<div class="tab-inner-bx swiper">
+						<ul class="tab-list swiper-wrapper">
+							<li class="tab-item swiper-slide"><a href="#" class="tab-text">상조의 필요성</a></li>
+							<li class="tab-item swiper-slide current"><a href="#" class="tab-text">왜 예다함 인가?</a></li>
+							<li class="tab-item swiper-slide"><a href="#" class="tab-text">서비스 이용절차</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //tab -->
+				<script>
+					var swiper = new Swiper(".tab-display .tab-inner-bx", {
+						slidesPerView: "auto",
+						spaceBetween: 0,
+						freeMode: true,
+					});
+				</script>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
 			<div class="popup-body">
 				<div class="popup-contents">
-                    <ul class="tab-list-ty02">
-                        <li class="tab-item"><a href="#" class="tab-text">상조납입금 안전책임 시스템</a></li>
-                        <li class="tab-item"><a href="#" class="tab-text">국가자격증 보유 장례지도사</a></li>
-                        <li class="tab-item active"><a href="#" class="tab-text">전국 직영 운영 시스템</a></li>
-                        <li class="tab-item"><a href="#" class="tab-text">100% Payback 및 환불 시스템</a></li>
-                        <li class="tab-item"><a href="#" class="tab-text">투명경영감독 및 부당행위 보호 시스템</a></li>
-					</ul>
+                    <!-- tab -->
+					<div class="tab-display style-a">
+						<div class="tab-inner-bx swiper">
+							<ul class="tab-list swiper-wrapper">
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text">상조납입금 안전책임 시스템</a></li>
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text">국가자격증 보유 장례지도사</a></li>
+								<li class="tab-item swiper-slide current"><a href="#" class="tab-text">전국 직영 운영 시스템</a></li>
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text">100% Payback 및 환불 시스템</a></li>
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text">투명경영감독 및 부당행위 보호 시스템</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab -->
+					<script>
+						let tabSwiper = null;
+
+						function initTabSwiper() {
+							const isMobile = window.innerWidth <= 768;
+							const tabBx = document.querySelector(".tab-display.style-a .tab-inner-bx");
+							const currentSlide = tabBx.querySelector(".tab-item.current");
+
+							if (isMobile && !tabSwiper) {
+								tabSwiper = new Swiper(tabBx, {
+									slidesPerView: "auto",
+									spaceBetween: 12,
+									freeMode: true,
+									on: {
+										init: function () {
+											// current 클래스가 있으면 해당 슬라이드로 이동
+											if (currentSlide) {
+												const index = [...currentSlide.parentElement.children].indexOf(currentSlide);
+												this.slideTo(index, 0);
+											}
+										}
+									}
+								});
+							} else if (!isMobile && tabSwiper) {
+								tabSwiper.destroy(true, true);
+								tabSwiper = null;
+							}
+						}
+
+						window.addEventListener("load", initTabSwiper);
+						window.addEventListener("resize", initTabSwiper);
+					</script>
                     <div class="safety-system">
                         <div class="safety-system-wrap">
                             <div class="safety-system-head">
@@ -134,30 +193,6 @@
 		// 온로드 시 활성화
 		document.addEventListener('DOMContentLoaded', function() {
 			uiCommon.popup.popupOpen('contentFuneralService');
-		});
-
-		// 스크롤
-		function scrollActiveTab() {
-			const mobileWidth = 1024;
-			if (window.innerWidth <= mobileWidth) {
-				const activeTab = document.querySelector('.tab-list-ty02 .tab-item.active');
-				if (activeTab) {
-					const container = activeTab.parentElement; 
-      				const offset = 16;
-					const scrollLeft = activeTab.offsetLeft - offset;
-					container.scrollTo({
-						left: scrollLeft,
-						behavior: 'smooth'
-					});
-				}
-			}
-		}
-
-		window.addEventListener('DOMContentLoaded', scrollActiveTab);
-
-		window.addEventListener('resize', function() {
-			clearTimeout(window._tabScrollTimeout);
-			window._tabScrollTimeout = setTimeout(scrollActiveTab, 150);
 		});
 	</script>
 </body>

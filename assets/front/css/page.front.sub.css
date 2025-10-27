@@ -14,7 +14,7 @@
  * Common
 
 ********************************************************************************************************************************/
-.tab-list-ty01 {display: flex; gap: 48px; border-bottom: 1px solid  rgba(19, 21, 23, 0.15);}
+/* .tab-list-ty01 {display: flex; gap: 48px; border-bottom: 1px solid  rgba(19, 21, 23, 0.15);}
 .tab-list-ty01 .tab-item .tab-text {display: block; padding: 12px 0 20px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #A0A0A0; letter-spacing: -0.5px;}
 .tab-list-ty01 .tab-item.active .tab-text {display: inline-block; position: relative; color: #232527;}
 .tab-list-ty01 .tab-item.active .tab-text::after {display: block; content: ''; position: absolute; top: auto; right: 0; bottom: -1px; left: 0; width: 100%; height: 1px; background-color: #232527;}
@@ -23,18 +23,19 @@
 .tab-list-ty02 .tab-item {background-color: #F7F6F5; border-radius: 32px;}
 .tab-list-ty02 .tab-item.active {background-color: #232527;}
 .tab-list-ty02 .tab-item .tab-text {display: block; padding: 12px 16px; font-size: 19px; font-weight: 600; line-height: 1.3; color: #777;}
-.tab-list-ty02 .tab-item.active .tab-text {color: #fff;}
+.tab-list-ty02 .tab-item.active .tab-text {color: #fff;} */
+.tab-display.style-a .tab-inner-bx.swiper {overflow: visible;}
 
 .img-mo {display: none;}
 /* .flex {display: flex;} */
 
 @media (max-width: 1023px) {
-    .tab-list-ty01 {gap: 20px;}
+    /* .tab-list-ty01 {gap: 20px;}
     .tab-list-ty01 .tab-item .tab-text {padding: 0 0 12px; font-size: 15px;}
 
     .tab-list-ty02 {flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;}
     .tab-list-ty02 .tab-item {flex: 0 0 auto;}
-    .tab-list-ty02 .tab-item .tab-text {padding: 6.5px 12px; font-size: 15px;}
+    .tab-list-ty02 .tab-item .tab-text {padding: 6.5px 12px; font-size: 15px;} */
 
     .img-pc {display: none;}
     .img-mo {display: block;}
@@ -366,9 +367,13 @@
 .content-popup[data-popup="contentFuneralService"] .popup-wrap {overflow: visible; position: relative;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {margin-bottom: 0;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header .popup-dataset {flex: 1 1 100%;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header .tab-display.style-c {width: 100%;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header .tab-display.style-c .tab-list .tab-item .tab-text {padding: 12px 0 20px;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body {padding: 48px 0 40px;}
-.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-list-ty02) {padding: 32px 0 40px;}
-.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-list-ty02 {margin-bottom: 48px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-display.style-a) {padding: 32px 0 40px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-display.style-a {margin-bottom: 48px;}
+.content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-display.style-a .tab-inner-bx .tab-list {flex-wrap: wrap; gap: 12px;}
+
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow {display: flex; position: absolute; width: 56px; height: 56px; border-radius: 100%; background-color: rgba(19, 21, 23, 0.40);}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow.prev {top: 412px; left: auto; right: calc(100% + 46px); z-index: 1;}
 .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func .arrow-button-area .btn-arrow.next {top: 412px; left: calc(100% + 46px); z-index: 1;}
@@ -569,12 +574,15 @@
 .condolence-guide .guide-list .guide-table + .para {margin-top: 16px;}
 
 @media (max-width: 1023px) {
-    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {padding: 64px 16px 0;}
-    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-list-ty02) {padding: 24px 0 48px;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {padding: 52px 16px 0;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header .tab-display.style-c .tab-inner-bx {padding: 0;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header .tab-display.style-c .tab-list .tab-item .tab-text {padding: 12px 0;}
     .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body {padding: 32px 0;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body:has(.tab-display.style-a) {padding: 24px 0 48px;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-display.style-a {margin: 0 -16px 48px; padding: 0 16px;}
+    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-display.style-a .tab-inner-bx .tab-list {flex-wrap: nowrap; gap: 0;}
     .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-func {display: none; overflow: hidden; visibility: hidden;}
 
-    .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-body .tab-list-ty02 {margin: 0 -16px 48px; padding: 0 16px;}
 
     /* 상조의 필요성 */
     .funeral-service .funeral-service-wrap {display: flex; flex-direction: column; row-gap: 0;}
