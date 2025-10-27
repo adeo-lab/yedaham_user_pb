@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>주요 재무현황 - 경영현황​ - 회사</title>
+	<title>직무소개 상세 - 인재채용 - 회사</title>
 	
 	<link rel="shortcut icon" href="../../../../assets/front/images/common/favicon.ico">
 	<link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
@@ -47,13 +47,13 @@
 			<div id="page" class="page-login">
 				<div class="page-head">
 					<div class="title-inner-bx">
-						<h2 class="heading-l">주요 재무현황</h2>
+						<h2 class="heading-l">직무소개</h2>
 					</div>
 				</div>
 				<div class="page-body">
 					<div class="button-display">
 						<span class="button-area">
-							<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentFinancialsDetail')"><span class="btn-text">2024년 감사보고서</span></a>
+							<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentTeamHr')"><span class="btn-text">인사총무팀</span></a>
 						</span>
 					</div>
 				</div>
@@ -71,52 +71,47 @@
 	</div>
 
 	<!-- contentPopup -->
-	<div class="content-popup" data-popup="contentFinancialsDetail">
-		<div class="popup-wrap board-review">
+	<div class="content-popup" data-popup="contentTeamHr">
+		<div class="popup-wrap small">
 			<div class="popup-header">
-				<p class="popup-subject">2024년 감사보고서</p>
+				<p class="popup-subject">인사총무팀</p>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
 			<div class="popup-body">
 				<div class="popup-contents">
-					<div class="reviewDetailPop swiper">
-						<ul class="swiper-wrapper">
-							<li class="swiper-slide">
-								<div class="img" style="text-align: center;"><img src="../../../../assets/front/images/corp/bg_about01.png" alt=""></div>
-							</li>
-							<li class="swiper-slide">
-								<div class="img" style="text-align: center;"><img src="../../../../assets/front/images/corp/bg_about02_02.png" alt=""></div>
-							</li>
-							<li class="swiper-slide">
-								<div class="img" style="text-align: center;"><img src="../../../../assets/front/images/corp/bg_about02_03.png" alt=""></div>
-							</li>
-						</ul>
-					</div>
+                    <ul class="team-intro-list">
+                        <li class="team-item">
+                            <p class="head">직무특성 및 소개</p>
+                            <div class="body">
+                                인사정책 수립, 인력 채용·평가·보상, 복리후생 관리, 교육훈련, 노무관리 등을 통해 건강하고 공정한 조직문화를 조성합니다
+                            </div>
+                        </li>
+                        <li class="team-item">
+                            <p class="head">필요 역량</p>
+                            <div class="body">
+                                <ul class="dot-list-s">
+                                    <li class="dot-item">인사·노무 관련 법령 및 제도 이해</li>
+                                    <li class="dot-item">조직 관리와 커뮤니케이션 능력​</li>
+                                    <li class="dot-item">리의식과 공정한 판단력</li>
+                                    <li class="dot-item">갈등 조정 및 문제 해결 능력​</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-item">
+                            <p class="head">Career Path 및 발전 방향</p>
+                            <div class="body">인사·교육 전문가로 성장</div>
+                        </li>
+                    </ul>
 				</div>
 			</div>
-			<!-- navigation -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-			<!-- //navigation -->
 		</div>
-		<script>
-			var swiper = new Swiper(".reviewDetailPop", {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				autoHeight: true,
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
-		</script>
 	</div>
 	<!-- //contentPopup -->
 
 	<script stype="text/javascript">
 		// 온로드 시 활성화
 		document.addEventListener('DOMContentLoaded', function() {
-			uiCommon.popup.popupOpen('contentBoardDetail');
+			uiCommon.popup.popupOpen('contentTeamHr');
 		});
 	</script>
 </body>
