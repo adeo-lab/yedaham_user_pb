@@ -74,8 +74,9 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">약관* > 홈페이지 이용약관(19p)</span></p>
 						${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="" style="background: #ddd;">
+					<div class="g-sub-wrap" data-status="진행" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">약관 > 개인정보처리방침</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인 없음, 툴팁작업 남음</span></p>
 						${createMenuLink("common/FO_Y_ZB_003.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -183,8 +184,9 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">메인, 공통 팝업(팝업빌더)</span></p>
 						${createMenuLink("common/.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">멤버십 카드 재발급*</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">윈도우 팝업</span></p>
 						${createMenuLink("common/FO_Y_ZJ_001_P.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -654,7 +656,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">주요재무현황* >  감사보고서 (7p)</span></p>
 						${createMenuLink("corp/financials/FO_C_DA_001_2.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">주요재무현황* > 감사보고서 미리보기 (8p)</span></p>
 						${createMenuLink("corp/financials/FO_C_DB_001_L.html", useFullLink)}
 					</dl>
@@ -679,11 +681,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">사랑다함(12p~19p)</span> > 사랑(愛)다함 이란?</p>
 						${createMenuLink("corp/sustainability/FO_C_SC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">사랑다함* > 사회공헌활동 > 목록 (14p, 18p)</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SC_002.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">사랑다함* > 사회공헌활동 > 상세 (15p, 19p)</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SC_003.html", useFullLink)}
 					</dl>
