@@ -21,6 +21,7 @@ var uiCommon = (function() {
 			_.familySite();
 			_.totalSearch();
 			_.targetScroll(); // 251022 작업
+			_.tooltip();
 		},
 		onResize: function() {
 			_.gnbMenu.init(); 
@@ -481,14 +482,19 @@ var uiCommon = (function() {
 		},
 		accordion: function() {
 			const accordionItems = document.querySelectorAll('.accordion-list .btn-accordion');
+			const toggleAllBtn = document.querySelector('.btn-toggle-all');
+			let isAllOpen = false;
+
 			accordionItems.forEach(_item => {
 				_item.addEventListener('click', function(event) {
                     const accordionContent = this.closest('.accordion-item');
+
                     accordionItems.forEach(_siblings => {
                         if (_siblings!== this) {
                             _siblings.closest('.accordion-item').classList.remove('active');
                         }
                     });
+
 					accordionContent.classList.toggle('active');
 
 					event.preventDefault();
@@ -496,6 +502,44 @@ var uiCommon = (function() {
 					return false;
 				});
 			});	
+
+			 // 전체열기/닫기 버튼 이벤트 (버튼이 있을 경우에만)
+			if (toggleAllBtn) {
+				toggleAllBtn.addEventListener('click', function(event) {
+					isAllOpen = !isAllOpen;
+					
+					accordionItems.forEach(_item => {
+						const accordionContent = _item.closest('.accordion-item');
+						if (isAllOpen) {
+							accordionContent.classList.add('active');
+						} else {
+							accordionContent.classList.remove('active');
+						}
+					});
+					
+					updateButtonText();
+					event.preventDefault();
+				});
+			}
+
+			// 전체 열림 상태 확인 및 업데이트
+			function updateToggleAllState() {
+				if (!toggleAllBtn) return;
+				
+				const activeCount = document.querySelectorAll('.accordion-item.active').length;
+				isAllOpen = activeCount === accordionItems.length;
+				
+				updateButtonText();
+			}
+
+			// 버튼 텍스트 업데이트
+			function updateButtonText() {
+				if (!toggleAllBtn) return;
+				const btnText = toggleAllBtn.querySelector('.btn-text');
+				if (btnText) {
+					btnText.textContent = isAllOpen ? '전체닫기' : '전체펼치기';
+				}
+			}
 		},
 		// tab
 		defaultTab: function() {
@@ -561,11 +605,13 @@ var uiCommon = (function() {
 			const quickMenu = document.querySelector('.quick-menu');
 			const btnTop = document.querySelector('.quick-menu .btn-to-top');
 
-			if (window.scrollY > 100) {
-					quickMenu.classList.add('show');
-				} else {
-					quickMenu.classList.remove('show');
-				}
+			if (quickMenu) {
+				if (window.scrollY > 100) {
+						quickMenu.classList.add('show');
+					} else {
+						quickMenu.classList.remove('show');
+					}
+			}
 
 			if (btnTop) {
 				btnTop.addEventListener('click', function() {
@@ -770,6 +816,94 @@ var uiCommon = (function() {
 						top: y - offset,
 						behavior: 'smooth'
 					});
+				});
+			});
+		},
+		tooltip: function() {
+			//개인정보처리방침
+			const tipOpenBtns = document.querySelectorAll('.btn-tip-open');
+			const tipCloseBtns = document.querySelectorAll('.btn-tip-close');
+
+			tipOpenBtns.forEach(btn => {
+				btn.addEventListener('click', function(event) {
+					const listItem = this.closest('.list-item');
+					const tooltip = listItem.querySelector('.tooltip');
+					const closeBtn = tooltip.querySelector('.btn-tip-close');
+					
+					// 다른 열린 툴팁 모두 닫기
+					document.querySelectorAll('.list-item').forEach(item => {
+						if (item !== listItem) {
+							item.classList.remove('active');
+						}
+					});
+					
+					// 현재 툴팁 토글
+					const isOpening = !listItem.classList.contains('active');
+					listItem.classList.toggle('active');
+					
+					// 툴팁이 열릴 때 포커스 이동
+					if (isOpening && closeBtn) {
+						setTimeout(() => {
+							closeBtn.focus();
+						}, 100);
+					}
+					
+					event.preventDefault();
+					event.stopPropagation();
+				});
+			});
+
+			// 툴팁 닫기
+			tipCloseBtns.forEach(btn => {
+				btn.addEventListener('click', function(event) {
+					const listItem = this.closest('.list-item');
+					const openBtn = listItem.querySelector('.btn-tip-open');
+					
+					listItem.classList.remove('active');
+					
+					// 툴팁 닫을 때 열기 버튼으로 포커스 복귀
+					if (openBtn) {
+						setTimeout(() => {
+							openBtn.focus();
+						}, 100);
+					}
+					
+					event.preventDefault();
+					event.stopPropagation();
+				});
+			});
+
+			document.querySelectorAll('.tooltip').forEach(tooltip => {
+				tooltip.addEventListener('click', function(event) {
+					event.stopPropagation();
+				});
+			});
+
+			// 툴팁 외부 클릭 시 닫기
+			document.addEventListener('click', function(event) {
+				if (!event.target.closest('.list-item') && !event.target.closest('.tooltip')) {
+					document.querySelectorAll('.list-item.active').forEach(item => {
+						item.classList.remove('active');
+					});
+				}
+			});
+
+			// 목차 이동 버튼
+			const targetScrollBtns = document.querySelectorAll('.btn-target-scroll');
+			targetScrollBtns.forEach(btn => {
+				btn.addEventListener('click', function(event) {
+					const targetId = this.dataset.target;
+					const targetElement = document.querySelector(targetId);
+					
+					if (targetElement) {
+						targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						
+						// 툴팁 닫기
+						const listItem = this.closest('.list-item');
+						listItem.classList.remove('active');
+					}
+					
+					event.preventDefault();
 				});
 			});
 		}
