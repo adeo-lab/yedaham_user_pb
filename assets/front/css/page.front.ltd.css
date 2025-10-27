@@ -3702,6 +3702,14 @@ z-index: 10;
 
 .ltd .search-layer .search-inner-wrap .search-p-tit {display: none;}
 
+.ltd .my-main-faq {border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 24px; overflow: hidden;}
+.ltd .my-main-faq ul {display: flex;}
+.ltd .my-main-faq li {width: 298px; height: 180px; border-right: 1px solid rgba(19, 21, 23, 0.15);}
+.ltd .my-main-faq li:last-child {border-right: none;}
+.ltd .my-main-faq li .in-bx {padding: 32px; text-align: center;}
+.ltd .my-main-faq li .in-bx .tx-type {font-weight: 600; font-size: 17px; color: #BFBFBF; line-height: 150%; padding-bottom: 12px;}
+.ltd .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 17px; color: #BFBFBF; line-height: 150%; word-break: auto-phrase;}
+
 
 
 

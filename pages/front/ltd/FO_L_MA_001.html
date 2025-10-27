@@ -100,7 +100,7 @@
 							<!-- //main visual -->
 							<script>
 							// Swiper 인스턴스 생성
-							const swiper = new Swiper('.main-vis', {
+							const swiper = new Swiper('.ltd .main-vis', {
 								// 자동 재생 설정
 								autoplay: {
 									delay: 3500, // 2.5초마다 슬라이드 바뀜
@@ -109,13 +109,13 @@
 
 								// 페이지네이션, 네비게이션 버튼 등 기타 옵션
 								pagination: {
-									el: '.swiper-pagination',
+									el: '.ltd .main-vis .swiper-pagination',
 									type: "fraction",
 									clickable: true,
 								},
 								navigation: {
-									nextEl: '.swiper-button-next',
-									prevEl: '.swiper-button-prev',
+									nextEl: '.ltd .main-vis .swiper-button-next',
+									prevEl: '.ltd .main-vis .swiper-button-prev',
 								},
 								loop: true, // 무한 루프
 							});
@@ -339,15 +339,15 @@
 								<script>
 									document.addEventListener("DOMContentLoaded", function () {
 									if (window.innerWidth <= 1023) {
-											var swiper3 = new Swiper(".m-product-list01", {
+											var swiper3 = new Swiper(".ltd .m-product-list01", {
 												slidesPerView: 'auto',
 												spaceBetween: 0,
 												centeredSlides: true,
 												loop: true,
 												watchOverflow: true,
 												navigation: {
-													nextEl: ".swiper-button-next",
-													prevEl: ".swiper-button-prev",
+													nextEl: ".ltd .m-product-list01 .swiper-button-next",
+													prevEl: ".ltd .m-product-list01 .swiper-button-prev",
 												},
 											});
 										}
@@ -413,13 +413,13 @@
 										</div>
 									</div>
 									<script>		
-										var swiper4 = new Swiper(".mob .bx-wrap-l", {
+										var swiper4 = new Swiper(".ltd .mob .bx-wrap-l", {
 											slidesPerView: 'auto',
 											spaceBetween: 0,
-											navigation: {
-												nextEl: ".swiper-button-next",
-												prevEl: ".swiper-button-prev",
-											},
+											/*navigation: {
+												nextEl: ".ltd .swiper-button-next",
+												prevEl: ".ltd .swiper-button-prev",
+											},*/
 										});
 									</script>
 								</div>
