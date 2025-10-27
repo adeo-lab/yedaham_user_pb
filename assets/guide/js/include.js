@@ -749,17 +749,17 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">인사제도</span></p>
 						${createMenuLink("corp/careers/FO_C_EB_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">직무소개 (9p)</span></p>
 						${createMenuLink("corp/careers/FO_C_EC_001.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">직무소개 > 상세 (10p)</span></p>
 						${createMenuLink("corp/careers/FO_C_EC_002_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">복리후생 (11p)</span></p>
-						${createMenuLink("corp/careers/FO_C_ED_001.html", useFullLink)}
+						${createMenuLink("corp/careers/FO_C_ED_003.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > 목록</span></p>

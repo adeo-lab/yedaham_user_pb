@@ -3049,6 +3049,7 @@ z-index: 10;
 .home .content-popup .popup-wrap {border-radius: 16px;}
 .home .content-popup .popup-wrap.small {max-width: 588px;}
 .home .content-popup .popup-wrap.medium {max-width: 790px;}
+.home .content-popup .popup-wrap.small .popup-body {padding: 0 0 40px;}
 .home .content-popup .popup-contents .terms-display .order-list-n {padding-bottom: 24px;}
 .home .content-popup .popup-contents .terms-display .order-list-n p.s-tit {position: relative; font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding: 0 0 8px 28px;}
 .home .content-popup .popup-contents .terms-display .order-list-n p.s-tit span {position: absolute; top: 0; left: 0;}
