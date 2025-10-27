@@ -918,12 +918,12 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">개인 상담신청</span></p>
-						<p class="g-sub-text" style="color: green;"><span class="em">디자인 필요</span></p>
+						<p class="g-sub-text"><span class="em">제휴사 상담신청 동일 페이지</span></p>
 						${createMenuLink("ltd/FO_P_MA_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="">
 						<p class="g-sub-title"><span class="em">법인 상담신청</span></p>
-						<p class="g-sub-text" style="color: green;"><span class="em">디자인 필요</span></p>
+						<p class="g-sub-text"><span class="em">제휴사 상담신청 동일 페이지</span></p>
 						${createMenuLink("ltd/FO_P_MA_001.html", useFullLink)}
 					</div>
 				</div>
