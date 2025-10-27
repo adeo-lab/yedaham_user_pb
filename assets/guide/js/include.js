@@ -271,8 +271,12 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("product/FO_Y_PA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
-						<p class="g-sub-title"><span class="em">상조 상품 안내*</span></p>
+						<p class="g-sub-title"><span class="em">상조 상품 안내* > 바로 의전</span></p>
 						${createMenuLink("product/FO_Y_PA_002_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">상조 상품 안내* > 윤슬 5호</span></p>
+						${createMenuLink("product/FO_Y_PA_002_L2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 4호</span></p>
