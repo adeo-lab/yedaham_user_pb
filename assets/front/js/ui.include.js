@@ -333,8 +333,8 @@ const quickTemplate = function () {
 	let quickContent =
 		`
 			<ul class="quick-list">
-					<li class="quick-item join"><a href="#" class="quick-text">간편가입</a></li>
-					<li class="quick-item consult"><a href="#" class="quick-text">상담신청</a></li>
+				<li class="quick-item join"><a href="#" class="quick-text">간편가입</a></li>
+				<li class="quick-item consult"><a href="#" class="quick-text">상담신청</a></li>
 			</ul>
 			<button type="button" class="quick-toggle" aria-label="퀵메뉴 열기/닫기">
 				<svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
