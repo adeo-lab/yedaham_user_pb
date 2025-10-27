@@ -52,7 +52,7 @@ window.mainNoticeSwiper = mainNoticeSwiper;
 
 
 
-
+/* main corp */
 window.addEventListener('load', function() {
     // 스와이퍼
     var swiper99 = new Swiper(".main-inner-wrap", {
