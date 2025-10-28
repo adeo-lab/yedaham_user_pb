@@ -359,7 +359,6 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료* > 개인정보 제공에 대한 게재 (19p)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("direct/FO_Y_DI_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -385,7 +384,6 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료* > [제3자 제공에 관한 선택적 동의] 개인정보 수집 이용에 대한 동의 (24p)</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">컨텐츠 작업 필요</span></p>
 						${createMenuLink("direct/FO_Y_DN_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
