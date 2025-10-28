@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>메인,공통 팝업 - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.ltd.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+
+	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
+</head>
+<body class="home">
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="page-login">
+				<div class="title-inner-bx">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">메인,공통 팝업</h2>
+						</div>
+					</div>
+					<div class="page-body">
+						<div class="button-display">
+							<span class="button-area">
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('campaignPopupDemo')"><span class="btn-text">템플릿</span></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 헤더 영역 -->
+		<footer id="footer"></footer>
+		<!-- //헤더 영역 -->
+	</div>
+
+    <!-- campaignPopup -->
+     <div class="campaign-popup module-a" data-popup="campaignPopupDemo">
+		<div class="popup-wrap">
+			<div class="popup-body">
+				<div class="popup-contents">
+                    <!-- swiper -->
+                    <div class="campaign-list swiper">
+                        <div class="campaign-list-wrap swiper-wrapper">
+                            <div class="campaign-item swiper-slide">
+                                <div class="campaign-wrap style-a" style="--bgImg:url('../../../assets/front/images/common/img_popup_sample01.jpg');">
+                                    <div class="campaign-content">
+                                        <p class="campaign-caption-m" style="color: rgba(148, 74, 26, 0.8);">마케팅 동의하면</p>
+                                        <p class="campaign-title-m" style="color: #944A1A;">커피는 기본!<br> 할인은 추가!</p>
+                                        <p class="campaign-subtitle" style="color: #666;"> 매월 2000명에게 커피 제공!<br> 기존 고객님께는 할인 혜택까지!<br> 기간 : 2025.08.01 ~ 2025.12.31 </p>
+                                    </div>
+                                    <span class="button-area"><a href="#" class="btn-cta" style="background-color: #D17B47; color: #fff"><span class="btn-text">개인정보변경 하러가기</span></a></span>
+                                </div>
+                            </div>
+                            <div class="campaign-item swiper-slide">
+                                <div class="campaign-wrap style-b" style="--bgImg:url('../../../assets/front/images/common/img_popup_sample02.jpg');">
+                                    <div class="campaign-content">
+                                        <p class="campaign-caption-s" style="color: rgba(55, 75, 163, 0.8);">고객정보 업데이트 이벤트</p>
+                                        <p class="campaign-title-s" style="color: #374BA3;">고객정보 최신화하고​<br> 선물도 받고!</p>
+                                        <p class="campaign-subtitle" style="color: #666;">고객정보를 업데이트 하시면<br> 추첨을 통해 스타벅스 기프티콘 증정!<br> 이메일, 주소, 연락처 업데이트<br> 마케팅 수신동의 시 당첨확률 UP! UP!</p>
+                                    </div>
+                                    <span class="button-area"><a href="#" class="btn-cta" style="background-color: #374BA3; color: #fff"><span class="btn-text">개인정보변경 하러가기</span></a></span>
+                                </div>
+                            </div>
+                            <div class="campaign-item swiper-slide">
+                                <div class="campaign-wrap style-a" style="--bgImg:url('../../../assets/front/images/common/img_popup_sample03.jpg');">
+                                    <div class="campaign-content">
+                                        <p class="campaign-caption-l" style="color: rgba(93, 66, 0, 0.8);">마케팅 동의하면</p>
+                                        <p class="campaign-title-l" style="color: #5D4200;">커피는 기본!<br> 할인은 추가!</p>
+                                        <p class="campaign-subtitle" style="color: #666;">기간 : 2025.08.01 ~ 2025.12.31</p>
+                                    </div>
+                                    <span class="button-area"><a href="#" class="btn-cta" style="background-color: #BB8800; color: #fff"><span class="btn-text">개인정보변경 하러가기</span></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-custom-pagination">
+                            <button class="btn-custom-prev"><span class="btn-text blind">이전 슬라이드 보기</span></button>
+                            <span class="custom-page"><span class="current-page">1</span> / <span class="total-page">3</span></span>
+                            <button class="btn-toggle-play"><span class="btn-text blind">재생</span></button>
+                            <button class="btn-custom-next"><span class="btn-text blind">다음 슬라이드 보기</span></button>
+                        </div>
+                    </div>
+
+                    <script>
+                        const swiper = new Swiper(".campaign-list.swiper", {
+                            slidesPerView: 1,
+                            loop: false,
+                            autoplay: {
+                                delay: 2000,
+                                disableOnInteraction: false,
+                            },
+                        });
+
+                        const currentPage = document.querySelector(".current-page");
+                        const totalPage = document.querySelector(".total-page");
+                        const totalSlides = swiper.slides.length;
+
+                        totalPage.textContent = totalSlides;
+
+                        // 버튼 연결
+                        document.querySelector(".btn-custom-prev").addEventListener("click", () => swiper.slidePrev());
+                        document.querySelector(".btn-custom-next").addEventListener("click", () => swiper.slideNext());
+
+                        // 페이지 표시 업데이트
+                        swiper.on("slideChange", () => {
+                            const current = swiper.realIndex + 1;
+                            currentPage.textContent = current;
+                        });
+
+
+                        const toggleBtn = document.querySelector(".btn-toggle-play");
+                        const btnText = toggleBtn.querySelector(".btn-text");
+
+                        let isPlaying = true;
+
+                        // 재생버튼
+                        toggleBtn.addEventListener("click", () => {
+                            if (isPlaying) {
+                                // ▶ 일시정지
+                                swiper.autoplay.stop();
+                                toggleBtn.classList.add("pause");
+                                btnText.textContent = "일시정지";
+                            } else {
+                                // Ⅱ 재생
+                                swiper.autoplay.start();
+                                toggleBtn.classList.remove("pause");
+                                btnText.textContent = "재생";
+                            }
+                            isPlaying = !isPlaying;
+                        });
+                    </script>
+                    <!-- //swiper -->
+
+				</div>
+			</div>
+			<div class="popup-footer">
+                <label class="popup-today">
+                    <input class="form-elem" type="checkbox" name="todayClose" />
+                    <span class="form-text">오늘 하루 보지 않음​</span>
+                </label>
+                <span class="button-area"><button type="button" class="btn-popup-close" title="팝업창 닫기"><span class="btn-text blind">팝업창 닫기</span></button></span>
+			</div>
+		</div>
+	</div>
+     <!-- //campaignPopup -->
+
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('campaignPopupDemo');
+		});
+	</script>
+</body>
+</html>
