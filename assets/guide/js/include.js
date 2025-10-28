@@ -759,7 +759,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">복리후생 (11p)</span></p>
-						${createMenuLink("corp/careers/FO_C_ED_003.html", useFullLink)}
+						${createMenuLink("corp/careers/FO_C_EC_003.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > 목록</span></p>
