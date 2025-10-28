@@ -177,9 +177,9 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">접속 종료* (38p)</span></p>
 						${createMenuLink("common/FO_Y_ZT_001_L.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인, 공통 팝업(팝업빌더)</span></p>
-						${createMenuLink("common/.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZU_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">멤버십 카드 재발급*</span></p>
