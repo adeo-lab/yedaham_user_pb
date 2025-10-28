@@ -4228,7 +4228,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-position: center;
 	background-size: 24px;
 }
-.home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q span.q-layer {position: absolute; bottom: 43px; left: -74px; display: block; width: 228px; height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 0 0 10px; background: #232527; border-radius: 4px; box-sizing: border-box;}
+.home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q span.q-layer {position: absolute; bottom: 43px; left: -74px; display: block; width: 228px; height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 0 0 10px; background: #232527; border-radius: 4px; box-sizing: border-box; display: none;}
 .home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q span.q-layer::after {
   content: '';
   position: absolute;
@@ -4242,6 +4242,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-position: center;
 	background-size: 13px;
 }
+.home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q:hover span.q-layer {display: block;}
 .home .easy-join-wrap .easy-join-left-side .in-tit-bx .btn-r-compare {position: relative; display: inline-block; height: 40px; font-weight: 600; font-size: 17px; color: #131517; line-height: 40px; padding: 0 12px 0 38px; background: #F7DFB5; border-radius: 32px;}
 .home .easy-join-wrap .easy-join-left-side .in-tit-bx .btn-r-compare::before {
   content: '';
