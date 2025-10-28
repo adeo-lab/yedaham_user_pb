@@ -105,7 +105,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주 하는 질문 상세</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">스와이프 제거 필요</span></p>
+						<p class="g-sub-text"><span class="em">스와이프 제거 필요 / 개발페이지에 제거 적용</span></p>
 						${createMenuLink("common/FO_Y_ZL_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -114,7 +114,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기 상세</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">스와이프 제거 필요</span></p>
+						<p class="g-sub-text"><span class="em">스와이프 제거 필요 / 개발페이지에 제거 적용</span></p>
 						${createMenuLink("common/FO_Y_ZM_002_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
