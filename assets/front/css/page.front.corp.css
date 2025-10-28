@@ -4855,6 +4855,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .careers-list02 li .btns-r.ty02 {flex-direction: column; align-items: center;}
 
 @media (max-width: 1023px) {
+  .corp .careers-list02 li {padding: 0 16px;}
   .corp .careers-list02 li .bx-l {padding: 16px 0; flex-direction: column;}
   .corp .careers-list02 li .bx-l .tx-type {width: 100%; font-size: 16px; text-align: left;}
   .corp .careers-list02 li .bx-l .tx-cnt dt {font-size: 20px; padding-top: 8px;}
@@ -4864,7 +4865,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .careers-list02 li .btns-r a.btn-ty02 {width: 60px; height: 32px; font-size: 15px; line-height: 32px;}
   .corp .careers-list02 li .btns-r a.btn-ty03 {width: 107px; height: 32px; font-size: 15px; line-height: 32px;}
   .corp .careers-list02 li .btns-r .ty-tx {font-size: 16px;}
-  .corp .careers-list02 li .btns-r.ty02 {align-items: flex-end;}
+  .corp .careers-list02 li .btns-r.ty02 {align-items: center;}
 }
 
 .corp .careers-view01 {max-width: 1196px; margin: 0 auto;}
