@@ -215,6 +215,13 @@
 .home .main-cont05 .my-main-faq li .in-bx {padding: 0 70px;}
 .home .main-cont05 .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
 
+@media (max-width: 1023px) {
+  .home .main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n {height: auto;}
+  .home .main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n::after {bottom: 0; width: 86px; height: 60px; background-size: 78%;}
+  .home .main-cont04 .my-main-benefit .in-bx:nth-child(2)::after {right: 16px; bottom: 20px; width: 80px; height: 57px; background-size: 78%;}
+  .home .main-cont04 .my-main-benefit .in-bx:nth-child(3)::after {right: 16px; bottom: 20px; width: 80px; height: 57px; background-size: 78%;}
+}
+
 
 .home .m-product-list01 {width: 100%; max-width: 1200px; padding: 0 0 96px 0; margin: 0 auto;}
 .home .m-product-list01 > ul {display: flex; flex-wrap: wrap; width: 100%; gap: 48px;}
