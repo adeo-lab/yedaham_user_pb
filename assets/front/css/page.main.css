@@ -217,7 +217,7 @@
 
 @media (max-width: 1023px) {
   .home .main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n {height: auto;}
-  .home .main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n::after {bottom: 0; width: 86px; height: 60px; background-size: 78%;}
+  .home .main-cont04 .my-main-benefit .in-bx.first .m-mem-bx-n::after {right: -10px; bottom: 0; width: 96px; height: 70px; background-size: 78%;}
   .home .main-cont04 .my-main-benefit .in-bx:nth-child(2)::after {right: 16px; bottom: 20px; width: 80px; height: 57px; background-size: 78%;}
   .home .main-cont04 .my-main-benefit .in-bx:nth-child(3)::after {right: 16px; bottom: 20px; width: 80px; height: 57px; background-size: 78%;}
 }
@@ -371,7 +371,7 @@
   .home .main-cont04 .my-main-benefit .in-bx.first {position: relative; width: 100%; height: 200px; padding: 24px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx01 {font-size: 26px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx02 {font-size: 14px; margin-bottom: 20px;}
-  .home .main-cont04 .my-main-benefit .in-bx.first .tx03 {font-size: 17px;}
+  .home .main-cont04 .my-main-benefit .in-bx.first .tx03 {font-size: 17px; min-height: 80px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi {font-size: 12px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi .swiper-pagination {height: 17px; font-size: 12px; line-height: 17px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi .swiper-controls {height: 17px;}
