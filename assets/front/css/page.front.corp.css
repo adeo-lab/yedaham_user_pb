@@ -3849,7 +3849,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx02 p.tx-l {font-weight: 600; font-size: 19px; color: #232527; line-height: 130%;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx02 p.tx-r {font-weight: 400; font-size: 17px; color: #777; line-height: 150%;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 {padding: 24px; margin-bottom: 32px; background: #F5F5F7; border-radius: 12px;}
-.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dl {padding-bottom: 32px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dl {padding-bottom: 32px; /*margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);*/}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dt {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding-bottom: 16px;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dd {font-weight: 400; font-size: 17px; color: #444; line-height: 150%;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx04 {font-weight: 400; font-size: 17px; color: #444; line-height: 150%;}
@@ -3869,11 +3869,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 .corp .content-popup .popup-wrap.pop-report .btm-tx-copyright {font-weight: 400; font-size: 14px; color: #777; line-height: 150%; padding: 24px 0 48px 0; text-align: center;}
 
-.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result {background: none; display: flex; row-gap: 12px; flex-direction: column;}
+.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result {padding-bottom: 32px; margin-bottom: 32px; background: none; border-bottom: 1px solid rgba(19, 21, 23, 0.20); display: flex; row-gap: 12px; flex-direction: column;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .fil-upload-top {display: flex; align-items: center; column-gap: 24px; padding-bottom: 0;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .fil-upload-top .tx-l {font-weight: 600; font-size: 19px; color: #444; line-height: 130%;}
-.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; display: flex; align-items: center;}
-.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name span.file-txt {display: inline-block; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; display: flex; align-items: center; padding: 11px 12px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 4px;}
+.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name span.file-txt {display: inline-block; max-width: 236px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name span.file-type {display: inline-block;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name span.tx-r {display: inline-block; font-weight: 400; padding-right: 24px; margin-left: 20px;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 .file-upload-result .file-name span.tx-r {
