@@ -4279,10 +4279,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .corp .about-cont02 {height: 460px; padding: 152px 0 0 128px; margin: 0 0 48px 0; background: #EFEFEF; box-sizing: border-box;}
+.corp .about-cont02 {background: #EFEFEF url('../../../assets/front/images/corp/img_ceo.png') no-repeat right 204px bottom; background-size: 502px;}
 .corp .about-cont02 .in-tx-bx {font-weight: 600; font-size: 40px; color: #232527; line-height: 130%;}
 
 @media (max-width: 1023px) {
   .corp .about-cont02 {padding: 48px 0 0 24px; margin-bottom: 32px;}
+.corp .about-cont02 {background: #EFEFEF url('../../../assets/front/images/corp/img_ceo.png') no-repeat right bottom; background-size: 339px;}
   .corp .about-cont02 .in-tx-bx {font-size: 26px;}
 }
 
