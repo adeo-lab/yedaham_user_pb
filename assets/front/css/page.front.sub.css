@@ -23,6 +23,8 @@
     .home .img-pc {display: none;}
     .home .img-mo {display: block;}
 }
+
+
 /********************************************************************************************************************************
 
  * campaign-popup
@@ -783,6 +785,23 @@
 .home .condolence-guide .guide-list .guide-table th {background-color: #F7F6F5; font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
 .home .condolence-guide .guide-list .guide-table td {font-size: 17px; font-weight: 400; line-height: 1.5;}
 .home .condolence-guide .guide-list .guide-table + .para {margin-top: 16px;}
+
+/* 자료 다운로드 */
+.home .ritual-contents .section .section-wrap .section-head .section-subject {display: flex; justify-content: space-between; align-items: center;}
+.home .ritual-form-content {}
+.home .ritual-form-content .content-area {}
+.home .ritual-form-content .content-area .form {}
+.home .ritual-form-content .content-area .form .title {}
+.home .ritual-form-content .content-area .form .subtitle {}
+.home .ritual-form-content .content-area .content {}
+.home .ritual-writing-content {}
+.home .ritual-writing-content.type-a {}
+.home .ritual-writing-content.type-b {}
+.home .ritual-writing-content .content-area {}
+.home .ritual-writing-content .content-area .title {}
+.home .ritual-writing-content .content-area .content {}
+.home .ritual-writing-content .content-area .content .ch {}
+.home .ritual-writing-content .content-area .content .para {}
 
 @media (max-width: 1023px) {
     .home .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {padding: 52px 16px 0;}
