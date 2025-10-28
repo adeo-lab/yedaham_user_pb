@@ -140,7 +140,7 @@
 .home .main-cont03 .main-review-list .bx-wrap-l {width: 400px; padding: 64px /*128px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
 .home .main-cont03 .main-review-list .bx-wrap-r {width: 400px; padding: 0 /*64px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
 .home .main-cont03 .main-review-list .in-bx-wrap {display: flex; flex-direction: column; row-gap: 64px;}
-.home .main-cont03 .main-review-list .bx-wrap-l .in-bx-wrap.move {animation: 20s linear 0s infinite normal none running slideup;}
+.home .main-cont03 .main-review-list .bx-wrap-l .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slideup;}
 .home .main-cont03 .main-review-list .bx-wrap-r .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slideup /*slidedown*/;}
 .home .main-cont03 .main-review-list .in-bx {padding: 32px; background: #fff; border-radius: 32px; border-top-left-radius: 0;}
 .home .main-cont03 .main-review-list .in-bx dt {max-height: 64px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 12px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}

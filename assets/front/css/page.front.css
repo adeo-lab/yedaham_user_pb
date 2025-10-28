@@ -3946,7 +3946,7 @@ white-space: nowrap; border: 0;}
 	background-position: center;
 	background-size: 30px;
 }
-.home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer {position: absolute; bottom: 43px; left: -68px; display: block; width: 288px; height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 0 0 10px; background: #232527; border-radius: 4px; box-sizing: border-box;}
+.home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer {position: absolute; bottom: 43px; left: -68px; display: block; width: 288px; height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 0 0 10px; background: #232527; border-radius: 4px; box-sizing: border-box; display: none;}
 .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer::after {
   content: '';
   position: absolute;
@@ -3960,6 +3960,7 @@ white-space: nowrap; border: 0;}
 	background-position: center;
 	background-size: 13px;
 }
+.home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q:hover span.q-layer {display: block;}
 .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l span.btn_more {display: inline-block; width: 24px; height: 24px;}
 .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l span.btn_more {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8.0332 3.93018C8.51345 3.39669 9.33551 3.35346 9.86914 3.8335L17.8691 11.0337C18.1427 11.2801 18.2987 11.6323 18.2988 12.0005C18.2986 12.3686 18.1427 12.72 17.8691 12.9663L9.86914 20.1655C9.33573 20.6456 8.51359 20.6027 8.0332 20.0698C7.55321 19.5362 7.59638 18.7141 8.12988 18.2339L15.0557 11.9995L8.12988 5.76611C7.59653 5.2858 7.55309 4.46374 8.0332 3.93018Z' fill='%23232527'/%3E%3C/svg%3E");
