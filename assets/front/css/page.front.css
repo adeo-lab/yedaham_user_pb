@@ -3077,6 +3077,9 @@ z-index: 10;
 .home .content-popup .popup-contents .terms-display.ty02 .order-list-n ul.list-dot li {position: relative; padding-left: 20px;}
 .home .content-popup .popup-contents .terms-display.ty02 .order-list-n ul.list-dot li::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 .home .content-popup .popup-contents .terms-display.ty02 .order-list-n ul.list-dot.dep3 {padding-left: 52px;}
+.home .content-popup .popup-contents .terms-display .order-list-n ul.ty-rm {padding-left: 0;}
+.home .content-popup .popup-contents .terms-display .order-list-n ul.ty-rm li {position: relative; padding: 0 0 4px 20px;}
+.home .content-popup .popup-contents .terms-display .order-list-n ul.ty-rm li span.mark-rm {position: absolute; top: 0; left: 0;}
 
 .home .content-popup .popup-wrap .popup-footer .button-area {padding-bottom: 40px; column-gap: 16px;}
 .home .content-popup .popup-wrap .popup-footer .button-area > [class*=btn-] {width: auto; height: 56px; font-weight: 600; font-size: 19px; line-height: 150%; padding: 0 64px; border-radius: 8px; flex: none; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box;}
