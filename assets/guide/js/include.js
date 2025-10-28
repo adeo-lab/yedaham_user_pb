@@ -603,7 +603,6 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em"> CEO 인사말</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">CEO 이미지</span></p>
 						${createMenuLink("corp/about/FO_C_IA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
