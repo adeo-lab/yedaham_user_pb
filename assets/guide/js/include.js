@@ -616,7 +616,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">The-K 가족소개​​</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">이미지 필요</span></p>
+						<p class="g-sub-text" style="color: red;"><span class="em">오픈 컨텐츠</span></p>
 						${createMenuLink("corp/about/FO_C_ID_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
