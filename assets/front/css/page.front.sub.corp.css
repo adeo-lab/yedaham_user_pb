@@ -2,6 +2,29 @@
 
 /********************************************************************************************************************************
 
+ * Common
+
+********************************************************************************************************************************/
+.corp .dot-list-s {display: flex; flex-direction: column; row-gap: 8px;}
+.corp .dot-list-s li.dot-item {position: relative; padding-left: 20px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.corp .dot-list-s li.dot-item::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.corp .dot-list-s li.dot-item strong {font-weight: 600;}
+.corp .dot-list-m {display: flex; flex-direction: column; row-gap: 8px;}
+.corp .dot-list-m li.dot-item {position: relative; padding-left: 20px; font-size: 19px; font-weight: 400; line-height: 1.5; color: #232527;}
+.corp .dot-list-m li.dot-item::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.corp .dot-list-m li.dot-item strong {font-weight: 600;}
+
+@media (max-width: 1023px) {
+    .corp .dot-list-s li.dot-item {font-size: 15px;}
+    .corp .dot-list-s li.dot-item::before {top: 9px}
+    .corp .dot-list-m {display: flex; flex-direction: column; row-gap: 8px;}
+    .corp .dot-list-m li.dot-item {font-size: 16px;}
+    .corp .dot-list-m li.dot-item::before {top: 9px}
+}
+
+
+/********************************************************************************************************************************
+
  * 퀵메뉴
  * 기존 수정
 
@@ -194,14 +217,6 @@ aspect-ratio: 7/6;}
 }
 
 /* 인재채용 */
-.corp .dot-list-s {display: flex; flex-direction: column; row-gap: 8px;}
-.corp .dot-list-s li.dot-item {position: relative; padding-left: 20px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
-.corp .dot-list-s li.dot-item::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
-
-.corp .dot-list-m {display: flex; flex-direction: column; row-gap: 8px;}
-.corp .dot-list-m li.dot-item {position: relative; padding-left: 20px; font-size: 19px; font-weight: 400; line-height: 1.5; color: #232527;}
-.corp .dot-list-m li.dot-item::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
-
 .corp .careers-area {display: flex; flex-direction: column; gap: 64px; max-width: 1440px; margin: 0 auto; padding: 0 0 96px;}
 .corp .careers-area:has(.careers-team-list) {gap: 96px;}
 .corp .careers-area .careers-head {display: flex; align-items: center; justify-content: center;}
@@ -248,12 +263,6 @@ aspect-ratio: 7/6;}
 
 
 @media (max-width: 1023px) {
-    .corp .dot-list-s li.dot-item {font-size: 15px;}
-    .corp .dot-list-s li.dot-item::before {top: 9px}
-    .corp .dot-list-m {display: flex; flex-direction: column; row-gap: 8px;}
-    .corp .dot-list-m li.dot-item {font-size: 16px;}
-    .corp .dot-list-m li.dot-item::before {top: 9px}
-
     .corp .careers-area {gap: 64px; padding: 0 16px 64px;}
     .corp .careers-area:has(.careers-team-list) {gap: 64px;}
     .corp .careers-area .careers-head .title {font-size: 26px;}
