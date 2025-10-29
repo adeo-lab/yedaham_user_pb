@@ -17,11 +17,26 @@
 .home .tab-display.style-a .tab-inner-bx.swiper {overflow: visible;}
 
 .home .img-mo {display: none;}
-/* .flex {display: flex;} */
+.flex {display: flex;}
+
+.home .dot-list-s {display: flex; flex-direction: column; row-gap: 8px;}
+.home .dot-list-s li.dot-item {position: relative; padding-left: 20px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.home .dot-list-s li.dot-item::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.home .dot-list-s li.dot-item strong {font-weight: 600;}
+.home .dot-list-m {display: flex; flex-direction: column; row-gap: 8px;}
+.home .dot-list-m li.dot-item {position: relative; padding-left: 20px; font-size: 19px; font-weight: 400; line-height: 1.5; color: #232527;}
+.home .dot-list-m li.dot-item::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.home .dot-list-m li.dot-item strong {font-weight: 600;}
 
 @media (max-width: 1023px) {
     .home .img-pc {display: none;}
     .home .img-mo {display: block;}
+
+    .home .dot-list-s li.dot-item {font-size: 15px;}
+    .home .dot-list-s li.dot-item::before {top: 9px}
+    .home .dot-list-m {display: flex; flex-direction: column; row-gap: 8px;}
+    .home .dot-list-m li.dot-item {font-size: 16px;}
+    .home .dot-list-m li.dot-item::before {top: 9px}
 }
 
 
@@ -788,20 +803,35 @@
 
 /* 자료 다운로드 */
 .home .ritual-contents .section .section-wrap .section-head .section-subject {display: flex; justify-content: space-between; align-items: center;}
-.home .ritual-form-content {}
-.home .ritual-form-content .content-area {}
-.home .ritual-form-content .content-area .form {}
-.home .ritual-form-content .content-area .form .title {}
-.home .ritual-form-content .content-area .form .subtitle {}
-.home .ritual-form-content .content-area .content {}
-.home .ritual-writing-content {}
-.home .ritual-writing-content.type-a {}
-.home .ritual-writing-content.type-b {}
-.home .ritual-writing-content .content-area {}
-.home .ritual-writing-content .content-area .title {}
-.home .ritual-writing-content .content-area .content {}
-.home .ritual-writing-content .content-area .content .ch {}
-.home .ritual-writing-content .content-area .content .para {}
+.home .ritual-contents .section .section-wrap .section-head .section-subject .button-area .btn-download {display: inline-flex; gap: 8px; justify-content: center; align-items: center; height: 48px; padding: 0 32px; box-sizing: border-box; border-radius: 8px; border: 1px solid rgba(19, 21, 23, 0.30);}
+.home .ritual-contents .section .section-wrap .section-head .section-subject .button-area .btn-download::after {display: block; content: ''; width: 20px; height: 20px; background-size: cover; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M16.875 14.999C17.2201 14.999 17.4999 15.279 17.5 15.624C17.5 15.9692 17.2202 16.249 16.875 16.249H3.125C2.78004 16.2488 2.5 15.969 2.5 15.624C2.50013 15.2791 2.78012 14.9993 3.125 14.999H16.875ZM9.99902 3.33203C10.3303 3.33203 10.5994 3.59522 10.5996 3.91992V11.0625L13.3174 8.29199C13.5471 8.05784 13.9271 8.05027 14.166 8.27539C14.4049 8.50055 14.4123 8.87324 14.1826 9.10742L10.4316 12.9307C10.3185 13.046 10.1623 13.1113 9.99902 13.1113C9.8359 13.1112 9.67948 13.0459 9.56641 12.9307L5.81641 9.10742C5.58669 8.87324 5.59411 8.50056 5.83301 8.27539C6.07192 8.05045 6.45201 8.05789 6.68164 8.29199L9.39941 11.0625V3.91992C9.39962 3.59533 9.66787 3.33219 9.99902 3.33203Z' fill='%2333363D'/%3E%3C/svg%3E");}
+.home .ritual-contents .section .section-wrap .section-head .section-subject .button-area .btn-download .btn-text {font-size: 19px; font-weight: 600; line-height: 1.5; color: #232527;}
+.home .ritual-form-content {display: flex; flex-direction: column; gap: 24px;}
+.home .ritual-form-content .content-area {display: flex; gap: 24px; align-items: center;}
+.home .ritual-form-content .content-area .form {flex: 1 0 calc(50% - 12px); display: flex; flex-direction: column; row-gap: 12px; align-items: center; align-self: baseline; padding: 24px 32px; box-sizing: border-box; border-radius: 16px; background-color: #F7F6F5; text-align: center;}
+.home .ritual-form-content .content-area .form .title {font-family: "Noto Serif SC", serif; font-size: 24px; font-weight: 700; line-height: 1.3; color: #232527; letter-spacing: 2px;}
+.home .ritual-form-content .content-area .form .title .wbr {display: inline;}
+.home .ritual-form-content .content-area .form .subtitle {font-size: 19px; font-weight: 600; line-height: 1.3; color: #232527;}
+.home .ritual-form-content .content-area .content {flex: 1 0 calc(50% - 12px); display: flex; flex-direction: column; gap: 8px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.home .ritual-form-content .content-area .content .para .wbr {display: inline;}
+.home .ritual-writing-content {display: grid; gap: 24px;}
+.home .ritual-writing-content .content-area {display: flex; flex-direction: column; justify-content: flex-start; padding: 40px 32px; box-sizing: border-box; border-radius: 16px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.15);}
+.home .ritual-writing-content .content-area .title {font-size: 24px; font-weight: 600; line-height: 1.3; color: #D17B47; text-align: center;}
+.home .ritual-writing-content .content-area .content {display: flex; justify-content: center;}
+.home .ritual-writing-content .content-area .content .ch {font-family: "Noto Serif SC", serif; font-size: 28px; font-weight: 700; line-height: 1.5; color: #232527; letter-spacing: 2px; text-align: center;}
+.home .ritual-writing-content .content-area .content .para {font-size: 22px; font-weight: 600; line-height: 1.3; color: #444; text-align: center;}
+
+.home .ritual-writing-content.type-a {grid-template-columns: repeat(4, 1fr);}
+.home .ritual-writing-content.type-a .content-area {gap: 32px;}
+.home .ritual-writing-content .content-area .content {gap: 32px;}
+.home .ritual-writing-content.type-a .content-area .content .text-content {display: flex;}
+.home .ritual-writing-content.type-a .content-area .content .text-content.tx-ch {display: flex; gap: 16px;}
+.home .ritual-writing-content.type-a .content-area .content .text-content.tx-kr {display: flex; gap: 8px; padding-top: 24px;}
+.home .ritual-writing-content.type-a .content-area .content .ch {display: flex; flex-direction: column; width: 40px; word-break: break-all;}
+.home .ritual-writing-content.type-a .content-area .content .para {width: 24px;}
+.home .ritual-writing-content.type-b {grid-template-columns: repeat(2, 1fr);}
+.home .ritual-writing-content.type-b .content-area {flex-direction: column; gap: 24px;}
+.home .ritual-writing-content.type-b .content-area .content {flex-direction: column; gap: 12px; justify-content: center; align-items: center;}
 
 @media (max-width: 1023px) {
     .home .content-popup[data-popup="contentFuneralService"] .popup-wrap .popup-header {padding: 52px 16px 0;}
@@ -945,4 +975,31 @@
     .home .condolence-guide .guide-list .guide-table th {font-size: 15px;}
     .home .condolence-guide .guide-list .guide-table td {font-size: 15px;}
     .home .condolence-guide .guide-list .guide-table + .para {margin-top: 8px;}
+
+    /* 자료 다운로드 */
+    .home .ritual-contents .section .section-wrap .section-head .section-subject .button-area .btn-download {gap: 4px; height: 40px; padding: 0 24px;}
+    .home .ritual-contents .section .section-wrap .section-head .section-subject .button-area .btn-download::after {width: 16px; height: 16px;}
+    .home .ritual-contents .section .section-wrap .section-head .section-subject .button-area .btn-download .btn-text {font-size: 15px;}
+    .home .ritual-form-content .content-area {gap: 24px; flex-direction: column;}
+    .home .ritual-form-content .content-area .form {flex: 1 1 100%; width: 100%; padding: 16px;}
+    .home .ritual-form-content .content-area .form .title {font-size: 20px;}
+    .home .ritual-form-content .content-area .form .title .wbr {display: block;}
+    .home .ritual-form-content .content-area .form .subtitle {font-size: 19px;}
+    .home .ritual-form-content .content-area .content {flex: 1 1 100%; width: 100%; font-size: 15px;}
+    .home .ritual-form-content .content-area .content .para .wbr {display: block;}
+    
+    .home .ritual-writing-content {display: flex; gap: 16px;}
+    .home .ritual-writing-content .content-area {padding: 24px 20px;}
+    .home .ritual-writing-content .content-area .title {font-size: 20px;}
+    .home .ritual-writing-content .content-area .content {display: flex; justify-content: center;}
+    .home .ritual-writing-content .content-area .content .ch {font-size: 22px;}
+    .home .ritual-writing-content .content-area .content .para {font-size: 20px;}
+
+    .home .ritual-writing-content.type-a {flex-wrap: wrap;}
+    .home .ritual-writing-content.type-a .content-area {gap: 24px; flex: 1 0 calc((50% - 16px) / 2);}
+    .home .ritual-writing-content .content-area .content {gap: 24px;}
+    .home .ritual-writing-content.type-a .content-area:nth-of-type(-n+2) {width: 100%;}
+    .home .ritual-writing-content.type-a .content-area:nth-of-type(-n+2) .content{gap: 48px;}
+    .home .ritual-writing-content.type-b {flex-direction: column; }
+    .home .ritual-writing-content.type-b .content-area {gap: 16px;}
 }
