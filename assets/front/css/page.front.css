@@ -5256,14 +5256,35 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .my-contract-status-detail {padding: 40px; margin-bottom: 48px; background: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
 .home .my-contract-status-detail .in-stit {position: relative; font-weight: 600; font-size: 24px; color: #232527; line-height: 40px; padding-bottom: 24px;}
-.home .my-contract-status-detail .in-stit span.ty-arr {display: inline-block; padding-right: 28px;}
-.home .my-contract-status-detail .in-stit span.ty-arr {
+.home .my-contract-status-detail .in-stit .ty-arr {/*display: inline-block; padding-right: 28px;*/display: flex; align-items: center; column-gap: 12px;}
+/*.home .my-contract-status-detail .in-stit .ty-arr {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 3.6C7.36081 3.6 3.6 7.36081 3.6 12C3.6 16.6392 7.36081 20.4 12 20.4C16.6392 20.4 20.4 16.6392 20.4 12C20.4 7.36081 16.6392 3.6 12 3.6ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z' fill='%23777777'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.7353 8.88535C10.4794 9.22084 10.3992 9.61981 10.3992 9.80019H8.79922C8.79922 9.31391 8.969 8.56289 9.46312 7.91504C9.98744 7.22759 10.8464 6.7002 12.0992 6.7002C13.3215 6.7002 14.1879 7.17315 14.684 7.89863C15.1498 8.57982 15.2244 9.39323 15.0757 9.9928C14.831 10.9792 14.2362 11.7339 13.8311 12.0964C13.7182 12.1974 13.6209 12.2832 13.5362 12.3579C13.2247 12.6325 13.0861 12.7548 12.9821 12.9203C12.8896 13.0673 12.7977 13.3081 12.7977 14.0002H11.1977C11.1977 13.1923 11.2985 12.5921 11.6275 12.0688C11.867 11.6877 12.2251 11.3756 12.5602 11.0834C12.6296 11.0229 12.698 10.9632 12.7642 10.904C12.9816 10.7094 13.3706 10.2211 13.5227 9.60759C13.5725 9.40716 13.5471 9.07057 13.3633 8.80176C13.2097 8.57724 12.877 8.3002 12.0992 8.3002C11.352 8.3002 10.961 8.58946 10.7353 8.88535Z' fill='%23777777'/%3E%3Cpath d='M10.9992 16.0002C10.9992 15.4479 11.4469 15.0002 11.9992 15.0002C12.5515 15.0002 12.9992 15.4479 12.9992 16.0002C12.9992 16.5525 12.5515 17.0002 11.9992 17.0002C11.4469 17.0002 10.9992 16.5525 10.9992 16.0002Z' fill='%23777777'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
 	background-position: right top 9px;
 	background-size: 24px;
-}
+}*/
 .home .my-contract-status-detail .in-stit a.btn-change-pay {position: absolute; top: 0; right: 0; display: inline-block; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 12px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; box-sizing: border-box; padding: 0 24px;}
+.home .my-contract-status-detail .in-stit .btn_q {position: relative; display: block; width: 24px; height: 24px; cursor: pointer;}
+.home .my-contract-status-detail .in-stit .btn_q {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 30 30' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 2.4C8.04121 2.4 2.4 8.04121 2.4 15C2.4 21.9588 8.04121 27.6 15 27.6C21.9588 27.6 27.6 21.9588 27.6 15C27.6 8.04121 21.9588 2.4 15 2.4ZM0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z' fill='%23777777'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.103 10.328C12.7192 10.8313 12.5988 11.4297 12.5988 11.7003H10.1988C10.1988 10.9709 10.4535 9.84433 11.1947 8.87255C11.9812 7.84139 13.2696 7.05029 15.1488 7.05029C16.9822 7.05029 18.2819 7.75972 19.026 8.84795C19.7247 9.86973 19.8366 11.0899 19.6135 11.9892C19.2465 13.4689 18.3543 14.6008 17.7467 15.1445C17.5773 15.2961 17.4313 15.4249 17.3044 15.5368C16.8371 15.9488 16.6292 16.1321 16.4731 16.3804C16.3344 16.601 16.1965 16.9622 16.1965 18.0003H13.7965C13.7965 16.7884 13.9478 15.8882 14.4412 15.1032C14.8005 14.5315 15.3376 14.0633 15.8403 13.625C15.9444 13.5343 16.047 13.4449 16.1463 13.3561C16.4725 13.0642 17.0558 12.3317 17.2841 11.4114C17.3587 11.1107 17.3206 10.6059 17.0449 10.2026C16.8146 9.86587 16.3154 9.45029 15.1488 9.45029C14.0281 9.45029 13.4415 9.8842 13.103 10.328Z' fill='%23777777'/%3E%3Cpath d='M13.4988 21.0003C13.4988 20.1719 14.1704 19.5003 14.9988 19.5003C15.8273 19.5003 16.4988 20.1719 16.4988 21.0003C16.4988 21.8287 15.8273 22.5003 14.9988 22.5003C14.1704 22.5003 13.4988 21.8287 13.4988 21.0003Z' fill='%23777777'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: 24px;
+}
+.home .my-contract-status-detail .in-stit .btn_q span.q-layer {position: absolute; bottom: 43px; left: -74px; display: block; width: 288px; height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 0 0 10px; background: #232527; border-radius: 4px; box-sizing: border-box;}
+.home .my-contract-status-detail .in-stit .btn_q span.q-layer::after {
+  content: '';
+  position: absolute;
+  left: 80px;
+  bottom: -9px;
+  display: block;
+  width: 13px;
+  height: 9px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='9' viewBox='0 0 13 9' fill='none'%3E%3Cpath d='M6.96191 7.78809C6.56489 8.37008 5.7065 8.3702 5.30957 7.78809L0 0H12.2725L6.96191 7.78809Z' fill='%23232527'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: 13px;
+}
 .home .my-contract-status-detail .in-cont01 {padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .home .my-contract-status-detail .in-cont01 .bx-tp {position: relative; display: flex; align-items: center; column-gap: 12px;}
 .home .my-contract-status-detail .in-cont01 .bx-tp p.tx-num {font-weight: 600; font-size: 32px; color: #232527; line-height: 130%;}
