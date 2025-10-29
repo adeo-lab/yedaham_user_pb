@@ -22,6 +22,7 @@ var uiCommon = (function() {
 			_.totalSearch();
 			_.targetScroll(); // 251022 작업
 			_.tooltip();
+			_.dropdown(".dropdown-menu");
 		},
 		onResize: function() {
 			_.gnbMenu.init(); 
@@ -808,7 +809,7 @@ var uiCommon = (function() {
 					// 	offset = isMobile ? _this.offsetMobile + 0 : _this.offsetPC + 60;
 					// }
 					if (!isMobile && link.closest('.tab-fixed')) {
-						offset = _this.offsetPC + 60;
+						offset = _this.offsetPC + 180;
 					}
 					console.log('offset:', offset);
 
@@ -889,14 +890,20 @@ var uiCommon = (function() {
 			});
 
 			// 목차 이동 버튼
-			const targetScrollBtns = document.querySelectorAll('.btn-target-scroll');
+			const targetScrollBtns = document.querySelectorAll('.btn-tooltip-scroll');
 			targetScrollBtns.forEach(btn => {
 				btn.addEventListener('click', function(event) {
 					const targetId = this.dataset.target;
 					const targetElement = document.querySelector(targetId);
 					
 					if (targetElement) {
-						targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						const headerHeight = 110; // 헤더 높이 100px
+						const y = targetElement.getBoundingClientRect().top + window.scrollY;
+
+						window.scrollTo({
+							top: y - headerHeight,
+							behavior: 'smooth'
+						});
 						
 						// 툴팁 닫기
 						const listItem = this.closest('.list-item');
@@ -904,6 +911,48 @@ var uiCommon = (function() {
 					}
 					
 					event.preventDefault();
+				});
+			});
+		},
+		dropdown: function(selector) {
+			const elems = document.querySelectorAll(selector);
+			if (!elems || elems.length === 0) return;
+
+			elems.forEach((elem) => {
+				const selectBtn = elem.querySelector(".btn-select");
+				const selectedValue = elem.querySelector(".btn-text");
+				const optionsList = elem.querySelectorAll(".dropdown-list li .form-txt");
+
+				const checkedOption = elem.querySelector(".dropdown-list li input:checked");
+				if (checkedOption) {
+					selectedValue.textContent = checkedOption.closest("label").querySelector(".form-txt").textContent;
+				}
+
+				const toggleDropdown = () => {
+					elem.classList.toggle("active");
+					selectBtn.setAttribute(
+						"aria-expanded",
+						selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
+					);
+				};
+
+				const closeDropdown = (event) => {
+					if (elem.classList.contains("active") && !elem.contains(event.target)) {
+						elem.classList.remove("active");
+					}
+				};
+
+				const handleOptionClick = function(event) {
+					if (event.type === "click" && event.clientX !== 0 && event.clientY !== 0) {
+						selectedValue.textContent = this.textContent;
+						elem.classList.remove("active");
+					}
+				};
+
+				selectBtn.addEventListener("click", toggleDropdown);
+				document.addEventListener("mouseup", closeDropdown);
+				optionsList.forEach((option) => {
+					option.addEventListener("click", handleOptionClick);
 				});
 			});
 		}

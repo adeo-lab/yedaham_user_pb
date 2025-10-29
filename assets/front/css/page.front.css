@@ -2945,8 +2945,8 @@ z-index: 10;
 .home .page-head-bottom {position: relative; font-weight: 600; font-size: 19px; color: #232527; line-height: 130%;}
 .home .page-head-bottom ul {padding-top: 12px;}
 .home .page-head-bottom ul.ty02 {padding-top: 0; margin-top: -3px;}
-.home .page-head-bottom li {position: relative; font-weight: 400; font-size: 17px; color: #B26231; line-height: 150%; padding-left: 20px;}
-.home .page-head-bottom li:before {
+.home .page-head-bottom .ty02 li {position: relative; font-weight: 400; font-size: 17px; color: #B26231; line-height: 150%; padding-left: 20px;}
+.home .page-head-bottom .ty02 li:before {
 	content: '';
 	position: absolute;
 	top: 6px;
@@ -6292,9 +6292,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .page-head-bottom {padding-left: 16px; padding-right: 16px;}
   .home .page-head-bottom > p {font-size: 17px; padding-top: 12px;}
-  .home .page-head-bottom ul {padding-top: 10px; /*padding-bottom: 16px;*/}
-  .home .page-head-bottom li {font-size: 15px; padding-bottom: 4px;}
-  .home .page-head-bottom li:last-child {padding-bottom: 0;}
+  .home .page-head-bottom ul.ty02 {padding-top: 10px; /*padding-bottom: 16px;*/}
+  .home .page-head-bottom .ty02 li {font-size: 15px; padding-bottom: 4px;}
+  .home .page-head-bottom .ty02 li:last-child {padding-bottom: 0;}
   .home .page-head-bottom .btn-r-ty01 {position: relative; width: 100%; height: 48px; font-size: 17px; line-height: 48px; padding: 0; margin-top: 16px; margin-bottom: 12px; text-align: center; box-sizing: border-box;}
 
   .home .tab-display.style-a.pt-ty01 {width: auto; padding-top: 0; margin: 0 -16px;}
