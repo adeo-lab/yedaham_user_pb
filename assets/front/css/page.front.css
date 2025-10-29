@@ -6859,8 +6859,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-pr-now-wrap .swiper-button-next {display: none !important}
   .home .my-pr-now-wrap .swiper-button-prev {display: none !important}
 
-  .home .my-main-benefit {padding-left: 0; display: flex; flex-wrap: wrap; column-gap: 16px;}
-  .home .my-main-benefit ul {display: flex; flex-wrap: unset; gap: 24px; flex-direction: column;}
+  .home .my-main-benefit {padding-left: 0; display: block; flex-wrap: wrap; column-gap: 0;}
+  .home .my-main-benefit ul {display: flex; flex-wrap: unset; gap: 16px; flex-direction: column;}
   .home .my-main-benefit .in-bx {width: 100% /*calc(50% - 8px)*/; height: 160px; padding: 20px 24px; margin-bottom: 0;}
   .home .my-main-benefit li:nth-child(1) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_01.png') no-repeat right 30px bottom 30px; background-size: 47px;}
   .home .my-main-benefit li:nth-child(2) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_02.png') no-repeat right 30px bottom 30px; background-size: 52px;}
