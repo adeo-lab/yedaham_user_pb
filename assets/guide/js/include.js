@@ -77,7 +77,7 @@ const headerNavigation = function (useFullLink) {
 					<div class="g-sub-wrap" data-status="진행" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">약관 > 개인정보처리방침</span></p>
 						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인 없음, 툴팁작업 남음</span></p>
-						${createMenuLink("common/FO_Y_ZB_003.html", useFullLink)}
+						${createMenuLink("common/FO_Y_ZB_002.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">약관* > 중요정보 고시사항(21p)</span></p>
@@ -887,7 +887,6 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료" style="background: #ddd;">
 						<p class="g-sub-title"><span class="em">법인 상품</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">탭 확인 필요</span></p>
 						${createMenuLink("ltd/FO_L_PA_001.html", useFullLink)}
 					</div>
 					<!-- <div class="g-sub-wrap" data-status="">
