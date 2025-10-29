@@ -236,7 +236,8 @@
 .ltd .page-product .section .section-head .section-subject {font-size: 40px; font-weight: 600; line-height: 1.3; color: #131517; letter-spacing: -0.5px;}
 .ltd .page-product .section .section-head .section-summary {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
 .ltd .page-product .section .section-head .section-summary .wbr {display: inline;}
-.ltd .container.ty-wide .page-product .tab-display.style-c {margin: 88px auto 96px;}
+.ltd .container.ty-wide .page-product .tab-display.style-c:not(.fixed) {margin: 88px auto 96px;}
+.ltd .container.ty-wide .page-product .tab-display.style-c.fixed {max-width: 100%;}
 
 .ltd .section.section-top {padding: 64px 0;}
 .ltd .section-top .product-list {display: flex; gap: 48px;}
@@ -428,7 +429,7 @@
     .ltd .page-product .section .section-head .section-summary {font-size: 14px;}
     .ltd .page-product .section .section-head .section-summary .wbr {display: block;}
 
-    .ltd .container.ty-wide .page-product .tab-display.style-c {margin: 64px 0 72px;}
+    .ltd .container.ty-wide .page-product .tab-display.style-c:not(.fixed) {margin: 64px 0 72px;}
 
     .ltd .section.section-top {padding: 32px 0 48px;}
     .ltd .section-top .product-list {gap: 0; flex-direction: column; row-gap: 16px;}
