@@ -512,16 +512,17 @@
 
 
 /* 제휴사 랜딩페이지 */
-.landing-wrap {max-width: 1200px; margin: 0 auto;}
+.landing-wrap {max-width: 1200px; width: 100%; margin: 0 auto;}
 .landing-wrap .header {padding: 20px 32px;}
-.landing-wrap .container {padding: 0;}
+.landing-wrap .header-container {align-items: center; padding: 0;}
+.landing-wrap .header-container .logo {display: flex; justify-content: space-between; align-items: center; padding: 0;}
 .landing-wrap .img-mo {display: none;}
 .landing-wrap .consulting-section { padding: 96px 60px; background-color: #FFEDD6; }
 .landing-wrap .consulting-box {display: grid; grid-template-columns: 280px 1fr; gap: 24px; overflow: hidden; max-width: 1080px; margin: 0 auto; padding: 40px; background-color: #fff; border-radius: 24px;}
 .landing-wrap .consulting-info {background-color: #fff; padding: 0 12px; }
 .landing-wrap .consulting-title { margin-bottom: 40px; font-size: 32px; font-weight: 600; color: #131517; line-height: 1.3; letter-spacing: -0.5px; }
 .landing-wrap .operation-hours { display: flex; gap: 8px; }
-.landing-wrap .operation-hours::before {display: block; content: ''; width: 24px; height: 24px; background: url(../../../assets/front/images/ltd/img_reply.svg);;;}
+.landing-wrap .operation-hours::before {display: block; content: ''; width: 24px; height: 24px; background: url(../../../assets/front/images/ltd/img_reply.svg);}
 .landing-wrap .hours-content h3 { font-size: 17px; font-weight: 400; color: #444; line-height: 1.5; }
 .landing-wrap .hours-main {display: flex; flex-direction: column; margin-bottom: 8px; font-size: 17px; font-weight: 400; color: #444; line-height: 1.5; }
 .landing-wrap .hours-main strong {font-weight: 600;}
@@ -563,6 +564,18 @@
 .landing-wrap .btn-cancel { padding: 0 40px; background-color: white; border: 1px solid rgba(19, 21, 23, 0.30); color: #232527; }
 .landing-wrap .btn-submit { padding: 0 64px; background-color: #6A75A0; color: white; }
 
+.landing-wrap .intro-section {display: flex; align-items: center; height: 760px; background: url(../../../assets/front/images/ltd/img_landing_bnr02_01_pc.jpg) no-repeat; background-position: 50% 0; background-size: cover;}
+.landing-wrap .intro-section .intro-container {max-width: 440px; padding: 0 140px; box-sizing: border-box;}
+.landing-wrap .intro-section .intro-container .intro-title {font-size: 52px; font-weight: 400; line-height: 1.2; color: #232527; letter-spacing: -0.5px;}
+.landing-wrap .intro-section .intro-container .intro-title strong {display: block; font-weight: 600;}
+.landing-wrap .intro-section .intro-container .intro-subtitle {display: flex; flex-direction: column; row-gap: 10px; margin-top: 18px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
+.landing-wrap .intro-section .intro-container .intro-bottom {display: flex; gap: 20px; margin-top: 40px;}
+.landing-wrap .intro-section .intro-container .intro-bottom .btn-intro {display: flex; flex-direction: column; gap: 8px; align-items: center; width: 210px; padding: 37px 24px; border-radius: 16px; background-position: right 10px top 10px; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9.24912 3.78806C9.24949 3.3412 9.61179 2.97846 10.0587 2.97845L19.346 2.97919C19.7932 2.97919 20.1556 3.34162 20.1556 3.7888L20.1563 13.0761C20.1563 13.523 19.7936 13.8853 19.3467 13.8857C18.8995 13.8857 18.5364 13.5225 18.5364 13.0753V5.7435L9.36141 14.9185C9.0452 15.2347 8.53253 15.2347 8.21632 14.9185C7.90011 14.6023 7.90011 14.0896 8.21632 13.7734L17.3913 4.59842L10.0595 4.59842C9.61229 4.59842 9.24912 4.23524 9.24912 3.78806Z' fill='%23EFEFEF'/%3E%3C/svg%3E");}
+.landing-wrap .intro-section .intro-container .intro-bottom .btn-intro .title {font-size: 32px; font-weight: 600; line-height: 1.2; color: #FFF; letter-spacing: -0.5px;}
+.landing-wrap .intro-section .intro-container .intro-bottom .btn-intro .subtitle {font-size: 17px; font-weight: 400; line-height: 1.5; color: #FFF;}
+.landing-wrap .intro-section .intro-container .intro-bottom .btn-intro.btn-personal {background-color: #D9A226;}
+.landing-wrap .intro-section .intro-container .intro-bottom .btn-intro.btn-corporate {background-color: #6A75A0;}
+
 @media (hover: hover) {
     .landing-wrap  .time-slot:not(.disabled):hover span { border-color: #9EA9D7;}
 }
@@ -599,4 +612,7 @@
     .landing-wrap .btn-cancel, .btn-submit { min-width: 97px; height: 48px; font-size: 17px;}
     .landing-wrap .btn-cancel { padding: 0 32px; }
     .landing-wrap .btn-submit {  flex: 1 1 100%; padding: 0 32px; }
+
+    .landing-wrap .intro-section .intro-container {max-width: 100%; padding: 0 16px;}
+    .landing-wrap .intro-section .intro-container .intro-title {text-align: center;}
 }
