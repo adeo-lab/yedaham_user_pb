@@ -74,7 +74,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">약관* > 홈페이지 이용약관(19p)</span></p>
 						${createMenuLink("common/FO_Y_ZB_001.html", useFullLink)}
 					</div>
-					<div class="g-sub-wrap" data-status="진행">
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">약관 > 개인정보처리방침</span></p>
 						${createMenuLink("common/FO_Y_ZB_002.html", useFullLink)}
 					</div>
