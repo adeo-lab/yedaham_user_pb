@@ -114,8 +114,7 @@
 ********************************************************************************************************************************/
 .home .content-popup .popup-wrap.large {max-width: 996px;}
 .home .content-popup .popup-wrap .popup-header {margin-bottom: 32px;}
-.home .content-popup .popup-wrap .popup-footer .button-area > [class*=btn-] {color: #232527;}
-.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal {padding: 0 40px;}
+.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal {padding: 0 40px; color: #232527;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-normal .btn-name {min-width: 50px;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-primary .btn-name {min-width: 80px;}
 
