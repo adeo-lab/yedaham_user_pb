@@ -86,36 +86,11 @@
 				</div>
 				<!-- //tab -->
 				<script>
-					let tabSwiper = null;
-
-					function initTabSwiper() {
-						const isMobile = window.innerWidth <= 768;
-						const tabBx = document.querySelector(".tab-display.style-a .tab-inner-bx");
-						const currentSlide = tabBx.querySelector(".tab-item.current");
-
-						if (isMobile && !tabSwiper) {
-							tabSwiper = new Swiper(tabBx, {
-								slidesPerView: "auto",
-								spaceBetween: 12,
-								freeMode: true,
-								on: {
-									init: function () {
-										// current 클래스가 있으면 해당 슬라이드로 이동
-										if (currentSlide) {
-											const index = [...currentSlide.parentElement.children].indexOf(currentSlide);
-											this.slideTo(index, 0);
-										}
-									}
-								}
-							});
-						} else if (!isMobile && tabSwiper) {
-							tabSwiper.destroy(true, true);
-							tabSwiper = null;
-						}
-					}
-
-					window.addEventListener("load", initTabSwiper);
-					window.addEventListener("resize", initTabSwiper);
+					var swiper = new Swiper(".tab-display .tab-inner-bx", {
+						slidesPerView: "auto",
+						spaceBetween: 12,
+						freeMode: true,
+					});
 				</script>
 				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
 			</div>
@@ -134,11 +109,45 @@
 						</div>
 					</div>
 					<!-- //tab -->
-					<script>
-						var swiper = new Swiper(".tab-display .tab-inner-bx", {
-							slidesPerView: "auto",
-							spaceBetween: 12,
-							freeMode: true,
+					 <script>
+						let tabSwiper = null;
+
+						function initTabSwiper() {
+							const isMobile = window.innerWidth <= 1023;
+							const tabBx = document.querySelector(".tab-display.style-a .tab-inner-bx");
+
+							if (isMobile && !tabSwiper) {
+								tabSwiper = new Swiper(tabBx, {
+									slidesPerView: "auto",
+									spaceBetween: 12,
+									freeMode: true,
+									on: {
+										init: function () {
+											const currentSlide = tabBx.querySelector(".tab-item.current");
+											if (currentSlide) {
+												const index = [...currentSlide.parentElement.children].indexOf(currentSlide);
+												this.slideTo(index, 0);
+											}
+										},
+									},
+								});
+							} else if (!isMobile && tabSwiper) {
+								tabSwiper.destroy(true, true);
+								tabSwiper = null;
+							}
+						}
+
+						window.addEventListener("load", initTabSwiper);
+						window.addEventListener("resize", () => {
+							initTabSwiper();
+
+							if (tabSwiper) {
+								const currentSlide = document.querySelector(".tab-display.style-a .tab-item.current");
+								if (currentSlide) {
+									const index = [...currentSlide.parentElement.children].indexOf(currentSlide);
+									tabSwiper.slideTo(index, 0);
+								}
+							}
 						});
 					</script>
                     <div class="safety-system">
