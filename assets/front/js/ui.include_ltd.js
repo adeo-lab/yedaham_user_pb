@@ -36,22 +36,28 @@ const headerTemplate = function () {
 				<div class="gnb-list">
 					<div class="mobile-menu-top-area">
 						<h1 class="logo">
-							<a href="#" title="LG AI 청소년캠프 메인으로 이동" class="logo-link">
+							<a href="#" title="예다함 메인으로 이동" class="logo-link">
 								<img src="../../../assets/front/images/common/logo.png" alt="예다함" />
 							</a>
 						</h1>
-						<div class="navi-util">
-							<ul class="navi-list">
-								<li class="navi-item logout"><a href="#" class="navi-text"><span class="logout"></span></a></li>
-								<li class="navi-item"><a href="#" class="navi-text"><span class="search"></span></a></li>
-							</ul>
-						</div>
 						<div class="navi-control">
 							<button type="button" class="btn-navi-menu-close" title="모바일 메뉴">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 									<path d="M18.6308 4.23421C18.9432 3.92199 19.4493 3.92187 19.7617 4.23421C20.074 4.54656 20.0739 5.05263 19.7617 5.36507L13.1288 11.9979L19.7656 18.6346C20.078 18.947 20.078 19.454 19.7656 19.7664C19.4532 20.0787 18.9471 20.0786 18.6347 19.7664L11.998 13.1287L5.36127 19.7664C5.04885 20.0786 4.54275 20.0787 4.23041 19.7664C3.91798 19.454 3.918 18.947 4.23041 18.6346L10.8662 11.9979L4.23431 5.36507C3.92209 5.05263 3.92196 4.54656 4.23431 4.23421C4.54667 3.92187 5.05275 3.92199 5.36517 4.23421L11.998 10.867L18.6308 4.23421Z" fill="#232527"/>
 								</svg>
 							</button>
+						</div>
+					</div>
+					<div class="mobile-menu-content-area">
+						<div class="call-area">
+							<dl class="call-item day">
+								<dt class="title">24시 장례접수</dt>
+								<dd class="number"><a href="tel:1566-0119" class="tel">1566-0119</a></dd>
+							</dl>
+							<dl class="call-item corp">
+								<dt class="title">법인상담</dt>
+								<dd class="number"><a href="tel:1566-9402" class="tel">1566-9402</a></dd>
+							</dl>
 						</div>
 					</div>
 					<div class="in-nav">
@@ -69,6 +75,12 @@ const headerTemplate = function () {
 								<a href="#mob_m4_l" class="gnb-text">자주 하는 질문</a>
 							</li>
 						</ul>
+					</div>
+					<div class="mobile-menu-bottom-area">
+						<div class="button-area">
+							<a href="#" class="btn-shortcut"><span class="btn-text">홈페이지</span></a>
+							<a href="#" class="btn-shortcut"><span class="btn-text">회사소개</span></a>
+						</div>
 					</div>
 				</div>
 			</nav>

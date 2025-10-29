@@ -29,7 +29,7 @@
  * 기존 수정
 
 ********************************************************************************************************************************/
-.corp .quick-menu {position: fixed; top: auto; right: 30px; bottom: 30px; left: auto; z-index: 10; transition: all 0.4s ease;}
+.corp .quick-menu {position: fixed; top: auto; right: 30px; bottom: 30px; left: auto; z-index: 100; transition: all 0.4s ease;}
 .corp .quick-menu.show {bottom: 66px;}
 /* .quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center; row-gap: 16px;} */
 .corp .quick-menu .btn-yac {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 8px; width: 60px; height: 100px; background-color: #4458B0; border-radius: 30px;}

@@ -47,7 +47,7 @@
  * 기존 수정
 
 ********************************************************************************************************************************/
-.ltd .quick-menu {position: fixed; top: auto; right: 40px; bottom: 100px; left: auto; z-index: 10; transition: all 0.4s ease;}
+.ltd .quick-menu {position: fixed; top: auto; right: 40px; bottom: 100px; left: auto; z-index: 100; transition: all 0.4s ease;}
 .ltd .quick-menu.show {bottom: 136px;}
 .ltd .quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center;}
 .ltd .quick-menu .quick-toggle {display: none; pointer-events: none;}
