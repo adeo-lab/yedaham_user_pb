@@ -155,6 +155,65 @@
 .ltd .corp-benefit-list .benefit-item .benefit-desc li::before {display: block; content: ''; flex-shrink: 0; position: absolute; top: 7px; left: 0; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");}
 .ltd .corp-benefit-list .benefit-item .benefit-desc li .wbr {display: inline;}
 
+/* 왜 예다함인가? */
+.ltd .safety-system {padding-bottom: 24px;}
+.ltd .safety-system-wrap {display: flex; flex-direction: column; row-gap: 48px;}
+.ltd .safety-system-head {display: flex; align-items: center; justify-content: center; flex-direction: column; row-gap: 16px; word-break: keep-all;}
+.ltd .safety-system-head .safety-system-subject {font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px; text-align: center;}
+.ltd .safety-system-head .safety-system-summary {font-size: 17px; line-height: 1.5; color: #444; text-align: center;}
+.ltd .safety-system-body .safety-system-bank {position: relative; padding: 60px 0;}
+.ltd .safety-system-body .safety-system-bank .tit-01 {display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 210px; height: 210px; background-color: #374BA3; border-radius: 100%; font-size: 22px; font-weight: 600; line-height: 1.3; color: #fff; aspect-ratio: 1/1;}
+.ltd .safety-system-body .safety-system-bank .tit-01::after {display: block; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 320px; height: 320px; aspect-ratio: 1/1; border: 2px dashed #FBCD6C; border-radius: 100%; box-sizing: border-box;}
+.ltd .safety-system-body .safety-system-bank .bank-list {display: flex; justify-content: center; gap: 240px; position: relative;}
+.ltd .safety-system-body .safety-system-bank .bank-list .bank-item {display: flex; flex-direction: column; row-gap: 16px;}
+.ltd .safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {display: flex; justify-content: center; align-items: center; width: 200px; height: 56px; padding: 12px 32px; box-sizing: border-box; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px; background-color: #fff;}
+
+.ltd .licensed-director-content {overflow: hidden; width: 100%; margin: 0 auto; border-radius: 16px;     text-align: center;}
+.ltd .licensed-director-content iframe {width: 100%; border: none; aspect-ratio: 16/9;}
+.ltd .licensed-director-content .img {display: inline-flex; justify-content: center; align-items: center; overflow: hidden; margin: 0 auto; border-radius: 24px; text-align: center;}
+
+.ltd .payback-system-content {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 48px;}
+.ltd .payback-system-content .payback-refund {padding: 14px 0; background: url(../../../assets/front/images/sub/bg_payback_line_pc.png) no-repeat center; background-size: contain;}
+.ltd .payback-system-content .payback-refund-wrap {display: flex; justify-content: space-between; justify-content: center; align-items: center; gap: 24px; padding: 24px;}
+.ltd .payback-system-content .payback-refund-item {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 200px; height: 200px; padding: 10px; box-sizing: border-box; border-radius: 100%; background-color: #E9F5EC; font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
+.ltd .payback-system-content .payback-refund-item:last-child {background-color: #FFF2E0;}
+.ltd .payback-system-content .payback-refund-item.percent {background-color: #fff; font-size: 62px; font-weight: 600; line-height: 1.2; color: #D17B47; text-align: center; letter-spacing: -0.5px;}
+.ltd .payback-items  .payback-items-wrap {display: flex; flex-direction: column; row-gap: 16px; justify-content: center; align-items: center;}
+.ltd .payback-items  .payback-head {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 16px; text-align: center; word-break: keep-all;}
+.ltd .payback-items  .payback-head .tit-01 {font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.ltd .payback-items  .payback-head .txt-01 {font-size: 17px; line-height: 1.5; color: #444;}
+.ltd .payback-items  .payback-items-list {display: flex; gap: 8px;}
+.ltd .payback-items  .payback-items-item {display: flex; flex-direction: column; row-gap: 8px; align-items: center; padding: 24px 8px;}
+.ltd .payback-items  .payback-items-item::before {display: block; content: ''; width: 84px; height: 84px; padding: 12px; box-sizing: border-box; border-radius: 100%; background-color: #ECF5FF; background-size: 48px auto; background-repeat: no-repeat; background-position: center;}
+.ltd .payback-items  .payback-items-item.assistant::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_01.png);}
+.ltd .payback-items  .payback-items-item.transportation::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_02.png);}
+.ltd .payback-items  .payback-items-item.arrangement::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_03.png);}
+.ltd .payback-items  .payback-items-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_04.png);}
+.ltd .payback-items  .payback-items-item.pall::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_05.png);}
+.ltd .payback-items  .payback-items-item .item-name {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+
+.ltd .transparent-management-content {display: flex; flex-direction: column; row-gap: 64px;}
+.ltd .transparent-management-structure {display: flex; gap: 20px 16px; flex-wrap: wrap; position: relative; z-index: 0; max-width: 500px; margin: 0 auto; font-size: 22px; font-weight: 600; line-height: 1.3;}
+.ltd .transparent-management-structure  > * {display: flex; justify-content: center; align-items: center; width: 100%; height: 72px; border-radius: 12px; box-sizing: border-box;}
+.ltd .transparent-management-structure .tx-01 {background-color: #E2E2E2; color: #232527;}
+.ltd .transparent-management-structure .tx-02 {flex: 1 0 calc(50% - 8px); position: relative; width: auto; border: 1px solid rgba(19, 21, 23, 0.15); background-color: #fff; color: #374BA3}
+.ltd .transparent-management-structure .tx-02::before {display: block; content: ''; position: absolute; top: 50%; left: 50%; transform: translateY(-50%); z-index: -1; width: 1px; height: calc(100% + 42px); background-color: rgba(19, 21, 23, 0.30);}
+.ltd .transparent-management-structure .tx-03 {position: relative; border: 1px solid rgba(19, 21, 23, 0.10); background-color: #ECF5FF;}
+.ltd .transparent-management-structure .tx-03:last-child::before {display: block; content: ''; position: absolute; top: -100%; left: 50%; z-index: -1; width: 1px; height: 100%; background-color: rgba(19, 21, 23, 0.30);}
+.ltd .transparent-management-structure img {height: auto;}
+
+.ltd .protection-system .protection-system-wrap {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 24px;}
+.ltd .protection-system .protection-system-head .tit-01 {font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.ltd .protection-system .protection-system-body {display: flex; flex-direction: column; row-gap: 24px; width: 100%; max-width: 500px;}
+.ltd .protection-system .unfair-acts {display: flex; justify-content: center; gap: 24px; height: 100px; box-sizing: border-box; border-radius: 100px; border: 1px dashed rgba(19, 21, 23, 0.20);}
+.ltd .protection-system .unfair-acts .item {display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; padding: 14px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72' fill='none'%3E%3Cpath d='M16.1094 59.2949C15.1721 60.2322 13.6521 60.2322 12.7148 59.2949C11.7778 58.3577 11.7777 56.8386 12.7148 55.9014L32.6123 36.0029L12.7031 16.0928C11.7659 15.1555 11.7658 13.6355 12.7031 12.6982C13.6404 11.7612 15.1605 11.7611 16.0977 12.6982L36.0068 32.6094L55.915 12.6982C56.8522 11.7614 58.3714 11.7615 59.3086 12.6982C60.2459 13.6355 60.2458 15.1555 59.3086 16.0928L39.4004 36.0029L59.2969 55.9014C60.2341 56.8386 60.2341 58.3577 59.2969 59.2949C58.3596 60.2322 56.8406 60.2322 55.9033 59.2949L36.0068 39.3975L16.1094 59.2949Z' fill='%23FFDBC9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-size: 72px auto; background-position: center; font-size: 19px; font-weight: 600; line-height: 1.3;}
+.ltd .protection-system .protection-system-items {display: flex; justify-content: center; gap: 36px;}
+.ltd .protection-system .protection-system-items .item {display: flex; justify-content: center; align-items: center; position: relative; width: 140px; height: 140px; padding: 20px; box-sizing: border-box; background-color: #131517; border-radius: 100%; font-size: 19px; font-weight: 600; line-height: 1.3; color: #232527; word-break: keep-all; text-align: center;}
+.ltd .protection-system .protection-system-items .item:first-child {background-color: #FFF2E0;}
+.ltd .protection-system .protection-system-items .item:nth-child(2) {background-color: #E9F5EC;}
+.ltd .protection-system .protection-system-items .item:last-child {background-color: #FBEEED;}
+.ltd .protection-system .protection-system-items .item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc(50% - (28px / 2)); left: calc((-36px / 2) + (-28px/2)); width: 28px; height: 28px; aspect-ratio: 1/1; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M13.999 3.5C14.5145 3.5 14.9326 3.91813 14.9326 4.43359V13.0674H23.5664C24.0818 13.0674 24.4999 13.4846 24.5 14C24.5 14.5155 24.0819 14.9336 23.5664 14.9336H14.9326V23.5664C14.9326 24.0819 14.5145 24.5 13.999 24.5C13.4836 24.5 13.0654 24.0819 13.0654 23.5664V14.9336H4.43359C3.91813 14.9336 3.5 14.5155 3.5 14C3.50012 13.4846 3.9182 13.0674 4.43359 13.0674H13.0654V4.43359C13.0654 3.91815 13.4836 3.50004 13.999 3.5Z' fill='%23131517' fill-opacity='0.3'/%3E%3C/svg%3E");}
+
 /* 법인 가입방법 */
 .ltd .corp-join-type {display: flex; gap: 24px; justify-content: space-between; margin-top: 32px;}
 .ltd .corp-join-type .join-item {position: relative; width: 100%; padding: 32px 32px 45px; box-sizing: border-box; border-radius: 16px; background: linear-gradient(0deg, #F5F5F7 0%, #F5F5F7 100%),  #FFF; }
@@ -316,6 +375,43 @@
     .ltd .corp-benefit-list .benefit-item .benefit-desc li {font-size: 15px;}
     .ltd .corp-benefit-list .benefit-item .benefit-desc li .wbr {display: block;}
     .ltd .corp-benefit-list .benefit-item .benefit-desc li br {display: none;}
+
+    /* 왜 예다함인가? */
+    .ltd .safety-system {padding-bottom: 0;}
+    .ltd .safety-system-head .safety-system-subject {font-size: 22px;}
+    .ltd .safety-system-head .safety-system-summary {font-size: 15px;}
+    .ltd .safety-system-head .safety-system-summary .wbr {display: inline;}
+    .ltd .safety-system-body .safety-system-bank {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 11px; padding: 35px 0 0;}
+    .ltd .safety-system-body .safety-system-bank .tit-01 {position: static; transform: translate(0, 0); width: 210px; height: 210px; font-size: 20px;}
+    .ltd .safety-system-body .safety-system-bank .tit-01::after {width: 280px; height: 280px;}
+    .ltd .safety-system-body .safety-system-bank .bank-list {gap: 16px;}
+    .ltd .safety-system-body .safety-system-bank .bank-list .bank-item {row-gap: 16px;}
+    .ltd .safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {width: auto; min-width: 156px; padding: 0;}
+
+    .ltd .licensed-director-content .img {height: 200px;}
+    .ltd .licensed-director-content .img img {width: 100%; height: 100%; object-fit: cover; object-position: center;}
+
+    .ltd .payback-system-content .payback-refund {padding: 0 14px; background: url(../../../assets/front/images/sub/bg_payback_line_mo.png) no-repeat center; background-size: contain;}
+    .ltd .payback-system-content .payback-refund-wrap {flex-direction: column; gap: 0; padding: 24px;}
+    .ltd .payback-system-content .payback-refund-item {flex-direction: column; font-size: 20px;}
+    .ltd .payback-system-content .payback-refund-item.percent {height: 100px; font-size: 48px;}
+    .ltd .payback-items  .payback-head  .wbr{display: inline;}
+    .ltd .payback-items  .payback-head .tit-01 {font-size: 20px;}
+    .ltd .payback-items  .payback-head .txt-01 {font-size: 15px;}
+    .ltd .payback-items  .payback-items-list {justify-content: center; row-gap: 16px; column-gap: 24px; flex-wrap: wrap;}
+    .ltd .payback-items  .payback-items-item {padding: 0;}
+    .ltd .payback-items  .payback-items-item .item-name {font-size: 15px;}
+
+    .ltd .transparent-management-content {row-gap: 48px;}
+    .ltd .transparent-management-structure {font-size: 20px;}
+    .ltd .transparent-management-structure  > * {height: 64px;}
+
+    .ltd .protection-system .protection-system-head .tit-01 {font-size: 20px;}
+    .ltd .protection-system .unfair-acts {gap: 0;}
+    .ltd .protection-system .protection-system-items {flex-direction: column; gap: 32px;}
+    .ltd .protection-system .protection-system-items .item {width: 100%; height: auto; padding: 20px 0; border-radius: 65px;}
+    .ltd .protection-system .protection-system-items .item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc((-24px /2) - (32px / 2)); left: calc(50% - (24px / 2)); width: 24px; height: 24px; background-size: cover;}
+
 
     /* 법인 가입방법 */
     .ltd .corp-join-type {flex-direction: column; margin-top: 32px;}
