@@ -5214,7 +5214,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-main-benefit li:nth-child(1) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_01.png') no-repeat right 40px bottom 30px; background-size: 63px;}
 .home .my-main-benefit li:nth-child(2) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_02.png') no-repeat right 40px bottom 30px; background-size: 70px;}
 .home .my-main-benefit li:nth-child(3) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_03.png') no-repeat right 40px bottom 30px; background-size: 73px;}
-.home .my-main-benefit li:nth-child(4) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_04.png') no-repeat right 40px bottom 30px; background-size: 63px;}
 
 .home .my-main-faq {border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 24px; overflow: hidden;}
 .home .my-main-faq ul {display: flex;}
@@ -6249,6 +6248,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+.home .m-app-down-layer {display: none;}
+.home .m-app-down-layer.open {display: none;}
+
+
 
 
 
@@ -6865,7 +6868,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-main-benefit li:nth-child(1) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_01.png') no-repeat right 30px bottom 30px; background-size: 47px;}
   .home .my-main-benefit li:nth-child(2) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_02.png') no-repeat right 30px bottom 30px; background-size: 52px;}
   .home .my-main-benefit li:nth-child(3) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_03.png') no-repeat right 30px bottom 30px; background-size: 54px;}
-  .home .my-main-benefit li:nth-child(4) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_04.png') no-repeat right 30px bottom 30px; background-size: 63px;}
   .home .my-main-benefit .in-bx .tx01 {font-size: 19px;}
   .home .my-main-benefit .in-bx .tx03 {font-size: 15px;}
   .home .my-main-benefit .in-bx .bx-btn .tx-l {font-size: 15px;}
@@ -7051,6 +7053,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .product-pop-detail-wrap .product-detail-cont .top-flags span.flag {height: 22px;font-size: 13px; line-height: 22px; padding: 0 8px;}
   .home .product-pop-detail-wrap .product-detail-cont .pr-title {font-size: 28px;}
   .home .product-pop-detail-wrap .product-detail-cont .pr-cont {font-size: 15px;}
+
+
+  .home .m-app-down-layer {position: fixed; left: 0; bottom: 0; width: 100%; height: 94px; background: #F8EEE8 url('../../../assets/front/images/sub/icon_my02.png') no-repeat left 44px bottom; background-size: 67px; border-radius: 24px 24px 0 0; box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.05); z-index: 1000; display: none;}
+  .home .m-app-down-layer.open {display: block;}
+  .home .m-app-down-layer .in-bx {padding: 24px 0 0 0; display: flex; column-gap: 16px; align-items: center;}
+  .home .m-app-down-layer .in-bx .tx-l {font-weight: 600; font-size: 15px; color: #232527; line-height: 150%; padding: 0 0 0 122px;}
+  .home .m-app-down-layer .in-bx a.btn-open-app {display: block; width: 62px; height: 32px; font-weight: 400; font-size: 14px; color: #fff; line-height: 32px; background: #D17B47; border-radius: 4px; text-align: center;}
+  .home .m-app-down-layer .btn-close-app-layer {position: absolute; top: 16px; right: 16px; width: 16px; height: 16px; text-indent: -9999px; overflow: hidden;}
+  .home .m-app-down-layer .btn-close-app-layer {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.4199 2.82275C12.6282 2.6145 12.9665 2.61449 13.1748 2.82275C13.3831 3.03103 13.3831 3.36935 13.1748 3.57764L8.75293 7.99854L13.1768 12.4233C13.385 12.6316 13.385 12.9699 13.1768 13.1782C12.9685 13.3861 12.631 13.3862 12.4229 13.1782L7.99805 8.75342L3.57422 13.1782C3.36598 13.3862 3.02852 13.3862 2.82031 13.1782C2.61203 12.9699 2.61204 12.6316 2.82031 12.4233L7.24414 7.99854L2.82324 3.57764C2.61497 3.36935 2.61496 3.03103 2.82324 2.82275C3.03151 2.61489 3.36898 2.61474 3.57715 2.82275L7.99805 7.24365L12.4199 2.82275Z' fill='%23232527'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px;
+  }
 }
 
 
