@@ -5194,7 +5194,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .my-main-benefit {position: relative; padding: 0 0 0 0; margin-bottom: 48px;}
 .home .my-main-benefit ul {display: flex; flex-wrap: wrap; gap: 24px;}
-.home .my-main-benefit .in-bx {position: relative; width: 435px; height: 182px; padding: 32px 40px; margin-bottom: 0; background: #fff; border-radius: 16px; box-sizing: border-box;}
+.home .my-main-benefit .in-bx {position: relative; width: 435px; height: 182px; padding: 32px 40px; margin-bottom: 0; background: #fff; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; box-sizing: border-box;}
 .home .my-main-benefit .in-bx .tx01 {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%;}
 .home .my-main-benefit .in-bx .tx03 {font-weight: 400; font-size: 197x; color: #444; line-height: 150%; padding-top: 8px;}
 .home .my-main-benefit .in-bx .bx-btn {padding-top: 34px; display: flex; align-items: center; justify-content: space-between;}
@@ -5211,6 +5211,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-main-benefit .in-bx.first {position: absolute; top: 0; left: 0; height: 352px;}
 .home .my-main-benefit .in-bx.first .tx01 {font-weight: 600; font-size: 40px; color: #BFBFBF; line-height: 130%;}
 .home .my-main-benefit .in-bx.first .tx02 {font-weight: 600; font-size: 22px; color: #BFBFBF; line-height: 130%;}
+.home .my-main-benefit li:nth-child(1) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_01.png') no-repeat right 40px bottom 30px; background-size: 63px;}
+.home .my-main-benefit li:nth-child(2) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_02.png') no-repeat right 40px bottom 30px; background-size: 70px;}
+.home .my-main-benefit li:nth-child(3) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_03.png') no-repeat right 40px bottom 30px; background-size: 73px;}
+.home .my-main-benefit li:nth-child(4) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_04.png') no-repeat right 40px bottom 30px; background-size: 63px;}
 
 .home .my-main-faq {border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 24px; overflow: hidden;}
 .home .my-main-faq ul {display: flex;}
