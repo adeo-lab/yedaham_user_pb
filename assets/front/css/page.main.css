@@ -317,7 +317,7 @@
 
   .home .main-vis-wrap {display: block; padding: 0 16px 40px 16px; box-sizing: border-box;}
   .home .main-vis-wrap .main-vis {width: 100%; height: 240px;}
-  .home .main-vis-wrap .main-vis li .in-bx {height: 240px; padding: 20px 24px; background: #F0E6DA; box-sizing: border-box; background-position: left -220px top !important; background-size: cover !important;}
+  .home .main-vis-wrap .main-vis li .in-bx {height: 240px; padding: 20px 24px; /*background: #F0E6DA;*/ box-sizing: border-box; background-position: left -220px top !important; background-size: cover !important;}
   .home .main-vis-wrap .main-vis li .in-bx .tx01 {font-size: 24px; padding-top: 0;}
   .home .main-vis-wrap .main-vis .bx-navi {left: 24px; bottom: 24px;}
   .home .main-vis-wrap .main-vis .bx-navi .swiper-button-prev, .swiper-rtl .swiper-button-next {display: none;}
