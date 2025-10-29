@@ -76,7 +76,6 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">약관 > 개인정보처리방침</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">모바일 디자인 없음, 툴팁작업 남음</span></p>
 						${createMenuLink("common/FO_Y_ZB_002.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -182,8 +181,7 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("common/FO_Y_ZU_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
-						<p class="g-sub-title"><span class="em">멤버십 카드 재발급*</span></p>
-						<p class="g-sub-text" style="color: red;"><span class="em">윈도우 팝업</span></p>
+						<p class="g-sub-title"><span class="em">멤버십 카드 재발급(윈도우 팝업)</span></p>
 						${createMenuLink("common/FO_Y_ZJ_001_P.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -365,7 +363,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">Step05. 계약완료* > 구성품목 확인 (20p)</span></p>
 						${createMenuLink("direct/FO_Y_DJ_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 청약서 확인​</span></p>
 						${createMenuLink("direct/FO_Y_DK_001_L.html", useFullLink)}
 					</dl>
@@ -374,11 +372,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("direct/FO_Y_DL_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 출금이체 신청서​​</span></p>
 						${createMenuLink("direct/FO_Y_DM_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 출금이체 신청서​​ > 서명하기</span></p>
 						${createMenuLink("direct/FO_Y_DM_001_L_01.html", useFullLink)}
 					</dl>
@@ -446,7 +444,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BD_003_L2.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="진행">
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">부가서비스 > 온라인 법률 상담 예시 보기​​</span></p>
 						${createMenuLink("benefit/FO_Y_BD_004_L.html", useFullLink)}
 					</dl>
