@@ -565,11 +565,11 @@
 .landing-wrap .btn-submit { padding: 0 64px; background-color: #6A75A0; color: white; }
 
 .landing-wrap .intro-section {display: flex; align-items: center; height: 760px; background: url(../../../assets/front/images/ltd/img_landing_bnr02_01_pc.jpg) no-repeat; background-position: 50% 0; background-size: cover;}
-.landing-wrap .intro-section .intro-container {max-width: 440px; padding: 0 140px; box-sizing: border-box;}
+.landing-wrap .intro-section .intro-container {max-width: 440px; padding: 0 140px;}
 .landing-wrap .intro-section .intro-container .intro-title {font-size: 52px; font-weight: 400; line-height: 1.2; color: #232527; letter-spacing: -0.5px;}
 .landing-wrap .intro-section .intro-container .intro-title strong {display: block; font-weight: 600;}
-.landing-wrap .intro-section .intro-container .intro-subtitle {display: flex; flex-direction: column; row-gap: 10px; margin-top: 18px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
-.landing-wrap .intro-section .intro-container .intro-bottom {display: flex; gap: 20px; margin-top: 40px;}
+.landing-wrap .intro-section .intro-container .intro-subtitle {display: flex; flex-direction: column; row-gap: 10px; margin-top: 18px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444; word-break: keep-all;}
+.landing-wrap .intro-section .intro-container .intro-bottom {display: flex; gap: 20px; justify-content: center; margin-top: 40px;}
 .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro {display: flex; flex-direction: column; gap: 8px; align-items: center; width: 210px; padding: 37px 24px; border-radius: 16px; background-position: right 10px top 10px; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9.24912 3.78806C9.24949 3.3412 9.61179 2.97846 10.0587 2.97845L19.346 2.97919C19.7932 2.97919 20.1556 3.34162 20.1556 3.7888L20.1563 13.0761C20.1563 13.523 19.7936 13.8853 19.3467 13.8857C18.8995 13.8857 18.5364 13.5225 18.5364 13.0753V5.7435L9.36141 14.9185C9.0452 15.2347 8.53253 15.2347 8.21632 14.9185C7.90011 14.6023 7.90011 14.0896 8.21632 13.7734L17.3913 4.59842L10.0595 4.59842C9.61229 4.59842 9.24912 4.23524 9.24912 3.78806Z' fill='%23EFEFEF'/%3E%3C/svg%3E");}
 .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro .title {font-size: 32px; font-weight: 600; line-height: 1.2; color: #FFF; letter-spacing: -0.5px;}
 .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro .subtitle {font-size: 17px; font-weight: 400; line-height: 1.5; color: #FFF;}
