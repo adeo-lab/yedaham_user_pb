@@ -4056,8 +4056,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .component-product-wrap .component-product .in-bx .icon.convenience {}
 .home .component-product-wrap .component-product .in-bx .icon.etc {}*/
 .home .component-product-wrap .component-product .in-bx dl {padding-top: 16px;}
-.home .component-product-wrap .component-product .in-bx dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%;}
+.home .component-product-wrap .component-product .in-bx dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; padding-bottom: 4px;}
 .home .component-product-wrap .component-product .in-bx dt span {font-size: 17px;}
+.home .component-product-wrap .component-product .in-bx dt:nth-child(1) {display: block;}
+.home .component-product-wrap .component-product .in-bx dt:nth-child(2) {display: none;}
 .home .component-product-wrap .component-product .in-bx dd {min-height: 52px; font-weight: 400; font-size: 17px; color: #777; line-height: 150%;}
 
 .home .review-display-wrap .review-display {overflow: unset;}
@@ -6496,6 +6498,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .component-product-wrap .component-product .in-bx ul {row-gap: 16px;}
   .home .component-product-wrap .component-product .in-bx dl {padding-top: 8px;}
   .home .component-product-wrap .component-product .in-bx dt {font-size: 15px; line-height: 150%;}
+  .home .component-product-wrap .component-product .in-bx dt:nth-child(1) {display: none;}
+  .home .component-product-wrap .component-product .in-bx dt:nth-child(2) {display: block;}
   .home .component-product-wrap .component-product .in-bx dd {display: none;}
 
   .home .pr-btm-tx-wrap {display: none;}
