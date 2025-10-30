@@ -1,53 +1,15 @@
-// const mainVisualSwiper = new Swiper('.main-visual-slides', {
-// 	watchOverflow: true,
-// 	// autoplay: {
-// 	// 	delay: 3000,
-// 	// 	disableOnInteraction: false,
-// 	// },
-// 	loop: true,
-// 	slidesPerView: 1,
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		clickable: true,
-// 	},
-// });
+/*
+ * FO_Y_MA_001 리뷰 리스트 무한 롤링 처리
+ */
+document.querySelectorAll('.home .main-cont03.pc .main-review-list .bx-wrap-l, .home .main-cont03.pc .main-review-list .bx-wrap-r').forEach((wrap) => {
+	const target = wrap.querySelector('.home .main-cont03.pc .main-review-list .in-bx-wrap');
+	const moveWrap = document.createElement('div');
 
-// window.mainVisualSwiper = mainVisualSwiper;
+	moveWrap.classList.add('move-wrap');
+	moveWrap.appendChild(target);
 
-// const mainNoticeSwiper = new Swiper('.main-notice-slides', {
-// 	watchOverflow: true,
-// 	autoplay: {
-// 		delay: 3000,
-// 		disableOnInteraction: false,
-// 	},
-// 	// loop: true,
-// 	slidesPerView: 1,
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// 	pagination: {
-// 		el: ".swiper-pagination",
-// 		clickable: true,
-// 	},
-// });
+	const clone = target.cloneNode(true);
 
-// window.mainNoticeSwiper = mainNoticeSwiper;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	moveWrap.appendChild(clone);
+	wrap.appendChild(moveWrap);
+});
