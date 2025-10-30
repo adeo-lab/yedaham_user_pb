@@ -5086,11 +5086,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-.corp .apw-board-write dd .bx-add-gray01 {padding: 24px 32px; margin: 24px 0 0 0; background: #F5F5F7; border-radius: 16px;}
+.corp .apw-board-write dd .bx-add-gray01 {position: relative; padding: 24px 32px; margin: 24px 0 0 0; background: #F5F5F7; border-radius: 16px;}
 .corp .apw-board-write dd .bx-add-gray01 .line-item.sepa .in-bx .bx-td {width: 345px;}
 .corp .apw-board-write dd .bx-add-gray01 .bx-datepicker {width: 345px;}
 .corp .apw-board-write dd .bx-add-gray01 .bx-point {display: flex; width: 345px;}
 .corp .apw-board-write dd .bx-add-gray01 .bx-point .line {width: 35px; font-weight: 600; font-size: 19px; color: #232527; line-height: 48px; text-align: center;}
+.corp .apw-board-write dd .bx-add-gray01 .btn-r {width: 64px; height: calc(100% - 48px); display: flex; justify-content: flex-end; align-self: flex-end;}
+.corp .apw-board-write dd .bx-add-gray01 .btn-r a.btn-close-n {display: block; width: 32px; height: 32px; background: #A0A0A0; border-radius: 4px; text-indent: -9999px; overflow: hidden;}
+.corp .apw-board-write dd .bx-add-gray01 .btn-r a.btn-close-n {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.4199 2.82422C12.6282 2.61596 12.9665 2.61595 13.1748 2.82422C13.3831 3.03249 13.3831 3.37082 13.1748 3.5791L8.75293 8L13.1768 12.4248C13.385 12.6331 13.385 12.9714 13.1768 13.1797C12.9685 13.3876 12.631 13.3877 12.4229 13.1797L7.99805 8.75488L3.57422 13.1797C3.36598 13.3876 3.02852 13.3877 2.82031 13.1797C2.61203 12.9714 2.61204 12.6331 2.82031 12.4248L7.24414 8L2.82324 3.5791C2.61497 3.37082 2.61496 3.03249 2.82324 2.82422C3.03151 2.61636 3.36898 2.6162 3.57715 2.82422L7.99805 7.24512L12.4199 2.82422Z' fill='white'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px;
+}
 
 @media (max-width: 1023px) {
   .corp .apw-board-write dd .bx-add-gray01 {padding: 16px;}
@@ -5098,6 +5106,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .apw-board-write dd .bx-add-gray01 .form.input.datepicker {width: calc(100% - 17px);}
   .corp .apw-board-write dd .bx-add-gray01 .line-item.sepa .in-bx .bx-td {width: 100%;}
   .corp .apw-board-write dd .bx-add-gray01 .bx-point {display: flex; width: 100%;}
+  .corp .apw-board-write dd .bx-add-gray01 .btn-r {display: block; position: absolute; top: 12px; right: 16px; width: 26px;}
+  .corp .apw-board-write dd .bx-add-gray01 .btn-r a.btn-close-n {width: 26px; height: 26px; background-size: 14px;}
 }
 
 .corp .apw-board-write dd .bx-add-gray02 {position: relative; padding: 24px 128px 24px 32px; margin: 24px 0 0 0; background: #F5F5F7; border-radius: 16px;}
