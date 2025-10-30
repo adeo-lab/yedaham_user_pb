@@ -2856,7 +2856,7 @@ z-index: 10;
 .corp #footer {border-top: none; background-color: #232527;}
 .corp .ft-l-side .ft-cnt01 {display: flex; column-gap: 40px; padding-bottom: 32px; font-weight: 600; font-size: 24px; color: #E2E2E2; line-height: 130%;}
 .corp .ft-l-side .ft-cnt02 ul {display: flex; column-gap: 40px; padding-bottom: 16px; font-weight: 600; font-size: 15px; color: #E2E2E2; line-height: 150%;}
-.corp .ft-l-side .ft-cnt02 li.tx-color01 {color: #4458B0;}
+.corp .ft-l-side .ft-cnt02 li.tx-color01 {font-size: 17px; color: #4458B0;}
 .corp .ft-l-side .ft-cnt03 {display: flex; column-gap: 12px; padding-bottom: 4px; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%;}
 .corp .ft-l-side .ft-cnt04 {display: flex; column-gap: 12px; padding-bottom: 24px; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%;}
 .corp .ft-l-side .ft-btm-logo img {width: 140px;}
