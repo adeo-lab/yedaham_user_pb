@@ -37,7 +37,7 @@ const headerTemplate = function () {
 				<div class="gnb-list">
 					<div class="mobile-menu-top-area">
 						<h1 class="logo">
-							<a href="#" title="LG AI 청소년캠프 메인으로 이동" class="logo-link">
+							<a href="#" title="예다함 회사소개 메인으로 이동" class="logo-link">
 								The K 예다함
 								<!-- <img src="../../../../assets/front/images/corp/logo_corp.png" alt="The K 예다함" /> -->
 							</a>
@@ -59,7 +59,7 @@ const headerTemplate = function () {
 					<div class="in-nav">
 						<ul>
 							<li class="gnb-item" id="mob_m1">
-								<a href="#mob_m1_l" class="gnb-text on">예다함소개</a>
+								<a href="#mob_m1_l" class="gnb-text">예다함소개</a>
 							</li>
 							<li class="gnb-item" id="mob_m2">
 								<a href="#mob_m2_l" class="gnb-text">경영현황</a>
