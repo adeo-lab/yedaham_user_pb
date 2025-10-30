@@ -36,39 +36,72 @@
  * Header
 
 ********************************************************************************************************************************/
+/* .corp #header {transition: all .3s ease;} */
 .corp #header .header-inner {width: 100%; padding: 0; box-sizing: border-box; justify-content: center;}
 .corp #header .header-inner .logo {position: absolute; top: 0; left: 60px; display: block; width: 180px;}
 .corp #header .header-inner .logo .logo-link {width: 180px; background: url('../../../assets/front/images/corp/logo_corp.png') no-repeat left center; background-size: 100%; text-indent: -9999px; overflow: hidden;}
 .corp #header .header-inner .gnb .gnb-list .in-nav ul {column-gap: 0; text-align: center;}
-.corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item {width: 180px; /* padding: 0 42px;*/}
+/* corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item {transition: all .3s ease;} */
+.corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item {padding: 0 20px; transition: all .3s ease;}
+/* .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item {padding: 0 20px; transition: all ease .3s;} */
 .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item a span.flag-new {position: absolute; top: 6px; right: -27px; width: 56px; height: 26px; font-weight: 600; font-size: 12px; color: #fff; line-height: 150%; padding: 4px 0 0 12px ; background: #FF766E; border-radius: 24px; box-sizing: border-box; text-align: left;}
-.corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item a span.flag-new::after{ content: ''; display: block; width: 10px; height: 6px; position: absolute; right: 21px; bottom: -6px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M1.96721 0H10L0 6L1.96721 0Z' fill='%23FF766E'/%3E%3C/svg%3E"); background-size: 10px 6px; background-repeat: no-repeat; background-position: center; }
+.corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item a span.flag-new::after { content: ''; display: block; width: 10px; height: 6px; position: absolute; right: 21px; bottom: -6px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M1.96721 0H10L0 6L1.96721 0Z' fill='%23FF766E'/%3E%3C/svg%3E"); background-size: 10px 6px; background-repeat: no-repeat; background-position: center; }
+.corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text:hover::after { content: ''; position: absolute; left: 50%; bottom: 26px; width: 100%; height: 3px; background: #000; transform: translateX(-50%); animation: expandLine 0.2s ease-out forwards; }
+.corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after { content: ''; position: absolute; left: 50%; bottom: 26px; width: 100%; height: 3px; background: #000; transform: translateX(-50%); animation: expandLine 0.2s ease-out forwards; }
+
+.in-nav .gnb-item#mob_m1 {}
+.in-nav .gnb-item#mob_m2 {}
+.in-nav .gnb-item#mob_m3 {}
+.in-nav .gnb-item#mob_m4 {}
+.in-nav .gnb-item#mob_m5 {}
+
+.gnb-item-l#mob_m1_l {min-width: 96px;}
+.gnb-item-l#mob_m2_l {min-width: 77px;}
+.gnb-item-l#mob_m3_l {min-width: 115px;}
+.gnb-item-l#mob_m4_l {min-width: 77px;}
+.gnb-item-l#mob_m5_l {min-width: 77px;}
+
+.gnb-item-l#mob_m1_l {min-width: 179px;}
+.gnb-item-l#mob_m2_l {min-width: 160px;}
+.gnb-item-l#mob_m3_l {min-width: 198px;}
+.gnb-item-l#mob_m4_l {min-width: 160px;}
+.gnb-item-l#mob_m5_l {min-width: 160px;}
+
+.corp .header .nav-layer .gnb-item-l {padding: 0 20px; transition: all ease .3s;}
+.corp .header.active .nav-layer .gnb-item-l {padding: 0 20px; box-sizing: border-box;}
+.corp #header .header-inner .gnb .gnb-list.active .in-nav .gnb-item {padding: 0 42px; box-sizing: border-box;}
+
+
 
 html.active-scroll-start .corp #header.header-invert {border-bottom: none;}
-.corp #header.header-invert .header-inner .logo .logo-link {width: 180px; background: url('../../../assets/front/images/corp/logo_corp_wh.png') no-repeat left center; background-size: 100%; text-indent: -9999px; overflow: hidden;}
+.corp #header.header-invert .header-inner .logo .logo-link {background: url('../../../assets/front/images/corp/logo_corp_wh.png') no-repeat left center; background-size: 100%; transition: all .3s ease;}
 .corp #header.header-invert .header-inner .gnb .gnb-list.active .in-nav .gnb-item .gnb-text {color: #232527;}
-.corp #header.header-invert .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after {background: #fff;}
+
+
 
 .corp #header.header-invert.active .header-inner .logo .logo-link {width: 180px; background: url('../../../assets/front/images/corp/logo_corp.png') no-repeat left center; background-size: 100%; text-indent: -9999px; overflow: hidden;}
 .corp #header.header-invert.active .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn {color: #232527;}
 
 .active-scroll-down .corp  #header.header-invert .header-inner .logo .logo-link {width: 180px; background: url('../../../assets/front/images/corp/logo_corp.png') no-repeat left center; background-size: 100%; text-indent: -9999px; overflow: hidden;}
 .active-scroll-down .corp  #header.header-invert .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after {background: #232527;}
-
+.corp #header.header-invert .header-inner .gnb .gnb-list.active .in-nav .gnb-item .gnb-text {color: #232527;}
 
 .corp .header .header-inner .header-sub-area {display: flex; column-gap: 16px; height: 72px; align-items: center;}
 .corp .header .header-inner .header-sub-area .btn-header-prev {width: 24px; height: 24px; line-height: 24px;}
 .corp .header .header-inner .header-sub-area .btn-header-prev a { display: block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 12.0002C2 12.2178 2.08865 12.426 2.24551 12.5769L7.44551 17.5769C7.764 17.8831 8.27043 17.8732 8.57667 17.5547C8.8829 17.2362 8.87297 16.7298 8.55449 16.4235L4.78622 12.8002L21.1992 12.8002C21.641 12.8002 21.9992 12.442 21.9992 12.0002C21.9992 11.5584 21.641 11.2002 21.1992 11.2002L4.78622 11.2002L8.55449 7.57686C8.87297 7.27063 8.8829 6.76419 8.57667 6.44571C8.27043 6.12722 7.764 6.11729 7.44551 6.42353L2.24551 11.4235C2.08865 11.5744 2 11.7826 2 12.0002Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 24px; padding-right: 24px; overflow: hidden; text-indent: -9999px; }
 .corp .header.header-inner .header-sub-area h2 {font-weight: 600; font-size: 20px; color: #131517; line-height: 130%;}
-  
-.corp .header .nav-layer {position: absolute; top: 100px; left: 0; width: 100%; background-color: #FBFAFA; display: none; box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.13);}
+.corp .header .nav-layer .nav-inner-wrap {top: 100%; opacity: 0; visibility: hidden; transition: all .4s ease;}
+.corp .header .nav-layer {display: none;}
+.corp .header .nav-layer { position: absolute; top: 100px; left: 0; width: 100%; background-color: #FBFAFA; box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.13);}
 .corp .header .nav-layer .nav-inner-wrap {position: relative; background: #FBFAFA; z-index: 100;}
 .corp .header .nav-layer .bg-opa {content: ''; position: fixed; top: 100px; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px); z-index: 10;}
 .corp .header .nav-layer a {display: block;}
-.corp .header.active .nav-layer {display: block;}
 .corp .header .nav-layer .inner-bx-l {width: 1200px; margin: 0 auto;}
 .corp .header .nav-layer .inner-bx-l > ul {display: flex; column-gap: 0; padding: 32px 0 48px 0; justify-content: center}
-.corp .header .nav-layer .inner-bx-l > ul > li {width: 180px; /*flex: 1;*/}
+
+.corp .header.active .nav-layer { display: block;}
+.corp .header.active .nav-layer .nav-inner-wrap { opacity: 1; visibility: visible;}
+
 .corp .header .nav-layer .inner-bx-l > ul > li > a {display: inline-block; font-weight: 700; font-size: 24px; line-height: 130%; display: none;}
 .corp .header .nav-layer .inner-bx-l .lnb-list-l {display: flex; flex-direction: column; row-gap: 12px; padding-top: 12px; text-align: center;}
 .corp .header .nav-layer .inner-bx-l .lnb-list-l > li > a {position: relative; display: inline-block; font-weight: 600; font-size: 15px; line-height: 150%; padding: 2px 0;}
