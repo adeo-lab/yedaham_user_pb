@@ -106,72 +106,76 @@ var uiCommon = (function() {
 		// },
 		scrollHeader: function () {
 			const header = document.querySelector('body.corp header');
-	if (!header) return;
+			if (!header) return;
 
-	let lastScrollTop = _.lastScrollTop || 0;
-	const threshold = 5;
-	const scrollTop = window.scrollY || window.pageYOffset;
-	const scrollHeight = document.documentElement.scrollHeight;
-	const windowHeight = window.innerHeight;
-	const scrollBottom = scrollHeight - windowHeight;
+			if (header.classList.contains('open')) {
+				return;
+			}
+			
+			let lastScrollTop = _.lastScrollTop || 0;
+			const threshold = 0;
+			const scrollTop = window.scrollY || window.pageYOffset;
+			const scrollHeight = document.documentElement.scrollHeight;
+			const windowHeight = window.innerHeight;
+			const scrollBottom = scrollHeight - windowHeight;
 
-	// 메인 페이지 판별
-	const isMain = document.querySelector('body > #wrap.main') !== null;
+			// 메인 페이지 판별
+			const isMain = document.querySelector('body > #wrap.main') !== null;
 
-	// ✅ 새로고침 직후 or 첫 실행 시 invert, up 기본 세팅
-	if (!_.initialized) {
-		header.classList.remove('down');
+			// 새로고침 직후 or 첫 실행 시 invert, up 기본 세팅
+			if (!_.initialized) {
+				header.classList.remove('down');
 
-		if (isMain && scrollTop <= 0) {
-			// 메인 최상단이면 invert 제거
-			header.classList.add('up');
-			header.classList.remove('invert');
-		} else {
-			// 그 외는 기본 invert up
-			header.classList.add('invert', 'up');
-		}
+				if (isMain && scrollTop <= 0) {
+					// 메인 최상단이면 invert 제거
+					header.classList.add('up');
+					header.classList.remove('invert');
+				} else {
+					// 그 외는 기본 invert up
+					header.classList.add('invert', 'up');
+				}
 
-		_.initialized = true;
-		_.lastScrollTop = scrollTop;
-		return;
-	}
+				_.initialized = true;
+				_.lastScrollTop = scrollTop;
+				return;
+			}
 
-	// ✅ 맨 위
-	if (scrollTop <= 0) {
-		header.classList.remove('down');
-		header.classList.add('up');
-
-		// 메인일 때만 invert 제거
-		if (isMain) {
-			header.classList.remove('invert');
-		} else {
-			header.classList.add('invert');
-		}
-	}
-
-	// ✅ 맨 아래
-	else if (scrollTop >= scrollBottom - 1) {
-		header.classList.add('up', 'invert');
-		header.classList.remove('down');
-	}
-
-	// ✅ 중간 구간
-	else {
-		header.classList.add('invert'); // 항상 invert 유지 (메인 포함)
-
-		// 방향 감지
-		if (Math.abs(scrollTop - lastScrollTop) > threshold) {
-			if (scrollTop > lastScrollTop) {
-				header.classList.add('down');
-				header.classList.remove('up');
-			} else {
+			// 맨 위
+			if (scrollTop <= 0) {
+				header.classList.remove('down');
 				header.classList.add('up');
+
+				// 메인일 때만 invert 제거
+				if (isMain) {
+					header.classList.remove('invert');
+				} else {
+					header.classList.add('invert');
+				}
+			}
+
+			// 맨 아래
+			else if (scrollTop >= scrollBottom - 1) {
+				header.classList.add('up', 'invert');
 				header.classList.remove('down');
 			}
-		}
-	}
 
-	_.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+			// 중간 구간
+			else {
+				header.classList.add('invert'); // 항상 invert 유지 (메인 포함)
+
+				// 방향 감지
+				if (Math.abs(scrollTop - lastScrollTop) > threshold) {
+					if (scrollTop > lastScrollTop) {
+						header.classList.add('down');
+						header.classList.remove('up');
+					} else {
+						header.classList.add('up');
+						header.classList.remove('down');
+					}
+				}
+			}
+
+			_.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 		},
 		// gnb 
 		gnbMenu: {
@@ -433,37 +437,52 @@ var uiCommon = (function() {
 						navilMenu.classList.remove('active');
 						header.classList.remove('open');
 						document.body.classList.remove('hidden');
+						resetMenuState();
 					};
 
 					naviMenuBtn.addEventListener('click', _.openMenuListener);
 					naviMenuCloseBtn.addEventListener('click', _.closeMenuListener);
 				}
 				
-				// 2. 1차 메뉴 클릭 시 2차 메뉴 토글 기능
-				const gnbLinks = document.querySelectorAll('.gnb-item-l > a.gnb-text-l');
+				if (!_.gnbInited) {
+					_.gnbInited = true;
+					// 2. 1차 메뉴 클릭 시 2차 메뉴 토글 기능
+					const gnbLinks = document.querySelectorAll('.gnb-item-l > a.gnb-text-l');
 
-				gnbLinks.forEach(function(gnbLink) {
-					gnbLink.addEventListener('click', function(event) {
-						const parentItem = this.closest('.gnb-item-l');
-						const hasLnbList = parentItem.querySelector('.lnb-list-l');
+					gnbLinks.forEach(function(gnbLink) {
+						gnbLink.addEventListener('click', function(e) {
+							e.preventDefault();
+							const parentItem = this.closest('.gnb-item-l');
+							const hasLnbList = parentItem.querySelector('.lnb-list-l');
 
-						if (hasLnbList) {
-							event.preventDefault();
-							parentItem.classList.toggle('on');
-						}
+							if (hasLnbList) {
+								const siblings = parentItem.parentElement.querySelectorAll('.gnb-item-l.on');
+								siblings.forEach((sib) => {
+									if (sib !== parentItem) sib.classList.remove('on');
+								});
+								parentItem.classList.toggle('on');
+							}
+						});
 					});
-				});
+				
 
-				// 3. 3차 메뉴 클릭 시 하위 메뉴 토글 기능
-				  const dep3Links = document.querySelectorAll('.lnb-item-l.dep3 > .lnb-text-l');
-					dep3Links.forEach((dep3Link) => {
-						dep3Link.addEventListener('click', function (e) {
-						e.preventDefault();
-						// 클릭한 해당 dep3 아이템만 펼침/닫힘
-						const item = this.closest('.lnb-item-l.dep3');
-						item && item.classList.toggle('on');
+					// 3. 3차 메뉴 클릭 시 하위 메뉴 토글 기능
+					const dep3Links = document.querySelectorAll('.lnb-item-l.dep3 > .lnb-text-l');
+						dep3Links.forEach((dep3Link) => {
+							dep3Link.addEventListener('click', function (e) {
+							e.preventDefault();
+							// 클릭한 해당 dep3 아이템만 펼침/닫힘
+							const item = this.closest('.lnb-item-l.dep3');
+							if (!item) return;
+							const siblings = item.parentElement.querySelectorAll('.lnb-item-l.dep3.on');
+								siblings.forEach((sib) => {
+								if (sib !== item) sib.classList.remove('on');
+							});
+							item.classList.toggle('on');
+							// item && item.classList.toggle('on');
+						});
 					});
-				});
+				}
 
 				// 4. 스크롤 위치에 따른 상단 메뉴 동기화 기능 및 자동 스크롤
 				const inNavItems = document.querySelectorAll('.in-nav .gnb-item');
@@ -514,6 +533,12 @@ var uiCommon = (function() {
 					
 					navLayerItems.forEach(item => {
 						observer.observe(item);
+					});
+				}
+
+				function resetMenuState() {
+					document.querySelectorAll('.gnb-item-l.on, .lnb-item-l.on').forEach(item => {
+						item.classList.remove('on');
 					});
 				}
 			}
