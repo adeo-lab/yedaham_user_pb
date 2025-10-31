@@ -161,6 +161,7 @@
   .corp #header.active .header-inner .gnb .gnb-list .in-nav .gnb-item, 
   .corp #header .header-inner .gnb .gnb-list.active .in-nav .gnb-item {padding: 0;}
   .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after {bottom: 0}
+  .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text {color: #232527;}
 
   .corp .gnb-item-l#mob_m1_l,
   .corp .gnb-item-l#mob_m2_l, 
