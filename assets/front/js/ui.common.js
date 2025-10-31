@@ -6,6 +6,8 @@ var uiCommon = (function() {
 		onLoad: function() {
 			_.popup.init();
 			_.gnbMenu.init();
+			// 초기 상태 한 번 세팅
+			_.scrollHeader();
 
 			_.accordion();
 			_.defaultTab();
@@ -17,6 +19,7 @@ var uiCommon = (function() {
 			setTimeout(_.scrollToTop, 100);
 			_.slider();
 			_.scrollStart();
+			// _.scrollHeader();
 			_.toggleButtons();
 			_.familySite();
 			_.totalSearch();
@@ -32,6 +35,7 @@ var uiCommon = (function() {
 		},
 		onScroll: function() {
 			_.scrollToTop();
+			_.scrollHeader();
 		},
 		// set vh
 		setViewportHeight: function () {
@@ -40,11 +44,134 @@ var uiCommon = (function() {
 		},
 		//scroll
 		scrollStart: function () {
-			const scrollTop = window.scrollY || 0;
-			window.addEventListener('scroll', function(){
-				window.scrollY > 0 ? this.document.querySelector('html').classList.add('active-scroll-start') : this.document.querySelector('html').classList.remove('active-scroll-start');
-				window.scrollY > scrollTop ? window.document.querySelector('html').classList.add('active-scroll-down') : this.document.querySelector('html').classList.remove('active-scroll-down');
+			// const scrollTop = window.scrollY || 0;
+			// window.addEventListener('scroll', function(){
+			// 	window.scrollY > 0 ? this.document.querySelector('html').classList.add('active-scroll-start') : this.document.querySelector('html').classList.remove('active-scroll-start');
+			// 	window.scrollY > scrollTop ? window.document.querySelector('html').classList.add('active-scroll-down') : this.document.querySelector('html').classList.remove('active-scroll-down');
+			// });
+
+			let lastScrollTop = 0;
+			const html = document.documentElement;
+
+			window.addEventListener('scroll', function () {
+				const scrollTop = window.scrollY || window.pageYOffset;
+				const scrollHeight = document.documentElement.scrollHeight;
+				const windowHeight = window.innerHeight;
+				const scrollBottom = scrollHeight - windowHeight;
+
+				// 스크롤 시작 (상단 벗어남)
+				if (scrollTop > 0) html.classList.add('active-scroll-start');
+				else html.classList.remove('active-scroll-start');
+
+				// 스크롤 방향 감지
+				if (scrollTop > lastScrollTop) {
+					html.classList.add('active-scroll-down');
+					html.classList.remove('active-scroll-up');
+				} else if (scrollTop < lastScrollTop) {
+					html.classList.add('active-scroll-up');
+					html.classList.remove('active-scroll-down');
+				}
+
+				// 최상단 감지
+				if (scrollTop <= 0) {
+					html.classList.add('active-scroll-top');
+				} else {
+					html.classList.remove('active-scroll-top');
+				}
+
+				// 최하단 감지
+				if (scrollTop >= scrollBottom - 2) {
+					html.classList.add('active-scroll-bottom');
+				} else {
+					html.classList.remove('active-scroll-bottom');
+				}
+
+				lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // 음수 방지
 			});
+		},
+		// handleScroll: function () {
+		// 	const header = document.querySelector(".main #header");
+		// 	if (!header) return;
+
+		// 	const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+		// 	if (scrollTop <= 0) {
+		// 		header.classList.add("top");
+		// 	} else {
+		// 		header.classList.remove("top");
+		// 	}
+
+		// 	// 마지막 스크롤 위치 저장
+		// 	// lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+		// },
+		scrollHeader: function () {
+			const header = document.querySelector('body.corp header');
+	if (!header) return;
+
+	let lastScrollTop = _.lastScrollTop || 0;
+	const threshold = 5;
+	const scrollTop = window.scrollY || window.pageYOffset;
+	const scrollHeight = document.documentElement.scrollHeight;
+	const windowHeight = window.innerHeight;
+	const scrollBottom = scrollHeight - windowHeight;
+
+	// 메인 페이지 판별
+	const isMain = document.querySelector('body > #wrap.main') !== null;
+
+	// ✅ 새로고침 직후 or 첫 실행 시 invert, up 기본 세팅
+	if (!_.initialized) {
+		header.classList.remove('down');
+
+		if (isMain && scrollTop <= 0) {
+			// 메인 최상단이면 invert 제거
+			header.classList.add('up');
+			header.classList.remove('invert');
+		} else {
+			// 그 외는 기본 invert up
+			header.classList.add('invert', 'up');
+		}
+
+		_.initialized = true;
+		_.lastScrollTop = scrollTop;
+		return;
+	}
+
+	// ✅ 맨 위
+	if (scrollTop <= 0) {
+		header.classList.remove('down');
+		header.classList.add('up');
+
+		// 메인일 때만 invert 제거
+		if (isMain) {
+			header.classList.remove('invert');
+		} else {
+			header.classList.add('invert');
+		}
+	}
+
+	// ✅ 맨 아래
+	else if (scrollTop >= scrollBottom - 1) {
+		header.classList.add('up', 'invert');
+		header.classList.remove('down');
+	}
+
+	// ✅ 중간 구간
+	else {
+		header.classList.add('invert'); // 항상 invert 유지 (메인 포함)
+
+		// 방향 감지
+		if (Math.abs(scrollTop - lastScrollTop) > threshold) {
+			if (scrollTop > lastScrollTop) {
+				header.classList.add('down');
+				header.classList.remove('up');
+			} else {
+				header.classList.add('up');
+				header.classList.remove('down');
+			}
+		}
+	}
+
+	_.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 		},
 		// gnb 
 		gnbMenu: {
@@ -346,14 +473,21 @@ var uiCommon = (function() {
 				const inNav = document.querySelector('.in-nav');
 
 				if (innerBxL && navLayerItems.length > 0) {
+					// const observerOptions = {
+					// 	root: innerBxL,
+					// 	rootMargin: '0px 0px -98% 0px',
+					// 	threshold: 0
+					// };
+
 					const observerOptions = {
-						root: innerBxL,
-						rootMargin: '0px 0px -98% 0px',
+						root: null, // innerBxL 대신 viewport 기준
+						rootMargin: '0px 0px -70% 0px',
 						threshold: 0
 					};
 
 					const observer = new IntersectionObserver((entries) => {
 						entries.forEach(entry => {
+							// console.log('[DEBUG] isIntersecting:', entry.isIntersecting, 'target:', entry.target.id, 'ratio:', entry.intersectionRatio);
 							if (entry.isIntersecting) {
 								const targetId = entry.target.id;
 								const correspondingNavId = targetId.replace('_l', '');

@@ -71,7 +71,7 @@ const headerTemplate = function () {
 								<a href="#mob_m4_l" class="gnb-text">홍보센터</a>
 							</li>
 							<li class="gnb-item" id="mob_m5">
-								<a href="#mob_m6_l" class="gnb-text">인재채용<span class="flag-new">모집중</span></a>
+								<a href="#mob_m5_l" class="gnb-text">인재채용<span class="flag-new">모집중</span></a>
 							</li>
 						</ul>
 					</div>
@@ -129,7 +129,7 @@ const headerTemplate = function () {
 							</ul>
 						</li>
 						<li class="gnb-item-l" id="mob_m3_l">
-							<a href="#" class="gnb-text">지속가능경영</a>
+							<a href="#" class="gnb-text-l">지속가능경영</a>
 							<ul class="lnb-list-l">
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">윤리경영</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">소비자중심 경영(CCM)</a></li>
@@ -160,7 +160,6 @@ const headerTemplate = function () {
 					</ul>
 				</div>
 			</div>
-			<div class="bg-opa"></div>
 		</div>
 		<!-- //전체 메뉴 layer -->
 
@@ -208,6 +207,14 @@ const headerTemplate = function () {
 			</div>
 		</div>
 		<!-- //통합 검색 layer -->
+		<!-- //모바일 버튼 영역 -->
+		<div class="mobile-menu-bottom-area">
+			<div class="button-area">
+				<a href="#" class="btn-shortcut"><span class="btn-text">개인</span></a>
+				<a href="#" class="btn-shortcut"><span class="btn-text">법인</span></a>
+			</div>
+		</div>
+		<!-- //모바일 버튼 영역 -->
     `;
 }
 
