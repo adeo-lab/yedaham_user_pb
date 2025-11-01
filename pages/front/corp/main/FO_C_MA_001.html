@@ -162,7 +162,7 @@
 												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_01.png" alt ="" /></div>
 												<div class="bx-txt">
 													<div class="tx01">윤리경영</div>
-													<div class="tx02">투명하고 건전한 경영을 통한<br/>고객만족 구현</div>
+													<div class="tx02">투명하고 건전한 경영을 통한 고객만족 구현</div>
 												</div>
 											</div>
 										</li>
@@ -171,7 +171,7 @@
 												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_02.png" alt ="" /></div>
 												<div class="bx-txt">
 													<div class="tx01">소비자중심 경영</div>
-													<div class="tx02">소비자중심경영(CCM)<br/>인증기업, 예다함</div>
+													<div class="tx02">소비자중심경영(CCM) 인증기업, 예다함</div>
 												</div>
 											</div>
 										</li>
@@ -180,7 +180,7 @@
 												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_03.png" alt ="" /></div>
 												<div class="bx-txt">
 													<div class="tx01">사랑다함</div>
-													<div class="tx02">고객과 함께<br/>행복한 사회 만들기</div>
+													<div class="tx02">고객과 함께 행복한 사회 만들기</div>
 												</div>
 											</div>
 										</li>
@@ -198,7 +198,7 @@
 												<div class="bx-img"><img src="../../../../assets/front/images/corp/img_main04_05.png" alt ="" /></div>
 												<div class="bx-txt">
 													<div class="tx01">비윤리 신고센터</div>
-													<div class="tx02">YAC(불공정행위익명제보)<br/>센터 운영</div>
+													<div class="tx02">YAC(불공정행위익명제보) 센터 운영</div>
 												</div>
 											</div>
 										</li>
@@ -388,6 +388,7 @@
 						</div>
 					</div>
 
+					<!-- 채용공고 있을 때 -->
 					<div class="main-cont05-wrap main-section">
 						<div class="main-cont05">
 							<div class="m-inner-bx">
@@ -494,67 +495,6 @@
 												</li>
 											</ul>
 										</div>
-										<script>
-										document.addEventListener("DOMContentLoaded", function () {
-											if (window.innerWidth >= 1024) {
-												// Swiper 인스턴스 생성
-												const swiper = new Swiper('.main-careers-posting', {
-													// 자동 재생 설정
-													autoplay: {
-														delay: 3500, // 2.5초마다 슬라이드 바뀜
-														disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
-													},
-
-													// 페이지네이션, 네비게이션 버튼 등 기타 옵션
-													pagination: {
-														el: '.swiper-pagination',
-														type: "fraction",
-														clickable: true,
-													},
-													navigation: {
-														nextEl: '.bx-navi .swiper-button-next',
-														prevEl: '.bx-navi .swiper-button-prev',
-													},
-													loop: true, // 무한 루프
-												});
-
-												// HTML에서 버튼 요소 가져오기
-												const playButton = document.getElementById('swiper-button-play');
-												const stopButton = document.getElementById('swiper-button-stop');
-
-												// 정지 버튼 클릭 이벤트
-												stopButton.addEventListener('click', () => {
-													swiper.autoplay.stop(); // 자동 재생 정지
-													stopButton.style.display = 'none'; // 정지 버튼 숨기기
-													playButton.style.display = 'inline-block'; // 재생 버튼 보이기
-												});
-
-												// 재생 버튼 클릭 이벤트
-												playButton.addEventListener('click', () => {
-													swiper.autoplay.start(); // 자동 재생 시작
-													playButton.style.display = 'none'; // 재생 버튼 숨기기
-													stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
-												});
-
-												/*var swiper = new Swiper(".main-vis", {
-													pagination: {
-													el: ".swiper-pagination",
-													type: "fraction",
-													},
-													navigation: {
-													nextEl: ".swiper-button-next",
-													prevEl: ".swiper-button-prev",
-													},
-												});*/
-											} else if (window.innerWidth <= 1023) {
-												var swiper = new Swiper(".main-careers-posting", {
-													slidesPerView: "auto",
-													spaceBetween: 16,
-													watchOverflow: true,
-												});
-											}
-										});
-										</script>
 									</div>
 								</div>
 								<div class="bx-bt">
@@ -586,6 +526,13 @@
 							</div>
 						</div>
 					</div>
+					<!-- //채용공고 있을 때 -->
+
+					<!-- 채용공고 없을때 -->
+					<!-- data 없는 경우 tx-btn no-data 클래스 추가 필요 -->
+
+					
+					<!-- //채용공고 없을때 -->
 
 					<div class="main-footer-wrap main-section">
 						<!-- 예다함 소식 -->
