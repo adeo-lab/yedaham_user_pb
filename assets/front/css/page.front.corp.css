@@ -172,7 +172,9 @@
   .corp #header .header-inner .gnb .gnb-list .in-nav ul {width: auto; gap: 16px;}
   .corp #header.invert .header-inner .gnb .gnb-list .in-nav .gnb-item {flex-shrink: 0;}
   .corp #header.invert .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text {color: #232527;}
+  /* .corp #header.invert .header-inner .gnb .gnb-list .in-nav .gnb-item:has(.flag-new) .gnb-text {padding-right: 20px;} */
   .corp #header.invert .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn {color: #232527;}
+  .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item a span.flag-new {display: none;}
 
 
   .corp #header .header-inner .gnb .gnb-list {position: static; height: auto; background-color: #fff;}
@@ -190,6 +192,9 @@
   .corp .header .nav-layer .inner-bx-l .lnb-list-l > .lnb-item-l.dep3.on > .lnb-list-l {display: none;}
   .corp .header .nav-layer .inner-bx-l .lnb-list-l > li > a {display: inline-block;}
   .corp .header .nav-layer .inner-bx-l .gnb-list-l .gnb-item-l.on .lnb-list-l {display: flex; padding-top: 12px;}
+
+  .corp .header .nav-layer .inner-bx-l .lnb-list-l > li > .lnb-text-l span.flag-new {position: absolute; top: -3px; left: calc(100% + 2px); min-width: 48px; padding: 2px 8px; box-sizing: border-box; font-weight: 600; font-size: 12px; color: #fff; line-height: 150%; background: #FF766E; border-radius: 24px; box-sizing: border-box; text-align: left;}
+
   
   .corp .header .nav-layer::before {display: none;}
   .corp .mobile-menu-top-area {display: block; height: 72px; padding: 0 16px; box-sizing: border-box;}

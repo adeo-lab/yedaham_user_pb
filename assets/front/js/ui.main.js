@@ -69,41 +69,45 @@ function initCompanyText() {
 
     if (!titleEl || !descEl) return;
 
-    // SplitText 적용
+    // SplitText 생성 (줄+단어 단위)
     const splitDesc = new SplitText(descEl, {
       type: "lines, words",
       linesClass: "__line",
       wordsClass: "__word",
     });
 
-    // 초기 상태 세팅 (이 부분이 함수 안에 있어야 함)
+    // 초기 상태
     gsap.set(titleEl, { yPercent: 120, opacity: 0 });
-    if (ctaEl) gsap.set(ctaEl, { opacity: 0, y: "2rem" });
     gsap.set(splitDesc.words, { yPercent: 120, opacity: 0 });
+    if (ctaEl) gsap.set(ctaEl, { opacity: 0, y: "2rem" });
 
-    // 등장 애니메이션
+    // 애니메이션 실행 함수
     const runSectionAnim = () => {
-      gsap.set(descEl, { visibility: "visible" });
+      const tl = gsap.timeline();
 
-      const tl = gsap.timeline({
-        // onComplete: () => splitDesc.revert(),
+      // 제목
+      tl.to(titleEl, {
+        yPercent: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "quart.out",
       });
 
-      tl.to(titleEl, { yPercent: 0, opacity: 1, duration: 1, ease: "quart.out" });
-
+      // 설명 (라인 단위 stagger)
       splitDesc.lines.forEach((line, i) => {
         tl.to(
           line.querySelectorAll(".__word"),
           {
             opacity: 1,
             yPercent: 0,
-            duration: 1.6,
+            duration: 1.4,
             ease: "quart.out",
           },
-          i * 0.2 + 0.2
+          i * 0.15 + 0.2
         );
       });
 
+      // 버튼
       if (ctaEl) {
         tl.to(
           ctaEl,
@@ -113,7 +117,7 @@ function initCompanyText() {
             duration: 1.2,
             ease: "quart.out",
           },
-          "-=1.2"
+          "-=1.0"
         );
       }
     };

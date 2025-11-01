@@ -149,7 +149,7 @@ const headerTemplate = function () {
 						<li class="gnb-item-l" id="mob_m5_l">
 							<a href="#" class="gnb-text-l">인재채용</a>
 							<ul class="lnb-list-l">
-								<li class="lnb-item-l now"><a href="#" class="lnb-text-l">예다함 人</a></li>
+								<li class="lnb-item-l now"><a href="#" class="lnb-text-l">예다함 人<span class="flag-new">모집중</span></a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">인사제도</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">직무소개</a></li>
 								<li class="lnb-item-l"><a href="#" class="lnb-text-l">복리후생</a></li>
