@@ -2877,16 +2877,25 @@ z-index: 10;
 /* footer new */
 .corp #footer {border-top: none; background-color: #232527;}
 .corp .ft-l-side .ft-cnt01 {display: flex; column-gap: 40px; padding-bottom: 32px; font-weight: 600; font-size: 24px; color: #E2E2E2; line-height: 130%;}
-.corp .ft-l-side .ft-cnt02 ul {display: flex; column-gap: 40px; padding-bottom: 16px; font-weight: 600; font-size: 15px; color: #E2E2E2; line-height: 150%;}
+.corp .ft-l-side .ft-cnt02 {padding-bottom: 16px; }
+.corp .ft-l-side .ft-cnt02 ul {display: flex; align-items: center; font-weight: 600; font-size: 15px; color: #E2E2E2; line-height: 150%;}
+.corp .ft-l-side .ft-cnt02 li {display: flex; align-items: center;}
+.corp .ft-l-side .ft-cnt02 li:not(:first-child) {padding-left: 12px;}
+.corp .ft-l-side .ft-cnt02 li:not(:first-child)::before {display: block; content: ''; width: 1px; height: 12px; margin-right: 12px; background-color: rgba(255, 255, 255, 0.20);}
 .corp .ft-l-side .ft-cnt02 li.tx-color01 {font-size: 17px; color: #4458B0;}
 .corp .ft-l-side .ft-cnt03 {display: flex; column-gap: 12px; padding-bottom: 4px; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%;}
-.corp .ft-l-side .ft-cnt04 {display: flex; column-gap: 12px; padding-bottom: 24px; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%;}
+.corp .ft-l-side .ft-cnt04 {display: flex; column-gap: 12px; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%;}
+.corp .ft-l-side .ft-cnt05 {display: flex; padding-bottom: 24px; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%;}
 .corp .ft-l-side .ft-btm-logo img {width: 140px;}
 
 .corp .ft-r-side {position: absolute; top: 48px; right: 0;}
-.corp .ft-r-side .ft-family-wrap {position: relative; width: 260px; height: 48px; padding: 13.5px 16px; margin-bottom: 33px; background: #131517; border-radius: 8px; box-sizing: border-box;}
-.corp .ft-r-side .ft-family-wrap .bx-family {position: relative; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%; cursor: pointer;}
-.corp .ft-r-side .ft-family-wrap .bx-family::after {
+.corp .ft-r-side .ft-r-top {display: flex; gap: 12px; margin-bottom: 33px; }
+.corp .ft-r-side .ft-button-area {flex-shrink: 0;}
+.corp .ft-r-side .ft-button-area  .btn-report {display: flex; align-items: center; flex-shrink: 0; height: 48px; padding: 0 32px; box-sizing: border-box; border-radius: 8px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.20); background-color: rgba(255, 255, 255, 0.03); font-size: 14px; font-weight: 400; line-height: 1.5; color: #fff;}
+.corp .ft-r-side .ft-family-wrap {position: relative; width: 260px; height: 48px; padding: 13.5px 16px; background: #131517; border-radius: 8px; box-sizing: border-box;}
+.corp .ft-r-side .ft-family-wrap .bx-family {display: flex; align-items: center; justify-content: space-between; position: relative; font-weight: 400; font-size: 14px; color: #A0A0A0; line-height: 150%; cursor: pointer;}
+.corp .ft-r-side .ft-family-wrap .bx-family::after {display: block; content: ''; width: 13px; height: 13px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 13 13' fill='none'%3E%3Cpath d='M7 13L6 13L6 -4.37114e-08L7 0L7 13Z' fill='%23777777'/%3E%3Cpath d='M0 7L8.74228e-08 6L13 6L13 7L0 7Z' fill='%23777777'/%3E%3C/svg%3E");}
+/* .corp .ft-r-side .ft-family-wrap .bx-family::after {
   content: '';
   position: absolute;
   top: 2px;
@@ -2900,8 +2909,8 @@ z-index: 10;
   background-size: 13px 14px;
   transform: rotate(0deg);
   transition: 0.2s ease-in-out;
-}
-.corp .ft-r-side .ft-family-wrap .bx-family.f-open::after {transform: rotate(45deg); transition: 0.2s ease-in-out;}
+} */
+/* .corp .ft-r-side .ft-family-wrap .bx-family.f-open::after {transform: rotate(45deg); transition: 0.2s ease-in-out;} */
 .corp .ft-r-side .ft-family-wrap .family-layer {position: absolute; bottom: 50px; left: 0; width: 100%; padding: 16px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 8px; box-sizing: border-box; display: none; z-index: 10;}
 .corp .ft-r-side .ft-family-wrap .family-layer li a {font-weight: 400; font-size: 14px; color: #232527; line-height: 220%;}
 .corp .ft-r-side .ft-sns {padding-bottom: 16px;}
@@ -2931,15 +2940,19 @@ z-index: 10;
 .corp .ft-r-side .ft-mark img {width: 50px;}
 
 @media (max-width: 1023px) {
-  .corp #footer .footer-inner {padding-bottom: 48px;}
+  .corp #footer .footer-inner {padding: 32px 16px 48px;}
   .corp .ft-r-side {position: relative; top: auto; right: auto; padding-top: 24px; /*top: 41px; right: 16px;*/}
-  .corp .ft-l-side .ft-cnt01 {font-size: 15px; line-height: 150%; /*flex-direction: column;*/ padding-bottom: 0; margin-bottom: 24px; /*border-bottom: 1px solid rgba(19, 21, 23, 0.15);*/ display: flex; column-gap: 16px;}
-  .corp .ft-r-side .ft-family-wrap {width: 100%; margin-bottom: 24px; /*display: none;*/}
-  .corp .ft-l-side .ft-cnt02 ul {font-size: 13px; line-height: 150%;}
+  .corp .ft-l-side .ft-cnt01 {font-size: 16px; line-height: 150%; /*flex-direction: column;*/ padding-bottom: 0; margin-bottom: 24px; /*border-bottom: 1px solid rgba(19, 21, 23, 0.15);*/ display: flex; column-gap: 16px;}
+  .corp .ft-l-side .ft-cnt02 li.tx-color01 {font-size: 14px;}
+  .corp .ft-r-side .ft-r-top {margin-bottom: 24px;}
+  .corp .ft-r-side .ft-button-area .btn-report {height: 40px; font-size: 13px;}
+  .corp .ft-r-side .ft-family-wrap {width: 100%; /*display: none;*/ height: 40px; padding: 8px 16px;}
+  .corp .ft-l-side .ft-cnt02 {padding-bottom: 24px;}
+  .corp .ft-l-side .ft-cnt02 ul {font-size: 13px;}
   .corp .ft-l-side .ft-cnt03 {font-size: 13px; line-height: 150%; flex-direction: column; padding-bottom: 0;}
   .corp .ft-l-side .ft-cnt03 > div > span {display: block;}
   .corp .ft-l-side .ft-cnt04 {font-size: 13px; line-height: 150%; flex-direction: column;}
-  .corp .ft-l-side .ft-btm-logo {padding: 16px 0; text-align: center;}
+  .corp .ft-l-side .ft-btm-logo {padding: 16px 0; text-align: left;}
   .corp .ft-r-side .ft-sns {padding: 12px 0;}
   .corp .ft-r-side .ft-sns ul {justify-content: flex-start; column-gap: 16px;}
   .corp .ft-r-side .ft-sns li a.btn-facebook {width: 32px; height: 32px;}
