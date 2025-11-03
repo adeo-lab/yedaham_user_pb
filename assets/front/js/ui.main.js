@@ -34,7 +34,6 @@ window.addEventListener('load', function () {
 
    scrollBtn.addEventListener('click', function () {
     quickMenu.classList.toggle('show');
-ㅌ
     const y = section2.getBoundingClientRect().top + window.scrollY;
 
     window.scrollTo({
@@ -69,19 +68,19 @@ function initCompanyText() {
 
     if (!titleEl || !descEl) return;
 
-    // SplitText 생성 (줄+단어 단위)
+    // SplitText 먼저 만든다
     const splitDesc = new SplitText(descEl, {
       type: "lines, words",
       linesClass: "__line",
       wordsClass: "__word",
     });
 
-    // 초기 상태
+    // 초기 상태 강제 세팅 (근데 CSS랑 동일하기 때문에 FOUC 없이 자연스럽게 덮어쓰기)
     gsap.set(titleEl, { yPercent: 120, opacity: 0 });
     gsap.set(splitDesc.words, { yPercent: 120, opacity: 0 });
     if (ctaEl) gsap.set(ctaEl, { opacity: 0, y: "2rem" });
+    // descEl 자체는 이미 opacity:0이라 추가로 안 만져도 됨
 
-    // 애니메이션 실행 함수
     const runSectionAnim = () => {
       const tl = gsap.timeline();
 
@@ -94,6 +93,15 @@ function initCompanyText() {
       });
 
       // 설명 (라인 단위 stagger)
+      tl.to(
+        descEl,
+        {
+          opacity: 1,
+          duration: 0.01,
+        },
+        0 // 타이틀 시작과 동시에 desc 자체는 보여지게만 (깜빡임 방지)
+      );
+
       splitDesc.lines.forEach((line, i) => {
         tl.to(
           line.querySelectorAll(".__word"),
@@ -122,7 +130,6 @@ function initCompanyText() {
       }
     };
 
-    // ScrollTrigger 연결
     ScrollTrigger.create({
       trigger: headingEl,
       start: "top 80%",
@@ -131,6 +138,7 @@ function initCompanyText() {
     });
   });
 }
+
 
 // ---------------------------
 // 1~2 섹션 리스트 fade-up (.bx-cont-r > ul > li)
@@ -475,7 +483,7 @@ function initCompanySection05() {
     topElements = section.querySelectorAll(
       ".bx-tp .tx-btn, .bx-tp .main-careers-posting .bx-no-data"
     );
-  } else {ㅌ
+  } else {
     return;
   }
 

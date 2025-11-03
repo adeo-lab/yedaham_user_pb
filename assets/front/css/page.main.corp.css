@@ -13,6 +13,14 @@
 /* .corp .main-inner-wrap .main-section {height: calc(var(--vh, 1vh) * 100);} */
 /* .corp .main-inner-wrap .main-section {height: 100svh;} */
 
+@media (max-width: 1023px) {
+  .corp .main-inner-wrap .main-section {
+    height: 100dvh;
+    min-height: 100svh; /* 주소창이 보일 때도 최소 확보 */
+    max-height: 100lvh; /* 주소창 사라져도 너무 튀지 않게 */
+  } 
+}
+
 .corp .main-tx-bx {padding-top: 26px;}
 .corp .main-tx-bx.ty02 {padding-top: 0 /*334px*/;}
 .corp .main-tx-bx.ty03 {padding-left: 122px;}
@@ -363,6 +371,12 @@
 
 /* motion */
 .corp .main-section-heading {overflow: hidden;}
+.corp .main-section-heading .tx01 {opacity: 0; transform: translateY(100%);}
+.corp .main-section-heading .tx02 {opacity: 0;}
+.corp .main-section-heading .btn-more {opacity: 0; transform: translateY(2rem);}
+/* .corp .main-section-heading .tx01,
+.corp .main-section-heading .tx02,
+.corp .main-section-heading .btn-more {overflow: hidden; will-change: transform, opacity; transform: translateZ(0);} */
 .corp .main-section-heading .tx01,
 .corp .main-section-heading .tx02,
 .corp .main-section-heading .btn-more {overflow: hidden; will-change: transform, opacity; transform: translateZ(0);}
