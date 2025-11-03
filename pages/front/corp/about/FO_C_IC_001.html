@@ -91,18 +91,17 @@
 										<div class="h-in-bx">2025</div>
 									</div>
 									<div class="bx-list-r">
-										<div class="line"><div class="in-line" style="height: 25%;"></div></div><!-- 스크롤에 따라 % 올라감 -->
 										<ul>
-											<li class="on">
+											<li>
 												<div class="h-in-bx">
 													<dl>
 														<dt>2025</dt>
-														<dd><span class="tx-num">07</span><span>2025 ‘프리미엄브랜드지수(KS-PBI)’ 1위 수상(9년 연속)</span></dd>
+														<dd class="on"><span class="tx-num">07</span><span>2025 ‘프리미엄브랜드지수(KS-PBI)’ 1위 수상(9년 연속)</span></dd>
 														<dd><span class="tx-num">06</span><span>2025 ‘소비자웰빙환경만족지수(KS-WEI)’ 1위 수상(10년 연속)</span></dd>
 													</dl>
 												</div>
 											</li>
-											<li class="on">
+											<li>
 												<div class="h-in-bx">
 													<dl>
 														<dt>2024</dt>
@@ -129,7 +128,7 @@
 													</dl>
 												</div>
 											</li>
-											<li class="on">
+											<li>
 												<div class="h-in-bx">
 													<dl>
 														<dt>2023</dt>
@@ -604,9 +603,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 	
-
 	<script>
 	gsap.registerPlugin(ScrollTrigger);
+
+	const isMobile = window.matchMedia("(max-width: 1023px)").matches;
+	const endValue = isMobile ? "bottom+=150 top" : "bottom+=400 top";
 
 	gsap.to("#vision1012 .full_img", {
 		scrollTrigger: {
@@ -615,7 +616,7 @@
 			scrub: 0.5,
 			start: "top top",
 			//end: "+=1000"
-			end: "bottom+=400 top",
+			end: endValue,
 		}
 	});
 		
@@ -624,7 +625,7 @@
 		scrollTrigger: {
 			trigger: "#vision1012 .full_img",
 			start: "top top",
-			end: "bottom+=400 top",
+			end: endValue,
 			scrub: 0.5
 		}
 	});
@@ -639,6 +640,61 @@
 			scrub: true
 		}
 	});
+	</script>
+
+	<script>
+	gsap.registerPlugin(ScrollTrigger);
+
+		function initHistoryTimeline() {
+		const yearDisplay = document.querySelector(".bx-img-l .h-in-bx");
+		const ul = document.querySelector(".history-list-ty01 .bx-list-r ul");
+		const listItems = ul.querySelectorAll("li");
+		const allDd = ul.querySelectorAll("dd");
+
+		gsap.to(ul, {
+			"--progress": "100%",
+			ease: "none",
+			scrollTrigger: {
+			trigger: ul,
+			start: "top 90%",
+			end: "bottom+=200 bottom",
+			scrub: 1, 
+			onUpdate: (self) => {
+				const progress = self.progress * 100;
+				ul.style.setProperty("--progress", `${progress}%`);
+
+				// 현재 라인(progress)에 해당하는 위치에서 불렛 on 제어
+				allDd.forEach((dd) => {
+				const rect = dd.getBoundingClientRect();
+				const containerRect = ul.getBoundingClientRect();
+				const ddPos = ((rect.top - containerRect.top) / containerRect.height) * 100;
+
+				if (progress >= ddPos) {
+					dd.classList.add("on");
+				} else {
+					dd.classList.remove("on");
+				}
+				});
+			},
+			},
+		});
+
+		// 연도 전환
+		listItems.forEach((li) => {
+			const dt = li.querySelector("dt");
+			const year = dt ? dt.textContent.trim() : "";
+
+			ScrollTrigger.create({
+			trigger: li,
+			start: "top 60%",
+			end: "bottom 40%",
+			onEnter: () => (yearDisplay.textContent = year),
+			onEnterBack: () => (yearDisplay.textContent = year),
+			});
+		});
+		}
+
+		document.addEventListener("DOMContentLoaded", initHistoryTimeline);
 	</script>
 </body>
 </html>
