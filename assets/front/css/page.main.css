@@ -192,8 +192,9 @@
 .home .main-cont05 .s-tit-wrap a.btn-more {position: absolute; right: 0; bottom: 24px; font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding-right: 20px;}
 .home .main-cont05 .s-tit-wrap a.btn-more { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5.35449 2.62012C5.67468 2.26441 6.22237 2.23554 6.57812 2.55566L11.9121 7.35547C12.0945 7.51976 12.1982 7.7545 12.1982 8C12.1981 8.24538 12.0945 8.48033 11.9121 8.64453L6.57812 13.4434C6.22247 13.7631 5.67464 13.7352 5.35449 13.3799C5.03445 13.0243 5.06363 12.4765 5.41895 12.1562L10.0361 8L5.41895 3.84375C5.06336 3.52365 5.03466 2.97587 5.35449 2.62012Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right top 4.5px; background-size: 16px; }
 .home .main-cont05 .my-main-faq li {width: calc(100% /3); height: 120px; display: flex; align-items: center; justify-content: center;}
-.home .main-cont05 .my-main-faq li .in-bx {padding: 0 70px;}
-.home .main-cont05 .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
+.home .main-cont05 .my-main-faq li a {display: flex;}
+.home .main-cont05 .my-main-faq li .in-bx {padding: 0 32px; box-sizing: border-box;}
+.home .main-cont05 .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; word-break: break-all;}
 
 @media (max-width: 1023px) {
   .home .main-cont04 .my-main-benefit ul {flex-direction: unset;}
