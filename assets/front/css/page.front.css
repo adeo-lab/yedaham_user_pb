@@ -4783,7 +4783,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .home .benefit-detail-wrap .area-right {flex: 1 1 100%; align-self: center; overflow: hidden; display: -webkit-box; display: flex; flex-direction: column; max-width: 1000px; max-height: 100%; box-sizing: border-box; background-color: var(--color-base-100); width: 50%;}
-.home .benefit-detail-wrap .area-right .membership-detail {position: relative; padding: 40px 40px 10px 40px;}
+.home .benefit-detail-wrap .area-right .membership-detail {position: relative; padding: 40px 64px 64px 64px;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-flag {padding-bottom: 16px;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag {display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #232527; line-height: 27px; padding: 0 12px; border-radius: 16px;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag.finance {background: #FBEEED;}
@@ -4805,8 +4805,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info dd p {position: relative; font-weight: 400; font-size: 15px; color: #444; line-height: 150%; padding: 0 0 1.5px 17.5px;}
 .home .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info dd p:last-child {padding-bottom: 0;}
 .home .benefit-detail-wrap .area-right .membership-detail .btm-info .b-info dd p::before {content: ''; position: absolute; top: 10px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.home .benefit-detail-wrap .area-right .membership-detail .bx-info {padding-top: 32px;}
+.home .benefit-detail-wrap .area-right .membership-detail .bx-info .para {display: inline-flex; gap: 8px; font-size: 15px; line-height: 1.5; color: #AF5B27;}
+.home .benefit-detail-wrap .area-right .membership-detail .bx-info .para::before {display: block; content: ''; flex-shrink: 0; width: 20px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'%3E%3Crect width='16.6667' height='16.6667' rx='8.33333' transform='matrix(1 0 0 -1 0 16.667)' fill='%23D17B47'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.4582 5.28329C11.7622 5.49102 11.8402 5.90586 11.6325 6.20985L8.21579 11.2098C8.10388 11.3736 7.92486 11.4791 7.72736 11.4975C7.52986 11.5159 7.33441 11.4455 7.19411 11.3053L5.10947 9.22194C4.84904 8.96167 4.84891 8.53956 5.10918 8.27913C5.36945 8.0187 5.79156 8.01857 6.05199 8.27884L7.56827 9.79418L10.5316 5.4576C10.7393 5.1536 11.1542 5.07556 11.4582 5.28329Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: 50%; background-size: 16.667px;}
+
 .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer {position: fixed; right: 0; bottom: 0; width: 50%; background: #fff;}
-.home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area {padding-left: 40px; justify-content: flex-start;}
+.home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area {padding: 16px 64px 64px; justify-content: flex-start;}
 .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area  a.btn-ty01 {display: block; width: 217px; font-weight: 600; height: 48px; font-size: 17px; color: #fff; line-height: 48px; padding: 0; background: #A0A0A0; border: 0; border-radius: 8px; text-align: center;}
 .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area  a.btn-ty02 {display: block; width: 145px; font-weight: 600; height: 48px; font-size: 17px; color: #fff; line-height: 48px; padding: 0; background: #D17B47; border: 0; border-radius: 8px; text-align: center;}
 .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-s-share {position: relative; display: inline-block; width: 48px; height: 48px; line-height: 150%; padding: 0; background-color: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; text-align: center; overflow: hidden; text-indent: -9999px;
@@ -4914,15 +4918,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-detail-wrap .card-top-area li {width: auto;}
   .home .card-detail-wrap .card-top-area li .in-bx .bx-r {display: none;}
 
+  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%;}
+  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-body {overflow: hidden;}
+
   .home .benefit-detail-wrap {position: relative;}
-  .home .benefit-detail-wrap {padding-top: 236px;}
+  .home .benefit-detail-wrap {padding-top: 236px; box-sizing: border-box;}
   .home .benefit-detail-wrap .area-left {float: none; width: 100%; height: 200px;}
   .home .benefit-detail-wrap .area-left .bx-thum .swiper-slide {width: 280px; border-radius: 16px; overflow: hidden;}
-  .home .benefit-detail-wrap .area-right {float: none; width: 100%; height: calc(100% - 290px);}
+  .home .benefit-detail-wrap .area-right {float: none; width: 100%;}
   .home .benefit-detail-wrap .area-right .popup-header {position: inherit; padding: 0 !important; margin: 0 !important;}
   .home .benefit-detail-wrap .area-right .popup-header .popup-subject {display: none;}
   .home .benefit-detail-wrap .area-right .popup-header .btn-popup-close {position: absolute; top: 24px; right: 16px;}
-  .home .benefit-detail-wrap .area-right .membership-detail {position: inherit; padding: 24px 16px 140px 16px; box-sizing: border-box;}
+  .home .benefit-detail-wrap .area-right .membership-detail {position: inherit; padding: 24px 16px 48px 16px; box-sizing: border-box;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-flag {padding-bottom: 12px; text-align: center;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-tit {font-size: 24px; padding-bottom: 24px; text-align: center;}
@@ -4930,7 +4937,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .benefit-detail-wrap .area-right .membership-detail .bx-logo img {height: 48px;}
   .home .benefit-detail-wrap .area-right .membership-detail .detail-wrap > div.bx-tp-n {position: absolute; top: 0; left: 0; width: 100%; padding: 72px 16px 0 16px; box-sizing: border-box;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-tx01 {font-size: 15px; padding-top: 0;}
-  .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area {padding-left: 16px;}
+  .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area {padding: 16px;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-ty01 {width: auto; flex: 1;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-ty01 span {display: none;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-ty02 {width: auto; flex: 1;}
