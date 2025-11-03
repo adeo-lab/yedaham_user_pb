@@ -4723,7 +4723,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .card-list-wrap .card-list li .in-bx .thum {/*position: absolute; top: 0; right: 0;*/ width: 220px; height: 100%; display: flex; justify-content: center;}
 .home .card-list-wrap .card-list li .in-bx .thum img {width: 100%; height: 100%; max-height: 210px; object-fit: cover;}
 .home .card-list-wrap .card-list li .in-bx .thum.no-img::after {display: none;}
-.home .card-list-wrap .card-list li .in-bx .cont {padding: 0; box-sizing: border-box;}
+.home .card-list-wrap .card-list li .in-bx .cont {padding: 0; box-sizing: border-box; max-width: 320px;}
 .home .card-list-wrap .card-list li .in-bx .cont span.flag {display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #232527; line-height: 27px; padding: 0 12px; background: #EAF9FF; border-radius: 16px;}
 .home .card-list-wrap .card-list li .in-bx .cont dl {padding: 12px 0 0 0;}
 .home .card-list-wrap .card-list li .in-bx .cont dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; margin-bottom: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
