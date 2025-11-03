@@ -395,7 +395,7 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
 }
 #footer .footer-inner {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   padding: 56.5px 0 64px 0;
   margin: 0 auto;
 }
