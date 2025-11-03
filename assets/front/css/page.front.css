@@ -3836,7 +3836,7 @@ white-space: nowrap; border: 0;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .view {font-weight: 400; font-size: 15px; line-height: 150%; color: #444;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .view span.dot {width: 12px; height: 12px; margin-top: 5px;}
 
-.home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {position: relative; display: flex; align-items: center; width: 100%; padding-top: 16px;}
+.home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {position: relative; display: flex; align-items: center; width: 100%; padding-top: 16px; min-height: 26.5px;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag {display: inline-block; font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding:2px 12px; border-radius: 16px;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag.ys4 {background: #DDE1FF;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag.ys6 {background: #FFDAD6;}
