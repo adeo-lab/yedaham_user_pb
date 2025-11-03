@@ -2888,7 +2888,8 @@ z-index: 10;
 .ltd .ft-l-side .ft-cnt02 ul {display: flex; column-gap: 40px; padding-bottom: 16px; font-weight: 600; font-size: 15px; color: #232527; line-height: 150%;}
 .ltd .ft-l-side .ft-cnt02 li.tx-color01 {font-size: 17px; color: #374BA3;}
 .ltd .ft-l-side .ft-cnt03 {display: flex; column-gap: 12px; padding-bottom: 4px; font-weight: 400; font-size: 14px; color: #232527; line-height: 150%;}
-.ltd .ft-l-side .ft-cnt04 {display: flex; column-gap: 12px; padding-bottom: 24px; font-weight: 400; font-size: 14px; color: #232527; line-height: 150%;}
+.ltd .ft-l-side .ft-cnt04 {display: flex; column-gap: 12px; padding-bottom: 4px; font-weight: 400; font-size: 14px; color: #232527; line-height: 150%;}
+.ltd .ft-l-side .ft-cnt05 {display: flex; column-gap: 12px; padding-bottom: 24px; font-weight: 400; font-size: 14px; color: #232527; line-height: 150%;}
 .ltd .ft-l-side .ft-btm-logo img {width: 140px;}
 
 .ltd .ft-r-side {position: absolute; top: 48px; right: 0;}
@@ -2947,6 +2948,7 @@ z-index: 10;
   .ltd .ft-l-side .ft-cnt03 {font-size: 13px; line-height: 150%; flex-direction: column; padding-bottom: 0;}
   .ltd .ft-l-side .ft-cnt03 > div > span {display: block;}
   .ltd .ft-l-side .ft-cnt04 {font-size: 13px; line-height: 150%; flex-direction: column;}
+  .ltd .ft-l-side .ft-cnt05 {font-size: 13px; line-height: 150%; flex-direction: column;}
   .ltd .ft-l-side .ft-btm-logo {padding: 16px 0; text-align: center;}
   .ltd .ft-r-side .ft-sns {padding: 12px 0;}
   .ltd .ft-r-side .ft-sns ul {justify-content: flex-start; column-gap: 16px;}
