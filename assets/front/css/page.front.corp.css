@@ -5155,7 +5155,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .apw-board-write .bx-gray-com {padding: 16px;}
   .corp .apw-board-write .bx-gray-com ul {flex-direction: column;}
   .corp .apw-board-write .bx-gray-com li {width: 100%;}
-  .corp .apw-board-write .bx-gray-com li > .in-bx > .s-tit-l {width: 132px; font-size: 15px;}
+  .corp .apw-board-write .bx-gray-com li > .in-bx > .s-tit-l {width: 160px /*132px*/; font-size: 15px;}
   .corp .apw-board-write .bx-gray-com .form.radio .form-text {margin-right: 16px;}
   .corp .apw-board-write .bx-gray-com .form.radio:last-child .form-text {margin-right: 0;}
   .corp .apw-board-write .form.input.datepicker {width: calc(50% - 27px);}
