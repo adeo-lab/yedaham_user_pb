@@ -232,6 +232,9 @@
 
 	<script>
 	gsap.registerPlugin(ScrollTrigger);
+	
+	const isMobile = window.matchMedia("(max-width: 1023px)").matches;
+	const endValue = isMobile ? "bottom+=150 top" : "bottom+=400 top";
 
 	gsap.to("#vision1012 .full_img", {
 		scrollTrigger: {
@@ -240,7 +243,7 @@
 			scrub: 0.5,
 			start: "top top",
 			//end: "+=1000"
-			end: "bottom+=400 top",
+			end: endValue,
 		}
 	});
 		
@@ -249,7 +252,7 @@
 		scrollTrigger: {
 			trigger: "#vision1012 .full_img",
 			start: "top top",
-			end: "bottom+=400 top",
+			end: endValue,
 			scrub: 0.5
 		}
 	});
