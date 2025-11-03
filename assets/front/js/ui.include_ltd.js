@@ -304,7 +304,7 @@ const footerTemplate = function () {
 				<div>Copyright © 2025 The-K Yedaham Co. All Rights Reserved.</div>
 			</div><!-- //1103 작업 -->
 		</div>
-		<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div>
+		<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div><!-- //1103 작업 -->
 		<div class="ft-r-side">
 			<div class="ft-family-wrap">
 				<div class="bx-family"><a href="javascript: void();">패밀리 사이트</a></div>
