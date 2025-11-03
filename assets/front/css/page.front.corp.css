@@ -2957,6 +2957,7 @@ z-index: 10;
   .corp .ft-l-side .ft-cnt03 {font-size: 13px; line-height: 150%; flex-direction: column; padding-bottom: 0;}
   .corp .ft-l-side .ft-cnt03 > div > span {display: block;}
   .corp .ft-l-side .ft-cnt04 {font-size: 13px; line-height: 150%; flex-direction: column;}
+  .corp .ft-l-side .ft-cnt05 {font-size: 13px; line-height: 150%; flex-direction: column;}
   .corp .ft-l-side .ft-btm-logo {padding: 16px 0; text-align: left;}
   .corp .ft-r-side .ft-sns {padding: 12px 0;}
   .corp .ft-r-side .ft-sns ul {justify-content: flex-start; column-gap: 16px;}

@@ -291,10 +291,11 @@ const footerTemplate = function () {
 				</ul>
 			</div>
 			<div class="ft-cnt03">
-				<div>서울특별시 마포구 마포대로 86, 16층(도화동, 창강빌딩) <span>The-K 예다함㈜</span></div>
-				<div>대표이사 : 김도한</div>
-				<div>사업자등록 번호 : 101-86-9300</div>
-			</div>
+				<span class="wbr">서울특별시 마포구 마포대로 86, 16층(도화동, 창강빌딩)</span>
+				<span class="wbr"><span>The-K 예다함㈜</span>
+				<span>대표이사 : 김도한</span></span></span>
+				<span>사업자등록 번호 : 101-86-9300</span>
+			</div><!-- //1103 작업 -->
 			<div class="ft-cnt04">
 				<div>통신판매업 신고번호 : 제 2014-서울마포-0712호</div>
 				<div>전화권유판매업 신고번호 : 제 2014-서울마포-0012호</div>
@@ -302,9 +303,8 @@ const footerTemplate = function () {
 			<div class="ft-cnt05">
 				<div>Copyright © 2025 The-K Yedaham Co. All Rights Reserved.</div>
 			</div><!-- //1103 작업 -->
-			<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div>
 		</div>
-
+		<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div>
 		<div class="ft-r-side">
 			<div class="ft-family-wrap">
 				<div class="bx-family"><a href="javascript: void();">패밀리 사이트</a></div>
@@ -318,13 +318,6 @@ const footerTemplate = function () {
 						<li><a href="#" target="_blank">더케이소피아그린</a></li>
 					</ul>
 				</div>
-			</div>
-			<div class="ft-sns">
-				<ul>
-					<li><a href="#" class="btn-facebook" target="_blank"></a></li>
-					<li><a href="#" class="btn-instagram" target="_blank"></a></li>
-					<li><a href="#" class="btn-youtube" target="_blank"></a></li>
-				</ul>
 			</div>
 			<div class="ft-mark">
 				<a href="#"><img src="../../../assets/front/images/common/ft_img_ certify.png" alt="소비자 중심" /></a>
