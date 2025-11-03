@@ -277,10 +277,11 @@
 
 	gsap.to("#vision1012 .in-txt", {
 		top: "0",
+		opacity: 1,
 		scrollTrigger: {
 			trigger: "#vision1012 .full_img",
-			start: "top top",
-			end: "bottom center",
+			start: "top 80%",
+			end: "bottom top",
 			scrub: true
 		}
 	});
