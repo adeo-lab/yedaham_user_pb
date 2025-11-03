@@ -280,8 +280,8 @@ const footerTemplate = function () {
         `
 		<div class="ft-l-side">
 			<div class="ft-cnt01">
-				<div>고객센터 <a href="tel:1566-6644">1566-6644</a></div>
-				<div>장례접수 <a href="tel:1566-0119">1566-0119</a></div>
+				<div>고객센터 <a href="tel:1566-6644">1566-6644</a></div><!-- //1103 작업 -->
+				<div>장례접수 <a href="tel:1566-0119">1566-0119</a></div><!-- //1103 작업 -->
 			</div>
 			<div class="ft-cnt02">
 				<ul>

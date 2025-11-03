@@ -207,6 +207,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103 작업</span></p>
 						${createMenuLink("main/FO_Y_MA_001.html", useFullLink)}
 					</div>
 				</div>
@@ -403,10 +404,12 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">멤버십 > 목록​</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">멤버십 > 상세</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BA_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -582,6 +585,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103 작업</span></p>
 						${createMenuLink("corp/main/FO_C_MA_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -832,6 +836,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103 작업</span></p>
 						${createMenuLink("ltd/FO_L_MA_001.html", useFullLink)}
 					</div>
 				</div>

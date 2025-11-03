@@ -679,6 +679,9 @@ body:has(.g-navi-func.checked-within) {
   margin: 0 4px;
   color: inherit;
 }
+#gMenulistFull .g-sub-list .g-sub-item .g-sub-body .g-sub-wrap .g-sub-edit {
+    color: var(--color-system-010);
+}
 @media (max-width: 1023px) {
   #gMenulistFull .g-sub-list .g-sub-item .g-sub-body .g-sub-wrap .g-sub-text {
     overflow: hidden;
