@@ -298,7 +298,7 @@ const footerTemplate = function () {
 			<div class="ft-cnt05">
 				<span class="wbr">Copyright © 2025 The-K Yedaham Co.</span> <span class="wbr">All Rights Reserved.</span>
 			</div><!-- //1103 작업 -->
-			<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div>
+			<div class="ft-btm-logo"><a href="#" target="_blank"><img src="../../../assets/front/images/common/logo_btm.png" alt="The K 예다함" /></a></div> 
 		</div>
 
 		<div class="ft-r-side">
