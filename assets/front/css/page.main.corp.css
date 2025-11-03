@@ -14,11 +14,8 @@
 /* .corp .main-inner-wrap .main-section {height: 100svh;} */
 
 @media (max-width: 1023px) {
-  .corp .main-inner-wrap .main-section {
-    height: 100dvh;
-    min-height: 100svh; /* 주소창이 보일 때도 최소 확보 */
-    max-height: 100lvh; /* 주소창 사라져도 너무 튀지 않게 */
-  } 
+  .corp .main-inner-wrap .main-section { height: 100%; min-height: 100svh;} 
+  .corp .main-inner-wrap .main-cont01-wrap.main-section {height: 100dvh;}
 }
 
 .corp .main-tx-bx {padding-top: 26px;}
