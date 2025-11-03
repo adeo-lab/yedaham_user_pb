@@ -617,6 +617,8 @@
 			start: "top top",
 			//end: "+=1000"
 			end: endValue,
+			invalidateOnRefresh: true,
+			anticipatePin: 1
 		}
 	});
 		
@@ -626,7 +628,8 @@
 			trigger: "#vision1012 .full_img",
 			start: "top top",
 			end: endValue,
-			scrub: 0.5
+			scrub: 0.5,
+			invalidateOnRefresh: true,
 		}
 	});
 

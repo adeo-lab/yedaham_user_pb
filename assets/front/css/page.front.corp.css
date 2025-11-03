@@ -3943,8 +3943,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .container.ty-wide.cont-motion #page .page-head-wrap {top: 72px /*134px*/;}
 }
 
+.corp #vision1012 > div {overflow: hidden; height: 100lvh}
 .corp #vision1012 .full_img img {width: 100%; height: 100%; object-fit: cover;}
-.corp #vision1012 .full_img {position: relative; height: 100vh; overflow: hidden;}
+/* .corp #vision1012 .full_img {position: relative; height: 100vh; overflow: hidden;} */
 .corp #vision1012 .bg {position: absolute; width: 100%; height: 100%; /*background: #111;*/ clip-path: polygon(27.5% 40% /*34%*/,72.5% 40% /*34%*/,72.5% 80%,27.5% 80%); z-index: 1;}
 .corp #vision1012 .b_txt {display: flex; flex-direction: column; justify-content: center; position: absolute; top: 0; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translateX(-50%); color: #fff;}
 .corp #vision1012 .in-txt {font-weight: 700; font-size: 52px; color: #fff; line-height: 150%; text-align: center; position: relative; opacity: 0; top: 1200px; left:0; width: 100%; height: 160px; text-align: center; /*transform: translate(0, 176%);*/}

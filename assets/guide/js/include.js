@@ -363,7 +363,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">Step05. 계약완료* > 구성품목 확인 (20p)</span></p>
 						${createMenuLink("direct/FO_Y_DJ_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="완료">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 청약서 확인​</span></p>
 						${createMenuLink("direct/FO_Y_DK_001_L.html", useFullLink)}
 					</dl>
@@ -372,7 +372,7 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("direct/FO_Y_DL_001_L.html", useFullLink)}
 					</dl>
-					<dl class="g-sub-wrap" data-status="완료">
+					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 출금이체 신청서​​</span></p>
 						${createMenuLink("direct/FO_Y_DM_001_L.html", useFullLink)}
 					</dl>
