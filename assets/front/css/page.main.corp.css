@@ -11,7 +11,7 @@
 /* 100dvh, 100svh, 100lvh  모바일에서 100vh 단위 변경하기 */
 /* .corp .main-footer-wrap {height: 425px;} */
 /* .corp .main-inner-wrap .main-section {height: calc(var(--vh, 1vh) * 100);} */
-.corp .main-inner-wrap .main-section {height: 100svh;}
+/* .corp .main-inner-wrap .main-section {height: 100svh;} */
 
 .corp .main-tx-bx {padding-top: 26px;}
 .corp .main-tx-bx.ty02 {padding-top: 0 /*334px*/;}
