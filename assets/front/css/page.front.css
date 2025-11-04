@@ -6565,7 +6565,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .component-product-wrap .component-product .in-bx dt:nth-child(2) {display: block;}
   .home .component-product-wrap .component-product .in-bx dd {display: none;}
 
-  .home .pr-btm-tx-wrap {display: none;}
+  /* .home .pr-btm-tx-wrap {display: none;} */
 
   .home .title-step01 {position: relative; width: 100%; padding: 1px 16px 0 16px; box-sizing: border-box;}
   .home .title-step01::before {content: ''; position: absolute; left: 0; bottom: -10px; width: 100%; height: 2px; background: #EFEFEF;}

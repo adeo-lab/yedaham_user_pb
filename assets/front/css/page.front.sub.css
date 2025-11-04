@@ -1061,3 +1061,52 @@
     .home .ritual-writing-content.type-b {flex-direction: column;}
     .home .ritual-writing-content.type-b .content-area {gap: 16px;}
 }
+
+
+/********************************************************************************************************************************
+
+ * 상품안내
+
+********************************************************************************************************************************/
+/* 예다함 윤슬 4호 */
+/* .home .pr-btm-tx-wrap .info-contents {margin-top: 40px;} */
+.home .pr-btm-tx-wrap .info-contents {display: flex; flex-direction: column; row-gap: 40px;}
+.home .pr-btm-tx-wrap .info-contents .info-item {display: flex; flex-direction: column; row-gap: 16px;}
+.home .pr-btm-tx-wrap .info-contents .info-item .head {font-size: 19px; font-weight: 600; line-height: 1.3; color: #131517;}
+.home .pr-btm-tx-wrap .info-contents .info-item .order-list {display: flex; flex-direction: column; row-gap: 16px; counter-reset: li-counter;}
+.home .pr-btm-tx-wrap .info-contents .info-item .order-list .order-item {display: flex; flex-direction: column; row-gap: 12px; counter-increment: li-counter;}
+.home .pr-btm-tx-wrap .info-contents .info-item .order-list .order-text {display: flex; position: relative; padding-left: 28px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.home .pr-btm-tx-wrap .info-contents .info-item .order-list .order-text::before {display: block; content: counter(li-counter) ". "; flex-shrink: 0; position: absolute; top: 0; left: 0; min-width: 24px;}
+.home .pr-btm-tx-wrap .info-contents .info-item .dot-list {display: flex; flex-direction: column; gap: 8px; padding-left: 26px; color: #AF5B27;}
+.home .pr-btm-tx-wrap .info-contents .info-item .dot-list .dot-item {position: relative; padding-left: 20px; font-size: 17px; font-weight: 400; line-height: 1.5;}
+.home .pr-btm-tx-wrap .info-contents .info-item .dot-list .dot-item::before {display: block; content: ''; flex-shrink: 0; position: absolute; top: 7px; left: 0; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E");}
+.home .pr-btm-tx-wrap .info-contents .info-item .order-list .c-bl {color: #444;}
+.home .pr-btm-tx-wrap .info-contents .info-item .dot-list .c-bl::before,
+.home .pr-btm-tx-wrap .info-contents .info-item .dot-list.c-bl .dot-item::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb {border-top: 1px solid rgba(19, 21, 23, 0.30);}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table {position: relative; width: 100%; table-layout: fixed; border-spacing: 0; border-collapse: collapse;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table thead th {padding: 12px;border-bottom: 1px solid rgba(19, 21, 23, 0.15); background-color: rgba(19, 21, 23, 0.03); font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527; text-align: center; word-break: keep-all;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td {padding: 12px; border-bottom: 1px solid rgba(19, 21, 23, 0.15); background-color: #fff; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527; text-align: center; word-break: keep-all;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table thead th:first-child,
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td:first-child {border-left: none;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table thead th:last-child,
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td:last-child {border-right: none;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table thead th + th,
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td + td {border-left: 1px solid rgba(19, 21, 23, 0.15);}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td .dash-list {display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td .dash-list >li {display: inline-flex; align-items: baseline; text-align: left;}
+.home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td .dash-list >li::before {content: '-';}
+
+@media (max-width: 1023px) {
+    .home .pr-btm-tx-wrap {padding: 48px 16px 130px;}
+    .home .pr-btm-tx-wrap .pr-btm-tx-in-bx .in-tit01 {padding-bottom: 24px; font-size: 20px;}
+    .home .pr-btm-tx-wrap .info-contents {row-gap: 24px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item {row-gap: 12px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .order-list {row-gap: 8px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .order-list .order-item {row-gap: 8px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .order-list .order-text {padding-left: 24px; font-size: 15px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .dot-list {padding-left: 22px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .dot-list .dot-item {padding-left: 20px; font-size: 15px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .info-tb table thead th {padding: 8px; font-size: 15px;}
+    .home .pr-btm-tx-wrap .info-contents .info-item .info-tb table tbody td {padding: 8px; font-size: 15px;}
+}

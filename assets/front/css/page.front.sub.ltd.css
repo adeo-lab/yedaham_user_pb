@@ -326,6 +326,19 @@
 .ltd .info-section .info-contents .info-item .order-list .c-bl {color: #444;}
 .ltd .info-section .info-contents .info-item .dot-list .c-bl::before,
 .ltd .info-section .info-contents .info-item .dot-list.c-bl .dot-item::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");}
+.ltd .info-section .info-contents .info-item .info-tb {border-top: 1px solid rgba(19, 21, 23, 0.30);}
+.ltd .info-section .info-contents .info-item .info-tb table {position: relative; width: 100%; table-layout: fixed; border-spacing: 0; border-collapse: collapse;}
+.ltd .info-section .info-contents .info-item .info-tb table thead th {padding: 12px;border-bottom: 1px solid rgba(19, 21, 23, 0.15); background-color: rgba(19, 21, 23, 0.03); font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527; text-align: center; word-break: keep-all;}
+.ltd .info-section .info-contents .info-item .info-tb table tbody td {padding: 12px; border-bottom: 1px solid rgba(19, 21, 23, 0.15); background-color: #fff; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527; text-align: center; word-break: keep-all;}
+.ltd .info-section .info-contents .info-item .info-tb table thead th:first-child,
+.ltd .info-section .info-contents .info-item .info-tb table tbody td:first-child {border-left: none;}
+.ltd .info-section .info-contents .info-item .info-tb table thead th:last-child,
+.ltd .info-section .info-contents .info-item .info-tb table tbody td:last-child {border-right: none;}
+.ltd .info-section .info-contents .info-item .info-tb table thead th + th,
+.ltd .info-section .info-contents .info-item .info-tb table tbody td + td {border-left: 1px solid rgba(19, 21, 23, 0.15);}
+.ltd .info-section .info-contents .info-item .info-tb table tbody td .dash-list {display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;}
+.ltd .info-section .info-contents .info-item .info-tb table tbody td .dash-list >li {display: inline-flex; align-items: baseline; text-align: left;}
+.ltd .info-section .info-contents .info-item .info-tb table tbody td .dash-list >li::before {content: '-';}
 
 .ltd .button-display {display: none; overflow: hidden; visibility: hidden; pointer-events: none;}
 
@@ -487,6 +500,8 @@
     .ltd .info-section .info-contents .info-item .order-list .order-text {padding-left: 24px; font-size: 15px;}
     .ltd .info-section .info-contents .info-item .dot-list {padding-left: 22px;}
     .ltd .info-section .info-contents .info-item .dot-list .dot-item {padding-left: 20px; font-size: 15px;}
+    .ltd .info-section .info-contents .info-item .info-tb table thead th {padding: 8px; font-size: 15px;}
+    .ltd .info-section .info-contents .info-item .info-tb table tbody td {padding: 8px; font-size: 15px;}
 
     .ltd .page-product .button-display {display: flex; position: fixed; top: auto; right: 0; bottom: 0; left: 0; z-index: 10; overflow: visible; visibility: visible; pointer-events: auto; margin: 0 auto !important; background-color: #fff;}
     .ltd .page-product .button-display .button-area {display: flex; padding: 16px;}
@@ -495,7 +510,6 @@
     .ltd .page-product .button-display .button-area .btn-style-b {flex-shrink: 0; width: 48px; height: 48px; border-radius: 8px; border: 1px solid rgba(19, 21, 23, 0.30); background-color: #fff;}
     .ltd .page-product .button-display .button-area .btn-style-b .btn-text {overflow: hidden; visibility: hidden; margin: -1px; width: 1px; height: 1px; padding: 0; line-height: 1px; font-size: 1px; border: 0; clip: rect(0 0 0 0); clip: rect(0, 0, 0, 0); pointer-events: none; display: block; position: absolute;}
     .ltd .page-product .button-display .button-area .btn-style-b::before {display: block; content: ''; width: 48px; height: 48px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M17.6982 3C19.5207 3 20.9979 4.47735 20.998 6.2998C20.998 8.12234 19.5208 9.59961 17.6982 9.59961C16.6491 9.59955 15.7147 9.10992 15.1104 8.34668L9.52734 11.3096C9.57476 11.5322 9.5996 11.7632 9.59961 12C9.59961 12.3143 9.55475 12.6182 9.47266 12.9062L14.9795 15.8291C15.5746 14.9658 16.5704 14.4005 17.6982 14.4004C19.5208 14.4004 20.998 15.8777 20.998 17.7002C20.9979 19.5226 19.5207 21 17.6982 21C15.8759 20.9999 14.3986 19.5225 14.3984 17.7002C14.3984 17.5792 14.4043 17.4594 14.417 17.3418L8.67188 14.293C8.07186 14.9136 7.2312 15.2998 6.2998 15.2998C4.47735 15.2997 3 13.8225 3 12C3.00011 10.1776 4.47742 8.7003 6.2998 8.7002C7.31168 8.7002 8.21693 9.156 8.82227 9.87305L14.4512 6.88477C14.4172 6.69491 14.3984 6.49942 14.3984 6.2998C14.3985 4.47742 15.8759 3.00011 17.6982 3ZM17.6982 16C16.7594 16.0001 15.998 16.7614 15.998 17.7002C15.9982 18.6389 16.7595 19.4003 17.6982 19.4004C18.637 19.4004 19.3983 18.6389 19.3984 17.7002C19.3984 16.7613 18.6371 16 17.6982 16ZM6.2998 10.2998C5.36108 10.2999 4.59971 11.0613 4.59961 12C4.59961 12.9388 5.36101 13.7001 6.2998 13.7002C7.23869 13.7002 8 12.9389 8 12C7.99989 11.0612 7.23862 10.2998 6.2998 10.2998ZM17.6982 4.59961C16.7595 4.59971 15.9982 5.36108 15.998 6.2998C15.998 7.23862 16.7594 7.99989 17.6982 8C18.6371 8 19.3984 7.23869 19.3984 6.2998C19.3983 5.36101 18.6371 4.59961 17.6982 4.59961Z' fill='%2333363D'/%3E%3C/svg%3E"); background-size: 24px; background-position: 50%; background-repeat: no-repeat;}
-
 }
 
 @media (max-width: 768px) {
