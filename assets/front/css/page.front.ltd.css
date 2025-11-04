@@ -2732,7 +2732,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 
 @media (max-width: 1023px) {
   .ltd #header .header-inner .gnb-list .in-nav {flex: 1 1 100%;}
-  .ltd .mobile-menu-content-area, .ltd .mobile-menu-bottom-area {display: block;}
+  .ltd #header.open .mobile-menu-content-area, .ltd #header.open .mobile-menu-bottom-area {display: block;}
   .ltd .mobile-menu-content-area {padding: 12px 16px 24px; box-sizing: border-box;}
   .ltd .mobile-menu-content-area .call-area {display: flex; justify-content: center; align-items: center; padding: 9px 18px; box-sizing: border-box; border-radius: 58px; background-color: #F7F6F5;}
   .ltd .mobile-menu-content-area .call-item {flex: 1; position: relative; padding-left: 40px;}

@@ -36,7 +36,7 @@ const headerTemplate = function () {
 				<div class="gnb-list">
 					<div class="mobile-menu-top-area">
 						<h1 class="logo">
-							<a href="#" title="LG AI 청소년캠프 메인으로 이동" class="logo-link">
+							<a href="#" title="예다함 메인으로 이동" class="logo-link">
 								<img src="../../../assets/front/images/common/logo.png" alt="예다함" />
 							</a>
 						</h1>
@@ -54,6 +54,20 @@ const headerTemplate = function () {
 							</button>
 						</div>
 					</div>
+					<!-- 1104 작업 -->
+					<div class="mobile-menu-content-area">
+						<div class="call-area">
+							<dl class="call-item day">
+								<dt class="title">24시 장례접수</dt>
+								<dd class="number"><a href="tel:1566-0119" class="tel">1566-0119</a></dd>
+							</dl>
+							<dl class="call-item corp">
+								<dt class="title">법인상담</dt>
+								<dd class="number"><a href="tel:1566-9402" class="tel">1566-9402</a></dd>
+							</dl>
+						</div>
+					</div>
+					<!-- //1104 작업 -->
 					<div class="in-nav">
 						<ul>
 							<li class="gnb-item" id="mob_m1">
@@ -233,6 +247,15 @@ const headerTemplate = function () {
 			</div>
 		</div>
 		<!-- //통합 검색 layer -->
+
+		<!-- 1104 작업 -->
+		<div class="mobile-menu-bottom-area">
+			<div class="button-area">
+				<a href="#" class="btn-shortcut"><span class="btn-text">법인</span></a>
+				<a href="#" class="btn-shortcut"><span class="btn-text">회사소개</span></a>
+			</div>
+		</div>
+		<!-- //1104 작업 -->
     `;
 }
 
