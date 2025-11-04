@@ -229,6 +229,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">계약 현황</span><span class="em">상세</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("my/FO_Y_YB_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -245,10 +246,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제 정보 관리* > 신용카드</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("my/FO_Y_YF_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제정보 관리* > 계좌이체</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("my/FO_Y_YF_001_2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -278,14 +281,17 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 4호</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("product/FO_Y_PB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 6호</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("product/FO_Y_PC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 노블</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -294,6 +300,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 한 눈에 비교하기*</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("product/BO_ZC_001_L.html", useFullLink)}
 					</dl>
 				</div>
@@ -585,7 +592,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1103 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103 작업, 1104 작업</span></p>
 						${createMenuLink("corp/main/FO_C_MA_001.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -643,6 +650,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">주요 재무현황</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("corp/financials/FO_C_DA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -887,6 +895,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">법인 상품</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104 작업</span></p>
 						${createMenuLink("ltd/FO_L_PA_001.html", useFullLink)}
 					</div>
 					<!-- <div class="g-sub-wrap" data-status="">
