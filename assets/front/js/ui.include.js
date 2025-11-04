@@ -62,8 +62,8 @@ const headerTemplate = function () {
 								<dd class="number"><a href="tel:1566-0119" class="tel">1566-0119</a></dd>
 							</dl>
 							<dl class="call-item corp">
-								<dt class="title">법인상담</dt>
-								<dd class="number"><a href="tel:1566-9402" class="tel">1566-9402</a></dd>
+								<dt class="title">고객센터</dt>
+								<dd class="number"><a href="tel:1566-6644" class="tel">1566-6644</a></dd>
 							</dl>
 						</div>
 					</div>
