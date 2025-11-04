@@ -742,13 +742,120 @@
 						<div class="main-cont04">
 							<div class="my-main-benefit">
 								<div class="in-bx first">
-									<a href="#"><img src="../../../assets/front/images/common/img_banner01_01.png" alt="" /></a>
+									<div class="tx02">
+										8월의 예다함 멤버십
+										<!-- navigation -->
+										<div class="bx-navi">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+
+											<div class="swiper-controls">
+												<button id="swiper-button-play">재생</button>
+												<button id="swiper-button-stop">정지</button>
+											</div>
+											<div class="swiper-button-next"></div>
+										</div>
+										<!-- //navigation -->
+									</div>
+									<div class="m-mem-bx-n swiper">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<div class="tx01">더케이몰</div>
+												<div class="tx03">
+													생활건강/종합쇼핑/여행/숙박<br>
+													혜택가득한 특별 할인
+												</div>
+												<a href="#" class="btn-detail">자세히보기</a>
+											</li>
+											<li class="swiper-slide">
+												<div class="tx01">더케이몰22</div>
+												<div class="tx03">
+													생활건강/종합쇼핑/여행/숙박<br>
+													혜택가득한 특별 할인
+												</div>
+												<a href="#" class="btn-detail">자세히보기</a>
+											</li>
+										</ul>
+									</div>
+									<script>
+									document.addEventListener("DOMContentLoaded", function () {
+										if (window.innerWidth >= 1024) {
+											// Swiper 인스턴스 생성
+											const swiper = new Swiper('.m-mem-bx-n', {
+												// 자동 재생 설정
+												autoplay: {
+													delay: 3500, // 2.5초마다 슬라이드 바뀜
+													disableOnInteraction: false, // 사용자 상호작용(터치, 드래그 등) 후에도 자동 재생 유지
+												},
+
+												// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+												pagination: {
+													el: '.tx02 .swiper-pagination',
+													type: "fraction",
+													clickable: true,
+												},
+												navigation: {
+													nextEl: '.tx02 .swiper-button-next',
+													prevEl: '.tx02 .swiper-button-prev',
+												},
+												loop: true, // 무한 루프
+											});
+
+											// HTML에서 버튼 요소 가져오기
+											const playButton = document.querySelector('.tx02 #swiper-button-play');
+											const stopButton = document.querySelector('.tx02 #swiper-button-stop');
+
+											// 정지 버튼 클릭 이벤트
+											stopButton.addEventListener('click', () => {
+												swiper.autoplay.stop(); // 자동 재생 정지
+												stopButton.style.display = 'none'; // 정지 버튼 숨기기
+												playButton.style.display = 'inline-block'; // 재생 버튼 보이기
+											});
+
+											// 재생 버튼 클릭 이벤트
+											playButton.addEventListener('click', () => {
+												swiper.autoplay.start(); // 자동 재생 시작
+												playButton.style.display = 'none'; // 재생 버튼 숨기기
+												stopButton.style.display = 'inline-block'; // 정지 버튼 보이기
+											});
+
+											/*var swiper = new Swiper(".main-vis", {
+												pagination: {
+												el: ".swiper-pagination",
+												type: "fraction",
+												},
+												navigation: {
+												nextEl: ".swiper-button-next",
+												prevEl: ".swiper-button-prev",
+												},
+											});*/
+										} else if (window.innerWidth <= 1023) {
+											var swiper = new Swiper(".m-mem-bx-n", {
+												slidesPerView: "auto",
+												spaceBetween: 16,
+												watchOverflow: true,
+												// 페이지네이션, 네비게이션 버튼 등 기타 옵션
+												pagination: {
+													el: '.tx02 .swiper-pagination',
+													type: "fraction",
+													clickable: true,
+												},
+												navigation: {
+													nextEl: '.tx02 .swiper-button-next',
+													prevEl: '.tx02 .swiper-button-prev',
+												},
+											});
+										}
+									});
+									</script>
 								</div>
 								<div class="in-bx">
-									<a href="#"><img src="../../../assets/front/images/common/img_banner01_02.png" alt="" /></a>
+									<div class="tx01">예다함 롯데카드<br/>상조엔로카 출시</div>
+									<a href="#" class="btn-detail">자세히보기</a>
 								</div>
 								<div class="in-bx">
-									<a href="#"><img src="../../../assets/front/images/common/img_banner01_03.png" alt="" /></a>
+									<div class="tx01">예다함만의<br/>프리미엄 부가서비스</div>
+									<a href="#" class="btn-detail">자세히보기</a>
 								</div>
 							</div>
 						</div>

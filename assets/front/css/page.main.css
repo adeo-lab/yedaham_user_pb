@@ -158,20 +158,20 @@
 .home .main-cont04 {padding: 96px 0 48px 0;}
 .home .main-cont04 .my-main-benefit {padding-left: 616px;}
 .home .main-cont04 .my-main-benefit ul {flex-wrap: unset; gap: 0;}
-.home .main-cont04 .my-main-benefit .in-bx {width: 584px; height: 182px;}
+.home .main-cont04 .my-main-benefit .in-bx {width: 584px; height: 182px; padding: 0; overflow: hidden;}
 .home .main-cont04 .my-main-benefit .in-bx .tx01 {color: #232527;}
 .home .main-cont04 .my-main-benefit .in-bx a.btn-detail {display: inline-block; color: #444;  padding-right: 20px;}
-.home .main-cont04 .my-main-benefit .in-bx a.btn-detail { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.60175 13.1572C5.79879 13.3762 6.13601 13.3939 6.35496 13.1969L11.6883 8.39709C11.8007 8.29595 11.8648 8.15186 11.8648 8.00067C11.8649 7.84948 11.8007 7.70539 11.6883 7.60424L6.35498 2.80392C6.13604 2.60687 5.79882 2.6246 5.60177 2.84354C5.40472 3.06247 5.42246 3.39969 5.64139 3.59674L10.5343 8.00063L5.64141 12.404C5.42247 12.6011 5.40471 12.9383 5.60175 13.1572Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right top 5px; background-size: 16px; }
+/*.home .main-cont04 .my-main-benefit .in-bx a.btn-detail { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.60175 13.1572C5.79879 13.3762 6.13601 13.3939 6.35496 13.1969L11.6883 8.39709C11.8007 8.29595 11.8648 8.15186 11.8648 8.00067C11.8649 7.84948 11.8007 7.70539 11.6883 7.60424L6.35498 2.80392C6.13604 2.60687 5.79882 2.6246 5.60177 2.84354C5.40472 3.06247 5.42246 3.39969 5.64139 3.59674L10.5343 8.00063L5.64141 12.404C5.42247 12.6011 5.40471 12.9383 5.60175 13.1572Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right top 5px; background-size: 16px; }*/
 .home .main-cont04 .my-main-benefit .in-bx.first {width: 584px; height: 396px; background: #ECF5FF;}
 .home .main-cont04 .my-main-benefit .in-bx.first .tx01 {color: #232527; padding-bottom: 8px;}
 .home .main-cont04 .my-main-benefit .in-bx.first .tx02 {color: #232527; margin-bottom: 48px; position: relative;}
 .home .main-cont04 .my-main-benefit .in-bx.first .tx03 {color: #444;}
 .home .main-cont04 .my-main-benefit .in-bx.first a.btn-detail {left: 0;}
 .home .main-cont04 .my-main-benefit .in-bx:nth-child(2) {background: #FFF2E0; margin-bottom: 32px;}
-.home .main-cont04 .my-main-benefit .in-bx:nth-child(2)::after {content: ''; position: absolute; right: 50px; bottom: 42px; width: 120px; height: 97px; background: url('../../../assets/front/images/sub/icon_main01_02.png') no-repeat center; background-size: 120px 97px; z-index: 10; transition: transform 0.5s ease, filter 0.5s ease; transform: scale(1);}
+/*.home .main-cont04 .my-main-benefit .in-bx:nth-child(2)::after {content: ''; position: absolute; right: 50px; bottom: 42px; width: 120px; height: 97px; background: url('../../../assets/front/images/sub/icon_main01_02.png') no-repeat center; background-size: 120px 97px; z-index: 10; transition: transform 0.5s ease, filter 0.5s ease; transform: scale(1);}*/
 .home .main-cont04 .my-main-benefit .in-bx:nth-child(2):hover::after {transform: scale(1.05); filter: brightness(1.05);}
 .home .main-cont04 .my-main-benefit .in-bx:nth-child(3) {background: #E9F5EC;}
-.home .main-cont04 .my-main-benefit .in-bx:nth-child(3)::after {content: ''; position: absolute; right: 50px; bottom: 38px; width: 103px; height: 105px; background: url('../../../assets/front/images/sub/icon_main01_03.png') no-repeat center; background-size: 103px 105px; z-index: 10; transition: transform 0.5s ease, filter 0.5s ease; transform: scale(1);}
+/*.home .main-cont04 .my-main-benefit .in-bx:nth-child(3)::after {content: ''; position: absolute; right: 50px; bottom: 38px; width: 103px; height: 105px; background: url('../../../assets/front/images/sub/icon_main01_03.png') no-repeat center; background-size: 103px 105px; z-index: 10; transition: transform 0.5s ease, filter 0.5s ease; transform: scale(1);}*/
 .home .main-cont04 .my-main-benefit .in-bx:nth-child(3):hover::after {transform: scale(1.05); filter: brightness(1.05);}
 .home .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi {position: absolute; right: 0; bottom: 0; z-index: 100; display: flex; align-items: flex-end; column-gap: 4px;}
 .home .main-cont04 .my-main-benefit .in-bx.first .tx02 .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {position: relative; display: block; top: auto; right: auto; width: 16px; height: 23px; margin-top: 0; z-index: 100;}
@@ -347,12 +347,12 @@
   .home .main-cont03 .main-review-list .in-bx .btm-info p.flag {font-size: 14px;}
   .home .main-cont03 .main-review-list .in-bx .btm-info .date {font-size: 14px; padding-top: 10px;}
 
-  .home .main-cont04 {padding: 48px 16px 48px 16px; margin-bottom: 48px;}
-  .home .main-cont04 .my-main-benefit {padding-left: 0; margin-bottom: 0; display: flex; column-gap: 16px;}
-  .home .main-cont04 .my-main-benefit .in-bx {width: calc(50% - 8px); height: 168px; padding: 20px 24px;}
+  .home .main-cont04 {padding: 48px 16px 0 16px; margin-bottom: 48px;}
+  .home .main-cont04 .my-main-benefit {padding-left: 0; margin-bottom: 0; display: flex; column-gap: 16px; row-gap: 16px; flex-direction: column;}
+  .home .main-cont04 .my-main-benefit .in-bx {width: 100% /*calc(50% - 8px)*/; height: auto /*168px*/; padding: 0 /*20px 24px*/;}
   .home .main-cont04 .my-main-benefit .in-bx .tx01 {font-size: 19px;}
   .home .main-cont04 .my-main-benefit .in-bx a.btn-detail {display: none;}
-  .home .main-cont04 .my-main-benefit .in-bx.first {position: relative; width: 100%; height: 200px; padding: 24px;}
+  .home .main-cont04 .my-main-benefit .in-bx.first {position: relative; width: 100%; height: auto /*200px*/; padding: 0 /*24px*/; margin-bottom: 0;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx01 {font-size: 26px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx02 {font-size: 14px; margin-bottom: 20px;}
   .home .main-cont04 .my-main-benefit .in-bx.first .tx03 {font-size: 17px; min-height: 80px;}
