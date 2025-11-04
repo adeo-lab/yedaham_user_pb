@@ -5538,11 +5538,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-cont-bx .bx-tp a.btn-statement {position: absolute; top: 0; right: 0; display: block; width: 161px; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; box-sizing: border-box; text-align: center;}
 
 .home .my-acount-status-wrap .my-account-cont-bx .tp-txt01 {font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 40px;}
+.home .my-acount-status-wrap .my-account-cont-bx .tp-txt01 .em {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-cont-bx .tp-txt02 {font-weight: 400; font-size: 17px; color: #AF5B27; line-height: 150%; padding-bottom: 40px;}
 
-.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list {padding-bottom: 28px; margin-bottom: 16px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list {display: flex; flex-wrap: wrap; padding-bottom: 28px; margin-bottom: 16px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list::after {content: ''; display: block; clear: both;}
-.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dl {float: left; width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;}
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dl {width: 50%; padding-bottom: 12px; display: flex; column-gap: 12px;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dt {width: 130px; font-weight: 400; font-size: 17px; color: #232527; line-height: 28px;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd {font-weight: 600; font-size: 17px; color: #232527; line-height: 28px;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag {display: inline-block; height: 27px; font-weight: 400; font-size: 15px; line-height: 25px; padding: 0 12px; margin-left: 6px; border-radius: 16px; box-sizing: border-box;}
