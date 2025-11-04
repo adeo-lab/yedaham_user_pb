@@ -5279,7 +5279,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .financial-wrap01 .s-tit-wrap p.tx01 {font-size: 26px;}
   .corp .financial-wrap01 .s-tit-wrap p.tx02 {font-size: 16px; padding-top: 4px;}
   .corp .financial-wrap01 .grp-wrap01 {padding-left: 16px; padding-right: 16px; margin-bottom: 24px; overflow-x: scroll;}
-  .corp .financial-wrap01 .grp-wrap01 .mob-inner-scroll {width: 500px; padding: 24px; margin-bottom: 0; box-sizing: border-box;}
+  .corp .financial-wrap01 .grp-wrap01 .mob-inner-scroll {width: 100%; min-width: 500px; padding: 24px; margin-bottom: 0; box-sizing: border-box;}
   .corp .financial-wrap01 .grp-wrap01 .bx-txt {position: relative; top: auto; left: auto; padding-bottom: 24px; display: flex; column-gap: 8px;}
   .corp .financial-wrap01 .grp-wrap01 .bx-txt .tx01 {font-size: 20px;}
   .corp .financial-wrap01 .grp-wrap01 .bx-txt .tx02 {font-size: 13px;}
@@ -5349,7 +5349,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 1023px) {
   .corp .financial-wrap01 .grp-wrap03 {padding-left: 16px; padding-right: 16px; margin-bottom: 24px; height: auto; overflow-x: scroll;}
-  .corp .financial-wrap01 .grp-wrap03 .mob-inner-scroll {width: 500px; padding: 24px; margin-bottom: 0; box-sizing: border-box;}
+  .corp .financial-wrap01 .grp-wrap03 .mob-inner-scroll {width: 100%; min-width: 500px; padding: 24px; margin-bottom: 0; box-sizing: border-box;}
   .corp .financial-wrap01 .grp-wrap03 .bx-txt {position: relative; top: auto; left: auto; padding-bottom: 24px; display: flex; column-gap: 8px;}
   .corp .financial-wrap01 .grp-wrap03 .bx-txt .tx01 {font-size: 20px;}
   .corp .financial-wrap01 .grp-wrap03 .bx-txt .tx02 {font-size: 13px;}
@@ -5379,9 +5379,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 {width: 100%; table-layout: fixed; border-top: 1px solid rgba(19, 21, 23, 0.20);}
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 thead th {height: 48px; font-weight: 600; font-size: 17px; color: #232527; line-height: 48px; background: #F7F6F5; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 thead th:last-child {border-right: none;}
-.corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody th {border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody th {border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); background-color: rgba(19, 21, 23, 0.03); font-size: 19px; font-weight: 600; line-height: 1.5; color: #232527;}
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody th:last-child {border-right: none;}
-.corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody td {/*height: 48px;*/ font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 8px 12px; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); text-align: left; box-sizing: border-box;}
+.corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody td {/*height: 48px;*/ font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 8px 12px; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); text-align: center; box-sizing: border-box;}
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody td .in-sepa-bx {display: flex; justify-content: space-between;}
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody td .in-sepa-bx .bx-l {width: 200px; text-align: center;}
 .corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody td .in-sepa-bx .bx-r {padding-right: 48px; text-align: right;}
