@@ -89,11 +89,11 @@
 					<div class="tab-display style-c tab-fixed">
 						<div class="tab-inner-bx swiper">
 							<ul class="tab-list swiper-wrapper">
-								<li class="tab-item swiper-slide current"><a href="#" class="tab-text">구성품목</a></li>
-								<li class="tab-item swiper-slide"><a href="#" class="tab-text">왜 예다함 인가?</a></li>
-								<li class="tab-item swiper-slide"><a href="#" class="tab-text">고객 칭찬 후기</a></li>
-								<li class="tab-item swiper-slide"><a href="#" class="tab-text">기타정보 및 유의사항</a></li>
-							</ul>
+								<li class="tab-item swiper-slide current"><a href="#" class="tab-text btn-target-scroll" data-target="#productComponents">구성품목</a></li>
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#productWhy">왜 예다함 인가?</a></li>
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#productReview">고객 칭찬 후기</a></li>
+								<li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#productNotice">기타정보 및 유의사항</a></li>
+							</ul> <!-- //1104 작업 -->
 							<div class="btn-mob-r"><!-- style-b -->
 								<span class="tx-fixed-on">예다함 윤슬 4호</span>
 								<a href="#" class="btn-r-ask">상담 신청</a>
@@ -111,20 +111,14 @@
 					</script>
 
 					<!-- 상푸 구성품목 -->
-					<div class="component-product-wrap">
+					<div class="component-product-wrap" id="productComponents">
 						<div class="title-inner-bx">
-							<h3 class="heading-l">
-								예다함 윤슬 6호 구성품목
-								<p class="btn_q">
-									<span class="q-layer">
-										어떤 품목이 제공되는지 궁금하신가요?<br/>
-										품목을 클릭하시면 자세하게 안내해 드립니다
-									</span>
-								</p>
-							</h3>
-							<div>
+							<h3 class="heading-l"> 예다함 윤슬 6호 구성품목 <p class="btn_q"> <span class="q-layer"> 어떤 품목이 제공되는지 궁금하신가요?<br/> 품목을 클릭하시면 자세하게 안내해 드립니다 </span> </p> </h3>
+							<!-- 1104 작업 : 삭제 -->
+							<!-- <div>
 								<a href="#" class="btn-r-compare">상품 한눈에 비교하기</a>
-							</div>
+							</div> -->
+							<!-- //1104 작업 -->
 						</div>
 						<div class="component-product">
 							<ul>
@@ -270,11 +264,16 @@
 								</li>
 							</ul>
 						</div>
+						<!-- 1104 작업 : 기존 위치에서 이동 -->
+						<div class="button-compare-area">
+							<a href="#" class="btn-r-compare">상품 한눈에 비교하기</a>
+						</div>
+						<!-- //1104 작업 -->
 					</div>
 					<!-- //상품 구성품목 -->
 					
 					<!-- 왜 예다함인가? -->
-					<div class="why-y-wrap">
+					<div class="why-y-wrap" id="productWhy">
 						<div class="title-inner-bx">
 							<h3 class="heading-l">
 								믿을 수 있는 선택,<br/>
@@ -356,7 +355,7 @@
 					<!-- //왜 예다함인가? -->
 
 					<!-- 고객 칭찬 후기 -->
-					<div class="review-display-wrap">
+					<div class="review-display-wrap" id="productReview">
 						<div class="title-inner-bx">
 							<h3 class="heading-l">고객 칭찬 후기</h3>
 							<a href="#" class="btn-all">더보기</a>
@@ -450,7 +449,7 @@
 				</div>
 
 				<!-- 기타 정보 및 유의사항 -->
-				<div class="pr-btm-tx-wrap">
+				<div class="pr-btm-tx-wrap" id="productNotice">
 					<div class="pr-btm-tx-in-bx">
 						<div class="in-tit01">기타 정보 및 유의사항</div>
 
