@@ -34,7 +34,7 @@ var uiCommon = (function() {
 			_.slider();
 		},
 		onScroll: function() {
-			_.scrollToTop();
+			_.quickMenu();
 			_.scrollHeader();
 		},
 		// set vh
@@ -760,18 +760,23 @@ var uiCommon = (function() {
 				});
 			});
 		},
-		scrollToTop: function () {
-			// 251022 작업
+		quickMenu: function () {			
 			const quickMenu = document.querySelector('.quick-menu');
-			const btnTop = document.querySelector('.quick-menu .btn-to-top');
+			if (!quickMenu) return;
 
-			if (quickMenu) {
-				if (window.scrollY > 100) {
-						quickMenu.classList.add('show');
-					} else {
-						quickMenu.classList.remove('show');
-					}
+			if (window.scrollY > 100) {
+				quickMenu.classList.add('show');
+			} else {
+				quickMenu.classList.remove('show');
 			}
+		},
+		scrollToTop: function () {if (
+			window.__quickMenuInit) return;
+			window.__quickMenuInit = true;
+			const quickMenu = document.querySelector('.quick-menu');
+			if (!quickMenu) return;
+			const btnTop = quickMenu.querySelector('.btn-to-top');
+			const toggleBtn = quickMenu.querySelector('.quick-toggle');
 
 			if (btnTop) {
 				btnTop.addEventListener('click', function() {
@@ -781,7 +786,6 @@ var uiCommon = (function() {
 
 			// 토글 버튼
 			if (quickMenu) {
-				const toggleBtn = quickMenu.querySelector('.quick-toggle');
 				if (toggleBtn) {
 					toggleBtn.addEventListener('click', () => {
 						quickMenu.classList.toggle('active');
