@@ -5407,8 +5407,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp #header .header-inner .navi-util {right: 48px;}
 .corp #header .header-inner > .navi-util > .navi-list > .navi-item.home {display: none;}
 
-
-아래로
 .corp .pop-alert {
   display: -webkit-box;
   display: -ms-flexbox;

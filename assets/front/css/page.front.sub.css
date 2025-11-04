@@ -118,6 +118,9 @@
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-normal .btn-name {min-width: 50px;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-primary .btn-name {min-width: 80px;}
 
+@media (max-width: 1023px) {
+    .home .content-popup .popup-wrap .popup-header {margin-bottom: 0;}
+}
 
 /********************************************************************************************************************************
 
