@@ -198,7 +198,7 @@
 													<div class="cont">
 														<dl>
 															<dt>상조의 기본, 예다함을 보면 상조의 기준이 보입니다. 카피 두줄</dt>
-															<dd>더케이 예다함의 광고는 방송광고페스티벌 민간서비스부문 최우수상 2년 연속 수상한 영상입니다. 서브카피 두줄</dd>
+															<dd>더케이 예다함의 광고는 방송광고페스티벌 민간서비스부문 최우수상 2년 연속 수상한 영상입니다. 서브카피 두줄 더케이 예다함의 광고는 방송광고페스티벌 민간서비스부문 최우수상 2년 연속 수상한 영상입니다. 서브카피 두줄</dd>
 														</dl>
 														<div class="tags">
 															<span>#상조</span><span>#오나라</span>
@@ -327,16 +327,16 @@
 		<!-- //퀵메뉴 -->
 	</div>
 
+	<!-- 1105 작업 -->
 	<!-- MasonryGrid -->
 	<script src="https://naver.github.io/egjs-grid/release/latest/dist/grid.min.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			const grid = new Grid.MasonryGrid(".masonry .media-list", {
 				defaultDirection: "end",
-				gap: 0,
+				gap: 32,
 				align: "stretch",
 				column: 0,
-				useResizeObserver: true,
 				observeChildren: true,
 				useResizeObserver: true,
 			});
@@ -344,19 +344,33 @@
 			function setGridColumns() {
 				const screenWidth = window.innerWidth;
 				if (screenWidth > 1440) {
+					// PC
 					grid.column = 3;
+					grid.options.gap = 32;
 				} else if (screenWidth > 768) {
+					// 태블릿
 					grid.column = 3;
+					grid.options.gap = 16;
+				} else if (screenWidth > 600) {
+					// 중형 모바일
+					grid.column = 2;
+					grid.options.gap = 16;
 				} else {
+					// 모바일
 					grid.column = 1;
+					grid.options.gap = 16;
 				}
+
 				grid.renderItems();
+				// console.log('column:', grid.column, 'gap:', grid.options.gap);
 			}
 
 			setGridColumns();
-			window.addEventListener("resize", setGridColumns);
+			window.addEventListener("load", setGridColumns);
+  			window.addEventListener("resize", setGridColumns);
 		});
 	</script>
 	<!-- //MasonryGrid -->
+	 <!-- //1105 작업 -->
 </body>
 </html>
