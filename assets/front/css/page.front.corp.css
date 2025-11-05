@@ -3679,9 +3679,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .media-display-wrap {padding: 0 16px 64px 16px;}
   .corp .media-list li .in-bx .thum .data-info {right: 24px; bottom: 24px;}
   .corp .media-list li .in-bx .cont {gap: 16px; padding: 24px;}
-  .corp .media-list li .in-bx .cont dl {min-height: auto;}
-  .corp .media-list li .in-bx .cont dt {height: 54px; font-size: 20px;}
-  .corp .media-list li .in-bx .cont dd {height: 44px; font-size: 15px;}
+  .corp .media-list li .in-bx .cont dl {min-height: 106px;}
+  .corp .media-list li .in-bx .cont dt {font-size: 20px;}
+  .corp .media-list li .in-bx .cont dd {font-size: 15px;}
   .corp .media-list li .in-bx .cont .tags {font-size: 14px;}
   .corp .media-list li .in-bx .cont .btm-txt {font-size: 15px;}
 }
