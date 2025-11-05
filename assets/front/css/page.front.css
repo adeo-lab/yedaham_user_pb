@@ -2799,8 +2799,8 @@ z-index: 10;
 .home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap {text-align: center;}
 .home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap .keyword-inner-bx {position: relative; display: inline-block; padding: 32px 0 64px 91px;}
 .home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap .keyword-inner-bx p.s-tit-l {position: absolute; top: 40px; left: 0; font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
-.home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap .keyword-inner-bx .keyword-r {display: flex; column-gap: 12px;}
-.home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap .keyword-inner-bx .keyword-r span.keyword-item {font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 8px 20px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 32px;}
+.home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap .keyword-inner-bx .keyword-r {display: flex; column-gap: 12px; align-items: center;}
+.home .search-layer .search-inner-wrap .search-inner-bx .keyword-wrap .keyword-inner-bx .keyword-r span.keyword-item a {display: inline-block; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 8px 20px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 32px;}
 .home .search-layer .search-inner-wrap .search-inner-bx .btm-info-wrap {display: flex; padding: 24px 0 0 0; border-top: 1px solid rgba(19, 21, 23, 0.15); justify-content: space-between}
 .home .search-layer .search-inner-wrap .search-inner-bx .btm-info-wrap .bx-left-side {display: flex; align-items: center; column-gap: 64px;}
 .home .search-layer .search-inner-wrap .search-inner-bx .btm-info-wrap .bx-left-side p span {display: inline-block; font-weight: 400; font-size: 17px; color: #232527; line-height: 29px; vertical-align: top;}
@@ -3393,7 +3393,7 @@ white-space: nowrap; border: 0;}
 .home .pop-time-wrap .tx-cont {font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 0 50px 0 50px;}
 .home .pop-time-wrap .tx-cont span {color: #AF5B27;}
 
-.home .pop-wrap-ty01 {position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding: 20px; background: rgba(176, 176, 176, 0.60); /*rgba(255, 255, 255, 0.60);*/ backdrop-filter: blur(10px); box-sizing: border-box; z-index: 10000; display: flex; align-items: flex-start; justify-content: center; overflow: hidden;}
+.home .pop-wrap-ty01 {position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding: 20px; background: rgba(176, 176, 176, 0.60); /*rgba(255, 255, 255, 0.60);*/ backdrop-filter: blur(10px); box-sizing: border-box; z-index: 10000; display: flex; align-items: flex-start; justify-content: center; overflow: hidden; z-index: 100000;}
 .home .pop-wrap-ty01 .pop-share-wrap {max-width: 280px; width: 100%; padding: 32px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.10); border-radius: 24px; box-sizing: border-box; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05); display: flex; flex: 1 1 100%; align-self: center; flex-direction: column;}
 .home .pop-wrap-ty01 .pop-share-wrap .in-bx-top {position: relative; width: 100%; padding: 0 0 16px 0;}
 .home .pop-wrap-ty01 .pop-share-wrap .in-bx-top p {font-weight: 600; font-size: 19px; color: #131517; line-height: 32px;}
@@ -5025,11 +5025,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-detail-wrap .card-top-area li {width: auto;}
   .home .card-detail-wrap .card-top-area li .in-bx .bx-r {display: none;}
 
-  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%;}
+  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%; position: relative; padding-top: 236px;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .popup-body {overflow: hidden;}
 
   .home .benefit-detail-wrap {position: relative;}
-  .home .benefit-detail-wrap {padding-top: 236px; box-sizing: border-box;}
+  .home .benefit-detail-wrap {/*padding-top: 236px;*/ box-sizing: border-box;}
   .home .benefit-detail-wrap .area-left {float: none; width: 100%; height: 200px;}
   .home .benefit-detail-wrap .area-left .bx-thum .swiper-slide {width: 280px; border-radius: 16px; overflow: hidden;}
   .home .benefit-detail-wrap .area-right {float: none; width: 100%;}
