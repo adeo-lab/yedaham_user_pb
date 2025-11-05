@@ -60,11 +60,11 @@
 .gnb-item-l#mob_m4_l {min-width: 77px;}
 .gnb-item-l#mob_m5_l {min-width: 77px;} */
 
-.corp .gnb-item-l#mob_m1_l {min-width: 179px;}
-.corp .gnb-item-l#mob_m2_l {min-width: 160px;}
-.corp .gnb-item-l#mob_m3_l {min-width: 198px;}
-.corp .gnb-item-l#mob_m4_l {min-width: 160px;}
-.corp .gnb-item-l#mob_m5_l {min-width: 160px;}
+.corp .gnb-item-l:nth-child(1) {min-width: 179px;}
+.corp .gnb-item-l:nth-child(2) {min-width: 160px;}
+.corp .gnb-item-l:nth-child(3) {min-width: 198px;}
+.corp .gnb-item-l:nth-child(4) {min-width: 160px;}
+.corp .gnb-item-l:nth-child(5) {min-width: 160px;}
 
 .corp .header .nav-layer {pointer-events: none;}
 .corp .header .nav-layer::before {position: absolute; left: 0; right: 0; top: -100px; content: ""; height: 100px; transition: height 200ms ease-out, opacity 200ms, border-radius 200ms; transition-delay: 0ms, 100ms, 0ms;}

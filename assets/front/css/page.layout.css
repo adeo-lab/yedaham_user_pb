@@ -253,6 +253,9 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
   #header .header-inner > .navi-util > .navi-list > .navi-item.logout {
     display: none;
   }
+  #header.main .header-inner > .navi-util > .navi-list > .navi-item.home {
+    display: none;
+  }
   #header .header-inner > .navi-util > .navi-list > .navi-item.home {
     display: inline-flex;
   }
