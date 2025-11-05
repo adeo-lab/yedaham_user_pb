@@ -3638,12 +3638,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .media-tp-search .data-search .search-word .search-form .form .form-elem {height: 48px;}
 }
 
-.corp .media-list {margin: -32px -16px 0 -16px;}
-.corp .media-list ul {margin: 0; /*display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 30px;*/}
-.corp .media-list li {width: 458px; padding:32px 16px 0 16px; box-sizing: border-box;}
+.corp .media-list {margin: 0;}
+.corp .media-list li {border-radius: 16px;}
+.corp .media-list li:has(a:hover) {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05);}
+.corp .media-list li a {border-radius: 16px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.20);}
+
 .corp .media-list li a {display: block;}
 .corp .media-list li .in-bx {position: relative; width: 100%; box-sizing: border-box;}
-.corp .media-list li .in-bx .thum {position: relative; height: 258px; border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden;}
+.corp .media-list li .in-bx .thum {position: relative;  border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden; aspect-ratio: 16 / 9;}
 .corp .media-list li .in-bx .thum .data-info {position: absolute; right: 32px; bottom: 32px; display: flex; column-gap: 16px; z-index: 10;}
 .corp .media-list li .in-bx .thum .data-info p.icon {display: block; width: 56px; height: 56px; background: rgba(19, 21, 23, 0.30); border: 1px solid rgba(255, 255, 255, 0.80); border-radius: 56px; text-indent: -9999px; overflow: hidden; box-sizing: border-box;}
 .corp .media-list li .in-bx .thum .data-info p.icon.youtube {
@@ -3660,31 +3662,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-size: 32px;
 }
 .corp .media-list li .in-bx .thum .data-info p.icon.pdf:hover {background-color: #788BE6; border: none;}
-.corp .media-list li .in-bx .thum::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(19, 21, 23, 0.20); border-top-left-radius: 16px; border-top-right-radius: 16px; box-sizing: border-box;}
 .corp .media-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: 0.7s;}
 .corp .media-list li .in-bx .thum.no-img {position: relative; display: flex; width: 100%; height: 258px; font-weight: 600; font-size: 19px; color: #fff; line-height: 130%; background: #DCDCDC; border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden; align-items: center; justify-content: center;}
 .corp .media-list li .in-bx .thum.no-img::after {content: ''; background: url('../../../../assets/front/images/corp/no_img01.png') no-repeat center center; background-size: 160px;}
-.corp .media-list li .in-bx .cont {padding: 32px; border: 1px solid rgba(19, 21, 23, 0.20); border-top: none; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; overflow: hidden; box-sizing: border-box;}
-.corp .media-list li .in-bx .cont dl {padding: 12px 0 0 0;}
-.corp .media-list li .in-bx .cont dt {/*height: 62px;*/ font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 8px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
-.corp .media-list li .in-bx .cont dd {/*height: 52px;*/ font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding-bottom: 20px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
-.corp .media-list li .in-bx .cont .tags {font-weight: 400; font-size: 15px; color: #777; line-height: 150%; padding: 0 0 20px 0; display: flex; column-gap: 8px;}
+.corp .media-list li .in-bx .cont {display: flex; flex-direction: column; gap: 20px; padding: 32px; box-sizing: border-box;}
+.corp .media-list li .in-bx .cont dl {display: flex; flex-direction: column; gap: 8px; min-height: 121px; }
+.corp .media-list li .in-bx .cont dt {/*height: 62px;*/ font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
+.corp .media-list li .in-bx .cont dd {/*height: 52px;*/ font-weight: 400; font-size: 17px; color: #444; line-height: 150%; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;}
+.corp .media-list li .in-bx .cont .tags {font-weight: 400; font-size: 15px; color: #777; line-height: 150%; display: flex; column-gap: 8px;}
 .corp .media-list li .in-bx .cont .btm-txt {font-weight: 400; font-size: 17px; color: #777; line-height: 150%; display: flex;}
 .corp .media-list li .in-bx .cont .btm-txt span.dot {margin-top: 5px;}
-.corp .media-list li a:hover .in-bx .cont {/*border: 1px solid rgba(19, 21, 23, 0.4);*/ border-top: none; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;}
+
 .corp .media-list li a:hover .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); transition: 0.7s;}
-.corp .media-list li .in-bx.no-thum .cont {border-top: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px;}
 
 @media (max-width: 1023px) {
   .corp .media-display-wrap {padding: 0 16px 64px 16px;}
-  .corp .media-list {margin: -16px 0 0 0;}
-  .corp .media-list li {padding: 16px 0 0 0;}
-  .corp .media-list li .in-bx .thum {height: 185px; overflow: hidden;}
   .corp .media-list li .in-bx .thum .data-info {right: 24px; bottom: 24px;}
-  .corp .media-list li .in-bx .cont {padding: 24px;}
+  .corp .media-list li .in-bx .cont {gap: 16px; padding: 24px;}
+  .corp .media-list li .in-bx .cont dl {min-height: auto;}
   .corp .media-list li .in-bx .cont dt {height: 54px; font-size: 20px;}
   .corp .media-list li .in-bx .cont dd {height: 44px; font-size: 15px;}
-  .corp .media-list li .in-bx .cont .tags {font-size: 14px; padding: 16px 0;}
+  .corp .media-list li .in-bx .cont .tags {font-size: 14px;}
   .corp .media-list li .in-bx .cont .btm-txt {font-size: 15px;}
 }
 
