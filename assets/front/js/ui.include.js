@@ -225,11 +225,11 @@ const headerTemplate = function () {
 						<div class="keyword-inner-bx">
 							<p class="s-tit-l">추천 검색어</p>
 							<div class="keyword-r">
-								<span class="keyword-item">장례상품</span>
-								<span class="keyword-item">간편 가입</span>
-								<span class="keyword-item">상담신청</span>
-								<span class="keyword-item">장례정보</span>
-								<span class="keyword-item">상조</span>
+								<span class="keyword-item"><a href="#">장례상품</a></span>
+								<span class="keyword-item"><a href="#">간편 가입</a></span>
+								<span class="keyword-item"><a href="#">상담신청</a></span>
+								<span class="keyword-item"><a href="#">장례정보</a></span>
+								<span class="keyword-item"><a href="#">상조</a></span>
 							</div>
 						</div>
 					</div>
