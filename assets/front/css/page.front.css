@@ -7230,6 +7230,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .why-y-wrap .why-y-list ul li:nth-child(3) .in-bx {background-position: right 20px bottom 12px; background-size: 59px;}
   .home .why-y-wrap .why-y-list ul li:nth-child(4) .in-bx {background-position: right 20px bottom 12px; background-size: 60px;}
   .home .why-y-wrap .why-y-list ul li:nth-child(5) .in-bx {background-position: right 20px bottom 12px; background-size: 52px;}
+  .home .why-y-wrap .why-y-list ul li:nth-child(1) a:hover .in-bx {background-color: #EAF9FF; background-image: url('../../../assets/front/images/sub/icon_why01.png'); background-repeat: no-repeat; background-position: right 20px bottom 12px; background-size: 45px;}
+  .home .why-y-wrap .why-y-list ul li:nth-child(2) a:hover .in-bx {background-color: #ECF5FF; background-image: url('../../../assets/front/images/sub/icon_why02.png'); background-repeat: no-repeat; background-position: right 20px bottom 12px; background-size: 42px;}
+  .home .why-y-wrap .why-y-list ul li:nth-child(3) a:hover .in-bx {background-color: #FFF2E0; background-image: url('../../../assets/front/images/sub/icon_why03.png'); background-repeat: no-repeat; background-position: right 20px bottom 12px; background-size: 59px;}
+  .home .why-y-wrap .why-y-list ul li:nth-child(4) a:hover .in-bx {background-color: #FBEEED; background-image: url('../../../assets/front/images/sub/icon_why04.png'); background-repeat: no-repeat; background-position: right 20px bottom 12px; background-size: 60px;}
+  .home .why-y-wrap .why-y-list ul li:nth-child(5) a:hover .in-bx {background-color: #F3F2FF; background-image: url('../../../assets/front/images/sub/icon_why05.png'); background-repeat: no-repeat; background-position: right 20px bottom 12px; background-size: 52px;}
+  .home .why-y-wrap .why-y-list ul li a:hover .in-bx .tx01 {display: block;}
+  .home .why-y-wrap .why-y-list ul li a:hover .in-bx .tx02 {display: block;}
+  .home .why-y-wrap .why-y-list ul li a:hover .in-bx p.icon {display: none;}
+
 
   .home .popup-contents .table-wrap {padding: 12px 0; overflow-x: auto}
   .home .popup-contents .table-wrap table.cont-tb-ty01 {width: 700px;}
