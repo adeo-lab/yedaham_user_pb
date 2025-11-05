@@ -2290,6 +2290,12 @@ button.swiper-pagination-bullet {
 .content-popup .popup-wrap .popup-body {
   padding: 0 0 32px;
 }
+.content-popup .popup-wrap:has(.popup-footer) .popup-body {
+  padding: 0;
+}
+.content-popup .popup-wrap:not(:has(.popup-footer)) .popup-body {
+  padding: 0 0 40px;
+}
 @media (max-width: 1023px) {
   .content-popup .popup-wrap .popup-body {
     overflow-x: hidden;

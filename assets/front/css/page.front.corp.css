@@ -3109,8 +3109,11 @@ z-index: 10;
 
 
 /* fixed */
+/* .corp #header:has(.down)  {background-color: lime;;} */
+.corp #header.down + .container .tab-display.tab-fixed.fixed {top: 0;}
+
 .corp .tab-display .tab-list .tab-item {width: auto;}
-.corp .tab-display.tab-fixed.fixed {position: fixed; top: 100px; left: 0; width: 100%; padding: 22px 0; background: #EEEEED; z-index: 9;}
+.corp .tab-display.tab-fixed.fixed {position: fixed; top: 100px; left: 0; width: 100%; max-width: 100%; padding: 22px 0; background: #EEEEED; z-index: 9; transition: all .3s ease-in-out;}
 .corp .tab-display.tab-fixed.fixed .tab-list {width: 1200px; margin: 0 auto;}
 .corp .tab-display.tab-fixed.fixed .tab-list .tab-item .tab-text {height: 36px; font-weight: 400; font-size: 17px; line-height: 150%; padding: 5px 12px; box-sizing: border-box;}
 
@@ -3905,7 +3908,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx02 {padding-bottom: 16px; display: flex; justify-content: space-between}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx02 p.tx-l {font-weight: 600; font-size: 19px; color: #232527; line-height: 130%;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx02 p.tx-r {font-weight: 400; font-size: 17px; color: #777; line-height: 150%;}
-.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 {padding: 24px; margin-bottom: 32px; background: #F5F5F7; border-radius: 12px;}
+.corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 {padding: 24px; margin-bottom: 24px; background: #F5F5F7; border-radius: 12px;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dl {padding-bottom: 32px; /*margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);*/}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dt {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding-bottom: 16px;}
 .corp .content-popup .popup-wrap.pop-report .cnt-report .bx-tx03 dd {font-weight: 400; font-size: 17px; color: #444; line-height: 150%;}
@@ -4204,7 +4207,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
-.corp .cont-sustain07 {/*height: 860px;*/ padding: 96px 0; margin-bottom: 96px; background: linear-gradient(0deg, rgba(120, 120, 120, 0.10) 0%, rgba(120, 120, 120, 0.10) 100%), url('../../../assets/front/images/corp/img_safety.png') lightgray -201.617px -158.566px / 132.623% 124.455% no-repeat; border-radius: 24px;}
+.corp .cont-sustain07 {/*height: 860px;*/ padding: 96px 0; margin-bottom: 96px; background: url('../../../assets/front/images/corp/img_safety.jpg') center/cover no-repeat; border-radius: 24px;}
 .corp .cont-sustain07 .tx01 {font-weight: 600; font-size: 40px; color: #232527; line-height: 130%; padding: 0 0 8px 0; text-align: center;}
 .corp .cont-sustain07 .tx02 {font-weight: 400; font-size: 22px; color: #232527; line-height: 150%; padding: 0 0 64px 0; text-align: center;}
 .corp .cont-sustain07 .in-img-wrap {overflow-x: auto; padding: 0 64px;}
@@ -4260,7 +4263,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .cont-sustain07 .btm-tx-c ul {row-gap: 12px;}
   .corp .cont-sustain07 .btm-tx-c li {font-size: 18px;}
   .corp .cont-sustain07 .btm-tx-c li::before {top: 1px;}
-  .corp .cont-sustain07 .btm-tx-c .dl {flex-direction: column; gap: 16px; margin-top: 76px;}
+  .corp .cont-sustain07 .btm-tx-c .dl {flex-direction: column; gap: 16px; margin-top: 64px;}
   .corp .cont-sustain07 .btm-tx-c .dt {font-size: 22px;}
   .corp .cont-sustain07 .btm-tx-c .dt::before {background-size: 24px;}
   .corp .cont-sustain07 .btm-tx-c .dd {font-size: 20px;}
@@ -4314,6 +4317,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .sustain-history-wrap02 {background-position: 62% 0;}
 }
 
+.corp .sustain-history-wrap01 .history-list-ty01 .bx-list-r ul::before {top: 110px; height: calc(100% - 144px);}
 .corp .history-list-ty01 {position: relative; display: flex; column-gap: 48px;}
 .corp .history-list-ty01 .bx-img-l {width: 684px;}
 .corp .history-list-ty01 .bx-img-l .h-in-bx {position: sticky; top: 120px; width: 560px; padding-top: 14px;}
