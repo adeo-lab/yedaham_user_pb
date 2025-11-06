@@ -185,6 +185,56 @@
 							</div>
 						</div>
 
+						<!-- 1106 작업 -->
+						<div class="certi-pop-cont01">
+							<div class="pop-stit">발급 기간 선택</div>
+							<div class="filter-wrap">
+								<ul class="filter-range">
+									<li class="item">
+										<label class="radio-btn">
+											<input type="radio" name="period" value="all" checked>
+											<span class="radio-text">전체</span>
+										</label>
+									</li>
+									<li class="item">
+										<label class="radio-btn">
+											<input type="radio" name="period" value="3m">
+											<span class="radio-text">3개월</span>
+										</label>
+									</li>
+									<li class="item">
+										<label class="radio-btn">
+											<input type="radio" name="period" value="6m">
+											<span class="radio-text">6개월</span>
+										</label>
+									</li>
+									<li class="item">
+										<label class="radio-btn">
+											<input type="radio" name="period" value="1y">
+											<span class="radio-text">1년</span>
+										</label>
+									</li>
+
+									<!-- 직접 날짜 입력 -->
+									<li class="item custom">
+										<label class="radio-btn custom-radio">
+											<input type="radio" name="period" value="custom" class="period-custom">
+
+											<div class="date-range">
+												<span class="date-form"><input type="text" id="dateStart" class="date-input" placeholder="2025.00.00"></span>
+												<span class="dash">~</span>
+												<span class="date-form"><input type="text" id="dateEnd" class="date-input" placeholder="2025.00.00"></span>
+											</div>
+										</label>
+										<script>
+											$("#dateStart, #dateEnd").datepicker();
+										</script>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //1106 작업 -->
+
 						<div class="certi-pop-cont01">
 							<div class="board-write-ty01">
 								<div class="top-area">

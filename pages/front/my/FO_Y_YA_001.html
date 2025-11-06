@@ -156,7 +156,7 @@
 											<div class="in-bx">
 												<div class="top-area">
 													<div class="tp-tx-bx">
-														<p class="tx01">56786789</p>
+														<p class="tx01">22222222</p>
 														<p class="tx02">예다함 노블</p>
 													</div>
 													<span class="flag subscrip">의전</span>
@@ -181,7 +181,32 @@
 											<div class="in-bx">
 												<div class="top-area">
 													<div class="tp-tx-bx">
-														<p class="tx01">12346789</p>
+														<p class="tx01">33333333</p>
+														<p class="tx02">예다함 윤슬4호</p>
+													</div>
+													<span class="flag agree">청약</span>
+												</div>
+												<div class="btm-area">
+													<div class="grp-wrap">
+														<div class="grp-in-bx" style="width: 50%;">
+															<div class="tx-layer">24회</div>
+														</div>
+													</div>
+													<div class="grp-bt-tx01">
+														<p>계약일자 2025.08.08</p>
+														<p>총 100회</p>
+													</div>
+													<div class="grp-bt-tx02">
+														<span class="tx-price">월 43,000원</span><span class="tx-state">납부 중</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="in-bx">
+												<div class="top-area">
+													<div class="tp-tx-bx">
+														<p class="tx01">44444444444</p>
 														<p class="tx02">예다함 윤슬4호</p>
 													</div>
 													<span class="flag agree">청약</span>
@@ -203,23 +228,44 @@
 											</div>
 										</li>
 									</ul>
+
+									<!-- 1106 작업 -->
+									<div class="swiper-pagination"></div>
+									<!-- //1106 작업 -->
 								</div>
 								<!-- navigation -->
 								<div class="swiper-button-next"></div>
 								<div class="swiper-button-prev"></div>
 								<!-- //navigation -->
 							</div>
+							<!-- 1106 작업 -->
 							<script>
 								var swiper = new Swiper(".my-pr-now", {
 									slidesPerView: "auto",
-									spaceBetween: 0,
-									//freeMode: true,
+									// freeMode: true,
 									navigation: {
 										nextEl: ".swiper-button-next",
 										prevEl: ".swiper-button-prev",
 									},
+									pagination: {
+										el: '.swiper-pagination',
+										clickable: true,
+									},
+									breakpoints: {
+										1024: {
+											slidesPerView: 2,
+											slidesPerGroup: 2,
+											spaceBetween: 24,
+										},
+										0: {
+											slidesPerView: "auto",
+											slidesPerGroup: 1,
+											spaceBetween: 16,
+										}
+									}
 								});
 							</script>
+							<!-- //1106 작업 -->
 
 							<div class="my-main-tit02">
 								<p>예다함님이 이용할 수 있는 <span>혜택</span>이 있습니다.</p>
