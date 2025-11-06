@@ -6343,6 +6343,35 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+.corp .content-popup .popup-wrap.verify .bx-v-wrap {padding: 0 0 24px 0;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap ul {display: flex; column-gap: 24px;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li {width: calc(50% - 12px);}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li .in-bx {height: 220px; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li .in-bx .tx01 {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; padding-bottom: 39px;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li .in-bx .bx-img {height: 80px;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li:first-child .in-bx {background: #EAF9FF;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li:first-child .in-bx .bx-img {width: 102px;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li:last-child .in-bx {background: #E9F5EC;}
+.corp .content-popup .popup-wrap.verify .bx-v-wrap li:last-child .in-bx .bx-img {width: 60px;}
+.corp .content-popup .popup-wrap.verify .btm-v-txt {padding: 24px; background: #F7F6F5; border-radius: 16px;}
+.corp .content-popup .popup-wrap.verify .btm-v-txt p.tx01 {position: relative; font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; padding: 0 0 8px 27px;}
+.corp .content-popup .popup-wrap.verify .btm-v-txt p.tx01::before {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9.67969 14.683C9.67969 15.8144 10.1291 16.8995 10.9292 17.6995C11.7292 18.4995 12.8143 18.949 13.9457 18.949C15.0771 18.949 16.1622 18.4995 16.9622 17.6995C17.7622 16.8995 18.2117 15.8144 18.2117 14.683C18.2117 13.5516 17.7622 12.4665 16.9622 11.6665C16.1622 10.8664 15.0771 10.417 13.9457 10.417C12.8143 10.417 11.7292 10.8664 10.9292 11.6665C10.1291 12.4665 9.67969 13.5516 9.67969 14.683Z' fill='%23FBCD6C'/%3E%3Cpath d='M12.0811 21.7972C11.7223 21.7972 11.3635 21.7192 11.0299 21.5632C8.63229 20.4436 3.05469 17.3752 3.05469 13.0696V6.79839C3.05469 5.56119 3.94509 4.52439 5.17149 4.33359C6.60429 4.11039 8.75589 3.59919 10.8631 2.42799C11.6239 2.00559 12.5311 2.00319 13.2907 2.42079C15.4939 3.63519 17.5999 4.13799 18.9799 4.34679C20.2063 4.53279 21.0967 5.56959 21.0967 6.81159V13.0696C21.0967 17.428 15.5191 20.4652 13.1203 21.568C12.7947 21.7192 12.4401 21.7975 12.0811 21.7972ZM12.0847 3.78999C11.9455 3.78999 11.8075 3.82479 11.6803 3.89559C9.35469 5.18798 6.99789 5.74959 5.42949 5.99319C5.02749 6.05559 4.73469 6.39399 4.73469 6.79839V13.0708C4.73469 16.504 10.0963 19.2748 11.7403 20.0416C11.9551 20.1424 12.2023 20.1424 12.4183 20.044C14.0599 19.2892 19.4167 16.5532 19.4167 13.0708V6.81159C19.4167 6.40599 19.1275 6.06878 18.7279 6.00759C17.2135 5.77838 14.8999 5.22519 12.4795 3.89199C12.3585 3.82556 12.2227 3.7905 12.0847 3.78999Z' fill='%23232527'/%3E%3Cpath d='M13.7533 14.2876H12.9193C12.9193 13.8928 12.9181 13.5304 12.9193 13.24C14.4277 12.874 15.5521 11.5132 15.5521 9.89322C15.5521 7.99362 14.0065 6.44922 12.1081 6.44922C10.2085 6.44922 8.66406 7.99482 8.66406 9.89322C8.66406 11.4916 9.75966 12.8392 11.2381 13.2256C11.2357 13.8592 11.2393 14.9452 11.2465 16.8544C11.2477 17.3176 11.6245 17.6908 12.0865 17.6908H12.0901C12.5545 17.6884 12.9289 17.3116 12.9265 16.8472L12.9229 15.9664H13.7533C14.2177 15.9664 14.5933 15.5908 14.5933 15.1264C14.5933 14.662 14.2177 14.2876 13.7533 14.2876ZM10.3429 9.89322C10.3429 8.92002 11.1349 8.12922 12.1069 8.12922C13.0801 8.12922 13.8709 8.92122 13.8709 9.89322C13.8709 10.8652 13.0789 11.6572 12.1069 11.6572C11.1349 11.6572 10.3429 10.8664 10.3429 9.89322Z' fill='%23232527'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+.corp .content-popup .popup-wrap.verify .btm-v-txt li {position: relative; font-weight: 400; color: #232527; font-size: 15px; line-height: 150%; padding: 0 0 8px 20px;}
+.corp .content-popup .popup-wrap.verify .btm-v-txt li:last-child {padding-bottom: 0;}
+.corp .content-popup .popup-wrap.verify .btm-v-txt li::before {content: ''; position: absolute; top: 9px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+
+
 
 
 
