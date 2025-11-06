@@ -617,12 +617,29 @@
 								</a>
 							</li>
 						</ul>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 					<script>
 						var swiper = new Swiper(".pop-service-component-tab", {
 							slidesPerView: "auto",
 							spaceBetween: 12,
 							freeMode: true,
+							navigation: {
+								nextEl: ".swiper-button-next",
+								prevEl: ".swiper-button-prev",
+							},
+							breakpoints: {
+								1200: {
+									spaceBetween: 12,
+								},
+								1024: {
+									spaceBetween: 8,
+								},
+								0: {
+									spaceBetween: 4,
+								}
+							}
 						});
 					</script>
 
@@ -659,7 +676,7 @@
 										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" /></div>
 									</li>
 									<li class="swiper-slide">
-										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" /></div>
+										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum02.png" alt="" /></div>
 									</li>
 									<li class="swiper-slide">
 										<div class="img-thum"><img src="../../../assets/front/images/sub/img_product_thum01.png" alt="" /></div>
@@ -668,12 +685,13 @@
 
 								<!-- 1106 작업 -->
 								<div class="swiper-pagination"></div>
+
+								<!-- navigation -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<!-- //navigation -->
 								<!-- //1106 작업 -->
 							</div>
-							<!-- navigation -->
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-							<!-- //navigation -->
 							<script>
 							var swiper = new Swiper(".product-detail-thum", {
 								slidesPerView: 1,
