@@ -13,7 +13,7 @@
 
 .ltd .main-vis-wrap {position: relative; padding-bottom: 64px; display: flex; column-gap: 64px;}
 .ltd .main-vis-wrap .main-vis {width: 792px; height: 270px; background: #3A456D; border-radius: 16px;}
-.ltd .main-vis-wrap .main-vis li .in-bx {padding: 42.5px 48px;}
+.ltd .main-vis-wrap .main-vis li .in-bx {height: 270px; padding: 0 /*42.5px 48px*/; box-sizing: border-box;}
 .ltd .main-vis-wrap .main-vis li .in-bx .tx01 {font-weight: 600; font-size: 36px; color: #fff; line-height: 130%; padding-bottom: 12px;}
 .ltd .main-vis-wrap .main-vis li .in-bx .tx02 {font-weight: 600; font-size: 17px; color: #EFEFEF; line-height: 130%;}
 /*.swiper-button-next, .swiper-rtl .swiper-button-prev {top: 3.5px; right: 0; width: 16px; height: 16px; background: #ddd; z-index: 100;}
