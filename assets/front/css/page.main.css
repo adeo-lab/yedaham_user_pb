@@ -49,7 +49,7 @@
 .home .main-vis-wrap .main-vis-banner .tx-stit {font-weight: 600; font-size: 17px; color: #777; line-height: 150%;}
 .home .main-vis-wrap .main-vis-banner .tx-num {font-weight: 600; font-size: 32px; color: #444; line-height: 130%; padding-top: 2px;}
 
-.home .main-cont01 {position: relative; /*height: 200px;*/ margin-bottom: 64px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.10); border-radius: 24px; display: flex;}
+.home .main-cont01 {position: relative; /*height: 200px;*/ margin-bottom: 64px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.10); border-radius: 24px; display: flex; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
 .home .main-cont01.mob {display: none;}
 .home .main-cont01::before {content:''; position: absolute; top: 50px; left: 50%; display: block; width: 1px; height: 100px; background: rgba(19, 21, 23, 0.15);}
 .home .main-cont01 .in-bx {width: 50%; padding: 29.5px 40px; box-sizing: border-box;}
@@ -131,9 +131,9 @@
 .home .main-cont03 .s-tit-wrap .s-txt {font-weight: 600; font-size: 32px; color: #232527; line-height: 130%; padding: 40px 0 48px 0;}
 .home .main-cont03 .s-tit-wrap a.btn-more {display: inline-block; font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding-right: 20px;}
 .home .main-cont03 .s-tit-wrap a.btn-more { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5.35449 2.62012C5.67468 2.26441 6.22237 2.23554 6.57812 2.55566L11.9121 7.35547C12.0945 7.51976 12.1982 7.7545 12.1982 8C12.1981 8.24538 12.0945 8.48033 11.9121 8.64453L6.57812 13.4434C6.22247 13.7631 5.67464 13.7352 5.35449 13.3799C5.03445 13.0243 5.06363 12.4765 5.41895 12.1562L10.0361 8L5.41895 3.84375C5.06336 3.52365 5.03466 2.97587 5.35449 2.62012Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right top 3.5px; background-size: 16px; }
-.home .main-cont03 .main-review-list {width: 848px; display: flex; column-gap: 48px;}
-.home .main-cont03 .main-review-list .bx-wrap-l {width: 400px; padding: 64px /*128px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
-.home .main-cont03 .main-review-list .bx-wrap-r {width: 400px; padding: 0 /*64px*/ 0 0 0; display: flex; flex-direction: column; row-gap: 64px;}
+.home .main-cont03 .main-review-list {width: 888px; display: flex; column-gap: 8px; margin-right: -20px;}
+.home .main-cont03 .main-review-list .bx-wrap-l {width: 440px; padding: 64px /*128px*/ 20px 0 20px; display: flex; flex-direction: column; row-gap: 64px;}
+.home .main-cont03 .main-review-list .bx-wrap-r {width: 440px; padding: 0 /*64px*/ 20px 0 20px; display: flex; flex-direction: column; row-gap: 64px;}
 .home .main-cont03 .main-review-list .in-bx-wrap {display: flex; flex-direction: column;}
 
 .home .main-cont03.pc .main-review-list .bx-wrap-l, .home .main-cont03.pc .main-review-list .bx-wrap-r { overflow: hidden; position: relative; }
@@ -145,6 +145,7 @@
 /* .home .main-cont03 .main-review-list .bx-wrap-l .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slidedown;}
 .home .main-cont03 .main-review-list .bx-wrap-r .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slidedown slidedown;} */
 .home .main-cont03 .main-review-list .in-bx {padding: 32px; background: #fff; border-radius: 32px; border-top-left-radius: 0;}
+.home .main-cont03 .main-review-list .in-bx:hover {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.3s ease-in-out;}
 .home .main-cont03 .main-review-list .in-bx dt {max-height: 64px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 12px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
 .home .main-cont03 .main-review-list .in-bx dd {height: 52px; font-weight: 400; font-size: 17px; color: #777; line-height: 150%; padding: 0 0 32px 0; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
 .home .main-cont03 .main-review-list .in-bx .btm-info {position: relative; display: flex; align-items: center; width: 100%; display: flex; column-gap: 16px; padding-top: 32px;}
