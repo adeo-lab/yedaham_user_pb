@@ -309,7 +309,7 @@
   .home .main-vis-wrap .main-vis .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {display: none;}
   .home .main-vis-wrap .main-vis-banner {display: none;}
 
-  .home .main-cont01 {padding-bottom: 48px; margin-bottom: 0;}
+  .home .main-cont01 {padding-bottom: 48px; margin-bottom: 0; box-shadow: none;}
   .home .main-cont01.pc {display: none;}
   .home .main-cont01.mob {display: block; background: none; border: none;}
   .home .main-cont01.mob::before {display: none;}
