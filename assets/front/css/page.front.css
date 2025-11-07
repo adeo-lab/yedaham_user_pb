@@ -6850,6 +6850,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .board-write-ty01 .top-area .line-item dl {float: none; width: 100%;}
   .home .board-write-ty01 .top-area .line-item dt {font-size: 15px;}
+  .home .board-write-ty01 .top-area .line-item:not(.one-line) dl {padding-right: 0;}
+  .home .board-write-ty01 .top-area .line-item:not(.one-line) dl {width: 100%;}
+  .home .board-write-ty01 .top-area .line-item:not(.one-line) + .line-item:not(.one-line) dl {padding-left: 0; padding-right: 0;}
   .home .board-write-ty01 .top-area .line-item:nth-child(odd) dl {padding-right: 0;}
   .home .board-write-ty01 .top-area .line-item:nth-child(even) dl {padding-left :0;}
   .home .board-write-ty01 .top-area .line-item dd:nth-child(3) .bx-address {display: block;}
@@ -6906,6 +6909,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .ej-inp-detail .bx-in-cnt02 .btm-txt {font-size: 14px;}
   .home .ej-inp-detail .bx-in-cnt02 .btm-txt p {font-size: 15px;}
   .home .ej-inp-detail .board-write-ty01 .top-area {padding-bottom: 24px; margin-bottom: 48px;}
+  .home .ej-inp-detail .board-write-ty01 .bx-address .bx01 {width: 100%;}
   .home .page-easy .ej-inp-detail .bx-in-cnt02 .table-wrap table.cont-tb-ty01 {width: 900px;}
 
   .home .ej-pay-wrap {padding-top: 0;}
