@@ -68,15 +68,24 @@
 						<!-- 1105 작업 -->
 						<!-- tab -->
 						<div class="tab-display style-c tab-fixed">
-							<div class="tab-inner-bx">
-								<ul class="tab-list">
-									<li class="tab-item current"><a href="#" class="tab-text btn-target-scroll" data-target="#ccmHistory">CCM 인증연혁</a></li>
-									<li class="tab-item"><a href="#" class="tab-text btn-target-scroll" data-target="#ccmCertification">인증제도 안내</a></li>
-									<li class="tab-item"><a href="#" class="tab-text btn-target-scroll" data-target="#ccmStrategy">CCM전략</a></li>
+							<div class="tab-inner-bx swiper">
+								<ul class="tab-list swiper-wrapper">
+									<li class="tab-item swiper-slide current"><a href="#" class="tab-text btn-target-scroll" data-target="#ccmHistory">CCM 인증연혁</a></li>
+									<li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#ccmCertification">인증제도 안내</a></li>
+									<li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#ccmStrategy">CCM전략</a></li>
 								</ul>
 							</div>
 						</div>
 						<!-- //tab -->
+						<!-- 1107 작업 -->
+						<script>
+							var swiper = new Swiper(".tab-display .tab-inner-bx", {
+								slidesPerView: "auto",
+								spaceBetween: 0,
+								freeMode: true,
+							});
+						</script>
+						<!-- //1107 작업 -->
 						<!-- //1105 작업 -->
 					</div>
 					
