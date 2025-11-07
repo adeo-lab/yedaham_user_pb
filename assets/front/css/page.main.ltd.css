@@ -11,13 +11,21 @@
 .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 {height: 562px /*748px*/; background: #DFE5EC; overflow: hidden;}
 .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 .inner-bx {max-width: 1200px; margin: 0 auto;}
 
-.ltd .main-vis-wrap {position: relative; padding-bottom: 64px; display: flex; column-gap: 64px;}
+/* .ltd .main-vis-wrap {position: relative; padding-bottom: 64px; display: flex; column-gap: 64px;}
 .ltd .main-vis-wrap .main-vis {width: 792px; height: 270px; background: #3A456D; border-radius: 16px;}
-.ltd .main-vis-wrap .main-vis li .in-bx {height: 270px; padding: 0 /*42.5px 48px*/; box-sizing: border-box;}
+.ltd .main-vis-wrap .main-vis li .in-bx {height: 270px; padding: 0; box-sizing: border-box;}
 .ltd .main-vis-wrap .main-vis li .in-bx .tx01 {font-weight: 600; font-size: 36px; color: #fff; line-height: 130%; padding-bottom: 12px;}
-.ltd .main-vis-wrap .main-vis li .in-bx .tx02 {font-weight: 600; font-size: 17px; color: #EFEFEF; line-height: 130%;}
+.ltd .main-vis-wrap .main-vis li .in-bx .tx02 {font-weight: 600; font-size: 17px; color: #EFEFEF; line-height: 130%;} */
 /*.swiper-button-next, .swiper-rtl .swiper-button-prev {top: 3.5px; right: 0; width: 16px; height: 16px; background: #ddd; z-index: 100;}
 .swiper-button-prev, .swiper-rtl .swiper-button-next {top: 3.5px; left: 0; width: 16px; height: 16px; background: #ddd; z-index: 100;}*/
+
+.ltd .main-vis-wrap {display: flex; gap: 24px; margin-bottom: 64px;}
+.ltd .main-vis-wrap .main-vis {flex: 1 1 auto; aspect-ratio: 792/270; overflow: hidden;}
+.ltd .main-vis-wrap .main-vis .vis-img {aspect-ratio: 792/270; overflow: hidden;}
+.ltd .main-vis-wrap .main-vis .vis-img-pc {display: block;}
+.ltd .main-vis-wrap .main-vis .vis-img-mo {display: none;}
+.ltd .main-vis-wrap .main-vis img {width: 100%; height: 100%; object-fit: cover;}
+
 .ltd .main-vis-wrap .main-vis .bx-navi {position: absolute; left: 48px; bottom: 24px; /*width: 93px;*/ z-index: 100; display: flex; align-items: center; column-gap: 4px;}
 .ltd .main-vis-wrap .main-vis .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {position: relative; display: block; top: auto; right: auto; width: 16px; height: 16px; margin-top: 0; z-index: 100;}
 .ltd .main-vis-wrap .main-vis .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {
@@ -43,13 +51,17 @@
   background-size: 16px;
 }
 
-.ltd .main-vis-wrap .main-vis-banner {width: 344px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 16px;}
-.ltd .main-vis-wrap .main-vis-banner .tx01 {position: relative; padding: 33px 0 33px 47px; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
-.ltd .main-vis-wrap .main-vis-banner .tx01 .qq {padding-left: 92px; background: url('../../../assets/front/images/ltd/icon_headphone.png') no-repeat left top 9.5px; background-size: 52px;}
-.ltd .main-vis-wrap .main-vis-banner .tx02 {position: relative; padding: 33px 0 33px 47px;}
-.ltd .main-vis-wrap .main-vis-banner .tx02 .qq {padding-left: 92px; background: url('../../../assets/front/images/ltd/icon_callcenter.png') no-repeat left top 12.5px; background-size: 52px;}
+.ltd .main-vis-wrap .main-vis-banner {flex-shrink: 0; width: 344px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 16px;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side {display: flex; flex-direction: column; height: 100%;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; gap: 40px;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: block; content: ''; width: 54px; height: 54px;}
+.ltd .main-vis-wrap .main-vis-banner .tx01 {position: relative; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div.tx01::before {background: url('../../../assets/front/images/ltd/icon_headphone.png') no-repeat 50%/52px auto;}
+.ltd .main-vis-wrap .main-vis-banner .qq {display: flex; flex-direction: column; gap: 2px; justify-content: center;}
+.ltd .main-vis-wrap .main-vis-banner .tx02 {position: relative;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div.tx02::before {background: url('../../../assets/front/images/ltd/icon_callcenter.png') no-repeat 50%/52px auto;}
 .ltd .main-vis-wrap .main-vis-banner .tx-stit {font-weight: 600; font-size: 17px; color: #777; line-height: 150%;}
-.ltd .main-vis-wrap .main-vis-banner .tx-num {font-weight: 600; font-size: 32px; color: #444; line-height: 130%; padding-top: 2px;}
+.ltd .main-vis-wrap .main-vis-banner .tx-num {font-weight: 600; font-size: 32px; color: #444; line-height: 130%;}
 
 .ltd .main-cont01 {position: relative; padding-bottom: 64px; z-index: 20;}
 .ltd .main-cont01 .s-tit-wrap {position: relative; padding-bottom: 32px;}
@@ -271,21 +283,34 @@
   .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap01.ty02 {padding-top: 48px;}
   .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 {height: auto; padding-bottom: 48px;}
 
-  .ltd .main-vis-wrap {display: block; padding: 0 16px 48px 16px; box-sizing: border-box;}
+  .ltd .main-vis-wrap {display: block; margin-bottom: 48px; padding: 0 16px;}
+  .ltd .main-vis-wrap .main-vis {}
+  .ltd .main-vis-wrap .main-vis .bx-navi {left: 24px; bottom: 24px;}
+  /* .ltd .main-vis-wrap {display: block; padding: 0 16px 48px 16px; box-sizing: border-box;}
   .ltd .main-vis-wrap .main-vis {width: 100%; height: 240px;}
   .ltd .main-vis-wrap .main-vis li .in-bx {height: 240px; padding: 20px 24px; box-sizing: border-box;}
-  .ltd .main-vis-wrap .main-vis li .in-bx .tx01 {font-size: 24px;}
-  .ltd .main-vis-wrap .main-vis .bx-navi {left: 24px; bottom: 24px;}
-  .ltd .main-vis-wrap .main-vis .bx-navi .swiper-button-prev, .swiper-rtl .swiper-button-next {display: none;}
-  .ltd .main-vis-wrap .main-vis .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {display: none;}
-  .ltd .main-vis-wrap .main-vis-banner {width: 100%; margin-top: 17.5px;}
-  .ltd .main-vis-wrap .main-vis-banner .bx-left-side {display: flex;}
-  .ltd .main-vis-wrap .main-vis-banner .tx01 {width: 50%; padding: 16px 28px 12px 28px; border-right: 1px solid rgba(19, 21, 23, 0.30); border-bottom: none;}
+  .ltd .main-vis-wrap .main-vis li .in-bx .tx01 {font-size: 24px;} */
+  /* .ltd .main-vis-wrap .main-vis .bx-navi {left: 24px; bottom: 24px;} */
+  /* .ltd .main-vis-wrap .main-vis .bx-navi .swiper-button-prev, .swiper-rtl .swiper-button-next {display: none;}
+  .ltd .main-vis-wrap .main-vis .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {display: none;} */
+
+  .ltd .main-vis-wrap .main-vis-banner {width: 100%; margin-top: 16px;}
+  .ltd .main-vis-wrap .main-vis-banner .bx-left-side {flex-direction: row;}
+  .ltd .main-vis-wrap .main-vis-banner .bx-left-side > div {padding: 20px 0 16px;}
+  .ltd .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: none;}
+  .ltd .main-vis-wrap .main-vis-banner .qq {gap: 4px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx-stit {display: flex; gap: 16px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx-stit::before {display: block; content: ''; width: 24px; height: 24px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx01 .tx-stit::before {background: url('../../../assets/front/images/ltd/icon_headphone.png') no-repeat 50%/24px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx02 .tx-stit::before {background: url('../../../assets/front/images/ltd/icon_callcenter.png') no-repeat 50%/24px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx01 {border: 0 none;}
+  .ltd .main-vis-wrap .main-vis-banner .tx02 {border-left: 1px solid rgba(19, 21, 23, 0.15);}
+  /* .ltd .main-vis-wrap .main-vis-banner .tx01 {width: 50%; padding: 16px 28px 12px 28px; border-right: 1px solid rgba(19, 21, 23, 0.30); border-bottom: none;}
   .ltd .main-vis-wrap .main-vis-banner .tx01 .qq {padding-left: 0; background-size: 24px; background-position: top 0 left 0;}
   .ltd .main-vis-wrap .main-vis-banner .tx02 {width: 50%; padding: 16px 28px 12px 28px;}
-  .ltd .main-vis-wrap .main-vis-banner .tx02 .qq {padding-left: 0; background-size: 24px; background-position: top 0 left 0;}
-  .ltd .main-vis-wrap .main-vis-banner .tx-stit {font-size: 13px; padding-left: 40px; padding-bottom: 6px;}
-  .ltd .main-vis-wrap .main-vis-banner .tx-num {font-size: 22px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx02 .qq {padding-left: 0; background-size: 24px; background-position: top 0 left 0;}*/
+  .ltd .main-vis-wrap .main-vis-banner .tx-stit {font-size: 13px;}
+  .ltd .main-vis-wrap .main-vis-banner .tx-num {font-size: 22px;} 
 
   .ltd .main-cont01.pc {display: none;}
   .ltd .main-cont01.mob {display: block; background: none; border: none;}
@@ -384,6 +409,13 @@
   .ltd .y-news-wrap .inner-bx .y-news li .in-bx .tx03 {display: none;}
   .ltd .y-news-wrap .inner-bx .y-news .swiper-button-next, .swiper-rtl .swiper-button-prev {display: none;}
   .ltd .y-news-wrap .inner-bx .y-news .swiper-button-prev, .swiper-rtl .swiper-button-next {display: none;}
+}
+
+@media (max-width: 768px) {
+  .ltd .main-vis-wrap .main-vis {flex: 1 1 auto; aspect-ratio: 328 / 240;}
+  .ltd .main-vis-wrap .main-vis .vis-img {aspect-ratio: 328 / 240;}
+  .ltd .main-vis-wrap .main-vis .vis-img-pc {display: none;}
+  .ltd .main-vis-wrap .main-vis .vis-img-mo {display: block !important}
 }
 
 

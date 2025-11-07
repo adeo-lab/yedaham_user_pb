@@ -48,7 +48,7 @@
 .home .main-vis-wrap .main-vis-banner {flex-shrink: 0; width: 344px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 16px;}
 .home .main-vis-wrap .main-vis-banner .bx-left-side {display: flex; flex-direction: column; height: 100%;}
 .home .main-vis-wrap .main-vis-banner .bx-left-side > div {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; gap: 40px;}
-.home .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: block; content: ''; width: 54px; height: 54px; background-color: lime;}
+.home .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: block; content: ''; width: 54px; height: 54px;}
 .home .main-vis-wrap .main-vis-banner .tx01 {position: relative; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
 .home .main-vis-wrap .main-vis-banner .bx-left-side > div.tx01::before {background: url('../../../assets/front/images/common/icon_callcenter.svg') no-repeat;}
 .home .main-vis-wrap .main-vis-banner .qq {display: flex; flex-direction: column; gap: 2px; justify-content: center;}
@@ -419,7 +419,6 @@
   .home .main-vis-wrap .main-vis {flex: 1 1 auto; aspect-ratio: 328 / 240;}
   .home .main-vis-wrap .main-vis .vis-img {aspect-ratio: 328 / 240;}
   .home .main-vis-wrap .main-vis .vis-img-pc {display: none;}
-  .home .main-vis-wrap .main-vis .vis-img-pc {background-color: lime;}
   .home .main-vis-wrap .main-vis .vis-img-mo {display: block !important}
 }
 
