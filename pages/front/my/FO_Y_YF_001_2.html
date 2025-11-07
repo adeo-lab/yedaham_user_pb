@@ -219,7 +219,7 @@
 												</li>
 												<li>
 													<label for="pr01-02">
-														<input type="radio" class="in-pr-ck" name="pr01" id="pr01-02" aria-label="계좌이체" checked="신용카드">
+														<input type="radio" class="in-pr-ck" name="pr01" id="pr01-02" aria-label="계좌이체" checked="계좌이체">
 														<div class="in-bx">
 															<p class="icon bank"></p>
 															<p class="txt">계좌이체</p>
@@ -239,6 +239,7 @@
 																	<option value="#">카드사를 선택해 주세요.</option>
 																</select>
 															</span>
+															<!-- <p class="form-noti invalid">선택해 주세요.</p> -->
 														</dd>
 													</dl>
 												</div>
@@ -249,6 +250,34 @@
 															<span class="form input">
 																<input class="form-elem" type="text" placeholder="‘-’ 없이 숫자만 입력" value="">
 															</span>
+															<!-- <p class="form-noti invalid">올바른 계좌번호를 입력해 주세요.</p> -->
+														</dd>
+													</dl>
+												</div>
+												<div class="line-item one-line">
+													<dl>
+														<dt>이체일</dt>
+														<dd>
+															<div class="bx-transfer">
+																<ul>
+																	<li>
+																		<label for="pr02-01">
+																			<input type="radio" class="in-pr-ck" name="pr02" id="pr02-01" aria-label="5일">
+																			<div class="in-bx">
+																				<p>5일</p>
+																			</div>
+																		</label>
+																	</li>
+																	<li class="on">
+																		<label for="pr02-02">
+																			<input type="radio" class="in-pr-ck" name="pr02" id="pr02-02" aria-label="10일" checked="checked">
+																			<div class="in-bx">
+																				<p>10일</p>
+																			</div>
+																		</label>
+																	</li>
+																</ul>
+															</div>
 														</dd>
 													</dl>
 												</div>
@@ -274,7 +303,7 @@
 												</div>
 												<div class="line-item one-line">
 													<dl>
-														<dt>예금주 휴대폰 번호</dt>
+														<dt>예금주 휴대폰 번호 <span class="imp">*</span></dt>
 														<dd>
 															<span class="form input">
 																<input class="form-elem" type="text" placeholder="생년월일 6자리 숫자를 입력해주세요(960503)" value="">

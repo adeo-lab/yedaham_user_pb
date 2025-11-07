@@ -15,7 +15,7 @@ var uiCommon = (function() {
 			_.setViewportHeight();
 			_.onInput();
 			_.passwordVisible();
-			_.scrollToTop();
+			// _.scrollToTop();
 			setTimeout(_.scrollToTop, 100);
 			_.slider();
 			_.scrollStart();
@@ -770,9 +770,7 @@ var uiCommon = (function() {
 				quickMenu.classList.remove('show');
 			}
 		},
-		scrollToTop: function () {if (
-			window.__quickMenuInit) return;
-			window.__quickMenuInit = true;
+		scrollToTop: function () {
 			const quickMenu = document.querySelector('.quick-menu');
 			if (!quickMenu) return;
 			const btnTop = quickMenu.querySelector('.btn-to-top');
@@ -780,6 +778,7 @@ var uiCommon = (function() {
 
 			if (btnTop) {
 				btnTop.addEventListener('click', function() {
+					console.log('btn-to-top 클릭됨');
 					window.scrollTo({ top: 0, behavior:'smooth' });
 				});
 			}
@@ -788,6 +787,7 @@ var uiCommon = (function() {
 			if (quickMenu) {
 				if (toggleBtn) {
 					toggleBtn.addEventListener('click', () => {
+						console.log('toggle 클릭됨');
 						quickMenu.classList.toggle('active');
 					});
 				}

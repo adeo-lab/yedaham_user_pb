@@ -622,7 +622,7 @@
 						<div class="swiper-button-prev"></div>
 						<!-- //1106 작업 -->
 					</div>
-					<!-- 1106 작업 -->
+					<!-- 1107 작업 -->
 					<script>
 						var swiper = new Swiper(".pop-service-component-tab", {
 							slidesPerView: "auto",
@@ -642,10 +642,29 @@
 								0: {
 									spaceBetween: 4,
 								}
+							},
+							on: {
+								init: function() {
+									moveOnSlide(this);
+								},
+								resize: function() {
+									moveOnSlide(this);
+								}
 							}
 						});
+
+						function moveOnSlide(swiper) {
+							const activeSlide = swiper.el.querySelector('.swiper-slide.on');
+							if (!activeSlide) return;
+
+							const index = [...activeSlide.parentNode.children].indexOf(activeSlide);
+
+							if (index >= 0) {
+								swiper.slideTo(index, 0);
+							}
+						}
 					</script>
-					<!-- //1106 작업 -->
+					<!-- //1107 작업 -->
 
 					<!-- tab -->
 					<div class="tab-display style-a">
