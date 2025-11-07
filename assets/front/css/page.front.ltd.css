@@ -5,64 +5,23 @@
  * 공통
 
 ********************************************************************************************************************************/
-.blind {
-  overflow: hidden;
-  position: absolute;
-  top: -9999em;
-  left: -9999em;
-  width: 1px;
-  height: 1px;
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1px;
-  text-indent: -9999em;
-}
+.blind { overflow: hidden; position: absolute; top: -9999em; left: -9999em; width: 1px; height: 1px; margin: 0 !important; padding: 0 !important; line-height: 1px; text-indent: -9999em; }
+#page { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; row-gap: 48px; width: 100%; max-width: 1200px; margin: 0 auto; }
 
-#page {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 48px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 @media (max-width: 1023px) {
   #page {
     row-gap: 20px;
   }
 }
-#page .page-head .heading-l {
-  text-align: left;
-}
-#page .page-body > .title-l {
-  text-align: center;
-}
-#page .page-body > .body-l {
-  text-align: center;
-}
-#page .page-body .data-finder {
-  margin: 0 0 24px;
-}
-#page .page-body .pagination {
-  margin: 48px 0 0;
-}
-#page .page-body .button-display {
-  margin: 40px 0 0;
-}
-#page .page-body .button-display .button-area {
-  gap: 12px;
-}
-#page .page-body .button-display .button-area .btn-a {
-  min-width: 180px;
-}
+
+#page .page-head .heading-l { text-align: left; }
+#page .page-body > .title-l { text-align: center; }
+#page .page-body > .body-l { text-align: center; }
+#page .page-body .data-finder { margin: 0 0 24px; }
+#page .page-body .pagination { margin: 48px 0 0; }
+#page .page-body .button-display { margin: 40px 0 0; }
+#page .page-body .button-display .button-area { gap: 12px; }
+#page .page-body .button-display .button-area .btn-a { min-width: 180px; }
 @media (max-width: 1023px) {
   #page .page-body .button-display .button-area .btn-a {
     -webkit-box-flex: 1;
@@ -72,52 +31,22 @@
   }
 }
 
-.wbr {
-  display: block;
-}
+.wbr { display: block; }
 
 /********************************************************************************************************************************
 
  * 개별 화면
 
 ********************************************************************************************************************************/
-#page.page-system {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+#page.page-system { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-#page.page-login {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#page.page-login .page-body .title-l {
-  margin-bottom: 40px;
-}
-#page.page-login .login-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-#page.page-login .identifier-board {
-  max-width: 920px;
-  margin: 0 auto;
-}
+#page.page-login { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#page.page-login .page-body .title-l { margin-bottom: 40px; }
+#page.page-login .login-form { max-width: 500px; margin: 0 auto; }
+#page.page-login .identifier-board { max-width: 920px; margin: 0 auto; }
 
-#page.page-mypage:has(.login-form) {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#page.page-mypage .page-body .title-l {
-  margin-bottom: 40px;
-}
+#page.page-mypage:has(.login-form) { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#page.page-mypage .page-body .title-l { margin-bottom: 40px; }
 #page.page-mypage .my-submit-form {
   max-width: 920px;
   margin: 0 auto;
@@ -3345,9 +3274,9 @@ z-index: 10;
 .ltd .wish-time-list ul {display: flex; flex-wrap: wrap; margin: 0 -8px;}
 .ltd .wish-time-list.swiper ul {flex-wrap: nowrap;} 
 .ltd .wish-time-list ul::after {content: ''; display: block; clear: both;}
-.ltd .wish-time-list li {display: flex; flex-direction: column; width: 20%; padding: 0 8px 16px 8px; box-sizing: border-box;}
+.ltd .wish-time-list li {width: 20%; padding: 0 8px 16px 8px; box-sizing: border-box;}
 .ltd .wish-time-list li a {display: block; height: 100%;}
-.ltd .wish-time-list li .in-bx {height: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; word-break: keep-all; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 8px 16px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; text-align: center;}
+.ltd .wish-time-list li .in-bx {height: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; flex-direction: column; word-break: keep-all; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 8px 16px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; text-align: center;}
 .ltd .wish-time-list li a:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.4); transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;} 
 .ltd .wish-time-list li.on a:hover .in-bx {border: 2px solid #F1945E;}
 .ltd .wish-time-list li.disabled a:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.07);}
