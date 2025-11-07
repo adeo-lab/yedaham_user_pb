@@ -221,14 +221,28 @@
 											<input type="radio" name="period" value="custom" class="period-custom">
 
 											<div class="date-range">
-												<span class="date-form"><input type="text" id="dateStart" class="date-input" placeholder="2025.00.00"></span>
+												<span class="date-form"><input type="text" id="dateStart" class="date-input" placeholder="2025.00"></span>
 												<span class="dash">~</span>
-												<span class="date-form"><input type="text" id="dateEnd" class="date-input" placeholder="2025.00.00"></span>
+												<span class="date-form"><input type="text" id="dateEnd" class="date-input" placeholder="2025.00"></span>
 											</div>
 										</label>
+										<!-- 1107 작업 -->
 										<script>
-											$("#dateStart, #dateEnd").datepicker();
+											$("#dateStart, #dateEnd").datepicker({
+												dateFormat: "yy.mm",
+												changeMonth: true,
+												changeYear: true,
+												showButtonPanel: true,
+
+												// 달력 닫힐 때 일(day) 선택 안되도록
+												onClose: function(dateText, inst) {
+													var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+													var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+													$(this).val(year + "." + ("0" + (parseInt(month) + 1)).slice(-2));
+												}
+											});
 										</script>
+										<!-- //1107 작업 -->
 									</li>
 								</ul>
 							</div>
