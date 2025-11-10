@@ -3237,13 +3237,16 @@ z-index: 10;
   border-radius: 20px;
 }
 
-.home .board-write-ty01 .top-area {padding-bottom: 8px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
-.home .board-write-ty01 .top-area::after {content: ''; display: block; clear: both;}
+.home .board-write-ty01 .top-area {display: flex; flex-wrap: wrap; gap: 24px; padding-bottom: 8px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.home .board-write-ty01 .top-area .line-item {width: calc(50% - 12px);}
+.home .board-write-ty01 .top-area .line-item.one-line {width: 100%;}
+
+/* .home .board-write-ty01 .top-area::after {content: ''; display: block; clear: both;}
 
 .home .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;}
 .home .board-write-ty01 .top-area .line-item:nth-child(odd) dl {padding-right: 12px;}
 .home .board-write-ty01 .top-area .line-item:nth-child(even) dl {padding-left: 12px;}
-.home .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;}
+.home .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;} */
 /* .home .board-write-ty01 .top-area .line-item dl {padding-left: 12px; padding-right: 12px;}
 .home .board-write-ty01 .top-area .line-item:nth-of-type(odd) dl {padding-left: 0;}
 .home .board-write-ty01 .top-area .line-item:nth-of-type(even) dl {padding-right: 0;}
@@ -3257,8 +3260,8 @@ z-index: 10;
 .home .board-write-ty01 .top-area .line-item:not(.one-line):nth-child(odd) dl {padding-left: 0 !important; padding-right: 12px !important;} */
 
 
-.home .board-write-ty01 .top-area .line-item:nth-child(even) dl.ty-l {padding-left: 0; padding-right: 12px;}
-.home .board-write-ty01 .top-area .line-item:nth-child(odd) dl.ty-r {padding-left: 12px; padding-right: 0;}
+/* .home .board-write-ty01 .top-area .line-item:nth-child(even) dl.ty-l {padding-left: 0; padding-right: 12px;}
+.home .board-write-ty01 .top-area .line-item:nth-child(odd) dl.ty-r {padding-left: 12px; padding-right: 0;} */
 .home .board-write-ty01 .top-area .line-item dt {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
 .home .board-write-ty01 .top-area .line-item dt span.imp {display: inline-block; font-weight: 400; color: #E94543; line-height: 1; padding-top: 3px; vertical-align: top;}
 .home .board-write-ty01 .top-area .line-item dd {padding-top: 8px;}
@@ -5671,6 +5674,9 @@ c
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx02 {width: 458px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address a.btn-search-address {width: 128px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input .form-elem {height: 48px; line-height: 48px;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form .form-elem {max-width: 200px;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form {gap: 12px; align-items: center;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form .form-elem + .form-text {flex-shrink: 0; font-size: 17px; line-height: 1.5; color: #232527;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.select .form-elem {height: 48px; line-height: 48px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-mem-num {padding-right: 0;}
 .home .my-acount-status-wrap .my-account-cont-bx .easy-agree {padding-top: 0;padding-bottom: 40px;}
