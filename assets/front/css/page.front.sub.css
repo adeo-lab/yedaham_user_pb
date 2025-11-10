@@ -826,7 +826,7 @@
 .home .ritual-step .order-list .order-item .order-item-wrap .text {align-self: center; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
 .home .ritual-step .order-list .order-item .order-item-wrap .text.exapt {align-self: flex-start; line-height: 36px;}
 
-.home .altar-setup .section-body::before {display: block; content: ''; width: 100%; height: 490px; background: url(../../../assets/front/images/sub/img_altar_setup.png) no-repeat 50%;}
+.home .altar-setup .section-body::before {display: block; content: ''; width: 100%; height: 490px; background: url(../../../assets/front/images/sub/img_altar_setup.png) no-repeat 50%/ auto 100%;}
 .home .altar-setup .order-list {display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px; counter-reset: item-counter;}
 .home .altar-setup .order-list .order-item {flex: 0 0 calc((100% - (24px * 3)) / 4); display: flex; min-height: 280px; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; background-color: #FFF; counter-increment: item-counter;}
 .home .altar-setup .order-list .order-item-wrap {display: flex; flex-direction: column; justify-content: space-between; padding: 24px 32px;}
@@ -1009,7 +1009,7 @@
     .home .ritual-step .order-list .order-item .order-item-wrap .text {font-size: 15px;}
     .home .ritual-step .order-list .order-item .order-item-wrap .text.exapt {align-self: center; line-height: 1.5;}
 
-    .home .altar-setup .section-body::before {height: auto; aspect-ratio: 293/245; background-size: cover;}
+    .home .altar-setup .section-body::before {height: auto; aspect-ratio: 328.00/221.40; background-size: cover;}
     .home .altar-setup .order-list {gap: 16px;}
     .home .altar-setup .order-list .order-item {flex: 1 1 100%; min-height: auto;}
     .home .altar-setup .order-list .order-item-wrap {flex: 1 1 100%; row-gap: 4px; padding: 20px;}
