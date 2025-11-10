@@ -1467,6 +1467,7 @@ button.swiper-pagination-bullet {
 }
 .form + .form-noti {
   margin-top: 8px;
+  padding-left: 8px;
 }
 .form + .form-validator {
   margin-top: 8px;
@@ -2270,7 +2271,7 @@ button.swiper-pagination-bullet {
       flex-shrink: 0;
   overflow: hidden;
   position: absolute;
-  top: 44px;
+  top: 40px;
   right: 40px;
   left: auto;
   z-index: 20;
