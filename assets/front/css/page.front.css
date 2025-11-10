@@ -5509,7 +5509,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .my-contract-status-detail .in-cont01 .bx-tp .flag.red-01 {color: #E94543; border: 1px solid #E94543;} /* 청약, 연체, 철회, 미납 */
 .home .my-contract-status-detail .in-cont01 .bx-tp .flag.blue-01 {color: #374BA3; border: 1px solid #374BA3;} /* 의전, 직권해지 */
-.home .my-contract-status-detail .in-cont01 .bx-tp.flag.green-01 {color: #337848; border: 1px solid #337848;} /* 정상 */
+.home .my-contract-status-detail .in-cont01 .bx-tp .flag.green-01 {color: #337848; border: 1px solid #337848;} /* 정상 */
 .home .my-contract-status-detail .in-cont01 .bx-tp .flag.grey-01 {color: #777; border: 1px solid rgba(19, 21, 23, 0.30);} /* 회색 */
 
 .home .my-contract-status-detail .in-cont01 .bx-tp .btns-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 12px;}
