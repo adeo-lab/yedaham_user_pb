@@ -111,7 +111,10 @@
 											<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker">
 										</span>
 										<script>
-											$( "#datepicker" ).datepicker(); 
+											$( "#datepicker" ).datepicker({
+												changeMonth: true,
+												changeYear: true
+											});
 										</script>
 									</dd>
 								</dl>
