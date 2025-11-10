@@ -29,6 +29,50 @@ document.addEventListener("DOMContentLoaded", () => {
   // 초기 실행
   recomputeOrigin();
   onScroll();
+
+  /* ✅ 스크롤 시 current 탭 변경 */
+  const tabItems = document.querySelectorAll(".tab-item");
+  const links = document.querySelectorAll(".btn-target-scroll");
+  const sections = Array.from(links).map(link => {
+    const selector = link.dataset.target;
+    return document.querySelector(selector);
+  });
+
+  const isMobile = window.matchMedia("(max-width: 1023px)").matches;
+  // const TAB_HEIGHT = 72;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = "#" + entry.target.id;
+
+      console.log("%c[Observer]", "color: #007aff; font-weight:bold;", {
+        id,
+        ratio: entry.intersectionRatio.toFixed(3),
+        isIntersecting: entry.isIntersecting
+      });
+      
+      if (entry.isIntersecting) {
+        // const id = "#" + entry.target.id;
+        links.forEach(link => {
+          const parent = link.closest(".tab-item");
+          if (link.dataset.target === id) {
+            parent.classList.add("current");
+            console.log("%c→ current 적용:", "color:#28a745; font-weight:bold;", id);
+          } else {
+            parent.classList.remove("current");
+          }
+        });
+      }
+    });
+  }, {
+    root: null,
+    threshold: isMobile ? 0.2 : 0.3, /* 화면에 40% 보여지면 활성화 */
+    // rootMargin: `-${TAB_HEIGHT}px 0px 0px 0px`
+  });
+
+  sections.forEach(section => {
+    if (section) observer.observe(section);
+  });
+
 });
 
 /* title 고정 */
