@@ -12,34 +12,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* 1) 헤더 높이 계산 (corp 헤더 hide 상태 반영) */
   const getHeaderOffset = () => {
-    if (!isCorp) return 0; // 일반 화면은 헤더 영향 없음
-
     const header = document.querySelector("#header");
     if (!header) return 0;
+    if (isCorp) {
+      const isHeaderHidden = header.classList.contains("down");
+      return isHeaderHidden ? 0 : header.offsetHeight;
+    }
+    return header.offsetHeight;
+  };
 
-    const isHeaderHidden = header.classList.contains("down");
-    return isHeaderHidden ? 0 : header.offsetHeight;
+  /* CSS 변수에 헤더 높이 반영 */
+  const updateHeaderHeightVar = () => {
+    document.documentElement.style.setProperty("--header-height", `${HEADER_OFFSET}px`);
   };
 
   let HEADER_OFFSET = getHeaderOffset();
   let originTop = 0;
 
+  /* ✅ placeholder: fixed 시 높이 유지 */
+  let tabHeight = 0;
+  const placeholder = document.createElement("div");
+  placeholder.style.height = "0px";
+  tab.insertAdjacentElement("afterend", placeholder);
+
+  const updateTabHeight = () => {
+    tabHeight = tab.offsetHeight;
+    placeholder.style.height = tab.classList.contains("fixed") ? `${tabHeight}px` : "0px";
+  };
+
   /* 2) 탭 고정 기준 재계산 */
   const recomputeOrigin = () => {
     HEADER_OFFSET = getHeaderOffset();
+    updateHeaderHeightVar();      // CSS 변수 갱신
     originTop = tab.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+    updateTabHeight();            // 탭 높이 갱신
   };
-
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener("resize", () => {
-      recomputeOrigin();
-      onScroll(); // 추가: 즉시 상태 반영
-    });
-    window.visualViewport.addEventListener("scroll", () => {
-      recomputeOrigin();
-      onScroll();
-    });
-  }
 
   /* 3) 스크롤 시 탭 fixed */
   const onScroll = () => {
@@ -48,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       tab.classList.remove("fixed");
     }
+    updateTabHeight(); // 항상 높이 보정
   };
 
   /* 4) IntersectionObserver - current 이동 */
@@ -71,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (section) observer.observe(section);
   });
 
-  /* 5) 새로고침 시 현재 화면에서 가장 가까운 섹션 current 적용 */
+  /* 5) 새로고침 시 현재 위치 섹션 current */
   const setInitialCurrent = () => {
     let minDistance = Infinity;
     let currentSection = null;
@@ -95,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  /* 6) 초기 실행은 레이아웃 계산이 끝난 후 → 2프레임 지연 */
+  /* 6) 초기 실행 (레이아웃 안정 후 실행) */
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       recomputeOrigin();
@@ -104,16 +112,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  window.addEventListener("scroll", () => {
-    onScroll();
-  }, { passive: true });
+  /* ✅ 모바일 사파리 / 네이버앱 주소창 변화 대응 */
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", () => {
+      recomputeOrigin();
+      onScroll();
+    });
+    window.visualViewport.addEventListener("scroll", () => {
+      recomputeOrigin();
+      onScroll();
+    });
+  }
 
+  window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", () => {
     recomputeOrigin();
     onScroll();
   });
 
 });
+
 
 
 
