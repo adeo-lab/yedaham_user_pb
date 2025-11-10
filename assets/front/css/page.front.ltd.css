@@ -2542,6 +2542,8 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 }
 
 /* header new */
+.ltd #header.active~#container:after {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9997; content: ""; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px);}
+
 .ltd #header .header-inner .navi-util .navi-list .navi-item .navi-text .logout {display: none;}
 .ltd #header .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn {background: #fff;}
 
@@ -2561,7 +2563,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   
 .ltd .header .nav-layer {position: absolute; top: 100px; left: 0; width: 100%; background-color: #FBFAFA; display: none; box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.13);}
 .ltd .header .nav-layer .nav-inner-wrap {position: relative; background: #FBFAFA; z-index: 100;}
-.ltd .header .nav-layer .bg-opa {content: ''; position: fixed; top: 100px; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px); z-index: 10;}
+/* .ltd .header .nav-layer .bg-opa {content: ''; position: fixed; top: 100px; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px); z-index: 10;} */
 .ltd .header .nav-layer a {display: block;}
 .ltd .header.active .nav-layer {display: block;}
 .ltd .header .nav-layer .inner-bx-l {width: 1200px; margin: 0 auto;}
@@ -2602,6 +2604,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 .ltd .header .nav-layer .inner-bx-l .lnb-list-l > .lnb-item-l.dep3 > .lnb-list-l > .lnb-item-l > a {font-weight: 400; color: #444;}
 
 @media (max-width: 1023px) {
+  .ltd #header.active~#container:after {display: none;}
   .ltd .header .nav-layer {position: absolute; top: 133px; left: -100%; transition: left ease 0.01s; display: block !important;}
   .ltd .header .nav-layer .bg-opa {display: none !important;}
   .ltd .header.open .nav-layer {top: 133px; left: 0; z-index: 1001; transition: left ease 0.01s; display: none !important}

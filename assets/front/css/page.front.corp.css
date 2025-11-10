@@ -141,6 +141,7 @@
 .corp .header .header-inner .header-sub-area{display: none !important;}
 
 @media (max-width: 1023px) {
+  .corp #header.active~#container:after {display: none;}
   .corp #header {flex-direction: column; justify-content: flex-start; align-items: flex-start;}
   .corp #header.invert {background-color: #fff;}
   .corp #header.open {height: calc(var(--vh, 1vh) * 100);}
@@ -3124,7 +3125,7 @@ z-index: 10;
 .corp #header.down + .container .tab-display.tab-fixed.fixed {top: 0;}
 
 .corp .tab-display .tab-list .tab-item {width: auto;}
-.corp .tab-display.tab-fixed.fixed {position: fixed; top: var(--header-height); left: 0; width: 100%; max-width: 100%; padding: 22px 0; background: #EEEEED; z-index: 9; transition: top .3s ease;}
+.corp .tab-display.tab-fixed.fixed {position: fixed; top: var(--header-height); left: 0; width: 100%; max-width: 100%; padding: 22px 0; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(10px); z-index: 9; transition: top .3s ease;}
 .corp .tab-display.tab-fixed.fixed .tab-list {width: 1200px; margin: 0 auto;}
 .corp .tab-display.tab-fixed.fixed .tab-list .tab-item .tab-text {height: 36px; font-weight: 400; font-size: 17px; line-height: 150%; padding: 5px 12px; box-sizing: border-box;}
 

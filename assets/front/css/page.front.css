@@ -2576,6 +2576,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 }
 
 /* header new */
+.home #header.active~#container:after  {content: ''; position: fixed; top: 100px; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px); z-index: 10;}
 .home .header .header-inner .header-sub-area {display: flex; column-gap: 16px; height: 72px; align-items: center;}
 .home .header .header-inner .header-sub-area .btn-header-prev {width: 24px; height: 24px; line-height: 24px;}
 .home .header .header-inner .header-sub-area .btn-header-prev a {
@@ -2592,7 +2593,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   
 .home .header .nav-layer {position: absolute; top: 100px; left: 0; width: 100%; background-color: #FBFAFA; display: none; box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.13);}
 .home .header .nav-layer .nav-inner-wrap {position: relative; background: #FBFAFA; z-index: 100;}
-.home .header .nav-layer .bg-opa {content: ''; position: fixed; top: 100px; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px); z-index: 10;}
+/* .home .header .nav-layer .bg-opa {content: ''; position: fixed; top: 100px; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), rgba(255, 255, 255, 0.60); backdrop-filter: blur(10px); z-index: 10;} */
 .home .header .nav-layer a {display: block;}
 .home .header.active .nav-layer {display: block;}
 .home .header .nav-layer .inner-bx-l {width: 1200px; margin: 0 auto;}
@@ -2633,6 +2634,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 .home .header .nav-layer .inner-bx-l .lnb-list-l > .lnb-item-l.dep3 > .lnb-list-l > .lnb-item-l > a {font-weight: 400; color: #444;}
 
 @media (max-width: 1023px) {
+  .home #header.active~#container:after {display: none;}
   .home .header .nav-layer {position: absolute; top: 133px; left: -100%; transition: left ease 0.01s; display: block !important;}
   .home .header .nav-layer .bg-opa {display: none !important;}
   .home .header.open .nav-layer {top: 133px; left: 0; z-index: 1001; transition: left ease 0.01s;}
@@ -3006,7 +3008,7 @@ z-index: 10;
 
 /* fixed */
 .home .tab-display .tab-list .tab-item {width: auto;}
-.home .tab-display.tab-fixed.fixed {position: fixed; /*top: 100px;*/ top: var(--header-height); left: 0; width: 100%; padding: 22px 0; background: #EEEEED; z-index: 9;}
+.home .tab-display.tab-fixed.fixed {position: fixed; /*top: 100px;*/ top: var(--header-height); left: 0; width: 100%; padding: 22px 0; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(10px); z-index: 9;}
 .home .tab-display.tab-fixed.fixed .tab-list {width: 1200px; margin: 0 auto;}
 .home .tab-display.tab-fixed.fixed .tab-list .tab-item .tab-text {height: 36px; font-weight: 400; font-size: 17px; line-height: 150%; padding: 5px 12px; box-sizing: border-box;}
 
@@ -4496,7 +4498,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-position: left 16px top 12px;
 	background-size: 13px;
 }
-.home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-txt01 {position: relative; font-weight: 600; font-size: 32px; color: #232527; line-height: 130%; padding: 40px 0;}
+.home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-txt01 {display: flex; align-items: center; justify-content: space-between; position: relative; font-weight: 600; font-size: 32px; color: #232527; line-height: 130%; padding: 40px 0;}
+.home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-txt01 .btn-link {font-size: 15px; font-weight: 400; line-height: 1.5; color: #374BA3; text-decoration: underline;}
 .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-txt01 .btn-check-pr {position: absolute; top: 49px; right: 0; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 150%; text-decoration: underline;}
 .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .bx-price {padding-bottom: 32px;}
 .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .bx-price ul {width: 100%; font-weight: 600; font-size: 17px; color: #BFBFBF; line-height: 150%; display: flex; flex-direction: column; row-gap: 13.5px;}
