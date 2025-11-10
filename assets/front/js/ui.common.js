@@ -332,8 +332,8 @@ var uiCommon = (function() {
 				const deactivateHeaderIfOutside = (event) => {
 					const related = event.relatedTarget;
 					if (!isInGnbOrLayer(related)) {
-					header && header.classList.remove('active');
-					closeAllMenus();
+						header && header.classList.remove('active');
+						closeAllMenus();
 					}
 				};
 
@@ -350,11 +350,15 @@ var uiCommon = (function() {
 				// ---------- 마우스(PC) : .gnb / .nav-layer 진입/이탈 ----------
 				if (gnbArea) {
 					gnbArea.addEventListener('mouseenter', activateHeader);
-					gnbArea.addEventListener('mouseleave', deactivateHeaderIfOutside);
 				}
 				if (navLayer) {
 					navLayer.addEventListener('mouseenter', activateHeader);
-					navLayer.addEventListener('mouseleave', deactivateHeaderIfOutside);
+				}
+				if (header) {
+					header.addEventListener('mouseleave', () => {
+						header.classList.remove('active');
+						closeAllMenus();
+					});
 				}
 
 				// ---------- 마우스(PC) : 개별 1depth 메뉴 hover 시 해당 서브메뉴만 열기 ----------
