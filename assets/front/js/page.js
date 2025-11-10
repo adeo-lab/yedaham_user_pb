@@ -114,15 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ✅ 모바일 사파리 / 네이버앱 주소창 변화 대응 */
   if (window.visualViewport) {
+  // 주소창이 완전히 열리거나 닫힐 때만 실행됨 → 깜빡임 없음
     window.visualViewport.addEventListener("resize", () => {
       recomputeOrigin();
       onScroll();
     });
-    window.visualViewport.addEventListener("scroll", () => {
-      recomputeOrigin();
-      onScroll();
-    });
   }
+
 
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", () => {
