@@ -3796,6 +3796,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-size: 32px;
 }
 
+@media (max-width: 1023px) {
+  .corp .view-btm-photos-wrap .swiper-button-prev,
+  .corp .view-btm-photos-wrap .swiper-button-next  {display: none;}
+}
+
+
 .corp .img-motion-bx-wrap {position: relative; margin: 0 0 48px 0;}
 .corp .img-motion-bx-wrap .sk-div {width: 90%; /*height: 455px;*/ margin: 0 auto;}
 .corp .img-motion-bx-wrap .sk-div .img-bx {overflow: hidden;}
