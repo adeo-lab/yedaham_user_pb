@@ -5666,9 +5666,9 @@ c
 /*.home .my-acount-status-wrap .my-account-cont-bx .ej-pay-wrap .board-write-ty01 .top-area {margin-bottom: 0; border-bottom: 0;}*/
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail {padding-top: 0;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .top-area {margin-bottom: 0; border-bottom: 0;}
-.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx01 {width: 349px;}
-.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx02 {width: 286px;}
-.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email a.btn-check {display: block; width: 128px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx01 {flex-shrink: 0; width: 349px;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx02 {min-width: 286px; width: 100%;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email a.btn-check {flex-shrink: 0; display: block; width: 128px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address {column-gap: 16px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx01 {width: 196px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx02 {width: 458px;}
