@@ -30,6 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
     originTop = tab.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
   };
 
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", () => {
+      recomputeOrigin();
+      onScroll(); // 추가: 즉시 상태 반영
+    });
+    window.visualViewport.addEventListener("scroll", () => {
+      recomputeOrigin();
+      onScroll();
+    });
+  }
+
   /* 3) 스크롤 시 탭 fixed */
   const onScroll = () => {
     if (window.scrollY >= originTop) {
