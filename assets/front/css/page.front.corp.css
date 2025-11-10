@@ -3706,9 +3706,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-position: center;
   background-size: 32px;
 }
-.corp .board-view .board-view-content {padding: 48px 0;}
+.corp .board-view .board-view-content {padding: 48px 0 0;}
 .corp .board-view .board-view-content .board-content {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding-bottom: 48px; border-bottom: 1px solid rgba(19, 21, 23, 0.10);}
-.corp .board-view .board-view-content .file-upload-result {padding:48px 0 0 0; margin: 0; background: none;}
+.corp .board-view .board-view-content .file-upload-result {padding:48px 0; margin: 0; background: none; border-bottom: 1px solid rgba(19, 21, 23, 0.10);}
 .corp .board-view .board-view-content .file-upload-result .fil-upload-top {display: flex; align-items: center; column-gap: 24px; padding-bottom: 24px;}
 .corp .board-view .board-view-content .file-upload-result .fil-upload-top .tx-l {font-weight: 600; font-size: 19px; color: #444; line-height: 130%;}
 .corp .board-view .board-view-content .file-upload-result .fil-upload-top a.btn-down-all {display: inline-block; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 44px 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;}
@@ -3730,7 +3730,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-size: 16px;
 }
 .corp .board-view .board-view-content .bx-ty01 {padding-bottom: 48px;}
-.corp .board-view .board-bottom {border-top: 1px solid rgba(19, 21, 23, 0.10);}
+.corp .board-view .board-bottom {border: 0 none;}
 .corp .board-view .board-bottom .navi-list .navi-item:first-child::before {
   /* mask-image: none; */
   background-color: #232527; 
@@ -3756,7 +3756,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .board-view .board-bottom .navi-list .navi-item.disabled .head {color: #BFBFBF}
 .corp .board-view .board-bottom .navi-list .navi-item .body {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%;}
 .corp .board-view .board-bottom .navi-list .navi-item.disabled .body {color: #BFBFBF}
-.corp .board-view .board-bottom .navi-list + .button-area .btn-a:only-child {min-width: auto; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; background: #4458B0; border-radius: 56px;}
+.corp .board-view .board-bottom .navi-list + .button-area .btn-a:only-child {min-width: 120px; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; background: #4458B0; border-radius: 56px;}
 .corp .board-view .board-bottom .navi-list .navi-item + .navi-item {justify-content: flex-end;}
 
 @media (max-width: 1200px) {
@@ -6492,7 +6492,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp #header.up + .container .tab-display.tab-fixed.fixed {top: 72px;}
 
 
-
+  .corp .view-btm-photos-wrap {margin: 24px 0 16px;}
 
 
 
@@ -6500,19 +6500,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .board-view .board-view-inform .board-subject {font-size: 22px;}
   .corp .board-view .board-view-inform .board-date {font-size: 15px;}
   .corp .board-view .board-view-inform a.btn-share {bottom: 23px; width: 24px; height: 24px; background-size: 24px;}
-  .corp .board-view .board-view-content {padding: 24px 0;}
+  .corp .board-view .board-view-content {padding: 24px 0 16px;}
   .corp .board-view .board-view-content .board-content {font-size: 15px; padding-bottom: 24px;}
-  .corp .board-view .board-view-content .file-upload-result {padding-top: 24px;}
+  .corp .board-view .board-view-content .file-upload-result {padding: 24px 0 0; border: 0 none;}
   .corp .board-view .board-view-content .file-upload-result .fil-upload-top {padding-bottom: 12px;}
   .corp .board-view .board-view-content .file-upload-result .fil-upload-top a.btn-down-all {height: 32px; font-size: 14px; line-height: 32px; padding: 0 28px 0 10px; background-position: right 10px top 8px;}
   .corp .board-view .board-view-content .file-upload-result .file-upload-wrap .file-name {position: relative; width: 100%; font-size: 15px; padding-right: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; box-sizing: border-box;}
   .corp .board-view .board-view-content .file-upload-result .file-upload-wrap .file-name span.tx-r {position: absolute; top: 15.5px; right: 0; width: 16px; height: 16px; background-position: center center; text-indent: -9999px; overflow: hidden;}
 
+  .corp .board-view .board-bottom {padding: 16px 0 0;}
   .corp .board-view .board-bottom .navi-list .navi-item {padding: 7px 0;}
   .corp .board-view .board-bottom .navi-list .navi-item .head {font-weight: 600; font-size: 17px; line-height: 150%;}
   .corp .board-view .board-bottom .navi-list .navi-item .body {display: none;}
-  .corp .board-view .board-bottom .navi-list + .button-area {left: calc(50% - 45px);}
-  .corp .board-view .board-bottom .navi-list + .button-area .btn-a:only-child {min-width: 90px; height: 40px;}
+  .corp .board-view .board-bottom .navi-list + .button-area {left: 50%;}
+  .corp .board-view .board-bottom .navi-list + .button-area .btn-a:only-child {min-width: 72px; height: 40px; padding: 0 16px; font-size: 15px;}
   /*.corp .board-view .board-bottom .navi-list .navi-item {position: absolute; top: 0; left: 0;}
   .corp .board-view .board-bottom .navi-list .navi-item + .navi-item {position: absolute; top: 0; right: 0;}*/
 

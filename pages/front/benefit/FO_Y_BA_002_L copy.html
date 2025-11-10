@@ -283,9 +283,89 @@
 							<div class="swiper-button-next"></div>
 							<div class="swiper-button-prev"></div>
 							<!-- //navigation -->
-
-							<!-- 1110 작업 -->
 							<script>
+								/*
+								var swiper = new Swiper(".bx-thum", {
+									slidesPerView: 1,
+									spaceBetween: 0,
+									navigation: {
+										nextEl: ".swiper-button-next",
+										prevEl: ".swiper-button-prev",
+									},
+								});
+								*/
+								// document.addEventListener("DOMContentLoaded", function () {
+								// 	if (window.innerWidth >= 1024) {
+								// 		// 1023 이하일 때 Swiper 초기화
+								// 		var swiper = new Swiper(".bx-thum", {
+								// 			slidesPerView: 1,
+								// 			spaceBetween: 0,
+								// 			navigation: {
+								// 				nextEl: ".swiper-button-next",
+								// 				prevEl: ".swiper-button-prev",
+								// 			},
+								// 		});
+
+								// 	} else if (window.innerWidth <= 1023) {
+								// 		// 1024 이상일 때 Swiper + detail box 처리
+								// 		var swiper = new Swiper(".bx-thum", {
+								// 			slidesPerView: "auto",
+								// 			centeredSlides: true,
+								// 			spaceBetween: 16,
+								// 			loop: true,
+								// 			watchOverflow: true,
+								// 			navigation: {
+								// 				nextEl: ".swiper-button-next",
+								// 				prevEl: ".swiper-button-prev",
+								// 			},
+								// 		});
+								// 	}
+
+								// 	function updateDetailBoxes() {
+								// 	// 최신 DOM에서 다시 선택
+								// 	const detailBoxes = document.querySelectorAll('.detail-wrap[class*="box"]');
+								// 	console.log('[debug] detailBoxes count:', detailBoxes.length);
+
+								// 	// 1) .detail-wrap 자체에 붙은 show 제거
+								// 	document.querySelectorAll('.detail-wrap.show').forEach(el => {
+								// 		el.classList.remove('show');
+								// 		el.style.display = '';
+								// 		el.style.opacity = '';
+								// 	});
+
+								// 	// 2) detail 내부의 어떤 엘리먼트에 붙어있어도 제거
+								// 	document.querySelectorAll('.detail-wrap[class*="box"] .show').forEach(el => {
+								// 		el.classList.remove('show');
+								// 		el.style.display = '';
+								// 		el.style.opacity = '';
+								// 	});
+
+								// 	// 3) 목표 박스 선택 (01 형식/1 형식 모두 시도)
+								// 	const activeIndex = (typeof swiper.realIndex === 'number') ? swiper.realIndex : swiper.activeIndex;
+								// 	const padded = String(activeIndex + 1).padStart(2, '0');
+								// 	const selectorCandidates = [
+								// 		`.detail-wrap.box${padded}`,       // box01
+								// 		`.detail-wrap.box${activeIndex + 1}` // box1
+								// 	];
+								// 	let targetBox = null;
+								// 	for (const sel of selectorCandidates) {
+								// 		targetBox = document.querySelector(sel);
+								// 		if (targetBox) break;
+								// 	}
+
+								// 	if (targetBox) {
+								// 		targetBox.classList.add('show');
+								// 		targetBox.style.display = '';
+								// 		targetBox.style.opacity = '';
+								// 	} else {
+								// 		console.warn('[debug] targetBox not found. tried:', selectorCandidates);
+								// 	}
+								// 	}
+
+								// 	swiper.on('slideChange', updateDetailBoxes);
+								// 	// 초기 상태도 적용
+								// 	updateDetailBoxes();
+								// });
 								document.addEventListener("DOMContentLoaded", function () {
 									let swiper;
 
@@ -302,8 +382,8 @@
 											slidesPerView: 1,
 											spaceBetween: 0,
 											navigation: {
-												nextEl: ".swiper-button-next",
-												prevEl: ".swiper-button-prev",
+											nextEl: ".swiper-button-next",
+											prevEl: ".swiper-button-prev",
 											},
 										});
 										} else {
@@ -348,7 +428,6 @@
 								});
 
 							</script>
-							<!-- //1110 작업 -->
 						</div>
 					</div>
 					<!-- left area -->
