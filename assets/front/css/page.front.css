@@ -5,11 +5,23 @@
  * 공통
 
 ********************************************************************************************************************************/
+:root {
+  --header-height: 100px; /* PC 기준 헤더 높이 */
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --header-height: 72px; /* 모바일 기준 */
+  }
+}
+
 .blind { overflow: hidden; position: absolute; top: -9999em; left: -9999em; width: 1px; height: 1px; margin: 0 !important; padding: 0 !important; line-height: 1px; text-indent: -9999em; }
 
 #page { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; row-gap: 48px; width: 100%; max-width: 1200px; margin: 0 auto; }
 @media (max-width: 1023px) {
   #page { row-gap: 20px; }
+
+  #page.page-info { row-gap: 0; }
 }
 
 #page .page-head .heading-l { text-align: left; }
@@ -2557,6 +2569,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 .home .container.ty-wide #page .page-body-wrap.ty02 {background: #F8EEE8;}
 
 @media (max-width: 1023px) {
+  /* .home .container.ty-wide #page {row-gap: 0;} */
   .home .container.ty-wide #page .inner-bx {max-width: 100%;}
   .home .container.ty-wide #page .page-body-wrap {padding-left: 16px; padding-right: 16px; box-sizing: border-box;}
   .home .container.ty-wide #page .page-body-wrap .inner-bx {max-width: 100%;}
@@ -2993,7 +3006,7 @@ z-index: 10;
 
 /* fixed */
 .home .tab-display .tab-list .tab-item {width: auto;}
-.home .tab-display.tab-fixed.fixed {position: fixed; /*top: 100px;*/ top: var(--header-height, 0px); left: 0; width: 100%; padding: 22px 0; background: #EEEEED; z-index: 9;}
+.home .tab-display.tab-fixed.fixed {position: fixed; /*top: 100px;*/ top: var(--header-height); left: 0; width: 100%; padding: 22px 0; background: #EEEEED; z-index: 9;}
 .home .tab-display.tab-fixed.fixed .tab-list {width: 1200px; margin: 0 auto;}
 .home .tab-display.tab-fixed.fixed .tab-list .tab-item .tab-text {height: 36px; font-weight: 400; font-size: 17px; line-height: 150%; padding: 5px 12px; box-sizing: border-box;}
 
@@ -5895,20 +5908,23 @@ c
   .pr-bg-wrap {margin: 0 -16px;}
   .home .pr-bg-wrap.day01 {background: #fff;}
   .home .pr-bg-wrap.day01 .proceeding-wrap {padding-top: 0;}
-  .home .pr-bg-wrap.day01 .proceeding-wrap .proceedings-list::before {height: calc(100% - 250px);}
+  /* .home .pr-bg-wrap.day01 .proceeding-wrap .proceedings-list::before {di} */
   .home .pr-bg-wrap.day02 {background: #fff;}
-  .home .pr-bg-wrap.day02 .proceeding-wrap .proceedings-list::before {top: 28px; height: calc(100% - 190px);}
+  /* .home .pr-bg-wrap.day02 .proceeding-wrap .proceedings-list::before {top: 28px; height: calc(100% - 196px);} */
   .home .pr-bg-wrap.day03 {margin-bottom: 80px;}
   .home .pr-bg-wrap.day03 .proceeding-wrap {background: url(../../../assets/front/images/sub/bg_info03.png) no-repeat right 10px bottom; background-size: 140px;}
   .home .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list {padding-bottom: 200px;}
-  .home .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list::before {top: 28px; height: calc(100% - 260px);}
+  /* .home .pr-bg-wrap.day03 .proceeding-wrap .proceedings-list::before {top: 28px; height: calc(100% - 196px);} */
 
   .home .pr-bg-wrap .proceeding-wrap .proceedings-list {padding-top: 24px; padding-bottom: 48px;}
 
   .home .proceeding-wrap {flex-direction: column;}
   .home .proceeding-wrap .proceedings-list {padding-left: 32px; padding-right: 16px;}
-  .home .proceeding-wrap .proceedings-list::before {left: 27px; width: 1px;}
+  /* .home .proceeding-wrap .proceedings-list::before {left: 27px; width: 1px;} */
+  .home .proceeding-wrap .proceedings-list::before {display: none;}
   .home .proceeding-wrap .proceedings-list li {padding-left: 24px;}
+  .home .proceeding-wrap .proceedings-list li::before {content: ''; display: block; position: absolute; top: 2px; left: -5px; width: 2px; height: calc(100% + 32px); background-color: #D17B47;}
+  .home .proceeding-wrap .proceedings-list li:last-child::before {display: none;}
   .home .proceeding-wrap .proceedings-list li .in-bx p.bx-num {width: 24px; height: 24px; font-size: 10.5px; line-height: 24px; background-size: 24px;}
   .home .proceeding-wrap .proceedings-list li .in-bx dt {font-size: 20px; padding-bottom: 8px;}
   .home .proceeding-wrap .proceedings-list li .in-bx dt span {font-size: 17px;}
@@ -6659,7 +6675,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .tab-display.style-c .tab-list .tab-item .tab-text {font-size: 15px; padding: 12px 0;}
   .home .tab-display.style-c .tab-list .tab-item.current .tab-text::after {bottom: 0; z-index: 1;}
 
-  .home .tab-display.style-c.tab-fixed {position: relative; top: auto; left: 0; width: 100%; padding: 0; background: #fff; z-index: 9;}
+  .home .tab-display.style-c.tab-fixed {position: relative; top: 0; left: 0; width: 100%; padding: 0; background: #fff; z-index: 9;}
+  .home .tab-display.style-c.tab-fixed.fixed {top: var(--header-height);}
   .home .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {width: 100%;}
   .home .tab-display.style-c.tab-fixed.fixed .tab-list .tab-item .tab-text {font-size: 15px; line-height: 130%; padding: 12px 0;}
   .home .tab-display.style-c.tab-fixed.fixed .btn-mob-r {display: none;}
