@@ -3240,13 +3240,22 @@ z-index: 10;
 .home .board-write-ty01 .top-area {padding-bottom: 8px; margin-bottom: 32px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .home .board-write-ty01 .top-area::after {content: ''; display: block; clear: both;}
 
-/* .home .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;}
+.home .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;}
 .home .board-write-ty01 .top-area .line-item:nth-child(odd) dl {padding-right: 12px;}
-.home .board-write-ty01 .top-area .line-item:nth-child(even) dl {padding-left: 12px;} */
-.home .board-write-ty01 .top-area .line-item dl {float: left; padding-bottom: 24px; box-sizing: border-box;}
-.home .board-write-ty01 .top-area .line-item:not(.one-line) dl {padding-right: 12px;}
+.home .board-write-ty01 .top-area .line-item:nth-child(even) dl {padding-left: 12px;}
+.home .board-write-ty01 .top-area .line-item dl {float: left; width: 50%; padding-bottom: 24px; box-sizing: border-box;}
+/* .home .board-write-ty01 .top-area .line-item dl {padding-left: 12px; padding-right: 12px;}
+.home .board-write-ty01 .top-area .line-item:nth-of-type(odd) dl {padding-left: 0;}
+.home .board-write-ty01 .top-area .line-item:nth-of-type(even) dl {padding-right: 0;}
+.home .board-write-ty01 .top-area .line-item.one-line dl {padding-left: 0; padding-right: 0;}
+.home .board-write-ty01 .top-area .line-item.one-line + .line-item:not(.one-line) dl {padding-left: 0; padding-right: 12px;}
+.home .board-write-ty01 .top-area .line-item.one-line + .line-item:not(.one-line) + .line-item:not(.one-line) dl {padding-left: 12px; padding-right: 0;} */
+
+/* .home .board-write-ty01 .top-area .line-item:not(.one-line) dl {padding-right: 12px;}
 .home .board-write-ty01 .top-area .line-item:not(.one-line) dl {width: 50%;}
 .home .board-write-ty01 .top-area .line-item:not(.one-line) + .line-item:not(.one-line) dl {padding-left: 12px; padding-right: 0;}
+.home .board-write-ty01 .top-area .line-item:not(.one-line):nth-child(odd) dl {padding-left: 0 !important; padding-right: 12px !important;} */
+
 
 .home .board-write-ty01 .top-area .line-item:nth-child(even) dl.ty-l {padding-left: 0; padding-right: 12px;}
 .home .board-write-ty01 .top-area .line-item:nth-child(odd) dl.ty-r {padding-left: 12px; padding-right: 0;}
