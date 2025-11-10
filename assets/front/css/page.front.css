@@ -5420,6 +5420,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-contract-list li .in-bx .top-area .tx01 .flag.normal {color: #337848; border: 1px solid #337848;}
 .home .my-contract-list li .in-bx .top-area .tx01 .flag.subscrip {color: #E94543; border: 1px solid #E94543;}
 .home .my-contract-list li .in-bx .top-area .tx01 .flag.proto {color: #374BA3; border: 1px solid #374BA3;}
+
+.home .my-contract-list li .in-bx .top-area .tx01 .flag.red-01 {color: #E94543; border: 1px solid #E94543;} /* 청약, 연체, 철회, 미납 */
+.home .my-contract-list li .in-bx .top-area .tx01 .flag.blue-01 {color: #374BA3; border: 1px solid #374BA3;} /* 의전, 직권해지 */
+.home .my-contract-list li .in-bx .top-area .tx01 .flag.green-01 {color: #337848; border: 1px solid #337848;} /* 정상 */
+.home .my-contract-list li .in-bx .top-area .tx01 .flag.grey-01 {color: #777; border: 1px solid rgba(19, 21, 23, 0.30);} /* 회색 */
+
 .home .my-contract-list li .in-bx .top-area .tx02 {position: relative; font-weight: 600; font-size: 17px; color: #232527; line-height: 130%; padding: 10px 0 0 0;}
 .home .my-contract-list li .in-bx .top-area .tx02 span.tx-nm {font-weight: 400;}
 .home .my-contract-list li .in-bx .top-area .tx02 span.dot {margin-top: 3px;}
@@ -5500,6 +5506,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-contract-status-detail .in-cont01 .bx-tp .flag.normal {color: #337848; border: 1px solid #337848;}
 .home .my-contract-status-detail .in-cont01 .bx-tp .flag.subscrip {color: #E94543; border: 1px solid #E94543;}
 .home .my-contract-status-detail .in-cont01 .bx-tp .flag.proto {color: #374BA3; border: 1px solid #374BA3;}
+
+.home .my-contract-status-detail .in-cont01 .bx-tp .flag.red-01 {color: #E94543; border: 1px solid #E94543;} /* 청약, 연체, 철회, 미납 */
+.home .my-contract-status-detail .in-cont01 .bx-tp .flag.blue-01 {color: #374BA3; border: 1px solid #374BA3;} /* 의전, 직권해지 */
+.home .my-contract-status-detail .in-cont01 .bx-tp.flag.green-01 {color: #337848; border: 1px solid #337848;} /* 정상 */
+.home .my-contract-status-detail .in-cont01 .bx-tp .flag.grey-01 {color: #777; border: 1px solid rgba(19, 21, 23, 0.30);} /* 회색 */
+
 .home .my-contract-status-detail .in-cont01 .bx-tp .btns-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 12px;}
 .home .my-contract-status-detail .in-cont01 .bx-tp .btns-r a.btn-ty01 {display: inline-block; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 12px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; box-sizing: border-box; padding: 0 24px 0 44px;}
 .home .my-contract-status-detail .in-cont01 .bx-tp .btns-r a.btn-ty01.member {
@@ -5659,6 +5671,11 @@ c
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.normal {color: #337848; border: 1px solid #337848;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.subscrip {color: #E94543; border: 1px solid #E94543;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.proto {color: #374BA3; border: 1px solid #374BA3;}
+
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.red-01 {color: #E94543; border: 1px solid #E94543;} /* 청약, 연체, 철회, 미납 */
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.blue-01 {color: #374BA3; border: 1px solid #374BA3;} /* 의전, 직권해지 */
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.green-01 {color: #337848; border: 1px solid #337848;} /* 정상 */
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.grey-01 {color: #777; border: 1px solid rgba(19, 21, 23, 0.30);} /* 회색 */
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dl.w100 {width: 100%;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list {display: flex; flex-direction: column; gap: 4px; margin-top: 12px; padding: 24px; background-color: #F7F6F5;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list .item {display: flex; align-items: baseline; gap: 8px; font-size: 15px; line-height: 1.5; color: #444;}
