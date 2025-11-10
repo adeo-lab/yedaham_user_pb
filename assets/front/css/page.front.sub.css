@@ -780,21 +780,35 @@
 .home .funeral-service .process-list {display: flex; flex-direction: column; row-gap: 48px;}
 .home .funeral-service .process-item {position: relative; padding: 24px 32px; border-radius: 16px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.30); box-sizing: border-box; background-color: #FFF;}
 .home .funeral-service .process-item:not(:first-child)::before {display: block; content: ''; position: absolute; top: calc(-24px - 12px); left: calc(50% - 12px); width: 24px; height: 24px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.7156 14.8749L6.09127 8.59406C5.88249 8.36092 6.05497 8 6.37515 8L17.6248 8C17.945 8 18.1175 8.36095 17.9087 8.59409L12.2834 14.8749C12.134 15.0417 11.865 15.0417 11.7156 14.8749Z' fill='%23232527'/%3E%3C/svg%3E");}
-.home .funeral-service .process-wrap {position: relative; padding-left: 76px;}
-.home .funeral-service .process-wrap::before {display: block; content: ''; position: absolute; top: 0; left: 52px; width: 1px; height: 100%; background-color: rgba(19, 21, 23, 0.10);}
+.home .funeral-service .process-wrap {display: flex; flex-direction: column; gap: 24px; position: relative; padding-left: 52px;}
+/* .home .funeral-service .process-wrap::before {display: block; content: ''; position: absolute; top: 0; left: 52px; width: 1px; height: 100%; background-color: rgba(19, 21, 23, 0.10);} */
 .home .funeral-service .process-head {display: flex; flex-direction: column; row-gap: 12px;}
 .home .funeral-service .process-subject {font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
 .home .funeral-service .process-subject .num {position: absolute; top: 0; left: 0; font-size: 24px;}
+.home .funeral-service .process-subject br {display: none;}
 .home .funeral-service .process-summary {display: flex; justify-content: space-between; align-items: baseline; column-gap: 24px;}
-.home .funeral-service .process-summary .para {font-size: 19px; font-weight: 400; line-height: 1.5; color: #232527;}
+.home .funeral-service .process-summary .para {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
 .home .funeral-service .process-summary .button-area {flex-shrink: 0; display: inline-flex;}
 .home .funeral-service .process-summary .button-area .btn-normal {flex-shrink: 0; display: flex; justify-content: center; align-items: center; column-gap: 12px; padding: 0 12px 0 16px; border-radius: 8px; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box;}
 .home .funeral-service .process-summary .button-area .btn-normal::after {display: block; content: ''; width: 16px; height: 16px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.1575 6.10369C13.3765 6.30073 13.3943 6.63795 13.1972 6.85689L8.39775 11.5236C8.29661 11.636 8.15252 11.7001 8.00132 11.7001C7.85012 11.7001 7.70603 11.636 7.60488 11.5236L2.80488 6.85692C2.60784 6.63798 2.62559 6.30076 2.84453 6.10371C3.06346 5.90667 3.40069 5.92441 3.59773 6.14335L8.00129 10.3695L12.4043 6.14338C12.6014 5.92443 12.9386 5.90666 13.1575 6.10369Z' fill='%2333363D'/%3E%3C/svg%3E"); transition: all .3s ease;}
-.home .funeral-service .process-summary .button-area .btn-normal .btn-text {display: inline-flex; align-items: center; font-size: 17px; font-weight: 400; line-height: 40px; color: #232527;}
-.home .funeral-service .process-item .process-body {padding-top: 0; max-height: 0; opacity: 0; visibility: hidden; transition: height .3s ease;}
-.home .funeral-service .process-item.active .process-body {padding-top: 24px; max-height: 100%; opacity: 1; visibility: visible;}
+/* .home .funeral-service .process-summary .button-area .btn-normal .btn-text {display: inline-flex; align-items: center; font-size: 17px; font-weight: 400; line-height: 40px; color: #232527;} */
+/* .home .funeral-service .process-item .process-body {padding-top: 0; max-height: 0; opacity: 0; visibility: hidden; transition: height .3s ease;} */
+/* .home .funeral-service .process-item.active .process-body {padding-top: 24px; max-height: 100%; opacity: 1; visibility: visible;} */
 .home .funeral-service .process-item.active .process-summary .button-area .btn-normal::after {transform: rotate(-180deg);}
 .home .process-faq-list {display: flex; flex-direction: column; row-gap: 16px;}
+/* .home .process-faq-list .process-faq-item {display: flex; justify-content: space-between; position: relative;} */
+/* .home .process-faq-list .process-faq-item::after {content: ''; display: block; width: 16px; height: 16px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.84179 5.60566C2.62285 5.8027 2.60509 6.13992 2.80213 6.35886L7.60194 11.6922C7.70308 11.8046 7.84716 11.8688 7.99835 11.8688C8.14954 11.8688 8.29363 11.8046 8.39478 11.6922L13.1951 6.35888C13.3922 6.13995 13.3744 5.80273 13.1555 5.60568C12.9366 5.40862 12.5993 5.42636 12.4023 5.64529L7.99839 10.5382L3.59499 5.64532C3.39795 5.42637 3.06073 5.40862 2.84179 5.60566Z' fill='%2333363D'/%3E%3C/svg%3E");} */
+
+.home .process-faq-list .process-faq-item .btn-process-faq {display: flex; gap: 8px; position: relative; width: 100%;}
+.home .process-faq-list .process-faq-item .btn-process-faq:before {display: flex; content: ''; flex-shrink: 0; width: 20px; height: 20px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23F1945E'/%3E%3Cpath d='M13.7774 15.4167C13.5311 15.4167 13.3156 15.3251 13.1308 15.1419L12.2995 14.272C11.6683 14.5772 10.9832 14.7299 10.2443 14.7299C9.33597 14.7299 8.51235 14.5162 7.77339 14.0888C7.04983 13.6462 6.47252 13.051 6.04146 12.3031C5.6258 11.5553 5.41797 10.7311 5.41797 9.83059C5.41797 8.89957 5.6258 8.0754 6.04146 7.35806C6.47252 6.62546 7.04983 6.05311 7.77339 5.64103C8.49695 5.21368 9.32058 5 10.2443 5C11.168 5 11.9839 5.21368 12.6921 5.64103C13.4156 6.05311 13.9775 6.62546 14.3778 7.35806C14.7935 8.0754 15.0013 8.89957 15.0013 9.83059C15.0013 10.4563 14.9012 11.044 14.7011 11.5934C14.501 12.1276 14.2239 12.6084 13.8698 13.0357L14.4933 13.6081C14.7396 13.8523 14.8627 14.1041 14.8627 14.3636C14.8627 14.6535 14.7781 14.8825 14.6087 15.0504C14.3624 15.2946 14.0853 15.4167 13.7774 15.4167ZM10.2443 12.8984C10.4598 12.8984 10.6676 12.8755 10.8678 12.8297L10.4752 12.4634C10.2289 12.2497 10.1057 11.9826 10.1057 11.6621C10.1057 11.3874 10.1904 11.1661 10.3597 10.9982C10.5753 10.7845 10.837 10.6777 11.1449 10.6777C11.422 10.6777 11.6529 10.7692 11.8376 10.9524L12.4611 11.6392C12.769 11.1203 12.923 10.5174 12.923 9.83059C12.923 8.94536 12.669 8.22039 12.1609 7.65568C11.6683 7.09096 11.0294 6.80861 10.2443 6.80861C9.44374 6.80861 8.78176 7.09096 8.25833 7.65568C7.7503 8.22039 7.49628 8.94536 7.49628 9.83059C7.49628 10.7158 7.7503 11.4484 8.25833 12.0284C8.78176 12.6084 9.44374 12.8984 10.2443 12.8984Z' fill='white'/%3E%3C/svg%3E");}
+.home .process-faq-list .process-faq-item .btn-process-faq::after {content: ''; display: block; flex-shrink: 0; align-self: baseline;  width: 16px; height: 22px; background-size: 16px 16px; background-repeat: no-repeat; background-position: 50%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.84179 5.60566C2.62285 5.8027 2.60509 6.13992 2.80213 6.35886L7.60194 11.6922C7.70308 11.8046 7.84716 11.8688 7.99835 11.8688C8.14954 11.8688 8.29363 11.8046 8.39478 11.6922L13.1951 6.35888C13.3922 6.13995 13.3744 5.80273 13.1555 5.60568C12.9366 5.40862 12.5993 5.42636 12.4023 5.64529L7.99839 10.5382L3.59499 5.64532C3.39795 5.42637 3.06073 5.40862 2.84179 5.60566Z' fill='%2333363D'/%3E%3C/svg%3E");}
+.home .process-faq-list .process-faq-item.active .btn-process-faq::after {transform: rotate(180deg);}
+.home .process-faq-list .process-faq-item .btn-process-faq:hover .btn-text {text-decoration: underline;}
+.home .process-faq-list .process-faq-item .btn-process-faq .btn-text {flex: 1 1 100%; display: inline-flex; column-gap: 8px; font-size: 17px; font-weight: 600; line-height: 1.3; color: #232527; text-align: left;}
+.home .process-faq-list .process-faq-item .process-faq-desc {border-radius: 12px; background-color: #F7F6F5; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444; max-height: 0; opacity: 0; visibility: hidden; transition: height .3s ease;}
+.home .process-faq-list .process-faq-item.active .process-faq-desc {max-height: 100%; margin-top: 8px; padding: 16px 24px; opacity: 1; visibility: visible;}
+
+
 .home .process-faq-list .process-faq-item .process-faq-text {display: inline-flex; column-gap: 8px; font-size: 17px; font-weight: 600; line-height: 1.3; color: #232527;}
 .home .process-faq-list .process-faq-item .process-faq-text::before {display: flex; content: ''; flex-shrink: 0; width: 20px; height: 20px; background-size: cover; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23F1945E'/%3E%3Cpath d='M13.7774 15.4167C13.5311 15.4167 13.3156 15.3251 13.1308 15.1419L12.2995 14.272C11.6683 14.5772 10.9832 14.7299 10.2443 14.7299C9.33597 14.7299 8.51235 14.5162 7.77339 14.0888C7.04983 13.6462 6.47252 13.051 6.04146 12.3031C5.6258 11.5553 5.41797 10.7311 5.41797 9.83059C5.41797 8.89957 5.6258 8.0754 6.04146 7.35806C6.47252 6.62546 7.04983 6.05311 7.77339 5.64103C8.49695 5.21368 9.32058 5 10.2443 5C11.168 5 11.9839 5.21368 12.6921 5.64103C13.4156 6.05311 13.9775 6.62546 14.3778 7.35806C14.7935 8.0754 15.0013 8.89957 15.0013 9.83059C15.0013 10.4563 14.9012 11.044 14.7011 11.5934C14.501 12.1276 14.2239 12.6084 13.8698 13.0357L14.4933 13.6081C14.7396 13.8523 14.8627 14.1041 14.8627 14.3636C14.8627 14.6535 14.7781 14.8825 14.6087 15.0504C14.3624 15.2946 14.0853 15.4167 13.7774 15.4167ZM10.2443 12.8984C10.4598 12.8984 10.6676 12.8755 10.8678 12.8297L10.4752 12.4634C10.2289 12.2497 10.1057 11.9826 10.1057 11.6621C10.1057 11.3874 10.1904 11.1661 10.3597 10.9982C10.5753 10.7845 10.837 10.6777 11.1449 10.6777C11.422 10.6777 11.6529 10.7692 11.8376 10.9524L12.4611 11.6392C12.769 11.1203 12.923 10.5174 12.923 9.83059C12.923 8.94536 12.669 8.22039 12.1609 7.65568C11.6683 7.09096 11.0294 6.80861 10.2443 6.80861C9.44374 6.80861 8.78176 7.09096 8.25833 7.65568C7.7503 8.22039 7.49628 8.94536 7.49628 9.83059C7.49628 10.7158 7.7503 11.4484 8.25833 12.0284C8.78176 12.6084 9.44374 12.8984 10.2443 12.8984Z' fill='white'/%3E%3C/svg%3E");}
 .home .process-faq-list .process-faq-item .process-faq-text:hover {text-decoration: underline;}
@@ -973,17 +987,22 @@
     .home .funeral-service .process-list {display: flex; flex-direction: column; row-gap: 40px; margin-top: 32px;}
     .home .funeral-service .process-item {padding: 20px;}
     .home .funeral-service .process-item:not(:first-child)::before {top: calc(-20px - 12px);}
-    .home .funeral-service .process-wrap {position: relative; padding-left: 0;}
-    .home .funeral-service .process-wrap::before {display: none;}
+    .home .funeral-service .process-wrap {position: relative; padding-left: 0; gap: 20px;}
     .home .funeral-service .process-subject {display: flex; column-gap: 12px; font-size: 20px; word-break: keep-all;}
     .home .funeral-service .process-subject .num {position: static; font-size: 20px;}
     .home .funeral-service .process-subject .wbr {display: inline;}
+    .home .funeral-service .process-subject br {display: block;}
     .home .funeral-service .process-summary {flex-direction: column; column-gap: 0; row-gap: 24px;}
-    .home .funeral-service .process-summary .para {font-size: 17px;}
+    .home .funeral-service .process-summary .para {font-size: 15px;}
     .home .funeral-service .process-summary .wbr {display: inline;}
-    .home .funeral-service .process-summary .button-area {width: 100%; justify-content: center;}
+    /* .home .funeral-service .process-summary .button-area {width: 100%; justify-content: center;}
     .home .funeral-service .process-summary .button-area .btn-normal::after {width: 12px; height: 12px;}
-    .home .funeral-service .process-summary .button-area .btn-normal .btn-text {font-size: 13px; line-height: 32px;}
+    .home .funeral-service .process-summary .button-area .btn-normal .btn-text {font-size: 13px; line-height: 32px;} */
+    .home .process-faq-list .process-faq-item .btn-process-faq:before {width: 18px; height: 18px;}
+    .home .process-faq-list .process-faq-item .btn-process-faq .btn-text {font-size: 15px;}
+    .home .process-faq-list .process-faq-item .btn-process-faq::after {height: 20px;}
+    .home .process-faq-list .process-faq-item .process-faq-desc {font-size: 14px;}
+    .home .process-faq-list .process-faq-item.active .process-faq-desc {padding: 16px;}
 
     /* 제례 정보 */
     .home .ritual-contents {display: flex; flex-direction: column; row-gap: 72px; padding: 32px 0 48px;}
