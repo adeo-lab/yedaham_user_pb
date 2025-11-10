@@ -453,6 +453,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">부가서비스* > 온라인 법률상담</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1110 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BD_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
