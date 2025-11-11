@@ -85,22 +85,28 @@
 											<li class="swiper-slide"><span>더케이몰</span></li>
 										</ul>
 									</div>
+									<!-- 1111 작업 -->
 									<script>
 										document.addEventListener("DOMContentLoaded", function () {
-										if (window.innerWidth <= 1023) {
-												var swiper = new Swiper(".in-list-fam", {
+										let swiperFam = null;
+
+										function initSwiper() {
+											if (window.innerWidth <= 1023 && !swiperFam) {
+											swiperFam = new Swiper(".in-list-fam", {
 												slidesPerView: "auto",
 												spaceBetween: 4,
-												//freeMode: true,
-												});
+											});
+											} else if (window.innerWidth > 1023 && swiperFam) {
+											swiperFam.destroy(true, true);
+											swiperFam = null;
 											}
+										}
+
+										initSwiper();
+										window.addEventListener("resize", initSwiper);
 										});
-										/*var swiper = new Swiper(".in-list-fam", {
-											slidesPerView: "auto",
-											spaceBetween: 0,
-											freeMode: true,
-										});*/
 									</script>
+									<!-- //1111 작업 -->
 								</div>
 								<div class="bx-right">
 									<!-- The-K 제주호텔 -->
