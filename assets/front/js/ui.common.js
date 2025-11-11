@@ -950,41 +950,43 @@ var uiCommon = (function() {
 			}
 		}, 
 		targetScroll: function() {
-			// 251022 작업
 			document.querySelectorAll('.btn-target-scroll').forEach(link => {
 				link.addEventListener('click', e => {
-					e.preventDefault();
+  e.preventDefault();
 
-					const parent = link.parentElement;
-					if (!link.dataset.noCurrent) {
-						const siblings = parent.parentElement.children;
-						Array.from(siblings).forEach(sib => {
-							sib.classList.remove('current');
-						});
-						parent.classList.add('current');
-					}
+  window.__isTabScrolling = true;
 
-					const selector = link.dataset.target;
-					const section = document.querySelector(selector);
-					if (!section) return;
+  const parent = link.parentElement;
+  const tabItems = parent.parentElement.children;
+  Array.from(tabItems).forEach(sib => sib.classList.remove('current'));
+  parent.classList.add('current');
 
-					const y = section.getBoundingClientRect().top + window.scrollY;
-					const isMobile = window.innerWidth <= 1023; 
-					const _this = this;
-					let offset = isMobile ? _this.offsetMobile : _this.offsetPC;
-					// if (link.closest('.tab-fixed')) {
-					// 	offset = isMobile ? _this.offsetMobile + 0 : _this.offsetPC + 60;
-					// }
-					if (!isMobile && link.closest('.tab-fixed')) {
-						offset = _this.offsetPC + 180;
-					}
-					console.log('offset:', offset);
+  const selector = link.dataset.target;
+  const section = document.querySelector(selector);
+  if (!section) return;
 
-					window.scrollTo({
-						top: y - offset,
-						behavior: 'smooth'
-					});
-				});
+  const isCorp = document.body.classList.contains('corp');
+  const header = document.querySelector('#header');
+  const tab = document.querySelector('.tab-fixed');
+
+  const headerH = header ? header.offsetHeight : 0;
+  const tabH = tab ? tab.offsetHeight : 0;
+
+  const isHeaderHidden = isCorp && header && header.classList.contains('down');
+  const finalOffset = isHeaderHidden ? tabH : headerH + tabH; // ✅ 여기 핵심
+
+  const y = section.getBoundingClientRect().top + window.scrollY;
+
+  window.scrollTo({
+    top: y - finalOffset,
+    behavior: 'smooth'
+  });
+
+  setTimeout(() => {
+    window.__isTabScrolling = false;
+  }, 600);
+});
+
 			});
 		},
 		tooltip: function() {

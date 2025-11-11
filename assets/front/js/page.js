@@ -45,19 +45,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* IntersectionObserver - current 탭 동기 */
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const id = "#" + entry.target.id;
-      links.forEach(link => {
-        const parent = link.closest(".tab-item");
-        parent.classList.toggle("current", link.dataset.target === id);
+
+  if (window.__isTabScrolling) return; // ✅ 탭 클릭으로 이동 중일 때는 current 업데이트 금지
+
+  entries.forEach(entry => {
+    const id = "#" + entry.target.id;
+    console.log(
+      `%c[Observer] isIntersecting: ${entry.isIntersecting} | target: ${id}`,
+      "color: #0a84ff; font-weight: 600;"
+    );
+    
+
+    if (!entry.isIntersecting) return;
+    // const id = "#" + entry.target.id;
+    links.forEach(link => {
+          const parent = link.closest(".tab-item");
+          parent.classList.toggle("current", link.dataset.target === id);
+        });
       });
+    }, {
+      rootMargin: "-20% 0px -70% 0px",
+      threshold: 0
     });
-  }, {
-    root: null,
-    rootMargin: "0px 0px -50% 0px", // 스크롤 자연스러운 잡힘
-    threshold: 0
-  });
 
   sections.forEach(section => section && observer.observe(section));
 
@@ -65,24 +74,24 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", onScroll, { passive: true });
 
   /* 리사이즈 시 재계산 */
-let resizeTimer;
-window.addEventListener("resize", () => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => {
-    const wasFixed = isFixed;   // 현재 fixed 여부 기억
-    
-    updateHeight();
-    computeOrigin();
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const wasFixed = isFixed;   // 현재 fixed 여부 기억
+      
+      updateHeight();
+      computeOrigin();
 
-    if (wasFixed) {
-      tab.classList.add("fixed", "ready"); // fixed 상태 유지
-    } else {
-      tab.classList.remove("fixed", "ready");
-    }
+      if (wasFixed) {
+        tab.classList.add("fixed", "ready"); // fixed 상태 유지
+      } else {
+        tab.classList.remove("fixed", "ready");
+      }
 
-    onScroll(); // 현재 스크롤 위치에 따라 다시 체크
-  }, 150);
-});
+      onScroll(); // 현재 스크롤 위치에 따라 다시 체크
+    }, 150);
+  });
 
   /* 모바일 새로고침 / 주소창 변동 대응 */
   window.addEventListener("load", () => {
@@ -90,7 +99,6 @@ window.addEventListener("resize", () => {
     computeOrigin();
     onScroll();
   });
-
 });
 
 
