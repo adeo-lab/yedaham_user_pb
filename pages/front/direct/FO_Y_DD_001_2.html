@@ -126,11 +126,303 @@
 												<dl>
 													<dt>은행 <span class="imp">*</span></dt>
 													<dd>
-														<span class="form select">
-															<select name="select" id="select" class="form-elem">
-																<option value="#">카드사를 선택해 주세요.</option>
-															</select>
-														</span>
+														<!-- 1111 작업 -->
+														<div class="dropdown-menu payment" role="combobox" aria-haspopup="listbox" aria-expanded="false">
+															<div class="dropdown-menu-wrap">
+																<button type="button" class="btn-select" aria-expanded="false"><span class="btn-text placeholder">은행을 선택해 주세요.</span></button>
+																<ul class="dropdown-list" role="listbox" tabindex="-1">
+																	<li class="dropdown-item bk-kdb" role="option">
+																		<label for="radioForm01" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm01" name="" value="산업은행">
+																			<span class="form-txt">산업은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-ibk" role="option">
+																		<label for="radioForm02" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm02" name="" value="기업은행">
+																			<span class="form-txt">기업은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kb" role="option">
+																		<label for="radioForm03" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm03" name="" value="KB국민은행">
+																			<span class="form-txt">KB국민은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-shp" role="option">
+																		<label for="radioForm04" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm04" name="" value="수협중앙회">
+																			<span class="form-txt">수협중앙회</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-nh" role="option">
+																		<label for="radioForm05" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm05" name="" value="NH농협은행">
+																			<span class="form-txt">NH농협은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-nh2" role="option">
+																		<label for="radioForm06" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm06" name="" value="지역농축협">
+																			<span class="form-txt">지역농축협</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-wr" role="option">
+																		<label for="radioForm07" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm07" name="" value="우리은행">
+																			<span class="form-txt">우리은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-sc" role="option">
+																		<label for="radioForm08" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm08" name="" value="SC제일은행 ">
+																			<span class="form-txt">SC제일은행 </span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-ct" role="option">
+																		<label for="radioForm09" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm09" name="" value="한국씨티">
+																			<span class="form-txt">한국씨티</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-iam" role="option">
+																		<label for="radioForm10" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm10" name="" value="아이엠뱅크">
+																			<span class="form-txt">아이엠뱅크</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-bs" role="option">
+																		<label for="radioForm11" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm11" name="" value="부산은행">
+																			<span class="form-txt">부산은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-gj" role="option">
+																		<label for="radioForm12" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm12" name="" value="광주은행">
+																			<span class="form-txt">광주은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-jj" role="option">
+																		<label for="radioForm13" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm13" name="" value="제주은행">
+																			<span class="form-txt">제주은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-jb" role="option">
+																		<label for="radioForm14" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm14" name="" value="전북은행">
+																			<span class="form-txt">전북은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kn" role="option">
+																		<label for="radioForm15" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm15" name="" value="경남은행">
+																			<span class="form-txt">경남은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-sg" role="option">
+																		<label for="radioForm16" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm16" name="" value="새마을금고">
+																			<span class="form-txt">새마을금고</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-cu" role="option">
+																		<label for="radioForm17" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm17" name="" value="신협">
+																			<span class="form-txt">신협</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-fsb" role="option">
+																		<label for="radioForm18" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm18" name="" value="저축은행">
+																			<span class="form-txt">저축은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-hsbc" role="option">
+																		<label for="radioForm19" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm19" name="" value="HSBC은행">
+																			<span class="form-txt">HSBC은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-db" role="option">
+																		<label for="radioForm20" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm20" name="" value="도이치은행">
+																			<span class="form-txt">도이치은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-jm" role="option">
+																		<label for="radioForm21" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm21" name="" value="제이피모간체이스은행">
+																			<span class="form-txt">제이피모간체이스은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-post" role="option">
+																		<label for="radioForm22" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm22" name="" value="우체국">
+																			<span class="form-txt">우체국</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-hn" role="option">
+																		<label for="radioForm23" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm23" name="" value="KEB하나은행">
+																			<span class="form-txt">KEB하나은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-sh" role="option">
+																		<label for="radioForm24" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm24" name="" value="신한은행">
+																			<span class="form-txt">신한은행</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-k" role="option">
+																		<label for="radioForm25" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm25" name="" value="케이뱅크">
+																			<span class="form-txt">케이뱅크</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kko" role="option">
+																		<label for="radioForm26" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm26" name="" value="카카오뱅크">
+																			<span class="form-txt">카카오뱅크</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-yt" role="option">
+																		<label for="radioForm27" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm27" name="" value="유안타증권">
+																			<span class="form-txt">유안타증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kb2" role="option">
+																		<label for="radioForm28" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm28" name="" value="KB증권">
+																			<span class="form-txt">KB증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-mra" role="option">
+																		<label for="radioForm29" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm29" name="" value="미래에셋증권">
+																			<span class="form-txt">미래에셋증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-sss" role="option">
+																		<label for="radioForm30" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm30" name="" value="삼성증권">
+																			<span class="form-txt">삼성증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-krs" role="option">
+																		<label for="radioForm31" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm31" name="" value="한국투자증권">
+																			<span class="form-txt">한국투자증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-nhs" role="option">
+																		<label for="radioForm32" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm32" name="" value="NH투자증권">
+																			<span class="form-txt">NH투자증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kbs" role="option">
+																		<label for="radioForm33" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm33" name="" value="교보증권">
+																			<span class="form-txt">교보증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-his" role="option">
+																		<label for="radioForm34" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm34" name="" value="하이투자증권">
+																			<span class="form-txt">하이투자증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-hds" role="option">
+																		<label for="radioForm35" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm35" name="" value="현대차증권">
+																			<span class="form-txt">현대차증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kus" role="option">
+																		<label for="radioForm36" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm36" name="" value="키움증권">
+																			<span class="form-txt">키움증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-lss" role="option">
+																		<label for="radioForm37" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm37" name="" value="엘에스증권">
+																			<span class="form-txt">엘에스증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-sks" role="option">
+																		<label for="radioForm38" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm38" name="" value="에스케이증권">
+																			<span class="form-txt">에스케이증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-dss" role="option">
+																		<label for="radioForm39" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm39" name="" value="대신증권">
+																			<span class="form-txt">대신증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-hhs" role="option">
+																		<label for="radioForm40" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm40" name="" value="한화투자증권">
+																			<span class="form-txt">한화투자증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-hss" role="option">
+																		<label for="radioForm41" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm41" name="" value="하나증권">
+																			<span class="form-txt">하나증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-shs" role="option">
+																		<label for="radioForm42" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm42" name="" value="신한투자증권">
+																			<span class="form-txt">신한투자증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-dbs" role="option">
+																		<label for="radioForm43" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm43" name="" value="DB금융투자">
+																			<span class="form-txt">DB금융투자</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-ujs" role="option">
+																		<label for="radioForm44" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm44" name="" value="유진투자증권">
+																			<span class="form-txt">유진투자증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-mrs" role="option">
+																		<label for="radioForm45" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm45" name="" value="메리츠증권">
+																			<span class="form-txt">메리츠증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-bks" role="option">
+																		<label for="radioForm46" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm46" name="" value="부국증권">
+																			<span class="form-txt">부국증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-sys" role="option">
+																		<label for="radioForm47" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm47" name="" value="신영증권">
+																			<span class="form-txt">신영증권</span>
+																		</label>
+																	</li>
+																	<li class="dropdown-item bk-kps" role="option">
+																		<label for="radioForm48" class="form-lb">
+																			<input type="radio" class="form-ip" id="radioForm48" name="" value="케이프투자증권">
+																			<span class="form-txt">케이프투자증권</span>
+																		</label>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<!-- //1111 작업 -->
 													</dd>
 												</dl>
 											</div>
