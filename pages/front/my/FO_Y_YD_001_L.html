@@ -29,6 +29,7 @@
 
 	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
 	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
+	<script src="../../../assets/front/js/datepicker-ko.js"></script> <!-- //1111 작업 -->
 </head>
 <body class="home">
 	<!-- skip -->
@@ -227,14 +228,18 @@
 											</div>
 										</label>
 										<!-- 1107 작업 -->
+										<!-- 1111 작업 -->
 										<script>
+											$.datepicker.setDefaults($.datepicker.regional["ko"]);
+
 											$("#dateStart, #dateEnd").datepicker({
 												dateFormat: "yy.mm",
 												changeMonth: true,
 												changeYear: true,
 												showButtonPanel: true,
-
-												// 달력 닫힐 때 일(day) 선택 안되도록
+												showOtherMonths: true, 
+												selectOtherMonths: true,
+												yearSuffix: "",
 												onClose: function(dateText, inst) {
 													var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
 													var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
@@ -242,6 +247,7 @@
 												}
 											});
 										</script>
+										<!-- //1111 작업 -->
 										<!-- //1107 작업 -->
 									</li>
 								</ul>

@@ -29,6 +29,7 @@
 
 	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
 	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
+	<script src="../../../assets/front/js/datepicker-ko.js"></script> <!-- //1111 작업 -->
 </head>
 <body class="home">
 	<!-- skip -->
@@ -110,12 +111,16 @@
 										<span class="form input datepicker">
 											<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker">
 										</span>
+										<!-- 1111 작업 -->
 										<script>
+											$.datepicker.setDefaults($.datepicker.regional["ko"]);
 											$( "#datepicker" ).datepicker({
 												changeMonth: true,
-												changeYear: true
+												changeYear: true,
+												yearSuffix: "",
 											});
 										</script>
+										<!-- //1111 작업 -->
 									</dd>
 								</dl>
 							</div>
@@ -144,9 +149,7 @@
 									<dt>내용 <span class="imp">*</span></dt>
 									<dd>
 										<span class="form textarea">
-											<textarea class="form-elem">
-내용을 입력해 주세요. (1,500자 이내)
-											</textarea>
+											<textarea class="form-elem"> 내용을 입력해 주세요. (1,500자 이내) </textarea>
 											<p class="btm-tx01">0/1,500</p>
 										</span>
 									</dd>
