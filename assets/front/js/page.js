@@ -32,13 +32,25 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   /* 3) 스크롤 시 탭 fixed 처리 */
-  const onScroll = () => {
-    if (window.scrollY >= originTop) {
-      tab.classList.add("fixed");
-    } else {
-      tab.classList.remove("fixed");
-    }
-  };
+  let isFixed = false;
+
+const onScroll = () => {
+  const HEADER_OFFSET = window.matchMedia("(max-width: 1023px)").matches ? 72 : 100;
+  const nowFixed = window.scrollY >= originTop - HEADER_OFFSET;
+
+  if (nowFixed && !isFixed) {
+    isFixed = true;
+    tab.classList.add("fixed", "entering");
+    requestAnimationFrame(() => {
+      tab.classList.remove("entering");
+      tab.classList.add("ready");
+    });
+  }
+  else if (!nowFixed && isFixed) {
+    isFixed = false;
+    tab.classList.remove("fixed", "ready");
+  }
+};
 
   /* 4) IntersectionObserver - current 적용 */
   const observer = new IntersectionObserver((entries) => {
