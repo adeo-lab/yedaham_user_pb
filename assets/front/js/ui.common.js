@@ -1083,46 +1083,87 @@ var uiCommon = (function() {
 		},
 		dropdown: function(selector) {
 			const elems = document.querySelectorAll(selector);
-			if (!elems || elems.length === 0) return;
+			if (!elems.length) return;
 
 			elems.forEach((elem) => {
 				const selectBtn = elem.querySelector(".btn-select");
 				const selectedValue = elem.querySelector(".btn-text");
-				const optionsList = elem.querySelectorAll(".dropdown-list li .form-txt");
+				const optionItems = elem.querySelectorAll(".dropdown-list li");
+				const optionRadios = elem.querySelectorAll("input[type='radio']");
+				const dropdownList = elem.querySelector(".dropdown-list");
 
-				const checkedOption = elem.querySelector(".dropdown-list li input:checked");
-				if (checkedOption) {
-					selectedValue.textContent = checkedOption.closest("label").querySelector(".form-txt").textContent;
+				// 초기 체크값 반영
+				const initChecked = elem.querySelector("input:checked");
+				if (initChecked) {
+					selectedValue.textContent = initChecked.closest("label").querySelector(".form-txt").textContent;
+					selectedValue.classList.remove("placeholder");
 				}
 
+				const openDropdown = () => {
+					elem.classList.add("active");
+					selectBtn.setAttribute("aria-expanded", "true");
+					elem.setAttribute("aria-expanded", "true");
+					dropdownList.focus();
+				};
+
+				const closeDropdown = () => {
+					elem.classList.remove("active");
+					selectBtn.setAttribute("aria-expanded", "false");
+					elem.setAttribute("aria-expanded", "false");
+				};
+
 				const toggleDropdown = () => {
-					elem.classList.toggle("active");
-					selectBtn.setAttribute(
-						"aria-expanded",
-						selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
-					);
+					elem.classList.contains("active") ? closeDropdown() : openDropdown();
 				};
 
-				const closeDropdown = (event) => {
-					if (elem.classList.contains("active") && !elem.contains(event.target)) {
-						elem.classList.remove("active");
-					}
+				// 옵션 선택
+				const handleOptionClick = function() {
+					const txt = this.querySelector(".form-txt").textContent;
+					selectedValue.textContent = txt;
+					selectedValue.classList.remove("placeholder");
+					this.querySelector("input").checked = true;
+					closeDropdown();
+					selectBtn.focus();
 				};
 
-				const handleOptionClick = function(event) {
-					if (event.type === "click" && event.clientX !== 0 && event.clientY !== 0) {
-						selectedValue.textContent = this.textContent;
-						elem.classList.remove("active");
+				// 키보드 접근성
+				selectBtn.addEventListener("keydown", (e) => {
+					if (e.key === "Enter" || e.key === " " || e.key === "ArrowDown") {
+						e.preventDefault();
+						openDropdown();
 					}
-				};
+				});
+
+				dropdownList.addEventListener("keydown", (e) => {
+					const focusable = [...optionItems];
+					let index = focusable.indexOf(document.activeElement.closest("li"));
+
+					if (e.key === "ArrowDown") {
+						e.preventDefault();
+						index = (index + 1) % focusable.length;
+						focusable[index].querySelector(".form-txt").focus();
+					} else if (e.key === "ArrowUp") {
+						e.preventDefault();
+						index = (index - 1 + focusable.length) % focusable.length;
+						focusable[index].querySelector(".form-txt").focus();
+					} else if (e.key === "Enter") {
+						e.preventDefault();
+						document.activeElement.closest("li").click();
+					} else if (e.key === "Escape") {
+						closeDropdown();
+						selectBtn.focus();
+					}
+				});
 
 				selectBtn.addEventListener("click", toggleDropdown);
-				document.addEventListener("mouseup", closeDropdown);
-				optionsList.forEach((option) => {
-					option.addEventListener("click", handleOptionClick);
+				document.addEventListener("mousedown", (e) => {
+					if (!elem.contains(e.target)) closeDropdown();
 				});
+
+				optionItems.forEach((item) => item.addEventListener("click", handleOptionClick));
 			});
 		}
+
 	};
 
 	return _;
