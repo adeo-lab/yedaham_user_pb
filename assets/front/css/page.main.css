@@ -409,7 +409,7 @@
   .home .m-product-list01 li:last-child {margin-right: 0;}
   .home .m-product-list01 .in-bx {width: 100%; height: 300px; padding: 40px 16px 16px 16px;}
   .home .m-product-list01 .in-bx p.flag img {width: 30px;}
-  .home .m-product-list01 .in-bx .top-area p.tx-title01 {font-size: 17px; padding-bottom: 4px;}
+  .home .m-product-list01 .in-bx .top-area p.tx-title01 {font-weight: 600; font-size: 17px; padding-bottom: 4px;}
   .home .m-product-list01 .in-bx .top-area p.tx-title02 {font-size: 26px;}
   .home .m-product-list01 .in-bx .top-area p.tx-tx01 {font-size: 14px;}
   .home .m-product-list01 .in-bx .mid-area {padding: 16px 0;}
