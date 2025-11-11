@@ -322,23 +322,41 @@
 										</li>
 									</ul>
 								</div>
+								<!-- 1111 작업 -->
 								<script>
 									document.addEventListener("DOMContentLoaded", function () {
-									if (window.innerWidth <= 1023) {
-											var swiper3 = new Swiper(".ltd .m-product-list01", {
-												slidesPerView: 'auto',
-												spaceBetween: 0,
-												centeredSlides: true,
-												loop: true,
-												watchOverflow: true,
-												navigation: {
+										let swiper3 = null;
+										function toggleSwiper3() {
+											// 모바일 구간 (<= 1023px) && 아직 swiper 미생성
+											if (window.innerWidth <= 1023 && !swiper3) {
+												swiper3 = new Swiper(".ltd .m-product-list01", {
+													slidesPerView: "auto",
+													spaceBetween: 0,
+													centeredSlides: true,
+													loop: true,
+													watchOverflow: true,
+													navigation: {
 													nextEl: ".ltd .m-product-list01 .swiper-button-next",
 													prevEl: ".ltd .m-product-list01 .swiper-button-prev",
-												},
-											});
+													}
+												});
+											}
+
+											// PC 구간 (> 1023px) && swiper가 이미 생성되어 있음 → 해제
+											else if (window.innerWidth > 1023 && swiper3) {
+												swiper3.destroy(true, true);
+												swiper3 = null;
+											}
 										}
+
+										// 최초 실행
+										toggleSwiper3();
+
+										// 리사이즈 대응
+										window.addEventListener("resize", toggleSwiper3);
 									});
 								</script>
+								<!-- //1111 작업 -->
 							</div>
 						</div>
 						<!-- //법인 맞춤형 상품 -->

@@ -647,6 +647,7 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">The-K 가족소개​​</span></p>
 						<p class="g-sub-text" style="color: red;"><span class="em">오픈 컨텐츠</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1111 작업</span></p>
 						${createMenuLink("corp/about/FO_C_ID_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -677,6 +678,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">주요재무현황* >  감사보고서 (7p)</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1111 작업</span></p>
 						${createMenuLink("corp/financials/FO_C_DA_001_2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -870,7 +872,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메인</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1103, 1107 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103, 1107, 1111 작업</span></p>
 						${createMenuLink("ltd/FO_L_MA_001.html", useFullLink)}
 					</div>
 				</div>
