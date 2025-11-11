@@ -231,7 +231,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">계약 현황</span><span class="em">상세</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1106 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1111 작업</span></p>
 						${createMenuLink("my/FO_Y_YB_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -292,27 +292,27 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 4호</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1110, 1111 작업</span></p>
 						${createMenuLink("product/FO_Y_PB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 윤슬 6호</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1110, 1111 작업</span></p>
 						${createMenuLink("product/FO_Y_PC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 상세 : 예다함 노블</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1110, 1111 작업</span></p>
 						${createMenuLink("product/FO_Y_PD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상조 서비스 품목*</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1106, 1107, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1106, 1107, 1110, 1111 작업</span></p>
 						${createMenuLink("product/FO_Y_PF_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 한 눈에 비교하기*</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1110, 1111 작업</span></p>
 						${createMenuLink("product/BO_ZC_001_L.html", useFullLink)}
 					</dl>
 				</div>
@@ -384,7 +384,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료* > 구성품목 확인 (20p)</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1110, 1111 작업</span></p>
 						${createMenuLink("direct/FO_Y_DJ_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
