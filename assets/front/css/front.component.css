@@ -1109,8 +1109,10 @@ button.swiper-pagination-bullet {
   background-color: var(--disabled-bg-color);
 }
 .form .form-elem:focus-visible {
-  outline-color: var(--focus-border-color);
+  /* outline-color: var(--focus-border-color); */
+  outline: none;
 }
+.form .form-elem:focus-visible {border-color: #232527;}
 .form.input {
   --height: 48px;
   --padding-vertical: 0;
