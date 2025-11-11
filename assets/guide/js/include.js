@@ -249,12 +249,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제 정보 관리* > 신용카드</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1106 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1111 작업</span></p>
 						${createMenuLink("my/FO_Y_YF_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제정보 관리* > 계좌이체</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1107 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1107, 1111 작업</span></p>
 						${createMenuLink("my/FO_Y_YF_001_2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -556,7 +556,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">장례 절차</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1105, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1105, 1110, 1101 작업</span></p>
 						${createMenuLink("info/FO_Y_FB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
