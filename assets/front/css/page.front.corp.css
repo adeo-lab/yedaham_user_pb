@@ -6799,75 +6799,81 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+/* 감사보고서 */
+.corp .report-list {}
+.corp .report-list li {border-radius: 16px;}
+.corp .report-list li:has(a:hover) {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05);}
+.corp .report-list li a {border-radius: 16px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.20);}
 
+.corp .report-list li a {display: block;}
+.corp .report-list li .in-bx {position: relative; width: 100%; box-sizing: border-box;}
+.corp .report-list li .in-bx .thum {position: relative;  border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden; aspect-ratio: 16 / 9;}
 
+.corp .report-list li .in-bx .button-area {display: flex; gap: 16px; padding: 32px 32px 0}
+.corp .report-list li .in-bx .button-area .icon {flex-shrink: 0; overflow: hidden; width: 56px; height: 56px; text-indent: -99999px;}
+.corp .report-list li .in-bx .button-area .icon::before {content: ''; display: block; width: 56px; height: 56px; border-radius: 56px; background-color: rgba(19, 21, 23, 0.30); background-size: 32px; background-repeat: no-repeat; background-position: center;}
+.corp .report-list li .in-bx .button-area .icon.youtube::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cg clip-path='url(%23clip0_7825_18310)'%3E%3Cpath d='M16 6C16 6 24.3388 5.99997 26.418 6.59668C27.5649 6.92571 28.4693 7.89401 28.7754 9.12305C29.3329 11.3522 29.333 16 29.333 16C29.333 16.0014 29.3328 20.6497 28.7754 22.877C28.4693 24.106 27.5649 25.0743 26.418 25.4033C24.3388 26 16 26 16 26C15.9977 26 7.66242 25.9999 5.58203 25.4033C4.43506 25.0743 3.53067 24.106 3.22461 22.877C2.6672 20.6481 2.66699 16.0014 2.66699 16C2.66699 16 2.66712 11.3522 3.22461 9.12305C3.53067 7.89401 4.43506 6.92571 5.58203 6.59668C7.6609 6.00005 15.9977 6 16 6ZM13.333 19.333L20 16L13.333 12.667V19.333Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_7825_18310'%3E%3Crect width='32' height='32' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+.corp .report-list li .in-bx .button-area .icon.pdf::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18 2.66699C18.2829 2.66699 18.5539 2.77954 18.7539 2.97949L26.3529 10.5798C26.5528 10.7797 26.6653 11.0509 26.6654 11.3337V16.0003H24.5326V12.4001H19.3334C18.0079 12.4001 16.9336 11.3258 16.9336 10.0003V4.7998H7.73311C7.58604 4.79994 7.46633 4.91966 7.46619 5.06673V16.0003H5.33337V5.06673C5.33351 3.74146 6.40784 2.66713 7.73311 2.66699H18ZM19.0664 10.0003C19.0664 10.1476 19.1861 10.2673 19.3334 10.2673H23.0248L19.0664 6.30892V10.0003Z' fill='white'/%3E%3Cpath d='M7.46619 16.0003C7.46619 16.5894 6.98914 17.067 6.40004 17.067C5.81094 17.067 5.33337 16.5894 5.33337 16.0003C5.33337 15.4112 5.81094 14.9337 6.40004 14.9337C6.98914 14.9337 7.46619 15.4112 7.46619 16.0003Z' fill='white'/%3E%3Cpath d='M26.6654 16.0003C26.6654 16.5894 26.1891 17.067 25.6 17.067C25.0109 17.067 24.5326 16.5894 24.5326 16.0003C24.5326 15.4112 25.0109 14.9337 25.6 14.9337C26.1891 14.9337 26.6654 15.4112 26.6654 16.0003Z' fill='white'/%3E%3Cpath d='M4.26698 28V21.6003C4.26698 21.2533 4.26498 20.8849 4.30605 20.5795C4.3513 20.2435 4.46572 19.8287 4.81386 19.4805C5.162 19.1324 5.57681 19.018 5.91282 18.9727C6.21826 18.9316 6.58668 18.9336 6.93365 18.9336H8.00006C9.69373 18.9336 11.0665 20.3064 11.0665 22C11.0665 23.6937 9.69373 25.0665 8.00006 25.0665H6.3998V28C6.3998 28.5891 5.92249 29.0665 5.33339 29.0665C4.74429 29.0665 4.26698 28.5891 4.26698 28ZM12.9337 20.9623C12.9383 20.8003 12.9522 20.6122 12.9883 20.4349C13.0745 20.0118 13.3071 19.507 13.8672 19.1836L14.0769 19.0808C14.2859 18.9971 14.4873 18.9657 14.6537 18.9506C14.8607 18.9319 15.104 18.9336 15.3334 18.9336C18.1316 18.9336 20.3998 21.2018 20.3998 24C20.3998 26.7983 18.1316 29.0665 15.3334 29.0665C15.104 29.0665 14.8607 29.0682 14.6537 29.0495C14.432 29.0294 14.1494 28.9792 13.8672 28.8165C13.3071 28.4931 13.0745 27.9882 12.9883 27.5652C12.9522 27.3879 12.9383 27.1998 12.9337 27.0378V20.9623ZM22.267 28V22.6667C22.267 22.0683 22.265 21.5119 22.3256 21.0612C22.3903 20.58 22.5437 20.0631 22.9701 19.6368L23.1342 19.4883C23.5252 19.1728 23.9737 19.0489 24.3946 18.9922C24.8453 18.9316 25.4017 18.9336 26.0001 18.9336H28.0001C28.5892 18.9336 29.0665 19.4109 29.0665 20C29.0665 20.5891 28.5892 21.0665 28.0001 21.0665H26.0001C25.3419 21.0665 24.9552 21.0686 24.6797 21.1055C24.5695 21.1203 24.5101 21.138 24.4818 21.1485C24.4713 21.1768 24.4537 21.2362 24.4389 21.3464C24.4019 21.6218 24.3998 22.0085 24.3998 22.6667V22.9336H26.6667C27.2558 22.9336 27.7331 23.4109 27.7331 24C27.7331 24.5891 27.2558 25.0665 26.6667 25.0665H24.3998V28C24.3998 28.5891 23.9225 29.0665 23.3334 29.0665C22.7443 29.0665 22.267 28.5891 22.267 28ZM6.3998 22.9336H8.00006C8.51552 22.9336 8.93365 22.5155 8.93365 22C8.93365 21.4846 8.51552 21.0665 8.00006 21.0665H6.93365C6.74143 21.0665 6.59102 21.0671 6.4623 21.0704C6.44275 21.0709 6.42372 21.0723 6.40631 21.073C6.40569 21.0904 6.4042 21.1094 6.4037 21.129C6.40047 21.2577 6.3998 21.4081 6.3998 21.6003V22.9336ZM15.0665 26.6667C15.0665 26.7267 15.0655 26.7967 15.0652 26.8451C15.065 26.8768 15.065 26.9056 15.0652 26.9323C15.1405 26.9332 15.227 26.9336 15.3334 26.9336C16.9534 26.9336 18.267 25.6201 18.267 24C18.267 22.38 16.9534 21.0665 15.3334 21.0665C15.227 21.0665 15.1404 21.0656 15.0652 21.0665C15.065 21.0936 15.065 21.1227 15.0652 21.155C15.0655 21.2034 15.0665 21.2734 15.0665 21.3334V26.6667Z' fill='white'/%3E%3C/svg%3E");}
+.corp .report-list li a:hover .icon.youtube::before{background-color: #E94543;}
+.corp .report-list li a:hover .icon.pdf::before{background-color: #788BE6;}
+.corp .report-list li .in-bx .cont {display: flex; flex-direction: column; gap: 20px; padding: 32px;}
+.corp .report-list li .in-bx .cont dl {display: flex; flex-direction: column; gap: 8px;}
+.corp .report-list li .in-bx .cont dl dt {font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical;}
+.corp .report-list li .in-bx .cont dl dd {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical;}
+.corp .report-list li .in-bx .cont .btm-txt {font-weight: 400; font-size: 17px; color: #777; line-height: 150%; display: flex;}
+.corp .report-list li .in-bx .cont .btm-txt span.dot {margin-top: 5px;}
+.corp .report-list li .in-bx:has(.thum) .button-area {position: absolute; top: 0; right: 0; left: auto;}
 
-
-
-
-
+@media (max-width: 1023px) {
+  .corp .report-display-wrap {padding: 0 16px 64px 16px;}
+  .corp .report-list li .in-bx .button-area {padding: 24px 24px 0}
+  .corp .report-list li .in-bx .cont {gap: 16px; padding: 24px;}
+  .corp .report-list li .in-bx .cont dl dt {font-size: 20px;}
+  .corp .report-list li .in-bx .cont dl dd {font-size: 15px;}
+  .corp .report-list li .in-bx .cont .tags {font-size: 14px;}
+  .corp .report-list li .in-bx .cont .btm-txt {font-size: 15px;}
+}
 
 
 /* datepicker */
-.corp .ui-datepicker.ui-widget-content {background: #fff; border-radius: 14px; box-shadow: 0px 20px 50px rgba(44, 63, 88, 0.15);}
-.corp .ui-datepicker {width: 311px; padding: 16px; box-sizing: border-box; z-index: 100001 !important;}
-.corp .ui-datepicker .ui-datepicker-header {position: relative;}
-.corp .ui-datepicker .ui-datepicker-prev, .corp .ui-datepicker .ui-datepicker-next {position: absolute; top: 0; width: 34px; height: 34px; background: var(--bg-010); border-radius: 10px; overflow: hidden; text-indent: -9999px; cursor: pointer;}
-.corp .ui-datepicker .ui-datepicker-prev-hover, .corp .ui-datepicker .ui-datepicker-next-hover {top: 0;}
-.corp .ui-datepicker .ui-datepicker-prev {left: 0;}
-.corp .ui-datepicker .ui-datepicker-next {right: 0;}
-.corp .ui-datepicker .ui-datepicker-prev-hover {left: 0;}
-.corp .ui-datepicker .ui-datepicker-next-hover {right: 0;}
-.corp .ui-datepicker .ui-datepicker-prev span, .corp .ui-datepicker .ui-datepicker-next span {display: block; position: absolute; left: 0; top: 0;}
-.corp .ui-datepicker .ui-icon-circle-triangle-w::before {content: ''; position: absolute; top: 0; left: 0; display:block; width: 34px; height: 34px;
-	background-color: var(--base-010);
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.5242 12.4244C10.2899 12.6587 9.91 12.6587 9.67569 12.4244L5.25142 8.0001L9.67569 3.57583C9.91 3.34152 10.2899 3.34152 10.5242 3.57583C10.7585 3.81015 10.7585 4.19005 10.5242 4.42436L6.94848 8.0001L10.5242 11.5758C10.7585 11.8101 10.7585 12.19 10.5242 12.4244Z' fill='%238A9099'/%3E%3C/svg%3E");
-	mask-repeat: no-repeat;
-	mask-position: center center;
-	mask-size: 20px;
-}
-.corp .ui-datepicker .ui-icon-circle-triangle-e::before {content: ''; position: absolute; top: 0; left: 0; display:block; width: 34px; height: 34px;
-	background-color: var(--base-010);
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.46967 4.46967C7.76256 4.17678 8.23744 4.17678 8.53033 4.46967L14.0607 10L8.53033 15.5303C8.23744 15.8232 7.76256 15.8232 7.46967 15.5303C7.17678 15.2374 7.17678 14.7626 7.46967 14.4697L11.9393 10L7.46967 5.53033C7.17678 5.23744 7.17678 4.76256 7.46967 4.46967Z' fill='%233F434A'/%3E%3C/svg%3E");
-	mask-repeat: no-repeat;
-	mask-position: center center;
-	mask-size: 20px;
-}
-.corp .ui-datepicker .ui-datepicker-title {
-	display: flex; align-items: center; justify-content: center; column-gap: 4px; margin: 0 34px; line-height: 34px; text-align: center;
+.home .ui-datepicker.ui-widget-content {background: #fff; border-radius: 8px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
+.home .ui-datepicker {width: 343px; padding: 20px; box-sizing: border-box; z-index: 100001 !important;}
+.home .ui-datepicker .ui-datepicker-header {position: relative;}
+.home .ui-datepicker .ui-datepicker-prev, .home .ui-datepicker .ui-datepicker-next {position: absolute; top: 10px; width: 20px; height: 20px;overflow: hidden; text-indent: -9999px; cursor: pointer; }
 
-	.ui-datepicker-month {width: 38%; height: 34px; padding: 4px; font-weight: 500; color: var(--base-010); padding-left: 14px;}
-	.ui-datepicker-year {position: relative; width: 40%; height: 34px; padding: 4px; font-weight: 500; color: var(--base-010); padding-left: 14px;}
+.home .ui-datepicker .ui-datepicker-prev-hover, .home .ui-datepicker .ui-datepicker-next-hover {top: 10Px;}
+.home .ui-datepicker .ui-datepicker-prev {left: 0;}
+.home .ui-datepicker .ui-datepicker-next {right: 0;}
+.home .ui-datepicker .ui-datepicker-prev-hover {left: 0;}
+.home .ui-datepicker .ui-datepicker-next-hover {right: 0;}
 
-	select {font-size: 18px;}
-}
+.home .ui-datepicker .ui-datepicker-prev span, .home .ui-datepicker .ui-datepicker-next span {display: block; position: absolute; left: 0; top: 0;}
+.home .ui-datepicker .ui-icon-circle-triangle-w::before {content: ''; position: absolute; top: 0; left: 0; display:block; width: 20px; height: 20px; background-color: #232527; mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.9968 16.4458C12.7505 16.7195 12.329 16.7417 12.0553 16.4954L5.38866 10.4956C5.24819 10.3692 5.16797 10.1891 5.16796 10.0001C5.16796 9.81112 5.24817 9.63101 5.38864 9.50457L12.0553 3.50417C12.329 3.25785 12.7505 3.28002 12.9968 3.55369C13.2431 3.82735 13.221 4.24888 12.9473 4.49519L6.83119 10.0001L12.9473 15.5043C13.2209 15.7506 13.2431 16.1721 12.9968 16.4458Z' fill='%23232527'/%3E%3C/svg%3E"); mask-repeat: no-repeat; mask-position: center center; mask-size: 20px; }
+.home .ui-datepicker .ui-icon-circle-triangle-e::before {content: ''; position: absolute; top: 0; left: 0; display:block; width: 20px; height: 20px; background-color: #232527; mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.00317 16.4458C7.24947 16.7195 7.67099 16.7417 7.94467 16.4954L14.6113 10.4956C14.7518 10.3692 14.832 10.1891 14.832 10.0001C14.832 9.81112 14.7518 9.63101 14.6114 9.50457L7.9447 3.50417C7.67103 3.25785 7.2495 3.28002 7.00319 3.55369C6.75687 3.82735 6.77905 4.24888 7.05271 4.49519L13.1688 10.0001L7.05274 15.5043C6.77906 15.7506 6.75687 16.1721 7.00317 16.4458Z' fill='%23232527'/%3E%3C/svg%3E"); mask-repeat: no-repeat; mask-position: center center; mask-size: 20px; }
+.home .ui-datepicker .ui-datepicker-title {display: flex; align-items: center; justify-content: center; column-gap: 8px; line-height: 1; text-align: center; }
+.home .ui-datepicker-month {min-width: 83px;}
+.home .ui-datepicker-year {position: relative; min-width: 110px;}
 
-.corp .ui-datepicker {
-	table {
-		width: 100%; border-collapse: collapse; margin: 0;
-		
-		th {font-weight: normal; color: var(--base-030); line-height: 20px; padding: 27px 0 17px 0; text-align: center;}
-		td {padding: 6px 0;}
-		td span, td a {display: block; width: 32px; height: 32px; color: var(--base-010); line-height: 32px; border-radius: 10px; text-align: center; text-decoration: none;}
-	}
-	.ui-datepicker-buttonpane {background-image: none; margin: 0; padding: 0; border-left: 0; border-right: 0; border-bottom: 0;}
-	.ui-datepicker-buttonpane button {float: right; margin: 0; cursor: pointer; padding: 0; width: auto; overflow: visible;}
-	.ui-datepicker-buttonpane button.ui-datepicker-current {float: left;}
-	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {color: var(--base-010); background: var(--bg-010); border-radius: 14px;}
-	.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {color: var(--base-010); background: var(--prim-011);}
-}
+/* .home select {font-size: 18px;} */
 
-.corp .ui-datepicker select.ui-datepicker-month,
-.corp .ui-datepicker select.ui-datepicker-year {
-	border-radius: 10px;
-	border-color: var(--form-line);
-	font-size: 14px;
-	line-height: 24px;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.8711 5.22878C11.0762 5.43381 11.0762 5.76622 10.8711 5.97124L6.9999 9.84247L3.12867 5.97124C2.92365 5.76622 2.92365 5.43381 3.12867 5.22878C3.3337 5.02376 3.66611 5.02376 3.87113 5.22878L6.9999 8.35755L10.1287 5.22878C10.3337 5.02376 10.6661 5.02376 10.8711 5.22878Z' fill='%238A9099'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
-	background-position: calc(100% - 10px) center;
-	background-size: 14px;
-}
+.home .ui-datepicker select.ui-datepicker-month,
+.home .ui-datepicker select.ui-datepicker-year { height: 40px; padding: 0 8px 0 12px; border-radius: 8px; border-color: rgba(19, 21, 23, 0.15); font-size: 17px; line-height: 1.5; color: #232527; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.7696 14.3961L7.26835 9.16204C7.10127 8.96776 7.23931 8.66699 7.49555 8.66699H16.4989C16.7551 8.66699 16.8932 8.96779 16.726 9.16206L12.224 14.3961C12.1044 14.5351 11.8892 14.5351 11.7696 14.3961Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-size: 24px; }
+.home .ui-datepicker table {width: 100%; border-collapse: collapse; margin: 24px 0 0;}
+
+/* 요일 영역 */
+.home #ui-datepicker-div .ui-datepicker-calendar thead th { width: 40px;; padding-bottom: 4px; font-size: 15px; font-weight: 400; line-height: 1.5; color: #777; }
+.home #ui-datepicker-div .ui-datepicker-calendar thead th span {display: inline-block; font-size: inherit; line-height: inherit;}
+
+/* 일자 기본 */
+.home #ui-datepicker-div .ui-datepicker-calendar td { padding: 4px 0; }
+.home #ui-datepicker-div .ui-datepicker-calendar td a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; line-height: 1.5; text-align: center; border-radius: 6px; color: #222; font-size: 17px; border: none; /* transition: background 0.2s; */ }
+/* #ui-datepicker-div .ui-datepicker-calendar tr:last-child td a {padding: 4px 0 0;} */
+.home #ui-datepicker-div .ui-datepicker-calendar .ui-datepicker-other-month  a {color: #BFBFBF;}
+.home #ui-datepicker-div .ui-datepicker-calendar td a.ui-state-hover {border-radius: 1000px; background-color: #D17B47; color: #fff;}
+.home #ui-datepicker-div .ui-datepicker-buttonpane,
+.home #ui-datepicker-div .ui-datepicker-close,
+.home #ui-datepicker-div .ui-datepicker-current { display: none; }
+
 
 /* 토스트팝업 */
 .corp .pop-toast {
