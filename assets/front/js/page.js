@@ -65,15 +65,24 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", onScroll, { passive: true });
 
   /* 리사이즈 시 재계산 */
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      updateHeight();
-      computeOrigin();
-      onScroll();
-    }, 150);
-  });
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    const wasFixed = isFixed;   // 현재 fixed 여부 기억
+    
+    updateHeight();
+    computeOrigin();
+
+    if (wasFixed) {
+      tab.classList.add("fixed", "ready"); // fixed 상태 유지
+    } else {
+      tab.classList.remove("fixed", "ready");
+    }
+
+    onScroll(); // 현재 스크롤 위치에 따라 다시 체크
+  }, 150);
+});
 
   /* 모바일 새로고침 / 주소창 변동 대응 */
   window.addEventListener("load", () => {
