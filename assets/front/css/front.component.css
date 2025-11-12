@@ -1929,6 +1929,7 @@ button.swiper-pagination-bullet {
   color: #777;
   text-align: center;
   cursor: pointer;
+  white-space: nowrap;
 }
 .tab-display.style-a.white .tab-list .tab-item {
   background: #fff;
