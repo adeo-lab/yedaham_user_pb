@@ -982,12 +982,12 @@ button.swiper-pagination-bullet {
 }
 
 .form {
-  --placeholder-color: var(--color-base-080);
+  --placeholder-color: #BFBFBF /*var(--color-base-080)*/;
   --readonly-color: var(--color-base-010);
-  --readonly-bg-color: var(--color-base-080);
+  --readonly-bg-color: #F7F6F5 /*var(--color-base-080)*/;
   --disabled-color:var(--color-base-060);
   --disabled-bg-color: var(--color-base-090);
-  --border-color: var(--color-base-080);
+  --border-color: rgba(19, 21, 23, 0.15) /*var(--color-base-080)*/;
   --focus-border-color: var(--color-base-000);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1117,8 +1117,9 @@ button.swiper-pagination-bullet {
   --height: 48px;
   --padding-vertical: 0;
   --padding-sides: 16px;
-  --font-size: 16px;
-  --line-height: 52px;
+  --font-wwight: 400;
+  --font-size: 17px;
+  --line-height: 150%;
 }
 .form.input:has(.form-limit) .form-elem {
   padding-right: 95px;
@@ -3587,7 +3588,7 @@ button.swiper-pagination-bullet {
   --color-base-030: #606060;
   --color-base-020: #303030;
   --color-base-010: #232527;
-  --color-base-000: #000000;
+  --color-base-000: #232527;
   --color-primary-100: #ffffff;
   --color-primary-095: #f9f8fd;
   --color-primary-090: #ece9fa;
