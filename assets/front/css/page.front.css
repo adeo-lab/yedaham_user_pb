@@ -4300,7 +4300,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .pop-service-component-tab-wrap .swiper-button-prev {left: 0;}
 
 @media (max-width: 1640px) {
-  .home .pop-service-component-tab {max-width: 1444px; background-size: 48px auto;}
+  .home .pop-service-component-tab-wrap {max-width: 1332px; margin: 0 auto;}
+  .home .pop-service-component-tab {background-size: 48px auto;}
   .home .pop-service-component-tab ul {justify-content: unset;}
   .home .pop-service-component-tab-wrap {padding: 0 24px;}
   .home .pop-service-component-tab-wrap .swiper-button-next,
@@ -4309,12 +4310,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .component-product-wrap .component-product .in-bx .icon {width: 84px; height: 84px;}
 }
 
-@media (max-width: 1199px) {
-  
+@media (max-width: 1460px) {
+  .home .pop-service-component-tab-wrap {max-width: 1108px;}
+}
+
+@media (max-width: 1240px) {
+  .home .pop-service-component-tab-wrap {max-width: 884px;}
 }
 
 @media (max-width: 1023px) {
   .home .pop-service-component-tab ul {overflow: visible;}
+  .home .pop-service-component-tab-wrap {max-width: 100%;}
   .home .pop-service-component-tab-wrap {padding: 0 16px;}
   .home .pop-service-component-tab-wrap .swiper-button-next,
   .home .pop-service-component-tab-wrap .swiper-button-prev {display: none; }
