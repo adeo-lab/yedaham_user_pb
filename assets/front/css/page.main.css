@@ -20,7 +20,7 @@
 
 .home .main-vis-wrap {display: flex; gap: 24px; margin-bottom: 64px;}
 .home .main-vis-wrap .main-vis {flex: 1 1 auto; aspect-ratio: 792/270; border-radius: 16px; overflow: hidden;}
-.home .main-vis-wrap .main-vis .vis-img {aspect-ratio: 792/270; border-radius: 16px; overflow: hidden;}
+.home .main-vis-wrap .main-vis .vis-img {aspect-ratio: 792/270;}
 .home .main-vis-wrap .main-vis .vis-img-pc {display: block;}
 .home .main-vis-wrap .main-vis .vis-img-mo {display: none;}
 .home .main-vis-wrap .main-vis img {width: 100%; height: 100%; object-fit: cover;}
