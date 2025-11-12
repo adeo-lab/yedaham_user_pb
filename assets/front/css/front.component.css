@@ -2264,11 +2264,12 @@ button.swiper-pagination-bullet {
   justify-content: flex-start
 }
 .content-popup .popup-wrap .popup-header .popup-subject {
+  padding-right: 32px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 130%;
   color: #131517;
-  text-align: center;
+  /* text-align: center; */
 }
 .content-popup .popup-wrap .popup-header .btn-popup-close {
   -ms-flex-negative: 0;
