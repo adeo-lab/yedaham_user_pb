@@ -5385,6 +5385,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-size: 13px;
 }
 .home .my-main-tit02 {position: relative; padding-bottom: 24px;}
+.home .my-main-tit02 br {display: none;}
 .home .my-main-tit02.ty02 {padding-bottom: 9px;}
 .home .my-main-tit02 p {font-weight: 600; font-size: 24px; color: #131517; line-height: 31px;}
 .home .my-main-tit02 p span {color: #AF5B27;}
@@ -5485,10 +5486,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .my-main-benefit {position: relative; padding: 0 0 0 0; margin-bottom: 48px;}
 .home .my-main-benefit ul {display: flex; flex-wrap: wrap; gap: 24px;}
-.home .my-main-benefit .in-bx {position: relative; width: 435px; height: 182px; padding: 32px 40px; margin-bottom: 0; background: #fff; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; box-sizing: border-box;}
+.home .my-main-benefit .in-bx {display: flex; flex-direction: column; position: relative; width: 435px; height: 182px; padding: 32px 40px; margin-bottom: 0; background: #fff; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; box-sizing: border-box;}
 .home .my-main-benefit .in-bx .tx01 {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%;}
-.home .my-main-benefit .in-bx .tx03 {font-weight: 400; font-size: 197x; color: #444; line-height: 150%; padding-top: 8px;}
-.home .my-main-benefit .in-bx .bx-btn {padding-top: 34px; display: flex; align-items: center; justify-content: space-between;}
+.home .my-main-benefit .in-bx .tx03 {display: flex; flex-direction: column; justify-content: space-between; height: 100%; font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding-top: 8px;}
+.home .my-main-benefit .in-bx .tx03 .wbr {display: inline;}
+.home .my-main-benefit .in-bx .bx-btn {display: flex; align-items: center; justify-content: space-between;}
 .home .my-main-benefit .in-bx .bx-btn .tx-l {font-weight: 400; font-size: 17px; color: #AF5B27;}
 .home .my-main-benefit .in-bx .bx-btn .btn-view-n {display: inline-block; width: 141px; height: 32px; font-weight: 400; font-size: 15px; color: #fff; line-height: 32px; padding-left: 16px; background: #D17B47; border-radius: 32px; box-sizing: border-box;}
 .home .my-main-benefit .in-bx .bx-btn .btn-view-n {
@@ -5508,11 +5510,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .my-main-faq {border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 12px; overflow: hidden;}
 .home .my-main-faq ul {display: flex;}
-.home .my-main-faq li {width: 298px; height: 180px; background: #fff; border-right: 1px solid rgba(19, 21, 23, 0.15);}
+.home .my-main-faq li {flex: 1; background: #fff; border-right: 1px solid rgba(19, 21, 23, 0.15);}
 .home .my-main-faq li:last-child {border-right: none;}
 .home .my-main-faq li .in-bx {padding: 32px; text-align: center;}
 .home .my-main-faq li .in-bx .tx-type {font-weight: 600; font-size: 15px; color: #777; line-height: 150%; padding-bottom: 12px;}
-.home .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; word-break: auto-phrase;}
+.home .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; word-break: auto-phrase; text-overflow: ellipsis; word-wrap: break-word; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: inherit; display: -webkit-box;}
+
+.home .my-main-bnr {display: none;} 
 
 .home .my-contract-list li .in-bx {padding: 40px; margin-bottom: 32px; background: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
 .home .my-contract-list li .in-bx .top-area {padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
@@ -5731,7 +5735,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .certificate-issue .filter-wrap .filter-range .item {flex: 1;}
 .home .certificate-issue .filter-wrap .filter-range .radio-btn .radio-text {min-width: auto;}
-c
 .home .certificate-issue .filter-wrap .filter-range .item.custom .date-range .date-form {width: auto;}
 
 @media (max-width: 1023px) {
@@ -7216,6 +7219,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-main-top-info .bx-r dd {font-size: 15px; padding-top: 8px;}
 
   .home .my-main-tit02 {padding-bottom: 16px;}
+  .home .my-main-tit02 br {display: block;}
   .home .my-main-tit02.ty02 {padding-bottom: 1px;}
   .home .my-main-tit02 p {font-size: 20px;}
   .home .my-main-tit02 a.btn-all {top: 6.5px; font-size: 15px; background-position: right top 3px;}
@@ -7229,11 +7233,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-main-benefit {padding-left: 0; display: block; flex-wrap: wrap; column-gap: 0;}
   .home .my-main-benefit ul {display: flex; flex-wrap: unset; gap: 16px; flex-direction: column;}
   .home .my-main-benefit .in-bx {width: 100% /*calc(50% - 8px)*/; height: 160px; padding: 20px 24px; margin-bottom: 0;}
+  .home .my-main-benefit li:nth-child(1) {order: 1;}
+  .home .my-main-benefit li:nth-child(2) {order: 3;}
+  .home .my-main-benefit li:nth-child(3) {order: 2;}
+  .home .my-main-benefit li:nth-child(4) {order: 4;}
   .home .my-main-benefit li:nth-child(1) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_01.png') no-repeat right 30px bottom 30px; background-size: 47px;}
   .home .my-main-benefit li:nth-child(2) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_02.png') no-repeat right 30px bottom 30px; background-size: 52px;}
   .home .my-main-benefit li:nth-child(3) .in-bx {background: #fff url('../../../assets/front/images/sub/icon_my01_03.png') no-repeat right 30px bottom 30px; background-size: 54px;}
   .home .my-main-benefit .in-bx .tx01 {font-size: 19px;}
   .home .my-main-benefit .in-bx .tx03 {font-size: 15px;}
+  .home .my-main-benefit .in-bx .tx03 .wbr {display: block;}
+  .home .my-main-benefit .in-bx .bx-btn {flex-wrap: wrap; gap: 4px; padding: 0;}
   .home .my-main-benefit .in-bx .bx-btn .tx-l {font-size: 15px;}
   .home .my-main-benefit .in-bx .bx-btn .btn-view-n {width: 117px; font-size: 14px; background-image: none;}
   .home .my-main-benefit .in-bx.first {position: relative; width: 100%; height: 240px; margin-bottom: 16px;}
@@ -7244,6 +7254,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-main-faq li:last-child {border-bottom: none;}
   .home .my-main-faq li .in-bx {padding: 24px;}
   /*.home .my-main-faq li .in-bx .tx-type {display: none;}*/
+
+  .home .my-main-bnr {display: block; margin-top: 48px;}
+  .home .my-main-bnr .bnr-wrap {display: flex; flex-direction: column; gap: 4px; position: relative; padding: 20px 24px; box-sizing: border-box; border-radius: 12px; background-color: #FFF;}
+  .home .my-main-bnr .bnr-wrap::after {content: ''; display: block; position: absolute; top: calc(50% - 24px); left: auto; right: 24px; width: 48px; height: 48px; border-radius: 100%; background-color: #ECF5FF; background-position: center; background-repeat: no-repeat; background-size: 30px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M12.8031 10.2004C13.3002 10.2004 13.7031 9.79745 13.7031 9.30039C13.7029 8.80351 13.3001 8.40039 12.8031 8.40039H8.60313C8.1062 8.40039 7.70334 8.80351 7.70312 9.30039C7.70312 9.79745 8.10607 10.2004 8.60313 10.2004H12.8031ZM17.0031 15.8008C17.5002 15.8008 17.9031 15.3978 17.9031 14.9008C17.9031 14.4037 17.5002 14.0008 17.0031 14.0008H8.60313C8.10607 14.0008 7.70312 14.4037 7.70312 14.9008C7.70312 15.3978 8.10607 15.8008 8.60313 15.8008H17.0031Z' fill='%23232527'/%3E%3Cpath d='M27.6961 12.6791C28.1499 12.4763 28.6827 12.68 28.8855 13.1338C29.3709 14.2197 29.6735 15.4059 29.7551 16.6518C29.8177 17.6084 29.8177 18.5978 29.7551 19.5545C29.63 21.4641 28.7877 23.1819 27.8566 24.5725C27.5901 25.066 27.7147 25.8333 28.2398 26.8154C28.4223 27.1567 28.6085 27.5012 28.7144 27.7939C28.822 28.0912 28.94 28.5818 28.6512 29.0678C28.3882 29.5101 27.97 29.6675 27.6434 29.7299C27.3571 29.7845 27.0039 29.7902 26.6848 29.7979C25.0838 29.8363 23.9519 29.3799 23.0543 28.7268C22.8919 28.6086 22.7758 28.5277 22.6887 28.4678C22.56 28.5152 22.3858 28.584 22.1355 28.6857C21.5235 28.9345 20.8289 29.0834 20.1914 29.1252C18.5574 29.2324 16.8495 29.2326 15.2121 29.1252C12.9791 28.9787 11.0317 28.1223 9.42773 26.7943C9.04491 26.4774 8.9913 25.9092 9.3082 25.5264C9.62516 25.1435 10.1933 25.0899 10.5762 25.4068C11.9131 26.5138 13.5053 27.209 15.3293 27.3287C16.8884 27.431 18.5183 27.4308 20.0742 27.3287C20.5353 27.2985 21.039 27.1886 21.4582 27.0182C21.7348 26.9058 21.9757 26.8072 22.1648 26.7416C22.289 26.6985 22.5318 26.6141 22.7965 26.6186L22.9113 26.6268L23.0191 26.6443C23.264 26.6978 23.4619 26.8216 23.5734 26.8928C23.7259 26.9902 23.911 27.1247 24.1125 27.2713C24.7067 27.7037 25.4553 28.0275 26.6414 27.999C26.7076 27.9974 26.7681 27.9935 26.8242 27.992C26.7742 27.8962 26.718 27.7885 26.6519 27.665C26.0921 26.618 25.5232 25.057 26.2934 23.6807L26.3332 23.6162C27.1907 22.3454 27.8614 20.9201 27.9586 19.4373C28.0161 18.5589 28.0161 17.6474 27.9586 16.7689C27.8911 15.7393 27.6411 14.7616 27.2414 13.8674C27.039 13.4138 27.2427 12.8819 27.6961 12.6791Z' fill='%23232527'/%3E%3Cpath d='M10.1584 0.0857261C11.8924 -0.028467 13.7048 -0.0286837 15.4424 0.0857261C20.8741 0.443438 25.1955 4.78995 25.551 10.2389C25.6173 11.2565 25.6173 12.3091 25.551 13.3267C25.1955 18.7756 20.8741 23.1222 15.4424 23.4799C13.7048 23.5943 11.8924 23.5941 10.1584 23.4799C9.48622 23.4356 8.75444 23.2776 8.10993 23.0146C7.82771 22.8995 7.63522 22.8231 7.4947 22.7721C7.39822 22.8378 7.26872 22.9299 7.0822 23.0662C6.13805 23.7558 4.94705 24.2389 3.25837 24.1982C2.91704 24.19 2.54616 24.1841 2.24704 24.1267C1.9071 24.0616 1.48185 23.8973 1.21462 23.4459C0.922447 22.952 1.04025 22.4517 1.15251 22.1404C1.26326 21.8335 1.45814 21.4713 1.6529 21.1056C2.21347 20.0532 2.35927 19.2063 2.05603 18.6494C1.06967 17.1704 0.18163 15.348 0.0497786 13.3267C-0.0165923 12.3091 -0.0165934 11.2565 0.0497786 10.2389C0.405224 4.78996 4.72664 0.443444 10.1584 0.0857261ZM15.324 1.88221C13.6653 1.773 11.932 1.7732 10.2767 1.88221C5.75291 2.18013 2.14334 5.80193 1.84626 10.356C1.78498 11.2956 1.78498 12.27 1.84626 13.2096C1.93746 14.6075 2.49976 15.9551 3.25134 17.181L3.58415 17.699L3.624 17.7623C4.42525 19.1995 3.83594 20.8365 3.24197 21.9517C3.15156 22.1215 3.07667 22.2636 3.01345 22.3877C3.09831 22.3905 3.19322 22.3956 3.30173 22.3982C4.5739 22.4289 5.37969 22.08 6.02048 21.6119C6.23537 21.4549 6.43079 21.3128 6.59118 21.2099C6.7262 21.1234 6.97272 20.971 7.27204 20.9346L7.38806 20.9264C7.65824 20.9216 7.90775 21.0077 8.04079 21.0541C8.24016 21.1235 8.4949 21.228 8.78962 21.3482C9.24086 21.5323 9.78166 21.6508 10.2767 21.6834C11.932 21.7924 13.6653 21.7926 15.324 21.6834C19.8478 21.3855 23.4574 17.7637 23.7545 13.2096C23.8158 12.2699 23.8158 11.2957 23.7545 10.356C23.4574 5.80193 19.8478 2.18013 15.324 1.88221Z' fill='%23232527'/%3E%3C/svg%3E");}
+  .home .my-main-bnr .title {font-size: 15px; line-height: 1.5; color: #232527;}
+  .home .my-main-bnr .subtitle {display: inline-flex; gap: 4px; font-size: 19px; font-weight: 600; line-height: 1.3; color: #444;}
+  .home .my-main-bnr .subtitle::after {content: ''; display: block; flex-shrink: 0; width: 16px; height: 16px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5.35547 2.62012C5.67569 2.26465 6.22343 2.23561 6.5791 2.55566L11.9131 7.35547C12.0955 7.51971 12.1991 7.75459 12.1992 8C12.1991 8.24539 12.0954 8.48026 11.9131 8.64453L6.5791 13.4434C6.22344 13.7634 5.67571 13.7353 5.35547 13.3799C5.03536 13.0242 5.0643 12.4764 5.41992 12.1562L10.0371 8L5.41992 3.84375C5.06423 3.52355 5.03533 2.97586 5.35547 2.62012Z' fill='%23777777'/%3E%3C/svg%3E");}
+
 
   .home .my-contract-list li .in-bx {padding: 24px;}
   .home .my-contract-list li .in-bx .top-area .tx01 p {font-size: 24px;}
@@ -7455,12 +7473,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 @media (max-width: 768px) {
-    .home .component-product-wrap .component-product ul { grid-template-columns: repeat(auto-fit, 90px); }
+  .home .component-product-wrap .component-product ul { grid-template-columns: repeat(auto-fit, 90px); }
 }
 
 @media (max-width: 460px) {
-    .home .component-product-wrap .component-product ul { grid-template-columns: repeat(3, 90px); row-gap: 16px; }
-  }
+  .home .component-product-wrap .component-product ul { grid-template-columns: repeat(3, 90px); row-gap: 16px; }
+}
+
+@media (max-width: 360px) {
+  .home .my-main-benefit .in-bx {height: auto;}
+}
+
 
 
 
