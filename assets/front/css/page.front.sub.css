@@ -824,6 +824,8 @@
 .home .licensed-director-content iframe {width: 100%; border: none; aspect-ratio: 16/9;}
 .home .licensed-director-content .img {display: inline-flex; justify-content: center; align-items: center; overflow: hidden; margin: 0 auto; border-radius: 24px; text-align: center;}
 
+.nationwide-operations-content .img-pc {display: block; max-width: 720px; margin: 0 auto;}
+
 .home .payback-system-content {display: flex; justify-content: center; align-items: center; flex-direction: column; row-gap: 48px;}
 .home .payback-system-content .payback-refund {padding: 14px 0; background: url(../../../assets/front/images/sub/bg_payback_line_pc.png) no-repeat center; background-size: contain;}
 .home .payback-system-content .payback-refund-wrap {display: flex; justify-content: space-between; justify-content: center; align-items: center; gap: 24px; padding: 24px;}
@@ -1052,6 +1054,8 @@
 
     .home .licensed-director-content .img {height: 200px;}
     .home .licensed-director-content .img img {width: 100%; height: 100%; object-fit: cover; object-position: center;}
+
+    .nationwide-operations-content .img-pc {display: none;}
 
     .home .payback-system-content .payback-refund {padding: 0 14px; background: url(../../../assets/front/images/sub/bg_payback_line_mo.png) no-repeat center; background-size: contain;}
     .home .payback-system-content .payback-refund-wrap {flex-direction: column; gap: 0; padding: 24px;}
