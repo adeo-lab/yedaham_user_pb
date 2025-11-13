@@ -1244,27 +1244,55 @@
 
 
 /* 상품 한눈에 비교하기 */
-/* .compare-data-display {}
-.compare-data-display .compare-data-table {}
-.compare-data-display .compare-data-table.table-head ul,
-.compare-data-display .compare-data-table .table-body ul {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  min-width: 1200px;
-  border-bottom: 1px solid #d6dee9;
-} */
+.content-popup .popup-wrap .popup-body:has(.compare-data-table ) {overflow: hidden;}
 
-.compare-data-table {}
-.compare-data-table .product-01 {background-color: rgba(19, 21, 23, 0.02);}
-.compare-data-table .product-02 {background-color: rgba(19, 21, 23, 0.03);}
-.compare-data-table .product-03 {background-color: rgba(19, 21, 23, 0.06);}
+.compare-data-table {display: flex; overflow: hidden; position: relative; width: 100%;}
+.compare-data-table::before,
+.compare-data-table::after {content: ''; display: block; flex-shrink: 0; position: absolute; top: 2.5px; left: 0; bottom: 0; width: 40px; height: 100%;}
+.compare-data-table::before {z-index: 6; background-color: #fafafa;}
+.compare-data-table::after {left: auto; right: 0; background-color: #ececec;}
+.compare-data-table .table-scroll {flex: 1 1 100%; overflow: auto; max-height: 600px; padding: 0 40px; box-sizing: border-box; background: #fff;}
+.compare-data-table .table-scroll::-webkit-scrollbar { width: 0; height: 0; }
+.compare-data-table .data-table {width: 100%; min-width: 900px; /* 가로 스크롤 확인용 */ border-collapse: separate; border-spacing: 0; table-layout: fixed}
+
+.compare-data-table .data-table th.col-fixed { position: sticky; left: 0; z-index: 3; width: 80px; padding: 0; font-weight: 600; }
+.compare-data-table .data-table thead {transition: transform 0.35s ease;}
+.compare-data-table .data-table thead th { position: sticky; top: 0; z-index: 4; border-top: 2.5px solid #fff; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
+.compare-data-table .data-table thead th.col-fixed {z-index: 6; background-color: #fafafa;}
+.compare-data-table .data-table tbody th.col-fixed {background-color: #fafafa;}
+
+.compare-data-table .data-table tbody th {border-top: 1px solid rgba(19, 21, 23, 0.15);}
+.compare-data-table .data-table tbody th .icon {display: flex; width: 48px; height: 48px; margin: 0 auto; background-position: center;}
+.compare-data-table .data-table tbody td {position: relative; z-index: 2; padding: 24px 32px; border-top: 1px solid rgba(19, 21, 23, 0.15); font-size: 17px; line-height: 1.5; color: #232527;}
+.compare-data-table .data-table tbody tr:first-child th,
+.compare-data-table .data-table tbody tr:first-child td {border-top: 0 none;}
+
+.compare-data-table .data-table thead.collapsed .data-head {}
+.compare-data-table .data-table thead.collapsed .data-info {flex-direction: row; gap: 12px; align-items: baseline;}
+.compare-data-table .data-table thead.collapsed .data-head .data-info .subtitle {flex: 0; opacity: 0; max-height: 0; margin: 0; overflow: hidden; transition: opacity 0.3s ease, max-height 0.3s ease;}
+.compare-data-table .data-table thead.collapsed .data-head .data-info .num {font-size: 19px;}
+.compare-data-table .data-table thead.collapsed .data-head .button-area {padding-top: 4px;}
+.compare-data-table .data-table thead.collapsed .data-head .button-area > button {height: 40px; font-size: 17px; font-weight: 400;}
+
 .compare-data-table .data-head {display: flex; flex-direction: column;  gap: 12px; position: relative; padding: 24px 32px; text-align: left;}
-.compare-data-table .data-head .data-info  {display: flex; flex-direction: column;}
-.compare-data-table .data-head .data-info .title {font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527;}
-.compare-data-table .data-head .data-info .subtitle {font-size: 17px; font-weight: 600; line-height: 1.3; color: #777;}
-.compare-data-table .data-head .data-info .num {padding-top: 24px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #E94543;}
+.compare-data-table .data-head .data-info {display: flex; flex-direction: column;}
+.compare-data-table .data-head .data-info .title {flex-shrink: 0; font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527;}
+.compare-data-table .data-head .data-info .title .btn-del {display: none;}
+.compare-data-table .data-head .data-info .subtitle {font-size: 17px; font-weight: 600; line-height: 1.3; color: #777; transition: opacity 0.3s ease, max-height 0.3s ease;}
+.compare-data-table .data-head .data-info .num {flex-shrink: 0; padding-top: 24px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #E94543;}
 .compare-data-table .data-head .button-area {display: flex; gap: 16px;}
 .compare-data-table .data-head .button-area > button {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; height: 48px; border-radius: 8px; font-size: 19px; font-weight: 600; line-height: 1.5;}
-.compare-data-table .data-head .button-area .btn-type1 {box-shadow: inset 0 0 0 1px rgba(19, 21, 23, 0.30); color: #232527;}
+.compare-data-table .data-head .button-area .btn-type1 {box-shadow: inset 0 0 0 1px rgba(19, 21, 23, 0.30); background-color: #fff; color: #232527;}
 .compare-data-table .data-head .button-area .btn-type2 {background-color: #D17B47; color: #fff;}
-.compare-data-table .data-head .flag {position: absolute; top: 0; right: 0; width: 30px; height: 45px;}
+.compare-data-table .data-head .flag {position: absolute; top: -2.5px; right: 24.5px; width: 30px; height: 45px;}
+
+.compare-data-table .product-01 {background-color: #fafafa;}
+.compare-data-table .product-02 {background-color: #f3f3f3;}
+.compare-data-table .product-03 {background-color: #ececec;}
+/* .compare-data-table .product-01 {background-color: rgba(19, 21, 23, 0.02);} 
+.compare-data-table .product-02 {background-color: rgba(19, 21, 23, 0.03);} 
+.compare-data-table .product-03 {background-color: rgba(19, 21, 23, 0.06);} */
+
+@media (max-width: 1023px) {
+    
+}
