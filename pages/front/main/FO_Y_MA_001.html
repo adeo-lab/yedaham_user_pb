@@ -431,44 +431,59 @@
 									</ul>
 								</div>
 								<script>
+								// document.addEventListener("DOMContentLoaded", function () {
+								// 	let swiper3 = null;
+
+								// 	function initSwiper() {
+								// 		const isMobile = window.innerWidth <= 1200;
+
+								// 		// 모바일일 때만 Swiper 실행
+								// 		if (isMobile && !swiper3) {
+								// 		swiper3 = new Swiper(".m-product-list01", {
+								// 			slidesPerView: "auto",
+								// 			spaceBetween: 0,
+								// 			centeredSlides: true,
+								// 			loop: true,
+								// 			watchOverflow: true,
+								// 			/*navigation: {
+								// 			nextEl: ".m-product-list01 .swiper-button-next",
+								// 			prevEl: ".m-product-list01 .swiper-button-prev",
+								// 			},*/
+								// 		});
+								// 		}
+								// 		// PC로 전환 시 Swiper 제거
+								// 		else if (!isMobile && swiper3) {
+								// 		swiper3.destroy(true, true);
+								// 		swiper3 = null;
+								// 		}
+								// 	}
+
+								// 	// 초기 실행
+								// 	initSwiper();
+
+								// 	// 리사이즈 시 반응
+								// 	window.addEventListener("resize", function () {
+								// 		clearTimeout(window._swiperResizeTimer);
+								// 		window._swiperResizeTimer = setTimeout(() => {
+								// 		initSwiper();
+								// 		}, 200);
+								// 	});
+								// });
 								document.addEventListener("DOMContentLoaded", function () {
-									let swiper3 = null;
-
-									function initSwiper() {
-										const isMobile = window.innerWidth <= 1200;
-
-										// 모바일일 때만 Swiper 실행
-										if (isMobile && !swiper3) {
-										swiper3 = new Swiper(".m-product-list01", {
-											slidesPerView: "auto",
-											spaceBetween: 0,
-											centeredSlides: true,
-											loop: true,
-											watchOverflow: true,
-											/*navigation: {
-											nextEl: ".m-product-list01 .swiper-button-next",
-											prevEl: ".m-product-list01 .swiper-button-prev",
-											},*/
-										});
+									if (window.innerWidth <= 1023) {
+											var swiper3 = new Swiper(".m-product-list01", {
+												slidesPerView: 'auto',
+												spaceBetween: 0,
+												centeredSlides: true,
+												loop: true,
+												watchOverflow: true,
+												/*navigation: {
+													nextEl: ".m-product-list01 .swiper-button-next",
+													prevEl: ".m-product-list01 .swiper-button-prev",
+												},*/
+											});
 										}
-										// PC로 전환 시 Swiper 제거
-										else if (!isMobile && swiper3) {
-										swiper3.destroy(true, true);
-										swiper3 = null;
-										}
-									}
-
-									// 초기 실행
-									initSwiper();
-
-									// 리사이즈 시 반응
-									window.addEventListener("resize", function () {
-										clearTimeout(window._swiperResizeTimer);
-										window._swiperResizeTimer = setTimeout(() => {
-										initSwiper();
-										}, 200);
 									});
-								});
 								</script>
 							</div>
 						</div>

@@ -429,7 +429,7 @@ const headerNavigation = function (useFullLink) {
 				<div class="g-sub-body">
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">멤버십 > 목록​</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1103, 1107 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103, 1107, 1113 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -439,6 +439,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">제휴카드 > 목록</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1113 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BB_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
