@@ -3356,6 +3356,11 @@ z-index: 10;
 .home .board-write-ty01 .btm-area .form.checkbox .form-text::after {top: 3px;}
 .home .board-write-ty01 .btm-area a.btn-view-detail {position: absolute; top: 0; right: 0; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 150%; text-decoration: underline;}
 
+@media (max-width: 1023px) {
+  .home .board-write-ty01 .btm-area .form.checkbox .form-text::before,
+  .home .board-write-ty01 .btm-area .form.checkbox .form-text::after {top: 0px;}
+}
+
 .home .board-write-ty01 .bx-email {display: flex; column-gap: 12px; align-items: flex-start;}
 .home .board-write-ty01 .bx-email .bx01 {width: 344px;}
 .home .board-write-ty01 .bx-email .bx02 {width: 344px;}
@@ -5823,9 +5828,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.green-01 {color: #337848; border: 1px solid #337848;} /* 정상 */
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dd .flag.grey-01 {color: #777; border: 1px solid rgba(19, 21, 23, 0.30);} /* 회색 */
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list dl.w100 {width: 100%;}
-.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list {display: flex; flex-direction: column; gap: 4px; width: 100%; margin-top: 12px; padding: 24px; border-radius: 12px; background-color: #F7F6F5;}
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list {display: flex; flex-direction: column; gap: 4px; width: 100%; margin-top: 12px; padding: 24px; box-sizing: border-box; border-radius: 12px; background-color: #F7F6F5;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list .item {display: flex; align-items: baseline; gap: 8px; font-size: 15px; line-height: 1.5; color: #444;}
-.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list .item::before {display: block; content: ''; width: 12px; height: 12px; background-color: #232527; mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");;}
+.home .my-acount-status-wrap .my-account-cont-bx .pay-in-list .info-list .item::before {display: block; content: ''; flex-shrink: 0; width: 12px; height: 12px; background-color: #232527; mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");;}
 .home .my-acount-status-wrap .my-account-cont-bx .pay-in-list + .ej-pay-wrap {margin-top: 40px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-pay-wrap {padding-top: 0;}
 /*.home .my-acount-status-wrap .my-account-cont-bx .ej-pay-wrap .board-write-ty01 .top-area {margin-bottom: 0; border-bottom: 0;}*/
@@ -7096,7 +7101,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .ej-pay-wrap .bx-type ul {column-gap: 8px;}
   .home .ej-pay-wrap .bx-type li {width: calc(50% - 4px);}
   .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text {font-size: 15px;}
-  .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::before, .form.checkbox .form-text::after {top: 1px;}
+  .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::before, 
+  .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::after {top: 1px;}
 
   .home .ej-end-wrap {width: 100%; box-sizing: border-box;}
   .home .ej-end-wrap .top-tx {margin-bottom: 24px;}
