@@ -86,6 +86,77 @@
 						</div>
 						<!-- 1112 작업 -->
 						<div class="section conversion-service" id="conversionService">
+							<!-- 1113 작업 -->
+							<div class="board-bnr-list">
+								<div class="bnr-list-wrap">
+									<div class="bnr-list swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide list-item">
+												<a href="#">
+													<span class="img-pc"><img src="../../../assets/front/images/sub/img_bnr01_01_pc.png" alt="예다함 멤버십 호텔, 리조트, 할인제휴 서비스와​ 금융상품 혜택을 제공해드립니다."></span>
+													<span class="img-mo"><img src="../../../assets/front/images/sub/img_bnr01_01_mo.png" alt="예다함 멤버십 호텔, 리조트, 할인제휴 서비스와​ 금융상품 혜택을 제공해드립니다."></span>
+												</a>
+											</div>
+											<div class="swiper-slide list-item">
+												<a href="#">
+													<span class="img-pc"><img src="../../../assets/front/images/sub/img_bnr01_02_pc.png" alt="예다함 롯데카드 상조엔로카 출시"></span>
+													<span class="img-mo"><img src="../../../assets/front/images/sub/img_bnr01_02_mo.png" alt="예다함 롯데카드 상조엔로카 출시"></span>
+												</a>
+											</div>
+											<div class="swiper-slide list-item">
+												<a href="#">
+													<span class="img-pc"><img src="../../../assets/front/images/sub/img_bnr01_02_pc.png" alt="예다함 롯데카드 상조엔로카 출시"></span>
+													<span class="img-mo"><img src="../../../assets/front/images/sub/img_bnr01_02_mo.png" alt="예다함 롯데카드 상조엔로카 출시"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 네비게이션 / 페이지네이션 / 컨트롤 -->
+								<div class="swiper-control">
+									<div class="swiper-pagination"></div>
+									<button type="button" class="swiper-button-prev" aria-label="이전 배너"></button>
+									<button type="button" class="swiper-button-next" aria-label="다음 배너"></button>
+								</div>
+							</div>
+							<script>
+								document.addEventListener("DOMContentLoaded", () => {
+									const bannerEl = document.querySelector(".bnr-list.swiper");
+									if (!bannerEl) return;
+
+									const slides = bannerEl.querySelectorAll(".swiper-slide");
+									const slideCount = slides.length;
+
+									// 슬라이드가 1장 이하면 Swiper 비활성
+									if (slideCount <= 1) {
+										bannerEl.classList.add("single-slide");
+										return;
+									}
+
+									let autoplayEnabled = true;
+
+									const swiper = new Swiper(bannerEl, {
+										slidesPerView: 1,
+										// spaceBetween: 16,
+										loop: true,
+										speed: 600,
+										autoplay: {
+											delay: 4000,
+											disableOnInteraction: false,
+										},
+										pagination: {
+											el: ".swiper-pagination",
+											clickable: true,
+										},
+										navigation: {
+											nextEl: ".swiper-button-next",
+											prevEl: ".swiper-button-prev",
+										},
+									});
+								});
+
+							</script>
+							<!-- //1113 작업 -->
 							<div class="section-wrap">
 								<div class="section-head">
 									<h4 class="section-subject">전환 서비스​</h4>
