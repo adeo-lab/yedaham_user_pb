@@ -146,6 +146,8 @@
 @media (max-width: 1023px) {
     .home .quick-menu {right: 10px; bottom: 20px;}
     .home .quick-menu.show {bottom: 40px;}
+    .home  .quick-menu.has-bottom-panel {bottom: 40px;}
+    .home  .quick-menu.has-bottom-panel.show {bottom: 100px;}
     .home .quick-menu .quick-wrap {align-items: flex-end;}
     .home .quick-menu .quick-list {margin-bottom: 8px; row-gap: 8px;}
     .home .quick-menu .quick-list {gap: 8px; display: none; opacity: 0; transition: all 0.3s; pointer-events: none;}
