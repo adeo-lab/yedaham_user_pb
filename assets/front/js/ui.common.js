@@ -804,43 +804,57 @@ var uiCommon = (function() {
 
 			const btnTopmove = document.querySelector(".quick-menu");
 			const footerWrap = document.querySelector("#footer");
+			const bottomPanel = document.querySelector(".bottom-panel"); // 하단 고정 패널
 			if (!btnTopmove || !footerWrap) return;
 
 			let fHeight = footerWrap.offsetHeight;
+
+			/* 모바일 + bottom-panel 존재 시 상태 클래스 부여 */
+			const checkBottomPanel = () => {
+				const isMobile = window.matchMedia("(max-width: 1023px)").matches;
+
+				if (isMobile && bottomPanel) {
+					btnTopmove.classList.add("has-bottom-panel");
+				} else {
+					btnTopmove.classList.remove("has-bottom-panel");
+				}
+			};
 
 			const updatePosition = () => {
 				const scrollY = window.scrollY;
 				const winH = window.innerHeight;
 				const docH = document.documentElement.scrollHeight;
 
-				// 화면 절반 이상일 때 show 클래스 추가 / 제거
+				// 화면 절반 이상일 때 show 클래스 제어
 				if (scrollY >= winH / 2) {
-				btnTopmove.classList.add("show");
+					btnTopmove.classList.add("show");
 				} else {
-				btnTopmove.classList.remove("show");
+					btnTopmove.classList.remove("show");
 				}
 
-				// 푸터 감지
+				// 푸터 감지 (퀵메뉴가 겹치지 않도록 위치 조정)
 				if (scrollY >= docH - fHeight - winH) {
-				btnTopmove.style.position = "absolute";
-				btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
-				btnTopmove.style.bottom = "auto"; // absolute 상태에선 bottom 해제
+					btnTopmove.style.position = "absolute";
+					btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
+					btnTopmove.style.bottom = "auto";
 				} else {
-				btnTopmove.style.position = "fixed";
-				btnTopmove.style.top = "auto";
-				btnTopmove.style.bottom = ""; // ✅ bottom값을 CSS에서 복원되게 초기화
+					btnTopmove.style.position = "fixed";
+					btnTopmove.style.top = "auto";
+					btnTopmove.style.bottom = ""; // CSS 값 복원
 				}
 			};
 
 			const recalc = () => {
 				fHeight = footerWrap.offsetHeight;
+				checkBottomPanel(); // 리사이즈 시 상태 재확인
 				updatePosition();
 			};
 
-			window.addEventListener("scroll", updatePosition);
+			window.addEventListener("scroll", updatePosition, { passive: true });
 			window.addEventListener("resize", recalc);
 			window.addEventListener("orientationchange", recalc);
 
+			// 초기 실행
 			recalc();
 
 		},

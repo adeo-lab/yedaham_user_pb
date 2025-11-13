@@ -18,7 +18,7 @@
 .home .main-vis-wrap .main-vis li .in-bx {height: 270px; padding: 0 48px; border-radius: 16px;}
 
 
-.home .main-vis-wrap {display: flex; gap: 24px; margin-bottom: 64px;}
+.home .main-vis-wrap {display: flex; gap: 64px; margin-bottom: 64px;}
 .home .main-vis-wrap .main-vis {flex: 1 1 auto; aspect-ratio: 792/270; border-radius: 16px; overflow: hidden;}
 .home .main-vis-wrap .main-vis .vis-img {aspect-ratio: 792/270;}
 .home .main-vis-wrap .main-vis .vis-img-pc {display: block;}
@@ -226,7 +226,7 @@
 .home .m-product-list01 .in-bx p.flag {position: absolute; top: -3px; right: 30px;}
 .home .m-product-list01 .in-bx p.flag img {width: 40px;}
 .home .m-product-list01 .in-bx .top-area {text-align: center;}
-.home .m-product-list01 .in-bx .top-area p.tx-title01 {font-weight: 700; font-size: 19px; color: #232527; line-height: 150%;}
+.home .m-product-list01 .in-bx .top-area p.tx-title01 {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%;}
 .home .m-product-list01 .in-bx .top-area p.tx-title02 {font-weight: 600; font-size: 40px; color: #232527; line-height: 130%;}
 .home .m-product-list01 .in-bx .top-area p.tx-tx01 {font-weight: 600; font-size: 19px; color: #777; line-height: 130%; padding-top: 8px;}
 .home .m-product-list01 .in-bx .mid-area {padding: 50px 0; text-align: center;}
