@@ -50,10 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   entries.forEach(entry => {
     const id = "#" + entry.target.id;
-    console.log(
-      `%c[Observer] isIntersecting: ${entry.isIntersecting} | target: ${id}`,
-      "color: #0a84ff; font-weight: 600;"
-    );
+    // console.log(
+    //   `%c[Observer] isIntersecting: ${entry.isIntersecting} | target: ${id}`,
+    //   "color: #0a84ff; font-weight: 600;"
+    // );
     
 
     if (!entry.isIntersecting) return;

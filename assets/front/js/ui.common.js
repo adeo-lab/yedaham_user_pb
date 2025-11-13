@@ -803,45 +803,45 @@ var uiCommon = (function() {
 			// }
 
 			const btnTopmove = document.querySelector(".quick-menu");
-  const footerWrap = document.querySelector("#footer");
-  if (!btnTopmove || !footerWrap) return;
+			const footerWrap = document.querySelector("#footer");
+			if (!btnTopmove || !footerWrap) return;
 
-  let fHeight = footerWrap.offsetHeight;
+			let fHeight = footerWrap.offsetHeight;
 
-  const updatePosition = () => {
-    const scrollY = window.scrollY;
-    const winH = window.innerHeight;
-    const docH = document.documentElement.scrollHeight;
+			const updatePosition = () => {
+				const scrollY = window.scrollY;
+				const winH = window.innerHeight;
+				const docH = document.documentElement.scrollHeight;
 
-    // 화면 절반 이상일 때 show 클래스 추가 / 제거
-    if (scrollY >= winH / 2) {
-      btnTopmove.classList.add("show");
-    } else {
-      btnTopmove.classList.remove("show");
-    }
+				// 화면 절반 이상일 때 show 클래스 추가 / 제거
+				if (scrollY >= winH / 2) {
+				btnTopmove.classList.add("show");
+				} else {
+				btnTopmove.classList.remove("show");
+				}
 
-    // 푸터 감지
-    if (scrollY >= docH - fHeight - winH) {
-      btnTopmove.style.position = "absolute";
-      btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
-      btnTopmove.style.bottom = "auto"; // absolute 상태에선 bottom 해제
-    } else {
-      btnTopmove.style.position = "fixed";
-      btnTopmove.style.top = "auto";
-      btnTopmove.style.bottom = ""; // ✅ bottom값을 CSS에서 복원되게 초기화
-    }
-  };
+				// 푸터 감지
+				if (scrollY >= docH - fHeight - winH) {
+				btnTopmove.style.position = "absolute";
+				btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
+				btnTopmove.style.bottom = "auto"; // absolute 상태에선 bottom 해제
+				} else {
+				btnTopmove.style.position = "fixed";
+				btnTopmove.style.top = "auto";
+				btnTopmove.style.bottom = ""; // ✅ bottom값을 CSS에서 복원되게 초기화
+				}
+			};
 
-  const recalc = () => {
-    fHeight = footerWrap.offsetHeight;
-    updatePosition();
-  };
+			const recalc = () => {
+				fHeight = footerWrap.offsetHeight;
+				updatePosition();
+			};
 
-  window.addEventListener("scroll", updatePosition);
-  window.addEventListener("resize", recalc);
-  window.addEventListener("orientationchange", recalc);
+			window.addEventListener("scroll", updatePosition);
+			window.addEventListener("resize", recalc);
+			window.addEventListener("orientationchange", recalc);
 
-  recalc();
+			recalc();
 
 		},
 		scrollToTop: function () {
