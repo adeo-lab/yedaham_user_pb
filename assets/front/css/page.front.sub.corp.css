@@ -45,8 +45,8 @@
 .corp .quick-menu.show .btn-to-top {opacity: 1; transform: translateY(0); pointer-events: auto;} 
 
 /* 메인스크롤 */
-.corp .quick-menu.main-quick-menu {transition: all 0.3s ease;}
-.corp .quick-menu.main-quick-menu.show {bottom: 30px;}
+.corp .quick-menu.main-quick-menu {bottom: 20px; transition: all 0.3s ease;}
+.corp .quick-menu.main-quick-menu.show {bottom: 20px;}
 .corp .quick-menu.main-quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center; row-gap: 16px;}
 .corp .quick-menu.main-quick-menu .btn-scroll,
 .corp .quick-menu.main-quick-menu .btn-to-top {position: absolute; transition: all 0.3s ease;}
