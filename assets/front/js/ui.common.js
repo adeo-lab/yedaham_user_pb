@@ -32,6 +32,7 @@ var uiCommon = (function() {
 			_.setViewportHeight();
 			_.slider();
 			_.quickMenu(true);
+			_. bottomPanel();
 		},
 		onScroll: function() {
 			_.quickMenu();
@@ -1238,74 +1239,70 @@ var uiCommon = (function() {
 			const footer = document.querySelector('#footer'); 
 			if (!panel || !footer) return;
 
-			if (!window.matchMedia("(max-width: 1023px)").matches) return;
+			let observer = null;
+			let lastScrollY = 0;
+			let isHidden = false;
+			let footerInView = null;
 
-			let lastScrollY   = window.scrollY;
-			let isHidden      = false;
-			let footerInView  = null; // null(미정) → true(진입) / false(이탈)
+			const enablePanel = () => {
+				if (observer) return; // 이미 활성화 되어 있으면 중복 방지
+				lastScrollY = window.scrollY;
+				isHidden = false;
+				footerInView = null;
 
-			// 스냅샷 찍기(원할 때 호출해보면 상태 확인 가능)
-			// const logSnapshot = (tag = 'snapshot') => {
-			// 	const r = footer.getBoundingClientRect();
-			// 	console.log(`[${tag}]`, {
-			// 		scrollY: window.scrollY,
-			// 		panelHidden: isHidden,
-			// 		footerInView,
-			// 		footerRect: { top: r.top, bottom: r.bottom, height: r.height },
-			// 		viewportH: window.innerHeight
-			// 	});
-			// };
-
-			// 푸터가 보이는지 감지
-			const observer = new IntersectionObserver((entries) => {
-				entries.forEach((entry) => {
-					const nowInView = entry.isIntersecting;
-
-					// 상태 변화가 있을 때만 로그
-					if (footerInView !== nowInView) {
-						footerInView = nowInView;
-
-						if (nowInView) {
-							// console.log('[footer: enter] 푸터가 뷰포트에 진입했습니다. (intersectionRatio:', entry.intersectionRatio.toFixed(3), ')');
-							panel.classList.add('hide');
-							isHidden = true;
-							// logSnapshot('footer-enter');
-						} else {
-							// console.log('[footer: leave] 푸터가 뷰포트에서 사라졌습니다. (intersectionRatio:', entry.intersectionRatio.toFixed(3), ')');
-							// “위로 스크롤 중”일 때만 다시 표시 (아래 스크롤 리스너에서 처리)
-							// logSnapshot('footer-leave');
+				observer = new IntersectionObserver((entries) => {
+					entries.forEach((entry) => {
+						const nowInView = entry.isIntersecting;
+						if (footerInView !== nowInView) {
+							footerInView = nowInView;
+							if (nowInView) {
+								panel.classList.add('hide');
+								isHidden = true;
+							}
 						}
-					}
-				});
-			}, {
-				root: null,
-				threshold: 0.05 // footer가 5%만 보여도 감지
-			});
+					});
+				}, { threshold: 0.05 });
 
-			observer.observe(footer);
+				observer.observe(footer);
 
-			// 스크롤 방향 감지 (위로 스크롤 시 다시 표시)
-			window.addEventListener('scroll', () => {
+				window.addEventListener('scroll', onScroll, { passive: true });
+			};
+
+			const disablePanel = () => {
+				if (!observer) return;
+				observer.disconnect();
+				observer = null;
+				window.removeEventListener('scroll', onScroll);
+				panel.classList.remove('hide'); // 숨김 초기화
+			};
+
+			const onScroll = () => {
 				const currentY = window.scrollY;
 				const scrollingUp = currentY < lastScrollY;
 
 				if (scrollingUp && isHidden && footerInView === false) {
 					panel.classList.remove('hide');
 					isHidden = false;
-					// console.log('[panel: show] 위로 스크롤했고 푸터가 사라져서 패널을 다시 표시합니다.');
-					// logSnapshot('panel-show');
-				}
-
-				if (!scrollingUp && !isHidden && footerInView === true) {
-					// 참고: 실제 숨김은 IO 콜백에서 처리됨(여긴 로그만)
-					// console.log('[panel: will-hide] 아래로 스크롤 중이며 푸터가 보이므로 패널 숨김 예정.');
 				}
 
 				lastScrollY = currentY;
-			}, { passive: true });
+			};
 
-			// 초기 상태 한 번 찍고 시작(원하면 주석 해제)
-			// logSnapshot('init');
+			// 현재 화면 너비에 따라 초기 실행
+			const checkMode = () => {
+				if (window.matchMedia("(max-width: 1023px)").matches) {
+					enablePanel();
+				} else {
+					disablePanel();
+				}
+			};
+
+			checkMode();
+
+			// 리사이즈 시에도 자동 적용/해제
+			window.addEventListener('resize', () => {
+				checkMode();
+			});
 		},
 
 	};
