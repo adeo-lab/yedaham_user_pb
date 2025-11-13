@@ -47,8 +47,8 @@
  * 기존 수정
 
 ********************************************************************************************************************************/
-.ltd .quick-menu {position: fixed; top: auto; right: 40px; bottom: 100px; left: auto; z-index: 100; transition: all 0.4s ease;}
-.ltd .quick-menu.show {bottom: 136px;}
+.ltd .quick-menu {position: fixed; top: auto; right: 40px; bottom: -30px; left: auto; z-index: 100; transition: all 0.4s ease;}
+.ltd .quick-menu.show {bottom: 40px;}
 .ltd .quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center;}
 .ltd .quick-menu .quick-toggle {display: none; pointer-events: none;}
 .ltd .quick-menu .quick-list {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; transition: all 0.4s ease;}
@@ -62,8 +62,8 @@
 .ltd .quick-menu.show .btn-to-top {opacity: 1; transform: translateY(0); pointer-events: auto;}
 
 @media (max-width: 1023px) {
-    .ltd .quick-menu {right: 10px; bottom: 80px;}
-    .ltd .quick-menu.show {bottom: 100px;}
+    .ltd .quick-menu {right: 10px; bottom: -40px;}
+    .ltd .quick-menu.show {bottom: 20px;}
     .ltd .quick-menu .quick-wrap {align-items: flex-end;}
     .ltd .quick-menu .quick-list {margin-bottom: 8px; row-gap: 8px;}
     .ltd .quick-menu .quick-list {gap: 8px; display: none; opacity: 0; transition: all 0.3s; pointer-events: none;}
