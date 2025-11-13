@@ -1,8 +1,5 @@
 var uiCommon = (function() {
 	const _ = {
-		offsetPC: 120,
-    	offsetMobile: 72,
-		mobileMenuListener: null,
 		onLoad: function() {
 			_.popup.init();
 			_.gnbMenu.init();
@@ -26,12 +23,15 @@ var uiCommon = (function() {
 			_.targetScroll(); // 251022 작업
 			_.tooltip();
 			_.dropdown(".dropdown-menu");
+			_.quickMenu();
+			_.bottomPanel();
 		},
 		onResize: function() {
 			_.gnbMenu.init(); 
 			
 			_.setViewportHeight();
 			_.slider();
+			_.quickMenu(true);
 		},
 		onScroll: function() {
 			_.quickMenu();
@@ -764,15 +764,84 @@ var uiCommon = (function() {
 				});
 			});
 		},
-		quickMenu: function () {			
-			const quickMenu = document.querySelector('.quick-menu');
-			if (!quickMenu) return;
+		quickMenu: function (isResize) {
+			// const quickMenu = document.querySelector('.quick-menu');
+			// const footer = document.querySelector('#footer');
+			// if (!quickMenu || !footer) return;
 
-			if (window.scrollY > 100) {
-				quickMenu.classList.add('show');
-			} else {
-				quickMenu.classList.remove('show');
-			}
+			// // 변수 캐싱
+			// if (isResize || !_.quickMenuData) {
+			// 	_.quickMenuData = {
+			// 		baseBottom: parseInt(getComputedStyle(quickMenu).bottom, 10) || 0,
+			// 		footerHeight: footer.offsetHeight,
+			// 		menuHeight: quickMenu.offsetHeight
+			// 	};
+			// }
+
+			// const scrollY = window.scrollY;
+			// const winH = window.innerHeight;
+			// const docH = document.documentElement.scrollHeight;
+			// const { baseBottom, footerHeight, menuHeight } = _.quickMenuData;
+
+			// // (1) 노출 여부
+			// if (scrollY > 100) {
+			// 	quickMenu.classList.add('show');
+			// } else {
+			// 	quickMenu.classList.remove('show');
+			// }
+
+			// // (2) 푸터와 겹칠 때 absolute 전환
+			// if (scrollY >= docH - footerHeight - winH) {
+			// 	quickMenu.style.position = 'absolute';
+			// 	quickMenu.style.bottom = 'auto';
+			// 	quickMenu.style.top = (docH - footerHeight - menuHeight - baseBottom) + 'px';
+			// } else {
+			// 	quickMenu.style.position = 'fixed';
+			// 	quickMenu.style.bottom = baseBottom + 'px';
+			// 	quickMenu.style.top = 'auto';
+			// }
+
+			const btnTopmove = document.querySelector(".quick-menu");
+  const footerWrap = document.querySelector("#footer");
+  if (!btnTopmove || !footerWrap) return;
+
+  let fHeight = footerWrap.offsetHeight;
+
+  const updatePosition = () => {
+    const scrollY = window.scrollY;
+    const winH = window.innerHeight;
+    const docH = document.documentElement.scrollHeight;
+
+    // 화면 절반 이상일 때 show 클래스 추가 / 제거
+    if (scrollY >= winH / 2) {
+      btnTopmove.classList.add("show");
+    } else {
+      btnTopmove.classList.remove("show");
+    }
+
+    // 푸터 감지
+    if (scrollY >= docH - fHeight - winH) {
+      btnTopmove.style.position = "absolute";
+      btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
+      btnTopmove.style.bottom = "auto"; // absolute 상태에선 bottom 해제
+    } else {
+      btnTopmove.style.position = "fixed";
+      btnTopmove.style.top = "auto";
+      btnTopmove.style.bottom = ""; // ✅ bottom값을 CSS에서 복원되게 초기화
+    }
+  };
+
+  const recalc = () => {
+    fHeight = footerWrap.offsetHeight;
+    updatePosition();
+  };
+
+  window.addEventListener("scroll", updatePosition);
+  window.addEventListener("resize", recalc);
+  window.addEventListener("orientationchange", recalc);
+
+  recalc();
+
 		},
 		scrollToTop: function () {
 			const quickMenu = document.querySelector('.quick-menu');
@@ -1163,7 +1232,79 @@ var uiCommon = (function() {
 
 				optionItems.forEach((item) => item.addEventListener("click", handleOptionClick));
 			});
-		}
+		},
+		bottomPanel: function() {
+			const panel  = document.querySelector('.bottom-panel');
+			const footer = document.querySelector('#footer'); 
+			if (!panel || !footer) return;
+
+			let lastScrollY   = window.scrollY;
+			let isHidden      = false;
+			let footerInView  = null; // null(미정) → true(진입) / false(이탈)
+
+			// 스냅샷 찍기(원할 때 호출해보면 상태 확인 가능)
+			// const logSnapshot = (tag = 'snapshot') => {
+			// 	const r = footer.getBoundingClientRect();
+			// 	console.log(`[${tag}]`, {
+			// 		scrollY: window.scrollY,
+			// 		panelHidden: isHidden,
+			// 		footerInView,
+			// 		footerRect: { top: r.top, bottom: r.bottom, height: r.height },
+			// 		viewportH: window.innerHeight
+			// 	});
+			// };
+
+			// 푸터가 보이는지 감지
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					const nowInView = entry.isIntersecting;
+
+					// 상태 변화가 있을 때만 로그
+					if (footerInView !== nowInView) {
+						footerInView = nowInView;
+
+						if (nowInView) {
+							// console.log('[footer: enter] 푸터가 뷰포트에 진입했습니다. (intersectionRatio:', entry.intersectionRatio.toFixed(3), ')');
+							panel.classList.add('hide');
+							isHidden = true;
+							logSnapshot('footer-enter');
+						} else {
+							// console.log('[footer: leave] 푸터가 뷰포트에서 사라졌습니다. (intersectionRatio:', entry.intersectionRatio.toFixed(3), ')');
+							// “위로 스크롤 중”일 때만 다시 표시 (아래 스크롤 리스너에서 처리)
+							logSnapshot('footer-leave');
+						}
+					}
+				});
+			}, {
+				root: null,
+				threshold: 0.05 // footer가 5%만 보여도 감지
+			});
+
+			observer.observe(footer);
+
+			// 스크롤 방향 감지 (위로 스크롤 시 다시 표시)
+			window.addEventListener('scroll', () => {
+				const currentY = window.scrollY;
+				const scrollingUp = currentY < lastScrollY;
+
+				if (scrollingUp && isHidden && footerInView === false) {
+					panel.classList.remove('hide');
+					isHidden = false;
+					console.log('[panel: show] 위로 스크롤했고 푸터가 사라져서 패널을 다시 표시합니다.');
+					logSnapshot('panel-show');
+				}
+
+				if (!scrollingUp && !isHidden && footerInView === true) {
+					// 참고: 실제 숨김은 IO 콜백에서 처리됨(여긴 로그만)
+					// console.log('[panel: will-hide] 아래로 스크롤 중이며 푸터가 보이므로 패널 숨김 예정.');
+				}
+
+				lastScrollY = currentY;
+			}, { passive: true });
+
+			// 초기 상태 한 번 찍고 시작(원하면 주석 해제)
+			// logSnapshot('init');
+		},
 
 	};
 

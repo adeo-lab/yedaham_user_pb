@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>상품 한눈에 비교하기 - 상품안내​ - 예다함</title>
+	
+	<link rel="shortcut icon" href="../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.front.sub.ltd.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.corp.css">
+	<link rel="stylesheet" href="../../../assets/front/css/page.main.ltd.css">
+
+	<script src="../../../assets/front/js/ui.include.js"></script>
+	<script src="../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../assets/front/js/page.js"></script>
+
+	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
+
+	<style>
+		.table-wrap {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 스크롤 영역 */
+.table-scroll {
+  overflow: auto;
+  max-height: 300px; /* 세로 스크롤 높이 */
+  background: #fff;
+}
+
+/* 테이블 기본 */
+.fixed-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 900px; /* 가로 스크롤 확인용 */
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+/* 헤더 고정 */
+.fixed-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f3f6fa;
+  color: #222;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+  z-index: 3;
+}
+
+/* 본문 셀 스타일 */
+.fixed-table th,
+.fixed-table td {
+  padding: 40px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+  white-space: nowrap;
+}
+
+/* 왼쪽 고정 열 */
+.fixed-table th.col-fixed {
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background: #f9fafc;
+  font-weight: 600;
+  border-right: 1px solid #ddd;
+}
+
+/* tbody 내의 고정 th는 색 살짝 다르게 */
+.fixed-table tbody th.col-fixed {
+  background: #fafbfc;
+}
+
+/* Hover 강조 */
+.fixed-table tbody tr:hover td {
+  background: #f7faff;
+}
+
+/* 스크롤바 커스터마이즈 */
+.table-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.table-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+.fixed-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f3f6fa;
+  border-bottom: 2px solid #ccc;
+  z-index: 5; /* 헤더를 맨 위로 */
+}
+
+.fixed-table th.col-fixed {
+  position: sticky;
+  left: 0;
+  background: #f9fafc;
+  border-right: 1px solid #ddd;
+  z-index: 6; /* 헤더보다 더 위로 */
+}
+
+/* tbody 내 col-fixed는 헤더 아래로 */
+.fixed-table tbody th.col-fixed {
+  z-index: 4;
+}
+
+.fixed-table {
+  width: 100%;
+  min-width: 1200px; /* 💡 여기를 늘리면 바로 가로 스크롤 생김 */
+}
+</style>
+</head>
+<body class="home">
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="page-login">
+				<div class="title-inner-bx">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">상품 한눈에 비교하기</h2>
+						</div>
+					</div>
+					<div class="page-body">
+						<div class="button-display">
+							<span class="button-area">
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('cardProductCompair')"><span class="btn-text">상품 한눈에 비교하기</span></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 헤더 영역 -->
+		<footer id="footer"></footer>
+		<!-- //헤더 영역 -->
+	</div>
+
+	<!-- contentPopup -->
+	<div class="content-popup active" data-popup="cardProductCompair">
+		<div class="popup-wrap p-comparison">
+			<div class="popup-header">
+				<p class="popup-subject">
+					상품 한눈에 비교하기
+
+					<!-- 1104 작업 -->
+					<label class="chk-diff">
+						<input type="checkbox" class="chk-input" />
+						<span class="chk-text">차이점만 보기</span>
+					</label>
+					<!-- //1104 작업 -->
+				</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+					<div class="product-compare">
+						<div class="table-wrap">
+							<div class="table-scroll">
+								<table class="fixed-table">
+								<thead>
+									<tr>
+									<th class="col-fixed">구분</th>
+									<th>제목 1</th>
+									<th>제목 2</th>
+									<th>제목 3</th>
+									<th>제목 4</th>
+									<th>제목 5</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<th class="col-fixed">A</th>
+									<td>내용 A-1</td>
+									<td>내용 A-2</td>
+									<td>내용 A-3</td>
+									<td>내용 A-4</td>
+									<td>내용 A-5</td>
+									</tr>
+									<tr>
+									<th class="col-fixed">B</th>
+									<td>내용 B-1</td>
+									<td>내용 B-2</td>
+									<td>내용 B-3</td>
+									<td>내용 B-4</td>
+									<td>내용 B-5</td>
+									</tr>
+									<tr>
+									<th class="col-fixed">C</th>
+									<td>내용 C-1</td>
+									<td>내용 C-2</td>
+									<td>내용 C-3</td>
+									<td>내용 C-4</td>
+									<td>내용 C-5</td>
+									</tr>
+									<tr>
+									<th class="col-fixed">D</th>
+									<td>내용 D-1</td>
+									<td>내용 D-2</td>
+									<td>내용 D-3</td>
+									<td>내용 D-4</td>
+									<td>내용 D-5</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+							</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contentPopup -->
+	
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('cardProductCompair');
+		});
+	</script>
+
+	<script>
+	</script>
+</body>
+</html>
