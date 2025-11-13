@@ -1267,11 +1267,11 @@ var uiCommon = (function() {
 							// console.log('[footer: enter] 푸터가 뷰포트에 진입했습니다. (intersectionRatio:', entry.intersectionRatio.toFixed(3), ')');
 							panel.classList.add('hide');
 							isHidden = true;
-							logSnapshot('footer-enter');
+							// logSnapshot('footer-enter');
 						} else {
 							// console.log('[footer: leave] 푸터가 뷰포트에서 사라졌습니다. (intersectionRatio:', entry.intersectionRatio.toFixed(3), ')');
 							// “위로 스크롤 중”일 때만 다시 표시 (아래 스크롤 리스너에서 처리)
-							logSnapshot('footer-leave');
+							// logSnapshot('footer-leave');
 						}
 					}
 				});
