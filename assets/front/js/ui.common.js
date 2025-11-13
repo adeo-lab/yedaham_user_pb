@@ -1238,6 +1238,8 @@ var uiCommon = (function() {
 			const footer = document.querySelector('#footer'); 
 			if (!panel || !footer) return;
 
+			if (!window.matchMedia("(max-width: 1023px)").matches) return;
+
 			let lastScrollY   = window.scrollY;
 			let isHidden      = false;
 			let footerInView  = null; // null(미정) → true(진입) / false(이탈)
@@ -1290,8 +1292,8 @@ var uiCommon = (function() {
 				if (scrollingUp && isHidden && footerInView === false) {
 					panel.classList.remove('hide');
 					isHidden = false;
-					console.log('[panel: show] 위로 스크롤했고 푸터가 사라져서 패널을 다시 표시합니다.');
-					logSnapshot('panel-show');
+					// console.log('[panel: show] 위로 스크롤했고 푸터가 사라져서 패널을 다시 표시합니다.');
+					// logSnapshot('panel-show');
 				}
 
 				if (!scrollingUp && !isHidden && footerInView === true) {
