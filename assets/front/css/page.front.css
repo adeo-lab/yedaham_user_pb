@@ -7216,6 +7216,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .membership-list ul {column-gap: 16px; row-gap: 16px;}
   .home .membership-list li {width: calc(50% - 8px);}
+  .home .membership-list li.first {width: 100%;}
   .home .membership-list li .in-bx .thum {height: 120px;}
   .home .membership-list li.first .in-bx .thum.no-img {height: 200px;}
   .home .membership-list li .in-bx .cont {padding: 12px 16px 20px 16px; text-align: center; box-sizing: border-box;}
@@ -7660,7 +7661,30 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .data-board .nodata-wrap .para {display: inline-flex; align-items: center; gap: 10px; font-size: 22px; line-height: 1.5; color: #444; text-align: center;}
 .home .data-board .nodata-wrap .para::before {content: ''; display: block; width: 20px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10Z' fill='%23D7D7D7'/%3E%3Cpath d='M12.6338 6.23438C12.9462 5.92195 13.4532 5.92196 13.7656 6.23438C14.0779 6.54675 14.0779 7.05283 13.7656 7.36523L11.1309 10L13.7656 12.6348C14.078 12.9472 14.0781 13.4542 13.7656 13.7666C13.4532 14.0789 12.9462 14.079 12.6338 13.7666L9.99902 11.1309L7.36523 13.7666C7.05284 14.0787 6.54671 14.0788 6.23438 13.7666C5.92195 13.4542 5.92196 12.9472 6.23438 12.6348L8.86816 10L6.23438 7.36523C5.92207 7.05282 5.92205 6.54676 6.23438 6.23438C6.54677 5.922 7.05281 5.92206 7.36523 6.23438L9.99902 8.86816L12.6338 6.23438Z' fill='white'/%3E%3C/svg%3E");;}
 
-/*  */
+/* 목록화면 슬라이드 */
+.home .board-bnr-list {position: relative; border-radius: 24px;}
+.home .board-bnr-list .bnr-list-wrap {overflow: hidden; border-radius: 24px;}
+.home .board-bnr-list .bnr-list .list-item {overflow: hidden; border-radius: 24px;}
+.home .board-bnr-list:has(.single-slide) .swiper-control {display: none;}
+.home .board-bnr-list .swiper-control .swiper-pagination {bottom: 16px; left: 24px; text-align: center;}
+.home .board-bnr-list .swiper-control .swiper-pagination .swiper-pagination-bullet {width: 6px; height: 6px; border-radius: 6px; background-color: rgba(19, 21, 23, 0.40); opacity: 1;}
+.home .board-bnr-list .swiper-control .swiper-pagination .swiper-pagination-bullet:first-child {margin-left: 0;}
+.home .board-bnr-list .swiper-control .swiper-pagination .swiper-pagination-bullet-active {width: 24px;}
+.home .board-bnr-list .swiper-control .swiper-button-prev,
+.home .board-bnr-list .swiper-control .swiper-button-next {display: none;}
+
+@media (max-width: 1023px) {
+  .home .board-bnr-list .bnr-list .list-item .img-mo {overflow: hidden; aspect-ratio: 328 / 200;} 
+  .home .board-bnr-list .bnr-list .list-item .img-mo img {display: block; width: 100%; height: 100%; object-fit: cover;} 
+  .home .board-bnr-list .swiper-control .swiper-pagination {text-align: left;}
+  .home .board-bnr-list .swiper-control .swiper-button-prev,
+  .home .board-bnr-list .swiper-control .swiper-button-next {top: calc(50% - 12px); width: 24px; height: 24px; border: 0.75px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; border-radius: 100%; background-color: #fff; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='8' viewBox='0 0 5 8' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.40374 0.124146C4.26519 -0.0297966 4.02808 -0.0422807 3.87414 0.0962611L1.99914 1.78367L0.124144 3.47108C0.0451258 3.54219 3.1795e-06 3.6435 3.22846e-07 3.74981C-2.53381e-06 3.85611 0.0451144 3.95742 0.124129 4.02854L3.87413 7.40372C4.02806 7.54228 4.26517 7.5298 4.40372 7.37587C4.54228 7.22193 4.5298 6.98483 4.37587 6.84628L0.935562 3.74983L4.37585 0.653735C4.5298 0.515193 4.54228 0.278088 4.40374 0.124146Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: 50%;}
+  .home .board-bnr-list .swiper-control .swiper-button-prev {left: -12px;}
+  .home .board-bnr-list .swiper-control .swiper-button-next {right: -12px; transform: rotate(180deg);}
+
+}
+
+/* bottom-panel */
 .home .bottom-panel {
   /* transition: transform 0.4s ease, opacity 0.4s ease; */
   /* transition: transform 0.4s ease, opacity 0.4s ease; */
