@@ -30,6 +30,7 @@
 
 ********************************************************************************************************************************/
 .corp .quick-menu {position: fixed; top: auto; right: 30px; bottom: -30px; left: auto; z-index: 100; transition: all 0.4s ease;}
+.corp .quick-menu:not(:has(.btn-yac)) {bottom: 30px;}
 .corp .quick-menu.show {bottom: 40px;}
 /* .quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center; row-gap: 16px;} */
 .corp .quick-menu .btn-yac {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 8px; width: 60px; height: 100px; background-color: #4458B0; border-radius: 30px;}
@@ -45,8 +46,8 @@
 .corp .quick-menu.show .btn-to-top {opacity: 1; transform: translateY(0); pointer-events: auto;} 
 
 /* 메인스크롤 */
-.corp .quick-menu.main-quick-menu {bottom: 20px; transition: all 0.3s ease;}
-.corp .quick-menu.main-quick-menu.show {bottom: 20px;}
+.corp .quick-menu.main-quick-menu {bottom: 30px; transition: all 0.3s ease;}
+.corp .quick-menu.main-quick-menu.show {bottom: 30px;}
 .corp .quick-menu.main-quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center; row-gap: 16px;}
 .corp .quick-menu.main-quick-menu .btn-scroll,
 .corp .quick-menu.main-quick-menu .btn-to-top {position: absolute; transition: all 0.3s ease;}
@@ -59,6 +60,7 @@
 
 @media (max-width: 1023px) {
     .corp .quick-menu {right: 10px; bottom: -50px;}
+    .corp .quick-menu:not(:has(.btn-yac)) {bottom: 10px;}
     .corp .quick-menu.show {bottom: 30px;}
     .corp .quick-menu .quick-wrap {align-items: flex-end;}
     .corp .quick-menu .btn-yac {height: 60px; border-radius: 100%;}
@@ -67,7 +69,9 @@
 
     /* 메인스크롤 */
     .corp .quick-menu.main-quick-menu {right: 10px; bottom: 80px;}
+    .corp .quick-menu.main-quick-menu:not(:has(.btn-yac)) {bottom: 10px;}
     .corp .quick-menu.main-quick-menu.show {bottom: 80px;}
+    .corp .quick-menu.main-quick-menu.show:not(:has(.btn-yac)) {bottom: 10px;}
 }
 
 
