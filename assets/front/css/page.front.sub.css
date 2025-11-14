@@ -1377,7 +1377,7 @@
 
 .grid-row {
   display: grid;
-  grid-template-columns: 150px repeat(4, 1fr); /* 왼쪽 고정 + 4열 */
+  grid-template-columns: 150px repeat(3, 1fr); /* 왼쪽 고정 + 4열 */
   min-width: 800px; /* 가로 스크롤 발생용 */
 }
 
