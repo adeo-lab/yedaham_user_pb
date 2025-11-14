@@ -279,7 +279,7 @@
 								<input type="checkbox" name="checkbox" id="checkbox" class="form-elem">
 								<span class="form-text">(필수) 개인정보 수집 및 이용에 동의합니다.</span>
 							</label>
-							<a href="#" class="btn-view-detail">자세히 보기</a>
+							<a href="#" class="btn-view-detail" onclick="uiCommon.popup.popupOpen('contentTermsUse')">자세히 보기</a>
 						</div>
 						<div style="max-width: 312px; height: 86px; background: #ddd; margin: 0 auto;">
 							<p style="line-height: 86px; text-align: center;">reCAPCHA</p>
@@ -297,11 +297,64 @@
 	</div>
 	<!-- //contentPopup -->
 
+	<!-- contentPopup -->
+	<div class="content-popup" data-popup="contentTermsUse">
+		<div class="popup-wrap">
+			<div class="popup-header">
+				<p class="popup-subject">개인정보 처리 동의 및 안내</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+					<div class="terms-display">
+						<p class="terms-title">개인정보 수집 및 이용 동의​</p>
+						<div class="terms-content">
+							<div class="order-list-n">
+								<p class="s-tit"><span>가.</span>개인정보 수집, 이용 목적​</p>
+								<ul>
+									<li>본인여부확인 및 상담 업무​</li>
+								</ul>
+
+								<p class="s-tit"><span>나.</span>수집하는 개인정보 항목</p>
+								<ul>
+									<li>이름, 휴대폰 번호, 이메일</li>
+								</ul>
+
+								<p class="s-tit"><span>다.</span>개인정보 보유 및 이용기간</p>
+								<ul>
+									<li>내용 작성일로부터 ３년</li>
+								</ul>
+
+								<p class="tx-imp01">
+									개인정보 수집 및 이용에 대한 동의를 거부할 수 있으나, 동의 거부 시 상담이 불가할 수 있습니다.
+								</p>
+							</div>
+							<div class="order-list-n boxed">
+								<p class="terms-title">개인정보 위탁 안내</p>
+								<p class="s-tit"><span>가.</span>개인정보 처리의 위탁</p>
+								<ul>
+									<li>위탁받은 업체 : ㈜유베이스</li>
+									<li>위탁하는 업체 : 상담업무</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="button-area">
+					<a href="#" class="btn-popup">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contentPopup -->
+
 	<script stype="text/javascript">
 		// 온로드 시 활성화
-		document.addEventListener('DOMContentLoaded', function() {
-			uiCommon.popup.popupOpen('contentJoinAsk');
-		});
+		// document.addEventListener('DOMContentLoaded', function() {
+		// 	uiCommon.popup.popupOpen('contentJoinAsk');
+		// });
 	</script>
 </body>
 </html>
