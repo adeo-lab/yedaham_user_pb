@@ -154,7 +154,7 @@
     .home .quick-menu .quick-list .quick-item {padding: 14px 20px; background-color: #D17B47; border-radius: 60px;}
     .home .quick-menu .quick-list .quick-text {flex-direction: row; column-gap: 12px; color: #fff;}
     .home .quick-menu .quick-list .quick-text::before {width: 32px; height: 32px; box-shadow: none;}
-    .home .quick-menu.active .quick-list {display: flex; opacity: 1; pointer-events: auto;}
+    .home .quick-menu.active .quick-list {display: flex; opacity: 1; pointer-events: auto; transform: translateY(0);}
     .home .quick-menu .quick-toggle {display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #D17B47; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); cursor: pointer; transition: all 0.3s ease; pointer-events: auto;}
     .home .quick-menu .quick-toggle .icon-plus {transition: transform 0.4s ease; transform-origin: center;}
     .home .quick-menu.active .quick-toggle {transform: rotate(45deg);}
