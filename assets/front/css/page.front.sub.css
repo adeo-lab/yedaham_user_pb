@@ -1253,7 +1253,7 @@
 .table-scroll-wrap::before {z-index: 1; background-color: #fafafa;}
 .table-scroll-wrap::after {left: auto; right: 15px; background-color: #ececec;}
 
-/* .compare-data-table .data-table {width: 100%; min-width: 648px; border-collapse: separate; border-spacing: 0; table-layout: fixed;}
+.compare-data-table .data-table {width: 100%; min-width: 648px; border-collapse: separate; border-spacing: 0; table-layout: fixed;}
 .compare-data-table .data-table th.col-fixed { position: sticky; left: 0; z-index: 3; width: 80px; padding: 0; font-weight: 600; }
 .compare-data-table .data-table thead {transition: transform 0.35s ease;}
 .compare-data-table .data-table thead th { position: sticky; top: 0; z-index: 4; border-top: 2px solid #fff; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
@@ -1314,10 +1314,10 @@
     .compare-data-table .data-head .button-area > button {height: 40px; font-size: 15px; font-weight: 400;}
 
     .compare-data-table .flag {right: 11px; width: 23px; height: auto;}
-} */
+}
 
 
-/* .compare-data-table .data-table {width: 100%; min-width: 648px; border-collapse: separate; border-spacing: 0; table-layout: fixed;}
+.compare-data-table .data-table {width: 100%; min-width: 648px; border-collapse: separate; border-spacing: 0; table-layout: fixed;}
 .compare-data-table .data-table .th.col-fixed {flex-shrink: 0; position: sticky; left: 0; z-index: 3; width: 80px; padding: 0; font-weight: 600; }
 .compare-data-table .data-table .thead {transition: transform 0.35s ease;}
 .compare-data-table .data-table .thead .tr {display: flex;}
@@ -1354,59 +1354,98 @@
 
 .compare-data-table .product-01 {background-color: #fafafa;}
 .compare-data-table .product-02 {background-color: #f3f3f3;}
-.compare-data-table .product-03 {background-color: #ececec;} */
+.compare-data-table .product-03 {background-color: #ececec;}
 
-.grid-wrap {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  border: 1px solid #ddd;
-  width: 100%;
-  overflow: hidden;
+
+/*  */
+.compare-data-grid .grid-wrap { display: grid; grid-template-rows: auto 1fr; width: 100%; }
+.compare-data-grid .grid-row { display: grid; grid-template-columns: 80px repeat(3, 1fr); min-width: 680px; }
+.compare-data-grid .grid-scroll {overflow: auto; max-height: 600px;}
+.compare-data-grid .grid-scroll-wrap {position: relative; padding: 0 40px;}
+/* .grid-scroll-wrap::before,
+.grid-scroll-wrap::after {content: ''; display: block; flex-shrink: 0; position: absolute; top: 0; left: 0; bottom: 0; width: 40px; height: 100%;}
+.grid-scroll-wrap::before {z-index: 1; background-color: #fafafa;}
+.grid-scroll-wrap::after {left: auto; right: 0; background-color: #ececec;} */
+
+
+
+.compare-data-grid .grid-header {position: sticky; top: 0; z-index: 4;}
+.compare-data-grid .grid-header .grid-cell {position: sticky; top: 0; z-index: 4; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
+.compare-data-grid .grid-header .grid-cell.sticky-col {position: sticky; left: 0; z-index: 6;}
+/* .grid-body .grid-cell.sticky-col {position: sticky ; left: 0; z-index: 3;} */
+
+.compare-data-grid .sticky-col {background-color: #fafafa;}
+.compare-data-grid .product-01 {background-color: #fafafa;}
+.compare-data-grid .product-02 {background-color: #f3f3f3;}
+.compare-data-grid .product-03 {background-color: #ececec;}
+
+
+.compare-data-grid .grid-header .product-03::after {content: ''; display: block; width: 30px; height: 40px; border-top: 1px solid red; background-color: lime; position: absolute; top: -3px; left: 0;;}
+
+
+.grid-header .data-head {display: flex; flex-direction: column;  gap: 12px; position: relative; padding: 24px 32px; text-align: left;}
+.grid-header .data-head .data-info {display: flex; flex-direction: column;}
+.grid-header .data-head .data-info .title {flex-shrink: 0; display: flex; align-items: center; gap: 8px; font-size: 32px; font-weight: 600; line-height: 1.3; color: #232527;}
+.grid-header .data-head .data-info .title .btn-del {display: none;}
+.grid-header .data-head .data-info .subtitle {font-size: 17px; font-weight: 600; line-height: 1.3; color: #777; transition: opacity 0.3s ease, max-height 0.3s ease;}
+.grid-header .data-head .data-info .subtitle .wbr {display: block;}
+.grid-header .data-head .data-info .num {flex-shrink: 0; padding-top: 24px; font-size: 24px; font-weight: 600; line-height: 1.3; color: #E94543;}
+.grid-header .data-head .button-area {display: flex; gap: 16px;}
+.grid-header .data-head .button-area > button {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; height: 48px; border-radius: 8px; font-size: 19px; font-weight: 600; line-height: 1.5;}
+.grid-header .data-head .button-area .btn-type1 {box-shadow: inset 0 0 0 1px rgba(19, 21, 23, 0.30); background-color: #fff; color: #232527;}
+.grid-header .data-head .button-area .btn-type2 {background-color: #D17B47; color: #fff;}
+.grid-header .flag {position: absolute; top: -3px; right: 24.5px; width: 30px; height: 45px;}
+
+.grid-header.collapsed .data-info {flex-direction: row; gap: 12px; align-items: baseline;}
+.grid-header.collapsed .data-head .data-info .subtitle {flex: 0; opacity: 0; max-height: 0; margin: 0; overflow: hidden; transition: opacity 0.3s ease, max-height 0.3s ease;}
+.grid-header.collapsed .data-head .data-info .num {font-size: 19px;}
+.grid-header.collapsed .data-head .button-area {padding-top: 4px;}
+.grid-header.collapsed .data-head .button-area > button {height: 40px; font-size: 17px; font-weight: 400;}
+
+.compare-data-grid .grid-body .grid-row {position: relative;}
+
+
+/* .compare-data-grid .grid-body .grid-row:hover .grid-cell.sticky-col {position: static; z-index: 0;} */
+
+
+.grid-body .grid-cell.sticky-col {display: flex; align-items: center; padding: 12px 0;}
+.grid-body .grid-cell.sticky-col .icon {display: flex; width: 48px; height: 48px; margin: 0 auto; background-position: center; background-size: cover;}
+.grid-body .grid-row:nth-child(1) .grid-cell {border-top: 0 none;}
+.grid-body .grid-cell {padding: 24px 32px; border-top: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; font-size: 17px; line-height: 1.5; color: #232527;}
+
+@media (hover: hover) {
+    .compare-data-grid .grid-body .grid-row:hover::after {content: ''; display: block; position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff; }
+    .compare-data-grid .grid-body .grid-row:hover .grid-cell .icon,
+    .compare-data-grid .grid-body .grid-row:hover .grid-cell .para {position: relative; z-index: 3;}
 }
 
-.grid-header,
-.grid-body {
-  display: block;
-  overflow-x: auto;
-}
+@media (max-width: 1023px) {
+    .grid-scroll-wrap {padding: 0 16px;}
+    /* .grid-scroll-wrap::before,
+    .grid-scroll-wrap::after {width: 16px;} */
+    .compare-data-grid .grid-row { grid-template-columns: 60px repeat(3, 1fr); /* 왼쪽 고정 + 4열 */ }
+    .compare-data-grid .grid-header .data-head {padding: 20px 16px;}
+    .compare-data-grid .grid-header .grid-cell.sticky-col,
+    .compare-data-grid .grid-body .grid-cell.sticky-col {width: 60px;}
+    .compare-data-grid .grid-body .grid-cell.sticky-col .icon {width: 36px; height: 36px;}
+    .compare-data-grid .grid-body .grid-cell.sticky-col {padding: 12px 0; font-size: 15px;}
+    .compare-data-grid .grid-body .grid-cell {padding: 12px 16px; font-size: 15px;}
+    .compare-data-grid .grid-header.collapsed .data-head {padding: 16px;}
+    .compare-data-grid .grid-header.collapsed .data-info {flex-direction: column; gap: 2px;}
+    .compare-data-grid .grid-header.collapsed .data-head .data-info .subtitle {display: none;}
+    .compare-data-grid .grid-header.collapsed .data-head .data-info .num {padding: 0;}
+    .compare-data-grid .grid-header.collapsed .data-head .button-area {padding: 0;}
+    .compare-data-grid .grid-header.collapsed .data-head .button-area > button {height: 32px; font-size: 14px;}
+    .compare-data-grid .grid-header .data-head .data-info .title {font-size: 24px;}
+    .compare-data-grid .grid-header .data-head .data-info .title .btn-del {display: flex; width: 20px; height: 20px; border-radius: 20px; background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66797 9.99992C1.66797 14.6023 5.39893 18.3333 10.0013 18.3333V18.3333C14.6037 18.3333 18.3346 14.6023 18.3346 9.99992V9.99992C18.3346 5.39755 14.6037 1.66659 10.0013 1.66659V1.66659C5.39893 1.66659 1.66797 5.39755 1.66797 9.99992V9.99992Z' fill='%23BFBFBF'/%3E%3Cpath d='M12.1924 6.86255C12.4527 6.6022 12.8744 6.60222 13.1348 6.86255C13.3951 7.12289 13.3951 7.54457 13.1348 7.80493L10.9385 10.0002L13.1348 12.1965C13.3951 12.4569 13.3951 12.8786 13.1348 13.1389C12.8744 13.3992 12.4527 13.3993 12.1924 13.1389L9.99707 10.9426L7.80176 13.1389C7.54145 13.3992 7.11974 13.3992 6.85938 13.1389C6.59902 12.8786 6.59903 12.4569 6.85938 12.1965L9.05469 10.0002L6.85938 7.80493C6.59903 7.54457 6.59902 7.12289 6.85938 6.86255C7.11974 6.60227 7.54144 6.60221 7.80176 6.86255L9.99707 9.05786L12.1924 6.86255Z' fill='white'/%3E%3C/svg%3E%0A");}
+    .compare-data-grid .grid-header .data-head .data-info .title .btn-del .btn-text {overflow: hidden; text-overflow: hidden; text-indent: -9999px;}
+    .compare-data-grid .grid-header .data-head .data-info .subtitle {font-size: 15px;}
+    .compare-data-grid .grid-header .data-head .data-info .subtitle .wbr {display: inline;}
+    .compare-data-grid .grid-header .data-head .data-info .num {font-size: 20px;}
+    .compare-data-grid .grid-header .data-head .button-area {gap: 8px;}
+    .compare-data-grid .grid-header .data-head .button-area > button {height: 40px; font-size: 15px; font-weight: 400;}
+    .compare-data-grid .grid-header .flag {right: 11px; width: 23px; height: auto;}
 
-.grid-body {
-  max-height: 300px; /* 세로 스크롤 영역 */
-  overflow-y: auto;
-}
 
-.grid-row {
-  display: grid;
-  grid-template-columns: 150px repeat(3, 1fr); /* 왼쪽 고정 + 4열 */
-  min-width: 800px; /* 가로 스크롤 발생용 */
-}
-
-.grid-cell {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
-  background: #fff;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.grid-cell:last-child {
-  border-right: none;
-}
-
-/* 상단 고정 */
-.grid-header .grid-row {
-  position: sticky;
-  top: 0;
-  background: #f5f7fa;
-  z-index: 2;
-}
-
-/* 왼쪽 고정 */
-.sticky-col {
-  position: sticky;
-  left: 0;
-  background: #f9fafc;
-  z-index: 3;
-  border-right: 1px solid #ddd;
+    .compare-data-grid .grid-body .grid-cell.sticky-col {position: sticky ; left: 0; z-index: 3;}
 }
