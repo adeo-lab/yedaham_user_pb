@@ -1,134 +1,97 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>YAC 신고 등록 - 회사</title>
-	
-	<link rel="shortcut icon" href="../../../../assets/front/images/common/favicon.ico">
-	<link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.layout.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.front.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.front.corp.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.corp.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.front.ltd.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.ltd.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.main.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.main.corp.css">
-	<link rel="stylesheet" href="../../../../assets/front/css/page.main.ltd.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAC 신고 등록</title>
+  </head>
+  <body style="margin:0; padding:0; background-color:rgba(255, 245, 237, 0.8);">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td align="center" style="padding:40px 16px;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:700px; background-color:#ffffff; border-radius:24px; overflow:hidden;">
+            <!-- 로고 -->
+            <tr>
+              <td align="center" style="padding:64px 0 64px;">
+                <img src="../../../../assets/front/images/common/logo_mail.png" alt="예다함 로고" width="140" style="display:block;" />
+              </td>
+            </tr>
 
-	<script src="../../../../assets/front/js/ui.include_corp.js"></script>
-	<script src="../../../../assets/front/js/ui.common.js"></script>
-	<script src="../../../../assets/front/js/awesomplete.min.js"></script>
-	<script src="../../../../assets/front/js/swiper-bundle.min.js"></script>
-	<script src="../../../../assets/front/js/page.js"></script>
+            <!-- 타이틀 -->
+            <tr>
+              <td align="center" style="font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif; font-size:24px; font-weight:600; color:#222; line-height: 1.3; padding:0 32px 64px;">
+                운영자님, YAC 신고가 접수되었습니다
+              </td>
+            </tr>
 
-	<script src="../../../../assets/front/js/jquery-3.7.1.min.js"></script>
-	<script src="../../../../assets/front/js/jquery-ui.min.js"></script>
-</head>
-<body class="corp">
-	<!-- skip -->
-	<ul id="skipnav">
-		<li><a href="#container">본문 바로가기</a></li>
-		<li><a href="#footer">푸터 바로가기</a></li>
-	</ul>
-	<!-- //skip-->
-	<div id="wrap">
-		<!-- 헤더 영역 -->
-		<header id="header" class="header"></header>
-		<!-- //헤더 영역 -->
+            <!-- 본문 -->
+            <tr>
+              <td style="padding:0 32px;">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <!-- 신고 내용 -->
+                  <tr>
+                    <td style="font-size:19px; color:#232527; font-weight:600; padding-bottom: 16px;">신고 내용</td>
+                    <td style="font-size:17px; color:#777; text-align:right; padding-bottom: 16px;">2025.11.01 / 12:00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="background-color:#F5F5F7; border-radius:12px 12px 0 0; padding:24px 24px 0; font-size:17px; color:#444; line-height: 1.5;">
+                      <div style="font-size:24px; font-weight:600; color: #232527; line-height: 1.3; margin-bottom: 16px;">
+                        신고 등록 시 입력한 제목이 노출됩니다.
+                      </div>
+                      <div style="color:#555;">
+                        누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다. 누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다. 누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다. 누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다.
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="background-color:#F5F5F7; font-size:15px; color:#333; font-weight:600; padding:16px 24px;">
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan="2" style="border-radius:0 0 12px 12px;background-color:#F5F5F7; padding:0 24px 24px; color:#444; font-size:17px; line-height:1.5;">
+                        <!-- 첨부파일 -->
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td style="width:83px; font-size:17px; color:#232527; font-weight:600;">첨부파일</td>
+                            <td style="font-size:14px; color:#555;">
+                              <a href="#" style="display:inline-block; background:#fff; color:#232527; text-decoration:none; font-weight: 400; padding:12px; border-radius:4px; font-size:17px; font-family:Arial, sans-serif;border: 1px solid rgba(19, 21, 23, 0.20);"><span style="padding-right:8px; font-weight: 600;">증거사진.zip</span> 다운로드 <img src="../../../../assets/front/images/common/icon_download_mail.png" alt="다운로드" width="16" height="16" style="vertical-align:middle; margin-left:6px;"></a>
+                            </td>
+                          </tr>
+                        </table>
 
-		<!-- 컨테이너 영역 -->
-		<div class="container" id="container">
-			<div id="page" class="page-login">
-				<div class="title-inner-bx">
-					<div class="page-head">
-						<div class="title-inner-bx">
-							<h2 class="heading-l">YAC 신고 등록</h2>
-						</div>
-					</div>
-					<div class="page-body">
-						<div class="button-display">
-							<span class="button-area">
-								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentReport')"><span class="btn-text">YAC 신고 등록</span></a>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- //컨테이너 영역 -->
+                        <hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">
 
-		<!-- 퀵메뉴 -->
-		<div class="quick-menu"></div>
-		<!-- //퀵메뉴 -->
+                        <p style="margin:0; font-size:17px; color:#444; font-weight:600;">
+                          처리 결과 수신 메일 <span style="color:#444; font-weight:400; padding-left: 8px;">testuser@naver.com</span>
+                        </p>
+                    </td>
+                  </tr>
 
-		<!-- 푸터 영역 -->
-		<footer id="footer"></footer>
-		<!-- //푸터 영역 -->
-	</div>
+                  <!-- 버튼 -->
+                  <tr>
+                    <td colspan="2" align="center" style="padding:64px 0;">
+                        <span style="display:inline-block;background-color:#D17B47; padding:0 64px; border-radius:8px;">
+                          <a href="#" target="_blank" style="text-decoration:none;">
+                            <span style="display: inline-block; color:#fff; line-height: 56px; background: url('../../../assets/front/images/common/icon_arr_mail.png') no-repeat right 0 center; background-size: 20px 20px; padding-right: 24px;font-size:19px; font-weight:600;">예다함 홈페이지 바로가기</span>
+                          </a>
+                        </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-	<!-- contentPopup -->
-	<div class="content-popup p-report-wrap" data-popup="contentReport">
-		<div class="popup-wrap pop-report">
-			<div class="popup-header">
-				<div class="tp-logo">
-					<img src="../../../../assets/front/images/common/logo.png" alt="예다함" />
-				</div>
-			</div>
-			<div class="popup-body">
-				<div class="popup-contents">
-					<div class="cnt-report">
-						<div class="bx-tx01">운영자님, <span class="mob-db"></span>YAC 신고가 접수되었습니다</div>
-
-						<div class="bx-tx02">
-							<div class="tx-l">신고 내용</div>
-							<div class="tx-r">2025.11.01 / 12:00</div>
-						</div>
-						<div class="bx-tx03">
-							<dl>
-								<dt>신고 등록 시 입력한 제목이 노출됩니다.</dt>
-								<dd>
-									누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다. 누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다. 누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다. 누가, 언제, 어디서, 무엇을, 어떻게, 왜 신고 내용이 노출됩니다.
-								</dd>
-							</dl>
-							<div class="file-upload-result">
-								<div class="fil-upload-top">
-									<div class="tx-l">첨부파일</div>
-									<div>
-										<a class="file-name" href="#"><span class="file-txt">예다함_상조서비스_가이드1_첨부 파일명이 길어지면 줄 바꿈 되지 않…</span><span class="file-type">.pptx</span><span class="tx-r">다운로드</span></a>
-									</div>
-								</div>
-							</div>
-							<p class="bx-tx04"><span>처리 결과 수신 메일</span>&nbsp;&nbsp;testuser@naver.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="popup-footer">
-				<div class="button-area">
-					<a href="#" class="btn-go-home">
-						<span>예다함 홈페이지 바로가기</span>
-					</a>
-				</div>
-				<div class="btm-tx-copyright">
-					본 메일은 발신전용 메일이므로 회신이 되지 않습니다.<br/>
-					© 2025 The-K Yedaham. All rights reserved.
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //contentPopup -->
-
-	<script stype="text/javascript">
-		// 온로드 시 활성화
-		document.addEventListener('DOMContentLoaded', function() {
-			uiCommon.popup.popupOpen('contentReport');
-		});
-	</script>
-</body>
+            <!-- 푸터 -->
+            <tr>
+              <td align="center" style="font-size:14px; color:#777; padding-bottom:48px; font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif; line-height:1.5;">
+                본 메일은 발신전용 메일이므로 회신이 되지 않습니다.<br/>
+                © 2025 The-K Yedaham. All rights reserved.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
