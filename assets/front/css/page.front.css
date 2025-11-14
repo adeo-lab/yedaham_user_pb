@@ -6749,7 +6749,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .tab-display.style-c.tab-fixed.fixed .btn-mob-r {display: none;}
   .home .tab-display.tab-fixed.fixed .tab-list {width: 100%;}
 
-  .home .tab-display.style-c.tab-fixed.fixed {position: fixed;}
+  .home .tab-display.style-c.tab-fixed.fixed {position: fixed; z-index: 10;}
 
   .home .board-view .board-view-content .notice-tx {display: none;}
   .home .board-view .board-view-content .notice-tx + .board-content {margin-top: 0;}
@@ -6868,7 +6868,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l {font-size: 22px; /*column-gap: 0;*/}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l span.btn_more {width: 20px; height: 20px; background-size: 20px;}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q {width: 24px; height: 24px; background-size: 20px;}
-  .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer {left: -156px; bottom: 33px; width: 292px; height: 52px; font-size: 14px; z-index: 8;}
+  .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer {left: -156px; bottom: 33px; width: 292px; height: 52px; font-size: 14px; z-index: 9;}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M9.31738 2.11768C9.47359 1.96147 9.7266 1.96147 9.88281 2.11768C10.0388 2.2739 10.039 2.52695 9.88281 2.68311L6.56641 5.99951L9.88477 9.31787C10.0409 9.47405 10.0408 9.7271 9.88477 9.8833C9.72857 10.0395 9.47555 10.0394 9.31934 9.8833L6.00098 6.56494L2.68262 9.8833C2.52641 10.0395 2.2734 10.0395 2.11719 9.8833C1.96102 9.72709 1.961 9.47407 2.11719 9.31787L5.43555 5.99951L2.11914 2.68311C1.96297 2.52693 1.96303 2.27389 2.11914 2.11768C2.27536 1.96147 2.52837 1.96146 2.68457 2.11768L6.00098 5.43408L9.31738 2.11768Z' fill='white'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
