@@ -5641,7 +5641,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 .home .my-contract-status-detail .btn_q:hover span.q-layer { display: block !important; }
 .home .my-contract-status-detail .btn_q span.q-layer { display: none !important; }
-.home .my-contract-status-detail .in-cont01 .bx-tp .btn_q span.q-layer {position: absolute; bottom: 43px; left: -74px; display: block; width: 288px; height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 0 0 10px; background: #232527; border-radius: 4px; box-sizing: border-box;}
+.home .my-contract-status-detail .in-cont01 .bx-tp .btn_q span.q-layer {position: absolute; bottom: 43px; left: -74px; display: block; min-width: 288px; min-height: 54px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 10px; background: #232527; border-radius: 4px; box-sizing: border-box;}
 .home .my-contract-status-detail .in-cont01 .bx-tp .btn_q span.q-layer::after {
   content: '';
   position: absolute;
