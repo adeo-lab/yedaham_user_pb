@@ -5187,7 +5187,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-detail-wrap .card-top-area li {width: auto;}
   .home .card-detail-wrap .card-top-area li .in-bx .bx-r {display: none;}
 
-  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%; position: relative; padding-top: 236px;}
+  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%; position: relative; padding-top: 236px; box-sizing: border-box;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .popup-body {overflow: hidden;}
 
   .home .benefit-detail-wrap {position: relative;}
