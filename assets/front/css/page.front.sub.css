@@ -269,6 +269,12 @@
 .home .policy-tip-list .tooltip .tooltip-body .img {flex-shrink: 0;}
 .home .policy-tip-list .tooltip .tooltip-body .btn-tooltip-scroll {font-size: 15px; font-weight: 400; line-height: 1.5; color: #374BA3; text-decoration: underline;}
 .home .policy-tip-list .tooltip .tooltip-body .btn-tooltip-scroll:not(:only-child) {margin-top: 8px;}
+.home .policy-tip-list .tooltip .tooltip-body .table-wrap {margin-top: 8px;}
+.home .policy-tip-list .tooltip .tooltip-body .table-wrap table {width: 100%; table-layout: fixed; border-top: 1px solid rgba(19, 21, 23, 0.20);}
+.home .policy-tip-list .tooltip .tooltip-body .table-wrap table thead th {padding: 8px; font-weight: 600; font-size: 15px; color: #232527; background: #F7F6F5; border-left: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
+.home .policy-tip-list .tooltip .tooltip-body .table-wrap table tbody td {font-weight: 400; font-size: 15px; color: #444; line-height: 150%; padding: 4px 8px; border-left: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); text-align: center; box-sizing: border-box; word-break: break-all;}
+.home .policy-tip-list .tooltip .tooltip-body .table-wrap table thead th:first-child {border-left: none;}
+.home .policy-tip-list .tooltip .tooltip-body .table-wrap table tbody td:first-child {border-left: none;}
 
 .home .policy-list .section-head .button-area {display: flex;}
 .home .policy-list .section-head .btn-toggle-all {display: inline-flex; justify-content: center; align-items: center; height: 40px; padding: 0 24px; box-sizing: border-box; border-radius: 8px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.30);}
@@ -282,12 +288,53 @@
 .home .policy-list .accordion-list .accordion-item .accordion-head .accordion-subject .btn-text {text-align: left; word-break: keep-all;}
 .home .policy-list .accordion-list .accordion-item .accordion-head .accordion-subject .btn-text::before {content: counter(item-counter) ". ";}
 .home .policy-list .accordion-list .accordion-item .accordion-body {overflow: hidden; max-height: 0; transition: all 0.3s ease;}
+
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty01:not(:first-child),
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty01:not(:only-child) {padding-top: 8px;}
 .home .policy-list .accordion-list .accordion-item .order-list-num-ty01 {display: flex; flex-direction: column; row-gap: 8px; counter-reset: item-counter;}
-.home .policy-list .accordion-list .accordion-item .order-list-num-ty01 > .order-item {position: relative; display: flex; flex-direction: column; row-gap: 4px; padding-left: 24px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty01 > .order-item {position: relative; display: flex; flex-direction: column; padding-left: 24px; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
 .home .policy-list .accordion-list .accordion-item .order-list-num-ty01 > .order-item::before {display: inline-flex; counter-increment: item-counter; content: counter(item-counter); justify-content: center; align-items: center; position: absolute; top: 5px; left: 0; width: 14px; height: 14px; border: 1px solid #232527; box-sizing: border-box; border-radius: 50%; font-size: 12px; font-weight: 400; line-height: 14px; color: #232527; text-align: center;}
 .home .policy-list .accordion-list .accordion-item .order-list-num-ty02 {display: flex; flex-direction: column; counter-reset: item-counter;}
-.home .policy-list .accordion-list .accordion-item .order-list-num-ty02  .order-item {position: relative; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
-.home .policy-list .accordion-list .accordion-item .order-list-num-ty02  .order-item::before {display: inline-flex; counter-increment: item-counter; content: counter(item-counter)'.'; justify-content: center; align-items: center;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty02 .order-item {display: flex; gap: 4px; position: relative; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty02 .order-item::before {display: inline-flex; counter-increment: item-counter; content: counter(item-counter)'.'; align-self: baseline; justify-content: center;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty03 {display: flex; flex-direction: column; counter-reset: item-counter;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty03 .order-item {/*display: flex; gap: 4px;*/ position: relative; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty03 .order-item::before {display: inline-flex; counter-increment: item-counter; content: counter(item-counter)')'; justify-content: center; align-items: center;}
+
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty04 {}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty04 > .order-item {display: flex; flex-direction: column;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty04 .order-item > p {display: flex; gap: 4px;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty04 .order-item > p::before {content: attr(data-attr);}
+
+.home .policy-list .accordion-list .accordion-item .subject {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.home .policy-list .accordion-list .accordion-item .para {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
+.home .policy-list .accordion-list .accordion-item .dot-list {display: flex; flex-direction: column;}
+.home .policy-list .accordion-list .accordion-item .dot-list > li {position: relative; padding-left: 24px;}
+.home .policy-list .accordion-list .accordion-item .dot-list > li::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 24px; height: 24px; background-color: #232527; mask-repeat: no-repeat; mask-position: center; mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E");}
+.home .policy-list .accordion-list .accordion-item .link {text-decoration: underline;}
+.home .policy-list .accordion-list .accordion-item .astr {display: flex; gap: 4px;}
+.home .policy-list .accordion-list .accordion-item .astr::before {content: '*'; display: block;}
+
+
+.home .accordion-body .table-wrap table.cont-tb-ty01 {width: 100%; table-layout: fixed; border-top: 1px solid rgba(19, 21, 23, 0.20);}
+.home .accordion-body .table-wrap table.cont-tb-ty01 thead th {height: 48px; font-weight: 600; font-size: 17px; color: #232527; line-height: 48px; background: #F7F6F5; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
+.home .accordion-body .table-wrap table.cont-tb-ty01 thead th:last-child {border-right: none;}
+.home .accordion-body .table-wrap table.cont-tb-ty01 tbody th {border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
+.home .accordion-body .table-wrap table.cont-tb-ty01 tbody th:last-child {border-right: none;}
+.home .accordion-body .table-wrap table.cont-tb-ty01 tbody td {/*height: 48px;*/ font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 8px 12px; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); text-align: center; box-sizing: border-box;}
+.home .accordion-body .table-wrap table.cont-tb-ty01 tbody td.last {border-right: none;}
+.home .accordion-body .table-wrap table.cont-tb-ty01 tbody td.br-n {border-right: none;}
+.home .accordion-body .table-wrap .tb-btm-tx {font-weight: 400; font-size: 17px; color: #c87c1e; line-height: 150%; padding-top: 8px;}
+
+
+.home .policy-list .accordion-list .accordion-item .subject + .order-list-num-ty01 {padding: 0;}
+.home .policy-list .accordion-list .accordion-item .subject:not(:first-child) {padding: 16px 0 10px 0;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty01 .order-list-num-ty02 {padding-top: 4px;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty04 .order-list-num-ty03 {padding-left: 16px;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty01 .subject {padding: 24px 0 8px;}
+.home .policy-list .accordion-list .accordion-item .order-list-num-ty01 .table-wrap {padding: 8px 0;}
+.home .policy-list .accordion-list .accordion-item .accordion-body >.order-list-num-ty03 {row-gap: 8px;}
+
 
 /* 멤버십 카드 재발급 */
 .home .affiliate-list {display: flex; flex-direction: column; row-gap: 16px; margin-top: 32px;}
