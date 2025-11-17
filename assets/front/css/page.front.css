@@ -7125,7 +7125,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .content-popup .popup-wrap .popup-body {padding-bottom: 16px;}
   .home .content-popup .popup-wrap .popup-body .popup-contents {padding: 0 16px;}
   .home .content-popup .popup-wrap .popup-footer .button-area {gap: 12px; padding: 16px;}
-  .home .content-popup .popup-wrap .popup-footer .button-area > [class*=btn-] {height: 48px; font-size:17px; line-height: 48px;}
+  .home .content-popup .popup-wrap .popup-footer .button-area > [class*=btn-] {height: 48px; padding: 0; font-size:17px; line-height: 48px;}
   .home .content-popup .popup-wrap .popup-footer .button-area > [class*=btn-]:last-child {height: 48px; font-size:17px; line-height: 48px;}
   .home .content-popup .popup-wrap .popup-footer .button-area > [class*=btn-]:only-child {flex: 1 1 100%;}
   .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.cancel {flex: 1 1 30%; width: auto; min-width: 97px; padding: 0;}
