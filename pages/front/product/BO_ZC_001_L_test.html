@@ -29,7 +29,100 @@
 
 	<script src="../../../assets/front/js/jquery-3.7.1.min.js"></script>
 	<script src="../../../assets/front/js/jquery-ui.min.js"></script>
-</style>
+
+	<style>
+
+
+/* =========================
+   PC 기본 테이블 스타일
+   ========================= */
+.div-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* 헤더 고정 (PC) */
+.table-head {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #e9f0fa;
+}
+
+.table-head ul,
+.table-body ul {
+  display: grid;
+  grid-template-columns: 150px repeat(10, 200px);
+  min-width: 1200px;
+  border-bottom: 1px solid #d6dee9;
+}
+
+.table-body {
+  max-height: 300px;
+  overflow: auto;
+  position: relative;
+}
+
+.table-head li,
+.table-body li {
+  padding: 12px 16px;
+  border-right: 1px solid #e5e8ec;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* 왼쪽 고정 */
+.col-fixed {
+  position: sticky;
+  left: 0;
+  background: #f8fafc;
+  z-index: 11;
+  border-right: 1px solid #d6dee9;
+}
+
+/* hover */
+.table-body .row:hover li {
+  background: #f1f7ff;
+}
+
+/* =========================
+   📱 모바일 스타일
+   ========================= */
+@media (max-width: 768px) {
+
+  /* 스크롤바만 유지 */
+  .table-body {
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+
+  /* 헤더 고정 해제 */
+  .table-head {
+    position: static !important;
+  }
+
+  /* grid 컬럼 좁혀서 모바일에서 보기 좋게 */
+  .table-head ul,
+  .table-body ul {
+    grid-template-columns: 120px repeat(10, 150px);
+    min-width: 1000px; /* 가로 스크롤 유지 */
+  }
+
+  /* 왼쪽 sticky 열 해제 */
+  .col-fixed {
+    position: static !important;
+    background: #fff;
+    border-right: 1px solid #eee;
+  }
+}
+	</style>
 </head>
 <body class="home">
 	<!-- skip -->
@@ -91,142 +184,259 @@
 			</div>
 			<div class="popup-body">
 				<div class="popup-contents">
-					<div class="product-compare">
-						<!--  -->
-						<div class="compare-data-table">
-							<div class="table-scroll">
-								<table class="data-table">
-									<colgroup>
-										<col style="width: 80px">
-										<col>
-										<col>
-										<col>
-									</colgroup>
-									<thead>
-										<tr>
-											<th class="col-fixed"><span class="blind">구분</span></th>
-											<th class="col-product product-01">
-												<div class="data-head">
-													<div class="data-info">
-														<p class="title">윤슬 4호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
-														<p class="subtitle">필수 품목만 엄선한<br>  실속형 상품</p>
-														<p class="num">4,300,000원</p>
+					<div class="compare-data-table">
+							<!-- <div class="table-scroll">
+								<div class="table-scroll-wrap">
+									<div class="data-table">
+										<div class="thead">
+											<ul class="tr">
+												<li class="th col-fixed"><span class="blind">구분</span></li>
+												<li class="th col-product product-01">
+													<div class="data-head">
+														<div class="data-info">
+															<p class="title">윤슬 4호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
+															<p class="subtitle">필수 품목만 엄선한<br>  실속형 상품</p>
+															<p class="num">4,300,000원</p>
+														</div>
+														<span class="button-area">
+															<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
+															<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
+														</span>
 													</div>
-													<span class="button-area">
-														<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
-														<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
-													</span>
+													<span class="flag"><img src="../../../assets/front/images/common/flag_product01.png" alt="윤슬 4호"></span>
+												</li>
+												<li class="th col-product product-02">
+													<div class="data-head">
+														<div class="data-info">
+															<p class="title">윤슬 6호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
+															<p class="subtitle">주요 품목을 업그레이드한<br> 준프리미엄 상품</p>
+															<p class="num">5,800,000원</p>
+														</div>
+														<span class="button-area">
+															<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
+															<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
+														</span>
+													</div>
+													<span class="flag"><img src="../../../assets/front/images/common/flag_product02.png" alt="윤슬 4호"></span>
+												</li>
+												<li class="th col-product product-03">
+													<div class="data-head">
+														<div class="data-info">
+															<p class="title">노블 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
+															<p class="subtitle"><span class="wbr">차별화된 서비스를 제공하는</span> <span class="wbr">프리미엄 상품</span></p>
+															<p class="num">12,000,000원</p>
+														</div>
+														<span class="button-area">
+															<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
+															<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
+														</span>
+													</div>
+													<span class="flag"><img src="../../../assets/front/images/common/flag_product03.png" alt="노블"></span>
+												</li>
+											</ul>
+										</div>
+										<div class="tbody">
+											<ul class="tr">
+												<li class="th col-fixed">
+													<div class="hover"></div>
+													<span class="icon instructor"><span class="blind">장례지도사</span></span>
+												</li>
+												<li class="col-product product-01">장례진행 1명, 염습지원 1명</li>
+												<li class="col-product product-02">장례진행 1명, 염습지원 1명</li>
+												<li class="col-product product-03">장례진행 1명, 염습지원 1명</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed">
+													<span class="icon helper"><span class="blind">장례도우미</span></span>
+												</li>
+												<li class="col-product product-01">장례도우미 3명</li>
+												<li class="col-product product-02">장례도우미 5명</li>
+												<li class="col-product product-03">장례도우미 10명</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon coffin"><span class="blind">관</span></span></li>
+												<li class="col-product product-01">(화장) 오동나무 1단관<br> (매장) 오동나무 1단관<br> 옥스포드 관보 & 횡대 제공</li>
+												<li class="col-product product-02">(화장) 오동나무 1단관<br> (매장) 오동나무 1단관<br> 옥스포드 관보 & 횡대 제공</li>
+												<li class="col-product product-03">(화장) 향나무 2단관<br> (매장) 향나무 2단관<br> 옥스포드 관보 & 횡대 제공</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon box"><span class="blind">봉안함</span></span></li>
+												<li class="col-product product-01">(화장) 백자 운학 봉안함</li>
+												<li class="col-product product-02">(화장) 라스타 금전사 송학 봉안함</li>
+												<li class="col-product product-03">(화장) 백합 파스텔 봉안함(파랑/분홍)</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon clothes"><span class="blind">수의</span></span></li>
+												<li class="col-product product-01">수의 1호 (100% 장방사 대마)</li>
+												<li class="col-product product-02">수의 1호 (100% 장방사 대마)</li>
+												<li class="col-product product-03">고급 비단수의 (진결)</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon bus"><span class="blind">버스</span></span></li>
+												<li class="col-product product-01">버스/리무진 중 택 1<br> 왕복 200km 초과 시 1km당 1,800원</li>
+												<li class="col-product product-02">버스/리무진 모두 제공<br> 왕복 200km 초과 시 1km당 1,800원</li>
+												<li class="col-product product-03">버스/리무진 모두 제공<br> 전국 무료</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon vehicle"><span class="blind">고인이송차량</span></span></li>
+												<li class="col-product product-01">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</li>
+												<li class="col-product product-02">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</li>
+												<li class="col-product product-03">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon mourning"><span class="blind">상복</span></span></li>
+												<li class="col-product product-01">현대식 상복 남성/여성 각 3벌 대여<br> 전통식 상복 필요수량만큼 제공</li>
+												<li class="col-product product-02">현대식 상복 남성/여성 각 5벌 대여<br> 전통식 상복 필요수량만큼 제공</li>
+												<li class="col-product product-03">현대식 상복 남성/여성 각 10벌 대여<br> 전통식 상복 필요수량만큼 제공</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon decoration"><span class="blind">재단장식</span></span></li>
+												<li class="col-product product-01"></li>
+												<li class="col-product product-02">제단장식 3호/38만원 지급(택1)</li>
+												<li class="col-product product-03">제단장식 7호/110만원 지급(택1)</li>
+											</ul>
+											<ul class="tr">
+												<li class="th col-fixed"><span class="icon customs"><span class="blind">일회용​</span></span></li>
+												<li class="col-product product-01"></li>
+												<li class="col-product product-02">일회용품 300인분/<br> 상주편의용품 2세트(택1)</li>
+												<li class="col-product product-03">VIP 일회용품 600인분/<br> 상주편의용품 6세트(택1)</li>
+											</ul>
+										</div>
+									</ㄴ>
+								</div>
+							</div> -->
+						</div>
+
+						<div class="compare-data-grid">
+							<div class="grid-scroll">
+								<div class="grid-scroll-wrap">
+									<div class="grid-wrap">
+										<!-- 헤더 -->
+										<div class="grid-header">
+											<div class="grid-row">
+												<div div class="grid-cell sticky-col"><span class="blind">구분</span></div>
+												<div class="grid-cell product-01">
+													<div class="data-head">
+														<div class="data-info">
+															<p class="title">윤슬 4호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
+															<p class="subtitle">필수 품목만 엄선한<br>  실속형 상품</p>
+															<p class="num">4,300,000원</p>
+														</div>
+														<span class="button-area">
+															<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
+															<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
+														</span>
+													</div>
 													<span class="flag"><img src="../../../assets/front/images/common/flag_product01.png" alt="윤슬 4호"></span>
 												</div>
-											</th>
-											<th class="col-product product-02">
-												<div class="data-head">
-													<div class="data-info">
-														<p class="title">윤슬 6호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
-														<p class="subtitle">주요 품목을 업그레이드한<br> 준프리미엄 상품</p>
-														<p class="num">4,300,000원</p>
+												<div class="grid-cell product-02">
+													<div class="data-head">
+														<div class="data-info">
+															<p class="title">윤슬 6호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
+															<p class="subtitle">주요 품목을 업그레이드한<br> 준프리미엄 상품</p>
+															<p class="num">5,800,000원</p>
+														</div>
+														<span class="button-area">
+															<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
+															<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
+														</span>
 													</div>
-													<span class="button-area">
-														<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
-														<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
-													</span>
-													<span class="flag"><img src="../../../assets/front/images/common/flag_product02.png" alt="윤슬 4호"></span>
+													<span class="flag"><img src="../../../assets/front/images/common/flag_product02.png" alt="윤슬 6호"></span>
 												</div>
-											</th>
-											<th class="col-product product-03">
-												<div class="data-head">
-													<div class="data-info">
-														<p class="title">윤슬 4호 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
-														<p class="subtitle">차별화된 서비스를 제공하는<br> 프리미엄 상품</p>
-														<p class="num">4,300,000원</p>
+												<div class="grid-cell product-03">
+													<div class="data-head">
+														<div class="data-info">
+															<p class="title">노블 <button type="button" class="btn-del"><span class="btn-text">삭제</span></button></p>
+															<p class="subtitle"><span class="wbr">차별화된 서비스를 제공하는</span> <span class="wbr">프리미엄 상품</span></p>
+															<p class="num">12,000,000원</p>
+														</div>
+														<span class="button-area">
+															<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
+															<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
+														</span>
 													</div>
-													<span class="button-area">
-														<button type="button" class="btn-type1"><span class="btn-text">상담 신청</span></button>
-														<button type="button" class="btn-type2"><span class="btn-text">간편 가입</span></button>
-													</span>
-													<span class="flag"><img src="../../../assets/front/images/common/flag_product03.png" alt="윤슬 4호"></span>
+													<span class="flag"><img src="../../../assets/front/images/common/flag_product03.png" alt="노블"></span>
 												</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th class="col-fixed">
-												<span class="icon instructor"><span class="blind">장례지도사</span></span>
-											</th>
-											<td class="col-product product-01">장례진행 1명, 염습지원 1명</td>
-											<td class="col-product product-02">장례진행 1명, 염습지원 1명</td>
-											<td class="col-product product-03">장례진행 1명, 염습지원 1명</td>
-										</tr>
-										<tr>
-											<th class="col-fixed">
-												<span class="icon helper"><span class="blind">장례도우미</span></span>
-											</th>
-											<td class="col-product product-01">장례도우미 3명</td>
-											<td class="col-product product-02">장례도우미 5명</td>
-											<td class="col-product product-03">장례도우미 10명</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon coffin"><span class="blind">관</span></span></th>
-											<td class="col-product product-01">(화장) 오동나무 1단관<br> (매장) 오동나무 1단관<br> 옥스포드 관보 & 횡대 제공</td>
-											<td class="col-product product-02">(화장) 오동나무 1단관<br> (매장) 오동나무 1단관<br> 옥스포드 관보 & 횡대 제공</td>
-											<td class="col-product product-03">(화장) 향나무 2단관<br> (매장) 향나무 2단관<br> 옥스포드 관보 & 횡대 제공</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon box"><span class="blind">봉안함</span></span></th>
-											<td class="col-product product-01">(화장) 백자 운학 봉안함</td>
-											<td class="col-product product-02">(화장) 라스타 금전사 송학 봉안함</td>
-											<td class="col-product product-03">(화장) 백합 파스텔 봉안함(파랑/분홍)</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon clothes"><span class="blind">수의</span></span></th>
-											<td class="col-product product-01">수의 1호 (100% 장방사 대마)</td>
-											<td class="col-product product-02">수의 1호 (100% 장방사 대마)</td>
-											<td class="col-product product-03">고급 비단수의 (진결)</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon bus"><span class="blind">버스</span></span></th>
-											<td class="col-product product-01">버스/리무진 중 택 1<br> 왕복 200km 초과 시 1km당 1,800원</td>
-											<td class="col-product product-02">버스/리무진 모두 제공<br> 왕복 200km 초과 시 1km당 1,800원</td>
-											<td class="col-product product-03">버스/리무진 모두 제공<br> 전국 무료</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon vehicle"><span class="blind">고인이송차량</span></span></th>
-											<td class="col-product product-01">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</td>
-											<td class="col-product product-02">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</td>
-											<td class="col-product product-03">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon mourning"><span class="blind">상복</span></span></th>
-											<td class="col-product product-01">현대식 상복 남성/여성 각 3벌 대여<br> 전통식 상복 필요수량만큼 제공</td>
-											<td class="col-product product-02">현대식 상복 남성/여성 각 5벌 대여<br> 전통식 상복 필요수량만큼 제공</td>
-											<td class="col-product product-03">현대식 상복 남성/여성 각 10벌 대여<br> 전통식 상복 필요수량만큼 제공</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon decoration"><span class="blind">재단장식</span></span></th>
-											<td class="col-product product-01"></td>
-											<td class="col-product product-02">제단장식 3호/38만원 지급(택1)</td>
-											<td class="col-product product-03">제단장식 7호/110만원 지급(택1)</td>
-										</tr>
-										<tr>
-											<th class="col-fixed"><span class="icon customs"><span class="blind">일회용​</span></span></th>
-											<td class="col-product product-01"></td>
-											<td class="col-product product-02">일회용품 300인분/<br> 상주편의용품 2세트(택1)</td>
-											<td class="col-product product-03">VIP 일회용품 600인분/<br> 상주편의용품 6세트(택1)</td>
-										</tr>
-									</tbody>
-								</table>
+											</div>
+										</div>
+
+										<!-- 본문 -->
+										<div class="grid-body">
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon instructor"><span class="blind">장례지도사</span></span></div>
+												<div class="grid-cell product-01"><p class="para">장례진행 1명, 염습지원 1명</p></div>
+												<div class="grid-cell product-02"><p class="para">장례진행 1명, 염습지원 1명</p></div>
+												<div class="grid-cell product-03"><p class="para">장례진행 1명, 염습지원 1명</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon helper"><span class="blind">장례도우미</span></span></div>
+												<div class="grid-cell product-01"><p class="para">장례도우미 3명</p></div>
+												<div class="grid-cell product-02"><p class="para">장례도우미 5명</p></div>
+												<div class="grid-cell product-03"><p class="para">장례도우미 10명</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon coffin"><span class="blind">관</span></span></div>
+												<div class="grid-cell product-01"><p class="para">(화장) 오동나무 1단관<br> (매장) 오동나무 1단관<br> 옥스포드 관보 & 횡대 제공</p></div>
+												<div class="grid-cell product-02"><p class="para">(화장) 오동나무 1단관<br> (매장) 오동나무 1단관<br> 옥스포드 관보 & 횡대 제공</p></div>
+												<div class="grid-cell product-03"><p class="para">(화장) 향나무 2단관<br> (매장) 향나무 2단관<br> 옥스포드 관보 & 횡대 제공</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon box"><span class="blind">봉안함</span></span></div>
+												<div class="grid-cell product-01"><p class="para">(화장) 백자 운학 봉안함</p></div>
+												<div class="grid-cell product-02"><p class="para">(화장) 라스타 금전사 송학 봉안함</p></div>
+												<div class="grid-cell product-03"><p class="para">(화장) 백합 파스텔 봉안함(파랑/분홍)</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon clothes"><span class="blind">수의</span></span></div>
+												<div class="grid-cell product-01"><p class="para">수의 1호 (100% 장방사 대마)</p></div>
+												<div class="grid-cell product-02"><p class="para">수의 1호 (100% 장방사 대마)</p></div>
+												<div class="grid-cell product-03"><p class="para">고급 비단수의 (진결)</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon bus"><span class="blind">버스</span></span></div>
+												<div class="grid-cell product-01"><p class="para">버스/리무진 중 택 1<br> 왕복 200km 초과 시 1km당 1,800원</p></div>
+												<div class="grid-cell product-02"><p class="para">버스/리무진 모두 제공<br> 왕복 200km 초과 시 1km당 1,800원</p></div>
+												<div class="grid-cell product-03"><p class="para">버스/리무진 모두 제공<br> 전국 무료</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon vehicle"><span class="blind">고인이송차량</span></span></div>
+												<div class="grid-cell product-01"><p class="para">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</p></div>
+												<div class="grid-cell product-02"><p class="para">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</p></div>
+												<div class="grid-cell product-03"><p class="para">고인이송차량 비용 발생 시 <br> 최대 8만원 지급</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon mourning"><span class="blind">상복</span></span></div>
+												<div class="grid-cell product-01"><p class="para">현대식 상복 남성/여성 각 3벌 대여<br> 전통식 상복 필요수량만큼 제공</p></div>
+												<div class="grid-cell product-02"><p class="para">현대식 상복 남성/여성 각 5벌 대여<br> 전통식 상복 필요수량만큼 제공</p></div>
+												<div class="grid-cell product-03"><p class="para">현대식 상복 남성/여성 각 10벌 대여<br> 전통식 상복 필요수량만큼 제공</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon decoration"><span class="blind">재단장식</span></span></div>
+												<div class="grid-cell product-01"><p class="para"></p></div>
+												<div class="grid-cell product-02"><p class="para">제단장식 3호/38만원 지급(택1)</p></div>
+												<div class="grid-cell product-03"><p class="para">제단장식 7호/110만원 지급(택1)</p></div>
+											</div>
+											<div class="grid-row">
+												<div class="grid-cell sticky-col"><span class="icon customs"><span class="blind">일회용​</span></span></div>
+												<div class="grid-cell product-01"><p class="para"></p></div>
+												<div class="grid-cell product-02"><p class="para">일회용품 300인분/<br> 상주편의용품 2세트(택1)</p></div>
+												<div class="grid-cell product-03"><p class="para">VIP 일회용품 600인분/<br> 상주편의용품 6세트(택1)</p></div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+
 						<script>
 							document.addEventListener("DOMContentLoaded", () => {
 								const popup = document.querySelector('.content-popup[data-popup="cardProductCompair"]');
 								if (!popup) return;
 
-								const scrollArea = popup.querySelector('.compare-data-table .table-scroll');
+								const scrollArea = popup.querySelector('.compare-data-grid .grid-scroll');
 								if (!scrollArea) return;
 
-								const tableHead = popup.querySelector('.compare-data-table table thead');
+								const tableHead = popup.querySelector('.grid-header');
 								if (!tableHead) return;
 
 								let lastScroll = 0;
@@ -248,6 +458,7 @@
 							});
 
 						</script>
+
 					</div>
 				</div>
 			</div>
@@ -260,6 +471,25 @@
 		document.addEventListener('DOMContentLoaded', function() {
 			uiCommon.popup.popupOpen('cardProductCompair');
 		});
+
+
+		document.addEventListener("DOMContentLoaded", () => {
+			const header = document.querySelector('.grid-header');
+			const body = document.querySelector('.grid-body');
+
+			if (!header || !body) return;
+
+			// body 스크롤 → header 동기화
+			body.addEventListener('scroll', () => {
+				header.scrollLeft = body.scrollLeft;
+			});
+
+			// header 스크롤 → body 동기화 (양방향 대응)
+			header.addEventListener('scroll', () => {
+				body.scrollLeft = header.scrollLeft;
+			});
+		});
+
 	</script>
 
 	<script>
