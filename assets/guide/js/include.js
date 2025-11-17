@@ -314,7 +314,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">상품 한 눈에 비교하기*</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1110, 1111 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1110, 1111, 1117 작업</span></p>
 						${createMenuLink("product/BO_ZC_001_L.html", useFullLink)}
 					</dl>
 				</div>
