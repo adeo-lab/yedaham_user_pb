@@ -807,7 +807,7 @@ var uiCommon = (function() {
 			const bottomPanel = document.querySelector(".bottom-panel"); // 하단 고정 패널
 			if (!btnTopmove || !footerWrap) return;
 
-			let fHeight = footerWrap.offsetHeight;
+			// let fHeight = footerWrap.offsetHeight;
 
 			/* 모바일 + bottom-panel 존재 시 상태 클래스 부여 */
 			const checkBottomPanel = () => {
@@ -833,15 +833,15 @@ var uiCommon = (function() {
 				}
 
 				// 푸터 감지 (퀵메뉴가 겹치지 않도록 위치 조정)
-				if (scrollY >= docH - fHeight - winH) {
-					btnTopmove.style.position = "absolute";
-					btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
-					btnTopmove.style.bottom = "auto";
-				} else {
-					btnTopmove.style.position = "fixed";
-					btnTopmove.style.top = "auto";
-					btnTopmove.style.bottom = ""; // CSS 값 복원
-				}
+				// if (scrollY >= docH - fHeight - winH) {
+				// 	btnTopmove.style.position = "absolute";
+				// 	btnTopmove.style.top = `${docH - fHeight - btnTopmove.offsetHeight - 20}px`;
+				// 	btnTopmove.style.bottom = "auto";
+				// } else {
+				// 	btnTopmove.style.position = "fixed";
+				// 	btnTopmove.style.top = "auto";
+				// 	btnTopmove.style.bottom = ""; // CSS 값 복원
+				// }
 			};
 
 			const recalc = () => {
