@@ -37,6 +37,7 @@ body.hidden { overflow: hidden; }
 
 ********************************************************************************************************************************/
 #header { --gnb-color: var(--color-base-000); --lnb-color: var(--color-base-000); --stroke-color: var(--color-base-000); -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; display: -webkit-box; display: -ms-flexbox; display: flex; position: fixed; top: 0; left: 0; z-index: 10000; width: 100%; background-color: rgb(255, 255, 255); -webkit-transition: background-color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out; }
+#header.active {z-index: 10010;}
 #header.header-invert { --gnb-color: var(--color-base-100); --lnb-color: var(--color-base-100); --stroke-color: var(--color-base-100); background-color: transparent; }
 #header.header-invert::before { border-bottom: 0; }
 @media (max-width: 1023px) {
@@ -69,14 +70,14 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
   #header .header-inner .logo { width: 106px; height: 72px; line-height: 72px; }
   #header .header-inner .logo .logo-link { width: 106px; height: 72px; }
   #header .header-inner .gnb .gnb-list { position: fixed; top: 0; left: -100%; width: 100%; height: calc(var(--vh, 1vh) * 100) /*calc(var(--vh, 1vh) * 100 - 84px) */; background-color: #FBFAFA; /*-webkit-transition: left ease 0.3s 0.1s; transition: left ease 0.3s 0.1s;*/ -webkit-transition: left ease 0.01s; transition: left ease 0.01s; z-index: 1000; }
-  #header .header-inner .gnb-list .in-nav { display: none; width: 100%; padding-left: 16px; overflow-y: auto; }
+  #header .header-inner .gnb-list .in-nav { /*display: none;*/ width: 100%; padding-left: 16px; overflow-y: auto; }
   #header .header-inner .gnb-list.active .in-nav{ display:block; }
   #header .header-inner .gnb .gnb-list .in-nav ul { /*-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;*/ display: flex; width: 500px; column-gap: 16px; }
   #header .header-inner .gnb .gnb-list.focused, #header .header-inner .gnb .gnb-list.active { left: 0; }
   #header .header-inner .gnb .gnb-list.focused .in-nav .gnb-item, #header .header-inner .gnb .gnb-list.active .in-nav .gnb-item { height: auto; }
   #header .header-inner .gnb .gnb-list .in-nav .gnb-item { /*display: -webkit-box; display: -ms-flexbox;*/ display: block; height: auto; float: left; }
   /*#header .header-inner .gnb .gnb-list .gnb-item + .gnb-item { border-top: 1px solid var(--color-base-080); }*/
-  #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text { -ms-flex-negative: 0; flex-shrink: 0; display: -webkit-box; display: -ms-flexbox; display: inline-block;; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-width: auto; position: relative; width: auto; height: auto; padding: 17.5px 0; /*background-color: var(--color-base-090);*/ font-size: 19px; text-align: center; }
+  #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text { -ms-flex-negative: 0; flex-shrink: 0; display: -webkit-box; display: -ms-flexbox; display: inline-block;; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-width: auto; position: relative; width: auto; height: auto; padding: 17.5px 0; /*background-color: var(--color-base-090);*/ font-size: 19px; text-align: center; white-space: nowrap;}
   #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after { content: ''; position: absolute; left: 50%; bottom: 0; width: 100%; height: 2px; background: #000; }
   #header .header-inner .gnb .gnb-list .in-nav .lnb-list { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.125s ease, visibility 0.125s ease; transition: opacity 0.125s ease, visibility 0.125s ease; }
   #header .header-inner .gnb .gnb-list .in-nav .lnb-list .lnb-item .lnb-text { padding: 10px; text-align: left; }
