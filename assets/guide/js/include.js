@@ -329,7 +329,6 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step01. 상품선택 (상품 미선택)</span></p>
 						<p class="g-sub-text"><span class="em">모바일 레이어 : 윤슬 4호에 적용</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1117 작업</span></p>
 						${createMenuLink("direct/FO_Y_DA_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
