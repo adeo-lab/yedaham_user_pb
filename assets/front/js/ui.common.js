@@ -25,6 +25,7 @@ var uiCommon = (function() {
 			_.dropdown(".dropdown-menu");
 			_.quickMenu();
 			_.bottomPanel();
+			_.mobileQLayer();
 		},
 		onResize: function() {
 			_.gnbMenu.init(); 
@@ -1323,7 +1324,45 @@ var uiCommon = (function() {
 				checkMode();
 			});
 		},
+		mobileQLayer: function() {
+			const btnQs = document.querySelectorAll('.btn_q');
+			if (!btnQs.length) return;
 
+			btnQs.forEach((btnQ) => {
+				const qLayer = btnQ.querySelector('.q-layer'); 
+				if (!qLayer) return;
+
+				btnQ.addEventListener('click', (e) => {
+				const isMobile = window.matchMedia('(max-width: 1023px)').matches;
+				if (!isMobile) return;
+
+				e.stopPropagation();
+
+				document.querySelectorAll('.q-layer.active').forEach((layer) => {
+					if (layer !== qLayer) layer.classList.remove('active');
+				});
+
+				qLayer.classList.toggle('active');
+				});
+
+				document.addEventListener('click', (e) => {
+				const isMobile = window.matchMedia('(max-width: 1023px)').matches;
+				if (!isMobile) return;
+
+				if (!btnQ.contains(e.target)) {
+					qLayer.classList.remove('active');
+				}
+				});
+			});
+
+			window.addEventListener('resize', () => {
+				if (window.innerWidth > 1023) {
+					document.querySelectorAll('.q-layer.active').forEach((layer) => {
+						layer.classList.remove('active');
+					});
+				}
+			});
+		},
 	};
 
 	return _;
