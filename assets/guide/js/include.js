@@ -233,12 +233,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">계약 현황</span><span class="em">상세</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1111 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1111, 1117 작업</span></p>
 						${createMenuLink("my/FO_Y_YB_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">납입현황</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1106 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1106, 1117 작업</span></p>
 						${createMenuLink("my/FO_Y_YC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
