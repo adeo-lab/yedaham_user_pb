@@ -103,6 +103,10 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-edit"><span class="em">주석: 1113 작업</span></p>
 						${createMenuLink("product/BO_ZC_001_L.html", useFullLink)}
 					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">상품 한 눈에 비교하기 테스트</span></p>
+						${createMenuLink("product/BO_ZC_001_L_test.html", useFullLink)}
+					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주 하는 질문 상세</span></p>
 						<p class="g-sub-text"><span class="em">스와이프 제거 필요 / 개발페이지에 제거 적용</span></p>
