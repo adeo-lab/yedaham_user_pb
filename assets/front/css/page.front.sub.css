@@ -461,7 +461,7 @@
 .home .privacy-agreement-desc .sign-info {display: flex; justify-content: center; position: relative; width: 100%;}
 .home .privacy-agreement-desc .sign-info .date {display: flex; column-gap: 24px; align-items: center; font-size: 17px; line-height: 1.5; color: #232527;}
 .home .privacy-agreement-desc .sign-info .sign-area {display:inline-flex; position: absolute; top: 0; right: 0; left: auto; z-index: 0; column-gap: 16px; align-items: center; font-size: 17px; line-height: 1.5; color: #232527;}
-.home .privacy-agreement-desc .sign-info .sign-area::after {display: block; content: ''; position: absolute; top: 50%; left: 0%; transform: translateY(-50%); z-index: -1; width: var(--imgWidth); height: var(--imgHeight); background-image: var(--imgSign); background-repeat: no-repeat; background-size: cover;}
+.home .privacy-agreement-desc .sign-info .sign-area::after {display: block; content: ''; position: absolute; top: 50%; left: calc(50% - 16px); transform: translateY(-50%); z-index: -1; width: 120px; height: 97px; background-image: var(--imgSign); background-position: center; background-repeat: no-repeat; background-size: cover;}
 .home .privacy-agreement-desc .sign-info .sign-area .em {font-weight: 600;}
 .home .privacy-agreement-desc .sign-para {display: flex; column-gap: 16px; align-items: baseline;}
 
@@ -556,6 +556,17 @@
     .home .my-guide-body .my-guide-desc {font-size: 15px;}
     .home .my-guide-body .my-guide-desc .wbr {display: block;}
     .home .my-guide-body .my-guide-desc.attr-percent::before  {width: 150px; height: 110px;}
+
+    /* 청약 신청서 */
+    .home .apply-check-tb .list-tr  {flex-wrap: wrap;}
+    .home .apply-check-tb .list-th + .list-td {flex: 1 1 100%; max-width: calc(100% - var(--th-width)); box-sizing: border-box;}
+     .home .apply-check-tb .list-th:not(:first-of-type) {border-top: 1px solid rgba(19, 21, 23, 0.20);}
+     .home .apply-check-tb .list-th:not(:first-of-type) + .list-td {border-top: 1px solid rgba(19, 21, 23, 0.20);}
+    .home .apply-check-tb .list-td {flex-basis: auto;}
+
+    .home .privacy-agreement-desc .sign-info {flex-direction: column; align-items: center; gap: 24px;}
+    .home .privacy-agreement-desc .sign-info .sign-area {position: relative;}
+    .home .privacy-agreement-desc .sign-info .sign-area::after {width: 150px; height: 70px; left: calc(50% - 16px);}
 }
 
 @media (max-width: 768px) {
