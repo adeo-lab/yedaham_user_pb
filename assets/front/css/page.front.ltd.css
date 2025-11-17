@@ -3743,7 +3743,7 @@ z-index: 10;
 
 /* datepicker */
 .ltd .ui-datepicker.ui-widget-content {background: #fff; border-radius: 8px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
-.ltd .ui-datepicker {width: 343px; padding: 20px; box-sizing: border-box; z-index: 100001 !important;}
+.ltd .ui-datepicker {width: 343px; padding: 20px; box-sizing: border-box; z-index: 100001 !important; display: none;}
 .ltd .ui-datepicker .ui-datepicker-header {position: relative;}
 .ltd .ui-datepicker .ui-datepicker-prev, .ltd .ui-datepicker .ui-datepicker-next {position: absolute; top: 10px; width: 20px; height: 20px;overflow: hidden; text-indent: -9999px; cursor: pointer; }
 .ltd .ui-datepicker .ui-datepicker-prev-hover, .ltd .ui-datepicker .ui-datepicker-next-hover {top: 10Px;}
