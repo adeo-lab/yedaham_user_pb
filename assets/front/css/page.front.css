@@ -3152,10 +3152,10 @@ z-index: 10;
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.del {background-color: #A0A0A0; border-color: #A0A0A0; color: #fff;}
 .home .content-popup .popup-wrap .popup-footer .button-area:has(.del) .btn-popup {flex: 1; max-width: 130px; padding: 0;}
 
-.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup:disabled,
-.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.disabled {border: 1px solid rgba(19, 21, 23, 0.07); background: #F7F6F5;}
-.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.cancel:disabled,
-.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.cancel.disabled {border: 1px solid rgba(19, 21, 23, 0.07); background: #F7F6F5; color: #BFBFBF;} 
+/* .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup:disabled,
+.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.disabled {border: 1px solid rgba(19, 21, 23, 0.07); background: #F7F6F5;} */
+/* .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.cancel:disabled,
+.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.cancel.disabled {border: 1px solid rgba(19, 21, 23, 0.07); background: #F7F6F5; color: #BFBFBF;}  */
 
 /* .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup:hover {background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #D17B47;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup:active {background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), #D17B47;}
@@ -7580,7 +7580,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /* datepicker */
 .home .ui-datepicker.ui-widget-content {background: #fff; border-radius: 8px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
-.home .ui-datepicker {width: 343px; padding: 20px; box-sizing: border-box; z-index: 100001 !important;}
+.home .ui-datepicker {width: 343px; padding: 20px; box-sizing: border-box; z-index: 100001 !important; display: none;}
 .home .ui-datepicker .ui-datepicker-header {position: relative;}
 .home .ui-datepicker .ui-datepicker-prev, .home .ui-datepicker .ui-datepicker-next {position: absolute; top: 10px; width: 20px; height: 20px;overflow: hidden; text-indent: -9999px; cursor: pointer; }
 .home .ui-datepicker .ui-datepicker-prev-hover, .home .ui-datepicker .ui-datepicker-next-hover {top: 10Px;}

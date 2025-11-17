@@ -892,9 +892,10 @@ button.swiper-pagination-bullet {
 :where([class*=btn-])[class*=disabled], :where([class*=btn-])[disabled] {
   --bgColor: var(--color-base-080);
   --color: var(--color-base-060);
-  --iconBg: var(--color-base-060);
-  background-color: var(--bgColor);
-  color: var(--color);
+  --iconBg: var(--color-base-060) !important;
+  background-color: var(--bgColor) !important;
+  color: var(--color) !important;
+  border: 1px solid rgba(19, 21, 23, 0.07)!important;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -3582,9 +3583,9 @@ button.swiper-pagination-bullet {
   --color-base-100: #ffffff;
   --color-base-095: #fbfbfb;
   --color-base-090: #f2f2f2;
-  --color-base-080: #e4e4e4;
+  --color-base-080: #F7F6F5; /*disabled*/
   --color-base-070: #d9d9d9;
-  --color-base-060: #c1c1c1;
+  --color-base-060: #BFBFBF; /*disabled*/
   --color-base-050: #a9a9a9;
   --color-base-045: #919191;
   --color-base-040: #767676;
