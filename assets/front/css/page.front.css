@@ -6176,7 +6176,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-position: center;
   background-size: 10px;
 } */
-.home .content-popup .popup-wrap.p-comparison .popup-header .popup-subject {display: flex; gap: 8px; align-items: center;}
+.home .content-popup .popup-wrap.p-comparison .popup-header .popup-subject {display: flex; gap: 8px; align-items: center; flex-wrap: wrap;}
 .home .content-popup .popup-wrap .popup-header .popup-subject .chk-diff {display: inline-flex; align-items: center; height: 40px; padding: 0 16px 0 14px; box-sizing: border-box; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 9999px; cursor: pointer; user-select: none; transition: border-color 0.2s ease, background-color 0.2s ease;}
 .home .content-popup .popup-wrap .popup-header .popup-subject .chk-diff .chk-input { display: none; }
 .home .content-popup .popup-wrap .popup-header .popup-subject .chk-diff .chk-text {position: relative; display: inline-flex; gap: 6px; align-items: center; font-size: 15px; font-weight: 400; line-height: 40px; color: #232527;}
