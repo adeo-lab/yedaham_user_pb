@@ -655,11 +655,11 @@ var uiCommon = (function() {
 				_item.addEventListener('click', function(event) {
                     const accordionContent = this.closest('.accordion-item');
 
-                    accordionItems.forEach(_siblings => {
-                        if (_siblings!== this) {
-                            _siblings.closest('.accordion-item').classList.remove('active');
-                        }
-                    });
+                    // accordionItems.forEach(_siblings => {
+                    //     if (_siblings!== this) {
+                    //         _siblings.closest('.accordion-item').classList.remove('active');
+                    //     }
+                    // });
 
 					accordionContent.classList.toggle('active');
 
@@ -1095,6 +1095,8 @@ var uiCommon = (function() {
 							item.classList.remove('active');
 						}
 					});
+
+					document.querySelectorAll('.accordion-item.active').forEach(acc => acc.classList.remove('active'));
 					
 					// 현재 툴팁 토글
 					const isOpening = !listItem.classList.contains('active');
@@ -1153,21 +1155,21 @@ var uiCommon = (function() {
 				btn.addEventListener('click', function(event) {
 					const targetId = this.dataset.target;
 					const targetElement = document.querySelector(targetId);
-					
-					if (targetElement) {
-						const headerHeight = 110; // 헤더 높이 100px
-						const y = targetElement.getBoundingClientRect().top + window.scrollY;
+					if (!targetElement) return;
 
-						window.scrollTo({
-							top: y - headerHeight,
-							behavior: 'smooth'
-						});
-						
-						// 툴팁 닫기
-						const listItem = this.closest('.list-item');
-						listItem.classList.remove('active');
-					}
+					document.querySelectorAll('.list-item.active, .accordion-item.active').forEach(el => el.classList.remove('active'));
+
+					const headerHeight = 110;
+					const y = targetElement.getBoundingClientRect().top + window.scrollY;
 					
+					setTimeout(() => {
+					window.scrollTo({
+						top: y - headerHeight,
+						behavior: 'smooth'
+					});
+
+						setTimeout(() => targetElement.classList.add('active'), 300);
+					}, 150);
 					event.preventDefault();
 				});
 			});
