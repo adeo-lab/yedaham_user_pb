@@ -5074,7 +5074,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .careers-agree-wrap {padding-left: 16px; padding-right: 16px; padding-bottom: 32px; margin-bottom: 0; border-bottom: none;}
   .corp .careers-agree-wrap .tp-tx {padding-bottom: 16px;}
   .corp .careers-agree-wrap .form.checkbox .form-text {font-size: 16px;}
-  .corp .careers-agree-wrap .form.checkbox .form-text::before, .form.checkbox .form-text::after {top: 2px;}
+  .corp .careers-agree-wrap .form.checkbox .form-text::before, .corp .careers-agree-wrap .form.checkbox .form-text::after {top: 2px;}
   .corp .careers-agree-wrap .gray-cont-bx .bx-tx01 li {font-size: 15px;}
   .corp .careers-agree-wrap .gray-cont-bx .bx-tx01 li::before {top: 9px;}
   .corp .careers-agree-wrap .gray-cont-bx .bx-tx02 li p.tx01 {font-size: 17px;}
