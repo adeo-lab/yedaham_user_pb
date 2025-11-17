@@ -7115,6 +7115,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .ej-pay-wrap .board-write-ty01 .top-area {padding-bottom: 48px; margin-bottom: 48px;}
   .home .ej-pay-wrap .bx-type ul {column-gap: 8px;}
   .home .ej-pay-wrap .bx-type li {width: calc(50% - 4px);}
+  .home .ej-pay-wrap .btm-ck-tx .bx-tp:has(.btn-agree) {padding-right: 120px;}
   .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text {font-size: 15px;}
   .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::before, 
   .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::after {top: 1px;}
