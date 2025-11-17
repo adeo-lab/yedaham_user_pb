@@ -7014,7 +7014,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .easy-chane-wrap .easy-change-in-bx ul.time li .in-item {height: 48px; font-size: 15px;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .easy-chane-wrap .easy-change-in-bx ul.acount {gap: 8px;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .easy-chane-wrap .easy-change-in-bx ul.acount li .in-item {height: 48px; font-size: 15px;}
-  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-right-close {display: none;}
+  /* .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-right-close {display: none;} */
+  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-right-close {background-size: 24px;}
 
   .home .easy-join-wrap .easy-join-right-side.data-on .ej-inner-bx .bx-price.total li:first-child p.tx-l {background-position: left top 9px;}
 
