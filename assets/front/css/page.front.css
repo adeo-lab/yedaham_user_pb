@@ -6942,8 +6942,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .easy-join-wrap .easy-join-left-side .ej-cont-bx01 li .in-bx {padding: 20px;}
   .home .easy-join-wrap .easy-join-left-side .ej-cont-bx01 li .in-bx p.tx01 {display: none;}
   .home .easy-join-wrap .easy-join-left-side .ej-cont-bx01 li .in-pr-ck:checked + .in-bx {padding: 19px;}
-  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 ul {flex-wrap: wrap; gap: 8px;}
-  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li {flex: 1 0 48%;}
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 ul {display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;}
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li {width: 100%;}
+  /* .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 ul {flex-wrap: wrap; gap: 8px;}
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li {flex: 1 0 48%;} */
   .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li label {height: 100%;}
   .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li .in-bx {min-height: auto; padding: 12px 0;}
   .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li .in-bx p.tx-times {font-size: 17px;}
