@@ -1016,12 +1016,17 @@ var uiCommon = (function() {
 			const familyLayer = document.querySelector('.search-layer');
 			const closeButton = document.querySelector('.search-layer .btn_search_close');
 			const body = document.body;
+			const searchInput = document.querySelector('#searchAllWord');
 			
 			if (familyButton && familyLayer) {
 				// 열기 버튼 클릭 → 열기
 				familyButton.addEventListener('click', () => {
 					familyLayer.classList.add('search-open');
             		body.classList.add('fixed');
+
+					if (searchInput) {
+						setTimeout(() => searchInput.focus(), 200);
+					}
 				});
 			}
 
