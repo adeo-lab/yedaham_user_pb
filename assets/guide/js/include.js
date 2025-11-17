@@ -401,6 +401,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 출금이체 신청서​​</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1117 작업</span></p>
 						${createMenuLink("direct/FO_Y_DM_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
