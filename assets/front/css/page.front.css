@@ -4758,8 +4758,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .easy-chane-wrap .easy-change-in-bx ul li .in-pr-ck:checked + .in-item {color: #AF5B27; border: 2px solid #F1945E;}
 
 .home .ej-inp-detail {padding-top: 24px;}
-.home .ej-inp-detail .s-tit {position: relative; font-weight: 600; font-size: 24px; color: #131517; line-height: 130%; padding-bottom: 40px;}
-.home .ej-inp-detail .board-write-ty01 .top-area {padding-bottom: 40px; margin-bottom: 40px;}
+.home .ej-inp-detail .s-tit {display: flex; flex-direction: column; gap: 2px; position: relative; font-weight: 600; font-size: 24px; color: #131517; line-height: 130%; padding-bottom: 40px;}
+/* .home .ej-inp-detail .board-write-ty01 .top-area {padding-bottom: 40px; margin-bottom: 40px;} */
+.home .ej-inp-detail .board-write-ty01 .top-area {padding: 0; margin: 0; border: 0 none;}
 .home .ej-inp-detail .board-write-ty01 .bx-email {display: flex; column-gap: 12px; align-items: flex-start;}
 .home .ej-inp-detail .board-write-ty01 .bx-email .bx01 {width: 344px;}
 .home .ej-inp-detail .board-write-ty01 .bx-email .bx02 {width: 344px;}
@@ -4789,9 +4790,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect width='20' height='20' rx='10' transform='matrix(1 0 0 -1 0 20)' fill='%23D17B47'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7514 6.33927C14.1161 6.58854 14.2098 7.08634 13.9605 7.45114L9.86052 13.4511C9.72622 13.6477 9.51139 13.7742 9.2744 13.7963C9.0374 13.8185 8.80286 13.7339 8.63449 13.5656L6.13293 11.0656C5.82041 10.7533 5.82025 10.2468 6.13258 9.93428C6.4449 9.62176 6.95143 9.6216 7.26395 9.93392L9.08349 11.7523L12.6395 6.54843C12.8888 6.18364 13.3866 6.08999 13.7514 6.33927Z' fill='white'/%3E%3C/svg%3E");
 }
 /*.home .ej-inp-detail .bx-in-cnt01 {padding-bottom: 24px;}*/
+.home .ej-inp-detail .bx-in-cnt01 , 
+.home .ej-inp-detail .bx-in-cnt02 {margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(19, 21, 23, 0.20);}
+
 .home .ej-inp-detail .bx-in-cnt01 .op-cl-bx {display: block;}
 .home .ej-inp-detail .bx-in-cnt01 .op-cl-bx.close {display: none;}
 .home .ej-inp-detail .bx-in-cnt01 .s-tit {cursor: pointer;}
+.home .ej-inp-detail .bx-in-cnt01 .s-tit.close {padding-bottom: 0;}
 .home .ej-inp-detail .bx-in-cnt01 .s-tit p.bt-tx-n {font-weight: 600; font-size: 17px; color: #AF5B27; line-height: 150%;}
 .home .ej-inp-detail .bx-in-cnt01 .s-tit p.bt-tx-n br {display: none;}
 .home .ej-inp-detail .bx-in-cnt01 .s-tit::after {content: ''; position: absolute; top: -2px; right: 0; display: block; width: 36px; height: 36px; transition: 0.1s;}
@@ -5874,7 +5879,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form .form-elem + .form-text {flex-shrink: 0; font-size: 17px; line-height: 1.5; color: #232527;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.select .form-elem {height: 48px; line-height: 48px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-mem-num {padding-right: 0;}
-.home .my-acount-status-wrap .my-account-cont-bx .easy-agree {padding-top: 0;padding-bottom: 40px;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail + .easy-agree {margin-top: 40px;}
+.home .my-acount-status-wrap .my-account-cont-bx .easy-agree {padding-top: 0; padding-bottom: 40px;}
 .home .my-acount-status-wrap .my-account-cont-bx .easy-agree .tp-tx-n {font-weight: 600; font-size: 24px; color: #131517; line-height: 130%; padding-bottom: 24px;}
 .home .my-acount-status-wrap .my-account-cont-bx .tx02.tx-h {flex-direction: row; row-gap: unset; column-gap: 32px;}
 
@@ -6982,7 +6988,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .easy-join-wrap .easy-join-right-side .top-data.slide-up-s .btm-txt {display: none;}
   .home .easy-join-wrap .easy-join-right-side .top-data.slide-up-l .btm-txt {display: block;}
 
-  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx {position: relative; padding: 0 16px 100px /*0*/ 16px;}
+  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx {position: relative; /*padding: 0 16px 100px 16px;*/}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .close-mob-layer {position: absolute; top: 8px; left: calc(50% - 24px); display: block; width: 48px; height: 6px; background: #D9D9D9; border-radius: 6px; text-indent: -9999px; overflow: hidden;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 {font-size: 14px; line-height: 32px;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-change-product {top: 0; height: 32px; font-size: 14px; line-height: 30px; background-position: left 16px top 8px;}
@@ -7083,7 +7089,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .page-easy .table-wrap {width: 100%; overflow-y: scroll}
   
   .home .ej-inp-detail {padding-top: 0;}
-  .home .ej-inp-detail .s-tit {font-size: 20px; padding-bottom: 24px;}
+  .home .ej-inp-detail .s-tit {gap: 4px; font-size: 20px; padding-bottom: 24px;}
   .home .ej-inp-detail .bx-in-cnt01 .s-tit {padding-bottom: 24px;}
   .home .ej-inp-detail .bx-in-cnt01 .tx01 {font-size: 15px;}
   .home .ej-inp-detail .bx-in-cnt01 .s-tit p.bt-tx-n {font-size: 15px;}
@@ -7100,10 +7106,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .ej-inp-detail .bx-in-cnt02 .bx-agree-wrap .btm-txt {font-size: 14px;}
   .home .ej-inp-detail .bx-in-cnt02 .btm-txt {font-size: 14px;}
   .home .ej-inp-detail .bx-in-cnt02 .btm-txt p {font-size: 15px;}
-  .home .ej-inp-detail .board-write-ty01 .top-area {padding-bottom: 48px; margin-bottom: 48px;}
+  /* .home .ej-inp-detail .board-write-ty01 .top-area {padding-bottom: 48px; margin-bottom: 48px;} */
   .home .ej-inp-detail .board-write-ty01 .bx-address .bx01 {width: 100%;}
   .home .page-easy .ej-inp-detail .bx-in-cnt02 .table-wrap table.cont-tb-ty01 {width: 900px;}
-
+  .home .ej-inp-detail .bx-in-cnt01, .home .ej-inp-detail .bx-in-cnt02 {margin-top: 48px; padding-top: 48px;}
   
   .home .ej-pay-wrap {padding-top: 0;}
   .home .ej-pay-wrap .board-write-ty01 .top-area {padding-bottom: 48px; margin-bottom: 48px;}
@@ -7473,14 +7479,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-cont-wrap-inner .btm-btn a.btn-ty02 {flex: 1 1 100%; width: auto; height: 48px; font-size: 17px; line-height: 48px;}
 
   .home .my-acount-status-wrap .my-account-cont-bx .tp-txt02 {font-size: 15px; padding-bottom: 24px;}
-  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email {position: relative; padding-bottom: 56px;}
+  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email {position: relative; padding-bottom: 0;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx01 {max-width: 328px; width: 100%; flex: 1 1 auto;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx02 {min-width: 100px;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email a.btn-check {width: 100% /*80px*/; font-size: 15px; position: absolute; left: 0; bottom: 0;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address {column-gap: 8px;}
-  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx01 {width: 64px;}
-  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx02 {width: 160px;}
-  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address a.btn-search-address {width: 70px; font-size: 15px;}
+  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx01 {width: 64px; flex-shrink: 0;}
+  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx02 {width: 160px; flex: 1 1 100%;}
+  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address a.btn-search-address {flex-shrink: 0; width: 70px; font-size: 15px;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input .form-elem {font-size: 14px; padding: 0 10px;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.select .form-elem {font-size: 14px; padding: 0 10px;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form {flex-direction: column; align-items: flex-start;}
