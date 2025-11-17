@@ -630,12 +630,14 @@
 						var swiper = new Swiper(".pop-service-component-tab", {
 							slidesPerView: "auto",
 							spaceBetween: 12,
+							// loop: true,
 							// freeMode: true,
 							navigation: {
 								nextEl: ".pop-service-component-tab-wrap .swiper-button-next",
 								prevEl: ".pop-service-component-tab-wrap .swiper-button-prev",
 							},
 							breakpoints: {
+								1630: { loop: true, }, // 1117 작업
 								1200: { spaceBetween: 12, },
 								1024: { spaceBetween: 8, },
 								0: { spaceBetween: 4, }
