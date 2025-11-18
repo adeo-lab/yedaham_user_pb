@@ -76,6 +76,7 @@ const headerNavigation = function (useFullLink) {
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">약관 > 개인정보처리방침</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1118 작업</span></p>
 						${createMenuLink("common/FO_Y_ZB_002.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -441,7 +442,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">멤버십 > 상세</span></p>
-						<p class="g-sub-edit"><span class="em">주석: 1103, 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1103, 1110, 1118 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BA_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -451,6 +452,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">제휴카드 > 상세</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1118 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BB_002_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
