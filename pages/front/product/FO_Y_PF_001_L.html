@@ -719,13 +719,14 @@
 							var swiper = new Swiper(".product-detail-thum", {
 								slidesPerView: 1,
 								spaceBetween: 0,
+								loop: true, // 1118 작업
 								navigation: {
 									nextEl: ".bx-left-side .swiper-button-next",
 									prevEl: ".bx-left-side .swiper-button-prev",
 								},
 								pagination: {
 									el: '.swiper-pagination',
-									clickable: true, // 점 클릭 가능
+									clickable: true, 
 								},
 							});
 						</script>
