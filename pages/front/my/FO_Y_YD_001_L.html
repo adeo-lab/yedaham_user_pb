@@ -84,6 +84,7 @@
 				<div class="popup-contents">
 					<div class="certificate-pop-wrap">
 						<div class="my-account-list-txt">증명서 발급을 위한 구좌를 먼저 선택해주세요.</div>
+						<!-- <div class="my-account-list-txt"><span>123456789</span>의 증명서 발급이 가능합니다.</div> //1118 작업 단건인 경우-->
 						<div class="my-account-list-wrap">
 							<div class="my-account-list swiper">
 								<ul class="swiper-wrapper">
@@ -222,9 +223,9 @@
 											<input type="radio" name="period" value="custom" class="period-custom">
 
 											<div class="date-range">
-												<span class="date-form"><input type="text" id="dateStart" class="date-input" placeholder="2025.00"></span>
+												<span class="date-form"><input type="text" id="dateStart" class="date-input" placeholder="2025.00.00"></span><!-- //1118 작업 -->
 												<span class="dash">~</span>
-												<span class="date-form"><input type="text" id="dateEnd" class="date-input" placeholder="2025.00"></span>
+												<span class="date-form"><input type="text" id="dateEnd" class="date-input" placeholder="2025.00.00"></span><!-- //1118 작업 -->
 											</div>
 										</label>
 										<!-- 1107 작업 -->
@@ -233,18 +234,19 @@
 											$.datepicker.setDefaults($.datepicker.regional["ko"]);
 
 											$("#dateStart, #dateEnd").datepicker({
-												dateFormat: "yy.mm",
+												dateFormat: "yy.mm.dd", //1118 작업
 												changeMonth: true,
 												changeYear: true,
 												showButtonPanel: true,
 												showOtherMonths: true, 
 												selectOtherMonths: true,
 												yearSuffix: "",
-												onClose: function(dateText, inst) {
+												/*onClose: function(dateText, inst) {
+													var day = $("#ui-datepicker-div .ui-datepicker-day :selected").val();
 													var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
 													var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
 													$(this).val(year + "." + ("0" + (parseInt(month) + 1)).slice(-2));
-												}
+												}*/ //1118 작업
 											});
 										</script>
 										<!-- //1111 작업 -->
@@ -281,7 +283,7 @@
 									<li class="on">
 										<a href="#">
 											<div class="in-bx">
-												발급 방법 선택
+												이메일
 											</div>
 										</a>
 									</li>
