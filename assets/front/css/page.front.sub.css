@@ -318,7 +318,7 @@
 
 .home .accordion-body .table-wrap {overflow-x: auto;}
 .home .accordion-body .table-wrap table.cont-tb-ty01 {width: 100%; table-layout: fixed; border-top: 1px solid rgba(19, 21, 23, 0.20);}
-.home .accordion-body .table-wrap table.cont-tb-ty01 thead th {padding: 10px 0; font-weight: 600; font-size: 17px; color: #232527; background: #F7F6F5; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
+.home .accordion-body .table-wrap table.cont-tb-ty01 thead th {padding: 10px 0; font-weight: 600; font-size: 17px; color: #232527; background: #F7F6F5; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box; text-align: center;}
 .home .accordion-body .table-wrap table.cont-tb-ty01 thead th:last-child {border-right: none;}
 .home .accordion-body .table-wrap table.cont-tb-ty01 tbody th {border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .home .accordion-body .table-wrap table.cont-tb-ty01 tbody th:last-child {border-right: none;}
