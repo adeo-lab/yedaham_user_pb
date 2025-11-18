@@ -5330,7 +5330,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-detail-wrap .bx-r.ty-mob .tp-info {padding-bottom: 0; text-align: center;}
   .home .card-detail-wrap .bx-r.ty-mob .tp-info .bx-flag {padding-bottom: 12px; text-align: center;}
   .home .card-detail-wrap .bx-r.ty-mob .tp-info .bx-flag span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
-  .home .card-detail-wrap .bx-r.ty-mob .tp-info .bx-tit {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding:0 32px 24px 32px; text-align: center;}
+  .home .card-detail-wrap .bx-r.ty-mob .tp-info .bx-tit {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding:0 32px 24px 32px; text-align: center; word-break: keep-all;}
   .home .card-detail-wrap .bx-r.ty-mob .tp-info .bx-tx01 {font-weight: 600; font-size: 15px; color: #444; line-height: 150%; padding-bottom: 8px;}
   .home .card-detail-wrap .bx-r.ty-mob .tp-info .bx-tx02 {font-weight: 400; font-size: 14px; color: #444; line-height: 150%; padding-bottom: 32px;}
   .home .card-detail-wrap .bt-btns.ty-mob {position: fixed; left: 0; bottom: 0; width: 100%; padding: 16px; background: #fff; box-sizing: border-box; display: flex; column-gap: 16px;}
