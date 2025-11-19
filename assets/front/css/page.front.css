@@ -7333,7 +7333,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-list-wrap .card-list li {padding: 0; padding-bottom: 16px;}
   .home .card-list-wrap .card-list li.first .in-bx .thum.no-img {height: 200px;}
   .home .card-list-wrap .card-list li:last-child {padding-bottom: 0;}
-  .home .card-list-wrap .card-list li .in-bx {padding: 20px;}
+  .home .card-list-wrap .card-list li .in-bx {padding: 20px; border-radius: 16px;}
   .home .card-list-wrap .card-list li .in-bx .cont {width: calc(100% - 132px);}
   .home .card-list-wrap .card-list li .in-bx .cont dl {padding-top: 8px;}
   .home .card-list-wrap .card-list li .in-bx .cont dt {font-size: 20px; margin-bottom: 8px;}
