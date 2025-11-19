@@ -6964,7 +6964,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   
   .home .container.ty-wide.product-detail .pr-btm-tx-wrap {padding-left: 16px; padding-right: 16px; box-sizing: border-box;}
   
-  .home .container.ty-wide.product-detail .cont-wrap {padding: 90px /*113px*/ 0 64px 0;}
+  .home .container.ty-wide.product-detail .cont-wrap {padding: /*90px*/ 113px 0 64px 0;}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx {padding-bottom: 16px;}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx a.btn-all {top: 6.5px; right: 0; font-size: 15px; padding-right: 14px; background-position: right top 4.5px; background-size: 12px;}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l {font-size: 22px; /*column-gap: 0;*/}
@@ -7370,6 +7370,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .event-list li .in-bx .cont dt {font-size: 19px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: unset;}
   .home .event-list li .in-bx .cont dd {font-size: 15px;}
   .home .event-list li .in-bx .cont dt span.tx-date {top: 1px; font-size: 14px; line-height: 23px;}
+  .home .event-list li .in-bx.end .thum::after {line-height: 148px;}
 
   .home .btn-btm-more-ty01 {padding-top: 24px;}
   .home .btn-btm-more-ty01 .btn-more-c {height: 40px; font-size: 15px; line-height: 40px; padding: 0 40px 0 16px;}
