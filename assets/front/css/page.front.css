@@ -4213,7 +4213,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .component-product-wrap .component-product ul {display: flex; flex-wrap: wrap; width: 100%; row-gap: 12px;}
 .home .component-product-wrap .component-product li {display: flex; justify-content: center; width: 25%;}
 .home .component-product-wrap .component-product .in-bx {display: inline-flex; flex-direction: column; margin: 0 auto; padding: 22.5px 8px; text-align: center; cursor: pointer;}
-.home .component-product-wrap .component-product .in-bx:has(.customs) {cursor: auto;}
+/*.home .component-product-wrap .component-product .in-bx:has(.customs) {cursor: auto;}*/
+.home .component-product-wrap .component-product .in-bx:has(.supplies) {cursor: auto;}
 .home .component-product-wrap .component-product .in-bx .icon {width: 120px; height: 120px; margin: 0 auto; background-size: auto 40px; background-size: 56px auto; background-color: #ECF5FF; background-repeat: no-repeat; background-position: center; border-radius: 84px;}
 /* .home .component-product-wrap .component-product .in-bx .icon.instructor {background-size: 31px;}
 .home .component-product-wrap .component-product .in-bx .icon.helper {background-size: 42px;}
