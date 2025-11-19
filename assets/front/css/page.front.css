@@ -6782,7 +6782,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .page-product .page-head-wrap {display: none !important;}
 
-  .home .page-head-bottom {padding-left: 16px; padding-right: 16px;}
+  /*.home .page-head-bottom {padding-left: 16px; padding-right: 16px;}*/
   .home .page-head-bottom > p {font-size: 17px; padding-top: 12px;}
   .home .page-head-bottom ul.ty02 {padding-top: 10px; /*padding-bottom: 16px;*/}
   .home .page-head-bottom .ty02 li {font-size: 15px; padding-bottom: 4px;}
@@ -7294,7 +7294,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .membership-list ul {column-gap: 16px; row-gap: 16px;}
   .home .membership-list li {width: calc(50% - 8px);}
   .home .membership-list li.first {width: 100%;}
-  .home .membership-list li .in-bx .thum {height: 120px;}
+  .home .membership-list li .in-bx .thum {height: 120px; border-top-left-radius: 16px; border-top-right-radius: 16px;}
   .home .membership-list li.first .in-bx .thum.no-img {height: 200px;}
   .home .membership-list li .in-bx .cont {padding: 12px 16px 20px 16px; text-align: center; box-sizing: border-box;}
   .home .membership-list li .in-bx .cont span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
