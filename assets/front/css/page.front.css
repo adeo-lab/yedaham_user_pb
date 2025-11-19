@@ -4372,7 +4372,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .product-pop-detail-wrap .bx-left-side {position: relative; display: flex; align-items: flex-start; width: 50%; box-sizing: border-box; background: linear-gradient(0deg, #F7F6F5 0%, #F7F6F5 100%, #FFF);}
 .home .product-pop-detail-wrap .bx-left-side .product-detail-thum {padding: 40px 0 32px; box-sizing: border-box; background: linear-gradient(0deg, #F7F6F5 0%, #F7F6F5 100%, #FFF);}
 .home .product-pop-detail-wrap .bx-left-side .product-detail-thum .swiper-wrapper {height: auto;}
-.home .product-pop-detail-wrap .bx-left-side .product-detail-thum li {}
+/*.home .product-pop-detail-wrap .bx-left-side .product-detail-thum li {}*/
 .home .product-pop-detail-wrap .bx-left-side .product-detail-thum li .img-thum {overflow: hidden; position: relative; width: 100%; max-width: 640px; margin: 0 auto; aspect-ratio: 1 / 1;}
 .home .product-pop-detail-wrap .bx-left-side .product-detail-thum li .img-thum img {display: block; width: 100%; height: 100%; object-fit: cover;}
 .home .product-pop-detail-wrap .bx-left-side .swiper-button-next {top: calc(50% - (56px / 2)); width: 56px; height: 56px; right: 32px; background: rgba(19, 21, 23, 0.40); border-radius: 56px;}
@@ -6057,8 +6057,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .certificate-pop-wrap .certi-ty-list li .in-bx p.tx02 {font-size: 14px;}
   /* .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area [class*=btn-] {width: auto;}
   .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area [class*=btn-]:last-child {width: auto;} */
-  /* .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area .btn-popup.cancel {width: 94px;} */
-  .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area .btn-popup {}
+  /* .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area .btn-popup.cancel {width: 94px;} 
+  .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area .btn-popup {}*/
 }
 
 
@@ -6743,7 +6743,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .data-display.contract-completed .data-wrap .data-head {flex-shrink: 0; width: 200px;}
 .home .data-display.contract-completed .data-wrap .data-head .title {font-weight: 600; font-size: 24px; line-height: 1.5;}
 .home .data-display.contract-completed .data-wrap .data-body {flex: 1 1 100%;}
-.home .data-display.contract-completed .data-wrap .data-body .data-list {}
+/*.home .data-display.contract-completed .data-wrap .data-body .data-list {}*/
 .home .data-display.contract-completed .data-wrap .data-body .data-list .data-item {display: flex; padding: 11px 0; border-bottom: 1px solid rgba(19, 21, 23, 0.20); font-size: 17px; color: #444; line-height: 150%;}
 .home .data-display.contract-completed .data-wrap .data-body .title {flex-shrink: 0; width: 174px; padding: 0 32px; box-sizing: border-box;}
 .home .data-display.contract-completed .data-wrap .data-body .text {flex: 1 1 100%; padding: 0 32px; font-weight: 600;}
@@ -7194,7 +7194,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   
   .home .ej-end-wrap {width: 100%; box-sizing: border-box;}
   .home .ej-end-wrap .top-tx {margin-bottom: 24px;}
-  .home .ej-end-wrap .top-tx .tx01 {font-size: 28px; sword-break: keep-all;}
+  .home .ej-end-wrap .top-tx .tx01 {font-size: 28px; word-break: keep-all;}
   .home .ej-end-wrap .top-tx .tx02 {font-size: 17px; word-break: keep-all;}
   .home .ej-end-wrap .table-wrap {padding-top: 24px; overflow-y: auto;}
   .home .ej-end-wrap table.cont-tb-ty02 {width: 600px;}
@@ -7755,7 +7755,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* 온라인 법률상담 */
 .home .page-benefit-legal .page-head-bottom .btn-r-ty01 {min-width: 176px; box-sizing: border-box; text-align: center;}
 .home .page-benefit-legal .data-board {display: flex; flex-direction: column; gap: 24px;}
-.home .page-benefit-legal .data-board .data-board-top {}
+/*.home .page-benefit-legal .data-board .data-board-top {}*/
 .home .page-benefit-legal .data-board .board-top-subject {display: flex; align-items: baseline; gap: 12px; font-size: 32px; font-weight: 600; line-height: 1.3; color: #131517; letter-spacing: -0.5px;}
 .home .page-benefit-legal .data-board .board-top-subject .em {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527; letter-spacing: 0;}
 .home .page-benefit-legal .data-board .board-list {row-gap: 16px;}
