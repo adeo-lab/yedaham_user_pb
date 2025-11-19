@@ -451,7 +451,7 @@
 
   .home .y-news-wrap {height: auto; background: #fff;}
   .home .y-news-wrap .inner-bx {flex-direction: column; gap: 8px; padding: 32px 0; background-color: #F7DFB5;}
-  .home .y-news-wrap .inner-bx .y-news {}
+  /*.home .y-news-wrap .inner-bx .y-news {}*/
   .home .y-news-wrap .inner-bx .s-tit {display: block; font-weight: 600; font-size: 20px; color: #232527; line-height: 130%; padding: 0 16px;}
   .home .y-news-wrap .inner-bx .y-news li .in-bx {display: block; padding: 0 16px;}
   .home .y-news-wrap .inner-bx .y-news li .in-bx .tx01 {display: none;}
