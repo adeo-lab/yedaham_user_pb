@@ -6049,6 +6049,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .certificate-pop-wrap .my-account-list li .in-bx p.tx02 {font-size: 14px;}
   .home .certificate-pop-wrap .my-account-list-wrap .swiper-button-next::after {display: none;}
   .home .certificate-pop-wrap .my-account-list-wrap .swiper-button-next::before {display: none;}
+  .home .certificate-pop-wrap .my-account-list-wrap .swiper-button-prev::after {display: none;}
+  .home .certificate-pop-wrap .my-account-list-wrap .swiper-button-prev::before {display: none;}
 }
 
 .home .certificate-pop-wrap .certi-pop-cont01 {padding-bottom: 24px;}
