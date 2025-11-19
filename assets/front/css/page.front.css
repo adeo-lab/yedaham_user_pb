@@ -5168,7 +5168,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .card-detail-wrap .card-btm-area .tx-ty01 li {position: relative; font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 0 0 8px 20px;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 li strong {font-weight: 600;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 li:last-child {padding-bottom: 0;}
-.home .card-detail-wrap .card-btm-area .tx-ty01 li::before {content: ''; position: absolute; top: 10px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.home .card-detail-wrap .card-btm-area .tx-ty01 li::before {content: ''; position: absolute; top: 9px /*10px*/; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 li .in-s-tx {padding: 8px 0 0 0;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 + .tx-ty01 {margin-top: 16px;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 + .tx-ty02 {margin-top: 16px;}
@@ -7779,6 +7779,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 1023px) {
   .home .board-bnr-list {margin-bottom: 8px;}
+  .home .board-bnr-list .bnr-list-wrap {border-radius: 16px;}
   .home .board-bnr-list .bnr-list .list-item .img-mo {overflow: hidden; aspect-ratio: 328 / 200;} 
   .home .board-bnr-list .bnr-list .list-item .img-mo img {display: block; width: 100%; height: 100%; object-fit: cover;} 
   .home .board-bnr-list .swiper-control .swiper-pagination {bottom: 16px; left: 24px;}
