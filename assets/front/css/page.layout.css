@@ -70,7 +70,8 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
   #header .header-inner .logo { width: 106px; height: 72px; line-height: 72px; }
   #header .header-inner .logo .logo-link { width: 106px; height: 72px; }
   #header .header-inner .gnb .gnb-list { position: fixed; top: 0; left: -100%; width: 100%; height: calc(var(--vh, 1vh) * 100) /*calc(var(--vh, 1vh) * 100 - 84px) */; background-color: #FBFAFA; /*-webkit-transition: left ease 0.3s 0.1s; transition: left ease 0.3s 0.1s;*/ -webkit-transition: left ease 0.01s; transition: left ease 0.01s; z-index: 1000; }
-  #header .header-inner .gnb-list .in-nav { /*display: none;*/ width: 100%; padding-left: 16px; overflow-y: auto; }
+  #header .header-inner .gnb-list .in-nav { display: none; width: 100%; padding-left: 16px; overflow-y: auto; }
+  #header.open .header-inner .gnb-list.active .in-nav,
   #header .header-inner .gnb-list.active .in-nav{ display:block; }
   #header .header-inner .gnb .gnb-list .in-nav ul { /*-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;*/ display: flex; width: 500px; column-gap: 16px; }
   #header .header-inner .gnb .gnb-list.focused, #header .header-inner .gnb .gnb-list.active { left: 0; }
