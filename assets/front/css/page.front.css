@@ -5561,6 +5561,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-position: left 16px top 12px;
   background-size: 16px;
 }
+.home .my-main-top-info .bx-l .btn01:hover {background-color: #F4F5F6;}
 .home .my-main-top-info .bx-r {width: 538px; /*display: flex; flex-direction: column; row-gap: 16px;*/}
 .home .my-main-top-info .bx-r .bx-btn {padding-bottom: 16px;}
 .home .my-main-top-info .bx-r .bx-btn span.flag {position: relative; display: inline-block; /*height: 31px;*/ font-weight: 400; font-size: 15px; line-height: 150%; padding: 4px 12px 4px 36px; border-radius: 31px;}
@@ -5651,6 +5652,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-position: right 16px top 8px;
   background-size: 16px;
 }
+.home .my-main-benefit .in-bx .bx-btn .btn-view-n:hover {background-color: #BC6F40;}
 .home .my-main-benefit .in-bx:last-child {margin-bottom: 0;}
 .home .my-main-benefit .in-bx a.btn-detail {position: absolute; left: 40px; bottom: 28px; font-weight: 400; font-size: 17px; color: #BFBFBF; line-height: 150%; padding-right: 16px;}
 .home .my-main-benefit .in-bx.first {position: absolute; top: 0; left: 0; height: 352px;}
