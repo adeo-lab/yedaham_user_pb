@@ -430,6 +430,7 @@ function initCompanySection05() {
     swiper = new Swiper(swiperContainer, {
       slidesPerView: "auto",
       spaceBetween: isPC ? 24 : 16,
+      centeredSlides: true,
       loop: isPC,
       autoplay: isPC
         ? { delay: 3000, disableOnInteraction: false }
