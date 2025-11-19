@@ -2659,6 +2659,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   .home #header {display: flex; flex-direction: column;}
   .home #header.open { height: calc(var(--vh, 1vh) * 100); }
   /* .home #header.main::before {background-color: #fff !important;} */
+  .home #header.main::before {border-bottom: none !important;}
   .home #header .header-inner {flex: 1 0 auto; padding: 0;}
   .home #header.main .header-inner > .logo { position: absolute; top: 0; left: 16px; width: 180px; }
   .home .header.main .header-inner > .logo {display: flex;}
