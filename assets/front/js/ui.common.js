@@ -1063,7 +1063,7 @@ var uiCommon = (function() {
 					const tabH = tab ? tab.offsetHeight : 0;
 
 					const isHeaderHidden = isCorp && header && header.classList.contains('down');
-					const finalOffset = isHeaderHidden ? tabH : headerH + tabH; // ✅ 여기 핵심
+					const finalOffset = isHeaderHidden ? tabH : headerH + tabH; 
 
 					const y = section.getBoundingClientRect().top + window.scrollY;
 

@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* IntersectionObserver - current 탭 동기 */
   const observer = new IntersectionObserver((entries) => {
 
-  if (window.__isTabScrolling) return; // ✅ 탭 클릭으로 이동 중일 때는 current 업데이트 금지
+  if (window.__isTabScrolling) return;
 
   entries.forEach(entry => {
     const id = "#" + entry.target.id;
