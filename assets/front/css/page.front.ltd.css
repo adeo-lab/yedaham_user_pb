@@ -3048,7 +3048,7 @@ z-index: 10;
 .ltd .content-popup .popup-contents .terms-display.ty02 .order-list-n ul.list-dot li::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 .ltd .content-popup .popup-contents .terms-display.ty02 .order-list-n ul.list-dot.dep3 {padding-left: 52px;}
 
-.ltd .content-popup .popup-wrap .popup-footer .button-area {padding-bottom: 40px; column-gap: 16px;}
+.ltd .content-popup .popup-wrap .popup-footer .button-area {padding-top: 32px; padding-bottom: 40px; column-gap: 16px;}
 .ltd .content-popup .popup-wrap .popup-footer .button-area [class*=btn-] {width: auto; height: 56px; font-weight: 600; font-size: 19px; line-height: 150%; padding: 0 64px; border-radius: 8px; flex: none; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box;}
 .ltd .content-popup .popup-wrap .popup-footer .button-area [class*=btn-]:last-child {background-color: #D17B47; border: 0;}
 
@@ -3271,6 +3271,7 @@ z-index: 10;
 
 @media (max-width: 1023px) {
   .ltd .joinask-pop-top-area .tx01 {font-size: 15px;}
+  .ltd .joinask-pop-top-area .tx02 {display: none;}
   .ltd .joinask-pop-top-area .tx02 .in-bx01 {position: relative; top: auto; right: auto; width:100%; height: auto; padding: 16px 0 16px 70px; box-sizing: border-box;}
   .ltd .joinask-pop-top-area .tx02 .in-bx01 .line-tp {display: inline;}
   .ltd .joinask-pop-top-area .tx02 .in-bx01 .line-tp span.bx-icon {position: absolute; top: 21.5px; left: 16px;}
