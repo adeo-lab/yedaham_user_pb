@@ -300,6 +300,7 @@
 										<div class="in-bx"><img src="../../../assets/front/images/sub/img_mem_view10.png" alt="" /></div>
 									</li>
 								</ul>
+								<div class="swiper-pagination"></div><!-- //1119 작업 -->
 							</div>
 							<!-- //1118 작업 -->
 							<!-- navigation -->
@@ -324,6 +325,10 @@
 										swiper = new Swiper(".bx-thum", {
 											slidesPerView: 1,
 											spaceBetween: 0,
+											pagination: {
+												el: ".swiper-pagination",
+												clickable: true,
+											},//1119 작업
 											navigation: {
 												nextEl: ".swiper-button-next",
 												prevEl: ".swiper-button-prev",
@@ -338,6 +343,10 @@
 											watchOverflow: true,
 											observer: true,
 											observeParents: true,
+											pagination: {
+												el: ".swiper-pagination",
+												clickable: true,
+											},//1119 작업
 											navigation: {
 												nextEl: ".swiper-button-next",
 												prevEl: ".swiper-button-prev",
