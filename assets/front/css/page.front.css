@@ -5008,7 +5008,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .card-list-wrap .card-list li .in-bx .cont {padding: 0; box-sizing: border-box; width: 252px;}
 .home .card-list-wrap .card-list li .in-bx .cont span.flag {display: inline-block; height: 27px; font-weight: 400; font-size: 15px; color: #232527; line-height: 27px; padding: 0 12px; background: #EAF9FF; border-radius: 16px;}
 .home .card-list-wrap .card-list li .in-bx .cont dl {padding: 12px 0 0 0;}
-.home .card-list-wrap .card-list li .in-bx .cont dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; margin-bottom: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.home .card-list-wrap .card-list li .in-bx .cont dt {font-weight: 600; font-size: 24px /*22px*/; color: #232527; line-height: 130%; margin-bottom: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .home .card-list-wrap .card-list li .in-bx .cont dd {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .home .card-list-wrap .card-list li .in-bx .cont dd p.btm-tx {font-weight: 400; font-size: 15px; color: #444; line-height: 150%; padding-top: 16px;}
 .home .card-list-wrap .card-list li.first .in-bx {padding: 0;}
