@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.home #header.main::before {border-bottom: none; background-color: #FBFAFA;}
+.home #header.main::before {border-bottom: 1px solid #e7e7e7 /*none*/; background-color: #FBFAFA;}
 
 .home .main-container {max-width: 100%;}
 .home .main-container #page.page-main {width: 100%; max-width: 100%; row-gap: 0; background: #FBFAFA;}
@@ -158,7 +158,7 @@
 .home .main-cont03 .main-review-list .bx-wrap-r .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slidedown slidedown;} */
 .home .main-cont03 .main-review-list .in-bx {padding: 32px; background: #fff; border-radius: 32px; border-top-left-radius: 0;}
 .home .main-cont03 .main-review-list .in-bx:hover {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.3s ease-in-out;}
-.home .main-cont03 .main-review-list .in-bx dt {max-height: 64px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 12px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
+.home .main-cont03 .main-review-list .in-bx dt {max-height: 64px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 8px /*12px*/; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
 .home .main-cont03 .main-review-list .in-bx dd {height: 52px; font-weight: 400; font-size: 17px; color: #777; line-height: 150%; padding: 0 0 32px 0; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
 .home .main-cont03 .main-review-list .in-bx .btm-info {position: relative; display: flex; align-items: center; width: 100%; display: flex; column-gap: 16px; padding-top: 32px;}
 .home .main-cont03 .main-review-list .in-bx .btm-info p.flag {display: inline-block; font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding:2px 12px; border-radius: 16px;}
@@ -365,7 +365,7 @@
   .home .main-vis-wrap .main-vis .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {display: none;} */
   .home .main-vis-wrap .main-vis-banner {display: none;}
 
-  .home .main-cont01 {padding-bottom: 32px; margin-bottom: 0; box-shadow: none;}
+  .home .main-cont01 {padding-top: 32px; padding-bottom: 32px; margin-bottom: 0; box-shadow: none;}
   .home .main-cont01.pc {display: none;}
   .home .main-cont01.mob {display: block; background: none; border: none;}
   .home .main-cont01.mob::before {display: none;}
@@ -394,7 +394,7 @@
   .home .main-cont03 .s-tit-wrap {position: relative; width: 100%; padding-top: 48px; padding-left: 16px; margin-bottom: 16px; box-sizing: border-box;}
   .home .main-cont03 .s-tit-wrap .s-txt {display: none;}
   .home .main-cont03 .s-tit-wrap .s-tit {font-size: 24px;}
-  .home .main-cont03 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 16px; font-size: 15px; background-position: right top 1.5px}
+  .home .main-cont03 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 16px; font-size: 15px; padding-right: 14px; background-position: right top 4px; background-size: 12px;}
   .home .main-cont03 .main-review-list {display: block; width: 100%;}
   .home .main-cont03 .main-review-list .bx-wrap-l {width: 100%; padding-top: 0; padding-left: 16px; box-sizing: border-box; row-gap: unset;}
   .home .main-cont03 .main-review-list .in-bx-wrap {row-gap: unset; flex-direction: unset;}
@@ -424,7 +424,7 @@
   .home .main-cont05 {padding-left: 16px; padding-right: 16px;}
   .home .main-cont05 .s-tit-wrap {padding-bottom: 0; margin-bottom: 16px;}
   .home .main-cont05 .s-tit-wrap .s-tit {font-size: 24px;}
-  .home .main-cont05 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 0; font-size: 15px; background-position: right top 1.5px}
+  .home .main-cont05 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 0; font-size: 15px; padding-right: 14px; background-position: right top 5px; background-size: 12px;}
   .home .main-cont05 .s-tit-wrap a.btn-more {font-size: 15px;}
   .home .main-cont05 .my-main-faq ul {flex-direction: column;}
   .home .main-cont05 .my-main-faq li {width: 100%; height: auto; border-right: none; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
