@@ -2688,6 +2688,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   /* .home .header .nav-layer .inner-bx-l .gnb-list-l .gnb-item-l.on .lnb-list-l { display: flex ; padding-top: 12px; } */
 
   .home #header .header-inner .gnb { opacity: 0; display: none;}
+  .home #header.main .header-inner .gnb { opacity: 0; display: block;}
   .home #header.open .header-inner .gnb {display: flex; width: 100%; opacity: 1; }
   .home #header .header-inner .gnb .gnb-list {position: static; height: auto; background-color: #fff;}
   .home #header.open .mobile-menu-content-area, .home #header.open .mobile-menu-bottom-area {flex-shrink: 0; display: block;}
