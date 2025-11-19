@@ -5792,10 +5792,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-list li:last-child {margin-right: 0;}
 .home .my-acount-status-wrap .my-account-list li .in-bx {height:84px; padding: 16px 20px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx01 {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%;}
-.home .my-acount-status-wrap .my-account-list li .in-bx.all {min-width: 96px; padding: 14px 18px; box-sizing: border-box; border: 2px solid #F1945E; justify-content: center; align-items: center;}
+.home .my-acount-status-wrap .my-account-list li .in-bx.all {min-width: 96px; /*padding: 14px 18px;*/ box-sizing: border-box; /*border: 2px solid #F1945E;*/ justify-content: center; align-items: center;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx01.all {font-weight: 600; font-size: 19px; color: #AF5B27; line-height: 150%;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx02 {font-size: 15px; line-height: 1.5; color: #232527;}
-.home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 14px 18px; border: 2px solid #F1945E;}
+.home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 15px 19px; border: 2px solid #F1945E;}
 .home .my-acount-status-wrap .my-account-list li.on .in-bx p.tx01 {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-list li.on .in-bx p.tx02 {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-list-wrap .swiper-button-next {width: 32px; height: 32px; top: 28px; right: 0; box-sizing: border-box;}
