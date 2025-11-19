@@ -2688,6 +2688,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   /* .home .header .nav-layer .inner-bx-l .gnb-list-l .gnb-item-l.on .lnb-list-l { display: flex ; padding-top: 12px; } */
 
   .home #header .header-inner .gnb { opacity: 0; display: none;}
+  .home #header.main .header-inner .gnb { opacity: 0; display: block;}
   .home #header.open .header-inner .gnb {display: flex; width: 100%; opacity: 1; }
   .home #header .header-inner .gnb .gnb-list {position: static; height: auto; background-color: #fff;}
   .home #header.open .mobile-menu-content-area, .home #header.open .mobile-menu-bottom-area {flex-shrink: 0; display: block;}
@@ -7342,11 +7343,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .membership-list li .in-bx .thum {height: 120px; border-top-left-radius: 16px; border-top-right-radius: 16px;}
   .home .membership-list li .in-bx .thum::after {border-top-left-radius: 16px; border-top-right-radius: 16px;}
   .home .membership-list li.first .in-bx .thum.no-img {height: 200px;}
-  .home .membership-list li .in-bx .cont {padding: 12px 16px 20px 16px; text-align: center; box-sizing: border-box;}
+  .home .membership-list li .in-bx .cont {height: 133px; padding: 12px 16px 20px 16px; text-align: center; box-sizing: border-box;}
   .home .membership-list li .in-bx .cont span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
   .home .membership-list li .in-bx .cont dl {padding-top: 4px;}
   .home .membership-list li .in-bx .cont dt {/*height: 44px;*/ font-size: 17px; margin-bottom: 8px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: unset;}
-  .home .membership-list li .in-bx .cont dd {height: 40px; font-size: 13px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: unset;}
+  .home .membership-list li .in-bx .cont dd {height: 40px; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; /*display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: unset;*/}
 
   .home .content-popup.full-s .popup-wrap.benefit-component {border-top-left-radius: 16px; border-top-right-radius: 16px;}
 
