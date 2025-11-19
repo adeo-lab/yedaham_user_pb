@@ -162,6 +162,7 @@
   background-position: right top 4.5px;
   background-size: 16px;
 }
+.ltd .main-cont05 .my-main-faq {border-radius: 12px;}
 .ltd .main-cont05 .my-main-faq li {width: calc(100% /3); height: 120px; display: flex; align-items: center; justify-content: center;}
 .ltd .main-cont05 .my-main-faq li a { display: flex ; }
 .ltd .main-cont05 .my-main-faq li .in-bx {padding: 0 32px;}
