@@ -4976,7 +4976,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .membership-list li .in-bx .cont dl {padding: 12px 0 0 0;}
 .home .membership-list li .in-bx .cont dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; margin-bottom: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .home .membership-list li .in-bx .cont dd {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.home .membership-list li .in-bx p.info-layer {position: absolute; top: -19px; right: -10px; display: inline-block; font-weight: 600; font-size: 15px; color: #fff; line-height: 150%; padding: 8px 16px; background: var(--bgColor); border-radius: 24px; z-index: 10;}
+.home .membership-list li .in-bx p.info-layer {position: absolute; top: -14px /*-19px*/; right: -10px; display: inline-block; font-weight: 600; font-size: 15px; color: #fff; line-height: 150%; padding: 8px 16px; background: var(--bgColor); border-radius: 24px; z-index: 10;}
 .home .membership-list li .in-bx p.info-layer::after {
 	content: '';
 	position: absolute;
@@ -5016,7 +5016,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .card-list-wrap .card-list li.first .in-bx .thum.no-img {position: relative; display: flex; width: 100%; height: 396px; font-weight: 600; font-size: 19px; color: #fff; line-height: 130%; background: #E2E2E2; border-top-left-radius: 24px; border-top-right-radius: 24px; overflow: hidden; align-items: center; justify-content: center;}
 .home .card-list-wrap .card-list li a:hover .in-bx {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.3s ease-in-out;}
 
-.home .event-list ul {display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 48px;}
+.home .event-list ul {display: flex; flex-wrap: wrap; column-gap: 48px /*32px*/; row-gap: 48px;}
 .home .event-list li {width: 576px;}
 .home .event-list li a {display: block;}
 .home .event-list li .in-bx {position: relative; width: 100%; box-sizing: border-box;}
@@ -5168,7 +5168,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .card-detail-wrap .card-btm-area .tx-ty01 li {position: relative; font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 0 0 8px 20px;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 li strong {font-weight: 600;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 li:last-child {padding-bottom: 0;}
-.home .card-detail-wrap .card-btm-area .tx-ty01 li::before {content: ''; position: absolute; top: 10px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.home .card-detail-wrap .card-btm-area .tx-ty01 li::before {content: ''; position: absolute; top: 9px /*10px*/; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 li .in-s-tx {padding: 8px 0 0 0;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 + .tx-ty01 {margin-top: 16px;}
 .home .card-detail-wrap .card-btm-area .tx-ty01 + .tx-ty02 {margin-top: 16px;}
@@ -5330,6 +5330,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .popup-contents .card-detail-wrap .table-wrap table.cont-tb-ty01 thead th {font-size: 15px; line-height: 150%; padding: 8px 0;}
   .home .popup-contents .card-detail-wrap .table-wrap table.cont-tb-ty01 tbody td {font-size: 15px; padding-left: 8px; padding-right: 8px;}
+  .home .card-detail-wrap .card-btm-area .detail-wrap .tb-round-wrap {margin-bottom: 12px;}
   .home .card-detail-wrap .card-btm-area .detail-wrap .tb-desc {font-size: 15px;}
   .home .card-detail-wrap .card-btm-area .detail-wrap .para {font-size: 15px;}
 
@@ -7320,6 +7321,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .membership-list li {width: calc(50% - 8px);}
   .home .membership-list li.first {width: 100%;}
   .home .membership-list li .in-bx .thum {height: 120px; border-top-left-radius: 16px; border-top-right-radius: 16px;}
+  .home .membership-list li .in-bx .thum::after {border-top-left-radius: 16px; border-top-right-radius: 16px;}
   .home .membership-list li.first .in-bx .thum.no-img {height: 200px;}
   .home .membership-list li .in-bx .cont {padding: 12px 16px 20px 16px; text-align: center; box-sizing: border-box;}
   .home .membership-list li .in-bx .cont span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
@@ -7333,7 +7335,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-list-wrap .card-list li {padding: 0; padding-bottom: 16px;}
   .home .card-list-wrap .card-list li.first .in-bx .thum.no-img {height: 200px;}
   .home .card-list-wrap .card-list li:last-child {padding-bottom: 0;}
-  .home .card-list-wrap .card-list li .in-bx {padding: 20px;}
+  .home .card-list-wrap .card-list li .in-bx {padding: 20px; border-radius: 16px;}
   .home .card-list-wrap .card-list li .in-bx .cont {width: calc(100% - 132px);}
   .home .card-list-wrap .card-list li .in-bx .cont dl {padding-top: 8px;}
   .home .card-list-wrap .card-list li .in-bx .cont dt {font-size: 20px; margin-bottom: 8px;}
@@ -7779,6 +7781,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 1023px) {
   .home .board-bnr-list {margin-bottom: 8px;}
+  .home .board-bnr-list .bnr-list-wrap {border-radius: 16px;}
   .home .board-bnr-list .bnr-list .list-item .img-mo {overflow: hidden; aspect-ratio: 328 / 200;} 
   .home .board-bnr-list .bnr-list .list-item .img-mo img {display: block; width: 100%; height: 100%; object-fit: cover;} 
   .home .board-bnr-list .swiper-control .swiper-pagination {bottom: 16px; left: 24px;}
