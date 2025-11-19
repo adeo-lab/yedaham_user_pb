@@ -209,10 +209,10 @@
 
 					<script>
 						document.addEventListener("DOMContentLoaded", () => {
-							const popup = document.querySelector('.content-popup[data-popup="cardProductCompair"]');
+							const popup = document.querySelector('.p-comparison');
 							if (!popup) return;
 
-							const scrollArea = popup.querySelector('.compare-data-grid .grid-scroll');
+							const scrollArea = popup.querySelector('.popup-body');
 							if (!scrollArea) return;
 
 							const tableHead = popup.querySelector('.grid-header');
@@ -248,25 +248,6 @@
 		document.addEventListener('DOMContentLoaded', function() {
 			uiCommon.popup.popupOpen('cardProductCompair');
 		});
-
-
-		document.addEventListener("DOMContentLoaded", () => {
-			const header = document.querySelector('.grid-header');
-			const body = document.querySelector('.grid-body');
-
-			if (!header || !body) return;
-
-			// body 스크롤 → header 동기화
-			body.addEventListener('scroll', () => {
-				header.scrollLeft = body.scrollLeft;
-			});
-
-			// header 스크롤 → body 동기화 (양방향 대응)
-			header.addEventListener('scroll', () => {
-				body.scrollLeft = header.scrollLeft;
-			});
-		});
-
 	</script>
 
 	<script>
