@@ -7321,6 +7321,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .membership-list li {width: calc(50% - 8px);}
   .home .membership-list li.first {width: 100%;}
   .home .membership-list li .in-bx .thum {height: 120px; border-top-left-radius: 16px; border-top-right-radius: 16px;}
+  .home .membership-list li .in-bx .thum::after {border-top-left-radius: 16px; border-top-right-radius: 16px;}
   .home .membership-list li.first .in-bx .thum.no-img {height: 200px;}
   .home .membership-list li .in-bx .cont {padding: 12px 16px 20px 16px; text-align: center; box-sizing: border-box;}
   .home .membership-list li .in-bx .cont span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
