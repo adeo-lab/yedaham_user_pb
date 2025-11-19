@@ -5027,8 +5027,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .event-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: 0.7s;}
 /* .home .event-list li a:hover .in-bx  .thum img {transform: scale(1.1); transition: 0.7s;} */
 .home .event-list li .in-bx .cont dl {padding: 24px 0 0 0;}
-.home .event-list li .in-bx .cont dt {position: relative; font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; padding-right: 90px; margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.home .event-list li .in-bx .cont dt span.tx-date {position: absolute; top: 2px; right: 0; font-weight: 400; font-size: 15px; color: #AF5B27; line-height: 150%; padding-left: 28px;}
+.home .event-list li .in-bx .cont dt {position: relative; font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; padding-right: 0 /*90px*/; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; column-gap: 10px;}
+.home .event-list li .in-bx .cont dt .tx-tit {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1;}
+.home .event-list li .in-bx .cont dt span.tx-date {/*position: absolute; top: 2px; right: 0;*/ font-weight: 400; font-size: 15px; color: #AF5B27; line-height: 150%; padding-left: 28px;}
 .home .event-list li .in-bx .cont dt span.tx-date {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M14.5455 8.5C14.5455 4.88505 11.615 1.95455 8 1.95455C4.38505 1.95455 1.45455 4.88505 1.45455 8.5C1.45455 12.115 4.38505 15.0455 8 15.0455C11.615 15.0455 14.5455 12.115 14.5455 8.5ZM7.27273 4.13636C7.27273 3.7347 7.59834 3.40909 8 3.40909C8.40166 3.40909 8.72727 3.7347 8.72727 4.13636V8.05019L11.2339 9.30398C11.593 9.48354 11.739 9.92017 11.5597 10.2794C11.3801 10.6385 10.9435 10.7845 10.5843 10.6051L7.67519 9.15057C7.4288 9.02737 7.27273 8.77547 7.27273 8.5V4.13636ZM16 8.5C16 12.9183 12.4183 16.5 8 16.5C3.58172 16.5 0 12.9183 0 8.5C0 4.08172 3.58172 0.5 8 0.5C12.4183 0.5 16 4.08172 16 8.5Z' fill='%23D17B47'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
