@@ -6078,7 +6078,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 1023px) {
   .home .certificate-pop-wrap .certi-ty-list.three li {width: 100%; margin-bottom: 8px;}
-  .home .certificate-pop-wrap .certi-ty-list li .in-bx {padding-left: 75px; padding-right: 75px;}
+  .home .certificate-pop-wrap .certi-ty-list li .in-bx {font-size: 15px; padding-left: 75px; padding-right: 75px;}
   .home .certificate-pop-wrap .certi-ty-list li .in-bx p.tx01 {font-size: 17px;}
   .home .certificate-pop-wrap .certi-ty-list li .in-bx p.tx02 {font-size: 14px;}
   /* .home .content-popup .popup-wrap.certificate-issue .popup-footer .button-area [class*=btn-] {width: auto;}
@@ -7145,6 +7145,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .board-write-ty01 .btm-area .form.checkbox {display: block;}
   .home .board-write-ty01 .btm-area .form.checkbox .form-text {font-size: 15px;}
   .home .board-write-ty01 .btm-area a.btn-view-detail {position: relative; top: auto; right: auto; font-size: 15px; margin-left: 32px; margin-top: 4px;}
+  .home .board-write-ty01 .top-area .line-item .form.input .form-elem {font-size: 14px;}
+  .home .board-write-ty01 .top-area .line-item .form.select {font-size: 14px;}
 
   .home .board-view-ty01 .title-area dt {font-size: 22px;}
   .home .board-view-ty01 .title-area dd {font-size: 14px;}
