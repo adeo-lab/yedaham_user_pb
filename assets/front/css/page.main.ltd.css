@@ -50,12 +50,12 @@
 .ltd .main-vis-wrap .main-vis-banner {flex-shrink: 0; width: 344px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 16px;}
 .ltd .main-vis-wrap .main-vis-banner .bx-left-side {display: flex; flex-direction: column; height: 100%;}
 .ltd .main-vis-wrap .main-vis-banner .bx-left-side > div {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; gap: 40px;}
-.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: block; content: ''; width: 54px; height: 54px;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: block; content: ''; width: 56px /*54px*/; height: 56px /*54px*/;}
 .ltd .main-vis-wrap .main-vis-banner .tx01 {position: relative; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
-.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div.tx01::before {background: url('../../../assets/front/images/ltd/icon_callcenter.svg') no-repeat 50%/52px auto;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div.tx01::before {background: url('../../../assets/front/images/ltd/icon_callcenter.svg') no-repeat 50%/56px auto;}
 .ltd .main-vis-wrap .main-vis-banner .qq {display: flex; flex-direction: column; gap: 2px; justify-content: center;}
 .ltd .main-vis-wrap .main-vis-banner .tx02 {position: relative;}
-.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div.tx02::before {background: url('../../../assets/front/images/ltd/icon_headphone.svg') no-repeat 50%/52px auto;}
+.ltd .main-vis-wrap .main-vis-banner .bx-left-side > div.tx02::before {background: url('../../../assets/front/images/ltd/icon_headphone.svg') no-repeat 50%/56px auto;}
 .ltd .main-vis-wrap .main-vis-banner .tx-stit {font-weight: 600; font-size: 17px; color: #777; line-height: 150%;}
 .ltd .main-vis-wrap .main-vis-banner .tx-num {font-weight: 600; font-size: 32px; color: #444; line-height: 130%;}
 
@@ -308,7 +308,7 @@
   .ltd .main-vis-wrap .main-vis-banner .bx-left-side > div {padding: 20px 0 16px;}
   .ltd .main-vis-wrap .main-vis-banner .bx-left-side > div::before {display: none;}
   .ltd .main-vis-wrap .main-vis-banner .qq {gap: 4px;}
-  .ltd .main-vis-wrap .main-vis-banner .tx-stit {display: flex; gap: 16px; align-items: center;}
+  .ltd .main-vis-wrap .main-vis-banner .tx-stit {display: flex; gap: 8px /*16px*/; align-items: center;}
   .ltd .main-vis-wrap .main-vis-banner .tx-stit::before {display: block; content: ''; width: 28px; height: 28px;}
   .ltd .main-vis-wrap .main-vis-banner .tx01 .tx-stit::before {background: url('../../../assets/front/images/ltd/icon_callcenter.svg') no-repeat 50%/28px;}
   .ltd .main-vis-wrap .main-vis-banner .tx02 .tx-stit::before {background: url('../../../assets/front/images/ltd/icon_headphone.svg') no-repeat 50%/28px;}
