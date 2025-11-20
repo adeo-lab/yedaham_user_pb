@@ -2987,8 +2987,10 @@ z-index: 10;
   background-size: 24px;
 }
 .home .page-head-bottom {position: relative; font-weight: 600; font-size: 19px; color: #232527; line-height: 130%;}
+.home .page-head-bottom.ty-icon {height: 86px; padding-left: 118px; background: url('../../../assets/front/images/sub/icon_messenger.png') no-repeat left top; background-size: 94px;}
 .home .page-head-bottom ul {padding-top: 12px;}
 .home .page-head-bottom ul.ty02 {padding-top: 0; margin-top: -3px;}
+.home .page-head-bottom.ty-icon ul.ty02 {padding-top: 12px;}
 .home .page-head-bottom .ty02 li {position: relative; font-weight: 400; font-size: 17px; color: #B26231; line-height: 150%; padding-left: 20px;}
 .home .page-head-bottom .ty02 li:before {
 	content: '';
@@ -6857,6 +6859,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .page-head-bottom .ty02 li {font-size: 15px; padding-bottom: 4px;}
   .home .page-head-bottom .ty02 li:last-child {padding-bottom: 0;}
   .home .page-head-bottom .btn-r-ty01 {position: relative; width: 100%; height: 48px; font-size: 17px; line-height: 48px; padding: 0; margin-top: 16px; margin-bottom: 12px; text-align: center; box-sizing: border-box;}
+  .home .page-head-bottom.ty-icon {height: auto; padding-left: 16px; padding-right: 16px; background: none;}
 
   .home .tab-display.style-a.pt-ty01 {width: auto; padding-top: 0; margin: 0 -16px;}
   .home .tab-display.style-a.pt-ty01 .tab-inner-bx {padding: 0 16px;}
