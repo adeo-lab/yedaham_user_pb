@@ -5693,7 +5693,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-main-faq li {flex: 1; background: #fff; border-right: 1px solid rgba(19, 21, 23, 0.15);}
 .home .my-main-faq li:last-child {border-right: none;}
 .home .my-main-faq li .in-bx {padding: 32px; text-align: center;}
-.home .my-main-faq li .in-bx .tx-type {font-weight: 600; font-size: 15px; color: #777; line-height: 150%; padding-bottom: 12px;}
+.home .my-main-faq li .in-bx .tx-type {font-weight: 600; font-size: 15px; color: #777; line-height: 150%; padding-bottom: 8px;}
 .home .my-main-faq li .in-bx .tx-q {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; word-break: auto-phrase; text-overflow: ellipsis; word-wrap: break-word; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: inherit; display: -webkit-box;}
 
 .home .my-main-bnr {display: none;} 
