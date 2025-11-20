@@ -7959,3 +7959,32 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer {left: -186px;}
   .home .container.ty-wide.product-detail .cont-wrap .title-inner-bx h3.heading-l .btn_q span.q-layer::after {left: 192px;}
 }
+
+
+
+
+
+
+
+
+
+/* datepicker */
+.home #ui-datepicker-div .ui-datepicker-calendar td a,
+.home #ui-datepicker-div .ui-datepicker-calendar td span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 6px;
+    color: #222;
+    font-size: 17px;
+    border: none;
+    /* transition: background 0.2s; */
+}
+ 
+.home #ui-datepicker-div .ui-datepicker-calendar td span {
+   color: var(--color-base-060);
+}
