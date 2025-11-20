@@ -2733,6 +2733,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   background-position: center;
   background-size: 20px;
 }
+.home .btn-btm-more-ty01 .btn-more-c:hover {background-color: #F4F5F6;}
 .home .btn-btm-more-ty01 .btn-more-c.attr-right::after {top: 0; width: 16px; height: 16px; background-size: 16px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.60174 2.84392C5.79877 2.62497 6.13599 2.6072 6.35494 2.80424L11.0216 7.60371C11.134 7.70485 11.1982 7.84895 11.1982 8.00014C11.1982 8.15134 11.134 8.29544 11.0216 8.39658L6.35496 13.1966C6.13602 13.3936 5.7988 13.3759 5.60176 13.1569C5.40471 12.938 5.42246 12.6008 5.6414 12.4037L9.86757 8.00018L5.64142 3.59712C5.42247 3.40009 5.40471 3.06287 5.60174 2.84392Z' fill='%2333363D'/%3E%3C/svg%3E");}
 
 
@@ -5933,6 +5934,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-cont-bx .bx-tp .inp-bx .form.select {height: 40px;}
 .home .my-acount-status-wrap .my-account-cont-bx .bx-tp .inp-bx .form-elem {height: 40px; line-height: 40px;}
 .home .my-acount-status-wrap .my-account-cont-bx .bx-tp a.btn-statement {display: block; width: 161px; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; box-sizing: border-box; text-align: center;}
+.home .my-acount-status-wrap .my-account-cont-bx .bx-tp a.btn-statement:hover {background: #F4F5F6;}
 
 .home .my-acount-status-wrap .my-account-cont-bx .tp-txt01 {font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 40px;}
 .home .my-acount-status-wrap .my-account-cont-bx .tp-txt01 .em {color: #AF5B27;}
@@ -5968,6 +5970,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx01 {width: 196px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address .bx02 {width: 458px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address a.btn-search-address {width: 128px;}
+.home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address a.btn-search-address:hover {background: #909090;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input .form-elem {height: 48px; line-height: 48px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form .form-elem {max-width: 200px;}
 .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form {gap: 12px; align-items: center;}
@@ -5982,7 +5985,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .my-cont-wrap-inner .btm-btn {display: flex; justify-content: center; column-gap: 16px;}
 .home .my-cont-wrap-inner .btm-btn a.btn-ty01 {display: inline-block; width: 130px; height: 56px; font-weight: 600; font-size: 19px; color: #232527; line-height: 56px; padding: 0 12px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; box-sizing: border-box; padding: 0 24px; text-align: center;}
+.home .my-cont-wrap-inner .btm-btn a.btn-ty01:hover {background: #F4F5F6;}
 .home .my-cont-wrap-inner .btm-btn a.btn-ty02 {display: inline-block; width: 208px; height: 56px; font-weight: 600; font-size: 19px; color: #fff; line-height: 56px; padding: 0 12px; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px; box-sizing: border-box; padding: 0 24px; text-align: center;}
+.home .my-cont-wrap-inner .btm-btn a.btn-ty02:hover {background: #BC6F40;}
 
 .home .my-cont-wrap-inner .table-wrap {padding-bottom: 12px;}
 .home .my-cont-wrap-inner .table-wrap table.cont-tb-ty01 {width: 100%; table-layout: fixed; border-top: 1px solid rgba(19, 21, 23, 0.20);}
