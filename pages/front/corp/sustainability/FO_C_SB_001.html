@@ -98,7 +98,7 @@
 									</div>
 									<div class="bx-list-r">
 										<ul>
-											<li class="on">
+											<li>
 												<div class="h-in-bx">
 													<dl>
 														<dt>2023</dt>
@@ -107,7 +107,7 @@
 													</dl>
 												</div>
 											</li>
-											<li class="on">
+											<li>
 												<div class="h-in-bx">
 													<dl>
 														<dt>2022</dt>
@@ -115,7 +115,7 @@
 													</dl>
 												</div>
 											</li>
-											<li class="on">
+											<li>
 												<div class="h-in-bx">
 													<dl>
 														<dt>2021</dt>
@@ -340,27 +340,27 @@
 				"--progress": "100%",
 				ease: "none",
 				scrollTrigger: {
-				trigger: ul,
-				start: "top 90%",
-				end: "bottom 20%",
-				scrub: 1, 
-				onUpdate: (self) => {
-					const progress = self.progress * 100;
-					ul.style.setProperty("--progress", `${progress}%`);
+					trigger: ul,
+					start: "top 60%",
+					end: "bottom+=300 bottom",
+					scrub: 0.3,
+					onUpdate: (self) => {
+						const scrollTop = self.scroll();
+						const start = self.start;
+						const end = self.end;
+						const progressY = scrollTop - start;
+						const totalY = end - start;
+						const progress = (progressY / totalY) * 100;
 
-					// 현재 라인(progress)에 해당하는 위치에서 불렛 on 제어
-					allDd.forEach((dd) => {
-					const rect = dd.getBoundingClientRect();
-					const containerRect = ul.getBoundingClientRect();
-					const ddPos = ((rect.top - containerRect.top) / containerRect.height) * 100;
+						ul.style.setProperty("--progress", `${progress}%`);
 
-					if (progress >= ddPos) {
-						dd.classList.add("on");
-					} else {
-						dd.classList.remove("on");
-					}
-					});
-				},
+						allDd.forEach((dd) => {
+							const ddRect = dd.getBoundingClientRect();
+							const ulRect = ul.getBoundingClientRect();
+							const ddPos = ((ddRect.top - ulRect.top) / ulRect.height) * 100;
+							dd.classList.toggle("on", progress >= ddPos);
+						});
+					},
 				},
 			});
 		}

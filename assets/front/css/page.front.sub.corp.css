@@ -84,7 +84,7 @@
 .corp .page-body-inner-bx03 {max-width: 1440px; margin: 0 auto; padding: 0 0 96px;}
 .corp .page-body-inner-bx03 .cont-sustain09 .c-in-bx .s-tx01 {padding-bottom: 48px; font-size: 40px; font-weight: 600; color: #232527; line-height: 130%;}
 
-.corp .donation-status-bnr {max-width: 1440px; margin: 96px auto 48px; padding: 0; box-sizing: border-box;}
+.corp .donation-status-bnr {max-width: 1440px; margin: 96px auto 0; padding: 0; box-sizing: border-box;}
 .corp .donation-status-bnr .flex-box {display: flex; justify-content: space-between; flex-wrap: wrap; padding: 32px 40px; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.10); background-color: #FBEEED; background-image: url(../../../assets/front/images/corp/img_love_bnr.png); background-repeat: no-repeat; background-size: 142px auto; background-position: 40px 100%}
 .corp .donation-status-bnr .flex-box .flex-item01 {display: flex; flex-direction: column; row-gap: 8px; align-items: flex-start; padding-left: 160px;}
 .corp .donation-status-bnr .flex-box .flex-item01 .label {display: inline-flex; padding: 2px 12px; border-radius: 16px; border: 1px solid #E94543; font-size: 17px; font-weight: 400; line-height: 1.5; color: #E94543;}
@@ -224,6 +224,7 @@ aspect-ratio: 7/6;}
 }
 
 /* 인재채용 */
+.corp .page-body:has(.careers-area) {padding-top: 96px; border-top: 1px solid rgba(19, 21, 23, 0.15);}
 .corp .careers-area {display: flex; flex-direction: column; gap: 64px; max-width: 1440px; margin: 0 auto; padding: 0 0 96px;}
 .corp .careers-area:has(.careers-team-list) {gap: 96px;}
 .corp .careers-area .careers-head {display: flex; align-items: center; justify-content: center;}
@@ -270,6 +271,7 @@ aspect-ratio: 7/6;}
 
 
 @media (max-width: 1023px) {
+    .corp .page-body:has(.careers-area) {padding-top: 64px;}
     .corp .careers-area {gap: 64px; padding: 0 16px 64px;}
     .corp .careers-area:has(.careers-team-list) {gap: 64px;}
     .corp .careers-area .careers-head .title {font-size: 26px;}
@@ -277,7 +279,7 @@ aspect-ratio: 7/6;}
     .corp .careers-area .careers-head .title .wbr {display: block;}
     .corp .careers-area .careers-head .title.inline .wbr {display: inline;}
     .corp .careers-area .careers-body .careers-team-list {display: flex; gap: 48px; flex-direction: column;}
-    .corp .careers-area .careers-body .team-item.flex {gap: 16px; flex-direction: column;}
+    .corp .careers-area .careers-body .careers-team-list .team-item.flex {gap: 16px; flex-direction: column;}
     .corp .careers-area .careers-body .team-head {width: 100%; font-size: 22px;}
     .corp .careers-area .careers-body .team-body .careers-list03 {display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;}
     .corp .careers-area .careers-body .team-body .careers-list03 .item-link {justify-content: center; height: 96px; padding: 0 24px; font-size: 18px;}
@@ -287,7 +289,7 @@ aspect-ratio: 7/6;}
     .corp .team-intro-list .team-item {row-gap: 12px;}
     .corp .team-intro-list .team-item .head {font-size: 16px;}
     .corp .team-intro-list .team-item .head::before {display: block; content: ''; width: 20px; height: 20px; background-size: cover;}
-    .corp .team-intro-list .team-item .body {padding-left: 24px; font-size: 15px;}
+    .corp .team-intro-list .team-item .body {padding-left: 28px; font-size: 15px;}
     .corp .careers-cont01 .tx01.careers-head {padding: 0 24px 48px}
     .corp .careers-cont01 .tx01 .wbr {display: inline;}
 

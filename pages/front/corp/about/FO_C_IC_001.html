@@ -266,7 +266,7 @@
 														</dd>
 														<dd><span class="tx-num">10</span><span>2019 ‘Global Standard Management Awards’ 품질경영대상 명예의 전당 헌액</span></dd>
 														<dd>
-															<span class="tx-num">091</span>
+															<span class="tx-num">09</span> <!-- //1120 작업 -->
 															<span>
 																<span class="tx-v">
 																	창립 10주년<br/>
@@ -277,7 +277,7 @@
 															</span>
 														</dd>
 														<dd>
-															<span class="tx-num">12</span>
+															<span class="tx-num">08</span> <!-- //1120 작업 -->
 															<span>
 																2019 ‘한국웰빙환경만족지수(KS-WEI)’ 1위 수상(4년 연속)<br/>
 																2019 ‘프리미엄브랜드지수(KS-PBI)’ 1위 수상(3년 연속)
@@ -623,7 +623,7 @@
 	});
 		
 	gsap.to("#vision1012 .bg", {
-		clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", // 최종 목표 값을 수정했습니다.
+		clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", 
 		scrollTrigger: {
 			trigger: "#vision1012 .full_img",
 			start: "top top",
@@ -645,59 +645,68 @@
 	});
 	</script>
 
+	<!-- 1120 작업 -->
 	<script>
 		gsap.registerPlugin(ScrollTrigger);
 
 		function initHistoryTimeline() {
-		const yearDisplay = document.querySelector(".bx-img-l .h-in-bx");
-		const ul = document.querySelector(".history-list-ty01 .bx-list-r ul");
-		const listItems = ul.querySelectorAll("li");
-		const allDd = ul.querySelectorAll("dd");
+			const yearDisplay = document.querySelector(".bx-img-l .h-in-bx");
+			const ul = document.querySelector(".history-list-ty01 .bx-list-r ul");
+			const listItems = ul.querySelectorAll("li");
+			const allDd = ul.querySelectorAll("dd");
 
-		gsap.to(ul, {
-			"--progress": "100%",
-			ease: "none",
-			scrollTrigger: {
-			trigger: ul,
-			start: "top 90%",
-			end: "bottom+=200 bottom",
-			scrub: 1, 
-			onUpdate: (self) => {
-				const progress = self.progress * 100;
-				ul.style.setProperty("--progress", `${progress}%`);
+			gsap.to(ul, {
+				"--progress": "100%",
+				ease: "none",
+				scrollTrigger: {
+					trigger: ul,
+					start: "top 60%",
+					end: "bottom+=300 bottom",
+					scrub: 0.3,
+					onUpdate: (self) => {
+						const scrollTop = self.scroll();
+						const start = self.start;
+						const end = self.end;
+						const progressY = scrollTop - start;
+						const totalY = end - start;
+						const progress = (progressY / totalY) * 100;
 
-				// 현재 라인(progress)에 해당하는 위치에서 불렛 on 제어
-				allDd.forEach((dd) => {
-				const rect = dd.getBoundingClientRect();
-				const containerRect = ul.getBoundingClientRect();
-				const ddPos = ((rect.top - containerRect.top) / containerRect.height) * 100;
+						ul.style.setProperty("--progress", `${progress}%`);
 
-				if (progress >= ddPos) {
-					dd.classList.add("on");
-				} else {
-					dd.classList.remove("on");
-				}
-				});
-			},
-			},
-		});
+						allDd.forEach((dd) => {
+							const ddRect = dd.getBoundingClientRect();
+							const ulRect = ul.getBoundingClientRect();
+							const ddPos = ((ddRect.top - ulRect.top) / ulRect.height) * 100;
+							dd.classList.toggle("on", progress >= ddPos);
+						});
 
-		// 연도 전환
-		listItems.forEach((li) => {
-			const dt = li.querySelector("dt");
-			const year = dt ? dt.textContent.trim() : "";
+						let currentYear = "";
+						listItems.forEach((li) => {
+							const dt = li.querySelector("dt");
+							const year = dt ? dt.textContent.trim() : "";
+							const firstDd = li.querySelector("dd");
+							if (!firstDd || !year) return;
 
-			ScrollTrigger.create({
-			trigger: li,
-			start: "top 60%",
-			end: "bottom 40%",
-			onEnter: () => (yearDisplay.textContent = year),
-			onEnterBack: () => (yearDisplay.textContent = year),
+							const ddRect = firstDd.getBoundingClientRect();
+							const ulRect = ul.getBoundingClientRect();
+							const ddPos = ((ddRect.top - ulRect.top) / ulRect.height) * 100;
+
+							if (progress >= ddPos) {
+								currentYear = year;
+							}
+						});
+
+						if (currentYear && yearDisplay.textContent !== currentYear) {
+							yearDisplay.textContent = currentYear;
+						}
+					},
+				},
 			});
-		});
 		}
 
 		document.addEventListener("DOMContentLoaded", initHistoryTimeline);
 	</script>
+	<!-- //1120 작업 -->
+
 </body>
 </html>

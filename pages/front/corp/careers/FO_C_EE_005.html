@@ -29,6 +29,7 @@
 
 	<script src="../../../../assets/front/js/jquery-3.7.1.min.js"></script>
 	<script src="../../../../assets/front/js/jquery-ui.min.js"></script>
+	<script src="../../../../assets/front/js/datepicker-ko.js"></script> <!-- //1120 작업 -->
 </head>
 <body class="corp">
 	<!-- skip -->
@@ -76,14 +77,14 @@
 								</div>
 								<div class="title-step01">
 									<ul>
-										<li>
+										<li class="end">
 											<span class="num">1</span>
 											<div>본인인증 및<br/>약관동의</div>
 										</li>
 										<li class="dots">
 											<span></span><span></span><span></span><span></span>
 										</li>
-										<li>
+										<li class="end">
 											<span class="num">2</span>
 											<div>인적사항</div>
 										</li>
@@ -126,7 +127,7 @@
 									<dt>경력사항</dt>
 									<dd>
 										<!-- 기본 -->
-										<div class="line-wrap">
+										<!-- <div class="line-wrap">
 											<div class="line-item sepa">
 												<div class="in-bx">
 													<div class="bx-th">
@@ -268,7 +269,7 @@
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> -->
 										<!-- //기본 -->
 										<div class="bx-tx-more">
 											<div class="tx01">한 기관에서 유사/동일 직무 1년 이상 근무 경력만 기입해 주시기 바랍니다.</div>
@@ -302,10 +303,20 @@
 																<span class="form input datepicker">
 																	<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker2">
 																</span>
+																<!-- 1120 작업 -->
 																<script>
-																	$( "#datepicker1" ).datepicker();
-																	$( "#datepicker2" ).datepicker();
+																	$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																	$("#datepicker1, #datepicker2").datepicker({
+																		dateFormat: "yy.mm.dd", 
+																		changeMonth: true,
+																		changeYear: true,
+																		showButtonPanel: true,
+																		showOtherMonths: true, 
+																		selectOtherMonths: true,
+																		yearSuffix: "",
+																	});
 																</script>
+																<!-- //1120 작업 -->
 															</div>
 														</div>
 													</div>
@@ -327,10 +338,10 @@
 															종업원수
 														</div>
 														<div class="bx-td">
-															<span class="form input ty-s01">
+															<span class="form input"> <!-- //1120 작업 : ty-s01 클래스 삭제-->
 																<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
 															</span>
-															<span class="inp-tx01">명</span>
+															<!-- <span class="inp-tx01">명</span> --> <!-- //1120 작업 -->
 														</div>
 													</div>
 												</div>
@@ -350,10 +361,10 @@
 															근무부서인원
 														</div>
 														<div class="bx-td">
-															<span class="form input ty-s01">
+															<span class="form input"> <!-- //1120 작업 : ty-s01 클래스 삭제-->
 																<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
 															</span>
-															<span class="inp-tx01">명</span>
+															<!-- <span class="inp-tx01">명</span> --> <!-- //1120 작업 -->
 														</div>
 													</div>
 												</div>
@@ -373,10 +384,10 @@
 															최종직위
 														</div>
 														<div class="bx-td">
-															<span class="form input ty-s01">
+															<span class="form input"> <!-- //1120 작업 : ty-s01 클래스 삭제-->
 																<input class="form-elem" type="text" placeholder="입력해 주세요." value="">
 															</span>
-															<span class="inp-tx01">명</span>
+															<!-- //1120 작업 : 명삭제 -->
 														</div>
 													</div>
 												</div>

@@ -29,6 +29,7 @@
 
 	<script src="../../../../assets/front/js/jquery-3.7.1.min.js"></script>
 	<script src="../../../../assets/front/js/jquery-ui.min.js"></script>
+	<script src="../../../../assets/front/js/datepicker-ko.js"></script> <!-- //1120 작업 -->
 </head>
 <body class="corp">
 	<!-- skip -->
@@ -76,7 +77,7 @@
 								</div>
 								<div class="title-step01">
 									<ul>
-										<li>
+										<li class="end">
 											<span class="num">1</span>
 											<div>본인인증 및<br/>약관동의</div>
 										</li>
@@ -415,10 +416,20 @@
 															<span class="form input datepicker">
 																<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker2">
 															</span>
+															<!-- 1120 작업 -->
 															<script>
-																$( "#datepicker1" ).datepicker();
-																$( "#datepicker2" ).datepicker();
+																$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																$("#datepicker1, #datepicker2").datepicker({
+																	dateFormat: "yy.mm.dd", 
+																	changeMonth: true,
+																	changeYear: true,
+																	showButtonPanel: true,
+																	showOtherMonths: true, 
+																	selectOtherMonths: true,
+																	yearSuffix: "",
+																});
 															</script>
+															<!-- //1120 작업 -->
 														</div>
 													</div>
 												</div>
@@ -494,10 +505,20 @@
 															<span class="form input datepicker">
 																<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker4">
 															</span>
+															<!-- 1120 작업 -->
 															<script>
-																$( "#datepicker3" ).datepicker();
-																$( "#datepicker4" ).datepicker();
+																$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																$("#datepicker3, #datepicker4").datepicker({
+																	dateFormat: "yy.mm.dd", 
+																	changeMonth: true,
+																	changeYear: true,
+																	showButtonPanel: true,
+																	showOtherMonths: true, 
+																	selectOtherMonths: true,
+																	yearSuffix: "",
+																});
 															</script>
+															<!-- //1120 작업 -->
 														</div>
 													</div>
 												</div>
@@ -572,10 +593,20 @@
 																<span class="form input datepicker">
 																	<input class="form-elem" type="text" placeholder="날짜선택" value="2024.12.12" id="datepicker21">
 																</span>
+																<!-- 1120 작업 -->
 																<script>
-																	$( "#datepicker20" ).datepicker();
-																	$( "#datepicker21" ).datepicker();
+																	$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																	$("#datepicker20, #datepicker21").datepicker({
+																		dateFormat: "yy.mm.dd", 
+																		changeMonth: true,
+																		changeYear: true,
+																		showButtonPanel: true,
+																		showOtherMonths: true, 
+																		selectOtherMonths: true,
+																		yearSuffix: "",
+																	});
 																</script>
+																<!-- //1120 작업 -->
 															</div>
 														</div>
 													</div>
@@ -672,9 +703,20 @@
 																<span class="form input datepicker">
 																	<input class="form-elem" type="text" placeholder="날짜선택" value="YYYY.MM" id="datepicker30">
 																</span>
+																<!-- 1120 작업 -->
 																<script>
-																	$( "#datepicker30" ).datepicker();
+																	$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																	$("#datepicker30").datepicker({
+																		dateFormat: "yy.mm.dd", 
+																		changeMonth: true,
+																		changeYear: true,
+																		showButtonPanel: true,
+																		showOtherMonths: true, 
+																		selectOtherMonths: true,
+																		yearSuffix: "",
+																	});
 																</script>
+																<!-- //1120 작업 -->
 															</div>
 														</div>
 													</div>
@@ -714,11 +756,22 @@
 														<div class="bx-td">
 															<div class="bx-datepicker">
 																<span class="form input datepicker">
-																	<input class="form-elem" type="text" placeholder="날짜선택" value="YYYY.MM" id="datepicker30">
+																	<input class="form-elem" type="text" placeholder="날짜선택" value="YYYY.MM" id="datepicker31">
 																</span>
+																<!-- 1120 작업 -->
 																<script>
-																	$( "#datepicker30" ).datepicker();
+																	$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																	$("#datepicker31").datepicker({
+																		dateFormat: "yy.mm.dd", 
+																		changeMonth: true,
+																		changeYear: true,
+																		showButtonPanel: true,
+																		showOtherMonths: true, 
+																		selectOtherMonths: true,
+																		yearSuffix: "",
+																	});
 																</script>
+																<!-- //1120 작업 -->
 															</div>
 														</div>
 													</div>
@@ -864,9 +917,20 @@
 																<span class="form input datepicker">
 																	<input class="form-elem" type="text" placeholder="날짜선택" value="YYYY.MM" id="datepicker40">
 																</span>
+																<!-- 1120 작업 -->
 																<script>
-																	$( "#datepicker40" ).datepicker();
+																	$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																	$("#datepicker40").datepicker({
+																		dateFormat: "yy.mm.dd", 
+																		changeMonth: true,
+																		changeYear: true,
+																		showButtonPanel: true,
+																		showOtherMonths: true, 
+																		selectOtherMonths: true,
+																		yearSuffix: "",
+																	});
 																</script>
+																<!-- //1120 작업 -->
 															</div>
 														</div>
 													</div>
@@ -908,9 +972,20 @@
 																<span class="form input datepicker">
 																	<input class="form-elem" type="text" placeholder="날짜선택" value="YYYY.MM" id="datepicker50">
 																</span>
+																<!-- 1120 작업 -->
 																<script>
-																	$( "#datepicker50" ).datepicker();
+																	$.datepicker.setDefaults($.datepicker.regional["ko"]);
+																	$("#datepicker50").datepicker({
+																		dateFormat: "yy.mm.dd", 
+																		changeMonth: true,
+																		changeYear: true,
+																		showButtonPanel: true,
+																		showOtherMonths: true, 
+																		selectOtherMonths: true,
+																		yearSuffix: "",
+																	});
 																</script>
+																<!-- //1120 작업 -->
 															</div>
 														</div>
 													</div>
