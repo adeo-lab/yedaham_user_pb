@@ -115,6 +115,7 @@
 .home .content-popup .popup-wrap.large {max-width: 996px;}
 .home .content-popup .popup-wrap .popup-header {margin-bottom: 32px;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal {padding: 0 40px; color: #232527;}
+.home .content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal:hover {background: #F4F5F6;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-normal .btn-name {min-width: 50px;}
 .home .content-popup .popup-wrap .popup-footer .button-area .btn-primary .btn-name {min-width: 80px;}
 
@@ -189,8 +190,10 @@
 .home .info-popup .popup-wrap .popup-footer .button-area {display: flex; justify-content: center; column-gap: 16px;}
 .home .info-popup .popup-wrap .popup-footer .button-area .btn-popup {display: flex; justify-content: center; flex-direction: column; width: auto; padding: 0 64px; border-radius: 8px; font-size: 19px; font-weight: 600; line-height: 56px;} 
 .home .info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=primary] {padding: 0 64px; border: none; background-color: #D17B47; color: #fff;}
+.home .info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=primary]:hover {background: #BC6F40;}
 .home .info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=primary] .btn-name {min-width: 80px; text-align: center;}
 .home .info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=grey] {background-color: #A0A0A0; color: #fff;}
+.home .info-popup .popup-wrap .popup-footer .button-area :where([class*=btn-])[class*=grey]:hover {background: #909090;}
 @media (max-width: 1023px) {
     .home .info-popup {padding: 0;}
     .home .info-popup .popup-wrap {max-width: 100%; margin-left: 16px; margin-right: 16px;}
