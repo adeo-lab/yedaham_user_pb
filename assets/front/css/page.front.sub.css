@@ -1084,6 +1084,7 @@
 .home .altar-setup .definition-list .head:before {content: counter(item-counter, decimal-leading-zero);}
 .home .altar-setup .definition-list .body {font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
 .home .altar-setup .ch {font-family: "Noto Serif SC", serif; font-size: 32px; font-weight: 700; line-height: 1.3; color: #D17B47; text-align: right;}
+.home .altar-setup li:nth-child(8) .ch {display: none;}
 
 .home .condolence-guide .altar-list {display: flex; gap: 48px; justify-content: space-between;}
 .home .condolence-guide .altar-list .altar-item {flex: 1; padding: 32px; box-sizing: border-box; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.15); background-color: #FBFAFA;}
