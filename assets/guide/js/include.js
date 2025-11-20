@@ -809,26 +809,32 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step1 약관동의 및 본인인증</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_003.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step2 인적사항</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_004.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step2 인적사항 추가</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_004_2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step3 경력사항</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_005.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step4 자기소개서</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_006.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step5 지원서 제출완료</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_007.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
