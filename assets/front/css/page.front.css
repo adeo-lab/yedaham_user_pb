@@ -2633,6 +2633,8 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 .home .header .nav-layer .inner-bx-l .lnb-list-l > .lnb-item-l.dep3.on > .lnb-list-l.on > a::after {position: relative; display: inline-block; font-weight: 600; font-size: 17px; line-height: 150%; padding: 2px 0;}
 .home .header .nav-layer .inner-bx-l .lnb-list-l > .lnb-item-l.dep3 > .lnb-list-l > .lnb-item-l > a {font-weight: 400; color: #444;}
 
+.home .header.main .nav-layer {border-top: 1px solid #e7e7e7;}
+
 @media (max-width: 1023px) {
   .home #header.active~#container:after {display: none;}
   .home .header .nav-layer {position: absolute; top: 133px; left: -102%; transition: left ease 0.01s; display: block !important;}
