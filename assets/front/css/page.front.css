@@ -7565,7 +7565,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   
   .home .my-acount-status-wrap .my-account-cont-bx {padding: 24px 24px 32px 24px;}
   .home .my-acount-status-wrap .my-account-cont-bx .bx-tp .inp-bx {justify-content: space-between;}
-  .home .my-acount-status-wrap .my-account-cont-bx .bx-tp a.btn-statement {width: auto; padding: 0 10px; height: 32px; font-size: 14px; line-height: 32px;}
+  .home .my-acount-status-wrap .my-account-cont-bx .bx-tp .inp-bx .form.checkbox .form-text {font-size: 15px;}
+  .home .my-acount-status-wrap .my-account-cont-bx .bx-tp a.btn-statement {width: auto; width: 113px; padding: 0; height: 32px; font-size: 14px; line-height: 30px; box-sizing: border-box;}
   /* .home .my-acount-status-wrap .my-account-cont-bx .bx-tp a.btn-statement {position: relative; left: auto; top: auto; width: 100%; margin-top: 12px;} */
 
   .home .my-contract-status-detail {padding: 24px;}
