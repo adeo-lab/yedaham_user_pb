@@ -356,10 +356,9 @@
 		document.addEventListener("DOMContentLoaded", function() {
 			const grid = new Grid.MasonryGrid(".masonry .media-list", {
 				defaultDirection: "end",
-				gap: 0,
+				gap: 32,
 				align: "stretch",
 				column: 0,
-				useResizeObserver: true,
 				observeChildren: true,
 				useResizeObserver: true,
 			});
@@ -367,17 +366,30 @@
 			function setGridColumns() {
 				const screenWidth = window.innerWidth;
 				if (screenWidth > 1440) {
+					// PC
 					grid.column = 3;
+					grid.options.gap = 32;
 				} else if (screenWidth > 768) {
+					// 태블릿
 					grid.column = 3;
+					grid.options.gap = 16;
+				} else if (screenWidth > 600) {
+					// 중형 모바일
+					grid.column = 2;
+					grid.options.gap = 16;
 				} else {
+					// 모바일
 					grid.column = 1;
+					grid.options.gap = 16;
 				}
+
 				grid.renderItems();
+				// console.log('column:', grid.column, 'gap:', grid.options.gap);
 			}
 
 			setGridColumns();
-			window.addEventListener("resize", setGridColumns);
+			window.addEventListener("load", setGridColumns);
+  			window.addEventListener("resize", setGridColumns);
 		});
 	</script>
 	<!-- //MasonryGrid -->
