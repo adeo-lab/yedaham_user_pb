@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.home #header.main::before {border-bottom: 1px solid #e7e7e7 /*none*/; background-color: #FBFAFA;}
+.home #header.main::before {border-bottom: /*1px solid #e7e7e7*/ none; background-color: #FBFAFA;}
 
 .home .main-container {max-width: 100%;}
 .home .main-container #page.page-main {width: 100%; max-width: 100%; row-gap: 0; background: #FBFAFA;}
