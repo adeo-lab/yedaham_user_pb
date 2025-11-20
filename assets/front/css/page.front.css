@@ -7482,6 +7482,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-lnb-wrap {display: none;}
   .home .my-all-wrap .my-line01 {display: none;}
   .home .my-cont-wrap {width: 100%; padding-top: 0;}
+  .home .page-my .my-cont-wrap{ padding-bottom: 48px;}
 
   .home .my-main-tit01 {font-size: 26px; padding-bottom: 24px; text-align: center; display: none;}
   .home .my-main-tit01.ty-db {display: block;}
@@ -7651,7 +7652,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .my-acount-status-wrap .my-account-cont-bx .tp-txt02 {font-size: 15px; padding-bottom: 24px;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email {position: relative; padding-bottom: 0;}
-  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx01 {max-width: 328px; width: 100%; flex: 1 1 auto;}
+  .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx01 {/*max-width: 328px; width: 100%;*/ flex: 1 /*1 auto*/;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email .bx02 {min-width: 100px;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-email a.btn-check {width: 100% /*80px*/; font-size: 15px; position: absolute; left: 0; bottom: 0;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .bx-address {column-gap: 8px;}
@@ -7664,7 +7665,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form .form-elem {max-width: 100%;}
   .home .my-acount-status-wrap .my-account-cont-bx .ej-inp-detail .board-write-ty01 .form.input.exapt-form .form-elem + .form-text {padding-left: 8px; font-size: 15px;}
   .home .my-acount-status-wrap .my-account-cont-bx .easy-agree .tp-tx-n {font-size :20px;}
-  .home .my-acount-status-wrap .my-account-cont-bx .tx02.tx-h {flex-direction: column; row-gap: 4px;}
+  .home .my-acount-status-wrap .my-account-cont-bx .tx02.tx-h {flex-direction: column; row-gap: 16px;}
 
   .home .joinask-pop-top-area .tx01 {font-size: 15px;}
   .home .joinask-pop-top-area .tx02 {display: none;}
