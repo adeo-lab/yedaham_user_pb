@@ -1209,7 +1209,8 @@ button.swiper-pagination-bullet {
   position: relative;
   height: var(--height);
   padding: var(--padding-vertical) var(--height) var(--padding-vertical) var(--padding-sides);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12.4262 15.5807L18.0084 9.21152C18.4007 8.76391 18.0909 8.06198 17.4959 8.05011L6.51711 7.83105C5.91988 7.81914 5.58302 8.51254 5.96155 8.97465L11.3581 15.5628C11.6322 15.8974 12.1411 15.9059 12.4262 15.5807Z' fill='black'/%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12.4262 15.5807L18.0084 9.21152C18.4007 8.76391 18.0909 8.06198 17.4959 8.05011L6.51711 7.83105C5.91988 7.81914 5.58302 8.51254 5.96155 8.97465L11.3581 15.5628C11.6322 15.8974 12.1411 15.9059 12.4262 15.5807Z' fill='black'/%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.7716 14.397L7.27031 9.16302C7.10322 8.96874 7.24126 8.66797 7.49751 8.66797H16.5008C16.7571 8.66797 16.8951 8.96876 16.728 9.16304L12.2259 14.3971C12.1064 14.5361 11.8911 14.5361 11.7716 14.397Z' fill='%23232527'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: center right 14px;
