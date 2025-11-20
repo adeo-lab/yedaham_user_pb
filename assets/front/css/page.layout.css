@@ -245,6 +245,7 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
   background-position: center;
   background-size: 10px;
 }
+#header .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn:hover {background-color: #F4F5F6;}
 #header .header-inner > .navi-util > .navi-list > .navi-item.home {
     display: none;
 }
