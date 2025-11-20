@@ -5705,8 +5705,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-contract-list li .in-bx .mid-area dd {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
 .home .my-contract-list li .in-bx .btm-btns {display: flex; justify-content: center; column-gap: 16px;}
 .home .my-contract-list li .in-bx .btm-btns a.btn-ty01 {display: block; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;}
+.home .my-contract-list li .in-bx .btm-btns a.btn-ty01:hover {background: #F4F5F6;}
 .home .my-contract-list li .in-bx .btm-btns a.btn-ty02 {display: block; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; padding: 0 24px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px;}
+.home .my-contract-list li .in-bx .btm-btns a.btn-ty02:hover {background: #F4F5F6;}
 .home .my-contract-list li .in-bx .btm-btns a.btn-ty03 {display: block; height: 40px; font-weight: 400; font-size: 17px; color: #fff; line-height: 40px; padding: 0 24px; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px;}
+.home .my-contract-list li .in-bx .btm-btns a.btn-ty03:hover {background: #BC6F40;}
 .home .my-contract-list li:last-child .in-bx {margin-bottom: 0;}
 
 .home .my-contract-status-detail {padding: 40px; margin-bottom: 48px; background: #fff; border-radius: 24px; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);}
