@@ -3383,7 +3383,7 @@ z-index: 10;
 .home .board-write-ty01 .bx-address .bx03 {width: 323px;}
 
 .home .board-write-ty01 .file-upload.ty-n .file-upload-btn {padding: 0; border: 0; column-gap: 12px;}
-.home .board-write-ty01 .file-upload.ty-n .file-upload-btn .form-text {height: 48px; color: #e4e4e4; line-height: 48px; padding: 0 16px; border: 1px solid #e4e4e4; border-radius: 8px; flex: 1 1 70%;}
+.home .board-write-ty01 .file-upload.ty-n .file-upload-btn .form-text {height: 48px; color: #BFBFBF; line-height: 48px; padding: 0 16px; border: 1px solid #e4e4e4; border-radius: 8px; flex: 1 1 70%;}
 .home .board-write-ty01 .file-upload.ty-n .file-upload-btn .form-text a {color: #232527;}
 .home .board-write-ty01 .file-upload.ty-n .file-upload-btn::after {display: none; /*content: '파일선택'; display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center; mask: none;*/}
 .home .board-write-ty01 .file-upload.ty-n .file-upload-btn label.btn-file-n {display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center; cursor: pointer;}
