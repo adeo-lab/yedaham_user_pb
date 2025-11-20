@@ -6499,7 +6499,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .popup-contents .table-wrap {padding: 12px 0;}
 .home .popup-contents .table-wrap table.cont-tb-ty01 {width: 100%; table-layout: fixed; border-top: 1px solid rgba(19, 21, 23, 0.20);}
-.home .popup-contents .table-wrap table.cont-tb-ty01 thead th {height: 48px; font-weight: 600; font-size: 17px; color: #232527; line-height: 48px; background: #F7F6F5; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20); box-sizing: border-box;}
+.home .popup-contents .table-wrap table.cont-tb-ty01 thead th {height: 48px; font-weight: 600; font-size: 17px; color: #232527; line-height: 48px; background: #F7F6F5; border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid #D5D4D4 /*rgba(19, 21, 23, 0.20)*/; box-sizing: border-box;}
 .home .popup-contents .table-wrap table.cont-tb-ty01 thead th:last-child {border-right: none;}
 .home .popup-contents .table-wrap table.cont-tb-ty01 tbody th {border-right: 1px solid rgba(19, 21, 23, 0.20); border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .home .popup-contents .table-wrap table.cont-tb-ty01 tbody th:last-child {border-right: none;}
