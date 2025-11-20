@@ -4070,7 +4070,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .product-list01 .in-bx .btm-area .in-s-bx p.tx01 {font-weight: 400; font-size: 15px; color: #777; line-height: 130%; padding-top: 4px;}
 .home .product-list01 .in-bx .btm-btns {display: flex; column-gap: 10px;}
 .home .product-list01 .in-bx .btm-btns button.btn-s-ask {display: inline-block; width: calc(50% - 5px); height: 48px; box-sizing: border-box; font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; padding: 9.5px 0; background: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; text-align: center;}
+.home .product-list01 .in-bx .btm-btns button.btn-s-ask:hover {background: #F4F5F6;}
 .home .product-list01 .in-bx .btm-btns button.btn-s-join {display: inline-block; width: calc(50% - 5px); height: 48px; box-sizing: border-box; font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; padding: 9.5px 0; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px; text-align: center;}
+.home .product-list01 .in-bx .btm-btns button.btn-s-join:hover {background: #BC6F40;}
 .home .product-list01 .in-bx.ty02 .btm-btns02 {text-align: center;}
 .home .product-list01 .in-bx.ty02 .btm-btns02 p {padding: 16px 0;}
 .home .product-list01 .in-bx.ty02 .btm-btns02 p img {width: 100px;}
