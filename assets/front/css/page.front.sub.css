@@ -737,6 +737,7 @@
 .home .page-addon .section .section-wrap .section-head .list-style-dot .list-item::before {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E");}
 .home .page-addon .section .section-wrap .section-head .button-area {display: flex; justify-content: center;}
 .home .page-addon .section .section-wrap .button-area .btn-primary {--height: 56px; --padding: 40px;}
+.home .page-addon .section .section-wrap .button-area .btn-primary:hover {background: #BC6F40;}
 .home .page-addon .section .section-wrap .button-area .btn-primary .btn-text {font-size: 19px; font-weight: 600; color: #fff;}
 
 .home .page-addon .addon-list-swiper {overflow: visible;}
@@ -795,6 +796,7 @@
 .home .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head {display: flex; align-items: center; justify-content: space-between;}
 .home .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .subject {font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
 .home .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area .btn-normal {display: inline-flex; justify-content: center; align-items: center; padding: 0 24px; border-radius: 8px; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box; line-height: 40px;}
+.home .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area:hover {background: #F4F5F6;}
 .home .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-head .button-area .btn-normal .btn-text {font-size: 17px; font-weight: 400; line-height: 40px; color: #232527;}
 .home .page-addon .legal-service-list .legal-service-item .legal-service-wrap .legal-service-body .list-style-dot {row-gap: 8px;}
 
