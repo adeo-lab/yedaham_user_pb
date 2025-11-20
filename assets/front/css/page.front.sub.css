@@ -1400,7 +1400,9 @@
 .home .compare-data-grid .grid-header .data-head .button-area {display: flex; gap: 16px;}
 .home .compare-data-grid .grid-header .data-head .button-area > button {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; height: 48px; border-radius: 8px; font-size: 19px; font-weight: 600; line-height: 1.5;}
 .home .compare-data-grid .grid-header .data-head .button-area .btn-type1 {box-shadow: inset 0 0 0 1px rgba(19, 21, 23, 0.30); background-color: #fff; color: #232527;}
+.home .compare-data-grid .grid-header .data-head .button-area .btn-type1:hover {background: #F4F5F6;}
 .home .compare-data-grid .grid-header .data-head .button-area .btn-type2 {background-color: #D17B47; color: #fff;}
+.home .compare-data-grid .grid-header .data-head .button-area .btn-type2:hover {background: #BC6F40;}
 .home .compare-data-grid .grid-header .flag {position: absolute; top: -3px; right: 24.5px; width: 30px; height: 45px;}
 .home .compare-data-grid .grid-header.collapsed .data-info {flex-direction: row; gap: 12px; align-items: baseline;}
 .home .compare-data-grid .grid-header.collapsed .data-head .data-info .subtitle {flex: 0; opacity: 0; max-height: 0; margin: 0; overflow: hidden; transition: opacity 0.3s ease, max-height 0.3s ease;}
