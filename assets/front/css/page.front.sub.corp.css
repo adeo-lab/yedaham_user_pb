@@ -140,7 +140,7 @@ aspect-ratio: 7/6;}
 .corp .donation-details .donation-details-wrap .donation-details-item .dot-list {display: flex; flex-direction: column; row-gap: 4px;}
 .corp .donation-details .donation-details-wrap .donation-details-item .dot-list li {display: flex; gap: 8px; align-items: baseline; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
 
-.corp .media-tp-head {padding: 32px 0;}
+.corp .media-tp-head {padding: 48px 0 32px;}
 .corp .media-tp-head .s-tx01 {padding-bottom: 24px; font-size: 32px; font-weight: 600; line-height: 130%; color: #232527;}
 .corp .media-tp-head .s-tx02 {font-size: 19px; font-weight: 400; line-height: 150%; color: #232527;}
 
@@ -171,6 +171,7 @@ aspect-ratio: 7/6;}
     .corp .page-body-inner-bx01 .cont-sustain09 .c-in-bx {padding: 64px 0 0;}
     .corp .page-body-inner-bx03 .cont-sustain09 .c-in-bx .s-tx01 {padding-bottom: 32px; font-size: 26px; color: #232527; line-height: 130%;}
 
+    .corp .media-tp-head {padding: 32px 16px 0;}
 
     .corp .donation-status-bnr {margin: 64px 0 0; padding: 0 16px;}
     .corp .donation-status-bnr .flex-box .flex-item01 .label {border-radius: 15px; font-size: 15px;}

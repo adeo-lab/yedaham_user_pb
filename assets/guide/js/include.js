@@ -722,6 +722,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">사랑다함* > 사회공헌활동 > 상세 (15p, 19p)</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SC_003.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -731,6 +732,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">비윤리신고센터</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SE_001.html", useFullLink)}
 					</dl>
 				</div>
@@ -758,6 +760,7 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">보도자료* (9p~11p) > 상세</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/media/FO_C_PB_002.html", useFullLink)}
 					</dl>
 					<!-- <dl class="g-sub-wrap" data-status="진행">
