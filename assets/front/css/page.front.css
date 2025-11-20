@@ -6142,6 +6142,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .tab-list {display: flex;}
 .home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 {display: flex; align-items: center; justify-content: end; position: absolute; top: 15px; left: 50%; max-width: 600px; width: 100%;}
 .home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 a {display: inline-block; font-weight: 600; font-size: 17px; color: #FFF; line-height: 150%; padding: 7px 20px; background: #D17B47; border-radius: 32px;}
+.home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .btn-r-ty01 a:hover {background: #BC6F40;}
 .home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .tab-display.tab-fixed.fixed + .btn-r-ty01 {position: fixed; top: var(--header-height); z-index: 11; height: 80px;}
 
 @media (max-width: 1200px) {
