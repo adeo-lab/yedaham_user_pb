@@ -313,7 +313,7 @@ function initCompanySection04() {
       autoHeight: true,
       loop: true,
       watchOverflow: false,
-      spaceBetween: isPC ? 96 : 10,
+      spaceBetween: isPC ? 96 : 16,
       navigation: isPC
         ? {
             nextEl: nextBtn,
@@ -432,19 +432,46 @@ function initCompanySection05() {
       spaceBetween: isPC ? 0 : 16,
       centeredSlides: true,
       loop: isPC,
-      autoplay: isPC
-        ? { delay: 3000, disableOnInteraction: false }
-        : false,
+      autoplay: isPC ? { delay: 3000, disableOnInteraction: false } : false,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        formatFractionCurrent: num => (num < 10 ? `${num}` : num),
+        formatFractionTotal: num => (num < 10 ? `${num}` : num),
       },
       observer: true,
       observeParents: true,
     });
 
-  // 리사이즈 시 스와이퍼 갱신만 (destroy X)
-  window.addEventListener("resize", () => {
+    const playBtn = section.querySelector("#swiper-button-play");
+    const stopBtn = section.querySelector("#swiper-button-stop");
+
+    if (playBtn && stopBtn && isPC) {
+      let isPlaying = true;
+
+      stopBtn.addEventListener("click", () => {
+        if (!swiper.autoplay) return;
+        swiper.autoplay.stop();
+        isPlaying = false;
+        stopBtn.classList.add("hidden");
+        playBtn.classList.add("active");
+      });
+
+      playBtn.addEventListener("click", () => {
+        if (!swiper.autoplay) return;
+        swiper.autoplay.start();
+        isPlaying = true;
+        playBtn.classList.remove("active");
+        stopBtn.classList.remove("hidden");
+      });
+    }
+
+    // 리사이즈 시 스와이퍼 갱신만 (destroy X)
+    window.addEventListener("resize", () => {
       clearTimeout(section._resizeTimer);
       section._resizeTimer = setTimeout(() => {
         swiper.update();
