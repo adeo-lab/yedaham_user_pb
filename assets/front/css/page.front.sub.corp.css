@@ -222,6 +222,8 @@ aspect-ratio: 7/6;}
     .media-tp-head {padding: 32px 16px 0;}
     .media-tp-head .s-tx01 {padding-bottom: 16px; font-size: 22px;}
     .media-tp-head .s-tx02 {font-size: 16px;}
+    
+    .corp .media-tp-head .s-tx02 .wbr {display: inline;}
 }
 
 /* 인재채용 */
