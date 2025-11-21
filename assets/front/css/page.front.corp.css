@@ -4535,6 +4535,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-position: center;
 	background-size: 16px;
 }
+.corp .about-cont06 .facility-list-wrap .facility-list li .in-bx p.tx02.has-copy-btn::after {display: none !important;}
 .corp .about-cont06 .facility-list-wrap .facility-list li.open .in-bx {border: 1px solid #94A6FF;}
 
 @media (max-width: 1023px) {
