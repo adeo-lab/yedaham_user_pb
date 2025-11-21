@@ -2887,7 +2887,7 @@ z-index: 10;
 .home .ft-r-side {position: absolute; top: 48px; right: 0;}
 .home .ft-r-side .ft-family-wrap {position: relative; width: 260px; height: 48px; padding: 13.5px 16px; margin-bottom: 33px; background: #EFEFEF; border-radius: 8px; box-sizing: border-box;}
 .home .ft-r-side .ft-family-wrap .bx-family {position: relative; font-weight: 400; font-size: 14px; color: #232527; line-height: 150%; cursor: pointer;}
-.home .ft-r-side .ft-family-wrap .bx-family::after {
+/*.home .ft-r-side .ft-family-wrap .bx-family::after {
   content: '';
   position: absolute;
   top: 2px;
@@ -2901,7 +2901,28 @@ z-index: 10;
   background-size: 13px 14px;
   transform: rotate(0deg);
   transition: 0.2s ease-in-out;
+}*/
+
+.home .ft-r-side .ft-family-wrap .bx-family::before, .home .ft-r-side .ft-family-wrap .bx-family::after  {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  top: 50%;
+  transform: translateY(-50%);
 }
+.home .ft-r-side .ft-family-wrap .bx-family::before {
+  width: 14px;
+  height: 2px;
+  right: 0;
+}
+.home .ft-r-side .ft-family-wrap .bx-family::after {
+  width: 2px;
+  height: 14px;
+  right: 6px;
+  transition: transform 0.5s;
+}
+
 .home .ft-r-side .ft-family-wrap .bx-family.f-open::after {transform: rotate(45deg); transition: 0.2s ease-in-out;}
 .home .ft-r-side .ft-family-wrap .family-layer {position: absolute; bottom: 54px /*50px*/; left: 0; width: 100%; padding: 16px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 8px; box-sizing: border-box; display: none; z-index: 10;}
 .home .ft-r-side .ft-family-wrap .family-layer li a {font-weight: 400; font-size: 14px; color: #232527; line-height: 220%;}
