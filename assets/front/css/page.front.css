@@ -7965,9 +7965,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* 툴팁 */
 .btn_q .q-layer {display: none;position: absolute; bottom: 43px; left: -74px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 10px; background: #232527; border-radius: 4px; box-sizing: border-box; z-index: 10000;}
 
-/*@media (hover: hover) {
+@media (hover: hover) {
   .btn_q:hover .q-layer {display: block;}
-}*/
+}
 
 .btn_q span.q-layer::after { content: ''; position: absolute; left: 80px; bottom: -9px; display: block; width: 13px; height: 9px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='9' viewBox='0 0 13 9' fill='none'%3E%3Cpath d='M6.96191 7.78809C6.56489 8.37008 5.7065 8.3702 5.30957 7.78809L0 0H12.2725L6.96191 7.78809Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 13px; }
 .btn_q .q-layer.type-b {top: 43px; bottom: auto; z-index: 2; }
