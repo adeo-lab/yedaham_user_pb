@@ -7158,7 +7158,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-txt02 p.tx01 {font-size: 17px;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-txt02 p.tx01::before {top: 24.5px}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-txt02 p.tx02 {font-size: 15px;}
-  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-btns {position: fixed; left: 0; bottom: 0; width: 100%; background: #fff; padding: 16px; z-index: 1000; box-sizing: border-box;}
+  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-btns {position: fixed; left: 0; bottom: 0; width: 100%; background: #fff; padding: 16px; z-index: 10000; box-sizing: border-box;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-btns a.btn-refreash {width: 48px; height: 48px;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-btns a.btn-ty01 {height: 48px; font-size: 17px; line-height: 48px; flex: 1 1 30%; /*max-width: 97px;*/}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .btm-btns a.btn-ty02 {height: 48px; font-size: 17px; line-height: 48px; flex: 1 1 70%;}
