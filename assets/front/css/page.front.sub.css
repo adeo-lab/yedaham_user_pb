@@ -989,11 +989,11 @@
 .home .payback-items  .payback-items-list {display: flex; gap: 8px;}
 .home .payback-items  .payback-items-item {display: flex; flex-direction: column; row-gap: 8px; align-items: center; padding: 24px 8px;}
 .home .payback-items  .payback-items-item::before {display: block; content: ''; width: 84px; height: 84px; padding: 12px; box-sizing: border-box; border-radius: 100%; background-color: #ECF5FF; background-size: 48px auto; background-repeat: no-repeat; background-position: center;}
-.home .payback-items  .payback-items-item.assistant::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_01.png);}
-.home .payback-items  .payback-items-item.transportation::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_02.png);}
-.home .payback-items  .payback-items-item.arrangement::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_03.png);}
-.home .payback-items  .payback-items-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_04.png);}
-.home .payback-items  .payback-items-item.pall::before {background-image: url(../../../assets/front/images/sub/icon_payback_items01_05.png);}
+.home .payback-items  .payback-items-item.assistant::before {background-image: url(../../../assets/front/images/sub/icon_helper.svg);}
+.home .payback-items  .payback-items-item.transportation::before {background-image: url(../../../assets/front/images/sub/icon_bus.svg);}
+.home .payback-items  .payback-items-item.arrangement::before {background-image: url(../../../assets/front/images/sub/icon_board.svg);}
+.home .payback-items  .payback-items-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_clothes.svg);}
+.home .payback-items  .payback-items-item.pall::before {background-image: url(../../../assets/front/images/sub/icon_cover.svg);}
 .home .payback-items  .payback-items-item .item-name {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
 
 .home .transparent-management-content {display: flex; flex-direction: column; row-gap: 64px;}
