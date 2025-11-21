@@ -6876,7 +6876,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 /* 채용 지원서 작성 */
-.page-recruitment .page-body .page-body-inner-bx01:first-child {padding-top: 0;}
+.corp .page-recruitment .page-body .page-body-inner-bx01:first-child {padding-top: 0;}
+
+
+.pdf-inline-viewer {background: #FAFAFB !important;}
+.pdf-inline-swiper .swiper-slide {background: #FAFAFB !important;}
+.pdf-inline-viewer .swiper-button-prev {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5947 19.7352C15.8902 19.4068 15.8636 18.9009 15.5352 18.6054L9.19592 12L15.5352 5.39463C15.8636 5.09906 15.8902 4.59323 15.5947 4.26482C15.2991 3.93641 14.7933 3.90979 14.4649 4.20536L7.46487 11.4054C7.2963 11.5571 7.20004 11.7732 7.20004 12C7.20004 12.2268 7.2963 12.4429 7.46487 12.5946L14.4649 19.7946C14.7933 20.0902 15.2991 20.0636 15.5947 19.7352Z' fill='white'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 24px !important;
+}
+.pdf-inline-viewer .swiper-button-next  {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.40532 19.7352C8.10976 19.4068 8.13638 18.9009 8.46479 18.6054L14.8041 12L8.46479 5.39463C8.13638 5.09906 8.10976 4.59323 8.40533 4.26482C8.70089 3.93641 9.20672 3.90979 9.53513 4.20536L16.5351 11.4054C16.7037 11.5571 16.8 11.7732 16.8 12C16.8 12.2268 16.7037 12.4429 16.5351 12.5946L9.53513 19.7946C9.20672 20.0902 8.70089 20.0636 8.40532 19.7352Z' fill='white'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 24px !important;
+}
+.pdf-inline-viewer .swiper-button-next, .pdf-inline-viewer .swiper-rtl .swiper-button-prev {right: var(--swiper-navigation-sides-offset, 28px) !important}
+.pdf-inline-viewer .swiper-button-prev, .pdf-inline-viewer .swiper-rtl .swiper-button-next {left: var(--swiper-navigation-sides-offset, 28px) !important}
 
 /* keyframes */
 @keyframes stepProgressAnimation {
