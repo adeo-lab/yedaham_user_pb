@@ -429,7 +429,7 @@ function initCompanySection05() {
   if (hasSlides) {
     swiper = new Swiper(swiperContainer, {
       slidesPerView: "auto",
-      spaceBetween: isPC ? 24 : 16,
+      spaceBetween: isPC ? 0 : 16,
       centeredSlides: true,
       loop: isPC,
       autoplay: isPC
