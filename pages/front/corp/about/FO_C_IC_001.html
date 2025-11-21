@@ -91,6 +91,7 @@
 										<div class="h-in-bx">2025</div>
 									</div>
 									<div class="bx-list-r">
+										<div class="line"><div class="bg"></div></div> <!-- //1121 작업 -->
 										<ul>
 											<li>
 												<div class="h-in-bx">
@@ -266,7 +267,7 @@
 														</dd>
 														<dd><span class="tx-num">10</span><span>2019 ‘Global Standard Management Awards’ 품질경영대상 명예의 전당 헌액</span></dd>
 														<dd>
-															<span class="tx-num">09</span> <!-- //1120 작업 -->
+															<span class="tx-num">09</span> <!-- //1121 작업 -->
 															<span>
 																<span class="tx-v">
 																	창립 10주년<br/>
@@ -277,7 +278,7 @@
 															</span>
 														</dd>
 														<dd>
-															<span class="tx-num">08</span> <!-- //1120 작업 -->
+															<span class="tx-num">08</span> <!-- //1121 작업 -->
 															<span>
 																2019 ‘한국웰빙환경만족지수(KS-WEI)’ 1위 수상(4년 연속)<br/>
 																2019 ‘프리미엄브랜드지수(KS-PBI)’ 1위 수상(3년 연속)
@@ -645,68 +646,110 @@
 	});
 	</script>
 
-	<!-- 1120 작업 -->
+	<!-- 1121 작업 -->
 	<script>
-		gsap.registerPlugin(ScrollTrigger);
+		let historyScrollHandler = null;
 
-		function initHistoryTimeline() {
-			const yearDisplay = document.querySelector(".bx-img-l .h-in-bx");
-			const ul = document.querySelector(".history-list-ty01 .bx-list-r ul");
-			const listItems = ul.querySelectorAll("li");
-			const allDd = ul.querySelectorAll("dd");
+function history() {
+    const historyInfo = document.querySelector('.history-list-ty01 .bx-list-r');
+    const infoLi = document.querySelectorAll('.history-list-ty01 .bx-list-r li dd');
+    const line = document.querySelector('.history-list-ty01 .bx-list-r .line');
+    const lineBg = document.querySelector('.history-list-ty01 .bx-list-r .line .bg');
+    const leftYearBox = document.querySelector('.history-list-ty01 .bx-img-l .h-in-bx');
 
-			gsap.to(ul, {
-				"--progress": "100%",
-				ease: "none",
-				scrollTrigger: {
-					trigger: ul,
-					start: "top 60%",
-					end: "bottom+=300 bottom",
-					scrub: 0.3,
-					onUpdate: (self) => {
-						const scrollTop = self.scroll();
-						const start = self.start;
-						const end = self.end;
-						const progressY = scrollTop - start;
-						const totalY = end - start;
-						const progress = (progressY / totalY) * 100;
+    // 요소 검증
+    if (!historyInfo || infoLi.length === 0) {
+        console.warn('⚠️ history() : 대상 요소를 찾을 수 없습니다.');
+        return;
+    }
 
-						ul.style.setProperty("--progress", `${progress}%`);
+    if (!line || !lineBg) {
+        console.warn('⚠️ history() : line 요소를 찾을 수 없습니다.');
+        return;
+    }
 
-						allDd.forEach((dd) => {
-							const ddRect = dd.getBoundingClientRect();
-							const ulRect = ul.getBoundingClientRect();
-							const ddPos = ((ddRect.top - ulRect.top) / ulRect.height) * 100;
-							dd.classList.toggle("on", progress >= ddPos);
-						});
+    // 위치값 계산
+    const historyInfoOffTop = $(historyInfo).offset().top;
+    const firstLi = infoLi[0];
+    const lastLi = infoLi[infoLi.length - 1];
+    const startPos = $(firstLi).offset().top - historyInfoOffTop;
+    const endPos = $(lastLi).offset().top - historyInfoOffTop;
 
-						let currentYear = "";
-						listItems.forEach((li) => {
-							const dt = li.querySelector("dt");
-							const year = dt ? dt.textContent.trim() : "";
-							const firstDd = li.querySelector("dd");
-							if (!firstDd || !year) return;
+    // 라인 초기 위치 설정
+    line.style.top = `${startPos + 10}px`;
+    line.style.height = `${endPos}px`;
 
-							const ddRect = firstDd.getBoundingClientRect();
-							const ulRect = ul.getBoundingClientRect();
-							const ddPos = ((ddRect.top - ulRect.top) / ulRect.height) * 100;
+    // 뷰포트 기준 활성화 위치 (화면 상단에서 몇 % 지점)
+    const activationPoint = window.innerWidth > 768 ? 0.65 : 0.7;
 
-							if (progress >= ddPos) {
-								currentYear = year;
-							}
-						});
+    // 기존 스크롤 핸들러 제거
+    if (historyScrollHandler) {
+        window.removeEventListener('scroll', historyScrollHandler);
+    }
 
-						if (currentYear && yearDisplay.textContent !== currentYear) {
-							yearDisplay.textContent = currentYear;
-						}
-					},
-				},
-			});
-		}
+    // 스크롤 핸들러
+    historyScrollHandler = function() {
+        const viewportHeight = window.innerHeight;
+        const activationY = viewportHeight * activationPoint;
+        const lineRect = line.getBoundingClientRect();
+        const lineTop = lineRect.top;
+        const lineFullHeight = lineRect.height;
 
-		document.addEventListener("DOMContentLoaded", initHistoryTimeline);
+        // 라인 진행률 계산
+        const progressPx = activationY - lineTop;
+        let progressPercent = (progressPx / lineFullHeight) * 100;
+        progressPercent = Math.min(Math.max(progressPercent, 0), 100);
+        lineBg.style.height = progressPercent + '%';
+
+        // 각 항목 활성화 체크
+        let currentYear = null;
+
+        infoLi.forEach((cont) => {
+            const contRect = cont.getBoundingClientRect();
+            const bulletY = contRect.top;
+
+            if (bulletY <= activationY) {
+                cont.classList.add('on');
+                // 활성화된 항목의 연도 가져오기
+                const parentDl = cont.closest('dl');
+                if (parentDl) {
+                    const dtYear = parentDl.querySelector('dt');
+                    if (dtYear) {
+                        currentYear = dtYear.textContent.trim();
+                    }
+                }
+            } else {
+                cont.classList.remove('on');
+            }
+        });
+
+        // 왼쪽 연도 업데이트
+        if (leftYearBox && currentYear) {
+            leftYearBox.textContent = currentYear;
+        }
+    };
+
+    window.addEventListener('scroll', historyScrollHandler);
+
+    // 초기 실행
+    historyScrollHandler();
+}
+
+// DOM Ready
+$(document).ready(function() {
+    history();
+});
+
+// Resize (디바운스 적용)
+let resizeTimer;
+$(window).on('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        history();
+    }, 150);
+});
 	</script>
-	<!-- //1120 작업 -->
+	<!-- //1121 작업 -->
 
 </body>
 </html>
