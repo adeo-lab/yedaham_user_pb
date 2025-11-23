@@ -85,6 +85,12 @@
 
 ********************************************************************************************************************************/
 .ltd .content-popup .popup-wrap.large {max-width: 996px;}
+.ltd .content-popup .popup-wrap .popup-header {margin-bottom: 32px;}
+
+@media (max-width: 1023px) {
+    .ltd .content-popup .popup-wrap .popup-header {margin-bottom: 0;}
+    .ltd .content-popup .popup-wrap .popup-footer .button-area .btn-popup.btn-normal {padding: 0;}
+}
 
 
 
