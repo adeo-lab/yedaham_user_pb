@@ -264,20 +264,20 @@
 .ltd .custom-product .service-list {display: grid; grid-template-columns: repeat(5, 200px); justify-content: space-between; margin: 32px 0;}
 .ltd .custom-product .service-list .service-item {display: flex; flex-direction: column; gap: 16px; align-items: center; width: 100%; padding: 24px 8px; box-sizing: border-box; font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
 .ltd .custom-product .service-list .service-item::before {display: block; content: ''; flex-shrink: 0; width: 120px; height: 120px; border-radius: 100%; background-color: #ECF5FF; aspect-ratio: 1/1; background-repeat: no-repeat; background-size: 56px; aspect-ratio: 1/1; background-position: center;}
-.ltd .custom-product .service-list .service-item.director::before {background-image: url(../../../assets/front/images/ltd/icon_director.svg);}
-.ltd .custom-product .service-list .service-item.attendant::before {background-image: url(../../../assets/front/images/ltd/icon_attendant.svg);}
-.ltd .custom-product .service-list .service-item.casket::before {background-image: url(../../../assets/front/images/ltd/icon_casket.svg);}
-.ltd .custom-product .service-list .service-item.box::before {background-image: url(../../../assets/front/images/ltd/icon_box.svg);}
-.ltd .custom-product .service-list .service-item.urn::before {background-image: url(../../../assets/front/images/ltd/icon_urn.svg);}
-.ltd .custom-product .service-list .service-item.cover::before {background-image: url(../../../assets/front/images/ltd/icon_cover.svg);}
-.ltd .custom-product .service-list .service-item.shroud::before {background-image: url(../../../assets/front/images/ltd/icon_shroud.svg);}
-.ltd .custom-product .service-list .service-item.bus::before {background-image: url(../../../assets/front/images/ltd/icon_bus.svg);}
-.ltd .custom-product .service-list .service-item.limousine::before {background-image: url(../../../assets/front/images/ltd/icon_limousine.svg);}
-.ltd .custom-product .service-list .service-item.hearse::before {background-image: url(../../../assets/front/images/ltd/icon_hearse.svg);}
-.ltd .custom-product .service-list .service-item.mourning::before {background-image: url(../../../assets/front/images/ltd/icon_mourning.svg);}
-.ltd .custom-product .service-list .service-item.altar::before {background-image: url(../../../assets/front/images/ltd/icon_altar.svg);}
-.ltd .custom-product .service-list .service-item.disposable::before {background-image: url(../../../assets/front/images/ltd/icon_disposable.svg);}
-.ltd .custom-product .service-list .service-item.enshrine::before {background-image: url(../../../assets/front/images/ltd/icon_enshrine.svg);}
+.ltd .custom-product .service-list .service-item.director::before { background-image: url(../../../assets/front/images/sub/icon_instructor.svg);}
+.ltd .custom-product .service-list .service-item.attendant::before {background-image: url(../../../assets/front/images/sub/icon_helper.svg);}
+.ltd .custom-product .service-list .service-item.casket::before {background-image: url(../../../assets/front/images/sub/icon_coffin.svg);}
+.ltd .custom-product .service-list .service-item.box::before {background-image: url(../../../assets/front/images/sub/icon_board.svg);}
+.ltd .custom-product .service-list .service-item.urn::before {background-image: url(../../../assets/front/images/sub/icon_box.svg);}
+.ltd .custom-product .service-list .service-item.cover::before {background-image: url(../../../assets/front/images/sub/icon_cover.svg);}
+.ltd .custom-product .service-list .service-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_clothes.svg);}
+.ltd .custom-product .service-list .service-item.bus::before {background-image: url(../../../assets/front/images/sub/icon_bus.svg);}
+.ltd .custom-product .service-list .service-item.limousine::before {background-image: url(../../../assets/front/images/sub/icon_buslimo.svg);}
+.ltd .custom-product .service-list .service-item.hearse::before {background-image: url(../../../assets/front/images/sub/icon_vehicle.svg);}
+.ltd .custom-product .service-list .service-item.mourning::before {background-image: url(../../../assets/front/images/sub/icon_mourning.svg);}
+.ltd .custom-product .service-list .service-item.altar::before {background-image: url(../../../assets/front/images/sub/icon_convenience.svg);}
+.ltd .custom-product .service-list .service-item.disposable::before {background-image: url(../../../assets/front/images/sub/icon_customs.svg);}
+.ltd .custom-product .service-list .service-item.enshrine::before {background-image: url(../../../assets/front/images/sub/icon_supplies.svg);}
 .ltd .custom-product .dot-list {display: flex; flex-direction: column; row-gap: 4px;}
 .ltd .custom-product .dot-list .list-item {display: flex; gap: 8px; align-items: baseline; font-size: 15px; font-weight: 400; line-height: 1.5; color: #AF5B27;}
 .ltd .custom-product .dot-list .list-item::before {display: block; content: ''; flex-shrink: 0; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23D17B47'/%3E%3C/svg%3E");}
