@@ -637,6 +637,10 @@
     .landing-wrap .btn-cancel {padding: 0 32px;}
     .landing-wrap .btn-submit { flex: 1 1 100%; padding: 0 32px;}
 
-    .landing-wrap .intro-section .intro-container {max-width: 100%; padding: 0 16px;}
-    .landing-wrap .intro-section .intro-container .intro-title {text-align: center;}
+    .landing-wrap .intro-section {height: calc(100vh - 58px); background-position: center;}
+    .landing-wrap .intro-section .intro-container {max-width: 100%; padding: 0 16px; box-sizing: border-box;}
+    .landing-wrap .intro-section .intro-container .intro-title {font-size: 34px; text-align: center;}
+    .landing-wrap .intro-section .intro-container .intro-subtitle {font-size: 15px;}
+    .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro .title {font-size: 22px;}
+    .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro .subtitle {font-size: 14px;}
 }
