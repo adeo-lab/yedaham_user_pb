@@ -3701,7 +3701,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .corp .media-list li a {display: block;}
 .corp .media-list li .in-bx {position: relative; width: 100%; box-sizing: border-box;}
-.corp .media-list li .in-bx .thum {position: relative;  border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden; aspect-ratio: 16 / 9;}
+.corp .media-list li .in-bx .thum {position: relative;  border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden; aspect-ratio: 16 / 9; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .corp .media-list li .in-bx .thum .data-info {position: absolute; right: 32px; bottom: 32px; display: flex; column-gap: 16px; z-index: 10;}
 .corp .media-list li .in-bx .thum .data-info p.icon {display: block; width: 56px; height: 56px; background: rgba(19, 21, 23, 0.30); border: 1px solid rgba(255, 255, 255, 0.80); border-radius: 56px; text-indent: -9999px; overflow: hidden; box-sizing: border-box;}
 .corp .media-list li .in-bx .thum .data-info p.icon.youtube {
