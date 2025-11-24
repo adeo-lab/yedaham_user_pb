@@ -6901,6 +6901,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .pdf-inline-viewer .swiper-button-next, .pdf-inline-viewer .swiper-rtl .swiper-button-prev {right: var(--swiper-navigation-sides-offset, 28px) !important}
 .pdf-inline-viewer .swiper-button-prev, .pdf-inline-viewer .swiper-rtl .swiper-button-next {left: var(--swiper-navigation-sides-offset, 28px) !important}
 
+@media (max-width: 1023px) {
+  .pdf-inline-viewer {overflow: unset !important;}
+  .pdf-inline-viewer .swiper-button-next, .pdf-inline-viewer .swiper-button-prev {width: 36px !important; height: 36px !important;}
+  .pdf-inline-viewer .swiper-button-next {background-size: 15px !important;}
+  .pdf-inline-viewer .swiper-button-next, .pdf-inline-viewer .swiper-rtl .swiper-button-prev {right: var(--swiper-navigation-sides-offset, -7px) !important}
+  .pdf-inline-viewer .swiper-button-prev, .pdf-inline-viewer .swiper-rtl .swiper-button-next {left: var(--swiper-navigation-sides-offset, -7px) !important}
+}
+
 /* keyframes */
 @keyframes stepProgressAnimation {
     0% {
