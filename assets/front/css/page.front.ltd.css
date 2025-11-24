@@ -3848,81 +3848,81 @@ white-space: nowrap; border: 0;}
 
 
 /* 장례지도사 */
-.home .icon.instructor {
+.ltd .icon.instructor {
     background-image: url(../../../assets/front/images/sub/icon_instructor.svg);
 }
 
 /* 장례도우미 */
-.home .icon.helper {
+.ltd .icon.helper {
     background-image: url(../../../assets/front/images/sub/icon_helper.svg);
 }
 
 /* 고인이송차량 */
-.home .icon.vehicle {
+.ltd .icon.vehicle {
     background-image: url(../../../assets/front/images/sub/icon_vehicle.svg);
 }
 
 /* 버스 */
-.home .icon.bus {
+.ltd .icon.bus {
     background-image: url(../../../assets/front/images/sub/icon_bus.svg);
 }
 
 /* 리무진 */
-.home .icon.buslimo {
+.ltd .icon.buslimo {
     background-image: url(../../../assets/front/images/sub/icon_buslimo.svg);
 }
 
 /* 봉안함 */
-.home .icon.box {
+.ltd .icon.box {
     background-image: url(../../../assets/front/images/sub/icon_box.svg);
 }
 
 /* 수의 */
-.home .icon.clothes {
+.ltd .icon.clothes {
     background-image: url(../../../assets/front/images/sub/icon_clothes.svg);
 }
 
 /* 관 */
-.home .icon.coffin {
+.ltd .icon.coffin {
     background-image: url(../../../assets/front/images/sub/icon_coffin.svg);
 }
 
 /* 관보 */
-.home .icon.cover {
+.ltd .icon.cover {
     background-image: url(../../../assets/front/images/sub/icon_cover.svg);
 }
 
 /* 횡대 */
-.home .icon.board {
+.ltd .icon.board {
     background-image: url(../../../assets/front/images/sub/icon_board.svg);
 }
 
 /* 상복 */
-.home .icon.mourning {
+.ltd .icon.mourning {
     background-image: url(../../../assets/front/images/sub/icon_mourning.svg);
 }
 
 /* 일회용​ */
-.home .icon.customs {
+.ltd .icon.customs {
     background-image: url(../../../assets/front/images/sub/icon_customs.svg);
 }
 
 /* 상주용품 */
-.home .icon.goods {
+.ltd .icon.goods {
     background-image: url(../../../assets/front/images/sub/icon_goods.svg);
 }
 
 /* 재단장식 */
-.home .icon.decoration, .home .icon.convenience {
+.ltd .icon.decoration, .ltd .icon.convenience {
     background-image: url(../../../assets/front/images/sub/icon_convenience.svg);
 }
 
 /* 기타용품 */
-.home .icon.etc {
+.ltd .icon.etc {
     background-image: url(../../../assets/front/images/sub/icon_etc.svg);
 }
 
 /* 입관용품 */
-.home .icon.supplies {
+.ltd .icon.supplies {
     background-image: url(../../../assets/front/images/sub/icon_supplies.svg);
 }
