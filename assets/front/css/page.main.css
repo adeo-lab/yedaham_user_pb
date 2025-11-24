@@ -532,3 +532,8 @@
   .home .quick-menu.show .btn-to-top {height: 42px;}
   .home .quick-menu .btn-to-top .btn-text {font-size: 12px;}
 }
+
+@media (max-width: 1023px) {
+  .home .quick-menu .btn-to-top {width: 60px; height: 60px;}
+  .home .quick-menu.show .btn-to-top {height: 60px;}
+}
