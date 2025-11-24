@@ -166,7 +166,7 @@
     
     .home .quick-menu.show {bottom: 40px;}
     .home .quick-menu.active .quick-list {display: flex; opacity: 1; pointer-events: auto;}
-    .active-scroll-bottom .home .quick-menu.show {bottom: 120px;}
+    .active-scroll-bottom .home .quick-menu.show {bottom: 206px /*120px*/;}
 }
 
 
