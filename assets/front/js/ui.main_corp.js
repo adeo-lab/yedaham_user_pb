@@ -5,25 +5,41 @@
 
 // 퀵메뉴 스크롤버튼 화면 이동
 window.addEventListener('load', function () {
-	const quickMenu = document.querySelector('.corp .quick-menu');
-  const scrollBtn = document.querySelector('.corp .quick-menu .btn-scroll');
-  const section1 = document.querySelector('.corp .main-cont01-wrap');
-  const section2 = document.querySelector('.corp .main-cont02-wrap'); 
+  // 퀵메뉴 요소만 선택합니다. (quickMenu는 여전히 존재할 수 있으므로 남겨둡니다.)
+  const quickMenu = document.querySelector('.corp .quick-menu');
+  
+  // .btn-scroll, section1, section2 변수는 제거되었습니다.
 
-  if (!quickMenu || !scrollBtn || !section2) {
-    console.warn('quickMenu, scrollBtn, 또는 section2 요소를 찾을 수 없습니다.');
+  if (!quickMenu) {
+    // quickMenu가 필수적인 요소라면 해당 경고를 유지합니다. 
+    // 그렇지 않다면 이 조건문도 제거 가능합니다.
+    console.warn('quickMenu 요소를 찾을 수 없습니다.');
     return;
   }
 
-   scrollBtn.addEventListener('click', function () {
-    quickMenu.classList.toggle('show');
-    const y = section2.getBoundingClientRect().top + window.scrollY;
+  // --- 기존 코드에서 제거된 부분 ---
+  // const scrollBtn = document.querySelector('.corp .quick-menu .btn-scroll');
+  // const section1 = document.querySelector('.corp .main-cont01-wrap');
+  // const section2 = document.querySelector('.corp .main-cont02-wrap'); 
 
-    window.scrollTo({
-      top: y,
-      behavior: 'smooth'
-    });
-  });
+  // if (!quickMenu || !scrollBtn || !section2) {
+  //   console.warn('quickMenu, scrollBtn, 또는 section2 요소를 찾을 수 없습니다.');
+  //   return;
+  // }
+
+  // scrollBtn.addEventListener('click', function () { 
+  //   quickMenu.classList.toggle('show');
+  //   const y = section2.getBoundingClientRect().top + window.scrollY;
+
+  //   window.scrollTo({
+  //     top: y,
+  //     behavior: 'smooth'
+  //   });
+  // });
+  // ---------------------------------
+  
+  // 다른 `window.addEventListener('load')`에서 처리할 로직이 있다면 여기에 추가합니다.
+  // 현재는 `.btn-scroll` 관련 기능 제거 요청만 반영되어 빈 상태입니다.
 });
 
 
