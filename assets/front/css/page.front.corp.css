@@ -4547,7 +4547,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-size: 20px;
 }
 .corp .about-cont06 .map-wrap {display: flex; gap: 48px;}
-.corp .about-cont06 .map-wrap .bx-map {position: relative; width: 928px; height: 632px;}
+.corp .about-cont06 .map-wrap .bx-map {position: relative; width: 928px; height: 632px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; overflow: hidden; box-sizing: border-box;}
 .corp .about-cont06 .map-wrap .bx-detail-r {flex-shrink: 0;}
 /* .corp .about-cont06 .map-wrap {position: relative; min-height: 600px; padding-left: 928px;} */
 /* .corp .about-cont06 .map-wrap .bx-map {position: absolute; top: 0; left: 0; width: 928px; height: 632px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; overflow: hidden; box-sizing: border-box;} */
