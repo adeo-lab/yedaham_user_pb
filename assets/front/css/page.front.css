@@ -3379,10 +3379,10 @@ z-index: 10;
   background-position: center;
   background-size: 24px;
 } */
-.home .board-write-ty01 .top-area .line-item dd .form-noti {margin-top: 8px; padding-left: 8px;font-weight: 400; font-size: 14px; line-height: 150%;}
-.home .board-write-ty01 .top-area .line-item dd .form.textarea {width: 100%;}
-.home .board-write-ty01 .top-area .line-item dd .form.textarea textarea {width: 100%; height: 144px; padding: 16px; box-sizing: border-box;}
-.home .board-write-ty01 .top-area .line-item dd .form.textarea p.btm-tx01 {font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding-top: 8px; text-align: right;}
+.home .board-write-ty01 .top-area .line-item dd .form-noti {margin-top: 8px; padding-left: 8px;font-weight: 400; font-size: 14px; line-height: 150%; height: 22px;}
+.home .board-write-ty01 .top-area .line-item dd .form.textarea {width: 100%; gap: 0;}
+.home .board-write-ty01 .top-area .line-item dd .form.textarea textarea {width: 100%; height: 144px; padding: 16px; margin-bottom: 4px; box-sizing: border-box;}
+.home .board-write-ty01 .top-area .line-item dd .form.textarea p.btm-tx01 {font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding-top: 8px; text-align: right; height: 22px;}
 .home .board-write-ty01 .top-area .line-item.one-line dl {float: none; width: 100%;}
 .home .board-write-ty01 .top-area .line-item.one-line:nth-child(odd) dl {padding-right: 0;}
 .home .board-write-ty01 .top-area .line-item.one-line:nth-child(even) dl {padding-left: 0;}
@@ -3391,6 +3391,8 @@ z-index: 10;
 .home .board-write-ty01 .btm-area .form.checkbox .form-text::before,
 .home .board-write-ty01 .btm-area .form.checkbox .form-text::after {top: 3px;}
 .home .board-write-ty01 .btm-area a.btn-view-detail {position: absolute; top: 0; right: 0; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 150%; text-decoration: underline;}
+
+.home .board-write-ty01 .top-area .line-item dd .form.textarea.invalid p.btm-tx01 {position: absolute; right: 0; bottom: -30px;}
 
 @media (max-width: 1023px) {
   .home .board-write-ty01 .btm-area .form.checkbox .form-text::before,
