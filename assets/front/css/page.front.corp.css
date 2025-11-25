@@ -5035,7 +5035,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .careers-list01 li .in-bx .bx-tp .bx-flag span.flag {display: inline-block; height: 31px; font-weight: 400; font-size: 15px; color: #232527; line-height: 31px; padding: 0 16px; border-radius: 16px;}
 .corp .careers-list01 li .in-bx .bx-tp .bx-flag span.flag.ty01 {background: #F5F5F7;}
 .corp .careers-list01 li .in-bx .bx-tp .bx-flag span.flag.ty02 {background: #DDE1FF;}
-.corp .careers-list01 li .in-bx .bx-tp .tx01 {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding-bottom: 24px; text-align: center;}
+.corp .careers-list01 li .in-bx .bx-tp .tx01 {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding-bottom: 24px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .corp .careers-list01 li .in-bx .bx-tp .tx02 {text-align: center;}
 .corp .careers-list01 li .in-bx .bx-tp .tx02 .tx-date01 {font-weight: 600; font-size: 19px; color: #444; line-height: 150%;}
 .corp .careers-list01 li .in-bx .bx-tp .tx02 .tx-date02 {font-weight: 400; font-size: 17px; color: #444; line-height: 150%;}
