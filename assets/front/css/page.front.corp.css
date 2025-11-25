@@ -5030,7 +5030,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .careers-list01 ul {margin: 0 -16px; display: flex; row-gap: 32px; flex-wrap: wrap;}
 .corp .careers-list01 li {width: calc(100% / 3); padding: 0 16px; box-sizing: border-box;}
 .corp .careers-list01 li .in-bx {height: 296px; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px; box-sizing: border-box; overflow: hidden;}
-.corp .careers-list01 li .in-bx .bx-tp {height: 217px; padding: 32px 32px 32px 0; box-sizing: border-box;}
+.corp .careers-list01 li .in-bx .bx-tp {height: 217px; padding: 32px /*32px 32px 0*/; box-sizing: border-box;}
 .corp .careers-list01 li .in-bx .bx-tp .bx-flag {padding-bottom: 12px; display: flex; column-gap: 8px; justify-content: center;}
 .corp .careers-list01 li .in-bx .bx-tp .bx-flag span.flag {display: inline-block; height: 31px; font-weight: 400; font-size: 15px; color: #232527; line-height: 31px; padding: 0 16px; border-radius: 16px;}
 .corp .careers-list01 li .in-bx .bx-tp .bx-flag span.flag.ty01 {background: #F5F5F7;}
