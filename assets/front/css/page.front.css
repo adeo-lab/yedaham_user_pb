@@ -6309,7 +6309,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .facility-list {width: 384px;}
 .home .facility-list ul {height: 725px; display: flex; flex-direction: column; row-gap: 12px;}
-.home .facility-list li .in-bx {position: relative; padding: 16px 32px; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px;}
+.home .facility-list li .in-bx {position: relative; padding: 16px 32px; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px; cursor: pointer;}
 .home .facility-list li .in-bx::after {content:''; position: absolute; top: 30px; right: 32px; display: block; width: 24px; height: 24px;}
 .home .facility-list li .in-bx::after {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.7352 8.40459C19.4068 8.10902 18.9009 8.13565 18.6054 8.46405L12 14.8033L5.39463 8.46406C5.09906 8.13565 4.59323 8.10902 4.26482 8.40459C3.93641 8.70016 3.90979 9.20599 4.20536 9.5344L11.4054 16.5344C11.5571 16.703 11.7732 16.7992 12 16.7992C12.2268 16.7992 12.4429 16.703 12.5946 16.5344L19.7946 9.5344C20.0902 9.20599 20.0636 8.70016 19.7352 8.40459Z' fill='%23232527'/%3E%3C/svg%3E");
