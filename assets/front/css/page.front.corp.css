@@ -5049,7 +5049,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 1023px) {
   .corp .careers-list01-wrap {padding: 32px 0 64px;}
-  .corp .careers-list01 {padding-top: 0;}
+  /*.corp .careers-list01 {padding-top: 0;}*/
   .corp .careers-list01 ul {display: block; margin: 0;}
   .corp .careers-list01 li {width: 100%; margin-bottom: 16px;}
   .corp .careers-list01 li:last-child {margin-bottom: 0;}
