@@ -1426,6 +1426,9 @@
     .home .compare-data-grid .grid-body .grid-row:hover::after {content: ''; display: block; position: absolute; top: 0; left: 40px; right: 40px; z-index: 1 /*2*/; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff;}
     .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .icon,
     .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .para {position: relative; z-index: 2 /*3*/;}
+    .home .compare-data-grid .grid-body .grid-row:active::after {content: ''; display: block; position: absolute; top: 0; left: 40px; right: 40px; z-index: 1 /*2*/; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff;}
+    .home .compare-data-grid .grid-body .grid-row:active .grid-cell .icon,
+    .home .compare-data-grid .grid-body .grid-row:active .grid-cell .para {position: relative; z-index: 2 /*3*/;}
 /*}*/
 
 
