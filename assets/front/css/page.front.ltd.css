@@ -3324,7 +3324,7 @@ z-index: 10;
 .ltd .wish-time-list ul::after {content: ''; display: block; clear: both;}
 .ltd .wish-time-list li {width: 20%; padding: 0 8px 16px 8px; box-sizing: border-box;}
 .ltd .wish-time-list li a {display: block; height: 100%;}
-.ltd .wish-time-list li .in-bx {height: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; flex-direction: column; word-break: keep-all; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 8px 16px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; text-align: center;}
+.ltd .wish-time-list li .in-bx {height: 68px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; flex-direction: column; word-break: keep-all; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 0 16px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; text-align: center;}
 .ltd .wish-time-list li a:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.4); transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;} 
 .ltd .wish-time-list li.on a:hover .in-bx {border: 2px solid #F1945E;}
 .ltd .wish-time-list li.disabled a:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.07);}
@@ -3336,7 +3336,7 @@ z-index: 10;
 .ltd .wish-time-list li label {position: relative; display: block; height: 100%; cursor: pointer;}
 .ltd .wish-time-list li .in-pr-ck {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); 
 white-space: nowrap; border: 0;}
-.ltd .wish-time-list li .in-pr-ck:checked + .in-bx {color: #AF5B27; padding: 7px 15px; border: 2px solid #F1945E;}
+.ltd .wish-time-list li .in-pr-ck:checked + .in-bx {color: #AF5B27; padding: 0 15px; border: 2px solid #F1945E;}
 .ltd .wish-time-list li label:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.4); transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
 /*.ltd .wish-time-list li .in-pr-ck:read-only + .in-bx {color: #BFBFBF; background: #F7F6F5; border: 1px solid rgba(19, 21, 23, 0.07);}*/
 
