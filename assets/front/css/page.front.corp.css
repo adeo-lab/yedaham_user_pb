@@ -5115,7 +5115,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .careers-view01 .tp-tit-bx .bx-sepa.flag .flag.today {background: #E94543;}
 .corp .careers-view01 .tp-tit-bx .bx-sepa.flag .flag.day {background: #4458B0;}
 .corp .careers-view01 .tp-tit-bx .bx-sepa.flag .flag.ing {background: #4458B0;}
-.corp .careers-view01 .tp-tit-bx .bx-sepa.flag .flag.end {color: #BFBFBF;}
+.corp .careers-view01 .tp-tit-bx .bx-sepa.flag .flag.end {color: #777; border: 1px solid rgba(19, 21, 23, 0.30);}
 .corp .careers-view01 .tp-tit-bx .tx-date .tx-l {display: inline-block; font-weight: 600; font-size: 22px; color: #444; line-height: 150%; padding-left: 12px; vertical-align: top;}
 .corp .careers-view01 .tp-tit-bx .tx-date .tx-r {display: inline-block; font-weight: 400; font-size: 22px; color: #444; line-height: 150%; padding-left: 12px; vertical-align: top;}
 
