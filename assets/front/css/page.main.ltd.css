@@ -182,7 +182,7 @@
 .ltd .main-cont06 .m-service-list li .in-bx .tx02 {font-weight: 600; font-size: 17px; color: #444; line-height: 150%;}
 
 
-.ltd .m-product-list01 {width: 100%; max-width: 1200px; padding: 3px 0 96px 0; margin: 0 auto;}
+.ltd .m-product-list01 {width: 100%; max-width: 1200px; padding: 3px 25px 96px 25px; margin: 0 -25px;}
 .ltd .m-product-list01 > ul {display: flex; flex-wrap: wrap; width: 100%; gap: 48px;}
 .ltd .m-product-list01 li {max-width: 368px;}
 .ltd .m-product-list01 .in-bx {position: relative; width: 368px; height: 480px; padding:40px 31px 32px 31px; background-color: #fff; border: 1px solid rgba(19, 21, 23, 0.30); /*box-shadow: inset 0 0 0 1px rgba(19, 21, 23, 0.30);*/ border-radius: 24px; box-sizing: border-box;}
