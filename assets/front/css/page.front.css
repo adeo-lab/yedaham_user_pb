@@ -8056,8 +8056,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 /* 간편본인인증 */
-
 @media (max-width: 768px) {
+  /* 인증 방법 선택 */
+  #oacxEmbededContentsNewTemp.pc {
+    max-width: 480px !important;
+  }
   #oacxEmbededContentsNewTemp header .logo {
     height: 2rem !important;
     max-width: 4rem !important;
@@ -8094,6 +8097,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size: 1.4rem !important;
   }
 
+  /* 정보 입력 */
   #oacxEmbededContentsNewTemp.mobile .provider-state.bg-gray .state-icon {
     width: 3rem !important;
     height: 3rem !important;
@@ -8129,5 +8133,73 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
   #oacxEmbededContentsNewTemp.mobile .provider-state.bg-gray .contents p b {
     font-size: 0.8rem !important;
+  }
+
+  /* 약관 동의 */
+  #oacxEmbededContentsNewTemp.mobile .modal.bottom-sheet .modal-dialog {
+    border-radius: 2rem 2rem 0 0 !important;
+    padding: 1.3rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .modal.bottom-sheet .modal-header h5 {
+    font-size: 1.2rem !important;
+  }
+  #oacxEmbededContentsNewTemp .modal.bottom-sheet .modal-header {
+    padding-top: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .checkbox-item.all-agree label p {
+    font-size: 1.1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .checkbox-item label p {
+    font-size: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .checkbox-item label span.custom-checkbox-item { 
+    border-radius: 0.3rem !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+  }
+  #oacxEmbededContentsNewTemp .modal .modal-footer .btnArea {
+    padding: 1.4rem 0 0 0 !important;
+  }
+
+  /* 인증 완료 */
+  #oacxEmbededContentsNewTemp.mobile .stanby-content {
+    padding: 1.6rem 1.3rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .guidStep dl dd {
+    font-size: 1.2rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .guidStep .stepArea .step p.num, #oacxEmbededContentsNewTemp.mobile .guidStep .stepArea .step p.step-text {
+    font-size: 0.8rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .guidStep .stepArea .step .iconBox {
+    width: 3rem !important;
+    height: 3rem !important;
+    padding: 0.6rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .guidStep .stepArea .icon-right:before {
+    font-size: 1.2rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .accordion .accordion-item-header p {
+    font-size: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .guidStep .stepArea .step {
+    width: 6.5rem !important;
+  }
+
+  /* 완료 */
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p.tit {
+    font-size: 1.4rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p {
+    font-size: 1rem !important;
+  }
+
+  /* 오류 */
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-header .icon-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p {
+    font-size: 11rem !important;
   }
 }
