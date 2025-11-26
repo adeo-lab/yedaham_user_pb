@@ -183,7 +183,7 @@
 .ltd .payback-items  .payback-items-item.transportation::before {background-image: url(../../../assets/front/images/sub/icon_bus.svg);}
 .ltd .payback-items  .payback-items-item.arrangement::before {background-image: url(../../../assets/front/images/sub/icon_board.svg);}
 .ltd .payback-items  .payback-items-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_clothes.svg);}
-.ltd .payback-items  .payback-items-item.pall::before {background-image: url(../../../assets/front/images/sub/icon_cover.svg);}
+.ltd .payback-items  .payback-items-item.coffin::before {background-image: url(../../../assets/front/images/sub/icon_cover.svg);}
 .ltd .payback-items  .payback-items-item .item-name {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
 
 .ltd .transparent-management-content {display: flex; flex-direction: column; row-gap: 64px;}
