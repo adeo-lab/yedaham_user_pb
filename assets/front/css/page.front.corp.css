@@ -4501,7 +4501,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .corp .about-cont04 .tx01 {font-weight: 600; font-size: 40px; color: #232527; line-height: 130%; padding: 48px 0; margin-bottom: 96px; text-align: center;}
-.corp .about-cont04 .history-list-ty01 .bx-list-r .line {height: calc(100% - 20px) !important;}
+.corp .about-cont04 .history-list-ty01 .bx-list-r .line {top: 10px; height: calc(100% - 20px) !important;}
 .corp .about-cont04 .history-list-ty01 .bx-img-l .h-in-bx {font-weight: 600; font-size: 140px; color: #232527; line-height: 120%; padding-left: 140px;}
 .corp .about-cont04 .history-list-ty01 .bx-list-r li {padding-bottom: 200px;}
 .corp .about-cont04 .history-list-ty01 .bx-list-r li:last-child {padding-bottom: 0;}

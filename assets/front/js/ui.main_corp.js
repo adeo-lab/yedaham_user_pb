@@ -131,11 +131,27 @@ function initCompanyListBoxes() {
     ".main-cont01-wrap.main-section, .main-cont02-wrap.main-section"
   );
 
+  const isMobile = window.innerWidth <= 1023;
+
   sections.forEach((section) => {
     const items = section.querySelectorAll(".bx-cont-r > ul > li");
     if (!items.length) return;
 
-    gsap.set(items, { opacity: 0, y: 80 });
+    const isSection2 = section.classList.contains("main-cont02-wrap");
+
+    // 🔸 방향 설정
+    let fromVars;
+    if (isSection2) {
+      // 2섹션: PC는 오른쪽→왼쪽 / 모바일은 아래→위
+      fromVars = isMobile
+        ? { opacity: 0, y: 80 }
+        : { opacity: 0, x: 80 };
+    } else {
+      // 1섹션: 기본 아래→위
+      fromVars = { opacity: 0, y: 80 };
+    }
+
+    gsap.set(items, fromVars);
 
     ScrollTrigger.create({
       trigger: section,
@@ -144,6 +160,7 @@ function initCompanyListBoxes() {
       onEnter: () => {
         gsap.to(items, {
           opacity: 1,
+          x: 0,
           y: 0,
           duration: 1.4,
           ease: "power3.out",
@@ -154,6 +171,7 @@ function initCompanyListBoxes() {
     });
   });
 }
+
 
 
 // ---------------------------
