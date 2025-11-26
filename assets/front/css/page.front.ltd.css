@@ -2958,7 +2958,7 @@ z-index: 10;
 .ltd .page-head .heading-l {line-height: 56px;}
 .ltd .page-head .btn-r-ty01 {display: inline-block; font-weight: 600; font-size: 19px; color: #FFF; line-height: 150%; padding: 13.5px 40px; background: #D17B47; border-radius: 32px;}
 .ltd .page-head .data-search .search-word .search-form {position: relative;}
-.ltd .page-head .data-search .search-word .search-form .form .form-elem {width: 320px; height: 56px; padding: 0 40px 0 24px; border: 1px solid #B8B9B9; border-radius: 32px;}
+.ltd .page-head .data-search .search-word .search-form .form .form-elem {width: 385px /*320px*/; height: 56px; padding: 0 40px 0 24px; border: 1px solid #B8B9B9; border-radius: 32px;}
 .ltd .page-head .data-search .search-word .search-form .btn-search {position: absolute; top: 16px; right: 16px; width: 24px; height: 24px; font-weight: 400; font-size: 17px; line-height: 150%;}
 .ltd .page-head .data-search .search-word .search-form .btn-search::after {
   content: '';
