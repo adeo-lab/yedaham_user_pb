@@ -51,7 +51,7 @@
 .corp .quick-menu.main-quick-menu .quick-wrap {display: flex; flex-direction: column; justify-content: center; row-gap: 16px;}
 .corp .quick-menu.main-quick-menu .btn-scroll,
 .corp .quick-menu.main-quick-menu .btn-to-top {position: absolute; transition: all 0.3s ease;}
-.corp .quick-menu.main-quick-menu .btn-scroll {opacity: 1; pointer-events: auto; z-index: 10000;}
+.corp .quick-menu.main-quick-menu .btn-scroll {opacity: 1; pointer-events: none /*auto*/; z-index: 10000;}
 .corp .quick-menu.main-quick-menu.show .btn-scroll {opacity: 0; pointer-events: none; z-index: -1;}
 .corp .quick-menu.main-quick-menu .btn-scroll .btn-text {display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 15px; font-weight: 600; line-height: 1.5; color: #232527;}
 .corp .quick-menu.main-quick-menu .btn-scroll .btn-text::after {display: block; content: ''; width: 16px; height: 16px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.1568 6.10371C12.9378 5.90667 12.6006 5.92442 12.4036 6.14335L8.00001 10.3695L3.59643 6.14335C3.39939 5.92442 3.06216 5.90667 2.84323 6.10371C2.62429 6.30076 2.60654 6.63798 2.80358 6.85692L7.60358 11.5236C7.70473 11.636 7.84881 11.7001 8.00001 11.7001C8.1512 11.7001 8.29529 11.636 8.39643 11.5236L13.1964 6.85692C13.3935 6.63798 13.3757 6.30076 13.1568 6.10371Z' fill='%23232527' stroke='%23232527' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
