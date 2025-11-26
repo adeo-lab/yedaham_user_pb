@@ -1385,8 +1385,8 @@
 
 
 /* 상품 한눈에 비교하기 */
-.home .compare-data-grid .grid-wrap {display: grid; grid-template-rows: auto 1fr; width: 100%; min-width: 680px;}
-.home .compare-data-grid .grid-row {display: grid; grid-template-columns: 80px repeat(3, 1fr); min-width: 680px; padding: 0 40px; box-sizing: border-box; background: linear-gradient(to right, #fafafa 0%, #fafafa 33.333%, #f3f3f3 33.333%, #f3f3f3 66.666%, #ececec 66.666%, #ececec 100%);}
+.home .compare-data-grid .grid-wrap {display: grid; grid-template-rows: auto 1fr; width: 100%; min-width: 700px /*680px*/;}
+.home .compare-data-grid .grid-row {display: grid; grid-template-columns: 80px repeat(3, 1fr); min-width: 700px /*680px*/; padding: 0 40px; box-sizing: border-box; background: linear-gradient(to right, #fafafa 0%, #fafafa 33.333%, #f3f3f3 33.333%, #f3f3f3 66.666%, #ececec 66.666%, #ececec 100%);}
 .home .compare-data-grid .grid-header {position: sticky; top: 0; z-index: 4; padding-top: 3px;}
 .home .compare-data-grid .grid-header::before {content: ''; display: block; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 3px; background-color: #fff;}
 .home .compare-data-grid .grid-header .grid-row {position: sticky; top: 0; z-index: 4;}
@@ -1422,11 +1422,12 @@
 .home .compare-data-grid .grid-body .grid-row:nth-child(1) .grid-cell {border-top: 0 none;}
 .home .compare-data-grid .grid-body .grid-cell {padding: 24px 32px; border-top: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; font-size: 17px; line-height: 1.5; color: #232527;}
 
-@media (hover: hover) {
-    .home .compare-data-grid .grid-body .grid-row:hover::after {content: ''; display: block; position: absolute; top: 0; left: 40px; right: 40px; z-index: 2; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff;}
+@media (min-width: 1024px) {
+    .home .compare-data-grid .grid-body .grid-row:hover::after {content: ''; display: block; position: absolute; top: 0; left: 40px; right: 40px; z-index: 1 /*2*/; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff;}
     .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .icon,
-    .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .para {position: relative; z-index: 3;}
+    .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .para {position: relative; z-index: 2 /*3*/;}
 }
+
 
 @media (max-width: 1023px) {
     .home .content-popup .popup-wrap .popup-body:has(.compare-data-grid) {overflow-x: auto;}
