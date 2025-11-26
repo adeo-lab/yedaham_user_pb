@@ -8051,3 +8051,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home #ui-datepicker-div .ui-datepicker-calendar td span {
    color: var(--color-base-060);
 }
+
+
+
+
+/* 간편본인인증 */
+
+#oacxEmbededContentsNewTemp header {padding: 0;}
