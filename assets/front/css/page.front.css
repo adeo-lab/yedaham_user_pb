@@ -8080,7 +8080,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
   #oacxEmbededContentsNewTemp.mobile .provider-state {
     padding: 1rem 1.3rem !important;
-        justify-content: flex-start !important;
+    justify-content: flex-start !important;
+    column-gap: 28px !important;
   }
   #oacxEmbededContentsNewTemp .provider-list .list ul li a {
     max-width: 54px !important;
@@ -8091,5 +8092,42 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
   #oacxEmbededContentsNewTemp.mobile .provider-state .contents p {
     font-size: 1.4rem !important;
+  }
+
+  #oacxEmbededContentsNewTemp.mobile .provider-state.bg-gray .state-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  #oacxEmbededContentsNewTemp .auth-info-top {
+    padding: 1.6rem 1.3rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .userInfo li label {
+    font-size: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile input {
+    height: 2.6rem !important;
+    font-size: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp .userInfo li .ul-td input {
+    font-size: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .userInfo li .ul-support-text span {
+    font-size: 1rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .btnArea {
+    padding: 2.4rem 1.3rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .btnArea button {
+    height: 3.2rem !important;
+    font-size: 1.2rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .provider-state.bg-gray .contents h5 {
+    font-size: 1.4rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .provider-state.bg-gray .contents p {
+    font-size: 0.8rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .provider-state.bg-gray .contents p b {
+    font-size: 0.8rem !important;
   }
 }
