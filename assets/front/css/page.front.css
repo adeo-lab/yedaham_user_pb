@@ -7987,7 +7987,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 /* 툴팁 */
-.btn_q .q-layer {display: none;position: absolute; bottom: 43px; left: -74px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 10px; background: #232527; border-radius: 4px; box-sizing: border-box; z-index: 10000;}
+.btn_q .q-layer {display: none;position: absolute; bottom: 43px; left: -74px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 10px; background: #232527; border-radius: 4px; box-sizing: border-box; z-index: 10002;}
 
 @media (hover: hover) {
   .btn_q:hover .q-layer {display: block;}
