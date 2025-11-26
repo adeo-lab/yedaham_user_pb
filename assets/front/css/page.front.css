@@ -4578,7 +4578,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q .q-layer.type-b {bottom: auto; top: 35px;}
 .home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q .q-layer.type-b::after {bottom: auto; top: -9px;transform: rotate(180deg);}
 
-@media (hover: hover) {
+@media (min-width: 1024px) {
   .home .easy-join-wrap .easy-join-left-side .in-tit-bx .s-tit .btn_q:hover .q-layer {display: block;}
 }
 
@@ -7989,7 +7989,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* 툴팁 */
 .btn_q .q-layer {display: none;position: absolute; bottom: 43px; left: -74px; font-weight: 400; font-size: 15px; color: #fff; line-height: 130%; padding: 8px 10px; background: #232527; border-radius: 4px; box-sizing: border-box; z-index: 10002;}
 
-@media (hover: hover) {
+@media (min-width: 1024px) {
   .btn_q:hover .q-layer {display: block;}
 }
 
