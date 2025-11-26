@@ -105,25 +105,29 @@
                             </div>
                         </div>
 
-                        <!-- tab -->
-                        <div class="tab-display style-c tab-fixed">
-                            <div class="tab-inner-bx swiper">
-                                <ul class="tab-list swiper-wrapper">
-                                    <li class="tab-item swiper-slide current"><a href="#" class="tab-text btn-target-scroll" data-target="#customList">맞춤 품목</a></li>
-                                    <li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#whyYedaham">왜 예다함 인가?</a></li>
-                                    <li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#caseStudy">도입 사례</a></li>
-                                    <li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#infoSection">기타정보 및 유의사항</a></li>
-                                </ul>
+                        <!-- //1126 작업 -->
+                        <div class="tab-wrap">
+                            <!-- tab -->
+                            <div class="tab-display style-c tab-fixed">
+                                <div class="tab-inner-bx swiper">
+                                    <ul class="tab-list swiper-wrapper">
+                                        <li class="tab-item swiper-slide current"><a href="#" class="tab-text btn-target-scroll" data-target="#customList">맞춤 품목</a></li>
+                                        <li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#whyYedaham">왜 예다함 인가?</a></li>
+                                        <li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#caseStudy">도입 사례</a></li>
+                                        <li class="tab-item swiper-slide"><a href="#" class="tab-text btn-target-scroll" data-target="#infoSection">기타정보 및 유의사항</a></li>
+                                    </ul>
+                                </div>
                             </div>
+                            <!-- //tab -->
+                            <script>
+                                var swiper = new Swiper(".tab-display .tab-inner-bx", {
+                                    slidesPerView: "auto",
+                                    spaceBetween: 0,
+                                    freeMode: true,
+                                });
+                            </script>
                         </div>
-                        <!-- //tab -->
-                        <script>
-                            var swiper = new Swiper(".tab-display .tab-inner-bx", {
-                                slidesPerView: "auto",
-                                spaceBetween: 0,
-                                freeMode: true,
-                            });
-                        </script>
+                        <!-- //1126 작업 -->
 
                         <!-- section -->
                         <div class="section custom-product" id="customList">
