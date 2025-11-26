@@ -3462,9 +3462,9 @@ white-space: nowrap; border: 0;}
 }
 .ltd .faq-list .faq-item .faq-head {padding: 39.5px 32px; column-gap: 32px;}
 .ltd .faq-list .faq-item .faq-head .faq-caption {column-gap: 32px;}
-.ltd .faq-list .faq-item .faq-head .faq-caption .abbr {width: 32px; height: 32px; font-family: "Dongle", sans-serif; font-weight: 700; font-size: 36.571px; color: #fff; line-height: 37px; background: #FBCD6C; border-radius: 32px;}
+.ltd .faq-list .faq-item .faq-head .faq-caption .abbr {width: 32px; height: 32px; font-family: "Dongle", sans-serif; font-weight: 600; font-size: 36.571px; color: #fff; line-height: 37px; background: #FBCD6C; border-radius: 32px;}
 .ltd .faq-list .faq-item .faq-head .faq-caption .faq-text {font-weight: 600; font-size: 19px; color: #374BA3; line-height: 150%;}
-.ltd .faq-list .faq-item .faq-head .faq-subject {font-weight: 700; font-size: 24px; color: #232527; line-height: 150%;}
+.ltd .faq-list .faq-item .faq-head .faq-subject {font-weight: 600; font-size: 24px; color: #232527; line-height: 150%;}
 
 
 .ltd .tab-display.style-c .tab-list  {border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
