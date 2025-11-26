@@ -5557,7 +5557,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media (max-width: 1023px) {
   .corp .financial-wrap01 .grp-wrap03 {padding-left: 16px; padding-right: 16px; margin-bottom: 24px; height: auto; overflow-x: scroll;}
-  .corp .financial-wrap01 .grp-wrap03 .mob-inner-scroll {width: 100%; min-width: 500px; padding: 24px; margin-bottom: 0; box-sizing: border-box;}
+  .corp .financial-wrap01 .grp-wrap03 .mob-inner-scroll {width: 100%; min-width: 500px; height: 406px; padding: 24px; margin-bottom: 0; box-sizing: border-box;}
   .corp .financial-wrap01 .grp-wrap03 .bx-txt {position: relative; top: auto; left: auto; padding-bottom: 24px; display: flex; column-gap: 8px;}
   .corp .financial-wrap01 .grp-wrap03 .bx-txt .tx01 {font-size: 20px;}
   .corp .financial-wrap01 .grp-wrap03 .bx-txt .tx02 {font-size: 13px;}
