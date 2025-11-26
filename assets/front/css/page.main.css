@@ -517,9 +517,9 @@
   .home .main-cont01 .in-bx .in-list ul {column-gap: 7px;}
   .home .main-cont03 .main-review-list .bx-wrap-l {width: 340px;}
   .home .main-cont03 .main-review-list .bx-wrap-r {width: 340px;}
-  .home .m-product-list01 > ul {gap: 24px;}
+  /*.home .m-product-list01 > ul {gap: 24px;}
   .home .m-product-list01 li {width: 319px;}
-  .home .m-product-list01 .in-bx {width: 100%;}
+  .home .m-product-list01 .in-bx {width: 100%;}*/
 
   .home .y-news-wrap .inner-bx {max-width: 1006px;}
 
