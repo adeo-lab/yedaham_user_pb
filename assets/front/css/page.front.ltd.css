@@ -3089,7 +3089,9 @@ z-index: 10;
 
 .ltd .content-popup .popup-wrap .popup-footer .button-area {padding-top: 32px; padding-bottom: 40px; column-gap: 16px;}
 .ltd .content-popup .popup-wrap .popup-footer .button-area [class*=btn-] {width: auto; height: 56px; font-weight: 600; font-size: 19px; line-height: 150%; padding: 0 64px; border-radius: 8px; flex: none; border: 1px solid rgba(19, 21, 23, 0.30); box-sizing: border-box;}
+.ltd .content-popup .popup-wrap .popup-footer .button-area [class*=btn-]:hover {background: #F4F5F6;}
 .ltd .content-popup .popup-wrap .popup-footer .button-area [class*=btn-]:last-child {background-color: #D17B47; border: 0;}
+.ltd .content-popup .popup-wrap .popup-footer .button-area [class*=btn-]:last-child:hover {background: #BC6F40;}
 
 .ltd .content-popup .popup-wrap.board-detail {max-width: 996px;}
 .ltd .content-popup .popup-wrap.board-detail .popup-header {margin-bottom: 39px;}

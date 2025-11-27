@@ -261,6 +261,7 @@
 .ltd .section-top .product-body .dot-list li::before {display: block; content: ''; flex-shrink: 0; width: 12px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23232527'/%3E%3C/svg%3E");}
 .ltd .section-top .product-body .button-area {display: flex; margin-top: 32px;}
 .ltd .section-top .product-body .button-area .btn-apply {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; height: 48px; padding: 0 32px; box-sizing: border-box; border-radius: 8px; background-color: #6A75A0;}
+.ltd .section-top .product-body .button-area .btn-apply:hover {background: #5F6990;}
 .ltd .section-top .product-body .button-area .btn-apply .btn-text {font-size: 19px; font-weight: 600; line-height: 1.5; color: #fff;}
 
 .ltd .custom-product .service-list {display: grid; grid-template-columns: repeat(5, 200px); justify-content: space-between; margin: 32px 0;}
@@ -590,7 +591,9 @@
 .landing-wrap .form-buttons {display: flex; justify-content: center; gap: 16px; margin-top: 40px;}
 .landing-wrap .btn-cancel, .btn-submit {min-width: 130px; height: 56px; font-size: 19px; font-weight: 600; border: none; border-radius: 8px; line-height: 1.5; cursor: pointer; transition: all 0.3s;}
 .landing-wrap .btn-cancel {padding: 0 40px; background-color: white; border: 1px solid rgba(19, 21, 23, 0.30); color: #232527;}
+.landing-wrap .btn-cancel:hover {background: #F4F5F6;}
 .landing-wrap .btn-submit {padding: 0 64px; background-color: #6A75A0; color: white;}
+.landing-wrap .btn-submit:hover {background: #5F6990;}
 
 .landing-wrap .intro-section {display: flex; align-items: center; height: 760px; background: url(../../../assets/front/images/ltd/img_landing_bnr02_01_pc.jpg) no-repeat; background-position: 50% 0; background-size: cover;}
 .landing-wrap .intro-section .intro-container {max-width: 440px; padding: 0 140px;}
