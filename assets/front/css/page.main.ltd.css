@@ -186,7 +186,7 @@
 .ltd .m-product-list01 > ul {display: flex; flex-wrap: wrap; width: 100%; gap: 48px;}
 .ltd .m-product-list01 li {max-width: 368px;}
 .ltd .m-product-list01 .in-bx {position: relative; width: 368px; height: 480px; padding:40px 31px 32px 31px; background-color: #fff; border: 1px solid rgba(19, 21, 23, 0.30); /*box-shadow: inset 0 0 0 1px rgba(19, 21, 23, 0.30);*/ border-radius: 24px; box-sizing: border-box;}
-.ltd .m-product-list01 .in-bx:hover {display: block; height: 479px; border: 1px solid #9EA9D7; border-radius: 24px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); box-sizing: border-box;}
+.ltd .m-product-list01 .in-bx:hover {display: block; padding: 39px 30px 31px 30px; border: 2px solid #9EA9D7; border-radius: 24px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); box-sizing: border-box;}
 /*.ltd .m-product-list01 a:hover {display: block; border-radius: 24px; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05);}*/
 /* .ltd .m-product-list01 .in-bx:hover {padding: 39px 30px 31px 30px; border: 2px solid #F1945E; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;} */
 .ltd .m-product-list01 .in-bx.ty02 {height: 362px;}
