@@ -188,8 +188,10 @@
   .corp .main-cont04 .main-vis04-list ul {flex-direction: unset;}
   .corp .main-cont04 .main-vis04-list li {width: 240px; height: 100%;}
   .corp .main-cont04 .main-vis04-list li .in-bx .thum {height: 135px;}
+  .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx {opacity: 0; transition: opacity 0.7s ease, visibility 0.7s ease;}
   .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx .tx01 {font-size: 18px;}
   .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx .tx02 {font-size: 14px;}
+  .corp .main-cont04 .main-vis04-list li.swiper-slide-active .bt-tx {opacity: 1; transition: opacity 0.7s ease, visibility 0.7s ease;}
   .corp .main-cont04 .button-bx {display: none;}
   .corp .main-cont04 .main-vis04-list li .in-bx .thum .data-info {right: 16px; bottom: 16px; column-gap: 12px;}
   .corp .main-cont04 .main-vis04-list li .in-bx .thum .data-info p.icon {width: 40px; height: 40px;}
