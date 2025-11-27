@@ -65,7 +65,7 @@
 				</div>
 				<div class="page-body-wrap no-bg">
 					<div class="page-body">
-						<div class="about-cont09-wrap bg-cnt02">
+						<div class="about-cont09-wrap bg-cnt01">
 							<div class="about-cont09">
 								<div class="bx-left">
 									<div class="tx01">
@@ -75,8 +75,8 @@
 									<div class="tx02">예다함과 함께하는 다양한 관계사 정보를 <span class="mob-db">확인해 보세요.</span></div>
 									<div class="in-list-fam swiper">
 										<ul class="swiper-wrapper">
-											<li class="swiper-slide"><a href="https://www.yedaham.co.kr/about/partner/partner_list.do" target="_blank"><span>The-K 한국교직원공제회</span></a></li>
-											<li class="swiper-slide on"><span>The-K 제주호텔</span></li>
+											<li class="swiper-slide on"><span>The-K 한국교직원공제회</span></li>
+											<li class="swiper-slide"><span>The-K 제주호텔</span></li>
 											<li class="swiper-slide"><span>The-K 호텔경주</span></li>
 											<li class="swiper-slide"><span>The-K 지리산 가족호텔</span></li>
 											<li class="swiper-slide"><span>The-K 설악산 가족호텔</span></li>
@@ -109,8 +109,36 @@
 									<!-- //1111 작업 -->
 								</div>
 								<div class="bx-right">
+									<!-- The-K 한국교직원공제회 -->
+									<div class="bx-cnt01 show">
+										<div class="tp-info">
+											<div class="mob-thum"></div>
+											<div class="tx01">
+												The-K 한국교직원공제회
+											</div>
+											<div class="tx02">
+												The-K 한국교직원공제회는 전국 교육가족의 행복한 미래를 약속해 드리는 국내 유일의 교직원 복지기관입니다.
+											</div>
+											<div class="tx03">
+												<p class="ico01">07328 서울 영등포구 여의나루로 50 The-K한국교직원공제회</p>
+												<p class="ico02">1577-3400</p>
+											</div>
+											<div class="btm-btn">
+												<a href="https://www.ktcu.or.kr/index" target="_blank" class="btn-go-home">홈페이지 바로가기</a>
+											</div>
+										</div>
+										<div class="detail-list">
+											<div class="line-item sepa">
+												<div class="in-bx">
+													<div class="bx-th">설립일</div>
+													<div class="bx-td">1971년</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //The-K 한국교직원공제회 -->
 									<!-- The-K 제주호텔 -->
-									<div class="bx-cnt02 show">
+									<div class="bx-cnt02">
 										<div class="tp-info no-cnt">
 											<div class="tx01">
 												The-K 제주호텔
@@ -477,10 +505,10 @@
 							</div>
 						</div>
 						<script>
-						document.querySelectorAll('.in-list-fam li:nth-child(n+2):nth-child(-n+8)').forEach((li, index, list) => {
+						document.querySelectorAll('.in-list-fam li:nth-child(n+1):nth-child(-n+8)').forEach((li, index, list) => {
 							li.addEventListener('click', () => {
 								// 클릭 인덱스 (2~8)
-								const targetIndex = index + 2;
+								const targetIndex = index + 1;
 
 								// 1️⃣ 모든 .bx-cnt의 .show 제거
 								document.querySelectorAll('.bx-right [class^="bx-cnt"]').forEach(cnt => {

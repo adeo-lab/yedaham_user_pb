@@ -4711,6 +4711,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .about-cont09-wrap .about-cont09 .bx-right .detail-list .line-item.sepa .in-bx .bx-td {width: 194px;}
 
 .corp .about-cont09-wrap {position: relative;}
+.corp .about-cont09-wrap.bg-cnt01 {background: url('../../../assets/front/images/corp/bg_about02_01.png') no-repeat center top; background-size: cover;}
 .corp .about-cont09-wrap.bg-cnt02 {background: url('../../../assets/front/images/corp/bg_about02_02.png') no-repeat center top; background-size: cover;}
 .corp .about-cont09-wrap.bg-cnt03 {background: url('../../../assets/front/images/corp/bg_about02_03.png') no-repeat center top; background-size: cover;}
 .corp .about-cont09-wrap.bg-cnt04 {background: url('../../../assets/front/images/corp/bg_about02_04.png') no-repeat center top; background-size: cover;}
