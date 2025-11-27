@@ -4432,10 +4432,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 /* .corp .sustain-history-wrap01 .history-list-ty01 .bx-list-r ul::before {top: 110px; height: calc(100% - 130px);} */
-.corp .history-list-ty01 {position: relative; display: flex; column-gap: 48px;}
+.corp .history-list-ty01 {position: relative; display: flex; column-gap: 48px; margin-bottom: 454px;}
 .corp .history-list-ty01 .bx-img-l {width: 684px;}
-.corp .history-list-ty01 .bx-img-l .h-in-bx {position: sticky; top: 120px; width: 560px; padding-top: 14px;}
-.corp .history-list-ty01 .bx-list-r {position: relative;}
+.corp .history-list-ty01 .bx-img-l .h-in-bx {position: sticky; top: 120px /*120px*/; width: 560px; padding-top: 14px;}
+.corp .history-list-ty01 .bx-list-r {position: relative; margin-bottom: 70px /*414px*/; margin-top: 86px;}
 .corp .history-list-ty01 .bx-list-r .line {position: absolute; left: 14px; top: 104px; width: 1px; height: calc(100% - 115px) !important; /*height: calc(100% - 147px);*/ background: rgba(19, 21, 23, 0.15);}
 .corp .history-list-ty01 .bx-list-r .line .bg {position: absolute; left: 50%; top: 0; width: 1px; height: 0%; transform: translateX(-50%); background-color: #94A6FF; max-height: 100%;}
 .corp .history-list-ty01 .bx-list-r li {position: relative; padding-bottom: 88px;}
