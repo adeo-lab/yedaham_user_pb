@@ -2940,6 +2940,7 @@ z-index: 10;
 }
 .home .ft-r-side .ft-family-wrap .family-layer {position: absolute; bottom: 54px /*50px*/; left: 0; width: 100%; padding: 16px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 8px; box-sizing: border-box; display: none; z-index: 10;}
 .home .ft-r-side .ft-family-wrap .family-layer li a {font-weight: 400; font-size: 14px; color: #232527; line-height: 220%;}
+.home .ft-r-side .ft-family-wrap .family-layer li a:hover {text-decoration: underline;}
 .home .ft-r-side .ft-sns {padding-bottom: 16px;}
 .home .ft-r-side .ft-sns ul {display: flex; column-gap: 24px; justify-content: flex-end;}
 .home .ft-r-side .ft-sns li a.btn-facebook {
