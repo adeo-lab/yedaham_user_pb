@@ -680,7 +680,7 @@ function history() {
     line.style.height = `${endPos}px`;
 
     // 뷰포트 기준 활성화 위치 (화면 상단에서 몇 % 지점)
-    const activationPoint = window.innerWidth > 768 ? 0.15 : 0.7;
+    const activationPoint = window.innerWidth > 768 ? 0.2 : 0.7;
 
     // 기존 스크롤 핸들러 제거
     if (historyScrollHandler) {
