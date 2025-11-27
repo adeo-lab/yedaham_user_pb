@@ -990,13 +990,17 @@
 .home .payback-items  .payback-head .txt-01 {font-size: 17px; line-height: 1.5; color: #444;}
 .home .payback-items  .payback-items-list {display: flex; gap: 8px;}
 .home .payback-items  .payback-items-item {display: flex; flex-direction: column; row-gap: 8px; align-items: center; padding: 24px 8px;}
-.home .payback-items  .payback-items-item::before {display: block; content: ''; width: 84px; height: 84px; padding: 12px; box-sizing: border-box; border-radius: 100%; background-color: #ECF5FF; background-size: 48px auto; background-repeat: no-repeat; background-position: center;}
+.home .payback-items  .payback-items-item::before {display: block; content: ''; width: 120px /*84px*/; height: 120px /*84px*/; padding: 12px; box-sizing: border-box; border-radius: 100%; background-color: #ECF5FF; background-size: 56px /*48px*/ auto; background-repeat: no-repeat; background-position: center;}
 .home .payback-items  .payback-items-item.assistant::before {background-image: url(../../../assets/front/images/sub/icon_helper.svg);}
 .home .payback-items  .payback-items-item.transportation::before {background-image: url(../../../assets/front/images/sub/icon_bus.svg);}
 .home .payback-items  .payback-items-item.arrangement::before {background-image: url(../../../assets/front/images/sub/icon_board.svg);}
 .home .payback-items  .payback-items-item.shroud::before {background-image: url(../../../assets/front/images/sub/icon_clothes.svg);}
 .home .payback-items  .payback-items-item.coffin::before {background-image: url(../../../assets/front/images/sub/icon_coffin.svg);}
 .home .payback-items  .payback-items-item .item-name {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+
+@media (max-width: 1023px) {
+    .home .payback-items  .payback-items-item::before {width: 84px; height: 84px; background-size: 48px;}
+}
 
 .home .transparent-management-content {display: flex; flex-direction: column; row-gap: 64px;}
 .home .transparent-management-structure {display: flex; gap: 20px 16px; flex-wrap: wrap; position: relative; z-index: 0; max-width: 500px; margin: 0 auto; font-size: 22px; font-weight: 600; line-height: 1.3;}
