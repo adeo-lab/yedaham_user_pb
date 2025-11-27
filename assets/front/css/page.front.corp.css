@@ -5204,6 +5204,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .corp .app-write-wrap01 {max-width: 1440px; padding: 0 0 96px 0; margin: 0 auto;}
 .corp .app-write-wrap01 .tp-step-wrap {height: 177px; padding: 40px 48px; margin-bottom: 48px; border: 1px solid #000; border-radius: 16px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;}
+.corp .app-write-wrap01 .tp-step-wrap .tx-bx {max-width: 569px; padding-right: 40px; box-sizing: border-box;}
 .corp .app-write-wrap01 .tp-step-wrap .tx-bx .tx01 {font-weight: 600; font-size: 40px; color: #232527; line-height: 130%; padding-bottom: 12px;}
 .corp .app-write-wrap01 .tp-step-wrap .tx-bx .tx02 {display: flex; font-weight: 600; font-size: 22px; color: #444; line-height: 150%;}
 .corp .app-write-wrap01 .tp-step-wrap .tx-bx .tx02 span.in-tx-l {padding-right: 16px; font-weight: 400; font-size: 22px; color: #444; line-height: 150%;}
