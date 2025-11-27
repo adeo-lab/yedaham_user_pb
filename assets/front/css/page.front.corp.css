@@ -4957,6 +4957,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .careers-cont02.ty02 .in-tb-ty02 .bx-td p::before {content: ''; position: absolute; top: 11px; left: 4px; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 .corp .careers-cont02.ty02 .in-tb-ty02 .bx-td p:last-child {padding-bottom: 0;}
 .corp .careers-cont02.ty02 .tb-wrap-n01 {padding: 8px 0 16px 0;}
+.corp .careers-cont02.ty02 .in-tb-ty01:nth-child(2) {border-top: none;}
+.corp .careers-cont02.ty02 .in-tb-ty02:first-child {border-top: 2px solid rgba(19, 21, 23, 0.30);}
 
 @media (max-width: 1023px) {
   .corp .careers-cont02.ty02 {padding: 32px 0 0; border: 0 none;}
