@@ -113,22 +113,16 @@
 							</div>
 						</div>
 					</div>
-					<script>
-						$(window).scroll(function() {
-                            // 1. 현재 스크롤 위치
-                            const scrollY = $(this).scrollTop();
-                            
-                            // 2. 움직임 속도 설정
-                            const speed = 0.2; 
-                            
-                            // 3. 이동 거리 계산 및 CSS 적용
-                            $('.parallax-bg').css({
-                                'transform': 'translate3d(0, ' + Math.round(scrollY * speed) + 'px, 0)'
-                            });
-                        });
-					</script>
 
-					<div class="main-cont02-wrap main-section">
+					<div class="main-cont02-wrap main-section" style="background: none;">
+						<div class="parallax-bg2" style="position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; height: 100vh /*1080px*/;
+    background: url(../../../../assets/front/images/corp/bg_main02.png) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;"></div>
 						<div class="main-cont02">
 							<div class="m-inner-bx">
 								<div class="main-tx-bx ty02">
@@ -170,8 +164,26 @@
 							</div>
 						</div>
 					</div>
+					<script>
+						$(window).scroll(function() {
+                            // 1. 현재 스크롤 위치
+                            const scrollY = $(this).scrollTop();
+                            
+                            // 2. 움직임 속도 설정
+                            const speed = 0.2; 
+                            const speed2 = 0.1; 
+                            
+                            // 3. 이동 거리 계산 및 CSS 적용
+                            $('.parallax-bg').css({
+                                'transform': 'translate3d(0, ' + Math.round(scrollY * speed) + 'px, 0)'
+                            });
+                             $('.parallax-bg2').css({
+                                'transform': 'translate3d(0, ' + Math.round(scrollY * speed2) + 'px, 0)'
+                            });
+                        });
+					</script>
 
-					<div class="main-cont03-wrap main-section">
+					<div class="main-cont03-wrap main-section" style="position: relative; z-index: 10;">
 						<div class="main-cont03">
 							<div class="m-inner-bx">
 								<div class="main-tx-bx ty03">
