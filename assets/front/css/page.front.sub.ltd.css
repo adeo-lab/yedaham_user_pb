@@ -617,8 +617,8 @@
     .landing-wrap .header {padding: 16px 24px;}
     .landing-wrap .img-pc {display: none;}
     .landing-wrap .img-mo {display: inline-block;}
-    .landing-wrap .consulting-section {padding: 32px 16px; background-color: #fff;}
-    .landing-wrap .consulting-box {flex: 1 1 100%; display: flex; flex-direction: column; gap: 32px; margin: 0; padding: 0; border-radius: 0;}
+    .landing-wrap .consulting-section {padding: 0 /*32px 16px*/; background-color: #fff;}
+    .landing-wrap .consulting-box {flex: 1 1 100%; display: flex; flex-direction: column; gap: 32px; margin: 0; padding: 16px; border-radius: 0;}
     .landing-wrap .consulting-info {padding: 0;}
     .landing-wrap .consulting-title {margin-bottom: 16px; font-size: 24px;}
     .landing-wrap .hours-content h3 {font-size: 15px;}
@@ -645,6 +645,7 @@
     .landing-wrap .btn-cancel, .btn-submit {min-width: 97px; height: 48px; font-size: 17px;}
     .landing-wrap .btn-cancel {padding: 0 32px;}
     .landing-wrap .btn-submit { flex: 1 1 100%; padding: 0 32px;}
+    .landing-wrap p > img {width: 100% !important; height: auto !important;}
 
     .landing-wrap .intro-section {height: calc(100vh - 58px); background-position: center;}
     .landing-wrap .intro-section .intro-container {max-width: 100%; padding: 0 24px; box-sizing: border-box;}
