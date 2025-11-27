@@ -4760,8 +4760,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .about-cont09-wrap .about-cont09 .bx-left .tx02 {font-size: 16px; color: #232527; padding-left: 16px; padding-right: 16px; padding-top: 8px; text-align: center;}
   .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam {padding-top: 32px; padding-left: 16px; padding-right: 16px;}
   .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam ul {flex-wrap: unset; gap: 0;}
-  .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam li span {height: 40px; font-size: 15px; color: #fff; line-height: 39px; padding: 0 16px; background: #232425 /*#898A8B*/;}
-  .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam li.on span {color: 232527 /*#fff*/; padding: 0 16px; background: #EBEBEB /*#D17B47*/; border: none;}
+  .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam li span {height: 40px; font-size: 15px; color: #fff; line-height: 39px; padding: 0 16px; background: /*#232425*/ #898A8B;}
+  .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam li.on span {color: 232527 /*#fff*/; padding: 0 16px; background: #fff /*#EBEBEB*/ /*#D17B47*/; border: 1px solid #232527;}
   .corp .about-cont09-wrap .about-cont09 .bx-right {width: calc(100% - 32px); max-height: unset; padding: 0; margin: 24px 16px 16px 16px; border: 1px solid #D0D0D1; border-radius: 16px; overflow: hidden;}
   .corp .about-cont09-wrap .about-cont09 .bx-right .tp-info {position: relative; margin-bottom: 24px; border-bottom: none;}
   .corp .about-cont09-wrap .about-cont09 .bx-right .tp-info::after {content:''; position: absolute; left: 24px; bottom: 0; right: 24px; height:1px; background: rgba(19, 21, 23, 0.20);}
