@@ -8105,7 +8105,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       padding: 1rem 0.6rem !important;
   }
   #oacxEmbededContentsNewTemp.mobile header .title h1 {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
   #oacxEmbededContentsNewTemp.mobile .provider-list .list ul {
     padding: 1.6rem 1.3rem !important;
@@ -8124,6 +8124,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
   #oacxEmbededContentsNewTemp.mobile .provider-state .contents p {
     font-size: 1.4rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile footer .mobile-footer .right a {
+    font-size: 0.9rem !important;
+  }
+
+  /* pass */
+  #oacxEmbededContentsNewTemp.mobile .userInfo li .ul-td .select-box {
+    height: 2.2rem !important;
+  }
+  #oacxEmbededContentsNewTemp.mobile .userInfo li .ul-td .select-box p {
+    font-size: 1rem !important;
   }
 
   /* 정보 입력 */
@@ -8230,5 +8241,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
   #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p {
     font-size: 11rem !important;
+  }
+
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p {
+    font-size: 1rem !important;
   }
 }
