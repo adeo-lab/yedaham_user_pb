@@ -5059,6 +5059,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .membership-list li .in-bx .cont span.flag.health {background: #E9F5EC;}
 .home .membership-list li .in-bx .cont dl {padding: 12px 0 0 0;}
 .home .membership-list li .in-bx .cont dt {font-weight: 600; font-size: 22px; color: #232527; line-height: 130%; margin-bottom: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.home .membership-list li .in-bx .cont dt br {display: none !important;}
+@media (max-width: 1023px) {
+  .home .membership-list li .in-bx .cont dt br {display: block !important;}
+}
 .home .membership-list li .in-bx .cont dd {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .home .membership-list li .in-bx p.info-layer {position: absolute; top: -14px /*-19px*/; right: -10px; display: inline-block; font-weight: 600; font-size: 15px; color: #fff; line-height: 150%; padding: 8px 16px; background: var(--bgColor); border-radius: 24px; z-index: 10;}
 .home .membership-list li .in-bx p.info-layer::after {
