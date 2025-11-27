@@ -191,6 +191,9 @@
   .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx .tx01 {font-size: 18px;}
   .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx .tx02 {font-size: 14px;}
   .corp .main-cont04 .button-bx {display: none;}
+  .corp .main-cont04 .main-vis04-list li .in-bx .thum .data-info {right: 16px; bottom: 16px; column-gap: 12px;}
+  .corp .main-cont04 .main-vis04-list li .in-bx .thum .data-info p.icon {width: 40px; height: 40px;}
+  .corp .main-cont04 .main-vis04-list li .in-bx .thum .data-info p.icon.youtube {background-size: 24px;}
 }
 
 .corp .main-cont05-wrap {height: 100vh /*1080px*/; background: url('../../../assets/front/images/corp/bg_main05.png') no-repeat center; background-size: cover;}
