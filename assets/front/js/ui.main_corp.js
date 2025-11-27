@@ -343,7 +343,8 @@ function initCompanySection04() {
     swiper4 = new Swiper(listEl, {
       direction: isPC ? "vertical" : "horizontal",
       slidesPerView: "auto",
-      centeredSlides: !isPC,
+      //centeredSlides: !isPC,
+      centeredSlides: true,
       autoHeight: true,
       loop: true,
       watchOverflow: false,
