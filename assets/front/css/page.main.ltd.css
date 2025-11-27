@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
+.ltd #header {background: none;}
+.ltd #header::before {border-bottom: none; background-color: #EFEFEF;}
 .ltd #header.main::before {border-bottom: none; background-color: #EFEFEF;}
+
+.active-scroll-top .ltd #header::before {border-bottom: none; background-color: #EFEFEF !important;}
+.active-scroll-top .ltd #header.main::before {border-bottom: none; background-color: #EFEFEF !important;}
+.active-scroll-down .ltd #header::before {border-bottom: none; background-color: #fff;}
+.active-scroll-down .ltd #header.main::before {border-bottom: none; background-color: #fff;}
+.active-scroll-up .ltd #header::before {border-bottom: none; background-color: #fff;}
+.active-scroll-up .ltd #header.main::before {border-bottom: none; background-color: #fff;}
+
 
 .ltd .main-container {max-width: 100%;}
 .ltd .main-container #page.page-main {width: 100%; max-width: 100%; row-gap: 0; /*background: #FBFAFA;*/}
