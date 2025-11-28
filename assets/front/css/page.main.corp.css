@@ -205,7 +205,7 @@
 .corp .main-cont05 .m-inner-bx {width: 100%;}
 .corp .main-cont05 .m-inner-bx .bx-tp {padding-bottom: 48px; display: flex; justify-content: space-between;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r {position: relative; width: 574px;}
-.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn {position: relative; height: 36px; font-weight: 600; font-size: 28px; color: #fff; line-height: 36px; margin-bottom: -9px; /*margin-bottom: 16px;*/ display: flex; column-gap: 24px;}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn {position: relative; height: 36px; font-weight: 600; font-size: 28px; color: #fff; line-height: 36px; /*margin-bottom: -9px;*/ margin-bottom: 16px; display: flex; column-gap: 24px;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi {/*position: absolute; left: 48px; bottom: 0;*/ /*width: 93px;*/ z-index: 100; display: flex; align-items: flex-end; column-gap: 4px;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {position: relative; display: block; top: auto; right: auto; width: 16px; height: 23px; margin-top: 0; z-index: 100;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi .swiper-button-next, .swiper-rtl .swiper-button-prev {
@@ -243,9 +243,9 @@
 }
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi #swiper-button-stop.hidden {display: none; pointer-events: none;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn.no-data {margin-bottom: 16px;}
-.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting ul {padding-top: 25px;}
+/*.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting ul {padding-top: 25px;}*/
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li {position: relative;}
-.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li span.flag-new {position: absolute; top: -22.5px; right: 10px; display: inline-block; width: auto; height: 45px; font-weight: 600; font-size: 22px; color: #fff; line-height: 130%; padding: 8px 20px 0 20px ; background: #FF766E; border-radius: 24px; box-sizing: border-box; text-align: left;}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li span.flag-new {position: absolute; top: 30px /*-22.5px*/; right: 30px /*10px*/; display: inline-block; width: auto; height: 45px; font-weight: 600; font-size: 22px; color: #fff; line-height: 130%; padding: 8px 20px 0 20px ; background: #FF766E; border-radius: 24px; box-sizing: border-box; text-align: left;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li span.flag-new::after{
   content: '';
   display: block;
@@ -257,7 +257,8 @@
   background-position: center;
   background-size: 16px 9px;
 }
-.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: 340px; padding: 40px 40px 0 40px; background: rgba(247, 246, 245, 0.90); border-radius: 16px; box-sizing: border-box;}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {border-radius: 16px; overflow: hidden;}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: 340px; padding: 40px 40px 0 40px; background: rgba(247, 246, 245, 0.90); /*border-radius: 16px;*/ box-sizing: border-box;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .bx-flag {padding-bottom: 12px; display: flex; column-gap: 8px;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .bx-flag span.flag {display: inline-block; height: 34px; font-weight: 400; font-size: 17px; color: #444; line-height: 34px; line-height: 34px; padding: 0 16px; background: #fff; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.15);}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx01 {font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 20px;}
@@ -299,7 +300,7 @@
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi {display: none;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {overflow: visible;}
   /* .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li {margin-right: 16px;} */
-  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: auto; padding: 20px; box-sizing: border-box;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: auto; padding: 20px; border-radius: 16px; box-sizing: border-box;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx02 {display: none;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx03 {flex-direction: column; gap: 16px; align-items: flex-start; font-size: 14px;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx03 .t-bx-l {display: flex; align-items: center; gap: 8px;}
