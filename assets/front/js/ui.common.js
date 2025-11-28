@@ -505,11 +505,10 @@ var uiCommon = (function() {
 					// };
 
 					const observerOptions = {
-    root: null,
-    // 뷰포트 상단 100px (상단바 높이)을 제외하고 감지하도록 설정
-    rootMargin: '-100px 0px 0px 0px', 
-    threshold: 0
-};
+						root: null, // innerBxL 대신 viewport 기준
+						rootMargin: '0px 0px -70% 0px',
+						threshold: 0
+					};
 
 					const observer = new IntersectionObserver((entries) => {
 						entries.forEach(entry => {
