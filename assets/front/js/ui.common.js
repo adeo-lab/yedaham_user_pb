@@ -506,45 +506,36 @@ var uiCommon = (function() {
 
 					const observerOptions = {
 						root: null, // innerBxL 대신 viewport 기준
-						rootMargin: '0px 0px -70% 0px', //-298px
+						rootMargin: '0px 0px -70% 0px',
 						threshold: 0
 					};
 
-					// 전역 변수로 현재 활성화된 메뉴 ID를 저장합니다.
-let currentActiveNavId = null;
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const targetId = entry.target.id;
-            const correspondingNavId = targetId.replace('_l', '');
-            
-            // ⭐ 핵심 수정: 이미 활성화된 메뉴라면 추가 동작을 건너뜁니다.
-            if (currentActiveNavId === correspondingNavId) {
-                return;
-            }
-            currentActiveNavId = correspondingNavId; // 새 활성 메뉴로 업데이트
-
-            // ... (기존 클래스 제거 및 추가 로직) ...
-            inNavLinks.forEach(link => link.classList.remove('on'));
-            
-            const targetNavLink = document.querySelector(`.in-nav .gnb-item#${correspondingNavId} .gnb-text`);
-            const targetNavItem = document.querySelector(`.in-nav .gnb-item#${correspondingNavId}`);
-            
-            if (targetNavLink) {
-                targetNavLink.classList.add('on');
-            }
-            
-            // on 클래스가 적용된 메뉴를 왼쪽에서 16px 떨어진 위치로 스크롤
-            if (targetNavItem && inNav) {
-                inNav.scrollTo({
-                    left: targetNavItem.offsetLeft - 16,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    });
-}, observerOptions);
+					const observer = new IntersectionObserver((entries) => {
+						entries.forEach(entry => {
+							// console.log('[DEBUG] isIntersecting:', entry.isIntersecting, 'target:', entry.target.id, 'ratio:', entry.intersectionRatio);
+							if (entry.isIntersecting) {
+								const targetId = entry.target.id;
+								const correspondingNavId = targetId.replace('_l', '');
+								
+								inNavLinks.forEach(link => link.classList.remove('on'));
+								
+								const targetNavLink = document.querySelector(`.in-nav .gnb-item#${correspondingNavId} .gnb-text`);
+								const targetNavItem = document.querySelector(`.in-nav .gnb-item#${correspondingNavId}`);
+								
+								if (targetNavLink) {
+									targetNavLink.classList.add('on');
+								}
+								
+								// on 클래스가 적용된 메뉴를 왼쪽에서 16px 떨어진 위치로 스크롤
+								if (targetNavItem && inNav) {
+									inNav.scrollTo({
+										left: targetNavItem.offsetLeft - 16,
+										behavior: 'smooth'
+									});
+								}
+							}
+						});
+					}, observerOptions);
 					
 					navLayerItems.forEach(item => {
 						observer.observe(item);
