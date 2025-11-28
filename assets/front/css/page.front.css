@@ -2686,7 +2686,8 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   .home .header.open .header-inner .header-sub-area {display: none !important;}
   .home .header .header-inner .header-sub-area {display: flex !important; padding-left: 16px;}
 
-  .home #header .header-inner .gnb-list.active .in-nav {display: block; border-bottom: 1px solid #EFEFEF;}
+  .home #header .header-inner .gnb-list.active .in-nav {display: block; border-bottom: 1px solid #EFEFEF; -ms-overflow-style: none; scrollbar-width: none;}
+  .home #header .header-inner .gnb-list.active .in-nav::-webkit-scrollbar {display: none !important;}
   .home #header .header-inner .gnb .gnb-list .in-nav ul {min-width: 500px; width: auto;}
   #header .header-inner .gnb .gnb-list .in-nav .gnb-item {flex-shrink: 0; float: none;}
 
