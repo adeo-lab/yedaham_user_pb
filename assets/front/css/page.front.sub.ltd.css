@@ -571,8 +571,8 @@
 .landing-wrap .time-row {display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;}
 .landing-wrap .form-group label.time-slot {position: relative; cursor: pointer; margin: 0;}
 .landing-wrap .time-slot input[type="radio"] {position: absolute; opacity: 0;}
-.landing-wrap .time-slot span {display: flex; align-items: center; justify-content: center; height: 100%; min-height: 52px; padding: 8px; border: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; border-radius: 8px; text-align: center; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527; transition: all 0.3s;}
-.landing-wrap .time-slot input[type="radio"]:checked + span {border-color: #9EA9D7; font-weight: 400;}
+.landing-wrap .time-slot span {display: flex; align-items: center; justify-content: center; height: 100%; min-height: 52px; padding: 8px; border: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; border-radius: 8px; text-align: center; font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527; /*transition: all 0.3s;*/}
+.landing-wrap .time-slot input[type="radio"]:checked + span {padding: 7px; border:2px solid #9EA9D7; font-weight: 400;}
 .landing-wrap .time-slot.disabled {cursor: not-allowed;}
 .landing-wrap .time-slot.disabled span {background: #F5F5F7; color: #BFBFBF; border-color: rgba(19, 21, 23, 0.07);}
 .landing-wrap .consent-group {display: flex; flex-direction: column; row-gap: 8px;}
