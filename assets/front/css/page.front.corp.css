@@ -209,7 +209,7 @@
   .corp #header .header-inner .gnb .gnb-list {position: static; height: auto; background-color: #fff;}
   .corp .header .nav-layer {position: absolute; top: 133px; left: -100%; transition: left ease 0.01s; display: block !important; transform: none;}
   .corp .header.open .nav-layer {flex: 1 1 100%; overflow-y: auto; position: relative; top: 0; left: 0; z-index: 10; transition: left ease 0.01s; pointer-events: auto;}
-  .corp .header .nav-layer .nav-inner-wrap {overflow-y: auto; height: 100%;}
+  /*.corp .header .nav-layer .nav-inner-wrap {overflow-y: auto; height: 100%;}*/
   .corp .header .nav-layer .inner-bx-l {width: 100%; padding: 24px; box-sizing: border-box;  background-color: transparent;}
   .corp .header .nav-layer .inner-bx-l .gnb-list-l {flex-direction: column; padding: 0; row-gap: 32px;}
   .corp .header .nav-layer .inner-bx-l .gnb-list-l .gnb-item-l .gnb-text-l {display: flex; justify-content: space-between; align-items: center; font-size: 18px; padding: 2px 0; color: #131517;}

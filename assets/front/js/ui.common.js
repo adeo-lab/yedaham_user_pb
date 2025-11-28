@@ -491,62 +491,47 @@ var uiCommon = (function() {
 				}
 
 				// 4. 스크롤 위치에 따른 상단 메뉴 동기화 기능 및 자동 스크롤
-				const inNavItems = document.querySelectorAll('.in-nav .gnb-item');
-				const inNavLinks = document.querySelectorAll('.in-nav .gnb-text');
-				const innerBxL = document.querySelector('.inner-bx-l');
-				const navLayerItems = document.querySelectorAll('.inner-bx-l > .gnb-list-l > .gnb-item-l');
-				const inNav = document.querySelector('.in-nav');
+const inNav = document.querySelector('.in-nav');
+const inNavLinks = document.querySelectorAll('.in-nav .gnb-text');
+const innerBxL = document.querySelector('.nav-layer');
+const sections = document.querySelectorAll('.nav-layer .gnb-item-l');
 
-				if (innerBxL && navLayerItems.length > 0) {
-					// const observerOptions = {
-					// 	root: innerBxL,
-					// 	rootMargin: '0px 0px -98% 0px',
-					// 	threshold: 0
-					// };
+if (innerBxL && sections.length > 0) {
 
-					const observerOptions = {
-						root: null, // innerBxL 대신 viewport 기준
-						rootMargin: '0px 0px -70% 0px',
-						threshold: 0
-					};
+    innerBxL.addEventListener('scroll', () => {
 
-					const observer = new IntersectionObserver((entries) => {
-						entries.forEach(entry => {
-							// console.log('[DEBUG] isIntersecting:', entry.isIntersecting, 'target:', entry.target.id, 'ratio:', entry.intersectionRatio);
-							if (entry.isIntersecting) {
-								const targetId = entry.target.id;
-								const correspondingNavId = targetId.replace('_l', '');
-								
-								inNavLinks.forEach(link => link.classList.remove('on'));
-								
-								const targetNavLink = document.querySelector(`.in-nav .gnb-item#${correspondingNavId} .gnb-text`);
-								const targetNavItem = document.querySelector(`.in-nav .gnb-item#${correspondingNavId}`);
-								
-								if (targetNavLink) {
-									targetNavLink.classList.add('on');
-								}
-								
-								// on 클래스가 적용된 메뉴를 왼쪽에서 16px 떨어진 위치로 스크롤
-								if (targetNavItem && inNav) {
-									inNav.scrollTo({
-										left: targetNavItem.offsetLeft - 16,
-										behavior: 'smooth'
-									});
-								}
-							}
-						});
-					}, observerOptions);
-					
-					navLayerItems.forEach(item => {
-						observer.observe(item);
-					});
-				}
+        let activeId = null;
 
-				function resetMenuState() {
-					document.querySelectorAll('.gnb-item-l.on, .lnb-item-l.on').forEach(item => {
-						item.classList.remove('on');
-					});
-				}
+        sections.forEach(sec => {
+            const rect = sec.getBoundingClientRect();
+            const parentRect = innerBxL.getBoundingClientRect();
+
+            // sec이 nav-layer 상단에 닿았거나 그 직전에 있는 경우
+            if (rect.top <= parentRect.top + 2) {
+                activeId = sec.id.replace('_l', '');  
+            }
+        });
+
+        if (activeId) {
+            // 모든 메뉴 off
+            inNavLinks.forEach(link => link.classList.remove('on'));
+
+            // 해당 메뉴 on
+            const navItem = document.querySelector(`.in-nav .gnb-item#${activeId}`);
+            const navText = navItem?.querySelector('.gnb-text');
+            if (navText) navText.classList.add('on');
+
+            // 메뉴 자동 스크롤
+            if (navItem) {
+                inNav.scrollTo({
+                    left: navItem.offsetLeft - 16,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+}
+
 			}
 		},
 		// popup
