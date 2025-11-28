@@ -523,7 +523,7 @@ function initCompanySection05() {
 
   if (hasSlides) {
     topElements = section.querySelectorAll(
-      ".bx-tp .tx-btn, .bx-tp .main-careers-posting .swiper-slide"
+      ".bx-tp .tx-btn, .bx-tp .main-careers-posting" //.swiper-slide
     );
   } else if (hasNoData) {
     topElements = section.querySelectorAll(
