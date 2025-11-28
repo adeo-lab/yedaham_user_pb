@@ -392,7 +392,7 @@
 .corp .main-cont04 .main-vis04-list li {opacity: 0; transform: translateY(60px); will-change: transform, opacity;}
 .corp .main-cont05-wrap .tx-btn,
 .corp .main-cont05-wrap .main-careers-posting .swiper-slide,
-.corp .main-cont05-wrap .bx-bt ul > li {opacity: 0; transform: translateY(60px); will-change: transform, opacity;}
+.corp .main-cont05-wrap .bx-bt ul > li {opacity: 1; /*transform: translateY(60px); will-change: transform, opacity;*/}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .bx-no-data {opacity: 0; transform: translateY(60px); will-change: transform, opacity;}
 
 
