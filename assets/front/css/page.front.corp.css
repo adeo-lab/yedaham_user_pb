@@ -177,7 +177,8 @@
   .corp #header .header-inner .logo .logo-link {width: 112px; background-position: left bottom 20px;}
 
   .corp #header .header-inner .mobile-menu-top-area {position: relative; width: 100%;}
-  .corp #header .header-inner .gnb-list.active .in-nav {position: relative; overflow-y: hidden; overflow-x: auto; padding-left: 16px; border-bottom: 1px solid #EFEFEF; box-sizing: border-box; white-space: nowrap;}
+  .corp #header .header-inner .gnb-list.active .in-nav {position: relative; overflow-y: hidden; overflow-x: auto; padding-left: 16px; border-bottom: 1px solid #EFEFEF; box-sizing: border-box; white-space: nowrap; -ms-overflow-style: none; scrollbar-width: none;}
+  .corp #header .header-inner .gnb-list.active .in-nav::-webkit-scrollbar {display: none !important;}
   /* .corp #header .header-inner .gnb-list.active .in-nav::after {display: block; content: ''; position: absolute; top: calc(100% - 1px); left: 0; width: 100%; height: 1px; background-color: #EFEFEF;} */
   .corp #header .header-inner .gnb {opacity: 0;}
   .corp #header.open .header-inner .gnb {width: 100%; opacity: 1;}
