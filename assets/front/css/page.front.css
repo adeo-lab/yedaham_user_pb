@@ -2619,7 +2619,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   width: 9px;
   height: 7px;
   position: absolute; right: 2.5px; bottom: -3.83px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='7' viewBox='0 0 9 7' fill='none'%3E%3Cpath d='M1.5 0.166016L8.5 1L0 6.83301L1.5 0.166016Z' fill='%23FBCD6C'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='7' viewBox='0 0 9 7' fill='none'%3E%3Cpath d='M1.5 0L8.5 0.833984L0 6.66699L1.5 0Z' fill='%236A75A0'/%3E%3C/svg%3E");
   background-size: 9px 7px; background-repeat: no-repeat; background-position: center;
 }
 .home .header .nav-layer .inner-bx-l .lnb-list-l > li > a:hover::after {content: ''; position: absolute; left: 50%; bottom: 0; display: block; width: 100%; height: 1px; background: #232527; transform: translateX(-50%); animation: expandLine 0.2s ease-out forwards;}
