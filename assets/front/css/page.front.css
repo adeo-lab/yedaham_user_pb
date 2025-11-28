@@ -8053,6 +8053,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+.form.radio:not(.disabled, :has(:disabled)) .form-elem:checked + .form-text::before {border-color: #D17B47;}
+
+
 
 
 

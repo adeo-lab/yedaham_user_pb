@@ -113,7 +113,7 @@ function initCompanyMain() {
     });
   }
   
-  const sec5 = document.querySelector(".main-cont05-wrap");
+  /*const sec5 = document.querySelector(".main-cont05-wrap");
   if (sec5 && sec5.querySelector(".main-section-bg")) {
     gsap.to(".main-cont05-wrap .main-section-bg", {
       yPercent: -40,
@@ -125,7 +125,7 @@ function initCompanyMain() {
         scrub: true,
       },
     });
-  }
+  }*/
 }
 
 // ---------------------------
