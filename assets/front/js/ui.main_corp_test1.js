@@ -415,7 +415,7 @@ function initCompanySection04() {
     swiper4 = new Swiper(listEl, {
       direction: isPC ? "vertical" : "horizontal",
       slidesPerView: "auto",
-      centeredSlides: !isPC,
+      centeredSlides: true, //!isPC
       autoHeight: true,
       loop: true,
       watchOverflow: false,
@@ -594,7 +594,7 @@ function initCompanySection05() {
 
   if (hasSlides) {
     topElements = section.querySelectorAll(
-      ".bx-tp .tx-btn, .bx-tp .main-careers-posting .swiper-slide"
+      ".bx-tp .tx-btn, .bx-tp .main-careers-posting" //.swiper-slide
     );
   } else if (hasNoData) {
     topElements = section.querySelectorAll(
