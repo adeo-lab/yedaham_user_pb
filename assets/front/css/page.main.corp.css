@@ -257,8 +257,8 @@
   background-position: center;
   background-size: 16px 9px;
 }
-.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {border-radius: 16px; overflow: hidden;}
-.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: 340px; padding: 40px 40px 0 40px; background: rgba(247, 246, 245, 0.90); /*border-radius: 16px;*/ box-sizing: border-box;}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {border-radius: 16px; overflow: hidden;background: rgba(247, 246, 245, 0.90);}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: 340px; padding: 40px 40px 0 40px; /*border-radius: 16px;*/ box-sizing: border-box;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .bx-flag {padding-bottom: 12px; display: flex; column-gap: 8px;}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .bx-flag span.flag {display: inline-block; height: 34px; font-weight: 400; font-size: 17px; color: #444; line-height: 34px; line-height: 34px; padding: 0 16px; background: #fff; border-radius: 24px; border: 1px solid rgba(19, 21, 23, 0.15);}
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx01 {font-weight: 600; font-size: 28px; color: #232527; line-height: 130%; padding-bottom: 20px;}
