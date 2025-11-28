@@ -177,8 +177,8 @@
 	background-position: center;
 	background-size: 20px;
 }
-.corp .main-cont04 .main-vis04-list li .in-bx .bt-tx {display: none;}
-.corp .main-cont04 .main-vis04-list li.swiper-slide-active .in-bx .bt-tx {display: block;}
+/*.corp .main-cont04 .main-vis04-list li .in-bx .bt-tx {display: none;}
+.corp .main-cont04 .main-vis04-list li.swiper-slide-active .in-bx .bt-tx {display: block;}*/
 
 @media (max-width: 1023px) {
   .corp .main-cont04-wrap {padding: 64px 0 78px; box-sizing: border-box;}
