@@ -59,7 +59,7 @@ const headerTemplate = function () {
 					<div class="in-nav">
 						<ul>
 							<li class="gnb-item" id="mob_m1">
-								<a href="#mob_m1_l" class="gnb-text">예다함소개</a>
+								<a href="#mob_m1_l" class="gnb-text on">예다함소개</a>
 							</li>
 							<li class="gnb-item" id="mob_m2">
 								<a href="#mob_m2_l" class="gnb-text">경영현황</a>
