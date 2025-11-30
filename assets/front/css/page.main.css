@@ -283,7 +283,7 @@
 .home .m-product-list01 .in-bx .btm-btns button.btn-s-ask:disabled {border: 1px solid rgba(19, 21, 23, 0.07); background-color: #F7F6F5; color: #BFBFBF;}
 
 @media (hover: hover) {
-  .home .m-product-list01 .in-bx:hover {padding: 39px 31px 31px 31px; border: 2px solid #F1945E; box-shadow: 0rem 1.2rem 2.4rem 0rem rgba(0,0,0,.1); transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;}
+  .home .m-product-list01 .in-bx:hover {padding: 39px 31px 31px 31px; border: 2px solid #F1945E; box-shadow: 0rem 1.2rem 2.4rem 0rem rgba(0,0,0,.1); transition: box-shadow 0.1s ease-in-out, border-color 0.2s ease-in-out;}
   .home .m-product-list01 .in-bx:hover p.flag {top: -4px; right: 29px;} 
 }
 
