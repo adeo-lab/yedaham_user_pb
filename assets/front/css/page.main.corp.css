@@ -298,9 +298,9 @@
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r {width: 100%;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn {padding-left: 8px; font-size: 20px;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi {display: none;}
-  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {overflow: visible;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {overflow: visible; background: none;}
   /* .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li {margin-right: 16px;} */
-  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: auto; padding: 20px; border-radius: 16px; box-sizing: border-box;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: auto; padding: 20px; background: rgba(247, 246, 245, 0.90); border-radius: 16px; box-sizing: border-box;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx02 {display: none;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx03 {flex-direction: column; gap: 16px; align-items: flex-start; font-size: 14px;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx03 .t-bx-l {display: flex; align-items: center; gap: 8px;}
@@ -310,7 +310,7 @@
   .corp .main-cont05 .m-inner-bx .bx-bt ul {column-gap: 16px;}
   .corp .main-cont05 .m-inner-bx .bx-bt li {width: calc(50% - 8px);}
 
-  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li span.flag-new {height: 31px; padding: 4px 12px; font-size: 18px;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li span.flag-new {height: 31px; padding: 4px 12px; font-size: 18px; top: -22.5px; right: 10px;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li span.flag-new::after {right: auto; left: 50%; transform: translateX(-50%);}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .bx-flag span.flag {height: 28px; padding:0 16px; font-size: 13px; line-height: 28px;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx01 {font-size: 20px;}
