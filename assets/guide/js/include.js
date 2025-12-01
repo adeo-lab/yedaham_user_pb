@@ -945,6 +945,11 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("ltd/FO_Y_ZA_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">법인 가입상담 신청*</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("ltd/FO_Y_ZA_001_L_n.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">자주 하는 질문* > 상세</span></p>
 						${createMenuLink("ltd/FO_Y_ZB_001_L.html", useFullLink)}
 					</div>

@@ -4014,3 +4014,24 @@ white-space: nowrap; border: 0;}
   .ltd .pop-wrap-ty01 .pop-share-wrap .in-bx-top .btn-popup-close::before {width: 24px; height: 24px;}
   .ltd .pop-wrap-ty01 .pop-share-wrap .in-bx-cont li a {font-size: 15px;}
 }
+
+
+/* radio 컬러 */
+.ltd .form.radio:not(.disabled, :has(:disabled)) .form-elem:checked + .form-text::before {border-color: #D17B47;}
+
+
+/* 동의 미동의 추가 */
+.ltd .board-write-ty01 .btm-areaty02 p.bx-line {display: flex; align-items: center; column-gap: 8px;}
+.ltd .board-write-ty01 .btm-areaty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.ltd .board-write-ty01 .btm-area.ty02 span.tx-imp {color: #E94543;}
+.ltd .board-write-ty01 .btm-area.ty02 a.btn-view-detail {position: relative; top: auto; right: auto;}
+.ltd .board-write-ty01 .btm-area.ty02 .bx-radio-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 16px;}
+.ltd .board-write-ty01 .btm-area.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
+
+@media (max-width: 1023px) {
+  .ltd .board-write-ty01 .btm-area.ty02 p.bx-line {display: block;}
+  .ltd .board-write-ty01 .btm-area.ty02 span.form-text.ty01 {font-size: 15px;}
+  .ltd .board-write-ty01 .btm-area.ty02 a.btn-view-detail {position: relative; top: auto; right: auto; display: inline-block; margin-left: 4px;}
+  .ltd .board-write-ty01 .btm-area.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
+  .ltd .board-write-ty01 .btm-area.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}

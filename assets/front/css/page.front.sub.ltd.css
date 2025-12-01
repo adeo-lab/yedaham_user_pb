@@ -609,6 +609,9 @@
 .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro.btn-personal {background-color: #D9A226;}
 .landing-wrap .intro-section .intro-container .intro-bottom .btn-intro.btn-corporate {background-color: #6A75A0;}
 
+.landing-wrap .consent-item span {font-size: 17px; font-weight: 600; line-height: 1.5; color: #232527;}
+.landing-wrap .consent-item span span.tx-imp {color: #E94543;}
+
 @media (hover: hover) {
     .landing-wrap  .time-slot:not(.disabled):hover span {border-color: #9EA9D7;}
 }
