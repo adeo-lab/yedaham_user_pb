@@ -8053,7 +8053,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+/* radio 컬러 */
 .home .form.radio:not(.disabled, :has(:disabled)) .form-elem:checked + .form-text::before {border-color: #D17B47;}
+
+
+/* 동의 미동의 추가 */
+.home .easy-agree.ty02 .form.checkbox.ty-all span.form-text {font-size: 19px;}
+.home .easy-agree.ty02 .form.checkbox.ty-all .form-text::before, .home .easy-agree .form.checkbox .form-text::after {top: 4px;}
+.home .easy-agree.ty02 .in-bx {padding-bottom: 32px; margin-bottom: 32px;}
+.home .easy-agree.ty02 .in-bx.ty-bn {margin-bottom: 0; border-bottom: none;}
+.home .easy-agree.ty02 p.bx-line {display: flex; align-items: center; column-gap: 8px;}
+.home .easy-agree.ty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.home .easy-agree.ty02 span.form-text.ty02 {font-weight: 400; font-size: 17px; color: #232527; line-height: 150%;}
+.home .easy-agree.ty02 span.tx-imp {color: #E94543;}
+.home .easy-agree.ty02 .form.checkbox .form-text::before, .home .easy-agree .form.checkbox .form-text::after {top: 3px;}
+.home .easy-agree.ty02 a.btn-detail {position: relative; top: auto; right: auto;}
+.home .easy-agree.ty02 .tx02 {padding-left: 0; row-gap: 12px;}
+.home .easy-agree.ty02 .bx-radio-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 16px;}
+.home .easy-agree.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
 
 
 
