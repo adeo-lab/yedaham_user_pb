@@ -6936,6 +6936,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .content-popup.photo .pop-img-view-wrap {height: 95% !important;}
 }
 
+.home .form.radio:not(.disabled, :has(:disabled)) .form-elem:checked + .form-text::before {border-color: #4458B0;}
+
 /* keyframes */
 @keyframes stepProgressAnimation {
     0% {
