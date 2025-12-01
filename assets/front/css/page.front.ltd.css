@@ -3612,6 +3612,7 @@ white-space: nowrap; border: 0;}
   .ltd .container.ty-wide .page-body-wrap .tab-wrap {margin: 0 -16px;}
   .ltd .tab-display.style-c.tab-fixed.fixed {position: fixed; z-index: 10;}
   .ltd .tab-display.style-c.tab-fixed.fixed {top: var(--header-height);}
+  .ltd .tab-display.style-c.tab-fixed.fixed .tab-list {border-bottom: none;}
 
   .ltd .board-view .board-view-inform {row-gap: 10px; padding-bottom: 24px;}
   .ltd .board-view .board-view-inform .board-subject {font-size: 22px;}
