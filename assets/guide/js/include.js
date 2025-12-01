@@ -120,6 +120,12 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("common/FO_Y_ZM_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">고객 칭찬 후기 등록</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("common/FO_Y_ZM_001_L_n.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">고객 칭찬 후기 상세</span></p>
 						<p class="g-sub-text"><span class="em">스와이프 제거 필요 / 개발페이지에 제거 적용</span></p>
 						${createMenuLink("common/FO_Y_ZM_002_L.html", useFullLink)}
@@ -127,6 +133,11 @@ const headerNavigation = function (useFullLink) {
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">1:1문의 등록*</span></p>
 						${createMenuLink("common/FO_Y_ZZ_001_L.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">1:1문의 등록*</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("common/FO_Y_ZZ_001_L_n.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">1:1문의 상세* > 미답변</span></p>
@@ -262,9 +273,21 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("my/FO_Y_YF_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">결제 정보 관리* > 신용카드</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1111, 1114 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("my/FO_Y_YF_001_n.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제정보 관리* > 계좌이체</span></p>
 						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1107, 1111, 1114 작업</span></p>
 						${createMenuLink("my/FO_Y_YF_001_2.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">결제정보 관리* > 계좌이체</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1104, 1106, 1107, 1111, 1114 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("my/FO_Y_YF_001_2_n.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">결제정보 관리* nodata</span></p>
@@ -423,7 +446,6 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료* > 회원계약내용 확인 (22p)</span></p>
-						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("direct/FO_Y_DL_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="진행">
@@ -481,8 +503,7 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("benefit/FO_Y_BC_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
-						<p class="g-sub-title"><span class="em">이벤트 > 상세</span></p>
-						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
+						<p class="g-sub-title"><span class="em">이벤트* > 상세</span></p>
 						${createMenuLink("benefit/FO_Y_BC_002.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -497,12 +518,15 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">부가서비스* > 온라인 법률 상담 등록 (24p~25p)</span></p>
-						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BD_003_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">부가서비스* > 온라인 법률 상담 등록 (24p~25p)</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("benefit/FO_Y_BD_003_L_n.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">부가서비스* > 온라인 법률 상담 상세 (24p~25p)</span></p>
-						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("benefit/FO_Y_BD_003_L2.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -511,8 +535,12 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">전환서비스 상담 신청* (18p)</span></p>
-						<p class="g-sub-text"><span class="em">모바일 임의 작업</span></p>
 						${createMenuLink("benefit/FO_Y_ZC_001_L.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">전환서비스 상담 신청* (18p)</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("benefit/FO_Y_ZC_001_L_n.html", useFullLink)}
 					</dl>
 				</div>
 			</li>
