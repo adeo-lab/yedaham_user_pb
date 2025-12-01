@@ -350,13 +350,18 @@ const headerNavigation = function (useFullLink) {
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step02. 약관동의 > 정보 입력</span></p>
-						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
 						${createMenuLink("direct/FO_Y_DB_001_n.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step03. 정보입력* > 계약내용 확인​</span></p>
 						<p class="g-sub-edit"><span class="em">주석: 1111 작업</span></p>
 						${createMenuLink("direct/FO_Y_DC_001.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">Step03. 정보입력* > 계약내용 확인​</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("direct/FO_Y_DC_001_n.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step03. 정보입력* > 계약내용 확인2</span></p>
@@ -368,8 +373,18 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("direct/FO_Y_DD_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">Step04. 결제진행​* > 신용카드</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("direct/FO_Y_DD_001_n.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step04. 결제진행* > 계좌이체 (14p)</span></p>
 						${createMenuLink("direct/FO_Y_DD_001_2.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">Step04. 결제진행* > 계좌이체 (14p)</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("direct/FO_Y_DD_001_2_n.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료*</span></p>

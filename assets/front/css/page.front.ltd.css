@@ -2647,6 +2647,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   .ltd .header .header-inner .header-sub-area {display: flex !important;}
   .ltd .header .header-inner .header-sub-area h2 {font-weight: 600; font-size: 20px; color: #131517; line-height: 130%;}
   .ltd .header:not(.main) .header-inner .logo {display: none !important;}
+  .ltd .header:not(.main) .header-inner .gnb-list .mobile-menu-top-area .logo {display: block !important;}
 }
 
 .ltd .btn-btm-more-ty01 {padding: 48px 0 0 0; text-align: center;}

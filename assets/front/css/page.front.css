@@ -8061,6 +8061,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .easy-agree.ty02 .form.checkbox.ty-all span.form-text {font-size: 19px;}
 .home .easy-agree.ty02 .form.checkbox.ty-all .form-text::before, .home .easy-agree .form.checkbox .form-text::after {top: 4px;}
 .home .easy-agree.ty02 .in-bx {padding-bottom: 32px; margin-bottom: 32px;}
+.home .easy-agree.ty02 .in-bx:last-child {padding-bottom: 0; margin-bottom: 0;}
 .home .easy-agree.ty02 .in-bx.ty-bn {margin-bottom: 0; border-bottom: none;}
 .home .easy-agree.ty02 p.bx-line {display: flex; align-items: center; column-gap: 8px;}
 .home .easy-agree.ty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
@@ -8071,6 +8072,46 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .easy-agree.ty02 .tx02 {padding-left: 0; row-gap: 12px;}
 .home .easy-agree.ty02 .bx-radio-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 16px;}
 .home .easy-agree.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
+
+@media (max-width: 1023px) {
+  .home .easy-agree.ty02 .form.checkbox.ty-all span.form-text {font-size: 17px;}
+  .home .easy-agree.ty02 .form.checkbox.ty-all .form-text::before, .home .easy-agree .form.checkbox .form-text::after {top: 2px;}
+  .home .easy-agree.ty02 .in-bx {padding-bottom: 24px; margin-bottom: 24px;}
+  .home .easy-agree.ty02 p.bx-line {display: block;}
+  .home .easy-agree.ty02 span.form-text.ty01 {font-size: 15px;}
+  .home .easy-agree.ty02 span.form-text.ty02 {font-size: 15px;}
+  .home .easy-agree.ty02 .form.checkbox .form-text::before, .home .easy-agree .form.checkbox .form-text::after {top: 2px;}
+  .home .easy-agree.ty02 a.btn-detail {position: relative; top: auto; right: auto; display: inline-block; margin-left: 4px;}
+  .home .easy-agree.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
+  .home .easy-agree.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}
+
+.home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 p.bx-line {display: flex; align-items: center; column-gap: 8px;}
+.home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 a.btn-view-detail {position: relative; top: auto; right: auto;}
+.home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 .bx-radio-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 16px;}
+.home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
+
+@media (max-width: 1023px) {
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 p.bx-line {display: block;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 span.form-text.ty01 {font-size: 15px;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 a.btn-view-detail {position: relative; top: auto; right: auto; display: inline-block; margin-left: 4px;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}
+
+.home .ej-pay-wrap .btm-ck-tx.ty02 .bx-tp {padding-bottom: 32px;}
+.home .ej-pay-wrap .btm-ck-tx.ty02 > div {position: relative;}
+.home .ej-pay-wrap .btm-ck-tx.ty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.home .ej-pay-wrap .btm-ck-tx.ty02 .bx-radio-r {position: absolute; top: 0; right: 0; display: flex; column-gap: 16px;}
+.home .ej-pay-wrap .btm-ck-tx.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
+
+@media (max-width: 1023px) {
+  .home .ej-pay-wrap .btm-ck-tx.ty02 .bx-tp {padding-bottom: 16px;}
+  .home .ej-pay-wrap .btm-ck-tx.ty02 span.form-text.ty01 {font-size: 15px;}
+  .home .ej-pay-wrap .btm-ck-tx.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
+  .home .ej-pay-wrap .btm-ck-tx.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}
 
 
 
