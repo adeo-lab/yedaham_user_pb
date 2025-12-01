@@ -5136,9 +5136,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-size: 32px;
 }
   .corp .careers-view01 .tp-tit-bx .tx-tit {display: inline; font-size: 26px; text-align: left;}
-  .corp .careers-view01 .tp-tit-bx .bx-sepa.tx-date {display: block; padding-top: 12px; padding-bottom: 24px;}
-  .corp .careers-view01 .tp-tit-bx .tx-date .tx-l {font-size: 18px; padding-left: 0;}
-  .corp .careers-view01 .tp-tit-bx .tx-date .tx-r {font-size: 18px;}
+  .corp .careers-view01 .tp-tit-bx .bx-sepa.tx-date {display: block; padding-top: 8px; padding-bottom: 24px;}
+  .corp .careers-view01 .tp-tit-bx .tx-date .tx-l {font-size: 15px; padding-left: 0;}
+  .corp .careers-view01 .tp-tit-bx .tx-date .tx-r {font-size: 15px;}
 
   .corp .careers-view01 .tp-tit-bx .bx-sepa.flag .flag {height: 28px; margin-top: 1px; font-size: 16px; line-height: 28px;}
   .corp .careers-cont02.ty02 dd p.tx02 {font-size: 16px;}
@@ -6939,6 +6939,38 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /* radio 컬러 */
 .corp .form.radio:not(.disabled, :has(:disabled)) .form-elem:checked + .form-text::before {border-color: #4458B0;}
+
+
+/* 동의 미동의 추가 */
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 {position: relative;}
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 .bx-tp {padding-bottom: 32px;}
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 > div {position: relative;}
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 span.tx-imp {color: #E94543;}
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 .bx-radio-r {position: absolute; top: 6px; right: 0; display: flex; column-gap: 16px;}
+.corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
+
+@media (max-width: 1023px) {
+  .corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 .bx-tp {padding-bottom: 16px; padding-right: 120px;}
+  .corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 span.form-text.ty01 {font-size: 15px;}
+  .corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
+  .corp .pop-yac .pop-tp-gray-bx .btm-bk-bx.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}
+
+.corp .careers-agree-wrap .tp-tx.ty02 {position: relative;}
+.corp .careers-agree-wrap .tp-tx.ty02 .bx-tp {padding-bottom: 32px;}
+.corp .careers-agree-wrap .tp-tx.ty02 > div {position: relative;}
+.corp .careers-agree-wrap .tp-tx.ty02 span.form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.corp .careers-agree-wrap .tp-tx.ty02 span.tx-imp {color: #E94543;}
+.corp .careers-agree-wrap .tp-tx.ty02 .bx-radio-r {position: absolute; top: 6px; right: 0; display: flex; column-gap: 16px;}
+.corp .careers-agree-wrap .tp-tx.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
+
+@media (max-width: 1023px) {
+  .corp .careers-agree-wrap .tp-tx.ty02 .bx-tp {padding-bottom: 16px; padding-right: 120px;}
+  .corp .careers-agree-wrap .tp-tx.ty02 span.form-text.ty01 {font-size: 15px;}
+  .corp .careers-agree-wrap .tp-tx.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
+  .corp .careers-agree-wrap .tp-tx.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}
 
 
 /* keyframes */

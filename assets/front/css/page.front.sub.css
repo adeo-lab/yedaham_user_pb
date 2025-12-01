@@ -1103,7 +1103,7 @@
 .home .condolence-guide .altar-list {display: flex; gap: 48px; justify-content: space-between;}
 .home .condolence-guide .altar-list .altar-item {flex: 1; padding: 32px; box-sizing: border-box; border-radius: 16px; border: 1px solid rgba(19, 21, 23, 0.15); background-color: #FBFAFA;}
 .home .condolence-guide .altar-list .altar-item .altar-item-wrap {display: flex; flex-direction: column; row-gap: 24px; justify-content: center; align-items: center;}
-.home .condolence-guide .altar-list .altar-item .altar-item-wrap::before {display: block; content: ''; width: 160px; height: 160px; background-position: center; background-size: cover; background-repeat: no-repeat;}
+.home .condolence-guide .altar-list .altar-item .altar-item-wrap::before {display: block; content: ''; width: 80px /*160px*/; height: 80px /*160px*/; background-position: center; background-size: cover; background-repeat: no-repeat;}
 .home .condolence-guide .altar-list .altar-item:nth-child(1) .altar-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_religion_01.png);}
 .home .condolence-guide .altar-list .altar-item:nth-child(2) .altar-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_religion_02.png);}
 .home .condolence-guide .altar-list .altar-item:nth-child(3) .altar-item-wrap::before {background-image: url(../../../assets/front/images/sub/img_religion_03.png);}
@@ -1294,7 +1294,7 @@
     .home .condolence-guide .altar-list {flex-direction: column; gap: 16px;}
     .home .condolence-guide .altar-list .altar-item {flex: 1 1 100%; padding: 20px;}
     .home .condolence-guide .altar-list .altar-item .altar-item-wrap {row-gap: 16px;}
-    .home .condolence-guide .altar-list .altar-item .altar-item-wrap::before {width: 120px; height: 120px;}
+    .home .condolence-guide .altar-list .altar-item .altar-item-wrap::before {width: 72px /*120px*/; height: 72px /*120px*/;}
     .home .condolence-guide .altar-list .head {font-size: 20px;}
     .home .condolence-guide .altar-list .order-item {font-size: 15px;}
     .home .condolence-guide .guide-list {display: flex; flex-direction: column; row-gap: 32px;}

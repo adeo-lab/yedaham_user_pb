@@ -660,6 +660,11 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("corp/common/FO_C_ZA_001_L.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">YAC 센터*</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("corp/common/FO_C_ZA_001_L_n.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">이미지 미리보기*</span></p>
 						${createMenuLink("corp/common/FO_C_ZC_001_L.html", useFullLink)}
 					</div>
@@ -875,6 +880,12 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">채용공고* > Step1 약관동의 및 본인인증</span></p>
 						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
 						${createMenuLink("corp/careers/FO_C_EE_003.html", useFullLink)}
+					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">채용공고* > Step1 약관동의 및 본인인증</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1120 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("corp/careers/FO_C_EE_003_n.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">채용공고* > Step2 인적사항</span></p>

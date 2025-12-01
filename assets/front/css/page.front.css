@@ -7933,7 +7933,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* 간편가입 */
 @media (max-width: 1023px) {
   html.active-scroll-start .home .page-easy {padding-top: 50px;}
-  html.active-scroll-start .home .page-easy .page-head-wrap { position: fixed; top: 72px; left: 0; right: 0; z-index: 10; background-color: #fff;}
+  html.active-scroll-start .home .page-easy .page-head-wrap { position: fixed; top: 72px; left: 0; right: 0; z-index: 20; background-color: #fff;}
   html.active-scroll-start .home .page-easy .title-step01 li > div {display: none; pointer-events: none; opacity: 0;;}
 }
 
@@ -8115,7 +8115,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .ej-pay-wrap .btm-ck-tx.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
 }
 
-.home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 p.bx-line {display: flex; align-items: center; column-gap: 8px;}
+.home .board-write-ty01 .btm-area.ty02 p.bx-line {display: flex; align-items: center; column-gap: 8px;}
 .home .board-write-ty01 .btm-area.ty02 .form-text.ty01 {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
 .home .board-write-ty01 .btm-area.ty02 span.tx-imp {color: #E94543;}
 .home .board-write-ty01 .btm-area.ty02 a.btn-view-detail {position: relative; top: auto; right: auto;}
@@ -8123,7 +8123,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .board-write-ty01 .btm-area.ty02 .bx-radio-r .form.radio .form-text {font-weight: 400; font-size: 17px;}
 
 @media (max-width: 1023px) {
-  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 p.bx-line {display: block;}
+  .home .board-write-ty01 .btm-area.ty02 p.bx-line {display: block;}
   .home .board-write-ty01 .btm-area.ty02 span.form-text.ty01 {font-size: 15px;}
   .home .board-write-ty01 .btm-area.ty02 a.btn-view-detail {position: relative; top: auto; right: auto; display: inline-block; margin-left: 4px;}
   .home .board-write-ty01 .btm-area.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}

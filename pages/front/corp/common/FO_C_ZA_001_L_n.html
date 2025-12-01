@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>YAC 센터 - 회사</title>
+	
+	<link rel="shortcut icon" href="../../../../assets/front/images/common/favicon.ico">
+	<link rel="stylesheet" href="../../../../assets/front/css/front.component.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.layout.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.corp.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.corp.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.ltd.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.front.sub.ltd.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.main.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.main.corp.css">
+	<link rel="stylesheet" href="../../../../assets/front/css/page.main.ltd.css">
+
+	<script src="../../../../assets/front/js/ui.include_corp.js"></script>
+	<script src="../../../../assets/front/js/ui.common.js"></script>
+	<script src="../../../../assets/front/js/awesomplete.min.js"></script>
+	<script src="../../../../assets/front/js/swiper-bundle.min.js"></script>
+	<script src="../../../../assets/front/js/page.js"></script>
+
+	<script src="../../../../assets/front/js/jquery-3.7.1.min.js"></script>
+	<script src="../../../../assets/front/js/jquery-ui.min.js"></script>
+</head>
+<body class="corp">
+	<!-- skip -->
+	<ul id="skipnav">
+		<li><a href="#container">본문 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<!-- //skip-->
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header id="header" class="header"></header>
+		<!-- //헤더 영역 -->
+
+		<!-- 컨테이너 영역 -->
+		<div class="container" id="container">
+			<div id="page" class="page-login">
+				<div class="title-inner-bx">
+					<div class="page-head">
+						<div class="title-inner-bx">
+							<h2 class="heading-l">YAC 센터</h2>
+						</div>
+					</div>
+					<div class="page-body">
+						<div class="button-display">
+							<span class="button-area">
+								<a href="#" class="btn-a btn-popup-open" onclick="uiCommon.popup.popupOpen('contentYacCenter')"><span class="btn-text">YAC 센터</span></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //컨테이너 영역 -->
+
+		<!-- 퀵메뉴 -->
+		<div class="quick-menu"></div>
+		<!-- //퀵메뉴 -->
+
+		<!-- 푸터 영역 -->
+		<footer id="footer"></footer>
+		<!-- //푸터 영역 -->
+	</div>
+
+	<!-- contentPopup -->
+	<div class="content-popup" data-popup="contentYacCenter">
+		<div class="popup-wrap pop-yac">
+			<div class="popup-header">
+				<p class="popup-subject">YAC 센터</p>
+				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+			</div>
+			<div class="popup-body">
+				<div class="popup-contents">
+					<div class="pop-tp-gray-bx">
+						<ul>
+							<li>단순 민원이나 불편사항 등 부패행위와 관련이 없거나, 대상·내용이 불명확한 경우, 근거 없는 비방으로 판단되는 경우에는 접수 및 처리하지 않으니 주의를 부탁 드립니다.</li>
+							<li>본인은 위 사항을 확인하였고, 근거 없이 타인을 비방하거나 허위사실을 신고하지 않으며 오로지 양심에 따라 본 보고서를 작성할 것을 약속합니다.</li>
+							<li><strong>무기명신고접수 후 신고자의 정보를 알 수 없어 처리내역을 알려드릴 수 없음을 원칙으로 하나, 신고처리 결과 안내를 받고자 하신 분은 제 3자의 이메일을 남겨 주시면 처리내역을 보내 드리도록 하겠습니다.</strong></li>
+						</ul>
+						<!-- 251201 -->
+						<div class="btm-bk-bx ty02">
+							<span class="form-text ty01"><span class="tx-imp">[필수]</span> 신고자 준수사항에 동의 합니다.</span>
+							<span class="bx-radio-r">
+								<label class="form radio">
+									<input type="radio" name="rd1-2" id="rd1-2" class="form-elem" checked="checked">
+									<span class="form-text">동의</span>
+								</label>
+								<label class="form radio">
+									<input type="radio" name="rd1-2" id="rd1-2" class="form-elem">
+									<span class="form-text">미동의</span>
+								</label>
+							</span>
+						</div>
+						<!-- //251201 -->
+					</div>
+					<div class="board-write-ty01">
+						<div class="top-area">
+							<div class="line-item one-line">
+								<dl>
+									<dt>신고유형 <span class="imp">*</span></dt>
+									<dd>
+										<span class="form select">
+											<select name="select" id="select2" class="form-elem">
+												<option value="#">상품문의</option>
+											</select>
+										</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="line-item one-line">
+								<dl>
+									<dt>제목 <span class="imp">*</span></dt>
+									<dd>
+										<span class="form input">
+											<input class="form-elem" type="text" placeholder="제목을 입력해 주세요." value="">
+										</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="line-item one-line">
+								<dl>
+									<dt>내용 <span class="imp">*</span></dt>
+									<dd>
+										<span class="form textarea">
+											<textarea class="form-elem ty02" placeholder="사실에 근거한 내용을 육하원칙(누가, 언제, 어디서, 무엇을, 어떻게, 왜)에 따라 최대한 구체적으로 작성해 주세요."></textarea>
+											<!-- <p class="btm-tx01">0/1,500</p> -->
+										</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="line-item one-line">
+								<dl>
+									<dt>첨부파일</dt>
+									<dd>
+										<div class="file-upload ty-n">
+											<div class="file-upload-btn">
+												<span class="form-text">100MB 이하로 등록 가능합니다.</span>
+												<input type="file" class="form-elem" id="fileInput01">
+												<label class="btn-file-n" for="fileInput01">파일선택</label>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="line-item one-line">
+								<dl>
+									<dt>이메일 주소 <span class="imp">*</span></dt>
+									<dd>
+										<div class="bx-email">
+											<div class="bx01">
+												<span class="form input">
+													<input class="form-elem" type="text" placeholder="이메일 주소를 입력해 주세요." value="test">
+												</span>
+												<!-- <p class="form-noti invalid">올바른 이메일 주소를 입력해주세요.</p> -->
+											</div>
+											<div class="bx-betw">@</div>
+											<div class="bx02">
+												<span class="form select">
+													<select name="select" id="select" class="form-elem">
+														<option value="#">yedaham.co.kr</option>
+													</select>
+												</span>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div style="max-width: 312px; height: 86px; background: #ddd; margin: 0 auto;">
+							<p style="line-height: 86px; text-align: center;">reCAPCHA</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-footer">
+				<div class="button-area">
+					<a href="#" class="btn-popup cancel">취소</a>
+					<a href="#" class="btn-popup">신고하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contentPopup -->
+
+	<script stype="text/javascript">
+		// 온로드 시 활성화
+		document.addEventListener('DOMContentLoaded', function() {
+			uiCommon.popup.popupOpen('contentYacCenter');
+		});
+	</script>
+</body>
+</html>
