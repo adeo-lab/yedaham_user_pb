@@ -299,6 +299,12 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-edit"><span class="em">주석: 1110 작업</span></p>
 						${createMenuLink("my/FO_Y_YF_002.html", useFullLink)}
 					</dl>
+					<dl class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">개인 정보 관리*</span></p>
+						<p class="g-sub-edit"><span class="em">주석: 1110 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						${createMenuLink("my/FO_Y_YF_002_n.html", useFullLink)}
+					</dl>
 				</div>
 			</li>
 
