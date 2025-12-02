@@ -7530,7 +7530,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .home .event-list ul {row-gap: 24px;}
   .home .event-list li {width: 100%;}
-  .home .event-list li .in-bx .thum {height: 148px;}
+  .home .event-list li .in-bx .thum {height: 148px; border-radius: 16px;}
+  .home .event-list li .in-bx .cont dl {padding-top: 12px;}
   .home .event-list li .in-bx .cont dt {font-size: 19px; /*display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: unset;*/}
   .home .event-list li .in-bx .cont dd {font-size: 15px;}
   .home .event-list li .in-bx .cont dt span.tx-date {top: 1px; font-size: 14px; line-height: 23px;}
