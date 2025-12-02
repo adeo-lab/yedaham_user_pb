@@ -3644,6 +3644,13 @@ white-space: nowrap; border: 0;}
 .home .board-view.event .board-view-content .board-content .bx-event-img {position: relative;}
 /*.home .board-view.event .board-view-content .board-content .bx-event-img::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(19, 21, 23, 0.50); z-index: 10;}
 .home .board-view.event .board-view-content .board-content .bx-event-img::after {content: '종료된 이벤트입니다.'; position: absolute; top: calc(50% - 20px); left: 0; width: 100%; height: 20px; display: block; font-weight: 600; font-size: 28px; color: #fff; line-height: 20px; text-align: center; z-index: 11;}*/
+.home .board-view.event .board-view-content .board-content .img-pc-in {display: block;}
+.home .board-view.event .board-view-content .board-content .img-mob-in {display: none;}
+
+@media (max-width: 1200px) {
+  .home .board-view.event .board-view-content .board-content .img-pc-in {display: none;}
+  .home .board-view.event .board-view-content .board-content .img-mob-in {display: block;}
+}
 
 
 .home .board-view .board-bottom {padding: 0; border: 0 none;}
