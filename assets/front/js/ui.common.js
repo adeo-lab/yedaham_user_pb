@@ -429,7 +429,7 @@ var uiCommon = (function() {
 				const navilMenu = document.querySelector('#header .gnb-list');
 				const header = document.querySelector('#header');
 
-				// 1. 모바일 메뉴 열기/닫기 기능
+				// 1. 모바일 메뉴 열기/닫기 기능 (생략, 기존 코드와 동일)
 				if (naviMenuBtn && navilMenu && naviMenuCloseBtn) {
 					_.openMenuListener = function() {
 						naviMenuBtn.classList.add('active');
@@ -450,7 +450,7 @@ var uiCommon = (function() {
 					naviMenuCloseBtn.addEventListener('click', _.closeMenuListener);
 				}
 				
-				if (!_.gnbInited) {
+				if (!_.gnbInited) { // 2. 1차/3차 메뉴 토글 기능 (생략, 기존 코드와 동일)
 					_.gnbInited = true;
 					// 2. 1차 메뉴 클릭 시 2차 메뉴 토글 기능
 					const gnbLinks = document.querySelectorAll('.gnb-item-l > a.gnb-text-l');
@@ -491,46 +491,60 @@ var uiCommon = (function() {
 				}
 
 				// 4. 스크롤 위치에 따른 상단 메뉴 동기화 기능 및 자동 스크롤
-const inNav = document.querySelector('.in-nav');
-const inNavLinks = document.querySelectorAll('.in-nav .gnb-text');
-const innerBxL = document.querySelector('.nav-layer');
-const sections = document.querySelectorAll('.nav-layer .gnb-item-l');
+				const inNav = document.querySelector('.in-nav');
+				const inNavLinks = document.querySelectorAll('.in-nav .gnb-text');
+				const innerBxL = document.querySelector('.nav-layer');
+				const sections = document.querySelectorAll('.nav-layer .gnb-item-l');
+				
+				// 마지막 섹션 ID를 미리 정의
+				const lastSectionId = sections.length > 0 ? sections[sections.length - 1].id.replace('_l', '') : null;
 
-if (innerBxL && sections.length > 0) {
 
-    innerBxL.addEventListener('scroll', () => {
+				if (innerBxL && sections.length > 0) {
 
-        let activeId = null;
+					innerBxL.addEventListener('scroll', () => {
 
-        sections.forEach(sec => {
-            const rect = sec.getBoundingClientRect();
-            const parentRect = innerBxL.getBoundingClientRect();
+						let activeId = null;
+						
+						// 스크롤 최하단 감지 로직
+						const isScrollBottom = innerBxL.scrollHeight - innerBxL.scrollTop <= innerBxL.clientHeight + 1;
 
-            // sec이 nav-layer 상단에 닿았거나 그 직전에 있는 경우
-            if (rect.top <= parentRect.top + 2) {
-                activeId = sec.id.replace('_l', '');  
-            }
-        });
+						if (isScrollBottom && lastSectionId) {
+							// 스크롤이 끝에 도달하면 무조건 마지막 메뉴를 활성화
+							activeId = lastSectionId;
+						} else {
+							// 기존 로직: 스크롤 위치에 따라 활성 섹션 찾기
+							sections.forEach(sec => {
+								const rect = sec.getBoundingClientRect();
+								const parentRect = innerBxL.getBoundingClientRect();
+                                
+								// === 이 부분이 수정되었습니다. (2px -> 12px) ===
+								// sec이 nav-layer 상단에 닿았거나 그 직전에 있는 경우 (활성화 시점 10px 지연)
+								if (rect.top <= parentRect.top + 12) {
+									activeId = sec.id.replace('_l', '');  
+								}
+							});
+						}
 
-        if (activeId) {
-            // 모든 메뉴 off
-            inNavLinks.forEach(link => link.classList.remove('on'));
+						if (activeId) {
+							// 모든 메뉴 off
+							inNavLinks.forEach(link => link.classList.remove('on'));
 
-            // 해당 메뉴 on
-            const navItem = document.querySelector(`.in-nav .gnb-item#${activeId}`);
-            const navText = navItem?.querySelector('.gnb-text');
-            if (navText) navText.classList.add('on');
+							// 해당 메뉴 on
+							const navItem = document.querySelector(`.in-nav .gnb-item#${activeId}`);
+							const navText = navItem?.querySelector('.gnb-text');
+							if (navText) navText.classList.add('on');
 
-            // 메뉴 자동 스크롤
-            if (navItem) {
-                inNav.scrollTo({
-                    left: navItem.offsetLeft - 16,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    });
-}
+							// 메뉴 자동 스크롤
+							if (navItem) {
+								inNav.scrollTo({
+									left: navItem.offsetLeft - 16,
+									behavior: 'smooth'
+								});
+							}
+						}
+					});
+				}
 
 			}
 		},
