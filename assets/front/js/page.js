@@ -137,3 +137,26 @@ document.addEventListener("DOMContentLoaded", () => {
   onScroll();
 });
 
+
+/* 툴팁 z-index 값 */
+let scrollTimer;
+
+function handleQLayerZIndex() {
+  const qLayers = document.querySelectorAll('.q-layer.active');
+  if (!qLayers.length) return;
+
+  // 스크롤 중 → z-index:10 적용
+  qLayers.forEach(qLayer => {
+    qLayer.style.zIndex = '10';
+  });
+
+  // 스크롤 멈춤 감지
+  clearTimeout(scrollTimer);
+  scrollTimer = setTimeout(() => {
+    qLayers.forEach(qLayer => {
+      qLayer.style.zIndex = '';
+    });
+  }, 150); // 150ms 동안 스크롤 이벤트 없으면 '멈춘' 것으로 판단
+}
+
+document.addEventListener('scroll', handleQLayerZIndex, true);
