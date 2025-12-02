@@ -5471,7 +5471,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .financial-wrap01 .s-tit-wrap {padding-bottom: 24px; text-align: center;}
 .corp .financial-wrap01 .s-tit-wrap p.tx01 {font-weight: 600; font-size: 40px; color: #232527; line-height: 130%;}
 .corp .financial-wrap01 .s-tit-wrap p.tx02 {font-weight: 400; font-size: 19px; color: #232527; line-height: 150%;}
-.corp .financial-wrap01 .grp-wrap01 .mob-inner-scroll {position: relative; height: 386px; padding: 40px 40px 0 260px; margin: 0 0 32px 0; background: #FAFAFB; border-radius: 16px; box-sizing: border-box;}
+.corp .financial-wrap01 .grp-wrap01 .mob-inner-scroll {position: relative; height: 386px; padding: 40px 40px 0 260px; margin: 0 0 32px 0; background: #FAFAFB; border-radius: 16px; box-sizing: border-box; z-index: 1;}
 .corp .financial-wrap01 .grp-wrap01 .bx-txt {position: absolute; top: 40px; left: 40px;}
 .corp .financial-wrap01 .grp-wrap01 .bx-txt .tx01 {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%;}
 .corp .financial-wrap01 .grp-wrap01 .bx-txt .tx02 {font-weight: 400; font-size: 14px; color: #444; line-height: 150%; padding-top: 8px;}
@@ -5546,7 +5546,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .financial-wrap01 .grp-wrap02 .bx-grp .g-bx-c li .in-bx .grp {width: 41px; margin: 0 auto;}
 }
 
-.corp .financial-wrap01 .grp-wrap03 .mob-inner-scroll {position: relative; height: 386px; padding: 40px 40px 0 260px; margin: 0 0 32px 0; background: #FAFAFB; border-radius: 16px; box-sizing: border-box;}
+.corp .financial-wrap01 .grp-wrap03 .mob-inner-scroll {position: relative; height: 386px; padding: 40px 40px 0 260px; margin: 0 0 32px 0; background: #FAFAFB; border-radius: 16px; box-sizing: border-box; z-index: 1;}
 .corp .financial-wrap01 .grp-wrap03 .bx-txt {position: absolute; top: 40px; left: 40px;}
 .corp .financial-wrap01 .grp-wrap03 .bx-txt .tx01 {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%;}
 .corp .financial-wrap01 .grp-wrap03 .bx-txt .tx02 {font-weight: 400; font-size: 14px; color: #444; line-height: 150%; padding-top: 8px;}
