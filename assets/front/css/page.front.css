@@ -4339,7 +4339,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* .home .content-popup.full-s .popup-wrap .popup-header {margin-bottom: 32.5px;} */
 
 @media (max-width: 1640px) {
-  .home .content-popup.full-s .popup-wrap {border-radius: 24px;}
+  .home .content-popup.full-s .popup-wrap {border-top-left-radius: 24px; border-top-right-radius: 24px;}
 }
 
 .home .pop-service-component-tab {padding: 0 0 40px; box-sizing: border-box;}
