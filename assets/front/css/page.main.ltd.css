@@ -4,7 +4,7 @@
 .ltd #header::before {border-bottom: none; background-color: #fff;}
 .ltd #header.main::before {border-bottom: none; background-color: #EFEFEF;}
 
-.active-scroll-top .ltd #header::before {border-bottom: none; background-color: #EFEFEF !important;}
+.active-scroll-top .ltd #header::before {border-bottom: none; background-color: #fff !important;}
 .active-scroll-top .ltd #header.main::before {border-bottom: none; background-color: #EFEFEF !important;}
 .active-scroll-down .ltd #header::before {border-bottom: none; background-color: #fff;}
 .active-scroll-down .ltd #header.main::before {border-bottom: none; background-color: #fff;}
@@ -32,7 +32,7 @@
 .ltd .main-vis-wrap {display: flex; gap: 64px /*24px*/; margin-bottom: 64px;}
 .ltd .main-vis-wrap .main-vis {flex: 1 1 auto; aspect-ratio: 792/270; overflow: hidden; border-radius: 16px;}
 .ltd .main-vis-wrap .main-vis .vis-img {aspect-ratio: 792/270; /*border-radius: 16px; overflow: hidden;*/}
-.ltd .main-vis-wrap .main-vis .vis-img-pc {display: block;}
+.ltd .main-vis-wrap .main-vis .vis-img-pc {display: block; width: 792px; height: 270px;}
 .ltd .main-vis-wrap .main-vis .vis-img-mo {display: none;}
 .ltd .main-vis-wrap .main-vis img {width: 100%; height: 100%; object-fit: cover;}
 
