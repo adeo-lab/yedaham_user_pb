@@ -364,11 +364,11 @@
   .ltd .main-cont03 .s-tit-wrap {position: relative; width: 100%; padding-top: 48px; padding-left: 16px; margin-bottom: 16px; box-sizing: border-box;}
   .ltd .main-cont03 .s-tit-wrap .s-txt {display: none;}
   .ltd .main-cont03 .s-tit-wrap .s-tit {font-size: 24px;}
-  .ltd .main-cont03 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 16px; font-size: 15px; padding-right: 14px;}
+  .ltd .main-cont03 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 16px; font-size: 14px; padding-right: 14px;}
   .ltd .main-cont03 .s-tit-wrap a.btn-more {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5.35449 2.62012C5.67468 2.26441 6.22237 2.23554 6.57812 2.55566L11.9121 7.35547C12.0945 7.51976 12.1982 7.7545 12.1982 8C12.1981 8.24538 12.0945 8.48033 11.9121 8.64453L6.57812 13.4434C6.22247 13.7631 5.67464 13.7352 5.35449 13.3799C5.03445 13.0243 5.06363 12.4765 5.41895 12.1562L10.0361 8L5.41895 3.84375C5.06336 3.52365 5.03466 2.97587 5.35449 2.62012Z' fill='%23232527'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right top 4px;
+    background-position: right top 3px;
     background-size: 12px;
   }
   .ltd .main-cont03 .main-review-list {display: block; width: 100%;}
@@ -389,11 +389,11 @@
   .ltd .main-cont05 {padding-left: 16px; padding-right: 16px;}
   .ltd .main-cont05 .s-tit-wrap {padding-bottom: 0; margin-bottom: 16px;}
   .ltd .main-cont05 .s-tit-wrap .s-tit {font-size: 24px;}
-  .ltd .main-cont05 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 0; font-size: 15px; padding-right: 14px;}
+  .ltd .main-cont05 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 0; font-size: 14px; padding-right: 14px;}
   .ltd .main-cont05 .s-tit-wrap a.btn-more {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5.35449 2.62012C5.67468 2.26441 6.22237 2.23554 6.57812 2.55566L11.9121 7.35547C12.0945 7.51976 12.1982 7.7545 12.1982 8C12.1981 8.24538 12.0945 8.48033 11.9121 8.64453L6.57812 13.4434C6.22247 13.7631 5.67464 13.7352 5.35449 13.3799C5.03445 13.0243 5.06363 12.4765 5.41895 12.1562L10.0361 8L5.41895 3.84375C5.06336 3.52365 5.03466 2.97587 5.35449 2.62012Z' fill='%23232527'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right top 5.5px;
+    background-position: right top 4.5px;
     background-size: 12px;
   }
   .ltd .main-cont05 .my-main-faq ul {flex-direction: column;}
