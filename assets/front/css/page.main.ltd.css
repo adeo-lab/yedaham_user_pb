@@ -177,6 +177,7 @@
 .ltd .main-cont05 .my-main-faq li a { display: flex ; }
 .ltd .main-cont05 .my-main-faq li .in-bx {padding: 0 32px;}
 .ltd .main-cont05 .my-main-faq li .in-bx .tx-q { font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; word-break: break-all; }
+.ltd .main-cont05 .my-main-faq li .in-bx .tx-q > span {display: block;}
 .ltd .main-cont06 {padding-bottom: 64px;}
 .ltd .main-cont06 .s-tit-wrap {position: relative; padding-bottom: 24px /*32px*/;}
 .ltd .main-cont06 .s-tit-wrap .s-tit {font-weight: 600; font-size: 32px; color: #232527; line-height: 48px;}
