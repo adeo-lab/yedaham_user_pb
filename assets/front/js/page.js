@@ -139,6 +139,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* 툴팁 z-index 값 */
+function removeActiveQLayers() {
+  const activeQLayers = document.querySelectorAll('.q-layer.active');
+  if (!activeQLayers.length) return;
+
+  activeQLayers.forEach(qLayer => {
+    qLayer.classList.remove('active');
+  });
+}
+
+document.addEventListener('scroll', removeActiveQLayers, true);
+
+/*
 let scrollTimer;
 
 function handleQLayerZIndex() {
@@ -160,3 +172,4 @@ function handleQLayerZIndex() {
 }
 
 document.addEventListener('scroll', handleQLayerZIndex, true);
+*/
