@@ -2546,6 +2546,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
 
 .ltd #header .header-inner .navi-util .navi-list .navi-item .navi-text .logout {display: none;}
 .ltd #header .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn {background: #fff;}
+.ltd #header .header-inner .navi-util .navi-list .navi-item .navi-text .tp-btn:hover {background: #F4F5F6;}
 
 .ltd .header .header-inner .header-sub-area {display: flex; column-gap: 16px; height: 72px; align-items: center;}
 .ltd .header .header-inner .header-sub-area .btn-header-prev {width: 24px; height: 24px; line-height: 24px;}
@@ -3476,7 +3477,7 @@ white-space: nowrap; border: 0;}
 .ltd .tab-display.style-c .tab-list .tab-item {padding-right: 48px;}
 .ltd .tab-display.style-c .tab-list .tab-item .tab-text {display: block; font-weight: 600; font-size: 24px; color: #A0A0A0; line-height: 130%; padding: 20px 0;}
 .ltd .tab-display.style-c .tab-list .tab-item.current .tab-text {position:relative; font-weight: 600; color: #232527;}
-.ltd .tab-display.style-c .tab-list .tab-item.current .tab-text::after {content: ''; position: absolute; left: 0; bottom: -1px; width: 100%; height: 1px; background: #232527;}
+.ltd .tab-display.style-c .tab-list .tab-item.current .tab-text::after {content: ''; position: absolute; left: 0; bottom: -1px; width: 100%; height: 2px; background: #232527;}
 
 .ltd .tab-display.style-c .btn-mob-r {display: none;}
 .ltd .tab-display.style-c.tab-fixed.fixed {padding: 0;}
