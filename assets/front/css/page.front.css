@@ -2691,7 +2691,7 @@ body.fixed {position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflo
   .home #header .header-inner .gnb .gnb-list .in-nav ul {min-width: 500px; width: auto;}
   #header .header-inner .gnb .gnb-list .in-nav .gnb-item {flex-shrink: 0; float: none;}
 
-  .home .header.open .nav-layer {flex: 1 1 100%; overflow-y: auto; position: static; box-shadow: none;}
+  .home .header.open .nav-layer {flex: 1 1 100%; overflow-y: auto; position: static; box-shadow: none; scroll-behavior: smooth;}
   .home .header .nav-layer .inner-bx-l {width: 100%; height: auto; padding: 24px 24px 42px 24px; box-sizing: border-box; background-color: transparent; }
   .home .header .nav-layer .inner-bx-l .gnb-list-l {flex-direction: column; padding: 0; row-gap: 24px;}
   .home .header .nav-layer .inner-bx-l .gnb-list-l .gnb-item-l .gnb-text-l { display: flex; justify-content: space-between; align-items: center; font-size: 18px; padding: 2px 0; }
