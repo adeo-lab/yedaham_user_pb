@@ -7662,7 +7662,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-contract-list li .in-bx .top-area .tx02 span.tx-name {display: block; font-size: 19px; padding-bottom: 4.5px;}
   .home .my-contract-list li .in-bx .top-area .tx02 span.dot {display: none;}
   .home .my-contract-list li .in-bx .top-area .tx02 span.tx-nm {font-size: 17px;}
-  .home .my-contract-list li .in-bx .top-area .tx02 a.btn-detail {top: auto; bottom: 2px; width: 16px; height: 16px; padding: 0; background-position: center; text-indent: -9999px; overflow: hidden;}
+  .home .my-contract-list li .in-bx .top-area .tx02 a.btn-detail {top: auto; bottom: 5px; width: 16px; height: 16px; padding: 0; background-position: center; text-indent: -9999px; overflow: hidden;}
   .home .my-contract-list li .in-bx .mid-area {padding-bottom: 0;}
   .home .my-contract-list li .in-bx .mid-area {display: flex; flex-direction: column;}
   .home .my-contract-list li .in-bx .mid-area dl {float: none; width: 100%; padding-bottom: 16px;}
