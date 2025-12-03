@@ -175,6 +175,7 @@ document.addEventListener('scroll', handleQLayerZIndex, true);
 */
 
 
+/* 지도 fix */
 document.addEventListener('DOMContentLoaded', () => {
     // 1. 필요한 DOM 요소 선택
     const fMapWrap = document.querySelector('.f-map-wrap');
