@@ -173,3 +173,41 @@ function handleQLayerZIndex() {
 
 document.addEventListener('scroll', handleQLayerZIndex, true);
 */
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. 필요한 DOM 요소 선택
+    const fMapWrap = document.querySelector('.f-map-wrap');
+    
+    // 고정 처리가 시작될 브라우저 상단 기준 스크롤 위치 (72px)
+    // 사용자님의 요청에 따라 72px 위치에 "도달하면" fixed가 되어야 하므로 72를 사용합니다.
+    const fixedOffset = 122;
+
+    if (!fMapWrap) {
+        console.error('필요한 DOM 요소(.f-map-wrap)를 찾을 수 없습니다.');
+        return;
+    }
+
+    // 2. Window 스크롤 이벤트 리스너 추가
+    // 브라우저 전체 스크롤을 감지합니다.
+    window.addEventListener('scroll', () => {
+        // 브라우저의 현재 세로 스크롤 위치를 가져옵니다.
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop >= fixedOffset) {
+            // 스크롤 위치가 72px 이상이면 'fixed' 클래스 추가
+            // fixed 클래스가 아직 없으면 추가합니다.
+            if (!fMapWrap.classList.contains('fixed')) {
+                fMapWrap.classList.add('fixed');
+                //console.log('fixed 클래스 추가됨 (브라우저 스크롤 기준)');
+            }
+        } else {
+            // 스크롤 위치가 72px 미만이면 'fixed' 클래스 제거
+            // fixed 클래스가 있으면 제거합니다.
+            if (fMapWrap.classList.contains('fixed')) {
+                fMapWrap.classList.remove('fixed');
+                //console.log('fixed 클래스 제거됨 (브라우저 스크롤 기준)');
+            }
+        }
+    });
+});
