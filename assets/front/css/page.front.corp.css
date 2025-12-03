@@ -4796,6 +4796,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .about-cont09-wrap.bg-cnt08::after */
   .corp .about-cont09-wrap::after {display: none;}
 
+  .corp .about-cont09-wrap.bg-cnt01 {background: none;}
   .corp .about-cont09-wrap.bg-cnt02 {background: none;}
   .corp .about-cont09-wrap.bg-cnt02::after {display: none;}
   .corp .about-cont09-wrap.bg-cnt02 .about-cont09 .bx-right .tp-info::after {display: none;}
