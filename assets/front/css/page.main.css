@@ -400,7 +400,7 @@
   .home .main-cont03 .s-tit-wrap {position: relative; width: 100%; padding-top: 48px; padding-left: 16px; margin-bottom: 16px; box-sizing: border-box;}
   .home .main-cont03 .s-tit-wrap .s-txt {display: none;}
   .home .main-cont03 .s-tit-wrap .s-tit {font-size: 24px;}
-  .home .main-cont03 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 16px; font-size: 15px; padding-right: 14px; background-position: right top 4px; background-size: 12px;}
+  .home .main-cont03 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 16px; font-size: 14px /*15px*/; padding-right: 14px; background-position: right top 3.5px; background-size: 12px;}
   .home .main-cont03 .main-review-list {display: block; width: 100%;}
   .home .main-cont03 .main-review-list .bx-wrap-l {width: 100%; padding-top: 0; padding-left: 16px; box-sizing: border-box; row-gap: unset;}
   .home .main-cont03 .main-review-list .in-bx-wrap {row-gap: unset; flex-direction: unset;}
@@ -430,8 +430,8 @@
   .home .main-cont05 {padding-left: 16px; padding-right: 16px;}
   .home .main-cont05 .s-tit-wrap {padding-bottom: 0; margin-bottom: 16px;}
   .home .main-cont05 .s-tit-wrap .s-tit {font-size: 24px;}
-  .home .main-cont05 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 0; font-size: 15px; padding-right: 14px; background-position: right top 5px; background-size: 12px;}
-  .home .main-cont05 .s-tit-wrap a.btn-more {font-size: 15px;}
+  .home .main-cont05 .s-tit-wrap a.btn-more {position: absolute; bottom: 0; right: 0; font-size: 15px; padding-right: 14px; background-position: right top 4.5px; background-size: 12px;}
+  .home .main-cont05 .s-tit-wrap a.btn-more {font-size: 14px /*15px*/;}
   .home .main-cont05 .my-main-faq ul {flex-direction: column;}
   .home .main-cont05 .my-main-faq li {width: 100%; height: auto; border-right: none; border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
   .home .main-cont05 .my-main-faq li:last-child {border-bottom: none;}
