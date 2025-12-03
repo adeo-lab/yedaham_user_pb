@@ -3132,7 +3132,7 @@ z-index: 10;
 
 
 /* page body */
-.corp .page-body-inner-bx01 {max-width: 1440px; padding: 48px 0 96px 0; margin: 0 auto;}
+.corp .page-body-inner-bx01 {max-width: 1440px; padding: 96px 0 96px 0; margin: 0 auto;}
 .corp .page-body-inner-bx02 {padding: 160px 0;background: #F5F5F7;}
 
 @media (max-width: 1023px) {
