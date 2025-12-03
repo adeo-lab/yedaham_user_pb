@@ -19,6 +19,9 @@
 #page .page-body > .body-l { text-align: center; }
 #page .page-body .data-finder { margin: 0 0 24px; }
 #page .page-body .pagination { margin: 48px 0 0; }
+@media (max-width: 1023px) {
+  #page .page-body .pagination {margin: 32px 0 0;}
+}
 #page .page-body .button-display { margin: 40px 0 0; }
 #page .page-body .button-display .button-area { gap: 12px; }
 #page .page-body .button-display .button-area .btn-a { min-width: 180px; }
