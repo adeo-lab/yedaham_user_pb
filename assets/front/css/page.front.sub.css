@@ -1088,7 +1088,7 @@
 .home .ritual-step .order-list .order-item::before {content: counter(item-counter, decimal-leading-zero); flex-shrink: 0; display: flex; justify-content: center; align-items: center; width: 32px; height: 36px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M9.37258 6.32886e-08L22.6274 0L32 9.37258V22.6274L22.6274 32H9.37258L6.3287e-08 22.6274L0 9.37258L9.37258 6.32886e-08Z' fill='%23D17B47'/%3E%3C/svg%3E"); background-position: center; background-repeat: no-repeat; background-size: 32px; font-size: 14px; font-weight: 600; line-height: 1.5; color: #fff;}
 .home .ritual-step .order-list .order-item:not(:last-child)::after {display: block; content: ''; position: absolute; top: 32px; left: 16px; z-index: -1; width: 1px; height: calc(100% + 32px); background-color: #F1945E;}
 .home .ritual-step .order-list .order-item .order-item-wrap {display: flex; gap: 24px}
-.home .ritual-step .order-list .order-item .order-item-wrap .title {flex-shrink: 0; display: flex; flex-wrap: wrap;    align-items: baseline; gap: 8px; max-width: 96px; font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
+.home .ritual-step .order-list .order-item .order-item-wrap .title {flex-shrink: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; max-width: 96px; font-size: 28px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
 .home .ritual-step .order-list .order-item .order-item-wrap .title .ch {font-size: 22px; font-weight: 400; line-height: 1.5; color: #777;}
 .home .ritual-step .order-list .order-item .order-item-wrap .text {align-self: center; font-size: 17px; font-weight: 400; line-height: 1.5; color: #444;}
 .home .ritual-step .order-list .order-item .order-item-wrap .text.exapt {align-self: flex-start; line-height: 36px;}
@@ -1266,7 +1266,7 @@
     .home .ritual-contents {display: flex; flex-direction: column; row-gap: 72px; padding: 32px 0 48px;}
     .home .ritual-contents .section {padding-top: 0;}
     .home .ritual-contents .section .section-wrap {row-gap: 16px;}
-    .home .ritual-contents .section .section-wrap .section-head .section-subject {font-size: 26px;}
+    .home .ritual-contents .section .section-wrap .section-head .section-subject {font-size: 24px /*26px*/;}
     .home .ritual-contents .section .section-wrap .section-body {row-gap: 16px;}
     .home .ritual-info .section-body::before {height: auto; background-size: cover; aspect-ratio: 41 / 17;}
     .home .ritual-info .definition-list {row-gap: 12px;}
