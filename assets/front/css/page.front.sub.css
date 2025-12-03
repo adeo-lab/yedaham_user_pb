@@ -972,6 +972,10 @@
 .home .safety-system-body .safety-system-bank .bank-list .bank-item {display: flex; flex-direction: column; row-gap: 16px;}
 .home .safety-system-body .safety-system-bank .bank-list .bank-item .bank-name {display: flex; justify-content: center; align-items: center; width: 200px; height: 56px; padding: 12px 32px; box-sizing: border-box; border: 1px solid rgba(19, 21, 23, 0.20); border-radius: 16px; background-color: #fff;}
 
+@media (max-width: 1023px) {
+    .home .safety-system-wrap .nationwide-operations-content {margin-top: -16px;}
+}
+
 .home .licensed-director-content {overflow: hidden; width: 100%; margin: 0 auto; border-radius: 16px;     text-align: center;}
 .home .licensed-director-content iframe {width: 100%; border: none; aspect-ratio: 16/9;}
 .home .licensed-director-content .img {display: inline-flex; justify-content: center; align-items: center; overflow: hidden; margin: 0 auto; border-radius: 24px; text-align: center;}

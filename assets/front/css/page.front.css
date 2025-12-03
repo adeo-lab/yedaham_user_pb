@@ -3105,6 +3105,11 @@ z-index: 10;
 	padding-right: 20px;
 }
 
+@media (max-width: 1023px) {
+  .home .tab-display .tab-list .tab-item {width: auto; margin-right: 0;}
+  .home .tab-display.style-b .tab-inner-bx .tab-list {column-gap: 8px;}
+}
+
 /*
 .home .page-head.title-fixed .heading-l {transition: 0.2s;}
 .home .page-head.title-fixed .btn-r-ty01 {transition: 0.2s;}
@@ -3117,7 +3122,6 @@ z-index: 10;
 .home .page-head.title-fixed.fixed .tx-fixed-on {display: inline-block; font-weight: 600; font-size: 17px; color: #777; line-height: 130%; padding-right: 20px;}
 
 @media (max-width: 1023px) {
-  .home .tab-display .tab-list .tab-item {width: auto; margin-right: 8px;}
   .home .tab-wrap:has(.tab-display.tab-fixed){height: var(--tab-h);}
 }
 
