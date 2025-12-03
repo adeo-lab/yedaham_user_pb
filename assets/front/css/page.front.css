@@ -6345,8 +6345,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .f-map-wrap .map-bx-l .tp-search-bx .bx-sel02 {width: calc(50% - 4px);}
   .home .f-map-wrap .map-bx-l .tp-search-bx .bx-inp01 {width: 100%;}
   .home .f-map-wrap .map-bx-l .map-wrap {height: 280px; border: none; border-radius: 0;}
-  .home .f-map-wrap.fixed .map-bx-l .map-wrap {position: fixed; top: 72px; left: 0; z-index: 100;}
-  .home .f-map-wrap.fixed .facility-list-wrap {padding-top: 118px;}
+  .home .f-map-wrap.fixed .map-bx-l .map-wrap {position: fixed !important; top: 72px; left: 0; width: 100%; z-index: 100;}
+  .home .f-map-wrap.fixed .facility-list-wrap {padding-top: /*176px*/ 118px;}
 }
 
 .home .facility-list {width: 384px;}
