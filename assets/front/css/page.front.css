@@ -3106,8 +3106,8 @@ z-index: 10;
 }
 
 @media (max-width: 1023px) {
-  .home .tab-display .tab-list .tab-item {width: auto; margin-right: 0;}
-  .home .tab-display.style-b .tab-inner-bx .tab-list {column-gap: 8px;}
+  .home .tab-display.style-b .tab-inner-bx .tab-list {column-gap: 0;}
+  .home .tab-display .tab-list .tab-item {width: auto; margin-right: 8px;}
 }
 
 /*
@@ -3496,7 +3496,7 @@ white-space: nowrap; border: 0;}
 .home .pop-time-wrap .tx-cont {font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; padding: 0 50px 0 50px;}
 .home .pop-time-wrap .tx-cont span {font-weight: 700; color: #AF5B27;}
 
-.home .pop-wrap-ty01 {position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding: 20px; background: rgba(176, 176, 176, 0.60); /*rgba(255, 255, 255, 0.60);*/ backdrop-filter: blur(10px); box-sizing: border-box; z-index: 100000; display: flex; align-items: flex-start; justify-content: center; overflow: hidden;}
+.home .pop-wrap-ty01 {position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding: 20px; background: rgba(176, 176, 176, 0.60); /*rgba(255, 255, 255, 0.60);*/ backdrop-filter: blur(10px); box-sizing: border-box; z-index: 1000000; display: flex; align-items: flex-start; justify-content: center; overflow: hidden;}
 .home .pop-wrap-ty01 .pop-share-wrap {max-width: 280px; width: 100%; padding: 32px; background: #fff; border: 1px solid rgba(19, 21, 23, 0.10); border-radius: 24px; box-sizing: border-box; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05); display: flex; flex: 1 1 100%; align-self: center; flex-direction: column;}
 .home .pop-wrap-ty01 .pop-share-wrap .in-bx-top {position: relative; width: 100%; padding: 0 0 16px 0;}
 .home .pop-wrap-ty01 .pop-share-wrap .in-bx-top p {font-weight: 600; font-size: 19px; color: #131517; line-height: 32px;}
@@ -3556,9 +3556,9 @@ white-space: nowrap; border: 0;}
 
 /* 고객지원 */
 .home .notice-list ul {display: flex; row-gap: 16px; flex-direction: column;}
-.home .notice-list li .inner-bx {position: relative; padding: 36.5px 32px; background: #F7F6F5; border-radius: 16px; display: flex; align-items: center; overflow: hidden; transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; justify-content: space-between;}
+.home .notice-list li .inner-bx {position: relative; padding: 32.5px /*36.5px*/ 32px; background: #F7F6F5; border-radius: 16px; display: flex; align-items: center; overflow: hidden; transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; justify-content: space-between;}
 .home .notice-list li .inner-bx:hover::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(19, 21, 23, 0.03), rgba(19, 21, 23, 0.03));}
-.home .notice-list li .inner-bx a {display: block; max-width: 940px;}
+.home .notice-list li .inner-bx a {display: block; max-width: 905px /*940px*/;}
 .home .notice-list li .inner-bx dt {font-weight: 600; font-size: 24px; line-height: 130%;}
 .home .notice-list li .inner-bx dt span.icon-new {display:inline-block; width: 24px; height: 24px; font-weight: 600; font-size: 12px; color: #fff; line-height: 24px; background: #F9BD3C; border-radius: 24px; margin: 4px 0 0 4px; text-align: center; vertical-align: top;}
 .home .notice-list li .inner-bx dd {font-weight: 400; font-size: 17px; color: #444 /*#777*/; line-height: 150%; padding-top: 8px;}
