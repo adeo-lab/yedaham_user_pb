@@ -5945,7 +5945,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-list li .in-bx.all {min-width: 96px; /*padding: 14px 18px;*/ box-sizing: border-box; /*border: 2px solid #F1945E;*/ justify-content: center; align-items: center;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx01.all {font-weight: 600; font-size: 19px; color: #AF5B27; line-height: 150%;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx02 {font-size: 15px; line-height: 1.5; color: #232527;}
-.home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 15px 19px; border: 2px solid #F1945E;}
+.home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 11px 19px /*15px 19px*/; border: 2px solid #F1945E;}
 .home .my-acount-status-wrap .my-account-list li.on .in-bx p.tx01 {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-list li.on .in-bx p.tx02 {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-list-wrap .swiper-button-next {width: 32px; height: 32px; top: 28px; right: 0; box-sizing: border-box;}
@@ -8061,7 +8061,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .btn_q .q-layer.type-b {top: 43px; bottom: auto; z-index: 2; }
 .btn_q span.q-layer.type-b::after {bottom: auto; top: -9px; transform: rotate(-180deg);}
 
-.my-contract-status-detail .btn_q .q-layer.type-b {top: -90px; left: -131px; z-index: 10002;}
+.my-contract-status-detail .btn_q .q-layer.type-b {top: -90px; left: -131px; z-index: 100002;}
 .my-contract-status-detail .btn_q span.q-layer.type-b::after {bottom: -8px; top: auto; left: calc(50% - 7px); transform: rotate(0deg);}
 
 /* 개별화면 */
