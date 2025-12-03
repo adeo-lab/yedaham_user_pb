@@ -5110,7 +5110,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .membership-list li.first .in-bx .thum {height: 396px; border: none; border-radius: 24px; overflow: hidden;}
 .home .membership-list li.first .in-bx .thum.no-img {height: 396px;}
 .home .membership-list li a:hover .in-bx .cont {/*border: 1px solid rgba(19, 21, 23, 0.4);*/ border-top: none; box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;}
-.home .membership-list li a:hover .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); transition: 0.7s;}
+.home .membership-list li a:hover .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; transform: scale(1.1); transition: 0.7s;}
 
 .home .card-list-wrap {margin-top: -16px;}
 .home .card-list-wrap .card-list ul {/*display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 30px;*/ margin: 0 -16px;}
