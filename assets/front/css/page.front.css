@@ -3986,9 +3986,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   border-top-left-radius: 0;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08), 0 8px 10px 0 rgba(0, 0, 0, 0.05);
 }
-.home .review-display.masonry .review-list .review-item .gallery-wrap:hover .gallery-inform {
-  box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease-in-out;
+@media (hover: none) {
+  .home .review-display.masonry .review-list .review-item .gallery-wrap:hover .gallery-inform {
+    width: calc((100% + 2px));
+    height: calc((100% + 2px));
+    margin: -1px;
+    padding: 33px;
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    transition: box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
 }
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .subject {
   -webkit-box-flex: 1;
