@@ -4797,6 +4797,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .about-cont09-wrap::after {display: none;}
 
   .corp .about-cont09-wrap.bg-cnt01 {background: none;}
+  .corp .about-cont09-wrap.bg-cnt01 .tp-info .mob-thum {height: 184px; background: url('../../../assets/front/images/corp/bg_about02_01.png') no-repeat center top; background-size: cover;}
   .corp .about-cont09-wrap.bg-cnt02 {background: none;}
   .corp .about-cont09-wrap.bg-cnt02::after {display: none;}
   .corp .about-cont09-wrap.bg-cnt02 .about-cont09 .bx-right .tp-info::after {display: none;}
