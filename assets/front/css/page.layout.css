@@ -36,7 +36,7 @@ body.hidden { overflow: hidden; touch-action: none;}
  * Header
 
 ********************************************************************************************************************************/
-#header { --gnb-color: var(--color-base-000); --lnb-color: var(--color-base-000); --stroke-color: var(--color-base-000); -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; display: -webkit-box; display: -ms-flexbox; display: flex; position: fixed; top: 0; left: 0; z-index: 100001; width: 100%; background-color: rgb(255, 255, 255); -webkit-transition: background-color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out; }
+#header { --gnb-color: var(--color-base-000); --lnb-color: var(--color-base-000); --stroke-color: var(--color-base-000); -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; display: -webkit-box; display: -ms-flexbox; display: flex; position: fixed; top: 0; left: 0; z-index: 100008; width: 100%; background-color: rgb(255, 255, 255); -webkit-transition: background-color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out; }
 #header.active {z-index: 10010;}
 #header.header-invert { --gnb-color: var(--color-base-100); --lnb-color: var(--color-base-100); --stroke-color: var(--color-base-100); background-color: transparent; }
 #header.header-invert::before { border-bottom: 0; }
