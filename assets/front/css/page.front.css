@@ -3060,7 +3060,7 @@ z-index: 10;
 
 
 /* fixed */
-.home .tab-display .tab-list .tab-item {width: auto;}
+.home .tab-display .tab-list .tab-item {width: auto; margin-right: 12px;}
 .home .tab-wrap:has(.tab-display.tab-fixed) {height: var(--tab-h);}
 .home .tab-display.tab-fixed {transition: transform .25s ease, opacity .25s ease;
   will-change: transform, opacity;}
@@ -3117,6 +3117,7 @@ z-index: 10;
 .home .page-head.title-fixed.fixed .tx-fixed-on {display: inline-block; font-weight: 600; font-size: 17px; color: #777; line-height: 130%; padding-right: 20px;}
 
 @media (max-width: 1023px) {
+  .home .tab-display .tab-list .tab-item {width: auto; margin-right: 8px;}
   .home .tab-wrap:has(.tab-display.tab-fixed){height: var(--tab-h);}
 }
 
