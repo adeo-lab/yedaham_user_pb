@@ -250,7 +250,7 @@
 .home .m-product-list01 > ul {display: flex; flex-wrap: wrap; width: 100%; gap: 48px;}
 .home .m-product-list01 li {width: 368px; border-radius: 24px;}
 /* .home .m-product-list01 li:hover {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.2s ease-in-out;} */
-.home .m-product-list01 .in-bx {position: relative; width: 368px; height: 540px; padding: 40px 32px 32px 32px; background-color: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 24px; box-sizing: border-box;}
+.home .m-product-list01 .in-bx {position: relative; width: 368px; height: 540px; padding: 40px 32px 32px 32px; background-color: #fff; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 24px; box-sizing: border-box; transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;}
 .home .m-product-list01 .in-bx.ty02 {height: 362px;}
 .home .m-product-list01 .in-bx p.flag {position: absolute; top: -3px; right: 30px;}
 .home .m-product-list01 .in-bx p.flag img {width: 40px;}
@@ -285,7 +285,7 @@
 .home .m-product-list01 .in-bx .btm-btns button.btn-s-ask:disabled {border: 1px solid rgba(19, 21, 23, 0.07); background-color: #F7F6F5; color: #BFBFBF;}
 
 @media (hover: hover) {
-  .home .m-product-list01 .in-bx:hover {padding: 39px 31px 31px 31px; border: 2px solid #F1945E; box-shadow: 0rem 1.2rem 2.4rem 0rem rgba(0,0,0,.1); transition: box-shadow 0.1s ease-in-out, border-color 0.2s ease-in-out;}
+  .home .m-product-list01 .in-bx:hover {padding: 39px 31px 31px 31px; border: 2px solid #F1945E; box-shadow: 0rem 1.2rem 2.4rem 0rem rgba(0,0,0,.1); transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;}
   .home .m-product-list01 .in-bx:hover p.flag {top: -4px; right: 29px;} 
 }
 
