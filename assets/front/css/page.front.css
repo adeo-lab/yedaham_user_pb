@@ -6303,7 +6303,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .proceeding-wrap .proceedings-list li::before {content: ''; display: block; position: absolute; top: 2px; left: -4px; width: 1px; height: calc(100% + 32px); background-color: #D17B47;}
   .home .proceeding-wrap .proceedings-list li:last-child::before {display: none;}
   .home .proceeding-wrap .proceedings-list li .in-bx p.bx-num {width: 24px; height: 24px; font-size: 10.5px; line-height: 24px; background-size: 24px;}
-  .home .proceeding-wrap .proceedings-list li .in-bx dt {font-size: 20px; padding-bottom: 8px;}
+  .home .proceeding-wrap .proceedings-list li .in-bx dt {font-size: 20px; /*padding-bottom: 8px;*/}
   .home .proceeding-wrap .proceedings-list li .in-bx dt span {font-size: 17px;}
   .home .proceeding-wrap .proceedings-list li .in-bx dd p {font-size: 15px; padding-bottom: 3px;}
   .home .proceeding-wrap .proceedings-list li .in-bx dd p::before {top: 9px;}
