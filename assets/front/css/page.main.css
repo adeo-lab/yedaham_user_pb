@@ -538,6 +538,6 @@
 }
 
 @media (max-width: 1023px) {
-  .home .quick-menu .btn-to-top {width: 60px; height: 60px;}
-  .home .quick-menu.show .btn-to-top {height: 60px;}
+  .home .quick-menu .btn-to-top {width: 44px; height: 44px;}
+  .home .quick-menu.show .btn-to-top {height: 44px; margin-top: 8px;}
 }

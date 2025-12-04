@@ -45,6 +45,7 @@
 .corp .quick-menu .btn-to-top .btn-text::before {display: block; content: ''; width: 16px; height: 16px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.1555 10.8963C12.9365 11.0933 12.5993 11.0756 12.4023 10.8566L7.99869 6.63045L3.59512 10.8566C3.39807 11.0756 3.06085 11.0933 2.84191 10.8963C2.62297 10.6992 2.60523 10.362 2.80227 10.1431L7.60227 5.47642C7.70341 5.36404 7.8475 5.29986 7.99869 5.29986C8.14989 5.29986 8.29397 5.36404 8.39512 5.47642L13.1951 10.1431C13.3922 10.362 13.3744 10.6992 13.1555 10.8963Z' fill='%23232527' stroke='%23232527' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
 .corp .quick-menu.show .btn-to-top {opacity: 1; transform: translateY(0); pointer-events: auto;} 
 
+
 /* 메인스크롤 */
 .corp .quick-menu.main-quick-menu {bottom: 30px; transition: all 0.3s ease;}
 .corp .quick-menu.main-quick-menu.show {bottom: 30px;}
@@ -63,9 +64,18 @@
     .corp .quick-menu:not(:has(.btn-yac)) {bottom: 10px;}
     .corp .quick-menu.show {bottom: 30px;}
     .corp .quick-menu .quick-wrap {align-items: flex-end;}
-    .corp .quick-menu .btn-yac {height: 60px; border-radius: 100%;}
-    .corp .quick-menu .btn-yac::after {width: 40px; height: 40px;}
+    .corp .quick-menu .btn-yac {width: 44px; height: 44px; border-radius: 100%;}
+    .corp .quick-menu .btn-yac::after {width: 40px; height: 40px; background-size: 32px; background-repeat: no-repeat; background-position: center;}
     .corp .quick-menu .btn-yac .btn-text {display: none;}
+
+    .corp .quick-menu .button-scroll-area {width: 44px; height: 44px;}
+    .corp .quick-menu.main-quick-menu .btn-scroll {margin-top: 0;}
+    .corp .quick-menu.main-quick-menu .btn-scroll .btn-text {font-size: 12px;}
+    .corp .quick-menu.main-quick-menu .btn-scroll .btn-text::after {width: 10px; height: 10px; background-size: 10px;}
+
+    .corp .quick-menu .btn-scroll, .corp .quick-menu .btn-to-top {width: 44px; height: 44px; margin-top: 8px;}
+    .corp .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+    .corp .quick-menu .btn-to-top .btn-text::before {width: 10px; height: 10px; background-size: 10px;}
 
     /* 메인스크롤 */
     .corp .quick-menu.main-quick-menu {right: 10px; bottom: 80px;}

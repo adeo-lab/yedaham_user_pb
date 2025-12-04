@@ -157,16 +157,19 @@
     .home .quick-menu .quick-wrap {align-items: flex-end;}
     .home .quick-menu .quick-list {margin-bottom: 8px; row-gap: 8px;}
     .home .quick-menu .quick-list {gap: 8px; display: none; opacity: 0; transition: all 0.3s; pointer-events: none;}
-    .home .quick-menu .quick-list .quick-item {padding: 14px 20px; background-color: #D17B47; border-radius: 60px;}
-    .home .quick-menu .quick-list .quick-text {flex-direction: row; column-gap: 12px; color: #fff;}
-    .home .quick-menu .quick-list .quick-text::before {width: 32px; height: 32px; box-shadow: none;}
-    .home .quick-menu .quick-toggle {display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #D17B47; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); cursor: pointer; transition: all 0.3s ease; pointer-events: auto;}
-    .home .quick-menu .quick-toggle .icon-plus {transition: transform 0.4s ease; transform-origin: center;}
+    .home .quick-menu .quick-list .quick-item {padding: 10px 13px; background-color: #D17B47; border-radius: 60px;}
+    .home .quick-menu .quick-list .quick-text {font-size: 13px; flex-direction: row; column-gap: 8px; color: #fff;}
+    .home .quick-menu .quick-list .quick-text::before {width: 20px; height: 20px; background-size: 20px; box-shadow: none;}
+    .home .quick-menu .quick-toggle {display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background-color: #D17B47; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); cursor: pointer; transition: all 0.3s ease; pointer-events: auto;}
+    .home .quick-menu .quick-toggle .icon-plus {transition: transform 0.4s ease; transform-origin: center; width: 20px; height: 20px;}
     .home .quick-menu.active .quick-toggle {transform: rotate(45deg);}
     
     .home .quick-menu.show {bottom: 40px;}
     .home .quick-menu.active .quick-list {display: flex; opacity: 1; pointer-events: auto;}
     .active-scroll-bottom .home .quick-menu.show {bottom: 206px /*120px*/;}
+
+    .home .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+    .home .quick-menu .btn-to-top .btn-text::before {width: 10px; height: 10px; background-size: 10px;}
 }
 
 

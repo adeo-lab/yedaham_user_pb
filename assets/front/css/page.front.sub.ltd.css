@@ -69,14 +69,18 @@
     .ltd .quick-menu .quick-wrap {align-items: flex-end;}
     .ltd .quick-menu .quick-list {margin-bottom: 8px; row-gap: 8px;}
     .ltd .quick-menu .quick-list {gap: 8px; display: none; opacity: 0; transition: all 0.3s; pointer-events: none;}
-    .ltd .quick-menu .quick-list .quick-item {padding: 14px 20px; background-color: #3A456D; border-radius: 60px;}
-    .ltd .quick-menu .quick-list .quick-text {flex-direction: row; column-gap: 12px; color: #fff;}
-    .ltd .quick-menu .quick-list .quick-text::before {width: 32px; height: 32px; box-shadow: none;}
-    .ltd .quick-menu .quick-toggle {display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: #3A456D; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); cursor: pointer; transition: all 0.3s ease; pointer-events: auto;}
-    .ltd .quick-menu .quick-toggle .icon-plus {transition: transform 0.4s ease; transform-origin: center;}
+    .ltd .quick-menu .quick-list .quick-item {padding: 10px 13px; background-color: #3A456D; border-radius: 60px;}
+    .ltd .quick-menu .quick-list .quick-text {font-size: 13px; flex-direction: row; column-gap: 8px; color: #fff;}
+    .ltd .quick-menu .quick-list .quick-text::before {width: 20px; height: 20px; background-size: 20px; box-shadow: none;}
+    .ltd .quick-menu .quick-toggle {display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background-color: #3A456D; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10); cursor: pointer; transition: all 0.3s ease; pointer-events: auto;}
+    .ltd .quick-menu .quick-toggle .icon-plus {transition: transform 0.4s ease; transform-origin: center; width: 20px; height: 20px;}
 
     .ltd .quick-menu.active .quick-list {display: flex; opacity: 1; pointer-events: auto;}
     .ltd .quick-menu.active .quick-toggle {transform: rotate(45deg);}
+
+    .ltd .quick-menu .btn-to-top {width: 44px; height: 44px; margin-top: 8px;}
+    .ltd .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+    .ltd .quick-menu .btn-to-top .btn-text::before {width: 10px; height: 10px; background-size: 10px;}
 }
 
 
