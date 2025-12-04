@@ -5954,7 +5954,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-list li .in-bx.all {min-width: 96px; /*padding: 14px 18px;*/ box-sizing: border-box; /*border: 2px solid #F1945E;*/ justify-content: center; align-items: center;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx01.all {font-weight: 600; font-size: 19px; color: #AF5B27; line-height: 150%;}
 .home .my-acount-status-wrap .my-account-list li .in-bx p.tx02 {font-size: 15px; line-height: 1.5; color: #232527;}
-.home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 11px 19px /*15px 19px*/; border: 2px solid #F1945E;}
+.home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 15px 19px; border: 2px solid #F1945E;}
 .home .my-acount-status-wrap .my-account-list li.on .in-bx p.tx01 {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-list li.on .in-bx p.tx02 {color: #AF5B27;}
 .home .my-acount-status-wrap .my-account-list-wrap .swiper-button-next {width: 32px; height: 32px; top: 28px; right: 0; box-sizing: border-box;}
@@ -7687,6 +7687,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .my-acount-status-wrap .my-account-list-wrap {padding: 0 0 24px 16px; margin: 0 -16px;}
   .home .my-acount-status-wrap .my-account-list li {margin-right: 8px;}
   .home .my-acount-status-wrap .my-account-list li .in-bx {height: 71px; padding: 12px 20px;}
+  .home .my-acount-status-wrap .my-account-list li.on .in-bx {padding: 11px 19px /*15px 19px*/;}
   .home .my-acount-status-wrap .my-account-list li .in-bx p.tx01 {font-size: 20px;}
   .home .my-acount-status-wrap .my-account-list li .in-bx p.tx01.all {font-size: 17px;}
   .home .my-acount-status-wrap .my-account-list li .in-bx p.tx02 {font-size: 14px;}

@@ -423,7 +423,7 @@
   .ltd .m-product-list01 li:last-child {margin-right: 0;}
   .ltd .m-product-list01 a:hover {box-shadow: none;}
   .ltd .m-product-list01 .in-bx {width: 260px; /*height: 380px;*/ min-height: auto; padding: 32px 16px 20px;}
-  .ltd .m-product-list01 .in-bx:hover {padding: 31px 17px 19px; /*border: 1px solid rgba(19, 21, 23, 0.30);*/}
+  .ltd .m-product-list01 .in-bx:hover {padding: 31px 15px 19px; /*border: 1px solid rgba(19, 21, 23, 0.30);*/}
   
   .ltd .m-product-list01 .in-bx p.flag img {width: 30px;}
   .ltd .m-product-list01 .in-bx .top-area p.tx-title01 {font-size: 17px; padding-bottom: 4px;}
