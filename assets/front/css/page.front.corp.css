@@ -4597,7 +4597,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .about-cont06 .facility-list-wrap {flex-shrink: 0; max-height: 632px; padding-right: 16px; overflow-y: auto;}
 .corp .about-cont06 .facility-list-wrap .facility-list {width: 464px;}
 .corp .about-cont06 .facility-list-wrap .facility-list li {height: auto;}
-.corp .about-cont06 .facility-list-wrap .facility-list li .in-bx {height: auto; padding: 15.4px 32px; box-sizing: border-box;}
+.corp .about-cont06 .facility-list-wrap .facility-list li .in-bx {height: auto; padding: 15px 32px; box-sizing: border-box;}
 .corp .about-cont06 .facility-list-wrap .facility-list li .in-bx::after {display: none;}
 .corp .about-cont06 .facility-list-wrap .facility-list li .in-bx p.tx01 {font-weight: 600; font-size: 19px; color: #232527; line-height: 130%;}
 .corp .about-cont06 .facility-list-wrap .facility-list li .in-bx p.tx02 {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; padding: 8px 0 0 24px; display: flex; align-items: center; column-gap: 12px;}
@@ -4612,7 +4612,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-size: 16px;
 }
 .corp .about-cont06 .facility-list-wrap .facility-list li .in-bx p.tx02.has-copy-btn::after {display: none !important;}
-.corp .about-cont06 .facility-list-wrap .facility-list li.open .in-bx {border: 1px solid #94A6FF;}
+.corp .about-cont06 .facility-list-wrap .facility-list li.open .in-bx {padding: 14px 31px; border: 2px solid #94A6FF;}
 
 @media (max-width: 1023px) {
   .corp .about-cont06 {padding-top: 0; padding-bottom: 64px;}
