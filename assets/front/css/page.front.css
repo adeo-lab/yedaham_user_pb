@@ -7242,7 +7242,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .easy-join-wrap .easy-join-right-side .top-data.slide-up-s .btm-txt {display: none;}
   .home .easy-join-wrap .easy-join-right-side .top-data.slide-up-l .btm-txt {display: block;}
 
-  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx {position: relative; /*padding: 0 16px 100px 16px;*/ z-index: 100008;}
+  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx {position: relative; /*padding: 0 16px 100px 16px;*/ /*z-index: 100008;*/}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .close-mob-layer {position: absolute; top: 8px; left: calc(50% - 24px); display: block; width: 48px; height: 6px; background: #D9D9D9; border-radius: 6px; text-indent: -9999px; overflow: hidden;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 {font-size: 14px; line-height: 32px;}
   .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-change-product {top: 0; height: 32px; font-size: 14px; line-height: 30px; background-position: left 16px top 8px;}

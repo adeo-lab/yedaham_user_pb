@@ -41,6 +41,7 @@ body.hidden { overflow: hidden; touch-action: none;}
 #header.header-invert { --gnb-color: var(--color-base-100); --lnb-color: var(--color-base-100); --stroke-color: var(--color-base-100); background-color: transparent; }
 #header.header-invert::before { border-bottom: 0; }
 @media (max-width: 1023px) {
+  #header {z-index: 10000;}
   #header.header-invert { --gnb-color: var(--color-base-000); --lnb-color: var(--color-base-000); --stroke-color: var(--color-base-100); }
   #header.header-invert.open { --stroke-color: var(--color-base-000); background-color: var(--color-base-100); }
 }
