@@ -4467,7 +4467,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media (max-width: 1023px) {
   .corp .sustain-history-wrap01 .history-list-ty01 .bx-list-r ul::before {top: 75px; height: calc(100% - 95px);}
 
-  .corp .history-list-ty01 {display: block;}
+  .corp .history-list-ty01 {display: block; margin-bottom: 0;}
   .corp .history-list-ty01 .bx-img-l {width: 100%; padding: 0 16px 32px 16px; box-sizing: border-box;}
   .corp .history-list-ty01 .bx-img-l .h-in-bx {position: relative; top: auto; width: 100%; padding-top: 0;}
   .corp .history-list-ty01 .bx-list-r {margin: 0 16px;}

@@ -5425,7 +5425,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .benefit-detail-wrap .area-right {float: none; width: 100%;}
   .home .benefit-detail-wrap .area-right .popup-header {position: inherit; padding: 0 !important; margin: 0 !important;}
   .home .benefit-detail-wrap .area-right .popup-header .popup-subject {display: none;}
-  .home .benefit-detail-wrap .area-right .popup-header .btn-popup-close {position: absolute; top: 24px; right: 16px;}
+  .home .benefit-detail-wrap .area-right .popup-header .btn-popup-close {position: fixed /*absolute*/; top: 48px /*24px*/; right: 16px;}
   .home .benefit-detail-wrap .area-right .membership-detail {position: inherit; padding: 24px 16px 48px 16px; box-sizing: border-box;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-flag {padding-bottom: 12px; text-align: center;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
