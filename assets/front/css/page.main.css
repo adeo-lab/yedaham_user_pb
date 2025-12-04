@@ -157,7 +157,7 @@
 /* .home .main-cont03 .main-review-list .bx-wrap-l .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slidedown;}
 .home .main-cont03 .main-review-list .bx-wrap-r .in-bx-wrap.move {animation: 30s linear 0s infinite normal none running slidedown slidedown;} */
 .home .main-cont03 .main-review-list .in-bx {padding: 32px; background: #fff; border-radius: 32px; border-top-left-radius: 0;}
-@media (hover: hover) {
+@media (min-width: 1024px) {
   .home .main-cont03 .main-review-list .in-bx:hover {box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); transition: box-shadow 0.3s ease-in-out;}
 }
 .home .main-cont03 .main-review-list .in-bx dt {max-height: 64px; font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; margin-bottom: 8px /*12px*/; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; display: -webkit-box; box-sizing: border-box;}
@@ -284,7 +284,7 @@
 .home .m-product-list01 .in-bx .btm-btns button.btn-s-ask:active {border: 1px solid rgba(19, 21, 23, 0.20); background-color: #E6E8EA;}
 .home .m-product-list01 .in-bx .btm-btns button.btn-s-ask:disabled {border: 1px solid rgba(19, 21, 23, 0.07); background-color: #F7F6F5; color: #BFBFBF;}
 
-@media (hover: hover) {
+@media (min-width: 1024px) {
   .home .m-product-list01 .in-bx:hover {padding: 39px 31px 31px 31px; border: 2px solid #F1945E; box-shadow: 0rem 1.2rem 2.4rem 0rem rgba(0,0,0,.1); transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;}
   .home .m-product-list01 .in-bx:hover p.flag {top: -4px; right: 29px;} 
 }
