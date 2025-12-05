@@ -352,7 +352,7 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
 #header .header-inner .navi-control .btn-navi-menu {
   position: relative;
   width: 24px; height: 24px;
-  background: url('../../../images/common/mob_menu.png') no-repeat center; background-size: 24px;
+  background: url('../../../assets/front/images/common/mob_menu.png') no-repeat center; background-size: 24px;
 }
 #header .header-inner .navi-control .btn-navi-menu svg {
   display: none;
