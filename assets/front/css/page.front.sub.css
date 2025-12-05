@@ -630,6 +630,9 @@
 .dropdown-menu.payment .dropdown-list .dropdown-item.bk-sys .form-lb::before {background-image: url(../../../assets/front/images/sub/logo_bank_sys.svg);}
 .dropdown-menu.payment .dropdown-list .dropdown-item.bk-kps .form-lb::before {background-image: url(../../../assets/front/images/sub/logo_bank_kps.svg);}
 .dropdown-menu.payment .dropdown-list .dropdown-item.bk-sh2 .form-lb::before {background-image: url(../../../assets/front/images/sub/logo_bank_sh2.svg);}
+.dropdown-menu.payment .dropdown-list .dropdown-item.bk-sjj .form-lb::before {background-image: url(../../../assets/front/images/sub/logo_bank_sjj.svg);}
+.dropdown-menu.payment .dropdown-list .dropdown-item.bk-ts .form-lb::before {background-image: url(../../../assets/front/images/sub/logo_bank_ts.svg);}
+.dropdown-menu.payment .dropdown-list .dropdown-item.bk-kpj .form-lb::before {background-image: url(../../../assets/front/images/sub/logo_bank_kpj.svg);}
 
 
 @media (max-width: 1200px) {
