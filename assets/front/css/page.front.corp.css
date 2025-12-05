@@ -188,6 +188,7 @@
   .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu_w.png') no-repeat center; background-size: 24px;}
   .active-scroll-down .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu.png') no-repeat center; background-size: 24px;}
   .active-scroll-up .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu.png') no-repeat center; background-size: 24px;}
+  .active-scroll-top .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu_w.png') no-repeat center; background-size: 24px;}
 
   .corp #header .header-inner .mobile-menu-top-area {position: relative; width: 100%;}
   .corp #header .header-inner .gnb-list.active .in-nav {position: relative; overflow-y: hidden; overflow-x: auto; padding-left: 16px; border-bottom: 1px solid #EFEFEF; box-sizing: border-box; white-space: nowrap; -ms-overflow-style: none; scrollbar-width: none;}
