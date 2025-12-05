@@ -267,7 +267,7 @@
 .ltd .join-process-list .process-item .process-step .step .step-text {font-size: 17px; font-weight: 400; line-height: 1.5; color: #232527;}
 
 /* 법인 상품 */
-.ltd .page-product .section + .section {margin-top: 96px;}
+.ltd .page-product .section + .section {padding-top: 96px;}
 .ltd .page-product .section .section-wrap {max-width: 1200px; margin: 0 auto;}
 .ltd .page-product .section .section-head {display: flex; flex-direction: column; row-gap: 12px;}
 .ltd .page-product .section .section-head .section-subject {font-size: 40px; font-weight: 600; line-height: 1.3; color: #131517; letter-spacing: -0.5px;}
@@ -277,7 +277,7 @@
 .ltd .container.ty-wide .page-product .tab-display.style-c.fixed {max-width: 100%; background: rgba(250, 250, 250, 0.80); backdrop-filter: blur(10px);}
 
 .ltd .page-product .section.section-top {margin-bottom: 88px; padding: 48px /*64px*/ 0;}
-.ltd .page-product .section.custom-product {margin-top: 96px;}
+.ltd .page-product .section.custom-product {padding-top: 96px;}
 
 .ltd .section-top .product-list {display: flex; gap: 48px;}
 .ltd .section-top .product-item {display: flex; flex-direction: column; justify-content: space-between; flex: 1 1 100%; position: relative; height: 480px; padding: 40px 32px 32px; box-sizing: border-box; border-radius: 24px; box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.30); background-color: #fff;}
@@ -350,7 +350,7 @@
 .ltd .case-study .case-list .case-item .title {margin: 12px 0;font-size: 24px; font-weight: 600; line-height: 1.3; color: #232527;}
 .ltd .case-study .case-list .case-item .subtitle {display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; font-size: 17px; font-weight: 400; line-height: 1.5; color: #777;}
 
-.ltd .page-product .section.info-section {padding: 64px 0 96px}
+.ltd .page-product .section.info-section {padding: 64px 0 96px; margin-top: 64px;}
 .ltd .page-product .section.info-section .section-head .section-subject {font-size: 24px; font-weight: 600; line-height: 1.3; color: #131517;}
 .ltd .info-section .info-contents {margin-top: 40px;}
 .ltd .info-section .info-contents {display: flex; flex-direction: column; row-gap: 40px;}
@@ -477,7 +477,7 @@
     .ltd .join-process-list .process-item .process-step .step .step-text {font-size: 15px; font-weight: 400; line-height: 1.5; color: #232527;}
 
     /* 법인 상품 */
-    .ltd .page-product .section + .section {margin-top: 64px;}
+    .ltd .page-product .section + .section {padding-top: 64px;}
     .ltd .page-product .section .section-head {row-gap: 8px;}
     .ltd .page-product .section .section-head .section-subject {font-size: 22px;}
     .ltd .page-product .section .section-head .section-summary {font-size: 14px;}
@@ -485,7 +485,7 @@
 
     /* .ltd .container.ty-wide .page-product .tab-display.style-c:not(.fixed) {margin: 64px 0 72px;} */
     .ltd .page-product .section.section-top {margin-bottom: 48px /*64px*/;}
-    .ltd .page-product .section.custom-product {margin-top: 48px;}
+    .ltd .page-product .section.custom-product {padding-top: 48px;}
 
     .ltd .section.section-top {padding: 32px 0 48px;}
     .ltd .section-top .product-list {gap: 0; flex-direction: column; row-gap: 16px;}
@@ -535,7 +535,7 @@
     .ltd .case-study .case-list .case-item .title {font-size: 20px;}
     .ltd .case-study .case-list .case-item .subtitle {font-size: 15px;}
 
-    .ltd .page-product .section.info-section {padding: 48px 0 80px}
+    .ltd .page-product .section.info-section {padding: 48px 0 80px; margin-top: 48px;}
     .ltd .info-section .info-contents .info-item {row-gap: 12px;}
     .ltd .info-section .info-contents .info-item .order-list {row-gap: 8px;}
     .ltd .info-section .info-contents .info-item .order-list .order-item {row-gap: 8px;}
