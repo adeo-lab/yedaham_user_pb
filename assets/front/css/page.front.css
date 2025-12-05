@@ -5055,6 +5055,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .ej-pay-wrap .btm-ck-tx > div {padding-bottom: 16px;}
 .home .ej-pay-wrap .btm-ck-tx > div:last-child {padding-bottom: 0;}
 .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text span.tx-imp {color: #E94543;}
 .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::before, 
 .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::after {top: 3px;}
 
