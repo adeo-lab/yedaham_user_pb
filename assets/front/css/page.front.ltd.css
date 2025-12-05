@@ -3615,6 +3615,10 @@ white-space: nowrap; border: 0;}
   .ltd .tab-display.style-c.tab-fixed.fixed .btn-mob-r {display: none;}
   .ltd .tab-display.tab-fixed.fixed .tab-list {width: 100%; padding-right: 16px; box-sizing: border-box;}
 
+  .ltd [data-popup="contentFuneralService"] .tab-display.style-c .tab-list {border-bottom: 1px solid rgba(19, 21, 23, 0.15);}
+  .ltd [data-popup="contentFuneralService"] .tab-display.style-c .tab-list .tab-item::before {display: none;}
+  .ltd [data-popup="contentFuneralService"] .tab-display.style-c .tab-list .tab-item.current .tab-text::after {bottom: -1px;}
+
   .ltd .container.ty-wide .page-body-wrap .tab-wrap {margin: 0 -16px;}
   .ltd .tab-display.style-c.tab-fixed.fixed {position: fixed; z-index: 10;}
   .ltd .tab-display.style-c.tab-fixed.fixed {top: var(--header-height);}
