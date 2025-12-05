@@ -6717,7 +6717,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .my-acount-status-wrap .my-account-cont-bx .btm-ck-tx > div .form.checkbox .form-text::after {top: 3px;}
 
 .home .btm-ck-tx .bx-tp {position: relative;}
-.home .btm-ck-tx .bx-tp .tx01-n {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%;}
+.home .btm-ck-tx .bx-tp .tx01-n {font-weight: 600; font-size: 17px; color: #232527; line-height: 150%; padding-right: 125px;}
 .home .btm-ck-tx .bx-tp .tx01-n span.tx-imp {color: #E94543;}
 .home .btm-ck-tx .bx-tp a.btn-agree {position: absolute; top: -7px; right: 0; display: block; width: 108px; height: 40px; font-weight: 400; font-size: 15px; color: #232527; line-height: 40px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 40px; text-align: center; display: flex; align-items: center; justify-content: center; column-gap: 6px;}
 .home .btm-ck-tx .bx-tp a.btn-agree::before {

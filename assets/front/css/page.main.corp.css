@@ -16,7 +16,7 @@
 .corp .main-tx-bx {padding-top: 26px;}
 .corp .main-tx-bx.ty02 {padding-top: 0 /*334px*/;}
 .corp .main-tx-bx.ty03 {padding-left: 122px;}
-.corp .main-tx-bx.ty04 {width: 384px; padding-top: 267px; box-sizing: border-box;}
+.corp .main-tx-bx.ty04 {width: 384px; /*padding-top: 267px;*/ box-sizing: border-box; display: flex; align-items: center;}
 .corp .main-tx-bx.ty05 {padding-top: 0;}
 .corp .main-tx-bx .tx01 {font-weight: 600; font-size: 24px; color: #FFF; line-height: 130%; padding: 0 0 40px 0;}
 .corp .main-tx-bx .tx01 .wbr {display: inline;}
@@ -169,7 +169,7 @@
 	background-position: center;
 	background-size: 20px;
 }
-.corp .main-cont04 .button-bx {position: absolute; top: 468px; right: 0; width: 56px; display: flex; flex-direction: column; row-gap: 32px;}
+.corp .main-cont04 .button-bx {position: absolute; top: calc(50vh - 74px) /*468px*/; right: 0; width: 56px; display: flex; flex-direction: column; row-gap: 32px;}
 .corp .main-cont04 .button-bx .swiper-button-prev, .swiper-rtl .swiper-button-next {position: relative; top: auto; left: auto; right: auto; width: 56px; height: 56px; border-radius: 56px; border: 1px solid #fff;}
 .corp .main-cont04 .button-bx .swiper-button-prev, .swiper-rtl .swiper-button-next {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.446 7.00446C16.1723 6.75815 15.7508 6.78034 15.5045 7.05401L10 12.3368L4.49554 7.05401C4.24924 6.78034 3.82771 6.75815 3.55404 7.00446C3.28037 7.25076 3.25818 7.67229 3.50449 7.94596L9.50449 13.7793C9.63091 13.9198 9.81102 14 10 14C10.189 14 10.3691 13.9198 10.4955 13.7793L16.4955 7.94596C16.7419 7.67229 16.7197 7.25076 16.446 7.00446Z' fill='white'/%3E%3C/svg%3E");
