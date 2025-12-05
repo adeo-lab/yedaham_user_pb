@@ -49,7 +49,7 @@
 .corp .main-cont01 .m-inner-bx .bx-cont-r ul {display: flex; flex-direction: column; row-gap: 20px;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r ul:last-child {padding-top: 96px}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li {width: 200px;}
-.corp .main-cont01 .m-inner-bx .bx-cont-r li a {display: block; padding: 40px 30px; background: rgba(247, 246, 245, 0.90);; border-radius: 20px;}
+.corp .main-cont01 .m-inner-bx .bx-cont-r li a {display: block; padding: 40px 30px; background: rgba(247, 246, 245, 0.90); border-radius: 20px; transition: 0.3s;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li .in-bx {display: flex; flex-direction: column; row-gap: 24px; position: relative;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li .in-bx .tx01 {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li .in-bx .tx02 {font-weight: 400; font-size: 17px; color: #444; line-height: 150%; display: block;}
@@ -58,7 +58,7 @@
 .corp .main-cont01 .m-inner-bx .bx-cont-r li .in-bx .bx-arr::before,
 .corp .main-cont01 .m-inner-bx .bx-cont-r li .in-bx .bx-arr::after {content: ''; display: block; width: 38px; height: 38px; position: absolute; top: 0; left: auto; right: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='11' viewBox='0 0 15 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 5.5C15 5.70636 14.9131 5.90381 14.7592 6.04684L9.659 10.7882C9.34663 11.0786 8.84991 11.0692 8.54955 10.7672C8.2492 10.4652 8.25894 9.98494 8.57131 9.69454L12.2673 6.25862L0.784644 6.25862C0.351296 6.25862 0 5.91898 0 5.5C0 5.08103 0.351296 4.74138 0.784644 4.74138L12.2673 4.74138L8.57131 1.30546C8.25894 1.01507 8.2492 0.534825 8.54955 0.232815C8.84991 -0.069196 9.34663 -0.0786125 9.659 0.211782L14.7592 4.95316C14.9131 5.09619 15 5.29364 15 5.5Z' fill='%234458B0'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 15px; transition: color 0.2s, opacity 0.2s, margin 0.2s; }
 .corp .main-cont01 .m-inner-bx .bx-cont-r li .in-bx .bx-arr::before {margin-left: 20px; opacity: 0;}
-.corp .main-cont01 .m-inner-bx .bx-cont-r li a:hover {background: #4458B0;}
+.corp .main-cont01 .m-inner-bx .bx-cont-r li a:hover {background: #4458B0; transition: 0.3s;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li a:hover .in-bx .tx01 {color: #fff;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li a:hover .in-bx .tx02 {opacity: 0; pointer-events: none;}
 .corp .main-cont01 .m-inner-bx .bx-cont-r li a:hover .in-bx .bx-arr {display: block;}
@@ -156,7 +156,7 @@
 	background-size: 32px;
 }
 .corp .main-cont04 .main-vis04-list li .in-bx .thum .data-info p.icon.pdf:hover {background-color: #788BE6; border: none;}
-.corp .main-cont04 .main-vis04-list li .in-bx .thum::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(19, 21, 23, 0.20); border-top-left-radius: 16px; border-top-right-radius: 16px; box-sizing: border-box; background: #000; opacity: 0.6;}
+.corp .main-cont04 .main-vis04-list li .in-bx .thum::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(19, 21, 23, 0.20); border-top-left-radius: 16px; border-top-right-radius: 16px; box-sizing: border-box; background: #000; opacity: 0.6; z-index: 11;}
 .corp .main-cont04 .main-vis04-list li .in-bx .thum img {width: 100%; height: 100%; object-fit: cover; /*transform: scale(1); transition: 0.7s;*/}
 .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx .tx01 {font-weight: 600; font-size: 24px; color: #EFEFEF; line-height: 130%; margin: 20px 0 8px 0; display: -webkit-box; -webkit-line-clamp: 2;     /* ✅ 표시할 줄 수 */ -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; word-break: break-word;}
 .corp .main-cont04 .main-vis04-list li .in-bx .bt-tx .tx02 {font-weight: 400; font-size: 17px; color: #EFEFEF; line-height: 150%;}
