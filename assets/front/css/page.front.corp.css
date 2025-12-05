@@ -5327,7 +5327,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .apw-board-write .bx-address {display: flex; column-gap: 12px; align-items: center; margin-bottom: 8px;}
 .corp .apw-board-write .bx-address:last-child {margin-bottom: 0;}
 .corp .apw-board-write .bx-address .btn-search-address {display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center;}
-.corp .apw-board-write .bx-address .bx02 {width: 377px;}
+.corp .apw-board-write .bx-address .bx02 {width: 583px /*377px*/;}
 .corp .apw-board-write .bx-address .bx03 {width: 557px;}
 .corp .apw-board-write .bx-datepicker {width: 377px; display: flex; gap: 12px;}
 .corp .apw-board-write .bx-datepicker .line {font-weight: 600; font-size: 19px; color: #232527; line-height: 48px; text-align: center;}
