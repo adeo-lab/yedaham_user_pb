@@ -3191,6 +3191,7 @@ z-index: 10;
 /* fixed */
 /* .corp #header:has(.down)  {background-color: lime;;} */
 .corp #header.down + .container .tab-display.tab-fixed.fixed {top: 0;}
+.active-scroll-bottom .corp .tab-display.tab-fixed.fixed {top: 0;}
 
 .corp .tab-display .tab-list .tab-item {width: auto;}
 .corp .tab-display.tab-fixed.fixed {position: fixed; top: var(--header-height); left: 0; width: 100%; max-width: 100%; padding: 22px 0; background: rgba(255, 255, 255, 0.90); backdrop-filter: blur(10px); z-index: 9; transition: top .3s ease;}

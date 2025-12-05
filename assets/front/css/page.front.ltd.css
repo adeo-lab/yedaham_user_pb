@@ -3255,8 +3255,9 @@ z-index: 10;
   background-position: center;
   background-size: 24px;
 }
-.ltd .board-write-ty01 .top-area .line-item dd .form.textarea {width: 100%;}
-.ltd .board-write-ty01 .top-area .line-item dd .form.textarea textarea {width: 100%; height: 144px; padding: 16px; box-sizing: border-box;}
+.ltd .board-write-ty01 .top-area .line-item dd .form-noti {margin-top: 8px; padding-left: 8px;font-weight: 400; font-size: 14px; line-height: 150%; height: 22px;}
+.ltd .board-write-ty01 .top-area .line-item dd .form.textarea {width: 100%; gap: 0;}
+.ltd .board-write-ty01 .top-area .line-item dd .form.textarea textarea {width: 100%; height: 144px; padding: 16px; margin-bottom: 4px; box-sizing: border-box;}
 .ltd .board-write-ty01 .top-area .line-item dd .form.textarea p.btm-tx01 {font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding-top: 8px; text-align: right;}
 .ltd .board-write-ty01 .top-area .line-item.one-line dl {float: none; width: 100%;}
 .ltd .board-write-ty01 .top-area .line-item.one-line:nth-child(odd) dl {padding-right: 0;}
@@ -3264,6 +3265,13 @@ z-index: 10;
 .ltd .board-write-ty01 .btm-area {position: relative; padding-bottom: 32px;}
 .ltd .board-write-ty01 .btm-area .form.checkbox .form-text {font-weight: 600; font-size: 17px;}
 .ltd .board-write-ty01 .btm-area a.btn-view-detail {position: absolute; top: 0; right: 0; font-weight: 400; font-size: 15px; color: #374BA3; line-height: 150%; text-decoration: underline;}
+
+.ltd .board-write-ty01 .top-area .line-item dd .form.textarea.invalid p.btm-tx01 {position: absolute; right: 0; bottom: -30px;}
+
+@media (max-width: 1023px) {
+  .ltd .board-write-ty01 .btm-area .form.checkbox .form-text::before,
+  .ltd .board-write-ty01 .btm-area .form.checkbox .form-text::after {top: 0px;}
+}
 
 .ltd .board-write-ty01 .bx-email {display: flex; column-gap: 12px; align-items: flex-start;}
 .ltd .board-write-ty01 .bx-email .bx01 {width: 344px;}
@@ -3350,14 +3358,14 @@ z-index: 10;
 .ltd .wish-time-list li label {position: relative; display: block; height: 100%; cursor: pointer;}
 .ltd .wish-time-list li .in-pr-ck {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); 
 white-space: nowrap; border: 0;}
-.ltd .wish-time-list li .in-pr-ck:checked + .in-bx {color: #AF5B27; padding: 0 15px; border: 2px solid #F1945E;}
+.ltd .wish-time-list li .in-pr-ck:checked + .in-bx {color: #6A75A0; padding: 0 15px; border: 2px solid #6A75A0;}
 .ltd .wish-time-list li label:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.4); transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
 /*.ltd .wish-time-list li .in-pr-ck:read-only + .in-bx {color: #BFBFBF; background: #F7F6F5; border: 1px solid rgba(19, 21, 23, 0.07);}*/
 
 .ltd .wish-time-list.three.pr-ty-n li label {position: relative; display: block; cursor: pointer;}
 .ltd .wish-time-list.three.pr-ty-n li .in-pr-ck {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); 
 white-space: nowrap; border: 0;}
-.ltd .wish-time-list.three.pr-ty-n li .in-pr-ck:checked + .in-bx {color: #AF5B27; padding: 15px 0; border: 2px solid #F1945E;}
+.ltd .wish-time-list.three.pr-ty-n li .in-pr-ck:checked + .in-bx {color: #6A75A0; padding: 15px 0; border: 2px solid #6A75A0;}
 .ltd .wish-time-list.three.pr-ty-n li  label:hover .in-bx {border: 1px solid rgba(19, 21, 23, 0.4); transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;}
 
 @media (max-width: 1023px) {
@@ -3859,9 +3867,9 @@ white-space: nowrap; border: 0;}
 .ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn01 {display: block; width: 78px; height: 40px; font-weight: 400; font-size: 17px; color: #232527; line-height: 40px; border: 1px solid rgba(19, 21, 23, 0.30); border-radius: 8px; text-align: center; box-sizing: border-box;}
 .ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn01:hover {border: 1px solid rgba(19, 21, 23, 0.20); background-color: #F4F5F6;}
 .ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn01:active {border: 1px solid rgba(19, 21, 23, 0.20); background-color: #E6E8EA;}
-.ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02 {display: block; width: 78px; height: 40px; font-weight: 400; font-size: 17px; color: #fff; line-height: 40px; background: #D17B47; border-radius: 8px; text-align: center; box-sizing: border-box;}
-.ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02:hover {background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #D17B47;}
-.ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02:active {background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), #D17B47;}
+.ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02 {display: block; width: 78px; height: 40px; font-weight: 400; font-size: 17px; color: #fff; line-height: 40px; background: #6A75A0; border-radius: 8px; text-align: center; box-sizing: border-box;}
+.ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02:hover {background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #5F6990;}
+.ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02:active {background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), #6A75A0;}
 .ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn01.disabled, .ltd .pop-alert .bx-alert .in-cont-bx .bx-btns .btn02.disabled {border: 1px solid rgba(19, 21, 23, 0.07); background: #F7F6F5; color: #BFBFBF;}
 
 @media (max-width: 1023px) {
