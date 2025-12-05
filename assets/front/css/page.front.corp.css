@@ -3022,6 +3022,8 @@ z-index: 10;
 .corp .ft-r-side .ft-mark {padding-top: 3px; text-align: right;}
 .corp .ft-r-side .ft-mark img {width: 50px;}
 
+.corp #footer .footer-inner {max-width: 1440px;}
+
 @media (max-width: 1023px) {
   .corp #footer .footer-inner {padding: 32px 16px 48px;}
   .corp .ft-r-side {position: relative; top: auto; right: auto; padding-top: 24px; /*top: 41px; right: 16px;*/}
@@ -4500,7 +4502,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .about-cont-wrap01 .in-bx > dl {padding-left: 0;}
 }
 
-.corp .about-cont01 {padding: 48px 0;display: flex; flex-direction: column; row-gap: 40px;}
+.corp .about-cont01 {padding: 0 0 48px 0;display: flex; flex-direction: column; row-gap: 40px;}
 .corp .about-cont01 .tx01 {font-weight: 600; font-size: 28px; color: #232527; line-height: 130%;}
 .corp .about-cont01 .tx02 {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%;}
 .corp .about-cont01 .tx03 {font-weight: 400; font-size: 19px; color: #232527; line-height: 150%;}
