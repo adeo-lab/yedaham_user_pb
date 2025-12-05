@@ -278,15 +278,15 @@
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .bx-no-data .tx01 {font-weight: 600; font-size: 28px; color: #E2E2E2; line-height: 130%; text-align: center;}
 .corp .main-cont05 .m-inner-bx .bx-bt ul {display: flex; column-gap: 48px;}
 .corp .main-cont05 .m-inner-bx .bx-bt li {width: calc(50% - 24px);}
-.corp .main-cont05 .m-inner-bx .bx-bt li .in-bx {position: relative; height: 190px; border-radius: 16px; overflow: hidden; background: #ddd; display: flex; align-items: center;}
+.corp .main-cont05 .m-inner-bx .bx-bt li .in-bx {position: relative; height: 190px; border-radius: 16px; overflow: hidden; background: #ddd; display: flex; align-items: center; transition: 0.3s;}
 .corp .main-cont05 .m-inner-bx .bx-bt li .in-bx .bx-img {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.corp .main-cont05 .m-inner-bx .bx-bt li .in-bx .bx-img::after {content: ''; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: #000; opacity: 0.4;}
+.corp .main-cont05 .m-inner-bx .bx-bt li .in-bx .bx-img::after {content: ''; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: #000; opacity: 0.4; transition: 0.3s;}
 .corp .main-cont05 .m-inner-bx .bx-bt li .in-bx .bx-img img {width: 100%; height: 100%; object-fit: cover;}
 .corp .main-cont05 .m-inner-bx .bx-bt li .bx-txt {position: relative; padding-left: 48px;}
 .corp .main-cont05 .m-inner-bx .bx-bt li .bx-txt .tx01 {font-weight: 600; font-size: 28px; color: #fff; line-height: 130%; padding-bottom: 12px;}
 .corp .main-cont05 .m-inner-bx .bx-bt li .bx-txt .tx01 .wbr {display: inline;}
 .corp .main-cont05 .m-inner-bx .bx-bt li .bx-txt .tx02 {font-weight: 400; font-size: 17px; color: #fff; line-height: 150%;}
-.corp .main-cont05 .m-inner-bx .bx-bt li a:hover .in-bx .bx-img::after {display: none;}
+.corp .main-cont05 .m-inner-bx .bx-bt li a:hover .in-bx .bx-img::after {/*display: none;*/ opacity: 0; transition: 0.3s;}
 .corp .main-cont05 .m-inner-bx .bx-bt li a:hover .bx-txt .tx01 {color: #232527;}
 .corp .main-cont05 .m-inner-bx .bx-bt li a:hover .bx-txt .tx02 {color: #777;}
 
