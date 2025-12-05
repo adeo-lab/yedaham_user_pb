@@ -131,6 +131,8 @@
 .corp #header.up {transform: translateY(0);}
 .corp .header.up .nav-layer::before {opacity: 1; transition-duration: 300ms, 200ms, 300ms; transition-delay: 0ms, 0ms, 0ms; pointer-events: none;}
 
+.active-scroll-bottom .corp #header {transform: translateY(-105%); transition: transform 300ms ease-in;}
+
 .corp .header .nav-layer .gnb-item-l {padding: 0 20px; transition: all ease .3s;}
 .corp .header.active .nav-layer .gnb-item-l {padding: 0 20px; box-sizing: border-box;}
 .corp #header.active .header-inner .gnb .gnb-list .in-nav .gnb-item,
