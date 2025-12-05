@@ -185,6 +185,10 @@
   .corp #header.invert .header-inner .navi-control .btn-navi-menu svg {filter: none;}
   .corp #header .header-inner .logo .logo-link {width: 112px; background-position: left bottom 20px;}
 
+  .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu_w.png') no-repeat center; background-size: 24px;}
+  .active-scroll-down .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu.png') no-repeat center; background-size: 24px;}
+  .active-scroll-up .corp .main #header .header-inner .navi-control .btn-navi-menu {background: url('../../../assets/front/images/common/mob_menu.png') no-repeat center; background-size: 24px;}
+
   .corp #header .header-inner .mobile-menu-top-area {position: relative; width: 100%;}
   .corp #header .header-inner .gnb-list.active .in-nav {position: relative; overflow-y: hidden; overflow-x: auto; padding-left: 16px; border-bottom: 1px solid #EFEFEF; box-sizing: border-box; white-space: nowrap; -ms-overflow-style: none; scrollbar-width: none;}
   .corp #header .header-inner .gnb-list.active .in-nav::-webkit-scrollbar {display: none !important;}
@@ -4576,8 +4580,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-size: 20px;
 }
 .corp .about-cont06 .map-wrap {display: flex; gap: 48px;}
-.corp .about-cont06 .map-wrap .bx-map {position: relative; width: 928px; height: 632px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; overflow: hidden; box-sizing: border-box;}
-.corp .about-cont06 .map-wrap .bx-detail-r {flex-shrink: 0;}
+.corp .about-cont06 .map-wrap .bx-map {position: relative; width: 928px; height: 674px /*632px*/; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; overflow: hidden; box-sizing: border-box;}
+.corp .about-cont06 .map-wrap .bx-detail-r {width: 464px; flex-shrink: 0;}
 /* .corp .about-cont06 .map-wrap {position: relative; min-height: 600px; padding-left: 928px;} */
 /* .corp .about-cont06 .map-wrap .bx-map {position: absolute; top: 0; left: 0; width: 928px; height: 632px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 16px; overflow: hidden; box-sizing: border-box;} */
 /* .corp .about-cont06 .map-wrap .bx-map img {max-width: 120%; margin: -10% 0 0 -10%;} */
@@ -4594,7 +4598,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .about-cont06 .map-wrap .bx-detail-r dd .tx02 p {font-weight: 400; font-size: 19px; color: #444; line-height: 150%; padding-bottom: 4px;}
 .corp .about-cont06 .map-wrap .bx-detail-r dd .tx02 p:last-child {padding-bottom: 0;}
 .corp .about-cont06 .map-wrap .bx-detail-r dd .tx02 p span {font-weight: 600; font-size: 22px; margin-left: 10px;}
-.corp .about-cont06 .facility-list-wrap {flex-shrink: 0; max-height: 632px; padding-right: 16px; overflow-y: auto;}
+.corp .about-cont06 .facility-list-wrap {width: 464px; flex-shrink: 0; max-height: 632px; padding-right: 16px; overflow-y: auto; box-sizing: border-box;}
 .corp .about-cont06 .facility-list-wrap .facility-list {width: 464px;}
 .corp .about-cont06 .facility-list-wrap .facility-list li {height: auto;}
 .corp .about-cont06 .facility-list-wrap .facility-list li .in-bx {height: auto; padding: 15px 32px; box-sizing: border-box;}
@@ -4623,7 +4627,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .about-cont06 .map-wrap {flex-direction: column; gap: 0; min-height: auto; padding-left: 0;}
   .corp .about-cont06 .map-wrap .bx-map {position: relative; width: 100%; max-width: 100%; height: 280px; border: none; border-radius: 0;}
   /* .corp .about-cont06 .map-wrap .bx-map img {margin: -4% 0 0 -4%;} */
-  .corp .about-cont06 .map-wrap .bx-detail-r {padding: 24px 16px 0 16px;}
+  .corp .about-cont06 .map-wrap .bx-detail-r {width: 100%; padding: 24px 16px 0 16px; box-sizing: border-box;}
   .corp .about-cont06 .map-wrap .bx-detail-r dt {font-size: 26px; padding-bottom: 16px;}
   .corp .about-cont06 .map-wrap .bx-detail-r dd .tx01 {font-size: 16px; padding-bottom: 12px; justify-content: space-between;}
   .corp .about-cont06 .map-wrap .bx-detail-r dd .tx02 p {font-size: 16px;}
@@ -6981,6 +6985,36 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .careers-agree-wrap .tp-tx.ty02 span.form-text.ty01 {font-size: 15px;}
   .corp .careers-agree-wrap .tp-tx.ty02 .bx-radio-r {position: relative; top: auto; right: auto; width: 100%; padding-top: 12px;}
   .corp .careers-agree-wrap .tp-tx.ty02 .bx-radio-r .form.radio .form-text {font-size: 15px;}
+}
+
+
+/* 지도 추가 */
+.map-cont-n01 {padding: 48px 0;}
+.map-cont-n01.pt0 {padding-top: 0;}
+.map-cont-n01 .s-tit {font-weight: 600; font-size: 24px; color: #232527; line-height: 130%; padding-bottom: 12px;}
+.map-cont-n01 .btm-tx {font-weight: 400; font-size: 19px; color: #444; line-height: 150%; word-break: keep-all;}
+.map-cont-n01 .bx-sub-line ul {padding: 0 0 12px 0;display: flex; column-gap: 12px;}
+.map-cont-n01 .bx-sub-line li .in-bx {width: 72px; height: 72px; font-weight: 600; font-size: 15px; color: #fff; line-height: 120%; background: #794698; border-radius: 72px; text-align: center; display: flex; align-items: center; justify-content: center;}
+.map-cont-n01 .bx-sub-line li .in-bx.line5 {background: #794698;}
+.map-cont-n01 .bx-sub-line li .in-bx.line6 {background: #7C4932;}
+.map-cont-n01 .bx-sub-line li .in-bx.line-air {background: #0079AC;}
+.map-cont-n01 .bx-sub-line li .in-bx.line-kc {background: #6AC2B3; line-height: 120%;}
+.map-cont-n01 .bx-bus-num ul {padding: 0 0 12px 0;display: flex; gap: 8px; flex-wrap: wrap;}
+.map-cont-n01 .bx-bus-num li .in-bx {display: inline-block; height: 26px; font-weight: 600; font-size: 17px; color: #87C700; line-height: 25px; padding: 0 8px; border: 1px solid #87C700; border-radius: 4px; box-sizing: border-box;}
+.map-cont-n01 .bx-bus-num li .in-bx.green {color: #87C700; border: 1px solid #87C700;}
+.map-cont-n01 .bx-bus-num li .in-bx.blue {color: #386DE8; border: 1px solid #386DE8;}
+.map-cont-n01 .bx-bus-num li .in-bx.blue {color: #386DE8; border: 1px solid #386DE8;}
+.map-cont-n01 .bx-bus-num li .in-bx.d-green {color: #3CC344; border: 1px solid #3CC344;}
+.map-cont-n01 .bx-bus-num li .in-bx.red {color: #EF363D; border: 1px solid #EF363D;}
+
+@media (max-width: 1023px) {
+	.map-cont-n01 {padding: 32px 0;}
+	.map-cont-n01 .s-tit {font-size: 20px; padding-bottom: 8px;}
+	.map-cont-n01 .btm-tx {font-size: 16px;}
+	.map-cont-n01 .bx-sub-line ul {padding-bottom: 8px; column-gap: 8px;}
+	.map-cont-n01 .bx-sub-line li .in-bx {width: 60px; height: 60px; font-size: 14px;}
+	.map-cont-n01 .bx-bus-num ul {column-gap: 4px; row-gap: 8px;}
+	.map-cont-n01 .bx-bus-num li .in-bx {height: 23px; font-size: 15px; line-height: 22px;}
 }
 
 
