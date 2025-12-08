@@ -592,6 +592,7 @@
 .landing-wrap .form-item .form-group {flex: 1 1 100%;}
 .landing-wrap .form-group label {display: block; margin-bottom: 8px; font-size: 17px; font-weight: 600; line-height: 1.5; color: #2c3e50;}
 .landing-wrap .required {color: #e74c3c;}
+.landing-wrap .form-group span.nameSpan {width: 100%;}
 .landing-wrap .form-group input[type="text"],
 .landing-wrap .form-group input[type="tel"] {width: 100%; padding: 11px 16px; border: 1px solid rgba(19, 21, 23, 0.15); border-radius: 8px; font-size: 17px; transition: border-color 0.3s;}
 .landing-wrap .form-group input:focus {outline: none; border-color: #4a5b8c;}
