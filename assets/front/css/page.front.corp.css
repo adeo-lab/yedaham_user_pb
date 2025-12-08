@@ -6959,7 +6959,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .pdf-inline-viewer .swiper-button-prev, .pdf-inline-viewer .swiper-rtl .swiper-button-next {left: var(--swiper-navigation-sides-offset, -7px) !important}
 }
 @media (max-width: 360px) {
-  .corp .content-popup.photo .pop-img-view-wrap {height: 95% !important;}
+  .corp .content-popup.photo .pop-img-view-wrap {height: 90% !important;}
 }
 
 
