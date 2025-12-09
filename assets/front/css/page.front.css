@@ -5293,8 +5293,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .popup-wrap.card-component {position: relative; max-width: 996px; overflow: unset;}
 
 @media (max-width: 1023px) {
-  .home .content-popup .popup-wrap.card-component .popup-header {height: 0; padding: 0;}
-  .home .content-popup .popup-wrap.card-component .popup-body {padding-top: 32px;/*margin-top: -9px;*/}
+  /*.home .content-popup .popup-wrap.card-component .popup-header {height: 0; padding: 0;}*/
+  .home .content-popup .popup-wrap.card-component .popup-body {padding-top: 0;/*margin-top: -9px;*/}
 }
 
 .home .card-detail-wrap .card-top-area {height: auto /*280px*/; padding-bottom: 48px;}
@@ -5420,7 +5420,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .card-detail-wrap .card-top-area li {width: auto;}
   .home .card-detail-wrap .card-top-area li .in-bx .bx-r {display: none;}
 
-  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%; position: relative; padding-top: 195px /*236px*/; box-sizing: border-box;}
+  .home .content-popup .popup-wrap .benefit-detail-wrap .popup-contents {overflow-y: auto; height: auto; max-height: 100%; position: relative; padding-top: 220px /*195px*/ /*236px*/; box-sizing: border-box;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .popup-body {overflow: hidden;}
 
   .home .benefit-detail-wrap {position: relative;}
@@ -5438,22 +5438,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag {height: 25px; font-size: 14px; line-height: 25px; padding: 0 12px;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-tit {font-size: 24px; padding-bottom: 24px; text-align: center;}
 
+  .home .content-popup .popup-wrap.benefit-component .popup-header {position: fixed; top: 24px; left: 0; width: 100%; height: 60px !important; background: #fff; height: 14px; z-index: 10; border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden; box-sizing: border-box;}
+  .home .content-popup .popup-wrap.card-component .popup-header {height: 60px;}
+
   .home .benefit-detail-wrap .area-right .membership-detail .bx-logo {text-align: center;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-logo img {height: 48px;}
-  .home .benefit-detail-wrap .area-right .membership-detail .detail-wrap > div.bx-tp-n {position: absolute; top: 0; left: 0; width: 100%; padding: 35px /*72px*/ 16px 0 16px; box-sizing: border-box;}
+  .home .benefit-detail-wrap .area-right .membership-detail .detail-wrap > div.bx-tp-n {position: absolute; top: 0; left: 0; width: 100%; padding: 60px /*35px*/ /*72px*/ 16px 0 16px; box-sizing: border-box;}
   .home .benefit-detail-wrap .area-right .membership-detail .bx-tx01 {font-size: 15px; padding-top: 0;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area {padding: 16px;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-ty01 {width: auto; flex: 1;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-ty01 span {display: none;}
   .home .content-popup .popup-wrap .benefit-detail-wrap .area-right .popup-footer .button-area a.btn-ty02 {width: auto; flex: 1;}
-  .home .benefit-detail-wrap .swiper-button-next {top: 75px /*112px*/; right: 16px; width: 24px; height: 24px;  background: #fff; border: 1px solid rgba(19, 21, 23, 0.15);}
+  .home .benefit-detail-wrap .swiper-button-next {top: 100px /*75px*/ /*112px*/; right: 16px; width: 24px; height: 24px;  background: #fff; border: 1px solid rgba(19, 21, 23, 0.15);}
   .home .benefit-detail-wrap .swiper-button-next::after {
 	width: 24px;
 	height: 24px;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='9' viewBox='0 0 6 9' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.846263 0.874146C0.984807 0.720203 1.22192 0.707719 1.37586 0.846261L3.25086 2.53367L5.12586 4.22108C5.20487 4.29219 5.25 4.3935 5.25 4.49981C5.25 4.60611 5.20489 4.70742 5.12587 4.77854L1.37587 8.15372C1.22194 8.29228 0.984829 8.2798 0.846276 8.12587C0.707724 7.97193 0.720196 7.73483 0.874132 7.59628L4.31444 4.49983L0.874147 1.40374C0.720203 1.26519 0.707719 1.02809 0.846263 0.874146Z' fill='%23232527'/%3E%3C/svg%3E");
 	background-size: 6px;
   }
-  .home .benefit-detail-wrap .swiper-button-prev {top: 75px /*112px*/; left: 16px; width: 24px; height: 24px;  background: #fff; border: 1px solid rgba(19, 21, 23, 0.15);}
+  .home .benefit-detail-wrap .swiper-button-prev {top: 100px /*75px*/ /*112px*/; left: 16px; width: 24px; height: 24px;  background: #fff; border: 1px solid rgba(19, 21, 23, 0.15);}
   .home .benefit-detail-wrap .swiper-button-prev::after {
 	width: 24px;
 	height: 24px;
