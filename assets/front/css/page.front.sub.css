@@ -1438,6 +1438,9 @@
 .home .compare-data-grid .grid-body .grid-row:nth-child(1) .grid-cell {border-top: 0 none;}
 .home .compare-data-grid .grid-body .grid-cell {padding: 24px 32px; border-top: 1px solid rgba(19, 21, 23, 0.15); box-sizing: border-box; font-size: 17px; line-height: 1.5; color: #232527;}
 
+.home .accordion-body .table-wrap table.cont-tb-ty01.ty-strong tbody td {font-weight: 600;}
+.home .accordion-body .table-wrap table.cont-tb-ty01.ty-strong tbody td:nth-child(3) {font-weight: 400;}
+
 @media (min-width: 1024px) {
     .home .compare-data-grid .grid-body .grid-row:hover::after {content: ''; display: block; position: absolute; top: 0; left: 40px; right: 40px; z-index: 1 /*2*/; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff;}
     .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .icon,
