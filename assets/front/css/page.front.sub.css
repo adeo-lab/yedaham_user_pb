@@ -1073,9 +1073,9 @@
 .home .process-faq-list .process-faq-item .process-faq-text:hover {text-decoration: underline;}
 
 /* 제례 정보 */
-.home .ritual-contents {max-width: 1200px; margin: 0 auto; padding: 64px 0 96px;}
+.home .ritual-contents {max-width: 1200px; margin: 0 auto; padding: 0 /*64px*/ 0 96px;}
 .home .ritual-contents .section {padding-top: 96px;}
-.home .ritual-contents .section:first-of-type {padding-top: 0;}
+.home .ritual-contents .section:first-of-type {padding-top: 64px /*0*/;}
 .home .ritual-contents .section .section-wrap {display: flex; flex-direction: column; row-gap: 24px;}
 .home .ritual-contents .section .section-wrap .section-head .section-subject {font-size: 40px; font-weight: 600; line-height: 1.3; color: #232527; letter-spacing: -0.5px;}
 .home .ritual-contents .section .section-wrap .section-body {display: flex; flex-direction: column; row-gap: 48px;}
@@ -1270,8 +1270,9 @@
     .home .process-faq-list .process-faq-item.active .process-faq-desc {padding: 16px;}
 
     /* 제례 정보 */
-    .home .ritual-contents {display: flex; flex-direction: column; row-gap: 72px; padding: 32px 0 48px;}
-    .home .ritual-contents .section {padding-top: 0;}
+    .home .ritual-contents {display: flex; flex-direction: column; /*row-gap: 72px;*/ padding: 0 /*32px*/ 0 48px;}
+    .home .ritual-contents .section {padding-top: 32px /*0*/;}
+    .home .ritual-contents .section:first-of-type {padding-top: 32px; padding-bottom: 40px;}
     .home .ritual-contents .section .section-wrap {row-gap: 16px;}
     .home .ritual-contents .section .section-wrap .section-head .section-subject {font-size: 24px /*26px*/;}
     .home .ritual-contents .section .section-wrap .section-body {row-gap: 16px;}
