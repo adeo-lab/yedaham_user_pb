@@ -1441,6 +1441,9 @@
 .home .accordion-body .table-wrap table.cont-tb-ty01.ty-strong tbody td {font-weight: 600; font-weight: 18px;}
 .home .accordion-body .table-wrap table.cont-tb-ty01.ty-strong tbody td:nth-child(3) {font-weight: 400; font-weight: 17px;}
 
+.home .popup-contents .table-wrap table.cont-tb-ty01.ty-strong tbody td {font-weight: 600; font-weight: 18px;}
+.home .popup-contents .table-wrap table.cont-tb-ty01.ty-strong tbody td:nth-child(3) {font-weight: 400; font-weight: 17px;}
+
 @media (min-width: 1024px) {
     .home .compare-data-grid .grid-body .grid-row:hover::after {content: ''; display: block; position: absolute; top: 0; left: 40px; right: 40px; z-index: 1 /*2*/; height: 100%; box-sizing: border-box; border: 2px solid #F1945E;box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.10), 0 4px 16px 0 rgba(0, 0, 0, 0.05); border-radius: 12px; background-color: #fff;}
     .home .compare-data-grid .grid-body .grid-row:hover .grid-cell .icon,
