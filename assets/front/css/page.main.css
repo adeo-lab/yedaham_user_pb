@@ -290,8 +290,8 @@
 }
 
 .home .m-product-list01 .in-bx .btm-btns button.btn-s-join {display: inline-block; width: calc(50% - 5px); font-weight: 600; font-size: 19px; color: #fff; line-height: 150%; padding: 9.5px 0; background: #D17B47; border: 1px solid #D17B47; border-radius: 8px; text-align: center;}
-.home .m-product-list01 .in-bx .btm-btns button.btn-s-join:hover {background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #D17B47;}
-.home .m-product-list01 .in-bx .btm-btns button.btn-s-join:active {background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), #D17B47;}
+.home .m-product-list01 .in-bx .btm-btns button.btn-s-join:hover {background: #BC6F40; /*linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #BC6F40;*/ border: 1px solid #BC6F40;}
+.home .m-product-list01 .in-bx .btm-btns button.btn-s-join:active {background: #BC6F40; /*linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #BC6F40;*/ border: 1px solid #BC6F40;}
 .home .m-product-list01 .in-bx .btm-btns button.btn-s-join:disabled {border: 1px solid rgba(19, 21, 23, 0.07); background: #F7F6F5;}
 
 .home .m-product-list01 .in-bx.ty02 .btm-btns02 {text-align: center;}
