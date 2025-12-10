@@ -7939,7 +7939,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .ui-datepicker select.ui-datepicker-year { height: 40px; padding: 0 8px 0 12px; border-radius: 8px; border-color: rgba(19, 21, 23, 0.15); font-size: 17px; line-height: 1.5; color: #232527; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.7696 14.3961L7.26835 9.16204C7.10127 8.96776 7.23931 8.66699 7.49555 8.66699H16.4989C16.7551 8.66699 16.8932 8.96779 16.726 9.16206L12.224 14.3961C12.1044 14.5351 11.8892 14.5351 11.7696 14.3961Z' fill='%23232527'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-size: 24px; }
 .home .ui-datepicker table {width: 100%; border-collapse: collapse; margin: 24px 0 0;}
 /* 요일 영역 */
-.home #ui-datepicker-div .ui-datepicker-calendar thead th { width: 40px;; padding-bottom: 4px; font-size: 15px; font-weight: 400; line-height: 1.5; color: #777; }
+.home #ui-datepicker-div .ui-datepicker-calendar thead th { width: 40px; padding-bottom: 4px; font-size: 15px; font-weight: 400; line-height: 1.5; color: #777; }
 .home #ui-datepicker-div .ui-datepicker-calendar thead th span {display: inline-block; font-size: inherit; line-height: inherit;}
 /* 일자 기본 */
 .home #ui-datepicker-div .ui-datepicker-calendar td { padding: 4px 0; }
@@ -8242,6 +8242,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 /* 간편본인인증 */
+#oacxEmbededContentsNewTemp.pc {
+  max-width: 480px !important;
+}
+
 @media (max-width: 768px) {
   /* 인증 방법 선택 */
   #oacxEmbededContentsNewTemp.pc {
