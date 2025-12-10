@@ -57,10 +57,10 @@ function initCompanyMain() {
   // ---------------------------
   // 모든 main-section 패럴랙스
   // ---------------------------
-   const sec1 = document.querySelector(".main-cont01-wrap");
+  const sec1 = document.querySelector(".main-cont01-wrap");
   if (sec1 && sec1.querySelector(".main-section-bg")) {
     gsap.to(".main-cont01-wrap .main-section-bg", {
-      yPercent: -30,
+      yPercent: -20,
       ease: "none",
       scrollTrigger: {
         trigger: sec1,
@@ -249,7 +249,7 @@ function initCompanyListBoxes() {
         gsap.to(items, {
           opacity: 1,
           x: 0,
-          y: 0,
+          y: 50, /* 0 */
           duration: 1.4,
           ease: "power3.out",
           stagger: 0.2,
