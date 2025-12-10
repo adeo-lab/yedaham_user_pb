@@ -60,7 +60,7 @@ function initCompanyMain() {
   const sec1 = document.querySelector(".main-cont01-wrap");
   if (sec1 && sec1.querySelector(".main-section-bg")) {
     gsap.to(".main-cont01-wrap .main-section-bg", {
-      yPercent: -20,
+      yPercent: -25,
       ease: "none",
       scrollTrigger: {
         trigger: sec1,
@@ -481,7 +481,7 @@ function initCompanySection04() {
 
   if (slides.length) {
     // 초기 상태 설정
-    gsap.set(slides, { opacity: 0, y: 60 });
+    gsap.set(slides, { opacity: 0, y: 90 }); /* 60 */
     if (buttonBox) gsap.set(buttonBox, { opacity: 0, y: 40 }); // 버튼 박스도 미리 숨김
 
     ScrollTrigger.create({
