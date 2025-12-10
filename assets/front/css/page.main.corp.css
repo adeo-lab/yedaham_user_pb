@@ -289,6 +289,7 @@
 .corp .main-cont05 .m-inner-bx .bx-bt li a:hover .in-bx .bx-img::after {/*display: none;*/ opacity: 0; transition: 0.3s;}
 .corp .main-cont05 .m-inner-bx .bx-bt li a:hover .bx-txt .tx01 {color: #232527;}
 .corp .main-cont05 .m-inner-bx .bx-bt li a:hover .bx-txt .tx02 {color: #777;}
+.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn.no-data ~ .main-careers-posting {background: none;}
 
 @media (max-width: 1023px) {
   .corp .main-cont05-wrap {padding: 48px 0; box-sizing: border-box;}
