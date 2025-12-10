@@ -484,7 +484,7 @@
     .ltd .page-product .section .section-head .section-summary .wbr {display: block;}
 
     /* .ltd .container.ty-wide .page-product .tab-display.style-c:not(.fixed) {margin: 64px 0 72px;} */
-    .ltd .page-product .section.section-top {margin-bottom: 48px /*64px*/;}
+    .ltd .page-product .section.section-top {padding-top: 32px; margin-bottom: 48px /*64px*/;}
     .ltd .page-product .section.custom-product {padding-top: 48px;}
 
     .ltd .section.section-top {padding: 32px 0 48px;}
