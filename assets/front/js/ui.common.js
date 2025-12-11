@@ -1005,10 +1005,11 @@ var uiCommon = (function() {
 						familyLayer.style.display = 'none';
 					}
 				});
-			} else {
+			}
+			/*} else {
 				// 요소를 찾지 못했을 경우 콘솔에 에러 메시지를 출력합니다.
 				console.error('`bx-family` 또는 `family-layer` 요소를 찾을 수 없습니다.');
-			}
+			}*/
 		},
 		// toggle buttons
 		totalSearch: function() {
