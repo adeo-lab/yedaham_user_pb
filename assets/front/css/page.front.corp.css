@@ -6520,7 +6520,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   .corp .tab-display.style-c {position: relative; top: auto; left: 0; width: 100%; padding: 0; background: #fff; z-index: 9;}  
   .corp .tab-display.style-c.tab-fixed .tab-inner-bx {padding: 0 0 0 16px}
-  .corp .tab-display.style-c.tab-fixed .tab-list {justify-content: unset; column-gap: 0;}
+  .corp .tab-display.style-c.tab-fixed .tab-list {/*justify-content: unset;*/ column-gap: 0;}
   .corp .tab-display.style-c.tab-fixed .tab-list .tab-item {padding-right: 32px;}
   .corp .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {width: 100%;}
   .corp .tab-display.style-c.tab-fixed.fixed .tab-list .tab-item .tab-text {font-size: 19px; padding: 12px 0;}

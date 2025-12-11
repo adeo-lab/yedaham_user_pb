@@ -6855,6 +6855,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .home .bx-nodata {padding: 190px 0;}
+.home .review-display-wrap .bx-nodata {padding: 50px 0 0;}
 .home .bx-nodata .in-bx {width: 353px; margin: 0 auto;}
 .home .bx-nodata .in-bx .icon {width: 98px; height: 67px; margin: 0 auto;}
 .home .bx-nodata .in-bx .icon  {
