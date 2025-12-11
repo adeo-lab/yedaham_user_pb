@@ -419,6 +419,7 @@ function initCompanySection04() {
       autoHeight: true,
       loop: true,
       autoplay: { delay: 3000 },
+      speed: 800,
       watchOverflow: false,
       spaceBetween: isPC ? 96 : 16,
       navigation: isPC
