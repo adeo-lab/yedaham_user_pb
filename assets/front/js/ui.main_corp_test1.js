@@ -219,7 +219,7 @@ function initCompanyListBoxes() {
     ".main-cont01-wrap.main-section, .main-cont02-wrap.main-section"
   );
 
-  const isMobile = window.innerWidth <= 1023;
+  const isMobile = window.innerWidth <= 1023; // 👈 모바일 환경 여부
 
   sections.forEach((section) => {
     const items = section.querySelectorAll(".bx-cont-r > ul > li");
@@ -227,7 +227,7 @@ function initCompanyListBoxes() {
 
     const isSection2 = section.classList.contains("main-cont02-wrap");
 
-    // 🔸 방향 설정
+    // 🔸 방향 설정 (애니메이션 시작 위치)
     let fromVars;
     if (isSection2) {
       // 2섹션: PC는 오른쪽→왼쪽 / 모바일은 아래→위
@@ -249,7 +249,7 @@ function initCompanyListBoxes() {
         gsap.to(items, {
           opacity: 1,
           x: 0,
-          y: 50, /* 0 */
+          y: isMobile ? 0 : 50, // 👈 ✨ 이 부분이 수정되었습니다: 모바일일 때 y: 50
           duration: 1.4,
           ease: "power3.out",
           stagger: 0.2,

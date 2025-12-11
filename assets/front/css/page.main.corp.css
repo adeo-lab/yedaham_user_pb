@@ -9,7 +9,7 @@
 .corp .main-inner-wrap .main-inner-wrap-sw {width: 100%; height: 100vh;}
 
 @media (max-width: 1023px) {
-  .corp .main-inner-wrap .main-section { height: 100vh; padding: 64px 0 48px; box-sizing: border-box;} 
+  .corp .main-inner-wrap .main-section { min-height: 100vh; padding: 48px 0 /*64px 0 48px*/; box-sizing: border-box;} 
   .corp .main-inner-wrap .main-cont01-wrap.main-section {height: 100dvh; padding: 40px /*120px*/ 0 40px}
 }
 
@@ -80,6 +80,7 @@
 }
 
 .corp .main-cont02-wrap {position: relative; height: 100vh /*1080px*/; background: url('../../../assets/front/images/corp/bg_main02.png') no-repeat center; background-size: cover; background-attachment: scroll;}
+.corp .main-cont02-wrap .tp-line {position: absolute; top: 0; left: 0; width: 100%; height: 120px /*79px*/; background: url('../../../assets/front/images/corp/main_v_line.png') no-repeat center top 15px; background-size: 2560px 105px; z-index: 9;}
 .corp .main-cont02 {max-width: 1196px; height: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
 .corp .main-cont02 .m-inner-bx {width: 100%; display: flex; justify-content: space-between;}
 .corp .main-cont02 .m-inner-bx .bx-cont-r {position: absolute; top: calc(50% - 240px) /*344px*/; left: 50%; width: 100%; max-width: 948px;}
@@ -91,6 +92,7 @@
 .corp .main-cont02 .m-inner-bx .bx-cont-r li .in-bx .tx01 .wbr {display: inline;}
 
 @media (max-width: 1023px) {
+  .corp .main-cont02-wrap .tp-line {height: 79px; background-size: 155% /*1920px 79px*/; background-position: center top 5px;}
   .corp .main-cont02 {max-width: 100%; padding: 0 32px; box-sizing: border-box;}
   .corp .main-cont02 .m-inner-bx {height: 100%; flex-direction: column; justify-content: center; gap: 80px;}
   .corp .main-cont02 .m-inner-bx .bx-cont-r {position: relative; left: auto; top: auto; width: 100%;}
@@ -292,7 +294,7 @@
 .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn.no-data ~ .main-careers-posting {background: none;}
 
 @media (max-width: 1023px) {
-  .corp .main-cont05-wrap {padding: 48px 0; box-sizing: border-box;}
+  .corp .main-cont05-wrap {height: auto; min-height: 100vh; padding: 48px 0; box-sizing: border-box;}
   /*.corp .main-tx-bx.ty05 {}*/
   .corp .main-cont05 {justify-content: flex-start; align-items: flex-start; padding: 0 32px;}
   .corp .main-cont05 .m-inner-bx .bx-tp {padding-bottom: 16px; flex-direction: column; row-gap: 46px;}
@@ -301,7 +303,7 @@
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .tx-btn .bx-navi {display: none;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting {overflow: visible; background: none;}
   /* .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting li {margin-right: 16px;} */
-  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: auto; padding: 20px; background: rgba(247, 246, 245, 0.90); border-radius: 16px; box-sizing: border-box;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx {height: 210px /*auto*/; padding: 20px; background: rgba(247, 246, 245, 0.90); border-radius: 16px; box-sizing: border-box;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx02 {display: none;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx03 {flex-direction: column; gap: 16px; align-items: flex-start; font-size: 14px;}
   .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .in-bx .tx03 .t-bx-l {display: flex; align-items: center; gap: 8px;}
@@ -323,7 +325,9 @@
   .corp .main-cont05 .m-inner-bx .bx-bt li .bx-txt .tx02 {display: none;}
   .corp .main-cont05 .m-inner-bx .bx-bt li .in-bx .bx-img img {object-position: 62% 50%;}
 
-  /*.corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .bx-no-data .tx01 {}*/
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .bx-no-data {height: 210px;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .bx-no-data .bx-img {width: 48px; height: 48px; background-size: 48px;}
+  .corp .main-cont05 .m-inner-bx .bx-tp .bx-ing-r .main-careers-posting .bx-no-data .tx01 {font-size: 22px;}
 }
 
 
