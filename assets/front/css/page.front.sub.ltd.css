@@ -75,7 +75,7 @@
 
 @media (max-width: 1023px) {
     .ltd .quick-menu {right: 10px; bottom: -40px;}
-    .ltd .quick-menu.has-bottom-panel {bottom: 20px;}
+    .ltd .quick-menu.has-bottom-panel {bottom: 40px /*20px*/;}
     .ltd .quick-menu.has-bottom-panel.show {bottom: 100px;}
     
     .ltd .quick-menu .quick-wrap {align-items: flex-end;}
@@ -545,7 +545,7 @@
     .ltd .info-section .info-contents .info-item .info-tb table thead th {padding: 8px; font-size: 15px;}
     .ltd .info-section .info-contents .info-item .info-tb table tbody td {padding: 8px; font-size: 15px;}
 
-    .ltd .page-product .button-display {display: flex; position: fixed; top: auto; right: 0; bottom: 0; left: 0; z-index: 10; overflow: visible; visibility: visible; pointer-events: auto; margin: 0 auto !important; background-color: #fff; transition: all 0.3s;}
+    .ltd .page-product .button-display {display: flex; position: fixed; top: auto; right: 0; bottom: 0; left: 0; z-index: 1000; overflow: visible; visibility: visible; pointer-events: auto; margin: 0 auto !important; background-color: #fff; transition: all 0.3s;}
     .ltd .page-product .button-display .button-area {display: flex; padding: 16px;}
     .ltd .page-product .button-display .button-area .btn-style-a {display: flex; justify-content: center; align-items: center; height: 48px; padding: 0 32px; border-radius: 8px; background: linear-gradient(0deg, #6A75A0 0%, #6A75A0 100%, #6A75A0);}
     .ltd .page-product .button-display .button-area .btn-style-a .btn-text {font-size: 17px; font-weight: 600; line-height: 1.5; color: #FFF;}
