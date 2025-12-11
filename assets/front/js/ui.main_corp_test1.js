@@ -418,7 +418,10 @@ function initCompanySection04() {
       centeredSlides: true, //!isPC
       autoHeight: true,
       loop: true,
-      autoplay: { delay: 3000 },
+      autoplay: {
+        delay: 3000, // 각 슬라이드가 머무는 시간 (밀리초)
+        disableOnInteraction: false, // 이 옵션을 'false'로 설정하여 상호작용 후에도 멈추지 않게 함
+      },
       speed: 800,
       watchOverflow: false,
       spaceBetween: isPC ? 96 : 16,
