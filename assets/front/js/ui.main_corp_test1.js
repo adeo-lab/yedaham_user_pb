@@ -418,6 +418,7 @@ function initCompanySection04() {
       centeredSlides: true, //!isPC
       autoHeight: true,
       loop: true,
+      autoplay: { delay: 3000 },
       watchOverflow: false,
       spaceBetween: isPC ? 96 : 16,
       navigation: isPC

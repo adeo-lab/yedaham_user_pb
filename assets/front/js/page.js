@@ -184,10 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 사용자님의 요청에 따라 72px 위치에 "도달하면" fixed가 되어야 하므로 72를 사용합니다.
     const fixedOffset = 122;
 
-    if (!fMapWrap) {
+    /*if (!fMapWrap) {
         console.error('필요한 DOM 요소(.f-map-wrap)를 찾을 수 없습니다.');
         return;
-    }
+    }*/
 
     // 2. Window 스크롤 이벤트 리스너 추가
     // 브라우저 전체 스크롤을 감지합니다.
