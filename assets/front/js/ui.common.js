@@ -443,7 +443,7 @@ var uiCommon = (function() {
 						navilMenu.classList.remove('active');
 						header.classList.remove('open');
 						document.body.classList.remove('hidden');
-						resetMenuState();
+						//resetMenuState();
 					};
 
 					naviMenuBtn.addEventListener('click', _.openMenuListener);

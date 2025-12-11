@@ -81,7 +81,7 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
   #header .header-inner .gnb .gnb-list.focused .in-nav .gnb-item, #header .header-inner .gnb .gnb-list.active .in-nav .gnb-item { height: auto; }
   #header .header-inner .gnb .gnb-list .in-nav .gnb-item { /*display: -webkit-box; display: -ms-flexbox;*/ display: block; height: auto; float: left; }
   /*#header .header-inner .gnb .gnb-list .gnb-item + .gnb-item { border-top: 1px solid var(--color-base-080); }*/
-  #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text { -ms-flex-negative: 0; flex-shrink: 0; display: -webkit-box; display: -ms-flexbox; display: inline-block;; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-width: auto; position: relative; width: auto; height: auto; padding: 17.5px 0; /*background-color: var(--color-base-090);*/ font-size: 19px; text-align: center; white-space: nowrap;}
+  #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text { -ms-flex-negative: 0; flex-shrink: 0; display: -webkit-box; display: -ms-flexbox; display: inline-block; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-width: auto; position: relative; width: auto; height: auto; padding: 17.5px 0; /*background-color: var(--color-base-090);*/ font-size: 19px; text-align: center; white-space: nowrap;}
   #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text.on::after { content: ''; position: absolute; left: 50%; bottom: 0; width: 100%; height: 2px; background: #000; }
   #header .header-inner .gnb .gnb-list .in-nav .lnb-list { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.125s ease, visibility 0.125s ease; transition: opacity 0.125s ease, visibility 0.125s ease; }
   #header .header-inner .gnb .gnb-list .in-nav .lnb-list .lnb-item .lnb-text { padding: 10px; text-align: left; }
@@ -183,7 +183,7 @@ html.active-scroll-start #header.header-invert { --gnb-color: var(--color-base-0
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22' fill='none'%3E%3Cpath d='M8.5 8.46191C10.433 8.46191 12 6.89491 12 4.96191C12 3.02892 10.433 1.46191 8.5 1.46191C6.567 1.46191 5 3.02892 5 4.96191C5 6.89491 6.567 8.46191 8.5 8.46191Z' stroke='%23000001' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.07692 20.4619H1V18.1979C1.01347 17.0475 1.35365 15.9189 1.98877 14.9175C2.62389 13.9161 3.53322 13.0747 4.63182 12.4717C5.73042 11.8687 6.98246 11.5239 8.27097 11.4695C9.55949 11.4151 10.8424 11.6529 12 12.1606' stroke='%23000001' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11 17L18 17' stroke='%23000001' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.2278 14L18.3047 17.0769L15.2278 20.1538' stroke='%23000001' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 18.6px;
+  background-size: 19px auto /*18.6px*/;
 }
 #header .header-inner .navi-util .navi-list .navi-item .navi-text .home {
   display: block;
