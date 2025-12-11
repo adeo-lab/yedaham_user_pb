@@ -4465,7 +4465,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .history-list-ty01 {position: relative; display: flex; column-gap: 48px;}
 .corp .history-list-ty01 .bx-img-l {width: 684px;}
 .corp .history-list-ty01 .bx-img-l .h-in-bx {position: sticky; top: 120px /*120px*/; width: 560px; padding-top: 14px;}
-.corp .history-list-ty01 .bx-list-r {position: relative; margin-bottom: 70px /*414px*/; margin-top: 86px;}
+.corp .history-list-ty01 .bx-list-r {position: relative; margin-bottom: 70px /*414px*/; /*margin-top: 86px;*/}
 .corp .history-list-ty01 .bx-list-r .line {position: absolute; left: 14px; top: 104px; width: 1px; height: calc(100% - 115px) !important; /*height: calc(100% - 147px);*/ background: rgba(19, 21, 23, 0.15);}
 .corp .history-list-ty01 .bx-list-r .line .bg {position: absolute; left: 50%; top: 0; width: 1px; height: 0%; transform: translateX(-50%); background-color: #94A6FF; max-height: 100%;}
 .corp .history-list-ty01 .bx-list-r li {position: relative; padding-bottom: 88px;}
@@ -4478,6 +4478,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .history-list-ty01 .bx-list-r li .h-in-bx dd.on::before { top: 7.7px; left: 7.2px; width: 13.5px; height: 13.5px; background: #4458B0; box-shadow: 0 0 0px 7px rgba(68, 88, 176, 0.2);}
 
 /*.corp .about-cont04 .history-list-ty01 {margin-bottom: 454px;}*/
+.corp .about-cont04 .history-list-ty01 .bx-list-r {margin-top: 86px;}
 
 .corp .h-l-bt-tx {display: block; font-weight: 600; font-size: 32px; color: #232527; line-height: 130%; padding: 360px 0 264px 0; text-align: center;}
 
