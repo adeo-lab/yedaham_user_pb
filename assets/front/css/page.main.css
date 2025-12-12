@@ -544,7 +544,36 @@
   /* my */
   .home .my-all-wrap {column-gap: 28px;}
   .home .my-cont-wrap {width: 837px;}
+  .home .my-main-top-info .bx-r {width: 480px;}
   .home .my-main-benefit .in-bx {width: 406px;}
+
+  /* 상품 */
+  .vis-r-info {width: 580px;}
+  .home .pr-visual-wrap .pr-visual-in-bx {max-width: 1006px;}
+  .home .container.ty-wide.product-detail .cont-wrap {width: 1006px; padding-left: 0; padding-right: 0;}
+  .home .why-y-wrap .why-y-list ul li .in-bx {padding: 24px;}
+  .home .why-y-wrap .why-y-list ul li .in-bx .tx01 {font-size: 20px;}
+  .home .why-y-wrap .why-y-list ul li .in-bx .tx02 {font-size: 20px;}
+  .home .pr-btm-tx-wrap .pr-btm-tx-in-bx {max-width: 1006px;}
+  .home .review-display-wrap .review-display.masonry.in-product .review-list .review-item {width: 229px;}
+  .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {align-items: flex-start; flex-direction: column; row-gap: 8px;}
+  .home .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {max-width: 1006px;}
+  .home .tab-display.style-c .tab-list .tab-item {padding-right: 28px;}
+
+  .home .container.ty-wide #page .page-head-wrap {max-width: 1006px;}
+  .home .container.ty-wide #page .page-body-wrap .inner-bx {max-width: 1006px;}
+
+  .home .tab-display.tab-fixed.fixed .tab-list {width: 1006px;}
+
+  /* my */
+  .home .easy-join-wrap .easy-join-left-side {width: 652px; padding: 24px;}
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx01 li {width: 190px;}
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx01 li .in-bx {padding: 24px 12px 16px 12px;}
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx02 li .in-bx {padding-left: 0; padding-right: 0;}
+  .home .easy-join-wrap .easy-join-right-side {width: 330px; padding: 24px;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area {padding-right: 170px;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 p.bx-line {align-items: flex-start;}
+  .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 a.btn-view-detail {width: 86px;}
 }
 
 @media (max-width: 1023px) {
