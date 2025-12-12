@@ -517,13 +517,18 @@
 
   .home .main-container #page.page-main .main-inner-wrap .m-cont-wrap01 {max-width: 1006px /*1078px*/;}
   .home .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 .inner-bx {max-width: 1006px;}
-  .home .main-cont01 {gap: 30px;}
-  .home .main-cont01 .in-bx .in-list ul {column-gap: 7px;}
+  .home .main-cont01 {gap: 22px;}
+  .home .main-cont01 .in-bx .in-list ul {column-gap: 4px;}
   .home .main-cont03 .main-review-list .bx-wrap-l {width: 340px;}
   .home .main-cont03 .main-review-list .bx-wrap-r {width: 340px;}
   .home .m-product-list01 > ul {gap: 24px;}
   .home .m-product-list01 li {width: 319px;}
   .home .m-product-list01 .in-bx {width: 100%;}
+  
+  .home .header .nav-layer .inner-bx-l > ul {column-gap: 0;}
+
+  .home .main-vis-wrap .main-vis .vis-img-pc {width: 100%; height: 203px;}
+  .home .main-vis-wrap .main-vis img {width: 100%; height: 100%; object-fit: cover;}
 
   .home .y-news-wrap .inner-bx {max-width: 1006px;}
 
@@ -535,6 +540,11 @@
   .home .quick-menu .btn-to-top {width: 42px; height: 42px;}
   .home .quick-menu.show .btn-to-top {height: 42px;}
   .home .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+
+  /* my */
+  .home .my-all-wrap {column-gap: 28px;}
+  .home .my-cont-wrap {width: 837px;}
+  .home .my-main-benefit .in-bx {width: 406px;}
 }
 
 @media (max-width: 1023px) {
