@@ -182,6 +182,7 @@
 	background-position: center;
 	background-size: 20px;
 }
+.corp .main-cont04 .main-vis04-list li.swiper-slide-active .in-bx .thum .data-info {z-index: 100;}
 /*.corp .main-cont04 .main-vis04-list li .in-bx .bt-tx {display: none;}
 .corp .main-cont04 .main-vis04-list li.swiper-slide-active .in-bx .bt-tx {display: block;}*/
 
