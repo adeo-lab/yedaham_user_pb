@@ -574,6 +574,18 @@
   .home .ej-inp-detail .bx-in-cnt01 .btm-area {padding-right: 170px;}
   .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 p.bx-line {align-items: flex-start;}
   .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 a.btn-view-detail {width: 86px;}
+
+  /* 이벤트 */
+  .home .event-list ul {column-gap: 36px;}
+  .home .event-list li {width: 533px;}
+  .home .event-list li .in-bx .thum {height: 240px;}
+  .home .page-addon .section.section-top .section-wrap {width: 1006px;}
+  .home .page-addon .addon-list {column-gap: 24px;}
+  .home .page-addon .addon-list .addon-item .addon-item-wrap {padding: 30px 27px 24px;}
+  .home .page-addon .section.conversion-service {width: 1006px;}
+  .home .page-addon .section .section-wrap {width: 1006px;}
+  #page.page-benefit.page-benefit-legal {max-width: 1006px;}
+  #page.page-customer {max-width: 1006px;}
 }
 
 @media (max-width: 1023px) {
