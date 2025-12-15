@@ -8260,6 +8260,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   max-width: 480px !important;
 }
 #oacxEmbededContentsNewTemp .btnArea button .btn-label {padding-left: 1rem !important;}
+#oacxEmbededContentsNewTemp .modal.bottom-sheet .modal-header h5 {font-size: 1.4em !important;}
 
 @media (max-width: 768px) {
   /* 인증 방법 선택 */
