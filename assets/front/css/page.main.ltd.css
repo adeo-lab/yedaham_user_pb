@@ -185,10 +185,10 @@
 .ltd .main-cont06 .m-service-list li {width: 282px;}
 .ltd .main-cont06 .m-service-list li .in-bx {height: 170px; padding: 32px; background: #F5F5F7; border-radius: 12px; /*border-bottom: 3px solid #444;*/ text-align: center; box-sizing: border-box;}
 .ltd .main-cont06 .m-service-list li .in-bx .bx-icon {width: 32px; height: 32px; margin: 0 auto 6px auto;}
-.ltd .main-cont06 .m-service-list li:nth-child(1) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/Icon_main01_01.png') no-repeat center; background-size: 100%;}
-.ltd .main-cont06 .m-service-list li:nth-child(2) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/Icon_main01_02.png') no-repeat center; background-size: 100%;}
-.ltd .main-cont06 .m-service-list li:nth-child(3) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/Icon_main01_03.png') no-repeat center; background-size: 100%;}
-.ltd .main-cont06 .m-service-list li:nth-child(4) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/Icon_main01_04.png') no-repeat center; background-size: 100%;}
+.ltd .main-cont06 .m-service-list li:nth-child(1) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/icon_main01_01.png') no-repeat center; background-size: 100%;}
+.ltd .main-cont06 .m-service-list li:nth-child(2) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/icon_main01_02.png') no-repeat center; background-size: 100%;}
+.ltd .main-cont06 .m-service-list li:nth-child(3) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/icon_main01_03.png') no-repeat center; background-size: 100%;}
+.ltd .main-cont06 .m-service-list li:nth-child(4) .in-bx .bx-icon {background: url('../../../assets/front/images/ltd/icon_main01_04.png') no-repeat center; background-size: 100%;}
 .ltd .main-cont06 .m-service-list li .in-bx .tx01 {font-weight: 600; font-size: 32px; color: #3A456D; line-height: 130%;}
 .ltd .main-cont06 .m-service-list li .in-bx .tx02 {font-weight: 600; font-size: 17px; color: #444; line-height: 150%;}
 

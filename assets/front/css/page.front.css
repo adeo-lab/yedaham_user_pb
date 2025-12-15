@@ -7348,7 +7348,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .board-view-ty01 .content-area .tp-info dl {padding-bottom: 12px;}
   .home .board-view-ty01 .content-area .tp-info dt {font-size: 15px;}
   .home .board-view-ty01 .content-area .tp-info dd  {font-size: 15px;}
-  .home .board-view-ty01 .content-area .bx-cont {font-size: 15px; padding-top: 0; padding-bottom: 24px;}
+  .home .board-view-ty01 .content-area .bx-cont {font-size: 15px; padding-top: 0; padding-bottom: 38px /*24px*/;}
   .home .board-view-ty01 .content-area .bx-cont-rep {padding: 20px; margin-bottom: 60px;}
   .home .board-view-ty01 .content-area .bx-cont-rep dt {font-size: 15px;}
   .home .board-view-ty01 .content-area .bx-cont-rep dt span.date {position: relative; top: auto; right: auto; display: block; font-size: 14px; padding-top: 8px;}
