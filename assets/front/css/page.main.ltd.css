@@ -480,5 +480,73 @@
 }
 
 
+/* 중간 사이즈 */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .ltd #header .header-inner {width: 1006px; column-gap: 22px;}
 
+  .ltd .y-news-wrap .inner-bx {max-width: 1006px;}
 
+  .ltd .search-layer .search-inner-wrap .search-inner-bx {width: 1006px;}
+
+  .ltd #footer .footer-inner {max-width: 1006px;}
+
+  .ltd .quick-menu {right: 10px;}
+  .ltd .quick-menu .consult {width: 42px; height: 42px; margin-bottom: 10px;}
+  .ltd .quick-menu .consult::before {width: 42px; height: 42px; background-size: 24px;}
+  .ltd .quick-menu .consult .quick-text {font-size: 12px; color: #000; margin-top: 9px; display: block;}
+  .ltd .quick-menu .quick-wrap {gap: 16px !important;}
+  .ltd .quick-menu .quick-list .quick-text {font-size: 12px;}
+  .ltd .quick-menu .quick-list .quick-text::before {width: 42px; height: 42px; background-size: 24px;}
+  .ltd .quick-menu .btn-to-top {width: 42px; height: 42px;}
+  .ltd .quick-menu.show .btn-to-top {height: 42px;}
+  .ltd .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+
+  .ltd .container {padding-left: 0; padding-right: 0;}
+
+  /*.ltd .tab-display.tab-fixed.fixed .tab-list {width: 1006px;}
+  .ltd .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {max-width: 1006px;}
+  .ltd .tab-display.style-c .tab-list .tab-item {padding-right: 22px;}
+  .ltd .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap {max-width: 1006px; margin: 0 auto;}
+  .ltd .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .tab-display.tab-fixed.fixed + .btn-r-ty01 {right: calc(100% - 1064px);}*/
+
+  .ltd .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {max-width: 1006px;}
+  .ltd .container.ty-wide .tab-display.style-c {max-width: 1006px;}
+
+  .ltd .content-popup[data-popup="contentFuneralService"] .popup-wrap.large {max-width: 766px;}
+
+  /* 메인 */
+  .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap01 {max-width: 1006px /*1078px*/;}
+  .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 .inner-bx {max-width: 1006px;}
+
+  .ltd .main-vis-wrap .main-vis .vis-img-pc {width: 100%; height: 203px;}
+  .ltd .main-vis-wrap .main-vis img{width: 100%; height: 100%; object-fit: cover;}
+
+  .ltd .main-container #page.page-main .main-inner-wrap .m-cont-wrap01::before {height: 190px;}
+
+  .ltd .main-cont06 .m-service-list li {width: 100%;}
+  .ltd .main-cont06 .m-service-list li .in-bx {padding: 32px 0;}
+
+  .ltd .m-product-list01 .in-bx {padding: 32px 20px 20px;}
+  .ltd .m-product-list01 .in-bx:hover {padding: 31px 19px 19px;}
+
+  /* 공통 */
+  .ltd #page.page-policy {max-width: 1006px;}
+  .ltd .page-policy .page-head-bottom p.ty01 {max-width: 759px;}
+  .ltd .search-result-wrap {max-width: 1006px;}
+  .ltd .content-popup .popup-wrap.board-review {max-width: 846px;}
+  .ltd .content-popup .popup-wrap.board-faq {max-width: 846px;}
+  .ltd .content-popup.photo .popup-wrap.photo {max-width: 846px;}
+  .ltd .content-popup.youtube .popup-wrap.youtube {max-width: 846px;}
+
+  /* 법인상품 */
+  .ltd .container.ty-wide #page.page-product {}
+  .ltd .container.ty-wide #page .page-head-wrap {max-width: 1006px;}
+  /*.ltd #page.page-product .page-body {max-width: 1006px;}*/
+  .ltd .page-product .section .section-wrap {max-width: 1006px;}
+  .ltd .section-top .product-list {gap: 28px;}
+  .ltd .section-top .product-item {width: 318px; padding: 40px 10px 32px;}
+  .ltd .number-yedaham-info .info-list {column-gap: 24px;}
+
+  /* 자주하는 질문 */
+  #page.page-customer {max-width: 1006px;}
+}

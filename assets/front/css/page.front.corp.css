@@ -5389,6 +5389,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .apw-board-write .form.textarea .form-elem {height: 136px;}
 .corp .apw-board-write .form.textarea .form-elem.ty-s01 {height: 110px;}
 .corp .apw-board-write .form.textarea .tp-tx01 {font-weight: 600; font-size: 19px; color: #232527; line-height: 150%; padding: 0 0 8px 0;}
+.corp .apw-board-write .form.textarea .tp-tx02 {font-weight: 400; font-size: 19px; color: #E94543; line-height: 150%; padding: 0 0 24px 24px;}
+.corp .apw-board-write .form.textarea .tp-tx02 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.4898 0.201994C12.0235 0.562783 12.1605 1.28328 11.7958 1.81126L5.797 10.4954C5.60052 10.7798 5.28619 10.9629 4.93944 10.995C4.59268 11.027 4.24952 10.9046 4.00318 10.6611L0.343089 7.04273C-0.114161 6.59069 -0.114393 5.85756 0.342572 5.40524C0.799537 4.95292 1.54066 4.95269 1.99791 5.40473L4.66012 8.0366L9.86298 0.504727C10.2277 -0.0232568 10.956 -0.158795 11.4898 0.201994Z' fill='%23E94543'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left top 9px;
+  background-size: 12px 11px;
+}
 .corp .apw-board-write .form.textarea .btm-tx01 {font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding: 8px 0 0 0; text-align: right;}
 .corp .apw-board-write .bx-address {display: flex; column-gap: 12px; align-items: center; margin-bottom: 8px;}
 .corp .apw-board-write .bx-address:last-child {margin-bottom: 0;}
@@ -5457,6 +5464,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .corp .apw-board-write .form.input.datepicker {flex: 1 1 100%}
   .corp .apw-board-write .form.radio .form-text {font-size: 16px;}
   .corp .apw-board-write .form.textarea .tp-tx01 {font-size: 16px;}
+  .corp .apw-board-write .form.textarea .tp-tx02 {font-size: 16px; background-position: left top 6px;}
   /* .corp .apw-board-write .bx-address:has(.btn-search-address) .bx01 {flex: 1 1 100%;}
   .corp .apw-board-write .bx-address .btn-search-address {flex-shrink: 0;} */
 }

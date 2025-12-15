@@ -512,9 +512,39 @@
 }
 
 
+/* 중간 사이즈 */
 @media (min-width: 1024px) and (max-width: 1280px) {
-  #header .header-inner {width: 1006px; column-gap: 22px;}
+  .home #header .header-inner {width: 1006px; column-gap: 22px;}
+  
+  .home .header .nav-layer .inner-bx-l {width: 1006px;}
+  .home .header .nav-layer .inner-bx-l > ul {column-gap: 0;}
 
+  .home .y-news-wrap .inner-bx {max-width: 1006px;}
+
+  .home .search-layer .search-inner-wrap .search-inner-bx {width: 1006px;}
+
+  .home #footer .footer-inner {max-width: 1006px;}
+
+  .home .quick-menu {right: 10px;}
+  .home .quick-menu .quick-list .quick-text {font-size: 12px;}
+  .home .quick-menu .quick-list .quick-text::before {width: 42px; height: 42px; background-size: 24px;}
+  .home .quick-menu .btn-to-top {width: 42px; height: 42px;}
+  .home .quick-menu.show .btn-to-top {height: 42px;}
+  .home .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+
+  .home .container {padding-left: 0; padding-right: 0;}
+
+  .home .tab-display.tab-fixed.fixed .tab-list {width: 1006px;}
+  .home .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {max-width: 1006px;}
+  .home .tab-display.style-c .tab-list .tab-item {padding-right: 22px;}
+  .home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap {max-width: 1006px; margin: 0 auto;}
+  .home .container.ty-wide #page.page-info .page-body-wrap.no-bg .tab-wrap .tab-display.tab-fixed.fixed + .btn-r-ty01 {right: calc(100% - 1064px);}
+
+  .home .content-popup[data-popup="contentFuneralService"] .popup-wrap.large {max-width: 766px;}
+
+  /* 메인 */
+  .home .main-vis-wrap .main-vis .vis-img-pc {width: 100%; height: 203px;}
+  .home .main-vis-wrap .main-vis img {width: 100%; height: 100%; object-fit: cover;}
   .home .main-container #page.page-main .main-inner-wrap .m-cont-wrap01 {max-width: 1006px /*1078px*/;}
   .home .main-container #page.page-main .main-inner-wrap .m-cont-wrap02 .inner-bx {max-width: 1006px;}
   .home .main-cont01 {gap: 22px;}
@@ -524,31 +554,42 @@
   .home .m-product-list01 > ul {gap: 24px;}
   .home .m-product-list01 li {width: 319px;}
   .home .m-product-list01 .in-bx {width: 100%;}
-  
-  .home .header .nav-layer .inner-bx-l > ul {column-gap: 0;}
 
-  .home .main-vis-wrap .main-vis .vis-img-pc {width: 100%; height: 203px;}
-  .home .main-vis-wrap .main-vis img {width: 100%; height: 100%; object-fit: cover;}
-
-  .home .y-news-wrap .inner-bx {max-width: 1006px;}
-
-  #footer .footer-inner {max-width: 1006px;}
-
-  .home .quick-menu {right: 10px;}
-  .home .quick-menu .quick-list .quick-text {font-size: 12px;}
-  .home .quick-menu .quick-list .quick-text::before {width: 42px; height: 42px; background-size: 24px;}
-  .home .quick-menu .btn-to-top {width: 42px; height: 42px;}
-  .home .quick-menu.show .btn-to-top {height: 42px;}
-  .home .quick-menu .btn-to-top .btn-text {font-size: 12px;}
+  /* 공통 */
+  .home #page.page-policy {max-width: 1006px;}
+  .home .page-policy .page-head-bottom p.ty01 {max-width: 759px;}
+  .home .search-result-wrap {max-width: 1006px;}
+  .home .content-popup .popup-wrap.board-review {max-width: 846px;}
+  .home .content-popup .popup-wrap.board-faq {max-width: 846px;}
+  .home .content-popup.photo .popup-wrap.photo {max-width: 846px;}
+  .home .content-popup.youtube .popup-wrap.youtube {max-width: 846px;}
 
   /* my */
-  .home .my-all-wrap {column-gap: 28px;}
-  .home .my-cont-wrap {width: 837px;}
-  .home .my-main-top-info .bx-r {width: 480px;}
-  .home .my-main-benefit .in-bx {width: 406px;}
+  .home #page.page-my {max-width: 1006px;}
+  .home .my-all-wrap {column-gap: 32px;}
+  .home .my-lnb-wrap {width: 160px;}
+  .home .my-lnb-wrap .my-lnb-tit {padding-left: 0;}
+  .home .my-lnb-wrap .my-lnb {padding-left: 0; padding-right: 0;}
+  .home .my-lnb-wrap .my-lnb-btm-area .btm-bx01 a.btn-Inquiry {font-size: 17px;}
+  .home .my-lnb-wrap .my-lnb-btm-area .btm-bx02 {padding: 24px 0;}
+  .home .my-lnb-wrap .my-lnb-btm-area .btm-bx02 .tx01 {font-size: 17px;}
+  .home .my-cont-wrap {width: 781px /*837px*/;}
+  .home .my-main-top-info .bx-l {width: 219px;}
+  .home .my-main-top-info .bx-r {width: 390px;}
+  .home .my-main-benefit ul {gap: 18px;}
+  .home .my-main-benefit .in-bx {width: 381px;}
+  .home .my-main-benefit .in-bx .bx-btn .tx-l {font-size: 16px;}
+  .home .filter-wrap .filter-range li {width: 83px;}
+  .home .filter-wrap .filter-range li.custom {width: 321px;}
+  /*.home .filter-wrap .filter-range {flex-wrap: wrap;}*/
 
   /* 상품 */
-  .vis-r-info {width: 580px;}
+  .home .product-list01 {width: 1006px;}
+  .home .product-list01 > ul {gap: 28px;}
+  .home .product-list01 .in-bx {width: 316px; padding: 40px 0 32px 0;}
+  .home .product-list01 .in-bx:hover {padding: 39px 0 31px 0;}
+  .home .product-list01 .in-bx .btm-btns {padding-left: 22px; padding-right: 22px;}
+  .home .vis-r-info {width: 580px;}
   .home .pr-visual-wrap .pr-visual-in-bx {max-width: 1006px;}
   .home .container.ty-wide.product-detail .cont-wrap {width: 1006px; padding-left: 0; padding-right: 0;}
   .home .why-y-wrap .why-y-list ul li .in-bx {padding: 24px;}
@@ -557,13 +598,9 @@
   .home .pr-btm-tx-wrap .pr-btm-tx-in-bx {max-width: 1006px;}
   .home .review-display-wrap .review-display.masonry.in-product .review-list .review-item {width: 229px;}
   .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {align-items: flex-start; flex-direction: column; row-gap: 8px;}
-  .home .tab-display.style-c.tab-fixed.fixed .tab-inner-bx {max-width: 1006px;}
-  .home .tab-display.style-c .tab-list .tab-item {padding-right: 28px;}
 
   .home .container.ty-wide #page .page-head-wrap {max-width: 1006px;}
   .home .container.ty-wide #page .page-body-wrap .inner-bx {max-width: 1006px;}
-
-  .home .tab-display.tab-fixed.fixed .tab-list {width: 1006px;}
 
   /* my */
   .home .easy-join-wrap .easy-join-left-side {width: 652px; padding: 24px;}
@@ -576,16 +613,29 @@
   .home .ej-inp-detail .bx-in-cnt01 .btm-area.ty02 a.btn-view-detail {width: 86px;}
 
   /* 이벤트 */
+  .home #page.page-benefit {max-width: 1006px;}
+  .home #page.page-customer {max-width: 1006px;}
+  .home .membership-list ul {column-gap: 30px;}
+  .home .membership-list li {width: 315px;}
+  .home .membership-list li.first {width: 660px;}
+  .home .membership-list li .in-bx .thum {height: 292px;}
   .home .event-list ul {column-gap: 36px;}
-  .home .event-list li {width: 533px;}
-  .home .event-list li .in-bx .thum {height: 240px;}
+  .home .event-list li {width: 464px;}
+  .home .event-list li .in-bx .thum {height: 209px;}
   .home .page-addon .section.section-top .section-wrap {width: 1006px;}
   .home .page-addon .addon-list {column-gap: 24px;}
   .home .page-addon .addon-list .addon-item .addon-item-wrap {padding: 30px 27px 24px;}
   .home .page-addon .section.conversion-service {width: 1006px;}
   .home .page-addon .section .section-wrap {width: 1006px;}
-  #page.page-benefit.page-benefit-legal {max-width: 1006px;}
-  #page.page-customer {max-width: 1006px;}
+  .home .card-list-wrap {margin: -16px -16px 0 -16px;}
+
+  /* 장례정보 */
+  .home .proceeding-wrap {max-width: 1006px; column-gap: 80px;}
+  .home .proceeding-wrap .pr-l-txt {width: 290px;}
+  .home .ritual-contents .section {width: 1006px; margin: 0 auto;}
+  .home .f-map-wrap {column-gap: 28px;}
+  .home .f-map-wrap .map-bx-l {width: 596px;}
+  .home .facility-list {width: 340px;}
 }
 
 @media (max-width: 1023px) {
