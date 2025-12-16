@@ -8223,6 +8223,35 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+/* 신규 게시글 */
+.home .board-view .board-view-content .board-content .ty-pc {display: block;}
+.home .board-view .board-view-content .board-content .ty-mob {display: none;}
+@media (max-width: 1023px) {
+  .home .board-view .board-view-content .board-content .ty-pc {display: none;}
+  .home .board-view .board-view-content .board-content .ty-mob {display: block;}
+}
+
+
+/* 기획팀 요청 */
+.event-marketing-consent {
+  position: absolute;
+  left: 6.4%;
+  top: 14.6%;
+  width: 24%;
+  height: 1.7%;
+}
+ 
+ 
+@media (max-width: 1200px) {
+	.event-marketing-consent {    
+		left: 15%;
+		top: 13.7%;
+		width: 70%;
+		height: 1.2%;
+	}
+}
+
+
 
 
 
