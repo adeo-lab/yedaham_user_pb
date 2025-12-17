@@ -5065,6 +5065,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::before, 
 .home .ej-pay-wrap .btm-ck-tx > div .form.checkbox .form-text::after {top: 3px;}
 
+@media (max-width: 1023px) {
+  .home .ej-pay-wrap .board-write-ty01 .bx-transfer ul {column-gap: 8px;}
+}
+
 .home .ej-end-wrap {width: 792px; padding: 40px; margin: 0 auto; background: #fff; border-radius: 16px;}
 .home .ej-end-wrap .top-tx {padding: 12px 0; margin-bottom: 48px; text-align: center;}
 .home .ej-end-wrap .top-tx .tx01 {font-weight: 600; font-size: 32px; color: #B80; line-height: 130%;}
@@ -5226,7 +5230,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag.finance {background: #FBEEED;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag.hotel {background: #EAF9FF;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-flag span.flag.health {background: #E9F5EC;}
-.home .benefit-detail-wrap .area-right .membership-detail .bx-tit {font-weight: 600; font-size: 30px; line-height: 130%; padding-bottom: 32px;}
+.home .benefit-detail-wrap .area-right .membership-detail .bx-tit {font-weight: 600; font-size: 40px /*30px*/; line-height: 130%; padding-bottom: 32px;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-tit br {display: none;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-logo {padding: 0 0 20px 0;}
 .home .benefit-detail-wrap .area-right .membership-detail .bx-logo img {height: 72px;}
@@ -8452,4 +8456,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p {
     font-size: 1rem !important;
   }
+}
+
+
+/* 1920보다 큰 경우 */
+@media screen and (min-width: 1921px) {
+  .home .benefit-detail-wrap .area-right {max-width: 2000px;}
+  .home .content-popup.full-s .popup-wrap.service-component .popup-body {height: calc(100vh - 71.2px);}
+  .content-popup .popup-wrap.service-component .popup-body .popup-contents {height: 100%;}
+  .home .product-pop-detail-wrap {height: calc(100% - 142.5px - 96.7px);}
+  .home .product-pop-detail-wrap .bx-left-side {height: 100%;}
+  .home .product-pop-detail-wrap .bx-left-side .product-detail-thum {height: 100%; padding-bottom: 60px;}
+  .home .product-pop-detail-wrap .bx-left-side .product-detail-thum .swiper-wrapper {height: 100%;}
+  .home .product-pop-detail-wrap .bx-left-side .product-detail-thum li {height: 100%; display: flex; align-items: center;}
+  .home .product-pop-detail-wrap .bx-left-side .product-detail-thum li .img-thum {max-width: 740px;}
 }
