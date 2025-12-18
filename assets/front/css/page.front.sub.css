@@ -666,7 +666,7 @@
     .home .apply-check-tb .list-th:not(:first-of-type) + .list-td {border-top: 1px solid rgba(19, 21, 23, 0.20);}
     .home .apply-check-tb .list-td {word-break: break-all;}
     .home .apply-check-tb .list-tb-title {font-size: 17px;}
-    .home .apply-check-tb .list-th, .apply-check-tb .list-td {font-size: 15px; padding-top: 8px; padding-bottom: 8px; /*width: 115px;*/ word-break: keep-all;}
+    .home .apply-check-tb .list-th, .apply-check-tb .list-td {font-size: 15px; padding-top: 8px; padding-bottom: 8px; width: 115px; word-break: keep-all;}
     .home .apply-check-box .order-item {font-size: 15px;}
     .home .apply-check-box .txt-astr {font-size: 15px;}
 
