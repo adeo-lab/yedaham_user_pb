@@ -293,7 +293,7 @@
 .ltd .section-top .product-body .button-area {display: flex; margin-top: 32px;}
 .ltd .section-top .product-body .button-area .btn-apply {flex: 1 1 100%; display: flex; justify-content: center; align-items: center; height: 48px; padding: 0 32px; box-sizing: border-box; border-radius: 8px; background-color: #6A75A0;}
 .ltd .section-top .product-body .button-area .btn-apply:hover {background: #5F6990;}
-.ltd .section-top .product-body .button-area .btn-apply .btn-text {font-size: 19px; font-weight: 600; line-height: 1.5; color: #fff;}
+.ltd .section-top .product-body .button-area .btn-apply {font-size: 19px; font-weight: 600; line-height: 1.5; color: #fff;}
 
 .ltd .custom-product .service-list {display: grid; grid-template-columns: repeat(5, 200px); justify-content: space-between; margin: 32px 0;}
 .ltd .custom-product .service-list .service-item {display: flex; flex-direction: column; gap: 16px; align-items: center; width: 100%; padding: 24px 8px; box-sizing: border-box; font-size: 22px; font-weight: 600; line-height: 1.3; color: #232527;}
@@ -500,7 +500,7 @@
     .ltd .section-top .product-body .dot-list li {font-size: 14px;}
     .ltd .section-top .product-body .button-area {margin-top: 24px;}
     .ltd .section-top .product-body .button-area .btn-apply {height: 40px; padding: 0 24px;}
-    .ltd .section-top .product-body .button-area .btn-apply .btn-text {font-size: 15px;}
+    .ltd .section-top .product-body .button-area .btn-apply {font-size: 15px;}
 
     .ltd .custom-product .service-list {grid-template-columns: repeat(auto-fit, minmax(90px, 120px)); row-gap: 16px;}
     .ltd .custom-product .service-list .service-item {gap: 8px; padding: 0; font-size: 15px; line-height: 1.5;}

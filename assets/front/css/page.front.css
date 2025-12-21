@@ -8456,6 +8456,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   #oacxEmbededContentsNewTemp.mobile .modal.modal-alert .modal-body p {
     font-size: 1rem !important;
   }
+
+  /* 약관 */
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-policy .modal-header h5 {font-size: 1.4rem !important;}
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-policy .modal-body ul li h2 p {font-size: 1.2rem !important;}
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-policy .modal-body ul li ul li {font-size: 0.9rem !important;}
+  #oacxEmbededContentsNewTemp .modal.modal-policy .policy-list-select .policy-title {margin-right: 1rem !important;}
+  #oacxEmbededContentsNewTemp.mobile .modal.modal-policy .modal-body ul li ul li span, #oacxEmbededContentsNewTemp.mobile .modal.modal-policy .modal-body ul li ul li>p {font-size: 0.9rem !important;}
 }
 
 

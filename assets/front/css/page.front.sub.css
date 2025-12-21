@@ -671,6 +671,7 @@
     .home .apply-check-tb .list-th, .apply-check-tb .list-td br {display: block;}
     .home .apply-check-box .order-item {font-size: 15px;}
     .home .apply-check-box .txt-astr {font-size: 15px;}
+    .home .apply-check-tb .list-th br {display: block;}
 
     .home .privacy-agreement-summary {font-size: 15px;}
     .home .apply-check-box {padding: 16px;}
