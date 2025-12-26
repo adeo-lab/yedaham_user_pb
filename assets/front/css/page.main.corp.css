@@ -433,6 +433,114 @@
 }
 
 
+/* 중간 사이즈 */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .corp #footer .footer-inner {max-width: 1006px;}
+
+  .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item {padding: 0 14px;}
+  .corp #header .header-inner .gnb .gnb-list .in-nav .gnb-item .gnb-text {font-size: 20px;}
+  .corp #header .header-inner .gnb .gnb-list.active .in-nav .gnb-item {padding: 0 20px; box-sizing: border-box;}
+
+  .corp #header .header-inner {width: 1006px;}
+  .corp #header .header-inner .logo {left: 0;}
+  .corp #header .header-inner .navi-util {right: 0;}
+
+  /* 공통 */
+  .corp #page.page-policy {max-width: 1006px;}
+  .corp .page-policy .page-head-bottom p.ty01 {max-width: 759px;}
+  .corp .search-result-wrap {max-width: 1006px;}
+  .corp .content-popup .popup-wrap.board-review {max-width: 846px;}
+  .corp .content-popup .popup-wrap.board-faq {max-width: 846px;}
+  .corp .content-popup.photo .popup-wrap.photo {max-width: 846px;}
+  .corp .content-popup.youtube .popup-wrap.youtube {max-width: 846px;}
+
+  /* ceo 인사말 */
+  .corp .about-cont-wrap01 .in-bx dl {width: 1006px; box-sizing: border-box;}
+  .corp .about-cont04 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .about-cont05 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .about-cont06 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .about-cont07 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .about-cont08 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .about-cont09-wrap .about-cont09 {width: 1006px; padding: 0 0 0 480px; margin: 0 auto; box-sizing: border-box;}
+  .corp .about-cont09-wrap .about-cont09 .bx-left {width: 440px;}
+  .corp .about-cont09-wrap .about-cont09 .bx-left .tx01 {font-size: 34px;}
+  .corp .about-cont09-wrap .about-cont09 .bx-left .tx02 {font-size: 18px;}
+  .corp .about-cont09-wrap .about-cont09 .bx-left .in-list-fam li span {font-size: 16px;}
+  .corp .about-cont09-wrap .about-cont09 .bx-right {width: 526px; max-height: 1000px; padding: 24px;}
+  .corp .about-cont09-wrap .about-cont09 .bx-right .detail-list .line-item {flex-wrap: wrap; gap: 12px;}
+  .corp .history-list-ty01 .bx-img-l .h-in-bx {width: 300px;}
+  .corp .about-cont04 .history-list-ty01 .bx-img-l .h-in-bx {font-size: 100px;}
+
+  /* 주요 재무현황 */
+  .corp .financial-wrap01 .financial-inner-bx {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .financial-cont01 .table-wrap .w-ty01 {width: 125px;}
+  .corp .financial-cont01 .table-wrap table.cont-tb-ty01 tbody td .in-sepa-bx .bx-l {width: 140px;}
+  .corp .media-tp-search {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .report-display-wrap {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+
+  /* 지속가능경영 */
+  .corp .cibi-cont-wrap {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain02 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain02 .in-bx.ty01 .bx-img {margin-left: 0;}
+  .corp .cont-sustain02 .in-bx.ty02 .bx-img {margin-left: 0;}
+  .corp .history-list-ty01 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .history-list-ty01 .bx-img-l {width: 565px;}
+  .corp .cont-sustain03 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain03 .in-img-wrap {width: 100%;}
+  .corp .cont-sustain03 .btm-round-bx {width: 100%;}
+  .corp .cont-sustain03 .btm-round-bx .in-bx {padding-left: 48px; column-gap: 28px;}
+  .corp .cont-sustain04 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain05 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain06 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain07 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .page-body-inner-bx03 .cont-sustain09 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .donation-status-bnr {width: 1006px; box-sizing: border-box;}
+  .corp .media-tp-head {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .media-display-wrap {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .board-view {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .cont-sustain07 .in-img-wrap {padding: 0 32px;}
+  .corp .cont-sustain07 .in-img-wrap .img-inner {width: 100%;}
+  .corp .cont-sustain07 .in-img-wrap .in-bx {width: 160px;}
+  .corp .cont-sustain07 .in-img-wrap .in-bx .bx-tp {font-size: 22px;}
+  .corp .cont-sustain07 .in-img-wrap .bx-arr {width: 36px;}
+  .corp .cont-sustain08 .in-list-ty01 .in-n-bx > dl > dt {width: 245px;}
+
+  .corp .cibi-cont-wrap .in-bx > dl {padding-left: 31.888vw;}
+  .corp .cibi-cont-wrap .in-bx > dl > dt {width: 346px;}
+
+  /* 인재채용 */
+  .corp .careers-cont01 {width: 1006px; box-sizing: border-box;}
+  .corp .careers-cont01 .in-bx {width: 100%;}
+  .corp .careers-cont02 {width: 1006px; box-sizing: border-box;}
+  .corp .careers-cont02 dl {padding-left: 288px;}
+  .corp .careers-cont03 {width: 1006px; box-sizing: border-box;}
+  .corp .careers-cont03 .c-grp-bx {width: 100%;}
+  .corp .careers-cont03 .c-grp-bx li .bx-txt {width: 184px;}
+  .corp .careers-cont03 .c-grp-bx li .bx-empty {width: 184px;}
+  .corp .careers-area {width: 1006px; box-sizing: border-box;}
+  .corp .careers-area .careers-body .team-head {width: 356px;}
+  .corp .careers-list01 {width: 1006px; margin: 0 auto; box-sizing: border-box;}
+  .corp .app-write-wrap01 {width: 1006px;}
+  .corp .app-write-wrap01 .tp-step-wrap {height: auto; align-items: flex-start; flex-direction: column;}
+  .corp .title-step01 ul {width: 100%; margin-top: 20px;}
+  .corp .title-step01 li br {display: none;}
+  .corp .title-step01 li.dots {width: 28px;}
+  .corp .apw-board-write dl {padding-left: 258px;}
+  .corp .apw-board-write .form.input.ty-s01 {width: 148px;}
+  .corp .apw-board-write dd .line-item .in-bx .bx-td {width: 620px;}
+  .corp .apw-board-write dd .line-item.sepa .in-bx .bx-td {width: 215px;}
+  .corp .apw-board-write .bx-address .bx02 {width: 344px;}
+  .corp .apw-board-write .bx-address .bx03 {width: 300px;}
+  .corp .apw-board-write .bx-two-inp .bx01 {width: 86px;}
+  .corp .apw-top-round-bx .bx-l {width: 620px;}
+  .corp .apw-board-write .bx-gray-com ul {column-gap: 18px;}
+  .corp .apw-board-write .bx-gray-com li {width: calc(50% - 9px);}
+  .corp .apw-board-write .bx-gray-com li > .in-bx > .s-tit-l {width: 134px;}
+  .corp .apw-board-write .form.radio .form-text {margin-right: 12px;}
+  .corp .apw-board-write dd .bx-add-gray01 .line-item.sepa {flex-direction: column; gap: 24px;}
+}
+
+
 /* keyframes */
 @keyframes slidedown {
   0% {
