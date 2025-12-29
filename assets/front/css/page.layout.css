@@ -23,12 +23,18 @@ body { position: relative; width: 100%; }
 
 body.hidden { overflow: hidden; touch-action: none;}
 
-#wrap { overflow: clip; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; min-height: calc(var(--vh, 1vh) * 100); }
+#wrap { overflow: clip; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; min-height: calc(var(--vh, 1vh) * 100); word-break: keep-all;}
 
 .skip { position: fixed; top: -50px; left: 0; z-index: 10000; width: 100%; height: 50px; background-color: var(--color-base-000); }
 .skip a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: var(--color-base-000); color: var(--color-base-100); text-decoration: underline; text-align: center; }
 .skip a:not(:focus) { top: -50px; }
 .skip:focus-within { top: 0; }
+
+@media (max-width: 1023px) {
+	.br-pc-only {
+		display: none;
+	}
+}
 
 
 /********************************************************************************************************************************
