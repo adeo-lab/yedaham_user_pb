@@ -3290,6 +3290,10 @@ z-index: 10;
 .home .board-view-ty01 .title-area {padding-bottom: 24px; border-bottom: 1px solid rgba(19, 21, 23, 0.20);}
 .home .board-view-ty01 .title-area dt {font-weight: 600; font-size: 28px; color: #131517; line-height: 130%;}
 .home .board-view-ty01 .title-area dd {font-weight: 400; font-size: 15px; color: #444; line-height: 150%; padding: 16px 0 0 0; display: flex; column-gap: 0; align-items: center;}
+.home .board-view-ty01 .title-area dd  p.flag {display: inline-block; font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding:2px 12px; border-radius: 16px; max-width: 90px; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-right: 16px;}
+.home .board-view-ty01 .title-area dd  p.flag.ys4 {background: #DDE1FF;}
+.home .board-view-ty01 .title-area dd  p.flag.ys6 {background: #FFDAD6;}
+.home .board-view-ty01 .title-area dd  p.flag.nv {background: #F7DFB5;}
 .home .board-view-ty01 .content-area {padding: 24px 0 0 0;}
 .home .board-view-ty01 .content-area .tp-info {display: flex; column-gap: 32px;}
 .home .board-view-ty01 .content-area .tp-info dl {display: flex; column-gap: 16px; align-items: center;}
@@ -4058,7 +4062,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .view span.dot {width: 12px; height: 12px; margin-top: 5px;}
 
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info {position: relative; display: flex; align-items: center; width: 100%; padding-top: 16px; min-height: 26.5px; column-gap: 16px;}
-.home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag {display: inline-block; font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding:2px 12px; border-radius: 16px;}
+.home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag {display: inline-block; font-weight: 400; font-size: 15px; color: #232527; line-height: 150%; padding:2px 12px; border-radius: 16px; max-width: 90px; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag.ys4 {background: #DDE1FF;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag.ys6 {background: #FFDAD6;}
 .home .review-display.masonry .review-list .review-item .gallery-wrap .gallery-inform .btm-info p.flag.nv {background: #F7DFB5;}
