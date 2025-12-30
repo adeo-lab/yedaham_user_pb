@@ -1160,7 +1160,7 @@
 .home .ritual-writing-content .content-area .title {font-size: 24px; font-weight: 600; line-height: 1.3; color: #D17B47; text-align: center;}
 .home .ritual-writing-content .content-area .content {display: flex; justify-content: center;}
 .home .ritual-writing-content .content-area .content .ch {font-family: "Noto Serif SC", serif; font-size: 28px; font-weight: 700; line-height: 1.5; color: #232527; letter-spacing: 2px; text-align: center;}
-.home .ritual-writing-content .content-area .content .para {font-size: 22px; font-weight: 600; line-height: 1.3; color: #444; text-align: center;}
+.home .ritual-writing-content .content-area .content .para {font-size: 22px; font-weight: 600; line-height: 1.3; color: #444; text-align: center; word-break: normal;}
 
 .home .ritual-writing-content.type-a {grid-template-columns: repeat(4, 1fr);}
 .home .ritual-writing-content.type-a .content-area {gap: 32px;}
