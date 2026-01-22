@@ -209,6 +209,11 @@ const headerNavigation = function (useFullLink) {
 						${createMenuLink("common/FO_Y_ZR_001_P.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">인증번호 확인</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-22 추가</span></p>
+						${createMenuLink("common/FO_Y_ZR_001_P_n.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">알럿</span></p>
 						${createMenuLink("common/alert.html", useFullLink)}
 					</div>
