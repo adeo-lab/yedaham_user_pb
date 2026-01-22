@@ -395,6 +395,7 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step03. 정보입력* > 계약내용 확인​</span></p>
 						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-20 수정</span></p>
 						${createMenuLink("direct/FO_Y_DC_001_n.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
@@ -423,10 +424,12 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료*</span></p>
 						<p class="g-sub-edit"><span class="em">주석: 1117 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-21 수정</span></p>
 						${createMenuLink("direct/FO_Y_DE_001.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">Step05. 계약완료 > 혜택 안내 (16p)</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-21 수정</span></p>
 						${createMenuLink("direct/FO_Y_DF_001_L.html", useFullLink)}
 					</dl>
 					<dl class="g-sub-wrap" data-status="완료">

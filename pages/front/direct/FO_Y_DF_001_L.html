@@ -75,9 +75,11 @@
 		<div class="popup-wrap small center">
 			<div class="popup-header">
 				<p class="popup-subject blind">혜택 안내</p>
-				<button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button>
+				<!-- <button type="button" class="btn-popup-close" title="팝업창 닫기">팝업창 닫기</button> --> <!-- 2026-11-21 -->
 			</div>
-			<div class="popup-body">
+			<div class="popup-body" style="-webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+        overflow-y: overlay;">
 				<div class="popup-contents">
                     <div class="my-guide">
                         <div class="my-guide-wrap">
@@ -96,6 +98,15 @@
 				<div class="button-area">
 					<a href="#" class="btn-popup btn-primary"><span class="btn-name">확인</span></a>
 				</div>
+				<!-- 2026-11-21 -->
+				<div class="popup-footer-n">
+					<label class="popup-today">
+						<input class="form-elem" type="checkbox" name="todayClose">
+						<span class="form-text">오늘 하루 보지 않음&ZeroWidthSpace;</span>
+					</label>
+					<span class="button-area"><button type="button" class="btn-popup-close" title="팝업창 닫기"><span class="btn-text blind">팝업창 닫기</span></button></span>
+				</div>
+				<!-- //2026-11-21 -->
 			</div>
 		</div>
 	</div>

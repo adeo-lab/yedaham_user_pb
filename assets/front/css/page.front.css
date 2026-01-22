@@ -8482,3 +8482,42 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .home .product-pop-detail-wrap .bx-left-side .product-detail-thum li {height: 100%; display: flex; align-items: center;}
   .home .product-pop-detail-wrap .bx-left-side .product-detail-thum li .img-thum {max-width: 740px;}
 }
+
+
+
+/* 1월 퍼블 운영 추가 */
+/* 2026-11-21 */
+.home .easy-join-wrap .easy-join-left-side .in-tit-bx.mt01 {margin-top: 48px;}
+.home .easy-join-wrap .easy-join-left-side .ej-cont-bx03.w50 li {width: 50%;}
+
+@media (max-width: 1023px) {
+  .home .easy-join-wrap .easy-join-left-side .ej-cont-bx03.w50 li {
+      width: calc(50% - 4px);
+  }
+}
+
+.bt-bx-gr-n {padding: 24px; margin: 0 0 10px 0; background: #F7F6F5; border-radius: 12px;}
+.bt-bx-gr-n .tx01 {position: relative; font-weight: 600; font-size: 19px; color: #AF5B27; line-height: 150%; padding-left: 28px;}
+.bt-bx-gr-n .tx01::before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 2px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10Z' fill='%23D17B47'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7514 6.33951C14.1161 6.58879 14.2098 7.08659 13.9605 7.45138L9.86052 13.4514C9.72622 13.6479 9.51139 13.7744 9.2744 13.7966C9.0374 13.8187 8.80286 13.7341 8.63449 13.5659L6.13293 11.0659C5.82041 10.7536 5.82025 10.247 6.13258 9.93452C6.4449 9.622 6.95143 9.62184 7.26395 9.93417L9.08349 11.7526L12.6395 6.54868C12.8888 6.18388 13.3866 6.09024 13.7514 6.33951Z' fill='white'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 20px;
+}
+.bt-bx-gr-n .tx02 {position: relative; font-weight: 600; font-size: 15px; color: #444; line-height: 130%; margin: 12px 0; padding-left: 20px;}
+.bt-bx-gr-n .tx02 a {text-decoration: underline;}
+.bt-bx-gr-n .tx02 a:hover {text-decoration: underline;}
+.bt-bx-gr-n .tx02::before {content: ''; position: absolute; top: 7px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
+.bt-bx-gr-n .tx03 {font-weight: 400; font-size: 15px; color: #444; line-height: 150%; padding-left: 20px;}
+.bt-bx-gr-n .tx03 li {position: relative; padding-left: 18px;}
+.bt-bx-gr-n .tx03 li span {font-weight: 600; color: #232527;}
+.bt-bx-gr-n .tx03 li:nth-child(1)::before {content: '①'; position: absolute; top: 0; left: 0;}
+.bt-bx-gr-n .tx03 li:nth-child(2)::before {content: '②'; position: absolute; top: 0; left: 0;}
+
