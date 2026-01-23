@@ -7175,9 +7175,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .apw-board-write .bx-add-n {display: flex; column-gap: 12px; align-items: center; margin-bottom: 8px;}
 .corp .apw-board-write .bx-add-n .btn-search-add {display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center;}
 .corp .apw-board-write .bx-add-n .bx01 {width: 811px;}
+.corp .apw-board-write .bx-add-n .bx02 {width: 745px;} /* 2026-11-21 */
 
 @media (max-width: 1023px) {
   .corp .apw-board-write .bx-add-n .bx01 {flex: 1 1 70%;}
+  .corp .apw-board-write .bx-add-n .bx02 {flex: 1 1 70%;} /* 2026-11-21 */
 }
 
 .corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn {padding: 0; border: 0; column-gap: 12px;}
