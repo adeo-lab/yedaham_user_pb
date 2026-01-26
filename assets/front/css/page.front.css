@@ -8570,8 +8570,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ex-top-wrap .ex-tp-cnt .cnt-product .bx-r dl:last-child dd {width: 158px; font-weight: 400; font-size: 17px; color: #232527; line-height: 150%; text-align:right;}
 .ex-top-wrap .ex-tp-cnt .btm-btn {position: relative; z-index: 2;}
 .ex-top-wrap .ex-tp-cnt .btm-btn a.btn-join {display: block; width: 336px; height: 78px; font-weight: 600; font-size: 22px; color: #fff; line-height: 78px; margin: 0 auto; background: #DA6A20; border-radius: 78px; text-align: center;}
-.ex-top-wrap .bx-bg01 {position: absolute; top: 47px; right: -84px; z-index: 3;}
-.ex-top-wrap .bx-bg01 img {width: 585px;}
+.ex-top-wrap .bx-bg01 {position: absolute; top: -10px; right: -195px; z-index: 3;}
+.ex-top-wrap .bx-bg01 img {width: 715px;}
 .ex-top-wrap .bx-bg02 {position: absolute; bottom: -40px; right: -116px;}
 .ex-top-wrap .bx-bg02 img {width: 733px;}
 
@@ -8653,9 +8653,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .ex-top-wrap .ex-tp-cnt .cnt-product .bx-r dl:last-child {padding-bottom: 0;}
   .ex-top-wrap .ex-tp-cnt .btm-btn {display: none;}
   .ex-top-wrap .ex-tp-cnt .btm-btn a.btn-join {width: 100%; height: 56px; font-size: 19px; line-height: 56px;}
-  .ex-top-wrap .bx-bg01 {position: relative; width: 100%; left: 0; right: auto; top: auto; text-align: center;}
+  .ex-top-wrap .bx-bg01 {position: relative; width: 100% /*397px*/; left: 0; right: auto; top: 1px; text-align: center;}
   .ex-top-wrap .bx-bg01 img {width: 380px; margin: 0 auto -27px auto;}
-  .ex-top-wrap .bx-bg02 {width: 130%; right: -24px; bottom: -39px;}
+  .ex-top-wrap .bx-bg02 {width: 465px; right: -15px; bottom: -39px;}
   .ex-top-wrap .bx-bg02 img {width: 100%;}
 
   .container.ex-container .ex-sec01 .in-wrap {padding: 48px 16px;}
