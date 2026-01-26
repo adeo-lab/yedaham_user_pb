@@ -7175,11 +7175,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .apw-board-write .bx-add-n {display: flex; column-gap: 12px; align-items: center; margin-bottom: 8px;}
 .corp .apw-board-write .bx-add-n .btn-search-add {display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center;}
 .corp .apw-board-write .bx-add-n .bx01 {width: 811px;}
-.corp .apw-board-write .bx-add-n .bx02 {width: 745px;} /* 2026-11-21 */
+.corp .apw-board-write .bx-add-n .bx02 {width: 745px;} /* 2026-01-21 */
 
 @media (max-width: 1023px) {
   .corp .apw-board-write .bx-add-n .bx01 {flex: 1 1 70%;}
-  .corp .apw-board-write .bx-add-n .bx02 {flex: 1 1 70%;} /* 2026-11-21 */
+  .corp .apw-board-write .bx-add-n .bx02 {flex: 1 1 70%;} /* 2026-01-21 */
 }
 
 .corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn {padding: 0; border: 0; column-gap: 12px;}
@@ -7188,7 +7188,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn::after {display: none; /*content: '파일선택'; display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center; mask: none;*/}
 .corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn label.btn-file-n {display: block; width: 123px; height: 48px; font-weight: 600; font-size: 17px; color: #fff; line-height: 48px;  background: #A0A0A0; border-radius: 8px; text-align: center; cursor: pointer;}
 .corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn label.btn-file-n:hover {background: #909090;}
-.corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn.invalid .form-text {border-color: var(--color-system-010);} /* 2026-11-20 */
+.corp .apw-board-write .bx-add-n .file-upload.ty-n .file-upload-btn.invalid .form-text {border-color: var(--color-system-010);} /* 2026-01-20 */
 
 .corp .apw-board-write .bx-tx-more.ty02 {padding-top: 20px; justify-content: flex-end;}
 
@@ -7218,7 +7218,7 @@ background-size: 16px;
 .corp .apw-board-write .add-paper .tx-bx-n li::before {content: ''; position: absolute; top: 11px; left: 4px; display: block; width: 4px; height: 4px; background: #232527; border-radius: 4px;}
 
 
-/* 2026-11-21 */
+/* 2026-01-21 */
 .popup-footer-n {display: flex; justify-content: space-between; align-items: center; height: 40px; padding: 0 16px; box-sizing: border-box; /*background-color: #444;*/ padding: 0 20px; margin: 40px -40px -40px -40px; border-top: 1px solid #ddd;}
 .popup-footer-n .popup-today {cursor: pointer;}
 .popup-footer-n .popup-today .form-elem {display: none;}

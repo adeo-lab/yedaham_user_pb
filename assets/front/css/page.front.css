@@ -8486,7 +8486,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 /* 1월 퍼블 운영 추가 */
-/* 2026-11-21 */
+/* 2026-01-21 */
 .home .easy-join-wrap .easy-join-left-side .in-tit-bx.mt01 {margin-top: 48px;}
 .home .easy-join-wrap .easy-join-left-side .ej-cont-bx03.w50 li {width: 50%;}
 
@@ -8522,14 +8522,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .bt-bx-gr-n .tx03 li:nth-child(2)::before {content: '②'; position: absolute; top: 0; left: 0;}
 
 
-/* 2026-11-22 */
+/* 2026-01-22 */
 .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 {width: 370px; padding-bottom: 37px;}
 .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n {display: flex; align-items: center; justify-content: space-between;}
 .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n .form.input {width: 280px;}
 .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n .tx-time {font-size: 17px; line-height: 150%;}
 
 
-/* 2026-11-25 */
+/* 2026-01-25 */
 .ex-top-wrap {/*height: 1052px;*/ padding: 0 0 40px 0; background: linear-gradient(180deg, rgba(214, 107, 57, 0.00) 52.85%, rgba(214, 107, 57, 0.20) 100%), #FBE8E2;}
 .ex-top-wrap .header {height: 72px; padding-top: 24px; box-sizing: border-box;}
 .ex-top-wrap .header .header-container {width: 1200px; padding: 0 0 0 32px; margin: 0 auto; box-sizing: border-box;}
@@ -8790,3 +8790,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .inpromo .container.ex-container .ex-sec01 .in-wrap .bt-notice {padding: 20px;}
   .inpromo .container.ex-container .ex-sec01 .in-wrap .bt-notice .bx-flag {position: relative; top: auto; left: auto; margin-bottom: 16px;}
 }
+
+
+/* 2026-01-25 */
+.home .board-write-ty01 .top-area .line-item dt.ty-tx-r {position: relative;}
+.home .board-write-ty01 .top-area .line-item dt.ty-tx-r .tx-r {position: relative; position: absolute; top: 0; right: 0; font-weight: 500; font-size: 17px; color: #E94543; line-height: 150%; padding-left: 29px;}
+.home .board-write-ty01 .top-area .line-item dt.ty-tx-r .tx-r::before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 24px;
+	height: 24px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM10 13C9.68928 13 9.41193 13.1419 9.22852 13.3643C9.20824 13.3888 9.18879 13.414 9.1709 13.4404C9.06292 13.6001 9 13.7927 9 14C9 14.2073 9.06292 14.3999 9.1709 14.5596C9.20682 14.6127 9.24778 14.6619 9.29297 14.707C9.47393 14.888 9.72386 15 10 15C10.5523 15 11 14.5523 11 14C11 13.4477 10.5523 13 10 13ZM10 5C9.44772 5 9 5.44772 9 6V11C9 11.5523 9.44772 12 10 12C10.5523 12 11 11.5523 11 11V6C11 5.44772 10.5523 5 10 5Z' fill='%23E94543'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+}
+@media (max-width: 1023px) {
+	.home .board-write-ty01 .top-area .line-item dt.ty-tx-r .tx-r {font-weight: 500; font-size: 13px;}
+	.home .board-write-ty01 .top-area .line-item dt.ty-tx-r .tx-r::before {top: 3px; width: 15px; height: 15px; background-size: 12.5px; padding-left: 19px;}
+}
+
+
+
