@@ -221,6 +221,21 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-title"><span class="em">토스트</span></p>
 						${createMenuLink("common/toast.html", useFullLink)}
 					</div>
+					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">공제회원 전용상품 히든 페이지</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-25 추가</span></p>
+						${createMenuLink("common/hidden01.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">공제회원 전용상품 히든 페이지 - 팝업 01</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-25 추가</span></p>
+						${createMenuLink("common/hidden01_L01.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="">
+						<p class="g-sub-title"><span class="em">공제회원 전용상품 히든 페이지 - 팝업 02</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-25 추가</span></p>
+						${createMenuLink("common/hidden01_L02.html", useFullLink)}
+					</div>
 				</div>
 			</li>
 
