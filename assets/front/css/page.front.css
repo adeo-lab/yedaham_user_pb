@@ -8528,6 +8528,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n .form.input {width: 280px;}
 .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n .tx-time {font-size: 17px; line-height: 150%;}
 
+/* 2026-01-27 */
+@media (max-width: 1023px) {
+  .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 {width: 100%;}
+  .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n {column-gap: 18px;}
+  .home .pop-alert.pop-file-pw .bx-alert .bx-inp.ty02 .in-bx-n .form.input {width: auto; flex: 1;}
+}
+
 
 /* 2026-01-25 */
 .ex-top-wrap {/*height: 1052px;*/ padding: 0 0 40px 0; background: linear-gradient(180deg, rgba(214, 107, 57, 0.00) 52.85%, rgba(214, 107, 57, 0.20) 100%), #FBE8E2;}
