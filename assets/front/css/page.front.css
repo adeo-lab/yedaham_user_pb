@@ -8819,5 +8819,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	.home .board-write-ty01 .top-area .line-item dt.ty-tx-r .tx-r::before {top: 3px; width: 15px; height: 15px; background-size: 12.5px; padding-left: 19px;}
 }
 
+/* 2026-01-27 */
+.corp .apw-board-write .form.textarea .tp-tx01.ty-imp {column-gap: 8px; align-items: center;}
+.corp .apw-board-write .form.textarea .tp-tx01 span.imp {display: inline-block; font-weight: 400; color: #E94543; line-height: 1; padding-top: 4px; vertical-align: top;}
 
 
