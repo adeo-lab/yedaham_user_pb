@@ -8876,10 +8876,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .home .content-popup.ty-inside .easy-join-wrap .easy-join-right-side .ej-inner-bx .easy-chane-wrap .easy-change-in-bx.ty-n ul.acount li .in-item {height: 74px;}
 
+.home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-change-product.ty-compare {top: -8px; left: 83px; right: auto; width: auto; height: 38px; font-size: 14px; line-height: 38px; background: none; padding: 0 15px;}
+
 @media (max-width: 1023px) {
-	.home .content-popup.ty-inside {position: fixed; height: 100%; z-index: 100000 !important; /*background: rgb(0 0 0 / 25%); backdrop-filter: blur(10px);*/}
+	.home .content-popup.ty-inside {position: fixed; height: 100%; /*background: rgb(0 0 0 / 25%); backdrop-filter: blur(10px);*/}
+  .home .content-popup.ty-inside.active {z-index: 100000 !important;}
 	.home .content-popup.ty-inside .compare-data-grid .grid-row {grid-template-columns: 60px repeat(4, 1fr);}
 	.home .content-popup.ty-inside .compare-data-grid .grid-header .grid-cell {min-width: 200px;}
+
+  .home .easy-join-wrap .easy-join-right-side .ej-inner-bx .s-tit01 .btn-change-product.ty-compare {top: 0; left: 62px; right: auto; width: auto; height: 30px; font-size: 13px; line-height: 30px; background: none; padding: 0 10px;}
 }
 
 
