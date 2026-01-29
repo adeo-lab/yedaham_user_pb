@@ -8888,3 +8888,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+/* 2026-01-29 */
+.home .content-popup.ty-inside .compare-data-grid .grid-header .grid-cell {min-width: 270px;}
+.home .content-popup.ty-inside .compare-data-grid .grid-header .data-head {padding: 24px 20px;}
+.home .content-popup.ty-inside .compare-data-grid .grid-header .data-head .data-info {justify-content: space-between;}
+.home .content-popup.ty-inside .compare-data-grid .grid-body .grid-cell {padding: 24px 20px;}
+
+@media (max-width: 1023px) {
+  .home .content-popup.ty-inside .compare-data-grid .grid-header .grid-cell {min-width: 200px;}
+}
+
+
+.home .content-popup .compare-data-grid.ty-k .grid-row {background: linear-gradient(to right, #fafafa 0%, #fafafa 33.333%, #f3f3f3 33.333%, #f3f3f3 66.666%, #ececec 66.666%, #f3f3f3 100%);}
+.home .content-popup .compare-data-grid.ty-k .product-04 {position: relative; background: #fff;}
+.home .content-popup .compare-data-grid.ty-k .product-04::after {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: block; border: 2px solid #F1945E; border-bottom: none;}
+.home .content-popup .compare-data-grid.ty-k .grid-row .product-04::after {border-bottom: none;}
+.home .content-popup .compare-data-grid.ty-k .grid-body .product-04::after {border-top: none; border-bottom: none;}
+.home .content-popup .compare-data-grid.ty-k .grid-body .grid-row:last-child .product-04::after {border-top: none; border-bottom: 2px solid #F1945E;}
+
