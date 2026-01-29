@@ -8889,12 +8889,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 /* 2026-01-29 */
+.home .content-popup.ty-inside .popup-wrap.p-comparison {align-self: unset;}
 .home .content-popup.ty-inside .compare-data-grid .grid-header .grid-cell {min-width: 270px;}
 .home .content-popup.ty-inside .compare-data-grid .grid-header .data-head {padding: 24px 20px;}
 .home .content-popup.ty-inside .compare-data-grid .grid-header .data-head .data-info {justify-content: space-between;}
 .home .content-popup.ty-inside .compare-data-grid .grid-body .grid-cell {padding: 24px 20px;}
 
 @media (max-width: 1023px) {
+  .home .content-popup.ty-inside .popup-wrap.p-comparison {align-self: center;}
   .home .content-popup.ty-inside .compare-data-grid .grid-header .grid-cell {min-width: 200px;}
 }
 
