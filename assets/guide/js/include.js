@@ -685,6 +685,7 @@ const headerNavigation = function (useFullLink) {
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">YAC 센터*</span></p>
 						<p class="g-sub-edit"><span class="em" style="color: green">동의/미동의 작업 [주석: 251201]</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-31 수정</span></p>
 						${createMenuLink("corp/common/FO_C_ZA_001_L_n.html", useFullLink)}
 					</div>
 					<div class="g-sub-wrap" data-status="완료">
@@ -698,6 +699,11 @@ const headerNavigation = function (useFullLink) {
 					<div class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">메일* > YAC 신고 등록</span></p>
 						${createMenuLink("corp/common/FO_C_ZD_001.html", useFullLink)}
+					</div>
+					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">YAC 신고 등록 완료</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-31 추가</span></p>
+						${createMenuLink("corp/common/FO_C_ZA_002_L.html", useFullLink)}
 					</div>
 				</div>
 			</li>
@@ -822,6 +828,7 @@ const headerNavigation = function (useFullLink) {
 					<dl class="g-sub-wrap" data-status="완료">
 						<p class="g-sub-title"><span class="em">비윤리신고센터</span></p>
 						<p class="g-sub-edit"><span class="em">주석: 1120, 1121 작업</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-31 수정</span></p>
 						${createMenuLink("corp/sustainability/FO_C_SE_001.html", useFullLink)}
 					</dl>
 				</div>
