@@ -705,6 +705,11 @@ const headerNavigation = function (useFullLink) {
 						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-01-31 추가</span></p>
 						${createMenuLink("corp/common/FO_C_ZA_002_L.html", useFullLink)}
 					</div>
+					<div class="g-sub-wrap" data-status="완료">
+						<p class="g-sub-title"><span class="em">YAC 신고 처리결과 확인</span></p>
+						<p class="g-sub-edit"><span class="em" style="color: purple;">2026-02-02 추가</span></p>
+						${createMenuLink("corp/common/FO_C_ZA_003_L.html", useFullLink)}
+					</div>
 				</div>
 			</li>
 
