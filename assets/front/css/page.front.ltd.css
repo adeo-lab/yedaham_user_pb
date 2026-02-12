@@ -1319,8 +1319,8 @@
 }
 /* 2026-02-12 */
 .terms-display .strong {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 20px !important;
+  font-weight: 700 !important;
 }
 @media (max-width: 1023px) {
   .terms-display {
@@ -1329,7 +1329,7 @@
 }
 /* 2026-02-12 */
 .terms-display .strong {
-  font-size: 17px; 
+  font-size: 17px !important; 
 }
 .terms-display .terms-title {
   font-size: 28px;
