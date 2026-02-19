@@ -3669,9 +3669,70 @@ white-space: nowrap; border: 0;}
 .home .board-view.event .board-view-content .board-content .img-pc-in {display: block;}
 .home .board-view.event .board-view-content .board-content .img-mob-in {display: none;}
 
+/* event-winner_260219 */
+.event-winner .winner-list-title{
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.event-winner .winner-list-top{
+  padding: 12px;            
+  width: 100%;                          
+  text-align: center;
+  color: #232527;
+  font-weight: 500;
+  border-top: solid 1px rgba(19, 21, 23, 20%);
+  background-color:#F7F6F5;
+  box-sizing: border-box;
+}
+.event-winner .winner-list{        
+  position: relative;                            
+  display: flex;
+  flex-wrap : wrap;       
+  align-items: center;      
+  border-top: solid 1px rgba(19, 21, 23, 20%);                                                                     
+  border-bottom: solid 1px rgba(19, 21, 23, 20%);
+  height: 455px;
+  overflow-y: auto;
+}
+.event-winner .winner-list > li{
+  flex: 1 1 10%;            
+  padding: 12px 10px;            
+  text-align: center;                            
+  box-sizing: border-box;            
+}        
+.event-winner .winner-list > li > span{
+  display: inline-block;
+  min-width: 38px;                       
+  text-align: left;            
+}
+.event-winner .winner-noti{
+  margin-top: 10px;
+  color: #000;
+  font-weight: 500;
+}
+.event-winner .winner-noti > em{            
+  color: #E94543;
+}
+
+
 @media (max-width: 1200px) {
   .home .board-view.event .board-view-content .board-content .img-pc-in {display: none;}
   .home .board-view.event .board-view-content .board-content .img-mob-in {display: block;}
+}
+
+/* event-winner_260219 */
+@media (max-width: 1024px) {
+  .event-winner .winner-list > li{                
+    flex: 1 1 20%;                                                                
+  }                
+}
+
+@media (max-width: 600px) {
+  .event-winner .winner-list > li{                
+    flex: 1 1 33.33%;
+    max-width: 33.33%;
+  }        
 }
 
 
