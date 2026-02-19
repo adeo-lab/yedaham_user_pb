@@ -3700,11 +3700,12 @@ white-space: nowrap; border: 0;}
   overflow-y: auto;
 }
 .event-winner .winner-list > li{
-  flex: 1 1 10%;            
+  flex: 1 1 12.5%;            
+  max-width: 12.5%;
   padding: 12px 10px; 
   color: #232527;           
   text-align: center;                            
-  box-sizing: border-box;            
+  box-sizing: border-box;                
 }        
 .event-winner .winner-list > li > span{
   display: inline-block;
@@ -3729,26 +3730,24 @@ white-space: nowrap; border: 0;}
 /* event-winner_260219 */
 @media (max-width: 1024px) {
   .event-winner .winner-list > li{                
-    flex: 1 1 20%;                                                                
+    flex: 1 1 20%;              
+    max-width: 20%;                                                  
   }                
 }
 
-@media (max-width: 768px) {
-  .event-winner .winner-list-wrap{
-    margin: 20px 0;
-  }
+@media (max-width: 1023px) {
+  .event-winner{
+    max-width: 720px;
+    margin: 0 auto;
+  }  
 }
 
-@media (max-width: 600px) {
-  .winner-list-title{               
-    font-size: 19px !important;                
-  }
+@media (max-width: 600px) {    
   .event-winner .winner-list > li{                
     flex: 1 1 33.33%;
     max-width: 33.33%;
   }        
 }
-
 
 .home .board-view .board-bottom {padding: 0; border: 0 none;}
 .home .board-view .board-bottom .navi-list .navi-item:first-child::before {
